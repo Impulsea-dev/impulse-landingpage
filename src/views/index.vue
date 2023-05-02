@@ -105,9 +105,25 @@
  <SwipperCard></SwipperCard>
       </div>
 
-      <div class="grid   grid-cols-1 lg:grid-cols-2  gap-6  ">
- <CardCustomTelcoSol></CardCustomTelcoSol>
+      <Card :className="'bg-[#141414] relative mt-4'">
+        <div class="absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[20%] w-[70%] text-center m-auto  gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]">
+  <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">
+    TELECOM SOLUTIONS
+  </p>
+</div>
+
+        <div class="space-y-4 mt-4">
+          <div class="grid   grid-cols-1 lg:grid-cols-2  gap-6  ">
+ <CardCustomTelemetric></CardCustomTelemetric>
+ <card-custom-boost></card-custom-boost>
       </div>
+      <div class="grid   grid-cols-1 lg:grid-cols-1  gap-6  ">
+
+ <card-custom-product-dev></card-custom-product-dev>
+      </div>
+        </div>
+ 
+    </Card>
 
 
 
@@ -121,13 +137,16 @@ import dev from "@/assets/images/svgs/dev.svg"
 import bpo from "@/assets/images/svgs/bpo.svg"
 import consult from "@/assets/images/svgs/consult.svg"
 import Button from "@/components/Button";
+import Card from "@/components/Card"
 import CardCustom from "@/components/CardCustom.vue"
 import CardCustomWhoAre from "@/components/CardCustomWhoAre.vue"
-import CardCustomTelcoSol from "@/components/CardCustomTelcoSol.vue"
+import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
+import CardCustomBoost from "@/components/CardCustomBoost.vue"
+import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import img1 from "@/assets/images/all-img/image-1.png";
 export default {
-  components:{CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelcoSol},
+  components:{Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
     return {img,img1,bi,dev,bpo,consult}
   }
