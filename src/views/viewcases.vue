@@ -1,47 +1,7 @@
 <template>
     <div>
   
-      <!-- Grid Cards Start-->
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6">
-        
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     classBackground="cardDisplay"
-     /> 
      
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     
-     classBackground="cardDisplay"
-     /> 
-     
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     
-     classBackground="cardDisplay"
-     /> 
-     
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     
-     classBackground="cardDisplay"
-     /> 
-  
-      </div>
-      <!-- Grid Cards End -->
-  
-      <div class="grid   grid-cols-1  gap-6  ">
-   <SwipperCard></SwipperCard>
-        </div>
-  
   
   
   

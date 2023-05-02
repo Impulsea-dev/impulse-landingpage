@@ -1,50 +1,18 @@
 <template>
     <div>
-  
-      <!-- Grid Cards Start-->
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6">
-        
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     classBackground="cardDisplay"
-     /> 
-     
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     
-     classBackground="cardDisplay"
-     /> 
-     
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     
-     classBackground="cardDisplay"
-     /> 
-     
-    <CardCustom 
-    title="Business Inteligence and Analytics"
-     paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-     :img="img"
-     
-     classBackground="cardDisplay"
-     /> 
-  
+      <div class="grid lg:grid-rows-2 md:grid-rows-2 grid-rows-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
+        <div class="text-6xl text-white text-bold">
+          Specialised telecom software delivered with deep industry experience
+        </div>    
+        <div class="text-base text-[#ffffffb3]">
+          Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer. Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur. Vitae in non ultricies nisl tortor proin integer diam. Ut ante. </div>     
       </div>
-      <!-- Grid Cards End -->
-  
-      <div class="grid   grid-cols-1  gap-6  ">
-   <SwipperCard></SwipperCard>
-        </div>
-  
-  
-  
-  
+      <div class="text-white text-center text-3xl mb-3">
+        <span>Let’s Work Together </span>
+      </div>
+      <div class="text-white text-center text-3xl">
+        <Button text="Get in touch" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
+      </div>
     </div>
   </template>
   <script>
@@ -52,8 +20,12 @@
   
   import CardCustom from "@/components/CardCustom.vue"
   import SwipperCard from "@/components/SwipperCard.vue"
+  import Button from "@/components/Button"
   export default {
-    components:{CardCustom,SwipperCard},
+    components:{
+      CardCustom,
+      Button,
+      SwipperCard},
     data(){
       return {img}
     }

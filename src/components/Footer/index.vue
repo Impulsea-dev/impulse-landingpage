@@ -7,7 +7,7 @@
         <div class="flex-col space-y-4">
           <div class="flex-col ">
             <img
-      src="@/assets/images/logo/logo-white.svg"
+      src="@/assets/images/logo/impulse.svg"
     />
            
           </div>
