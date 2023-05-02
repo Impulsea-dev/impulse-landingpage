@@ -37,8 +37,8 @@ export const basicArea = {
     yaxis: {
       labels: {
         style: {
-          colors: "#475569",
-          fontFamily: "Inter",
+          colors: "#000000",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -59,8 +59,8 @@ export const basicArea = {
       ],
       labels: {
         style: {
-          colors: "#475569",
-          fontFamily: "Inter",
+          colors: "#000000",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -116,7 +116,7 @@ export const basicAreaDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -138,7 +138,7 @@ export const basicAreaDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -192,24 +192,24 @@ export const spalineArea = {
       ],
       labels: {
         style: {
-          colors: "#475569",
-          fontFamily: "Inter",
+          colors: "#000000",
+          fontFamily: "Manrope",
         },
       },
     },
     yaxis: {
       labels: {
         style: {
-          colors: "#475569",
-          fontFamily: "Inter",
+          colors: "#000000",
+          fontFamily: "Manrope",
         },
       },
     },
     legend: {
       labels: {
-        colors: "#475569",
+        colors: "#000000",
       },
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
     },
     tooltip: {
       x: {
@@ -244,7 +244,7 @@ export const spalineAreaDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -268,7 +268,7 @@ export const spalineAreaDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -282,7 +282,7 @@ export const spalineAreaDark = {
       labels: {
         colors: "#CBD5E1",
       },
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
     },
     tooltip: {
       x: {
@@ -355,7 +355,7 @@ export const basicBarDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -381,7 +381,7 @@ export const basicBarDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -519,7 +519,7 @@ export const columnChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -536,7 +536,7 @@ export const columnChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -698,7 +698,7 @@ export const bubboleChartDark = {
         rotate: 0,
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -719,7 +719,7 @@ export const bubboleChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -912,7 +912,7 @@ export const scatterChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
         formatter(val) {
           return parseFloat(val).toFixed(1);
@@ -923,7 +923,7 @@ export const scatterChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -1470,7 +1470,7 @@ export const candlestickDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -1493,7 +1493,7 @@ export const candlestickDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -1550,7 +1550,7 @@ export const stepLineDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -1564,7 +1564,7 @@ export const stepLineDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -1687,7 +1687,7 @@ export const stackChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -1715,7 +1715,7 @@ export const stackChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -1745,7 +1745,7 @@ export const donutChart = {
     legend: {
       position: "bottom",
       fontSize: "16px",
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
       fontWeight: 400,
     },
     plotOptions: {
@@ -1758,11 +1758,11 @@ export const donutChart = {
               show: true,
               fontSize: "26px",
               fontWeight: "bold",
-              fontFamily: "Inter",
+              fontFamily: "Manrope",
             },
             value: {
               show: true,
-              fontFamily: "Inter",
+              fontFamily: "Manrope",
               formatter(val) {
                 // eslint-disable-next-line radix
                 return `${parseInt(val)}%`;
@@ -1806,7 +1806,7 @@ export const donutChartDark = {
     legend: {
       position: "bottom",
       fontSize: "16px",
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
       fontWeight: 400,
       labels: {
         colors: "#CBD5E1",
@@ -1822,12 +1822,12 @@ export const donutChartDark = {
               show: true,
               fontSize: "26px",
               fontWeight: "bold",
-              fontFamily: "Inter",
+              fontFamily: "Manrope",
               color: "#CBD5E1",
             },
             value: {
               show: true,
-              fontFamily: "Inter",
+              fontFamily: "Manrope",
               color: "#CBD5E1",
               formatter(val) {
                 // eslint-disable-next-line radix
@@ -1874,10 +1874,10 @@ export const pieChart = {
     legend: {
       position: "bottom",
       fontSize: "16px",
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
       fontWeight: 400,
       labels: {
-        colors: "#475569",
+        colors: "#000000",
       },
       markers: {
         width: 6,
@@ -1918,7 +1918,7 @@ export const pieChartDark = {
     legend: {
       position: "bottom",
       fontSize: "16px",
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
       fontWeight: 400,
       labels: {
         colors: "#CBD5E1",
@@ -2102,7 +2102,7 @@ export const mixedChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
       axisBorder: {
@@ -2117,7 +2117,7 @@ export const mixedChartDark = {
       labels: {
         style: {
           colors: "#CBD5E1",
-          fontFamily: "Inter",
+          fontFamily: "Manrope",
         },
       },
     },
@@ -2174,9 +2174,9 @@ export const radarChart = {
     legend: {
       show: true,
       fontSize: "14px",
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
       labels: {
-        colors: "#475569",
+        colors: "#000000",
       },
     },
     yaxis: {
@@ -2237,7 +2237,7 @@ export const radarChartDark = {
     legend: {
       show: true,
       fontSize: "14px",
-      fontFamily: "Inter",
+      fontFamily: "Manrope",
       labels: {
         colors: "#CBD5E1",
       },
@@ -2287,16 +2287,16 @@ export const MultipleRadialbars = {
         dataLabels: {
           name: {
             fontSize: "22px",
-            color: "#475569",
+            color: "#000000",
           },
           value: {
             fontSize: "16px",
-            color: "#475569",
+            color: "#000000",
           },
           total: {
             show: true,
             label: "Total",
-            color: "#475569",
+            color: "#000000",
             formatter: function () {
               return 249;
             },
@@ -2362,16 +2362,16 @@ export const gearradil = {
         dataLabels: {
           name: {
             fontSize: "22px",
-            color: "#475569",
+            color: "#000000",
           },
           value: {
             fontSize: "16px",
-            color: "#475569",
+            color: "#000000",
           },
           total: {
             show: true,
             label: "Total",
-            color: "#475569",
+            color: "#000000",
             formatter: function () {
               return 249;
             },

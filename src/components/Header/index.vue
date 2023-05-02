@@ -1,13 +1,13 @@
 <template>
   <header :class="navbarTypeClass()">
     <div
-      :class="`app-header md:px-6 px-[15px]  dark:bg-slate-800 shadow-base dark:shadow-base3 bg-white ${borderSwicthClass()} ${
+      :class="`app-header md:px-6 px-[15px]  dark:bg-black-800 shadow-base dark:shadow-base3 bg-white ${borderSwicthClass()} ${
         this.$store.themeSettingsStore.navbarColor
       }
       ${
-        this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1280
-          ? 'py-1'
-          : 'md:py-6 py-3'
+        this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1023
+          ? 'h-20'
+          : 'md:py-2 h-14 '
       }
       `"
     >
@@ -18,7 +18,7 @@
         >
           <button
             class="ltr:mr-5 rtl:ml-5 text-xl text-slate-900 dark:text-white"
-            v-if="this.$store.themeSettingsStore.sidebarCollasp && window.width > 1280"
+            v-if="this.$store.themeSettingsStore.sidebarCollasp && window.width > 1023"
             @click="this.$store.themeSettingsStore.sidebarCollasp = false"
           >
             <Icon
@@ -30,31 +30,28 @@
               v-if="this.$store.themeSettingsStore.direction"
             />
           </button>
-          <MobileLogo v-if="window.width < 1280" />
-          <handle-mobile-menu
-            v-if="window.width < 1280 && window.width > 768"
-          />
+          <MobileLogo v-if="window.width < 1024" />
+        
         </div>
         <div
           v-if="this.$store.themeSettingsStore.menuLayout === 'horizontal'"
           class="flex items-center space-x-4 rtl:space-x-reverse"
         >
-          <Logo v-if="window.width > 1280" />
-          <MobileLogo v-else />
-          <handle-mobile-menu v-if="window.width <= 1280 && window.width>768" />
+          <Logo v-if="window.width > 1023" />
+          <MobileLogo v-else /> 
         </div>
-        <Mainnav class="ml-60"
+        <Mainnav class="xl:ml-auto lg:ml-0 lg:flex md:hidden hidden"
           v-if="
-            this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1280
+            this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1024
           "
         />
-        <div>
+        <div v-if="window.width > 1024">
           <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
         </div>
         <div
           class="nav-tools flex items-center lg:space-x-6 space-x-3 rtl:space-x-reverse"
         >
-          <handle-mobile-menu v-if="window.width <= 768" />
+          <handle-mobile-menu v-if="window.width <= 1024" />
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@
       @apply bg-transparent;
     }
     &.dark {
-      @apply bg-[#0f172a];
+      @apply bg-[#000000];
     }
   }
   html,
@@ -142,7 +142,7 @@
     }
   }
   .Vue-Toastification__toast.dashcode-toast {
-    @apply font-Inter text-sm shadow-base rounded-md;
+    @apply font-Manrope text-sm shadow-base rounded-md;
   }
 }
 @layer utilities {

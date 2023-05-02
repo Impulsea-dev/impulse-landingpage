@@ -1,24 +1,24 @@
 <template>
   <main class="app-wrapper">
-    <Header :class="window.width > 1280 ? switchHeaderClass() : ''" />
+    <Header :class="window.width > 1024 ? switchHeaderClass() : ''" />
     <!-- end header -->
 
     <Sidebar
       v-if="
         this.$store.themeSettingsStore.menuLayout === 'vertical' &&
         this.$store.themeSettingsStore.sidebarHidden === false &&
-        window.width > 1280
+        window.width > 1024
       "
     />
     <!-- main sidebar end -->
     <Transition name="mobilemenu">
       <mobile-sidebar
-        v-if="window.width <= 1280 && this.$store.themeSettingsStore.mobielSidebar"
+        v-if="window.width <= 1024 && this.$store.themeSettingsStore.mobielSidebar"
       />
     </Transition>
     <Transition name="overlay-fade">
       <div
-        v-if="window.width <= 1280 && this.$store.themeSettingsStore.mobielSidebar"
+        v-if="window.width <= 1023 && this.$store.themeSettingsStore.mobielSidebar"
         class="overlay bg-slate-900 bg-opacity-70 backdrop-filter backdrop-blur-[3px] backdrop-brightness-10 fixed inset-0 z-[999]"
         @click="this.$store.themeSettingsStore.mobielSidebar = false"
       ></div>
@@ -26,7 +26,7 @@
 
     <div
       class="content-wrapper transition-all duration-150"
-      :class="window.width > 1280 ? switchHeaderClass() : ''"
+      :class="window.width > 1023 ? switchHeaderClass() : ''"
     >
       <div
         class="page-content"
@@ -48,11 +48,8 @@
         </div>
       </div>
     </div>
-    <!-- end page content -->
-    <FooterMenu v-if="window.width < 768" />
-    <Footer
-      :class="window.width > 1280 ? switchHeaderClass() : ''"
-      v-if="window.width > 768"
+    <!-- end page content --> 
+    <Footer 
     />
   </main>
 </template>
@@ -63,8 +60,7 @@ import Header from "../components/Header";
 import Settings from "../components/Settings";
 import Sidebar from "../components/Sidebar/";
 import window from "@/mixins/window";
-import MobileSidebar from "@/components/Sidebar/MobileSidebar.vue";
-import FooterMenu from "@/components/Footer/FooterMenu.vue";
+import MobileSidebar from "@/components/Sidebar/MobileSidebar.vue"; 
 
 export default {
   mixins: [window],
@@ -73,8 +69,7 @@ export default {
     Footer,
     Sidebar,
     Settings,
-    Breadcrumbs,
-    FooterMenu,
+    Breadcrumbs, 
     MobileSidebar,
   },
   methods: {

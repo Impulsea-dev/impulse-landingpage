@@ -8,7 +8,7 @@ let colors = {
   light: "#425466",
   success: "#50C793",
   "gray-f7": "#F7F8FC",
-  dark: "#1E293B",
+  dark: "#0000",
   "dark-gray": "#0F172A",
   gray: "#68768A",
   gray2: "#EEF1F9",

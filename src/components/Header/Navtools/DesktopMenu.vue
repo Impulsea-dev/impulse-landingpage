@@ -12,7 +12,7 @@
       "
     >
       <router-link :to="item.link" v-if="!item.child && !item.megamenu">
-        <div class="flex flex-1 items-center space-x-[6px] rtl:space-x-reverse">
+        <div class="flex flex-1 items-center space-x-[8px] rtl:space-x-reverse">
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon" />
           </span>

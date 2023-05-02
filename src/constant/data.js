@@ -9,9 +9,46 @@ export const menuItems = [
     title: "menu",
   },
   {
-    title: "Home",
+    title: "home",
     icon: "heroicons-outline:home",
-    link: "home",
+    link: "/",
+    
+  },
+  {
+    title: "About us",
+    icon: "fluent:people-20-regular",
+    link: "/",
+  },
+  {
+    title: "What we do",
+    icon: "icons8:idea",
+    link: "#", 
+    child: [
+      {
+        childtitle: "Option One",
+        childlink: "/",
+        childicon: "heroicons-outline:document-text",
+      },
+      {
+        childtitle: "Option Two",
+        childlink: "/",
+        childicon: "heroicons-outline:document-text",
+      },
+    ],
+  },
+ 
+  {
+    title: "Case Studies",
+    icon: "iconoir:page-search",
+    link: "/",
+  },
+
+  {
+    title: "Blog",
+    icon: "fluent-mdl2:blog",
+    link: "/",
+
+    
   },
 ];
 // menuseetins
@@ -117,7 +154,7 @@ export const topMenu = [
   },
   {
     title: "home",
-    icon: "heroicons-outline:home",
+    icon: "heroicons-outline:home ",
     link: "/",
     
   },
@@ -158,6 +195,8 @@ export const topMenu = [
     
   },
 ];
+
+ 
 
 export const alertType = [
   {

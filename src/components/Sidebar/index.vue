@@ -187,9 +187,9 @@ export default defineComponent({
 .dark {
   .nav-shadow {
     background: linear-gradient(
-      rgba(#1e293b, 100%) 5%,
-      rgba(#1e293b, 75%) 45%,
-      rgba(#1e293b, 20%) 80%,
+      rgba(#0000, 100%) 5%,
+      rgba(#0000, 75%) 45%,
+      rgba(#0000, 20%) 80%,
       transparent
     );
   }
