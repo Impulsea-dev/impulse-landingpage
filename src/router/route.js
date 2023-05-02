@@ -65,6 +65,16 @@ const routes = [
         name: "contactus",
         component: () => import("@/views/contactus.vue"),
       },
+      {
+        path: "/services",
+        name: "services",
+        component: () => import("@/views/Services.vue"),
+      },
+      {
+        path: "/telemetrics",
+        name: "telemetrics",
+        component: () => import("@/views/Telemetrics.vue"),
+      },
     ],
   },
 ];
