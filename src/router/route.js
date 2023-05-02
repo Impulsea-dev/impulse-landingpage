@@ -10,6 +10,61 @@ const routes = [
         name: "home",
         component: () => import("@/views/index.vue"),
       },
+      {
+        path: "/aboutus",
+        name: "aboutus",
+        component: () => import("@/views/aboutus.vue"),
+      },
+      {
+        path: "/whatwedoservices",
+        name: "whatwedoservices",
+        component: () => import("@/views/whatwedoserv.vue"),
+      },
+      {
+        path: "/whatwedotelco",
+        name: "whatwedotelco",
+        component: () => import("@/views/whatwedotelco.vue"),
+      },
+      {
+        path: "/casestudies",
+        name: "casestudies",
+        component: () => import("@/views/casestudies.vue"),
+      },
+      {
+        path: "/viewcases",
+        name: "viewcases",
+        component: () => import("@/views/viewcases.vue"),
+      },
+      {
+        path: "/blog",
+        name: "blog",
+        component: () => import("@/views/viewcases.vue"),
+      },
+      {
+        path: "/blogdetails",
+        name: "blogdetails",
+        component: () => import("@/views/blogdetails.vue"),
+      },
+      {
+        path: "/telemetrics",
+        name: "telemetrics",
+        component: () => import("@/views/telemetrics.vue"),
+      },
+      {
+        path: "/boostone",
+        name: "boostone",
+        component: () => import("@/views/boost1.vue"),
+      },
+      {
+        path: "/boosttwo",
+        name: "boosttwo",
+        component: () => import("@/views/boost2.vue"),
+      },
+      {
+        path: "/contactus",
+        name: "contactus",
+        component: () => import("@/views/contactus.vue"),
+      },
     ],
   },
 ];
