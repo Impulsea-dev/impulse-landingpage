@@ -98,7 +98,7 @@ export default {
         case "sticky":
           return "sticky top-0 z-[999]";
         case "static":
-          return "static";
+          return "static top-0 z-[999]";
         case "hidden":
           return "hidden";
         default:
