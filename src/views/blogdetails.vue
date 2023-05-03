@@ -1,111 +1,113 @@
 <template>
-  <div
-    class="lg:flex flex-wrap blog-posts lg:space-x-5 space-y-5 lg:space-y-0 rtl:space-x-reverse"
-  >
- 
-    <div class="flex-1">
-      <div class="grid grid-cols-1 gap-5">
-        <Card :img="post1Img" :className="'dark:!bg-[#000000]'">
-         
-          <h5 class="card-title text-slate-900">
-           
-          </h5>
-          <div
-            class="card-text dark:text-slate-300 mt-4 space-y-4 leading-5 text-slate-600 text-sm border-b border-slate-100 dark:border-slate-700 pb-6"
-          >
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipiscing
-              eli.
-            </p>
-            <p class="font-medium text-base">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ulla mco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehende rit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ulla mco laboris nisi
-              ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehende rit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
-          </div>
-           
-        </Card>
-      </div>
+ <div class="flex flex-wrap flex-col justify-start items-start w-[100vw] h-[2985px] relative">
+  
+  <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 absolute  " :src="headingImg" />
+  <div class="flex flex-col justify-start items-start absolute top-72  gap-4">
+    <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
+      <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
+        <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white/70 "
+          >Posted on January 20, 2023 . </span
+        ><span class="flex-grow-0 md:text-base text-sm font-semibold text-left text-white/40"
+          >Read Time: 2min</span
+        >
+      </p>
+      <p class="flex-grow-0  md:text-[64px] text-3xl font-semibold text-center text-white">
+        2023 Product News
+      </p>
+      <p class="flex-grow-0 w-3/4  text-base text-left text-white/70">
+        Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus
+        eleifend blandit.
+      </p>
     </div>
   </div>
+
+  <div
+    class="flex justify-center items-center absolute lg:left-[120px]  top-[560px] gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
+  >
+    <svg
+      width="16"
+      height="10"
+      viewBox="0 0 16 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-grow-0 flex-shrink-0 w-2.5 h-4 relative"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <g clip-path="url(#clip0_115_3527)">
+        <path
+          d="M4.99062 5.53127L9.24063 9.78127C9.53437 10.075 10.0094 10.075 10.3 9.78127L11.0063 9.07502C11.3 8.78127 11.3 8.30627 11.0063 8.01565L7.99375 5.00315L11.0063 1.99065C11.3 1.6969 11.3 1.2219 11.0063 0.931276L10.3 0.225025C10.0063 -0.0687246 9.53125 -0.0687246 9.24063 0.225025L4.99062 4.47502C4.69688 4.76252 4.69688 5.23752 4.99062 5.53127Z"
+          fill="#141414"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_115_3527">
+          <rect width="10" height="16" fill="white" transform="matrix(0 -1 -1 0 16 10)"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">Back</p>
+  </div>
+  <div class="flex flex-wrap flex-col justify-start items-start absolute md:pl-32 md:pr-32 top-[648px] gap-8">
+    <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      <p class="flex-grow-0 flex-shrink-0   md:text-[32px] text-3xl font-bold text-left text-white">
+        Software Development
+      </p>
+      <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
+        <span
+          class="flex-grow-0 flex-shrink-0  text-base font-medium text-left text-white/70"
+          >Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue
+          lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros
+          ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae. Consequat
+          neque morbi vel odio ipsum. Erat quam tortor viverra ultrices ornare id tincidunt nulla
+          eget. Commodo sed scelerisque nisi dignissim. Congue purus est velit ultricies. Mus lorem
+          egestas vitae ut in faucibus. Orci eu adipiscing cursus diam porttitor. Fringilla iaculis
+          vestibulum libero erat tincidunt aliquet laoreet. Gravida ultricies cursus morbi varius
+          tincidunt cras sed. Nec lacus senectus at id proin aliquam justo id. Nulla amet mi et
+          felis ornare ac lacus vitae velit. Orci ullamcorper porta orci amet justo in a. Habitant
+          posuere lacinia eget nibh. Et fames pellentesque posuere sit risus. Integer consequat urna
+          nibh nunc. Volutpat mattis sed varius justo id nullam odio et hendrerit.</span
+        ><br /><span
+          class="flex-grow-0 flex-shrink-0 w-[1272px] text-base font-medium text-left text-white/70"
+          >Semper sem sed commodo vestibulum quis neque. Amet lectus dignissim quis magna et sem.
+          Volutpat ornare posuere dis dui. Etiam tortor at lacus molestie sit urna sapien non.
+          Interdum massa nibh egestas non ultricies libero odio augue. Dolor neque nunc ullamcorper
+          est. Dolor porttitor rhoncus mauris congue sed vel cursus nibh. Mattis nulla laoreet
+          posuere scelerisque et est. Mattis urna mattis mi sagittis purus. Venenatis nunc tellus
+          blandit consectetur.</span
+        ><br /><span
+          class="flex-grow-0 flex-shrink-0 w-[1272px] text-base font-medium text-left text-white/70"
+          >Auctor gravida turpis imperdiet purus tellus orci. Nullam faucibus est quis eget. Egestas
+          eu vitae in lectus ut congue vitae. Quis scelerisque suspendisse sodales dignissim lacus
+          felis urna. Vel tincidunt mollis nulla elementum id posuere. Nisi feugiat ullamcorper
+          aenean praesent vestibulum maecenas. Facilisis sed faucibus enim nisi in volutpat tellus
+          urna. Dolor adipiscing elementum ligula elementum tristique netus et iaculis. Venenatis
+          odio mi sapien sagittis id ut eu non convallis. Arcu amet adipiscing euismod urna eget.
+          Semper volutpat molestie sapien tellus vivamus massa cras elit. Ut leo pulvinar massa
+          egestas nunc urna quis. Nunc volutpat adipiscing tempus risus fringilla tortor tincidunt.
+          Blandit a elementum rutrum mauris ipsum vulputate augue. Pretium sed vitae a eget non
+          mauris metus ac nibh.</span
+        >
+      </p>
+    </div>
+    <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      <img class="w-[1272px] h-[568px] rounded-2xl" :src="headingImg" />
+
+    </div>
+    
+  </div>
+   
+</div> 
 </template>
 <script>
-import Button from "@/components/Button";
-import Card from "@/components/Card";
-import Icon from "@/components/Icon";
-import Textarea from "@/components/Textarea";
-import Textinput from "@/components/Textinput";
-import post1Img from "@/assets/images/all-img/post-1.png";
-import twitterImg from "@/assets/images/svg/tw.svg";
-import facebookImg from "@/assets/images/svg/fb.svg";
-import linkedInImg from "@/assets/images/svg/ln.svg";
-import instagramImg from "@/assets/images/svg/ins.svg";
-import comment1Img from "@/assets/images/post/c1.png";
-import comment2Img from "@/assets/images/post/c2.png";
-import comment3Img from "@/assets/images/post/c3.png";
+ 
+  
+import headingImg from "@/assets/images/bgs/bg.png";
 export default {
-  components: {
-    Card,
-    Button,
-    Icon,
-    Textinput,
-    Textarea,
-  },
+  
   data() {
     return {
-      post1Img:post1Img,
-      socialImgs:{
-        twitterImg:twitterImg,
-        facebookImg:facebookImg,
-        linkedInImg:linkedInImg,
-        instagramImg:instagramImg
-      },
-      commentsImg:{
-        comment1Img:comment1Img,
-        comment2img:comment2Img,
-        comment3Img:comment3Img,
-      },
-      tags: [
-        {
-          title: "Business",
-          link: "#",
-        },
-        {
-          title: "Consulting",
-          link: "#",
-        },
-        {
-          title: "Photographic",
-          link: "#",
-        },
-        {
-          title: "Investment",
-          link: "#",
-        },
-      ],
+      headingImg
+      
     };
   },
 };

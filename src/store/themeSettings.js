@@ -4,7 +4,7 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
     state: () => ({
         sidebarCollaspe: true,
         sidebarHidden: false,
-        mobielSidebar: true,
+        mobielSidebar: false,
         semidark: false,
         semiDarkTheme: "semi-light",
         monochrome: false,
