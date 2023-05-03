@@ -20,7 +20,7 @@
       ${
         noborder
           ? ''
-          : 'border-b border-slate-100 dark:border-slate-700 pb-5  -mx-6 px-6'
+          : 'border-b border-slate-100 dark:bg-[#000000] pb-5  -mx-6 px-6'
       }
       
       `"

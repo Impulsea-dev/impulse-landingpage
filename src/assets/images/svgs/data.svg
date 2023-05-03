@@ -1,0 +1,10 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H240V240H0V0Z" fill="white" fill-opacity="0.01"/>
+<path d="M110 40V100C110 111.046 89.853 120 65 120C40.1472 120 20 111.046 20 100V40" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110 69.9995C110 81.045 89.853 89.9995 65 89.9995C40.1472 89.9995 20 81.045 20 69.9995" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110 40C110 51.0455 89.853 60 65 60C40.1472 60 20 51.0455 20 40C20 28.9543 40.1472 20 65 20C89.853 20 110 28.9543 110 40Z" fill="#103045" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M159.999 30H189.999C201.045 30 209.999 38.9543 209.999 50V80" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M80 210H50C38.9543 210 30 201.046 30 190V160" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M174.999 170C188.806 170 199.999 158.807 199.999 145C199.999 131.193 188.806 120 174.999 120C161.192 120 149.999 131.193 149.999 145C149.999 158.807 161.192 170 174.999 170Z" fill="#103045" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M220 220H130C130 195.147 150.147 175 175 175C199.853 175 220 195.147 220 220Z" fill="#103045" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

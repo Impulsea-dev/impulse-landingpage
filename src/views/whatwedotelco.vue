@@ -7,8 +7,7 @@
         <div class="text-base text-[#ffffffb3]">
           Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer. Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur. Vitae in non ultricies nisl tortor proin integer diam. Ut ante. </div>     
       </div>
-      <Card :className="'relative dark:bg-[#000000]  mt-2'">   
-
+      <div  class="relative dark:bg-[#000000]  mt-2">   
         <div class="space-y-4 mt-4">
           <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6  ">
  <CardCustomTelemetric></CardCustomTelemetric>
@@ -20,7 +19,8 @@
       </div>
         </div>
  
-    </Card>
+        
+      </div>
       <div class="text-white text-center text-3xl mb-3 mt-4">
         <span>Let’s Work Together </span>
       </div>
