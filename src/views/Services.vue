@@ -71,6 +71,11 @@
             <div :class="window.width<640?'bgLogosPhone':'bgLogos' ">        
         </div>
     </div>
+    <div class="rounded-2xl bg-[#103045] p-10 mt-20"> 
+        <div class="text-center text-xl md:text-3xl text-white">Client’s Feedback</div>  
+    <SwipperFeedback :carousels="carousels"/>
+    </div>
+
 
     
     <div class="mt-20">
@@ -91,18 +96,38 @@ import BPO from "@/assets/images/BPO.webp"
 import Consul from "@/assets/images/Consul.webp"
 import window from "@/mixins/window"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
+import SwipperFeedback from "@/components/SwipperFeedback.vue"
+import carousel1Img from "@/assets/images/all-img/c1.png";
+import carousel2Img from "@/assets/images/all-img/c2.png";
+import carousel3Img from "@/assets/images/all-img/c3.png";
+import carousel4Img from "@/assets/images/all-img/c4.png";
 export default{
     mixins: [window],
     components:{
         CardCustom,
-        SwipperCard2
+        SwipperCard2,
+        SwipperFeedback,
     },
     data(){
         return{
             BI,
             PDD,
             BPO,
-            Consul
+            Consul,
+            carousels: [
+        {
+          img: carousel1Img,
+        },
+        {
+          img: carousel2Img,
+        },
+        {
+          img: carousel3Img,
+        },
+        {
+          img: carousel4Img,
+        },
+      ],
         }
     }
 }
