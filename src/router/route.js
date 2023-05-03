@@ -46,11 +46,6 @@ const routes = [
         component: () => import("@/views/blogdetails.vue"),
       },
       {
-        path: "/telemetrics",
-        name: "telemetrics",
-        component: () => import("@/views/telemetrics.vue"),
-      },
-      {
         path: "/boostone",
         name: "boostone",
         component: () => import("@/views/boost1.vue"),
@@ -74,6 +69,10 @@ const routes = [
         path: "/telemetrics",
         name: "telemetrics",
         component: () => import("@/views/Telemetrics.vue"),
+      },{
+        path: "/product",
+        name: "product",
+        component: () => import("@/views/product.vue"),
       },
       {
         path: "/boost",
