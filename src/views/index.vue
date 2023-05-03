@@ -185,7 +185,7 @@ import CardCustomBoost from "@/components/CardCustomBoost.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
-import img1 from "@/assets/images/all-img/image-1.png";
+import img1 from "@/assets/images/all-img/image-1.webp";
 import window from "@/mixins/window"
 
 export default {
@@ -208,7 +208,7 @@ export default {
  }
  
  .bgLogos{
-        background: url(@/assets/images/logos.png) no-repeat;
+        background: url(@/assets/images/logos.webp) no-repeat;
     background-size: 100% 100%;
   background-color: transparent!important;
   height: 224px;
@@ -216,7 +216,7 @@ export default {
 }
  .bgLogosPhone{
     margin-top: 10px;
-    background: url(@/assets/images/logosPhone.png) no-repeat;
+    background: url(@/assets/images/logosPhone.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent!important;
     height: 384px; 

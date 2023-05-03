@@ -68,7 +68,7 @@
 </script>
 <style>
  .bgtm{
-    background: url(@/assets/images/tm.png) no-repeat;
+    background: url(@/assets/images/tm.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent!important;
     width: 615px;
