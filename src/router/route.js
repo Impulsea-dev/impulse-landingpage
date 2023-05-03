@@ -75,6 +75,11 @@ const routes = [
         name: "telemetrics",
         component: () => import("@/views/Telemetrics.vue"),
       },
+      {
+        path: "/boost",
+        name: "boost",
+        component: () => import("@/views/ImpulseBoost.vue"),
+      },
     ],
   },
 ];
