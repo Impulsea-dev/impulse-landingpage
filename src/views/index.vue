@@ -61,7 +61,10 @@
    classBackground="cardDisplay"
    /> 
     </div>
-     
+    <div class="mt-20 grid   grid-cols-1  gap-6  ">
+ <SwipperCard2></SwipperCard2>
+      </div>
+    
   
 
     <!-- Grid Cards Start-->
@@ -144,9 +147,10 @@ import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
 import CardCustomBoost from "@/components/CardCustomBoost.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
+import SwipperCard2 from "@/components/SwipperCard2.vue"
 import img1 from "@/assets/images/all-img/image-1.png";
 export default {
-  components:{Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
+  components:{SwipperCard2,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
     return {img,img1,bi,dev,bpo,consult}
   }
