@@ -9,6 +9,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
   },
   "dependencies": {
+    "vue-cleave-component": "^3.0.1",
     "@headlessui/vue": "^1.6.4",
     "@videojs-player/vue": "^1.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
