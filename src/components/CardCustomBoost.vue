@@ -1,12 +1,11 @@
 <template>
 <div  >
-  <Card :className="'dark:bg-[#3C007C] overflow-hidden relative'">
+  <Card :className="'dark:!bg-[#282832] overflow-hidden relative'">
    <div class="flex-row absolute">
     <div class="flex flex-col justify-start items-start relative gap-4">
-  <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">Telemetrics</p>
+  <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">Impulse Boost</p>
   <p class="flex-grow-0 flex-shrink-0 md:text-base text-sm font-medium text-left text-white/70">
-    Advanced analytics for telecoms. Enhance visibility, simplify management, and optimize
-    operations with our intelligent solution.
+    Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively
   </p>
 </div>
 <div class="flex justify-start items-start gap-4 mt-2">

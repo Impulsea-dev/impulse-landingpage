@@ -1,7 +1,7 @@
 <template>
 <div  >
-  <Card :className="'dark:bg-[#3C007C] overflow-hidden relative'">
-   <div class="flex-row absolute">
+  <Card :className="'dark:!bg-[#3C007C] overflow-hidden relative'">
+   <div class="flex-row absolute ">
     <div class="flex flex-col justify-start items-start relative gap-4">
   <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">Telemetrics</p>
   <p class="flex-grow-0 flex-shrink-0 md:text-base text-sm font-medium text-left text-white/70">
