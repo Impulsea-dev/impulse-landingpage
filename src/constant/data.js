@@ -154,14 +154,14 @@ export const topMenu = [
   },
   {
     title: "home",
-    icon: "heroicons-outline:home ",
+    icon: "heroicons-outline:home",
     link: "/",
     
   },
   {
     title: "About us",
     icon: "fluent:people-20-regular",
-    link: "/",
+    link: "/aboutus",
   },
   {
     title: "What we do",
@@ -169,14 +169,14 @@ export const topMenu = [
     link: "#", 
     child: [
       {
-        childtitle: "Option One",
-        childlink: "/",
-        childicon: "heroicons-outline:document-text",
+        childtitle: "Services",
+        childlink: "/whatwedoservices",
+        childicon: "ri:customer-service-fill",
       },
       {
-        childtitle: "Option Two",
-        childlink: "/",
-        childicon: "heroicons-outline:document-text",
+        childtitle: "Telecom Solutions",
+        childlink: "/whatwedotelco",
+        childicon: "ic:baseline-network-ping",
       },
     ],
   },
@@ -184,13 +184,13 @@ export const topMenu = [
   {
     title: "Case Studies",
     icon: "iconoir:page-search",
-    link: "/",
+    link: "/casestudies",
   },
 
   {
     title: "Blog",
     icon: "fluent-mdl2:blog",
-    link: "/",
+    link: "/blog",
 
     
   },
