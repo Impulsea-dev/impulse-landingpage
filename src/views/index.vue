@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div >
     <!-- Heroe Start -->
-    <section class="w-[100vw] h-[54rem] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 -left-4 relative">
+    <section class="w-[100vw] h-[47rem] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 -left-4 relative">
       <!-- <img src="@/assets/images/svgs/entrance1.svg" class="md:hidden ml-auto w-36 h-[17rem] -mt-24 p-0 block" alt=""> -->
       <img src="@/assets/images/svgs/entrance.svg" class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
       <img src="@/assets/images/svgs/entrace1.svg" class="animate-pulse md:block md:h-[650px] w-[100vw] -mt-3 p-0  -left-10 hidden" alt="">
       
-      <div class=" h-64">
+      <div  >
   <div class="flex flex-col justify-center items-center absolute  left-0 right-0 mr-auto ml-auto md:w-[50%] w-[70%] text-center m-auto md:ml-auto top-32 ">
     <div
       class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]"
@@ -50,8 +50,8 @@
 </div>
 
     </section>
-    
-    <div class="h-10"></div>
+     
+
     <div class="grid grid-cols-1 md:gap-6   mb-6 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
       <CardCustomWhoAre 
   title="Business Inteligence and Analytics"
@@ -61,11 +61,13 @@
    classBackground="cardDisplay"
    /> 
     </div>
-    <div class="mt-20 grid   grid-cols-1  gap-6  ">
- <SwipperCard2></SwipperCard2>
-      </div>
+    <div class="h-20"></div>
+
+   
     
-  
+      <div class="flex justify-center left-0 right-0 mr-auto ml-auto md:w-[12%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] bg-[#e2e8ea]">
+  <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">Our Services</p>
+</div>
 
     <!-- Grid Cards Start-->
     <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6">
@@ -103,13 +105,17 @@
 
     </div>
     <!-- Grid Cards End -->
+    <div class="h-20"></div>
 
-    <div class="grid   grid-cols-1  gap-6  ">
- <SwipperCard></SwipperCard>
+    <div class="mt-20 grid   grid-cols-1  gap-6  ">
+ <SwipperCard2></SwipperCard2>
       </div>
 
-      <Card :className="'relative dark:bg-[#141414]  mt-4'">
-        <div class="absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[20%] w-[70%] text-center m-auto  gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]">
+ 
+      <div class="h-20"></div>
+
+      <Card :className="'relative dark:!bg-[#141414]  mt-4'">
+        <div class="absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[16%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] bg-[#e2e8ea]">
   <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">
     TELECOM SOLUTIONS
   </p>
@@ -127,6 +133,37 @@
         </div>
  
     </Card>
+
+    <div class="h-20"></div>
+
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
+        <div class="mt-10">
+          <div class="text-white text-[40px] leading-10">
+            Our Integration partners
+          </div>
+          <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
+            We aim to assist our partners in increasing their revenue, minimizing expenses, 
+            and optimizing their processes through our solutions via automaton and analytics. 
+          </div>
+        </div>
+            <div :class="window.width<640?'bgLogosPhone':'bgLogos' ">        
+        </div>
+    </div>
+    <div class="h-20"></div>
+    <div class="flex justify-center items-center gap-6 mb-2">
+      <p class=" w-[327px] text-[32px] font-bold text-center text-white">Let’s Work Together</p>
+    </div>
+   
+<div class="flex justify-center items-center gap-6">
+  <div
+    class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-[11px] rounded-lg"
+    style="background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);"
+  >
+    <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
+      Get in touch
+    </p>
+  </div>
+</div>
 
 
 
@@ -149,7 +186,10 @@ import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
 import img1 from "@/assets/images/all-img/image-1.png";
+import window from "@/mixins/window"
+
 export default {
+  mixins: [window],
   components:{SwipperCard2,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
     return {img,img1,bi,dev,bpo,consult}
@@ -167,6 +207,25 @@ export default {
    background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%); 
  }
  
+ .bgLogos{
+        background: url(@/assets/images/logos.png) no-repeat;
+    background-size: 100% 100%;
+  background-color: transparent!important;
+  height: 224px;
+  
+}
+ .bgLogosPhone{
+    margin-top: 10px;
+    background: url(@/assets/images/logosPhone.png) no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent!important;
+    height: 384px; 
+} 
 
+.bgbutton{
+    background: linear-gradient(262.8deg, #A446F4 -1.48%, #4138F3 103.76%);
+    padding: 11px 32px;
+    border-radius: 8px;
+}
 
 </style>
