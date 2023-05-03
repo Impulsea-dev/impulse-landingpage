@@ -13,7 +13,7 @@
     >
       Please Set Image
       <code class="text-sm text-primary-500 lowercase mt-3">
-        [src="images/all-img/image-1.png"]
+        [src="images/all-img/image-1.webp"]
       </code>
     </div>
   </div>

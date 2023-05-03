@@ -85,10 +85,10 @@
 </template>
 <script>
 import CardCustom from "@/components/CardCustom.vue"
-import BI from "@/assets/images/BI.png"
-import PDD from "@/assets/images/PDD.png"
-import BPO from "@/assets/images/BPO.png"
-import Consul from "@/assets/images/Consul.png"
+import BI from "@/assets/images/BI.webp"
+import PDD from "@/assets/images/PDD.webp"
+import BPO from "@/assets/images/BPO.webp"
+import Consul from "@/assets/images/Consul.webp"
 import window from "@/mixins/window"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
 export default{
@@ -119,7 +119,7 @@ export default{
  }
 
  .bgLogos{
-        background: url(@/assets/images/logos.png) no-repeat;
+        background: url(@/assets/images/logos.webp) no-repeat;
     background-size: 100% 100%;
   background-color: transparent!important;
   height: 224px;
@@ -127,7 +127,7 @@ export default{
 }
  .bgLogosPhone{
     margin-top: 10px;
-    background: url(@/assets/images/logosPhone.png) no-repeat;
+    background: url(@/assets/images/logosPhone.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent!important;
     height: 384px; 

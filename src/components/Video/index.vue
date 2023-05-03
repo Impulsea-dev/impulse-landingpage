@@ -2,7 +2,7 @@
   <video-player
     class="video-player vjs-big-play-centered mx-auto"
     src="https://vjs.zencdn.net/v/oceans.mp4"
-    poster="https://vjs.zencdn.net/v/oceans.png"
+    poster="https://vjs.zencdn.net/v/oceans.webp"
     playsinline
     controls
     :loop="true"

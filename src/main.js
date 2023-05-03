@@ -1,10 +1,7 @@
 import "animate.css";
-import "flatpickr/dist/flatpickr.css";
 import "simplebar/dist/simplebar.min.css";
 import "sweetalert2/dist/sweetalert2.min.css";
 import {createApp} from "vue";
-import VueFlatPickr from "vue-flatpickr-component";
-import "vue-good-table-next/dist/vue-good-table-next.css";
 import VueSweetalert2 from "vue-sweetalert2";
 import VueTippy from "vue-tippy";
 import Toast from "vue-toastification";
@@ -29,7 +26,6 @@ const app = createApp(App)
     .use(router)
     .use(VueClickAway)
     .use(VueTippy)
-    .use(VueFlatPickr)
 
 app.config.globalProperties.$store = {};
 app.mount("#app");

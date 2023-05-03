@@ -35,9 +35,9 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import img1 from "@/assets/images/all-img/image-1.png";
-import img2 from "@/assets/images/all-img/image-2.png";
-import img3 from "@/assets/images/all-img/image-3.png";
+import img1 from "@/assets/images/all-img/image-1.webp";
+import img2 from "@/assets/images/all-img/image-2.webp";
+import img3 from "@/assets/images/all-img/image-3.webp";
 
 const items = ref([img1, img2,img3]);
 </script>

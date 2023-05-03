@@ -1,9 +1,9 @@
 <template>
     <div>
       <div class="w-[1512px] h-[2985px] relative overflow-hidden bg-black">
-  <img class="w-[1512px] h-[568px] absolute left-[-1px] top-[-1px]" src="bg.png" /><img
+  <img class="w-[1512px] h-[568px] absolute left-[-1px] top-[-1px]" src="bg.webp" /><img
     class="w-[1272px] h-[568px] absolute left-[119px] top-[1503px] rounded-2xl"
-    src="bg-2.png"
+    src="bg-2.webp"
   />
   <p
     class="md:w-1/2 mb-4 w-full absolute left-[120px] top-[728px] text-[64px] font-semibold text-left text-white"

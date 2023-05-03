@@ -101,7 +101,7 @@
 <script>
  
   
-import headingImg from "@/assets/images/bgs/bg.png";
+import headingImg from "@/assets/images/bgs/bg.webp";
 export default {
   
   data() {

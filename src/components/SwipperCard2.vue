@@ -65,10 +65,10 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import img1 from "@/assets/images/bgcode.png";
-import img2 from "@/assets/images/all-img/image-2.png";
-import img3 from "@/assets/images/all-img/image-3.png";
-import img from "@/assets/images/logo/impulse.svg"
+import img1 from "@/assets/images/bgcode.webp";
+import img2 from "@/assets/images/all-img/image-2.webp";
+import img3 from "@/assets/images/all-img/image-3.webp";
+import img from "@/assets/images/logo/logo-white.svg"
 import window from "@/mixins/window"
 
 const items = ref([img1, img2,img3]);
