@@ -170,12 +170,12 @@ export const topMenu = [
     child: [
       {
         childtitle: "Services",
-        childlink: "/whatwedoservices",
+        childlink: "/services",
         childicon: "ri:customer-service-fill",
       },
       {
         childtitle: "Telecom Solutions",
-        childlink: "/whatwedotelco",
+        childlink: "/telemetrics",
         childicon: "ic:baseline-network-ping",
       },
     ],

@@ -1,6 +1,13 @@
 <!-- autopaly -->
 <template>
-    <div class="flex flex-wrap w-full justify-center">
+    <div class="flex flex-wrap w-full justify-center relative" 
+    >
+      <div class="absolute -top-5  	z-20  justify-center  left-0 right-0 mr-auto ml-auto md:w-[12%] w-[70%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
+  <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414] ">
+    CASE STUDIES
+  </p>
+</div>
+
     <swiper
   :modules="[ Autoplay,Pagination]"
   :pagination="{
