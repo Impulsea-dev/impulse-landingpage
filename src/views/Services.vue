@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="p-4 md:p-10 bg-[#282832]">
+    <div class="bg-[#282832] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
         <div class="mt-10 text-center md:text-start">
             <button class="w-40 h-12 bg-[#E2E8EA] rounded-[32px] gap-2 p-3 text-[#141414] mb-8 text-[16px]">
                 Our Services
@@ -54,6 +54,10 @@
 
     </div>
 
+    <div class="mt-20 grid   grid-cols-1  gap-6  ">
+ <SwipperCard2></SwipperCard2>
+      </div>
+
     <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
         <div class="mt-10">
           <div class="text-white text-[40px] leading-10">
@@ -68,9 +72,6 @@
         </div>
     </div>
 
-    <div class="mt-20 grid   grid-cols-1  gap-6  ">
- <SwipperCard2></SwipperCard2>
-      </div>
     
     <div class="mt-20">
         <div class="text-3xl text-white font-Manrope text-center">Let’s Work Together </div>

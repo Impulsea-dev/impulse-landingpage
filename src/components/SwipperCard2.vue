@@ -2,8 +2,8 @@
 <template>
     <div class="flex flex-wrap w-full justify-center relative" 
     >
-      <div class="absolute -top-5  	z-20  justify-center  left-0 right-0 mr-auto ml-auto md:w-[12%] w-[70%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
-  <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414] ">
+      <div class="absolute -top-5 z-20 justify-center left-0 right-0 mr-auto ml-auto md:w-[20%] w-[70%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
+  <p class="text-base font-bold text-center text-[#141414] ">
     CASE STUDIES
   </p>
 </div>
@@ -68,7 +68,7 @@ import 'swiper/css/pagination';
 import img1 from "@/assets/images/bgcode.png";
 import img2 from "@/assets/images/all-img/image-2.png";
 import img3 from "@/assets/images/all-img/image-3.png";
-import img from "@/assets/images/logo/logo-white.svg"
+import img from "@/assets/images/logo/impulse.svg"
 import window from "@/mixins/window"
 
 const items = ref([img1, img2,img3]);
