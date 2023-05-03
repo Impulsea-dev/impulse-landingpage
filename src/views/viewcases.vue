@@ -1,19 +1,15 @@
 <template>
     <div>
-  
-     
-  
-  
-  
+      <CardCustomViewCase/>
     </div>
   </template>
   <script>
   import img from "@/assets/images/logo/logo-white.svg"
   
-  import CardCustom from "@/components/CardCustom.vue"
+  import CardCustomViewCase from "@/components/CardCustomViewCase.vue"
   import SwipperCard from "@/components/SwipperCard.vue"
   export default {
-    components:{CardCustom,SwipperCard},
+    components:{CardCustomViewCase,SwipperCard},
     data(){
       return {img}
     }
