@@ -7,7 +7,7 @@
       <img src="@/assets/images/svgs/entrace1.svg" class="animate-pulse md:block md:h-[650px] w-[100vw] -mt-3 p-0  -left-10 hidden" alt="">
       
       <div class=" h-64">
-  <div class="flex flex-col justify-center items-center absolute md:top-1/4 md:left-1/4 md:ml-auto top-32 ">
+  <div class="flex flex-col justify-center items-center absolute  left-0 right-0 mr-auto ml-auto md:w-[50%] w-[70%] text-center m-auto md:ml-auto top-32 ">
     <div
       class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]"
     >
