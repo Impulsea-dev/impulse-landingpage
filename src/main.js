@@ -20,8 +20,8 @@ const app = createApp(App)
     .use(pinia)
     .use(VueSweetalert2)
     .use(Toast, {
-        toastClassName: "dashcode-toast",
-        bodyClassName: "dashcode-toast-body",
+        toastClassName: "impulse-toast",
+        bodyClassName: "impulse-toast-body",
     })
     .use(router)
     .use(VueClickAway)

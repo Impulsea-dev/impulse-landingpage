@@ -1,9 +1,9 @@
 <template>
-    <div>
-      <div class="relative items-center justify-center h-auto  dark:!bg-[#3C007C]  !p-12 w-[100vw] !-left-6 -top-6 ">
+    <div class=""> 
+      <div class="inline-block relative items-center justify-center bg-cover lg:dark:!bg-[#3C007C] !p-12 w-[100vw] !-left-6 -top-6 ">
      
    
-     <card :className="'dark:!bg-[#000000]  lg:w-[80%]  mt-6 relative ml-auto mr-auto'">
+     <card :className="'dark:!bg-[#000000]  lg:w-[80%]  mt-6 relative ml-auto mr-auto mb-auto'">
      <div class="grid grid-cols-1 lg:grid-cols-2 mt-3 ">
          <div class="flex flex-col">
            <h5 class="mb-6">
@@ -11,23 +11,30 @@
    
        </h5>
    
-       <div class="space-y-4">
+       <form class="space-y-4" @submit.prevent="onSubmit" ref="form"> 
    <Textinput
      label="Your Name"
-     name="v_Fullname"
+     name="from_name"
      type="text"
      placeholder="Your Name"
+     v-model="name"
+      :error="nameError"
    />
    <Textinput
      label="Email"
-     name="v_email"
+     name="reply_to"
      type="email"
      placeholder="Type your email"
+     v-model="email"
+      :error="emailError"
    />
-   <Textarea label="Message" name="pn4" placeholder="Your message" />
+   <Textarea label="Message" name="message" placeholder="Your message" 
+   v-model="text"
+      :error="textError"
+   />
    <Button text="Get in touch" btnClass="btn-primary block-btn"  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
    
-   </div>
+   </form>
    
    
          </div>
@@ -177,10 +184,9 @@
    
     
        </div>
-       <div class="flex flex-col lg:hidden  ml-auto  justify-center ">
-          
-          <div class=" grid grid-cols-1">
-            <div class="flex-col   w-44   gap-1 relative">
+       <div class="flex flex-col lg:hidden space-y-4   justify-center items-center w-44   mt-6 relative ml-auto mr-auto ">
+           
+            <div class="flex-col   w-44   gap-1 relative ">
               <div class="flex justify-center items-center   gap-2">
                 <svg
                   width="16"
@@ -237,7 +243,7 @@
               </p>
             </div>
             <div class="flex-col  w-44   gap-1 relative">
-              <div class="flex justify-cemter items-center gap-2">
+              <div class="flex justify-center items-center   gap-2">
                 <svg
                   width="16"
                   height="16"
@@ -270,7 +276,7 @@
             <div
               class="flex-col  w-44   gap-1 relative"
             >
-              <div class="flex justify-center items-center flex-grow-0 flex-shrink-0  gap-2">
+              <div class="flex justify-center items-center   gap-2">
                 <svg
                   width="16"
                   height="16"
@@ -307,12 +313,12 @@
                 </svg>
                 <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Email</p>
               </div>
-              <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
+              <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-center text-white/70">
                 yourcompany@email
               </p>
-            </div>
-          </div> 
+            </div> 
                 </div>
+                 
     </div>
   </template>
   <script>
@@ -320,13 +326,58 @@
   import Card from "@/components/Card/index.vue"
   import Button from "@/components/Button";
   import Textarea from "@/components/Textarea";
-  import contact from "@/assets/images/contact.webp"
+  import contact from "@/assets/images/contact.webp" 
+  import { useField, useForm } from "vee-validate";
+  import emailjs from '@emailjs/browser';
+import * as yup from "yup";
+import { ref } from 'vue';
+
   export default {
     components:{Card, Textinput,
     Button,Textarea},
     data(){
       return {contact}
-    }
+    },
+    methods:{
+      onSubmit(){
+      emailjs.sendForm('service_x8zg0jn', 'template_egrdfgl',this.$refs.form, '37pInE6bRBPRhMI6-')
+      .then((response) => {
+	   console.log('SUCCESS!', response.status, response.text);
+	}, (err) => {
+	   console.log('FAILED...', err);
+	});
+      // console.warn(values.email);
+    },
+    },
+    setup() {
+      
+ 
+    const schema = yup.object({
+      email: yup.string().required('Please fill the empty field').email("Please fill the field with a valid email address"),
+      name: yup.string().required('Please fill the empty field'),
+      text: yup.string().required('Please fill the empty field'),
+    });
+
+    const { handleSubmit } = useForm({
+      validationSchema: schema,
+    });
+ 
+
+    const { value: email, errorMessage: emailError } = useField("email");
+    const { value: text, errorMessage: textError } =useField("text");
+    const { value: name, errorMessage: nameError } =useField("name");
+
+    return {
+      
+      email,
+
+      emailError,
+      text,
+      textError,
+      name,
+      nameError,
+    };
+  },
   };
   </script>
   <style>
