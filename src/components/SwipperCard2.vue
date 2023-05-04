@@ -4,7 +4,7 @@
     >
       <div class="absolute -top-5 z-20 justify-center left-0 right-0 mr-auto ml-auto md:w-[20%] w-[70%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
   <p class="text-base font-bold text-center text-[#141414] ">
-    CASE STUDIES
+   {{ title }}
   </p>
 </div>
 
@@ -24,14 +24,12 @@
         <div class="md:mt-5 lg:mt-16 ml-10">
             <img :src="logo" alt="">
         </div>
-        <div class="mt-2 lg:mt-5 text-xl lg:text-3xl font-bold ml-10">Software Development</div>
+        <div class="mt-2 lg:mt-5 text-xl lg:text-3xl font-bold ml-10">{{ titleblog }}</div>
         <div class="mt-2 lg:mt-5 text-xs lg:text-sm leading-6 text-[#ffffffb3] ml-10 mr-10">
-            Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. 
-            Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. 
-            Enim consequat at vitae.
+          {{ subtitleblog }}
          </div>
         <div class="transform md:scale-75 lg:scale-100 mt-4 text-start ml-10">
-            <button type="button" class="bgbutton1">Open case study</button>
+            <button type="button" class="bgbutton1">{{ titleBtn }}</button>
         </div>
       </div>
     </swiper-slide>
@@ -58,7 +56,7 @@
 </template>
 
 <!-- script -->
-<script   setup>
+<script setup>
 import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Autoplay } from 'swiper';
@@ -73,6 +71,13 @@ import window from "@/mixins/window"
 
 const items = ref([img1, img2,img3]);
 const logo=ref(img)
+const props = defineProps({
+  title: String,
+  titleblog:String,
+  subtitleblog:String,
+  titleBtn:String
+})
+
 </script>
 <style>
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{

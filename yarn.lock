@@ -211,10 +211,10 @@
   "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.11.0.tgz"
   "version" "3.11.0"
 
-"@esbuild/win32-x64@0.16.17":
-  "integrity" "sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q=="
-  "resolved" "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz"
-  "version" "0.16.17"
+"@esbuild/linux-x64@0.16.17":
+  version "0.16.17"
+  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.16.17.tgz"
+  integrity sha512-mdPjPxfnmoqhgpiEArqi4egmBAMYvaObgn4poorpUaqmvzzbvqbowRllQ+ZgzGVMGKaPkqUmPDOOFQRUFDmeUw==
 
 "@eslint/eslintrc@^0.4.3":
   "integrity" "sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw=="
@@ -758,10 +758,10 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"cleave.js@^1.6.0":
-  "integrity" "sha512-ivqesy3j5hQVG3gywPfwKPbi/7ZSftY/UNp5uphnqjr25yI2CP8FS2ODQPzuLXXnNLi29e2+PgPkkiKUXLs/Nw=="
-  "resolved" "https://registry.npmjs.org/cleave.js/-/cleave.js-1.6.0.tgz"
-  "version" "1.6.0"
+cleave.js@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/cleave.js/-/cleave.js-1.6.0.tgz"
+  integrity sha512-ivqesy3j5hQVG3gywPfwKPbi/7ZSftY/UNp5uphnqjr25yI2CP8FS2ODQPzuLXXnNLi29e2+PgPkkiKUXLs/Nw==
 
 "clone@^2.1.1":
   "integrity" "sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w=="
@@ -2472,12 +2472,12 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"vue-cleave-component@^3.0.1":
-  "integrity" "sha512-brQGSDQF1e2gfpd4J3eojz5kWc267DL+20TIHY6Pla2IahcMZEd56zoyaKjkxB+F9gsXSoPnqVIh2sb6pbuTjQ=="
-  "resolved" "https://registry.npmjs.org/vue-cleave-component/-/vue-cleave-component-3.0.2.tgz"
-  "version" "3.0.2"
+vue-cleave-component@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/vue-cleave-component/-/vue-cleave-component-3.0.2.tgz"
+  integrity sha512-brQGSDQF1e2gfpd4J3eojz5kWc267DL+20TIHY6Pla2IahcMZEd56zoyaKjkxB+F9gsXSoPnqVIh2sb6pbuTjQ==
   dependencies:
-    "cleave.js" "^1.6.0"
+    cleave.js "^1.6.0"
 
 "vue-cli-plugin-tailwind@~3.0.0":
   "integrity" "sha512-bUWjfwGtJCeBU7pL4lD86RC+HsJAmAlYqr8e65NGC3q/ZBzC9KQs1Iy/vTyfDTnB7ZJm3huB+1a/m+17fdMZ8A=="
