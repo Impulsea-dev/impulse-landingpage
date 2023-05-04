@@ -55,7 +55,9 @@
     </div>
 
     <div class="mt-20 grid   grid-cols-1  gap-6  ">
- <SwipperCard2></SwipperCard2>
+ <SwipperCard2  :title="'CASE STUDIES'" :titleblog="'Software Development'"
+ :subtitleblog="'Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae.'"
+ :titleBtn="'Open case study'"/>
       </div>
 
     <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
