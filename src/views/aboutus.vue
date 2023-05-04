@@ -2,7 +2,7 @@
     <div>
       <Button text="About Us" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
-        <div class="text-6xl text-white">
+        <div class="text-6xl text-white mb-4">
           Leading the Industry for more than 30 years
         </div>    
         <div class="text-base text-[#ffffffb3]">
@@ -91,10 +91,10 @@
       <div class="grid grid-cols-1 md:gap-6   mb-10 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
         <CardCustomVision/>
        </div>
-       <div class="text-white text-center text-3xl">
+       <div class="text-white text-center text-3xl mb-3">
           <span>Our Team of Experts</span>
        </div>
-      <div class="grid lg:grid-cols-4 md:grid-cols-1 grid-cols-1 md:gap-4 md:space-y-0  mt-9">
+      <div class="md:grid lg:grid-cols-4 md:grid-cols-1 hidden md:gap-4 md:space-y-0  mt-9">
         
         <CardCustomTeam 
         paragraph="Chan Adrews"
@@ -117,6 +117,7 @@
         :img="chan3"
         />
       </div>
+      <SwipperCardTeam class="md:hidden flex"/>
       <div class="text-white text-center text-3xl mb-3">
         <span>Let’s Work Together </span>
       </div>
@@ -124,7 +125,7 @@
         <Button text="Get in touch" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
       </div>
   
-  
+    
   
     </div>
   </template>
@@ -144,7 +145,7 @@
   import people from "@/assets/images/svgs/people.svg"
   import drone from "@/assets/images/svgs/drone.svg"
   import CardCustom from "@/components/CardCustom.vue"
-  import SwipperCard from "@/components/SwipperCard.vue"
+  import SwipperCardTeam from "@/components/SwipperCardTeam.vue"
   import Button from "@/components/Button";
   import CardCustomMission from "@/components/CardCustomMission.vue"
   import CardCustomVision from "@/components/CardCustomVision.vue"
@@ -158,7 +159,8 @@
       CardCustomVision,
       CardCustomTeam,
       CardCustomValue,
-      SwipperCard},
+      SwipperCardTeam
+    },
     data(){
       return {client,projects,team,experience,img,chan,chan1,chan2,chan3,innovation,phone,trend,people,drone}      
     }

@@ -46,7 +46,7 @@
           "
         />
         <div v-if="window.width > 1024">
-          <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
+          <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
         </div>
         <div
           class="nav-tools flex items-center lg:space-x-6 space-x-3 rtl:space-x-reverse"
@@ -80,6 +80,9 @@ export default {
   },
 
   methods: {
+    btnContackUs(){
+      this.$router.push({name:"contactus"})
+    },
     navbarTypeClass() {
       switch (this.$store.themeSettingsStore.navbarType) {
         case "floating":

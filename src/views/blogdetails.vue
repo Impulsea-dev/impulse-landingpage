@@ -1,7 +1,7 @@
 <template>
- <div class="flex flex-wrap flex-col justify-start items-start w-[100vw] h-[2985px] relative">
+ <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]">
   
-  <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 absolute  " :src="headingImg" />
+  <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative " :src="headingImg" />
   <div class="flex flex-col justify-start items-start absolute top-72  gap-4">
     <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
       <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
@@ -22,7 +22,7 @@
   </div>
 
   <div
-    class="flex justify-center items-center absolute lg:left-[120px]  top-[560px] gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
+    class="flex justify-center items-center relative lg:left-[120px] mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
   >
     <svg
       width="16"
@@ -47,54 +47,35 @@
     </svg>
     <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">Back</p>
   </div>
-  <div class="flex flex-wrap flex-col justify-start items-start absolute md:pl-32 md:pr-32 top-[648px] gap-8">
-    <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-      <p class="flex-grow-0 flex-shrink-0   md:text-[32px] text-3xl font-bold text-left text-white">
-        Software Development
-      </p>
-      <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
-        <span
-          class="flex-grow-0 flex-shrink-0  text-base font-medium text-left text-white/70"
-          >Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue
-          lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros
-          ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae. Consequat
-          neque morbi vel odio ipsum. Erat quam tortor viverra ultrices ornare id tincidunt nulla
-          eget. Commodo sed scelerisque nisi dignissim. Congue purus est velit ultricies. Mus lorem
-          egestas vitae ut in faucibus. Orci eu adipiscing cursus diam porttitor. Fringilla iaculis
-          vestibulum libero erat tincidunt aliquet laoreet. Gravida ultricies cursus morbi varius
-          tincidunt cras sed. Nec lacus senectus at id proin aliquam justo id. Nulla amet mi et
-          felis ornare ac lacus vitae velit. Orci ullamcorper porta orci amet justo in a. Habitant
-          posuere lacinia eget nibh. Et fames pellentesque posuere sit risus. Integer consequat urna
-          nibh nunc. Volutpat mattis sed varius justo id nullam odio et hendrerit.</span
-        ><br /><span
-          class="flex-grow-0 flex-shrink-0 w-[1272px] text-base font-medium text-left text-white/70"
-          >Semper sem sed commodo vestibulum quis neque. Amet lectus dignissim quis magna et sem.
-          Volutpat ornare posuere dis dui. Etiam tortor at lacus molestie sit urna sapien non.
-          Interdum massa nibh egestas non ultricies libero odio augue. Dolor neque nunc ullamcorper
-          est. Dolor porttitor rhoncus mauris congue sed vel cursus nibh. Mattis nulla laoreet
-          posuere scelerisque et est. Mattis urna mattis mi sagittis purus. Venenatis nunc tellus
-          blandit consectetur.</span
-        ><br /><span
-          class="flex-grow-0 flex-shrink-0 w-[1272px] text-base font-medium text-left text-white/70"
-          >Auctor gravida turpis imperdiet purus tellus orci. Nullam faucibus est quis eget. Egestas
-          eu vitae in lectus ut congue vitae. Quis scelerisque suspendisse sodales dignissim lacus
-          felis urna. Vel tincidunt mollis nulla elementum id posuere. Nisi feugiat ullamcorper
-          aenean praesent vestibulum maecenas. Facilisis sed faucibus enim nisi in volutpat tellus
-          urna. Dolor adipiscing elementum ligula elementum tristique netus et iaculis. Venenatis
-          odio mi sapien sagittis id ut eu non convallis. Arcu amet adipiscing euismod urna eget.
-          Semper volutpat molestie sapien tellus vivamus massa cras elit. Ut leo pulvinar massa
-          egestas nunc urna quis. Nunc volutpat adipiscing tempus risus fringilla tortor tincidunt.
-          Blandit a elementum rutrum mauris ipsum vulputate augue. Pretium sed vitae a eget non
-          mauris metus ac nibh.</span
-        >
-      </p>
-    </div>
-    <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+  <div class="flex flex-col relative">
+    <div class="flex flex-wrap flex-col justify-start items-start md:pl-32 md:pr-32 gap-8">
+      <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0  gap-4">
+        <p class="flex-grow-0 flex-shrink-0   md:text-[32px] text-3xl font-bold text-left text-white">
+          Software Development
+        </p>
+        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
+          <span
+            class="flex-grow-0 flex-shrink-0  text-base font-medium text-left text-white/70"
+            >Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae. Consequat neque morbi vel odio ipsum. Erat quam tortor viverra ultrices ornare id tincidunt nulla eget. Commodo sed scelerisque nisi dignissim. Congue purus est velit ultricies. Mus lorem egestas vitae ut in faucibus. Orci eu adipiscing cursus diam porttitor. Fringilla iaculis vestibulum libero erat tincidunt aliquet laoreet. Gravida ultricies cursus morbi varius tincidunt cras sed. Nec lacus senectus at id proin aliquam justo id. Nulla amet mi et felis ornare ac lacus vitae velit. Orci ullamcorper porta orci amet justo in a. Habitant posuere lacinia eget nibh. Et fames pellentesque posuere sit risus. Integer consequat urna nibh nunc. Volutpat mattis sed varius justo id nullam odio et hendrerit.
+            Semper sem sed commodo vestibulum quis neque. Amet lectus dignissim quis magna et sem. Volutpat ornare posuere dis dui. Etiam tortor at lacus molestie sit urna sapien non. Interdum massa nibh egestas non ultricies libero odio augue. Dolor neque nunc ullamcorper est. Dolor porttitor rhoncus mauris congue sed vel cursus nibh. Mattis nulla laoreet posuere scelerisque et est. Mattis urna mattis mi sagittis purus. Venenatis nunc tellus blandit consectetur.
+            Auctor gravida turpis imperdiet purus tellus orci. Nullam faucibus est quis eget. Egestas eu vitae in lectus ut congue vitae. Quis scelerisque suspendisse sodales dignissim lacus felis urna. Vel tincidunt mollis nulla elementum id posuere. Nisi feugiat ullamcorper aenean praesent vestibulum maecenas. Facilisis sed faucibus enim nisi in volutpat tellus urna. Dolor adipiscing elementum ligula elementum tristique netus et iaculis. Venenatis odio mi sapien sagittis id ut eu non convallis. Arcu amet adipiscing euismod urna eget. Semper volutpat molestie sapien tellus vivamus massa cras elit. Ut leo pulvinar massa egestas nunc urna quis. Nunc volutpat adipiscing tempus risus fringilla tortor tincidunt. Blandit a elementum rutrum mauris ipsum vulputate augue. Pretium sed vitae a eget non mauris metus ac nibh.
+            </span>
+        </p>
+      </div>
+      <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+        <img class="w-[1272px] h-[568px] rounded-2xl" :src="headingImg" />
+        <p class="flex-grow-0 flex-shrink-0   md:text-[32px] text-3xl font-bold text-left text-white">
+         Software Development
+        </p>
+        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
+          <span
+            class="flex-grow-0 flex-shrink-0  text-base font-medium text-left text-white/70"
+            >Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae. Consequat neque morbi vel odio ipsum. Erat quam tortor viverra ultrices ornare id tincidunt nulla eget. Commodo sed scelerisque nisi dignissim. Congue purus est velit ultricies. Mus lorem egestas vitae ut in faucibus. Orci eu adipiscing cursus diam porttitor. Fringilla iaculis vestibulum libero erat tincidunt aliquet laoreet. Gravida ultricies cursus morbi varius tincidunt cras sed. Nec lacus senectus at id proin aliquam justo id. Nulla amet mi et felis ornare ac lacus vitae velit. Orci ullamcorper porta orci amet justo in a. Habitant posuere lacinia eget nibh. Et fames pellentesque posuere sit risus. Integer consequat urna nibh nunc. Volutpat mattis sed varius justo id nullam odio et hendrerit.</span>
+        </p>
+      </div> 
       <img class="w-[1272px] h-[568px] rounded-2xl" :src="headingImg" />
-
     </div>
-    
-  </div>
+   </div>
    
 </div> 
 </template>

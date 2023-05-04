@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="bg-[#3C007C] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -70,6 +71,7 @@
             <div class="timesaving"></div>
         </div>
     </div>
+</div>
  
 </template>
 <script>

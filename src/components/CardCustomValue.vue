@@ -1,6 +1,6 @@
 <template>
 <div class="flex flex-wrap w-full justify-center">
-  <div class="bg-[#111315] border-r-2 border-gray-500/20 rounded-md p-6 text-center" 
+  <div class="bg-[#111315] border-r-2 border-gray-500/20 p-6 text-center" 
   :class="classBackground">
     <div class="text-white w-20 h-20 rounded-full flex items-center justify-center mb-5 mx-auto">
         <img
