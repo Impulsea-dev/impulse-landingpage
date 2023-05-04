@@ -1,47 +1,39 @@
 <template>
-  <div class="grid grid-cols-1 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
-    <CardCustomProduct :class="'h-[40vh] overflow-hidden absolute'"/>
-    <div class="grid md:grid-cols-3 grid-cols-1 relative">
-      <CardCustomDev
-      index="1"
-        :img="solutions"
-        title="Customized Solutions"
-        paragraph="Our team works closely with each client to understand their unique needs and business objectives. We then develop customized solutions that are tailored to their specific requirements."
-       /> 
-  
-       <CardCustomDev
-       index="2"
-        :img="expertise"
-        title="Expertise"
-        paragraph="Our team consists of experienced professionals who have a deep understanding of the telecommunication industry. They are equipped with the knowledge and skills to deliver cuttingedge solutions that meet our clients' business needs"
-        /> 
-  
-       <CardCustomDev
-       index="3"
-        title="Quality Assurance"
-        paragraph="We follow a rigorous quality assurance process to ensure that our solutions are of the highest quality. Our team conducts thorough testing and quality checks to ensure that our clients receive solutions that are reliable, secure, and user-friendly."
-        :img="success"
-       /> 
-    </div>
-    <div class="grid md:grid-cols-2 grid-cols-1 -top-6 relative  ">
-
-      <CardCustomDev
-      index="4"
-        title="Timely Delivery"
-        paragraph="We understand the importance of meeting deadlines and delivering solutions on time. Our team works diligently to ensure that our solutions are delivered within the agreed-upon timeframe."
-        :img="clock"
-       /> 
-  
-       <CardCustomDev
-       index="5"
-        title="Continuous Support"
-        paragraph="Our commitment to our clients does not end with the delivery of our solutions. We offer continuous support and maintenance services to ensure that our clients' applications are running smoothly and efficiently"
-        :img="data"
-       />       
-    </div>
+  <div class="grid grid-cols-1 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative -!pb-[2px]">
+    <CardCustomProduct :class="'h-[40vh] overflow-hidden absolute '"/>
+    <!-- Grid Value Start-->
+      <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 -mt-6 border-t-2">
+        <CardCustomDev
+          title="Customized Solutions"
+          paragraph="Our team works closely with each client to understand their unique needs and business objectives. We then develop customized solutions that are tailored to their specific requirements."
+          :img="solutions"
+         /> 
+         <CardCustomDev
+          title="Expertise"
+          paragraph="Our team consists of experienced professionals who have a deep understanding of the telecommunication industry. They are equipped with the knowledge and skills to deliver cuttingedge solutions that meet our clients' business needs"
+          :img="expertise"
+         /> 
+         <CardCustomDev
+          title="Quality Assurance"
+          paragraph="We follow a rigorous quality assurance process to ensure that our solutions are of the highest quality. Our team conducts thorough testing and quality checks to ensure that our clients receive solutions that are reliable, secure, and user-friendly."
+          :img="success"
+         /> 
+      </div>
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 border-t-2 border-white">
+        <CardCustomDev
+          title="Timely Delivery"
+          paragraph="We understand the importance of meeting deadlines and delivering solutions on time. Our team works diligently to ensure that our solutions are delivered within the agreed-upon timeframe."
+          :img="clock"
+         /> 
+         <CardCustomDev
+          title="Continuous Support"
+          paragraph="Our commitment to our clients does not end with the delivery of our solutions. We offer continuous support and maintenance services to ensure that our clients' applications are running smoothly and efficiently"
+          :img="data"
+         /> 
+      </div>
+    <!-- Grid Value End -->
   </div>
-   
-  </template>
+</template>
   <script>  
   import CardCustomProduct from "@/components/CardCustomProduct.vue"
   import CardCustomDev from "@/components/CardCustomDev.vue"
@@ -62,6 +54,6 @@
   };
   </script>
   <style>
-  
+ 
   </style>
   

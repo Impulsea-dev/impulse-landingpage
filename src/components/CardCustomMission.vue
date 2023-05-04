@@ -87,10 +87,6 @@ export default {
       type: String,
       default: '',
     }, 
-    img: {
-      type: String,
-      default: '',
-    },
     classBackground: {
       type: String,
       default: '',

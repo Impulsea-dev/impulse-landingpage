@@ -84,10 +84,6 @@
         </div>
       </div>      
       <!-- Grid Value End -->
-      <!-- <div class="grid   grid-cols-1  gap-6  ">
-      <SwipperCard></SwipperCard>
-        </div> -->
-      
       <div class="grid grid-cols-1 md:gap-6   mb-10 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
         <CardCustomVision/>
        </div>
