@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="grid lg:grid-rows-2 md:grid-rows-2 grid-rows-1 md:gap-6 md:space-y-0 space-x-14 mb-12 mt-4">
-        <div class="text-6xl text-white text-bold">
+        <div class="text-6xl text-white text-bold mb-3">
           Specialised telecom software delivered with deep industry experience
         </div>    
         <div class="text-base text-[#ffffffb3]">
