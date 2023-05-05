@@ -70,7 +70,7 @@
 </div>
 
     <!-- Grid Cards Start-->
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6 pr-11 pl-11">
       
   <CardCustom 
   title="Business Inteligence and Analytics"
@@ -107,7 +107,7 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="mt-20 grid   grid-cols-1  gap-6  ">
+    <div class="mt-20 grid   grid-cols-1  gap-6 pr-20 pl-20 ">
       <SwipperCard2  :title="'CASE STUDIES'" :titleblog="'Software Development'"
  :subtitleblog="'Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae.'"
  :titleBtn="'Open case study'"/>
@@ -115,15 +115,15 @@
 
  
       <div class="h-20"></div>
-
-      <Card :className="'relative dark:!bg-[#141414]  mt-4'">
+<div class="pr-11 pl-11">
+  <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
         <div class="absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[16%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] bg-[#e2e8ea]">
   <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">
     TELECOM SOLUTIONS
   </p>
 </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="space-y-4 mt-4 ">
           <div class="grid   grid-cols-1 lg:grid-cols-2  gap-6  ">
  <CardCustomTelemetric></CardCustomTelemetric>
  <card-custom-boost></card-custom-boost>
@@ -136,6 +136,8 @@
  
     </Card>
 
+</div>
+     
     <div class="h-20"></div>
 
     <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
@@ -156,7 +158,7 @@
       <p class=" w-[327px] text-[32px] font-bold text-center text-white">Let’s Work Together</p>
     </div>
    
-<div class="flex justify-center items-center gap-6">
+<div class="flex justify-center items-center gap-6 mb-6">
   <div
     class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-[11px] rounded-lg"
     style="background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);"
