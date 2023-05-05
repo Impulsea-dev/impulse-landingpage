@@ -333,7 +333,7 @@
   import { useField, useForm } from "vee-validate";
   import emailjs from '@emailjs/browser';
 import * as yup from "yup";
-import { ref } from 'vue';
+import { ref ,inject} from 'vue';
 
   export default {
     components:{Card, Textinput,
@@ -343,16 +343,21 @@ import { ref } from 'vue';
     },
     methods:{
       onSubmit(){
-      emailjs.sendForm('service_x8zg0jn', 'template_egrdfgl',this.$refs.form, '37pInE6bRBPRhMI6-')
+        const vm=this;
+       this.handleSubmit(()=>{
+        emailjs.sendForm('service_x8zg0jn', 'template_egrdfgl',vm.$refs.form, '37pInE6bRBPRhMI6-')
       .then((response) => {
 	   console.log('SUCCESS!', response.status, response.text);
 	}, (err) => {
 	   console.log('FAILED...', err);
 	});
+       })
       // console.warn(values.email);
     },
     },
     setup() {
+      const swal = inject('$swal')
+      const form = ref(null);
       
  
     const schema = yup.object({
@@ -370,9 +375,36 @@ import { ref } from 'vue';
     const { value: text, errorMessage: textError } =useField("text");
     const { value: name, errorMessage: nameError } =useField("name");
 
+
+    const onSubmit=handleSubmit(()=>{
+      
+        emailjs.sendForm('service_x8zg0jn', 'template_egrdfgl',form.value, '37pInE6bRBPRhMI6-')
+      .then((response) => {
+	  //  console.log('SUCCESS!', response.status, response.text);
+     if(response.status==200){
+      swal.fire({
+        title: 'Thanks!',
+        text: 'Your request have been sent!',
+        icon: 'success',
+          background: "#1e293b",
+        showConfirmButton: false,
+        timer: 1000,
+      });
+      email.value="";
+      name.value="";
+      text.value="";
+     }
+	}, (err) => {
+	   console.log('FAILED...', err);
+	}); 
+})
+
     return {
+      form,
       
       email,
+      onSubmit,
+      
 
       emailError,
       text,
