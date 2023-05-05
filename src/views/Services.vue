@@ -1,4 +1,5 @@
 <template>
+   <div>
     <div class="grid grid-cols-1 mb-20 mt-10 sm:mt-20">
         <div>
             <div class="sm:w-[664px] sm:h-36 text-[40px] sm:text-[50px] md:text-[64px] text-white sm:leading-[72px] font-semibold font-Manrope">
@@ -89,6 +90,7 @@
         </div>
     </div>
 
+   </div>
 </template>
 <script>
 import CardCustom from "@/components/CardCustom.vue"
