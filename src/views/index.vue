@@ -11,37 +11,37 @@
     <div
       class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]"
     >
-      <p class="flex-grow-0 flex-shrink-0 text-xs font-medium text-center text-white">
+      <p class="flex-grow-0 flex-shrink-0 text-xl font-medium text-center text-white">
         Telecom Expertise meets Saas innovation.
       </p>
     </div>
-    <div class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2">
-      <p class="flex-grow-0 flex-shrink-0  text-[40px] text-center text-white">
-        <span class="flex-grow-0 flex-shrink-0  text-[40px] text-center text-white"
+    <div class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 mt-3">
+      <p class="flex-grow-0 flex-shrink-0  text-6xl text-center text-white">
+        <span class="flex-grow-0 flex-shrink-0  text-6xl text-center text-white"
           >Leading the way in</span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-[40px] font-bold text-center text-white"
+          class="flex-grow-0 flex-shrink-0  text-6xl font-bold text-center text-white"
         >
         </span
         ><br /><span
-          class="flex-grow-0 flex-shrink-0  text-[40px] font-semibold text-center text-white"
+          class="flex-grow-0 flex-shrink-0  text-6xl font-semibold text-center text-white"
           >Telecom Analytics </span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-[40px] font-bold text-center text-white"
+          class="flex-grow-0 flex-shrink-0  text-6xl font-bold text-center text-white"
         >
         </span
-        ><span class="flex-grow-0 flex-shrink-0  text-[40px] text-center text-white"
+        ><span class="flex-grow-0 flex-shrink-0  text-6xl text-center text-white"
           >and </span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-[40px] font-bold text-center text-white"
+          class="flex-grow-0 flex-shrink-0  text-6xl font-bold text-center text-white"
         >
         </span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-[40px] font-semibold text-center text-white"
+          class="flex-grow-0 flex-shrink-0  text-6xl font-semibold text-center text-white"
           >Sales</span
         >
       </p>
-      <p class="flex-grow-0 flex-shrink-0 p-4 text-sm text-center text-white/70">
+      <p class="flex-grow-0 flex-shrink-0 p-4 text-lg text-center text-white/70">
         Maximize revenue, optimize processes, and reduce cost with our solutions
       </p>
      <div class="flex-grow-0 flex-shrink-0 p-12"> <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" /> </div>
