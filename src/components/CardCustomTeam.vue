@@ -1,5 +1,5 @@
 <template>
-<div class="flex flex-wrap w-full justify-center">
+<div class="flex flex-wrap w-full justify-center ">
   <div class="bg-dark p-10 text-center" 
   :class="classBackground">
     <div class="text-white w-80 h-96 rounded-full flex items-center justify-center mb-16 mx-auto">

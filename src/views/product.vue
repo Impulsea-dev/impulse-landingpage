@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-1 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative -!pb-[2px]">
-    <CardCustomProduct :class="'h-[40vh] overflow-hidden absolute '"/>
+  <div class="grid grid-cols-1 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative -!pb-[2px] ">
+    <CardCustomProduct :class="'h-[40vh] overflow-hidden absolute'"/>
     <!-- Grid Value Start-->
       <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 -mt-6 border-t-2">
         <CardCustomDev
