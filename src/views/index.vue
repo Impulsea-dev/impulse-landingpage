@@ -11,37 +11,37 @@
     <div
       class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]"
     >
-      <p class="flex-grow-0 flex-shrink-0 text-xl font-medium text-center text-white">
+      <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs  font-medium text-center text-white">
         Telecom Expertise meets Saas innovation.
       </p>
     </div>
-    <div class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 mt-3">
-      <p class="flex-grow-0 flex-shrink-0  text-6xl text-center text-white">
-        <span class="flex-grow-0 flex-shrink-0  text-6xl text-center text-white"
+    <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
+      <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
+        <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3"
           >Leading the way in</span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-6xl font-bold text-center text-white"
+          class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white"
         >
         </span
         ><br /><span
-          class="flex-grow-0 flex-shrink-0  text-6xl font-semibold text-center text-white"
+          class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s"
           >Telecom Analytics </span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-6xl font-bold text-center text-white"
+          class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3"
         >
         </span
-        ><span class="flex-grow-0 flex-shrink-0  text-6xl text-center text-white"
+        ><span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3"
           >and </span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-6xl font-bold text-center text-white"
+          class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3"
         >
         </span
         ><span
-          class="flex-grow-0 flex-shrink-0  text-6xl font-semibold text-center text-white"
+          class="flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:mb-3"
           >Sales</span
         >
       </p>
-      <p class="flex-grow-0 flex-shrink-0 p-4 text-lg text-center text-white/70">
+      <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
         Maximize revenue, optimize processes, and reduce cost with our solutions
       </p>
      <div class="flex-grow-0 flex-shrink-0"> <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" /> </div>
@@ -70,7 +70,7 @@
 </div>
 
     <!-- Grid Cards Start-->
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6 pr-11 pl-11">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6 lg:pr-11 lg:pl-11">
       
   <CardCustom 
   title="Business Inteligence and Analytics"
@@ -107,7 +107,7 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="mt-20 grid   grid-cols-1  gap-6 pr-20 pl-20 ">
+    <div class="mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-20 ">
       <SwipperCard2  :title="'CASE STUDIES'" :titleblog="'Software Development'"
  :subtitleblog="'Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae.'"
  :titleBtn="'Open case study'"/>
@@ -115,7 +115,7 @@
 
  
       <div class="h-20"></div>
-<div class="pr-11 pl-11">
+<div class="lg:pr-11 lg:pl-11">
   <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
         <div class="absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[16%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] bg-[#e2e8ea]">
   <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">

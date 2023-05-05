@@ -12,7 +12,7 @@
            
           </div>
           <div class="flex-col text-start  text-base">
-            Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus eleifend blandit.
+            Copyright © 2023 Impulse. All rights reserved.
 
 </div>
         </div>
