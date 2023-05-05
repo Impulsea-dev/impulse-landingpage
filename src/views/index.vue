@@ -44,7 +44,7 @@
       <p class="flex-grow-0 flex-shrink-0 p-4 text-sm text-center text-white/70">
         Maximize revenue, optimize processes, and reduce cost with our solutions
       </p>
-     <div class="flex-grow-0 flex-shrink-0 p-12"> <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  /> </div>
+     <div class="flex-grow-0 flex-shrink-0 p-12"> <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" /> </div>
     </div>
   </div>
 </div>
@@ -193,6 +193,11 @@ export default {
   components:{SwipperCard2,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
     return {img,img1,bi,dev,bpo,consult}
+  },
+  methods:{
+    btnContackUs(){
+      this.$router.push({name:"contactus"})
+    }
   }
 };
 </script>

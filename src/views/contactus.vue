@@ -3,15 +3,15 @@
       <div class="inline-block relative items-center justify-center bg-cover lg:dark:!bg-[#3C007C] !p-12 w-[100vw] !-left-6 -top-6 ">
      
    
-     <card :className="'dark:!bg-[#000000]  lg:w-[80%]  mt-6 relative ml-auto mr-auto mb-auto'">
-     <div class="grid grid-cols-1 lg:grid-cols-2 mt-3 ">
-         <div class="flex flex-col">
-           <h5 class="mb-6">
+     <card :className="'dark:!bg-[#000000] mt-6  ml-auto mr-auto mb-auto relative'">
+     <div class="grid grid-cols-1 lg:grid-cols-3 mt-3 ">
+         <div class="flex flex-col col-span-1">
+           <h5 class="mb-9">
          Send project details. Our team will contact you ASAP.
    
        </h5>
    
-       <form class="space-y-4" @submit.prevent="onSubmit" ref="form"> 
+       <form class="space-y-6" @submit.prevent="onSubmit" ref="form"> 
    <Textinput
      label="Your Name"
      name="from_name"
@@ -38,9 +38,9 @@
    
    
          </div>
-         <div class="hidden flex-col lg:flex lg:ml-10  ">
-          
-   <div class=" grid grid-cols-3">
+         <div class="hidden flex-col lg:flex lg:ml-10 lg:mr-10  mt-10 col-span-2 ">
+         
+   <div class=" grid grid-cols-3 mb-3">
      <div class="flex-col  w-44   gap-1 relative">
        <div class="flex justify-start items-center flex-grow-0 flex-shrink-0  gap-2">
          <svg
@@ -129,7 +129,7 @@
        </p>
      </div>
      <div
-       class="flex-col  w-44   gap-1 relative"
+       class="flex-col  w-48   gap-1 relative"
      >
        <div class="flex justify-start items-center flex-grow-0 flex-shrink-0  gap-2">
          <svg
@@ -169,11 +169,14 @@
          <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Email</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
-         yourcompany@email
+         yourcompany@email.com
        </p>
      </div>
    </div>
-    <img class="w-[636px] h-auto rounded-2xl" :src="contact" />
+   <div class="w-[688px] h-[347px]">
+    <img class="w-[688px] h-[347px] rounded-2xl object-fill" :src="contact" />
+            
+          </div>
          </div>
    
      </div>
