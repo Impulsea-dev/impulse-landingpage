@@ -35,14 +35,10 @@ const routes = [
         name: "viewcases",
         component: () => import("@/views/viewcases.vue"),
       },
+    
       {
         path: "/blog",
         name: "blog",
-        component: () => import("@/views/viewcases.vue"),
-      },
-      {
-        path: "/newsandblog",
-        name: "newsandblog",
         component: () => import("@/views/newsandblog.vue"),
       },
       {
