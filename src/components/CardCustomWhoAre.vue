@@ -3,7 +3,7 @@
   style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"
 >
 
-    <div class="grid md:grid-cols-2 grid-cols-1 text-white items-center justify-start mx-auto">
+    <div class="grid md:grid-cols-2 grid-cols-1 text-white items-center justify-start mx-auto mt-10">
        <div class="flex-row p-6">
         <div class="flex flex-col justify-start items-start gap-8">
   <div
@@ -64,7 +64,7 @@
 </div>
      
        </div> 
-       <div class="flex-row flex-1 h-full">
+       <div class="flex-row flex-1 h-full p-12">
         
         <img
       :src="img"
