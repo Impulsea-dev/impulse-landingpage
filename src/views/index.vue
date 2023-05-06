@@ -52,7 +52,7 @@
     </section>
      
 
-    <div class="grid grid-cols-1 md:gap-6   mb-6 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
+    <!-- <div class="grid grid-cols-1 md:gap-6   mb-6 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
       <CardCustomWhoAre 
   title="Business Inteligence and Analytics"
    paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
@@ -60,7 +60,74 @@
    
    classBackground="cardDisplay"
    /> 
+    </div> -->
+    <div class="w-[1512px] h-[712px] relative">
+  <div
+    class="w-[1512px] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"
+    style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"
+  ></div>
+  <div class="flex flex-col justify-start items-start absolute left-20 top-[148px] gap-8">
+    <div
+      class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] bg-black"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
     </div>
+    <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      <p class="flex-grow-0 flex-shrink-0 w-[666px] font-semibold text-left text-white">
+        <span
+          class="flex-grow-0 flex-shrink-0 w-[666px] text-[32px] font-semibold text-left text-white"
+          >Impulse is a reliable ally to prominent technology companies and telecommunications
+          firms.</span
+        ><span
+          class="flex-grow-0 flex-shrink-0 w-[666px] text-base font-semibold text-left text-white"
+        >
+        </span>
+      </p>
+      <p class="flex-grow-0 flex-shrink-0 w-[606px] text-base font-medium text-left text-white/70">
+        We aim to assist our partners in increasing their revenue, minimizing expenses, and
+        optimizing their processes through our solutions via automaton and analytics. Our priority
+        is to build relationships with clients for mutual success, through open communication,
+        teamwork, and a positive work environment that meets their objectives.
+      </p>
+    </div>
+    <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-4">
+      <div
+        class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
+          Our Story
+        </p>
+      </div>
+      <div
+        class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-2 py-3 rounded-lg"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
+          Get in touch
+        </p>
+        <svg
+          width="9"
+          height="16"
+          viewBox="0 0 9 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-[9px] h-4 relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g clip-path="url(#clip0_61_649)">
+            <path
+              d="M5.75113 7.99921L0.452374 2.13865C0.000250243 1.67598 0.000250243 0.927143 0.452374 0.462728C0.904498 5.4121e-05 1.63494 5.4121e-05 2.08705 0.462728L8.54814 7.15953C9.00025 7.62391 9.00025 8.37449 8.54814 8.83716L2.08705 15.534C1.63664 16.0001 0.904498 15.9966 0.452374 15.534C0.000250243 15.073 0.000250243 14.3224 0.452374 13.858L5.75113 7.99921Z"
+              fill="white"
+            ></path>
+          </g>
+          <defs>
+            <clipPath id="clip0_61_649"><rect width="9" height="16" fill="white"></rect></clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <img class="w-[572px] h-[552px] absolute left-[809px] top-[79px] rounded-2xl" src="bg.png" />
+</div>
     <div class="h-20"></div>
 
    
