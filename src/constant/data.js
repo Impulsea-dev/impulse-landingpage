@@ -37,19 +37,19 @@ export const menuItems = [
     ],
   },
  
-  {
-    title: "Case Studies",
-    icon: "iconoir:page-search",
-    link: "/casestudies",
-  },
+  // {
+  //   title: "Case Studies",
+  //   icon: "iconoir:page-search",
+  //   link: "/casestudies",
+  // },
 
-  {
-    title: "Blog",
-    icon: "fluent-mdl2:blog",
-    link: "/blog",
+  // {
+  //   title: "Blog",
+  //   icon: "fluent-mdl2:blog",
+  //   link: "/blog",
 
     
-  },
+  // },
 ]
 // menuseetins
 
@@ -181,19 +181,19 @@ export const topMenu = [
     ],
   },
  
-  {
-    title: "Case Studies",
-    icon: "iconoir:page-search",
-    link: "/casestudies",
-  },
+  // {
+  //   title: "Case Studies",
+  //   icon: "iconoir:page-search",
+  //   link: "/casestudies",
+  // },
 
-  {
-    title: "Blog",
-    icon: "fluent-mdl2:blog",
-    link: "/blog",
+  // {
+  //   title: "Blog",
+  //   icon: "fluent-mdl2:blog",
+  //   link: "/blog",
 
     
-  },
+  // },
 ];
 
  
