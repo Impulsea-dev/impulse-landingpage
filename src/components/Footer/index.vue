@@ -21,45 +21,25 @@
         
         <div class="flex flex-col space-y-6">
             <a
-            href="#"
+            href="/aboutus"
             target="_blank"
             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
           >
             About us
           </a>
           <a
-            href="#"
+            href="/services"
             target="_blank"
             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
           >
             Services
           </a>
-          <a
-            href="#"
-            target="_blank"
-            class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
-          >
-            Products
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
-          >
-            Blog
-          </a>
+      
         </div> 
         <div class="flex flex-col space-y-6">
+          
           <a
-            href="#"
-            target="_blank"
-            class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
-         
-          >
-            Twitter
-          </a>
-          <a
-            href="#"
+            href="https://www.linkedin.com/company/impulseltd/"
             target="_blank"
             class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
          

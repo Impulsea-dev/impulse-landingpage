@@ -61,7 +61,7 @@
    classBackground="cardDisplay"
    /> 
     </div> -->
-    <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6">
+    <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6 lg:flex md:hidden hidden">
   <div
     class="w-[100vw] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"
     style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"
@@ -101,36 +101,60 @@
         </p>
       </Button>
       <Button
-        :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-3 py-3 rounded-lg'" 
+      icon="material-symbols:chevron-right"
+        :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-3 py-3 rounded-lg text-base font-semibold text-left text-white'" 
         @click="btnContackUs"
-      >
-        <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
-          Contact Us
-        </p>
-        <svg
-          width="9"
-          height="16"
-          viewBox="0 0 9 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0 w-[9px] h-4 relative"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g clip-path="url(#clip0_61_649)">
-            <path
-              d="M5.75113 7.99921L0.452374 2.13865C0.000250243 1.67598 0.000250243 0.927143 0.452374 0.462728C0.904498 5.4121e-05 1.63494 5.4121e-05 2.08705 0.462728L8.54814 7.15953C9.00025 7.62391 9.00025 8.37449 8.54814 8.83716L2.08705 15.534C1.63664 16.0001 0.904498 15.9966 0.452374 15.534C0.000250243 15.073 0.000250243 14.3224 0.452374 13.858L5.75113 7.99921Z"
-              fill="white"
-            ></path>
-          </g>
-          <defs>
-            <clipPath id="clip0_61_649"><rect width="9" height="16" fill="white"></rect></clipPath>
-          </defs>
-        </svg>
-      </Button>
+        text="Contact Us"
+        iconPosition="right"
+     />
+     
+        
+      
     </div>
   </div>
   <img class="w-[512px] h-[552px] absolute  xl:right-16 top-[79px] rounded-2xl" :src="whoarewe" />
 </div>
+</div>
+<!-- mobile -->
+<div class="w-[100vw] relative lg:hidden md:grid md:grid-cols-1 grid grid-cols-1 -left-[16.86px] pl-5" style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);">
+  <!-- <div
+    class="w-[100vw] h-[880px]   top-[10px] rounded-lg"
+    style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"
+  ></div> -->
+  <div
+    class="flex justify-center items-center  left-6 top-[60px] gap-2 px-8 py-3 rounded-[32px] bg-black"
+  >
+    <p class="flex-grow-0 flex-shrink-0 text-xs font-bold text-center text-white">Who are We</p>
+  </div>
+  <div class="flex flex-col justify-start items-start left-6 top-28 gap-4">
+    <p class="flex-grow-0 flex-shrink-0 w-[85vw] text-2xl font-semibold text-left text-white">
+      Impulse is a reliable ally to prominent technology companies and telecommunications firms.
+    </p>
+    <p class="flex-grow-0 flex-shrink-0 w-[85vw] text-base font-medium text-left text-white/70 ">
+      We aim to assist our partners in increasing their revenue, minimizing expenses, and optimizing
+      their processes through our solutions via automaton and analytics. Our priority is to build
+      relationships with clients for mutual success, through open communication, teamwork, and a
+      positive work environment that meets their objectives.
+    </p>
+  </div>
+  <div class="flex justify-center items-center left-6 gap-4 mt-14 mb-3">
+    <Button
+        :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white'"
+         @click="btnAboutUs"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
+          Our Story
+        </p>
+      </Button>
+      <Button
+      icon="material-symbols:chevron-right"
+        :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-3 py-3 rounded-lg text-base font-semibold text-left text-white'" 
+        @click="btnContackUs"
+        text="Contact Us"
+        iconPosition="right"
+     />
+  </div>
+  <img class="w-[382px] h-[368px]  left-[23px]  rounded-lg mb-4" :src="whoarewe" />
 </div>
     <div class="h-20"></div>
 
@@ -168,7 +192,7 @@
    
   <CardCustom 
   title="Consulting"
-   paragraph="Our data consultinng services for the telecommunications industry offer tailored solutions for analyzing complex data, optimizing opera9ons, and driving growth. Gain valuable insights and stay ahead of the competition."
+   paragraph="Our data consultinng services for the telecommunications industry offer tailored solutions for analyzing complex data, optimizing operations, and driving growth. Gain valuable insights and stay ahead of the competition."
    :img="consult"
    
    classBackground="cardDisplay"
@@ -178,9 +202,9 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-20 ">
-      <SwipperCard2  :title="'CASE STUDIES'" :titleblog="'Software Development'"
- :subtitleblog="'Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae.'"
+    <div class="w-[84vw] max-h-auto mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-40 ">
+      <SwipperCardHome  :title="'Blog Posts'" :titleblog="'Telco Innovation'"
+ :subtitleblog="'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist. '"
  :titleBtn="'Open case study'"/>
       </div>
 
@@ -260,13 +284,13 @@ import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
 import CardCustomBoost from "@/components/CardCustomBoost.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
-import SwipperCard2 from "@/components/SwipperCard2.vue"
+import SwipperCardHome from "@/components/SwipperCardHome.vue"
 import img1 from "@/assets/images/all-img/image-1.webp";
 import window from "@/mixins/window"
 
 export default {
   mixins: [window],
-  components:{SwipperCard2,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
+  components:{SwipperCardHome,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
     return {img,img1,bi,dev,bpo,consult,whoarewe}
   },
