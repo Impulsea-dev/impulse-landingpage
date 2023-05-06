@@ -3,15 +3,17 @@
       <Button text="About Us" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
         <div class="text-6xl text-white mb-4">
-          Leading the Industry for more than 30 years
+          Leading the Industry with unmatched expertise and innovation
         </div>    
         <div class="text-base text-[#ffffffb3]">
-          Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals with more than 30 years of collective experience in the field.
-        </div>     
+          Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals
+With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.
+
+          </div>     
       </div>
       
       <!-- Grid Cards Start-->
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-10">
+      <!-- <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-10">
         
         <CardCustom 
         title="60+ Client"
@@ -44,7 +46,7 @@
         classBackground="cardDisplay"
         /> 
   
-      </div>
+      </div> -->
       <!-- Grid Cards End -->
       
       <div class="grid grid-cols-1 md:gap-6   mb-10 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
@@ -90,7 +92,7 @@
        <div class="text-white text-center text-3xl mb-3">
           <span>Our Team of Experts</span>
        </div>
-      <div class="md:grid lg:grid-cols-4 md:grid-cols-1 hidden md:gap-4 md:space-y-0  mt-9">
+      <!-- <div class="md:grid lg:grid-cols-4 md:grid-cols-1 hidden md:gap-4 md:space-y-0  mt-9">
         
         <CardCustomTeam 
         paragraph="Chan Adrews"
@@ -113,13 +115,15 @@
         :img="chan3"
         />
       </div>
-      <SwipperCardTeam class="md:hidden flex"/>
-      <div class="text-white text-center text-3xl mb-3">
+      <SwipperCardTeam class="md:hidden flex"/> -->
+      <div class="mb-20">
+      <div class="text-white text-center text-3xl mb-5">
         <span>Let’s Work Together </span>
       </div>
       <div class="text-white text-center text-3xl">
-        <Button text="Get in touch" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
+        <Button text="Get in touch" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" link="/contactus" />
       </div>
+    </div>
   
     
   

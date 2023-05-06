@@ -61,17 +61,18 @@
    classBackground="cardDisplay"
    /> 
     </div> -->
-    <div class="w-[1512px] h-[712px] relative">
+    <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6">
   <div
-    class="w-[1512px] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"
+    class="w-[100vw] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"
     style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"
   ></div>
-  <div class="flex flex-col justify-start items-start absolute left-20 top-[148px] gap-8">
+  <div class="flex flex-row w-[100vw] h-[712px justify-center items-center ml-auto mr-auto ">
+  <div class="flex flex-col justify-start items-start absolute left-16 top-[148px] gap-8">
     <div
-      class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] bg-black"
-    >
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
-    </div>
+    class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] bg-[#000000] border-white"
+  >
+    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
+  </div>
     <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
       <p class="flex-grow-0 flex-shrink-0 w-[666px] font-semibold text-left text-white">
         <span
@@ -91,18 +92,20 @@
       </p>
     </div>
     <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-4">
-      <div
-        class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white"
+      <Button
+        :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white'"
+         @click="btnAboutUs"
       >
         <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
           Our Story
         </p>
-      </div>
-      <div
-        class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-2 py-3 rounded-lg"
+      </Button>
+      <Button
+        :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-3 py-3 rounded-lg'" 
+        @click="btnContackUs"
       >
         <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
-          Get in touch
+          Contact Us
         </p>
         <svg
           width="9"
@@ -123,10 +126,11 @@
             <clipPath id="clip0_61_649"><rect width="9" height="16" fill="white"></rect></clipPath>
           </defs>
         </svg>
-      </div>
+      </Button>
     </div>
   </div>
-  <img class="w-[572px] h-[552px] absolute left-[809px] top-[79px] rounded-2xl" src="bg.png" />
+  <img class="w-[512px] h-[552px] absolute  xl:right-16 top-[79px] rounded-2xl" :src="whoarewe" />
+</div>
 </div>
     <div class="h-20"></div>
 
@@ -231,7 +235,7 @@
     style="background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);"
   >
     <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
-      Get in touch
+      Contact Us
     </p>
   </div>
 </div>
@@ -246,6 +250,7 @@ import img from "@/assets/images/logo/logo-white.svg"
 import bi from "@/assets/images/svgs/bi.svg"
 import dev from "@/assets/images/svgs/dev.svg"
 import bpo from "@/assets/images/svgs/bpo.svg"
+import whoarewe from "@/assets/images/whoarewe.webp"
 import consult from "@/assets/images/svgs/consult.svg"
 import Button from "@/components/Button";
 import Card from "@/components/Card"
@@ -263,11 +268,14 @@ export default {
   mixins: [window],
   components:{SwipperCard2,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
-    return {img,img1,bi,dev,bpo,consult}
+    return {img,img1,bi,dev,bpo,consult,whoarewe}
   },
   methods:{
     btnContackUs(){
       this.$router.push({name:"contactus"})
+    },
+    btnAboutUs(){
+      this.$router.push({name:"aboutus"})
     }
   }
 };

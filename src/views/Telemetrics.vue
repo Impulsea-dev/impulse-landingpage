@@ -49,7 +49,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 mt-[-80px] md:mt-10">
             <div class="flex flex-col justify-center mb-[-80px] md:mb-0">
                 <div class="text-white text-xl lg:text-3xl font-Manrope lg:mt-10">
-                    Uncover New Revenue Opportunities
+                    Discover New Revenue Opportunities
                 </div>
                 <div class="text-[#ffffffb3] text-xs lg:text-base mt-4">
                     Telemetrics uncovers valuable business opportunities by providing insights into your telecom company's

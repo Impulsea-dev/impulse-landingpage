@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-[#060607] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
+<div>
+  <div class="bg-[#060607] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-4 mt-4 ">
             <div class="flex flex-col justify-center">
                <div class="text-2xl lg:text-[64px] text-white">Impulse Boost</div> 
                <div class="text-[#ffffffb3] text-base lg:text-2xl lg:mt-8">
-                Telemetrics empowers you to make informed decisions, track progress, 
-                optimize performance, and achieve business growth. 
+                Impulse Boost empowers CEOs and Managers to make informed decisions, track progress, optimize performance and achieve profitable business growth.
                </div>
             </div>
             <div class="flex">
@@ -89,6 +89,7 @@
        </div>
 
     </div>
+</div>
 </div>
 
     
