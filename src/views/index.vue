@@ -68,11 +68,12 @@
   ></div>
   <div class="flex flex-row w-[100vw] h-[712px justify-center items-center ml-auto mr-auto ">
   <div class="flex flex-col justify-start items-start absolute left-16 top-[148px] gap-8">
-    <div
-    class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] bg-[#000000] border-white"
-  >
+    <Button
+    class="btn-primary flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] dark:bg-[#000000] border-white"
+    @click="btnAboutUs"
+    >
     <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
-  </div>
+  </Button>
     <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
       <p class="flex-grow-0 flex-shrink-0 w-[666px] font-semibold text-left text-white">
         <span
@@ -116,16 +117,16 @@
 </div>
 </div>
 <!-- mobile -->
-<div class="w-[100vw] relative lg:hidden md:grid md:grid-cols-1 grid grid-cols-1 -left-[16.86px] pl-5" style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);">
-  <!-- <div
-    class="w-[100vw] h-[880px]   top-[10px] rounded-lg"
-    style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"
-  ></div> -->
-  <div
-    class="flex justify-center items-center  left-6 top-[60px] gap-2 px-8 py-3 rounded-[32px] bg-black"
-  >
-    <p class="flex-grow-0 flex-shrink-0 text-xs font-bold text-center text-white">Who are We</p>
-  </div>
+<div class="w-[100vw] relative lg:hidden md:grid md:grid-cols-1 grid grid-cols-1 -left-[16.86px] right-[16.86px] pl-5" style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);">
+ 
+<div class="flex mt-20 mb-10">
+       <Button
+    class="btn-primary flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] dark:bg-[#000000] border-white"
+    @click="btnAboutUs"
+    >
+    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
+  </Button>
+</div>
   <div class="flex flex-col justify-start items-start left-6 top-28 gap-4">
     <p class="flex-grow-0 flex-shrink-0 w-[85vw] text-2xl font-semibold text-left text-white">
       Impulse is a reliable ally to prominent technology companies and telecommunications firms.
@@ -137,7 +138,7 @@
       positive work environment that meets their objectives.
     </p>
   </div>
-  <div class="flex justify-center items-center left-6 gap-4 mt-14 mb-3">
+  <div class="flex justify-center items-center left-6 gap-4 mt-14 mb-9">
     <Button
         :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white'"
          @click="btnAboutUs"
@@ -154,7 +155,7 @@
         iconPosition="right"
      />
   </div>
-  <img class="w-[382px] h-[368px]  left-[23px]  rounded-lg mb-4" :src="whoarewe" />
+  <img class="w-[382px] h-[368px]   rounded-lg mb-4 flex ml-auto mr-auto left-0 pr-[16px] justify-center" :src="whoarewe" />
 </div>
     <div class="h-20"></div>
 
@@ -202,10 +203,10 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="w-[84vw] max-h-auto mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-40 ">
+    <div class="lg:w-[84vw] w-[100vw] max-h-auto -left-6 pl-4 pr-4 mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-40 ">
       <SwipperCardHome  :title="'Blog Posts'" :titleblog="'Telco Innovation'"
  :subtitleblog="'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist. '"
- :titleBtn="'Open case study'"/>
+ :titleBtn="'Open Blog Post'"/>
       </div>
 
  
@@ -254,14 +255,7 @@
     </div>
    
 <div class="flex justify-center items-center gap-6 mb-6">
-  <div
-    class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-[11px] rounded-lg"
-    style="background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);"
-  >
-    <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
-      Contact Us
-    </p>
-  </div>
+  <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
 </div>
 
 

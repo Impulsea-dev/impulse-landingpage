@@ -10,13 +10,14 @@
   </p>
 </div>
 <div class="flex justify-start items-start gap-4 mt-2">
-  <div
-    class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-2 rounded-lg bg-white border border-white"
-  >
+  <Button
+    :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-2 rounded-lg dark:bg-white border dark:border-white'"
+  @click="sendTo('/telemetrics')"
+    >
     <p class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#141414]">
       Learn more
     </p>
-  </div>
+  </Button>
 </div>
    </div>
    <svg
@@ -63,9 +64,10 @@
 </template>
 <script>
 import Card from "@/components/Card"
+import Button from "@/components/Button"
 export default {
-  name: 'CardCustomTelcoSol',
-  components:{Card},
+  name: 'CardCustomTelemetric',
+  components:{Card,Button},
   props: { 
     title: {
       type: String,
@@ -85,5 +87,10 @@ export default {
       default: '',
     },
   },
+  methods:{
+    sendTo(link){
+      this.$router.push({path:link})
+    }
+  }
 };
 </script>

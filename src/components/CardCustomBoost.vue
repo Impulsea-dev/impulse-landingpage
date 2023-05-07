@@ -9,13 +9,14 @@
   </p>
 </div>
 <div class="flex justify-start items-start gap-4 mt-2">
-  <div
-    class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-2 rounded-lg bg-white border border-white"
-  >
+  <Button
+    :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-2 rounded-lg dark:bg-white border dark:border-white'"
+  @click="sendTo('/boost')"
+    >
     <p class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#141414]">
       Learn more
     </p>
-  </div>
+  </Button>
 </div>
    </div>
    <svg width="164" height="114" viewBox="0 0 164 114" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-80 h-56 ml-auto relative -right-12 place-self-en -bottom-20">
@@ -83,9 +84,10 @@
 </template>
 <script>
 import Card from "@/components/Card"
+import Button from "@/components/Button"
 export default {
-  name: 'CardCustomTelcoSol',
-  components:{Card},
+  name: 'CardCustomBoost',
+  components:{Card,Button},
   props: { 
     title: {
       type: String,
@@ -105,5 +107,10 @@ export default {
       default: '',
     },
   },
+   methods:{
+    sendTo(link){
+      this.$router.push({path:link})
+    }
+  }
 };
 </script>

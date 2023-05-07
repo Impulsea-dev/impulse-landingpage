@@ -35,17 +35,15 @@
     </swiper-slide>
 
     <swiper-slide class="flex md:hidden">
-      <img :src="item" class="w-full h-[500px] object-cover" alt="" />
+      <img :src="item" class="w-[100vw] h-[550px] object-cover" alt="" />
       <div class="absolute text-white top-48 bottom-0 w-full bg-[#141414f2]">
-        <div class="mt-5 font-bold ml-5">Software Development</div>
-        <div class="mt-2  text-xs leading-6 text-[#ffffffb3] ml-5 mr-5">
-            Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. 
-            Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. 
-            Enim consequat at vitae.
+        <div class="mt-5 font-bold ml-5">{{ titleblog }}</div>
+        <div class="mt-2  text-xs leading-6 text-[#ffffffb3] ml-5 mr-5" v-html="subtitleblog">
+             
          </div>
    
         <div class="mt-4 text-start ml-5 text-xs mb-4">
-            <button type="button" class="bgbutton1">Open case study</button>
+            <button type="button" class="bgbutton1">{{titleBtn}}</button>
         </div>
       </div>
     </swiper-slide>
