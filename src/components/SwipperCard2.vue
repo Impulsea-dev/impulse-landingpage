@@ -19,14 +19,14 @@
 >
   <template v-for="(item, i) in items" :key="i">
     <swiper-slide class="hidden md:flex">
-      <img :src="item" class="w-full max-h-96 object-cover" alt="" />
+      <img :src="item" class="w-full h-[402px] object-cover" alt="" />
       <div class="absolute text-white top-0 bottom-0 right-1/2 bg-[#141414f2]">
         <div class="md:mt-5 lg:mt-16 ml-10">
             <img :src="logo" alt="">
         </div>
         <div class="mt-2 lg:mt-5 text-xl lg:text-3xl font-bold ml-10">{{ titleblog }}</div>
-        <div class="mt-2 lg:mt-5 text-xs lg:text-sm leading-6 text-[#ffffffb3] ml-10 mr-10">
-          {{ subtitleblog }}
+        <div class="mt-2 lg:mt-5 text-xs lg:text-sm leading-6 text-[#ffffffb3] ml-10 mr-10" v-html="subtitleblog">
+        
          </div>
         <div class="transform md:scale-75 lg:scale-100 mt-4 text-start ml-10">
             <button type="button" class="bgbutton1">{{ titleBtn }}</button>
@@ -35,17 +35,14 @@
     </swiper-slide>
 
     <swiper-slide class="flex md:hidden">
-      <img :src="item" class="w-full h-[500px] object-cover" alt="" />
+      <img :src="item" class="w-full  h-[550px] object-cover" alt="" />
       <div class="absolute text-white top-48 bottom-0 w-full bg-[#141414f2]">
-        <div class="mt-5 font-bold ml-5">Software Development</div>
-        <div class="mt-2  text-xs leading-6 text-[#ffffffb3] ml-5 mr-5">
-            Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. 
-            Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. 
-            Enim consequat at vitae.
-         </div>
+        <div class="mt-5 font-bold ml-5">{{ title }}</div>
+        <div class="mt-2  text-xs leading-6 text-[#ffffffb3] ml-5 mr-5" v-html="subtitleblog">
+          </div>
    
         <div class="mt-4 text-start ml-5 text-xs">
-            <button type="button" class="bgbutton1">Open case study</button>
+            <button type="button" class="bgbutton1">{{ titleBtn }}</button>
         </div>
       </div>
     </swiper-slide>
@@ -69,7 +66,7 @@ import img3 from "@/assets/images/all-img/image-3.webp";
 import img from "@/assets/images/logo/impulse.svg"
 import window from "@/mixins/window"
 
-const items = ref([img1, img2,img3]);
+const items = ref([img1]);
 const logo=ref(img)
 const props = defineProps({
   title: String,

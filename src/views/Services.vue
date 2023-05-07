@@ -56,9 +56,9 @@
     </div>
 
     <div class="mt-20 grid   grid-cols-1  gap-6  ">
- <SwipperCard2  :title="'CASE STUDIES'" :titleblog="'Software Development'"
- :subtitleblog="'Lorem ipsum dolor sit amet consectetur. Sem sed pretium cras mi. Aliquam eget risus augue lectus tellus viverra convallis nisl. Nunc quam felis lorem mauris ac sed euismod. Et eros ullamcorper volutpat nibh aliquam mauris volutpat. Enim consequat at vitae.'"
- :titleBtn="'Open case study'"/>
+ <SwipperCard2  :title="'Blog Posts'" :titleblog="'Telco Innovation'"
+ :subtitleblog="'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist. '"
+ :titleBtn="'Open Blog Post'"/>
       </div>
 
     <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
@@ -74,10 +74,10 @@
             <div :class="window.width<640?'bgLogosPhone':'bgLogos' ">        
         </div>
     </div>
-    <div class="rounded-2xl bg-[#103045] p-10 mt-20"> 
+    <!-- <div class="rounded-2xl bg-[#103045] p-10 mt-20"> 
         <div class="text-center text-xl md:text-3xl text-white">Client’s Feedback</div>  
     <SwipperFeedback :carousels="carousels"/>
-    </div>
+    </div> -->
 
 
     
