@@ -35,7 +35,7 @@
     </swiper-slide>
 
     <swiper-slide class="flex md:hidden">
-      <img :src="item" class="w-[100vw] h-[550px] object-cover" alt="" />
+      <img :src="item" class="w-[100vw] h-[505px] object-cover" alt="" />
       <div class="absolute text-white top-48 bottom-0 w-full bg-[#141414f2]">
         <div class="mt-5 font-bold ml-5">{{ titleblog }}</div>
         <div class="mt-2  text-xs leading-6 text-[#ffffffb3] ml-5 mr-5" v-html="subtitleblog">
