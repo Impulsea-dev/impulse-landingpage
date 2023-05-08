@@ -66,8 +66,8 @@
         </div>
     </div>
 
-    <div class="p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative  lg:h-[70vh] w-[100vw] bg-[#5F29AD]">
-        <div class="flex justify-center mt-[-300px] md:mt-[-150px]">
+    <div class="p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative xl:h-[48vh] lg:h-[50vh] h-[30vh] w-[100vw] bg-[#5F29AD]">
+        <div class="flex justify-center mt-[-300px] md:mt-[-150px] mb-8">
             <div class="timesaving"></div>
         </div>
     </div>
