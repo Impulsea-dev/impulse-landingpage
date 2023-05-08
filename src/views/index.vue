@@ -203,7 +203,7 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="lg:w-[84vw] w-[100vw] max-h-auto -left-6 pl-4 pr-4 mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-40 ">
+    <div class="lg:w-[84vw] w-[100vw] max-h-auto -left-6 pl-4 mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-40 pr-11">
       <SwipperCardHome  :title="'Blog Posts'" :titleblog="'Telco Innovation'"
  :subtitleblog="'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist. '"
  :titleBtn="'Open Blog Post'"/>

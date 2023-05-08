@@ -5,11 +5,11 @@
             <div class="sm:w-[664px] sm:h-36 text-[40px] sm:text-[50px] md:text-[64px] text-white sm:leading-[72px] font-semibold font-Manrope">
                 Creating exceptional solutions
             </div>
-            <div class="mt-8 sm:w-[603px] sm:h-[72px] text-xs sm:text-[16px] leading-6 text-slate-400 font-Manrope">
+            <!-- <div class="mt-8 sm:w-[603px] sm:h-[72px] text-xs sm:text-[16px] leading-6 text-slate-400 font-Manrope">
                 Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer. 
                 Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur. 
                 Vitae in non ultricies nisl tortor proin integer diam. Ut ante.
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="bg-[#282832] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
