@@ -70,7 +70,8 @@ const routes = [
         path: "/telemetrics",
         name: "telemetrics",
         component: () => import("@/views/Telemetrics.vue"),
-      },{
+      },
+      {
         path: "/product",
         name: "product",
         component: () => import("@/views/product.vue"),

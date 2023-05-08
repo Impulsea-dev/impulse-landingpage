@@ -31,7 +31,7 @@ export const menuItems = [
       },
       {
         childtitle: "Telecom Solutions",
-        childlink: "/telemetrics",
+        childlink: "/whatwedotelco",
         childicon: "ic:baseline-network-ping",
       },
     ],
@@ -88,7 +88,7 @@ export const topMenu = [
       },
       {
         childtitle: "Telecom Solutions",
-        childlink: "/telemetrics",
+        childlink: "/whatwedotelco",
         childicon: "ic:baseline-network-ping",
       },
     ],

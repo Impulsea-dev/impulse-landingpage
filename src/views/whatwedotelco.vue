@@ -4,9 +4,10 @@
         <div class="text-6xl text-white text-bold mb-3">
           Specialised telecom software delivered with deep industry experience
         </div>    
-        <div class="text-base text-[#ffffffb3]">
+        <!-- <div class="text-base text-[#ffffffb3]">
           Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer. Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur. Vitae in non ultricies nisl tortor proin integer diam. Ut ante. </div>     
-      </div>
+       -->
+        </div>
       <div  class="relative dark:bg-[#000000]  mt-2">   
         <div class="space-y-4 mt-4">
           <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6  ">
@@ -24,9 +25,9 @@
       <div class="text-white text-center text-3xl mb-3 mt-4">
         <span>Let’s Work Together </span>
       </div>
-      <div class="text-white text-center text-3xl">
-        <Button text="Get in touch" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
-      </div>
+      <div class="flex justify-center items-center gap-6 mb-6">
+  <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
+</div>
     </div>
   </template>
   <script>
@@ -49,7 +50,12 @@
       SwipperCard},
     data(){
       return {img}
+    },
+    methods:{
+    btnContackUs(){
+      this.$router.push({name:"contactus"})
     }
+  }
   };
   </script>
   <style>
