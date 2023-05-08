@@ -19,36 +19,42 @@
         <div class="grid grid-cols-2 gap-5 space-x-4 md:w-52 md:ml-auto">
          
         
-        <div class="flex flex-col space-y-6">
-            <a
-            href="/aboutus"
-            target="_blank"
-            class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
-          >
-            About us
-          </a>
-          <a
-            href="/services"
-            target="_blank"
-            class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
-          >
-            Services
-          </a>
-      
-        </div> 
-        <div class="flex flex-col space-y-6">
+         <div class="flex flex-col space-y-6">
+             <a
+             href="/aboutus"
+             target="_blank"
+             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
+           >
+             About us
+           </a>
+           <a
+             href="/services"
+             target="_blank"
+             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
+           >
+             Services
+           </a>
+         </div> 
+         <div class="flex flex-col space-y-6">
+           <a
+             href="https://www.linkedin.com/company/impulseltd/"
+             target="_blank"
+             class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
           
-          <a
-            href="https://www.linkedin.com/company/impulseltd/"
-            target="_blank"
-            class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
-         
-          >
-            Instagram
-          </a>
-        </div>
-   
-        </div>
+           >
+             Linkedin
+           </a>
+           <a
+             href="https://www.instagram.com/impulseky/"
+             target="_blank"
+             class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
+          
+           >
+             Instagram
+           </a>
+         </div>
+     
+       </div>
       </div>
     </div>
   </footer>

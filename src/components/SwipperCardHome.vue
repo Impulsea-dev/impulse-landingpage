@@ -2,7 +2,7 @@
 <template>
     <div class="flex flex-wrap w-full justify-center relative" 
     >
-      <div class="absolute -top-5 z-20 justify-start left-0  md:w-[23%] w-[70%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
+      <div class="absolute -top-5 z-20 justify-start 2xl:left-[25%] xl:left-[5%] xl:w-[20%] md:left-0 left-0 2xl:w-[10%] md:w-[23%] w-[70%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
   <p class="text-base font-bold text-center text-[#141414] ">
    {{ title }}
   </p>
