@@ -1,13 +1,10 @@
 <template>
     <div>
-      <div class="grid lg:grid-rows-2 md:grid-rows-2 grid-rows-1 md:gap-6 md:space-y-0 space-x-14 mb-12 mt-4">
-        <div class="text-6xl text-white text-bold mb-3">
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12">
+        <div class="text-lg md:text-2xl lg:text-6xl lg:w-[875px] text-white mb-4 ml-4">
           Specialised telecom software delivered with deep industry experience
         </div>    
-        <!-- <div class="text-base text-[#ffffffb3]">
-          Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer. Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur. Vitae in non ultricies nisl tortor proin integer diam. Ut ante. </div>     
-       -->
-        </div>
+      </div>
       <div  class="relative dark:bg-[#000000]  mt-2">   
         <div class="space-y-4 mt-4">
           <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6  ">
