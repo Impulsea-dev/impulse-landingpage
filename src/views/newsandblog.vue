@@ -40,7 +40,7 @@
     </ul>
 </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-4 mt-10"  >
+            <div class="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-4 mt-10"  >
             <div class="w-full h-96 mb-10" v-for="(blog,i) in blogs" :key="i">
                 <img class="w-full h-60 rounded-lg" src="@/assets/images/bgcode.webp" />
                 <div class="flex flex-col justify-center items-start absolute gap-1 mt-4">
