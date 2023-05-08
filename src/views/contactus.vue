@@ -247,8 +247,8 @@
        </p>
      </div>
    </div>
-   <div class="w-[688px] h-[347px]">
-    <img class="w-[688px] h-[347px] rounded-2xl object-fill" :src="contact" />
+   <div class="w-[720px] h-[480px]">
+    <img class="w-[720px] h-[480px] rounded-2xl object-fill" :src="contact" />
             
           </div>
          </div>
