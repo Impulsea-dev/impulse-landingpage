@@ -89,9 +89,9 @@ With over 100 years of combined experience, our telco experts understand the cha
       <div class="grid grid-cols-1 md:gap-6   mb-10 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
         <CardCustomVision/>
        </div>
-       <div class="text-white text-center text-3xl mb-3">
+       <!-- <div class="text-white text-center text-3xl mb-3">
           <span>Our Team of Experts</span>
-       </div>
+       </div> -->
       <!-- <div class="md:grid lg:grid-cols-4 md:grid-cols-1 hidden md:gap-4 md:space-y-0  mt-9">
         
         <CardCustomTeam 
@@ -121,7 +121,7 @@ With over 100 years of combined experience, our telco experts understand the cha
         <span>Let’s Work Together </span>
       </div>
       <div class="text-white text-center text-3xl">
-        <Button text="Get in touch" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" link="/contactus" />
+        <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
       </div>
     </div>
   
@@ -163,7 +163,12 @@ With over 100 years of combined experience, our telco experts understand the cha
     },
     data(){
       return {client,projects,team,experience,img,chan,chan1,chan2,chan3,innovation,phone,trend,people,drone}      
+    },
+    methods:{
+    btnContackUs(){
+      this.$router.push({name:"contactus"})
     }
+  }
   };
   
   </script>
