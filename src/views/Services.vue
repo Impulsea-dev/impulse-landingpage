@@ -101,10 +101,10 @@ import Consul from "@/assets/images/Consul.webp"
 import window from "@/mixins/window"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
 import SwipperFeedback from "@/components/SwipperFeedback.vue"
-import carousel1Img from "@/assets/images/all-img/c1.png";
-import carousel2Img from "@/assets/images/all-img/c2.png";
-import carousel3Img from "@/assets/images/all-img/c3.png";
-import carousel4Img from "@/assets/images/all-img/c4.png";
+// import carousel1Img from "@/assets/images/all-img/c1.png";
+// import carousel2Img from "@/assets/images/all-img/c2.png";
+// import carousel3Img from "@/assets/images/all-img/c3.png";
+// import carousel4Img from "@/assets/images/all-img/c4.png";
 export default{
     mixins: [window],
     components:{
@@ -118,20 +118,20 @@ export default{
             PDD,
             BPO,
             Consul,
-            carousels: [
-        {
-          img: carousel1Img,
-        },
-        {
-          img: carousel2Img,
-        },
-        {
-          img: carousel3Img,
-        },
-        {
-          img: carousel4Img,
-        },
-      ],
+      //       carousels: [
+      //   {
+      //     img: carousel1Img,
+      //   },
+      //   {
+      //     img: carousel2Img,
+      //   },
+      //   {
+      //     img: carousel3Img,
+      //   },
+      //   {
+      //     img: carousel4Img,
+      //   },
+      // ],
         }
     }
 }

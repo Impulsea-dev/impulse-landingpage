@@ -279,14 +279,14 @@ import CardCustomBoost from "@/components/CardCustomBoost.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCardHome from "@/components/SwipperCardHome.vue"
-import img1 from "@/assets/images/all-img/image-1.webp";
+// import img1 from "@/assets/images/all-img/image-1.webp";
 import window from "@/mixins/window"
 
 export default {
   mixins: [window],
   components:{SwipperCardHome,Card,CardCustom,SwipperCard,Button,CardCustomWhoAre,CardCustomTelemetric,CardCustomBoost,CardCustomProductDev},
   data(){
-    return {img,img1,bi,dev,bpo,consult,whoarewe}
+    return {img,bi,dev,bpo,consult,whoarewe}
   },
   methods:{
     btnContackUs(){

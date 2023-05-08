@@ -35,11 +35,9 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import img1 from "@/assets/images/all-img/image-1.webp";
-import img2 from "@/assets/images/all-img/image-2.webp";
-import img3 from "@/assets/images/all-img/image-3.webp";
+import img1 from "@/assets/images/contact.webp";
 
-const items = ref([img1, img2,img3]);
+const items = ref([img1]);
 </script>
 <style>
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
