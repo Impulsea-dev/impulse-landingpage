@@ -7,11 +7,11 @@
       </div>
       <div  class="relative dark:bg-[#000000]  mt-2">   
         <div class="space-y-4 mt-4">
-          <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6  ">
+          <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6">
  <CardCustomTelemetric></CardCustomTelemetric>
  <card-custom-boost></card-custom-boost>
       </div>
-      <div class="grid   grid-cols-1 lg:grid-cols-1  gap-6  ">
+      <div class="grid   grid-cols-1 lg:grid-cols-1  gap-6">
 
  <card-custom-product-dev></card-custom-product-dev>
       </div>

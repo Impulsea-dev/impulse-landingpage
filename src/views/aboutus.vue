@@ -7,9 +7,8 @@
         </div>    
         <div class="text-base text-[#ffffffb3]">
           Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals
-With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.
-
-          </div>     
+          With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.
+</div>     
       </div>
       
       <!-- Grid Cards Start-->
