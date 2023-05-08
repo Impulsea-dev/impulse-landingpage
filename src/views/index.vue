@@ -155,7 +155,7 @@
         iconPosition="right"
      />
   </div>
-  <img class="w-[382px] h-[368px]   rounded-lg mb-4 flex ml-auto mr-auto left-0 pr-[16px] justify-center" :src="whoarewe" />
+  <img class="w-[382px] h-[368px]   rounded-lg mb-4 flex ml-auto mr-auto left-0 pr-[16px] justify-center" :src="whoarewe" alt="tech women networking"/>
 </div>
     <div class="h-20"></div>
 
