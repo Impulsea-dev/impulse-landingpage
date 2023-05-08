@@ -2,7 +2,7 @@
     <div>
       <Button text="About Us" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
-        <div class="text-6xl text-white mb-4">
+        <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
           Leading the Industry with unmatched expertise and innovation
         </div>    
         <div class="text-base text-[#ffffffb3]">
