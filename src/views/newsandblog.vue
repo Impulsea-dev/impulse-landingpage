@@ -1,5 +1,5 @@
 <template>
-    <div class="p-0 lg:p-20">
+    <div class="p-0 lg:p-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16 lg:mt-28">
             <div class="flex flex-col ">
                 <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">News and Blog</div>
