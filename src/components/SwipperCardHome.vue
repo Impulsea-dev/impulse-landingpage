@@ -29,7 +29,7 @@
          
          </div>
         <div class="transform md:scale-75 lg:scale-100 mt-4 text-start ml-10">
-            <button type="button" class="bgbutton1">{{ titleBtn }}</button>
+            <a type="button" class="bgbutton1" href="https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86" target="_blank">{{ titleBtn }}</a>
         </div>
       </div>
     </swiper-slide>
@@ -43,7 +43,7 @@
          </div>
    
         <div class="mt-4 text-start ml-5 text-xs mb-4">
-            <button type="button" class="bgbutton1">{{titleBtn}}</button>
+            <a type="button" class="bgbutton1" href="https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86" target="_blank">{{titleBtn}}</a>
         </div>
       </div>
     </swiper-slide>
@@ -54,7 +54,7 @@
 </template>
 
 <!-- script -->
-<script setup>
+<script>
 import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Autoplay } from 'swiper';
@@ -66,15 +66,30 @@ import img1 from "@/assets/images/bgcode.webp";
 // import img3 from "@/assets/images/all-img/image-3.webp";
 import img from "@/assets/images/logo/impulse.svg"
 import window from "@/mixins/window"
-
 const items = ref([img1]);
-const logo=ref(img)
-const props = defineProps({
-  title: String,
-  titleblog:String,
-  subtitleblog:String,
-  titleBtn:String
-})
+const logo=ref(img) 
+
+
+export default {
+  mixins: [window],
+components:{Swiper,SwiperSlide},
+
+  props:[  
+    "title",
+    "titleblog",
+  "subtitleblog",
+  "titleBtn"
+],
+data:{items,logo,Autoplay,Pagination},
+methods:{
+  btnRedirect: function(){
+  console.log("BTn Entry")
+  // window.open("https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86",'_blank');
+}
+}
+
+}
+
 
 </script>
 <style>
