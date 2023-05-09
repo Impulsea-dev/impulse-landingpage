@@ -23,7 +23,7 @@
         @click="this.$store.themeSettingsStore.mobielSidebar = false"
       ></div>
     </Transition>
-
+ 
     <div
       class="content-wrapper transition-all duration-150"
       :class="window.width > 1023 ? switchHeaderClass() : ''"
@@ -39,16 +39,32 @@
               : 'container-fluid'
           }`"
         >
+
+
        
           <router-view v-slot="{ Component }">
             <transition name="router-animation" mode="out-in" appear>
               <component :is="Component"></component>
             </transition>
           </router-view>
+          
         </div>
+
+
       </div>
+  
     </div>
     <!-- end page content --> 
+    <transition  >
+      <div class="banner space-y-3"  v-if="allowCookie===undefined">
+        <p class="flex-col"> By clicking “Accept All”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+        </p>
+        <div class="flex-col space-x-4 items-center">
+          <button @click="okBannerClicked" class="btn-success p-2">ACCEPT ALL</button>
+        <button @click="cancelBannerClicked" class="btn-warning p-2">REJECT ALL</button>
+        </div>
+      </div>
+    </transition>
     <Footer 
     />
   </main>
@@ -60,7 +76,8 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar/";
 import window from "@/mixins/window";
 import MobileSidebar from "@/components/Sidebar/MobileSidebar.vue"; 
-
+import useCookies from '@/composables/useCookies'
+import { reactive } from "vue";
 export default {
   mixins: [window],
   components: {
@@ -83,6 +100,20 @@ export default {
         return "ltr:ml-[248px] rtl:mr-[248px]";
       }
     },
+    setup() {
+    const gtag = inject('gtag');
+    const { showBanner, okClicked,cancelClicked } = useCookies(gtag);
+    const okBannerClicked = () => okClicked();
+    const cancelBannerClicked = () => cancelClicked();
+     
+    
+
+    return {
+      showBanner,
+      okBannerClicked,
+      cancelBannerClicked
+    };
+  }
   },
 };
 </script>
@@ -138,5 +169,10 @@ export default {
 }
 .page-min-height {
   min-height: calc(var(--vh, 1vh) * 100 - 132px);
+}
+.banner {
+  background-color: #1e2227;
+  padding: 20px;
+  text-align: center;
 }
 </style>

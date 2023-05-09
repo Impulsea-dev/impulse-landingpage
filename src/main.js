@@ -14,6 +14,8 @@ import "./assets/scss/tailwind.scss";
 import "./assets/scss/maz.scss";
 import router from "./router";
 import {createPinia} from 'pinia'
+import VueGtag from 'vue-gtag';
+import { VueCookieNext } from 'vue-cookie-next';
 
 const pinia = createPinia()
 
@@ -28,9 +30,17 @@ const app = createApp(App)
     .use(router)
     .use(VueClickAway)
     .use(VueTippy)
+    .use(VueCookieNext)
+    .use(VueGtag, {
+        config: { id: 'G-SM9S0WPTRE' },
+        router,
+        enabled: false,
+      });
 
 app.config.globalProperties.$store = {};
 app.mount("#app");
+
+app.provide('gtag', app.config.globalProperties.$gtag);
 
 import {useThemeSettingsStore} from "@/store/themeSettings";
 const themeSettingsStore = useThemeSettingsStore()
