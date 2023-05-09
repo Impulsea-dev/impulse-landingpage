@@ -44,7 +44,7 @@
       <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
         Maximize revenue, optimize processes, and reduce cost with our solutions
       </p>
-     <div class="flex-grow-0 flex-shrink-0"> <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" /> </div>
+     <div class="flex-grow-0 flex-shrink-0"> <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" /> </div>
     </div>
   </div>
 </div>
@@ -70,7 +70,7 @@
   <div class="flex flex-col justify-start items-start absolute left-16 top-[148px] gap-8">
     <Button
     class="btn-primary flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] dark:bg-[#000000] border-white"
-    @click="btnAboutUs"
+    @click="btnLink('aboutus')"
     >
     <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
   </Button>
@@ -95,7 +95,7 @@
     <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-4">
       <Button
         :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white'"
-         @click="btnAboutUs"
+         @click="btnLink('aboutus')"
       >
         <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
           Our Story
@@ -104,7 +104,7 @@
       <Button
       icon="material-symbols:chevron-right"
         :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-3 py-3 rounded-lg text-base font-semibold text-left text-white'" 
-        @click="btnContackUs"
+        @click="btnLink('contactus')"
         text="Contact Us"
         iconPosition="right"
      />
@@ -122,7 +122,7 @@
 <div class="flex mt-20 mb-10">
        <Button
     class="btn-primary flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] dark:bg-[#000000] border-white"
-    @click="btnAboutUs"
+    @click="btnLink('aboutus')"
     >
     <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Who are We</p>
   </Button>
@@ -141,7 +141,7 @@
   <div class="flex justify-center items-center left-6 gap-4 mt-14 mb-9">
     <Button
         :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-lg border border-white'"
-         @click="btnAboutUs"
+         @click="btnLink('aboutus')"
       >
         <p class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
           Our Story
@@ -150,7 +150,7 @@
       <Button
       icon="material-symbols:chevron-right"
         :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-3 py-3 rounded-lg text-base font-semibold text-left text-white'" 
-        @click="btnContackUs"
+        @click="btnLink('contactus')"
         text="Contact Us"
         iconPosition="right"
      />
@@ -161,7 +161,7 @@
 
    
     
-      <Button @click="btnServices" :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
+      <Button @click="btnLink('services')" :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
   <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">Our Services</p>
       </Button>
 
@@ -213,7 +213,7 @@
       <div class="h-20"></div>
 <div class="lg:pr-11 lg:pl-11">
   <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
-        <Button @click="btnTelemetrics" :className="'absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[19%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
+        <Button @click="btnLink('telemetrics')" :className="'absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[19%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
   <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">
     TELECOM SOLUTIONS
   </p>
@@ -255,7 +255,7 @@
     </div>
    
 <div class="flex justify-center items-center gap-6 mb-6">
-  <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
+  <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
 </div>
 
 
@@ -279,7 +279,6 @@ import CardCustomBoost from "@/components/CardCustomBoost.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCardHome from "@/components/SwipperCardHome.vue"
-// import img1 from "@/assets/images/all-img/image-1.webp";
 import window from "@/mixins/window"
 
 export default {
@@ -289,18 +288,9 @@ export default {
     return {img,bi,dev,bpo,consult,whoarewe}
   },
   methods:{
-    btnContackUs(){
-      this.$router.push({name:"contactus"})
+    btnLink(link){
+      this.$router.push({name:link})
     },
-    btnAboutUs(){
-      this.$router.push({name:"aboutus"})
-    },
-    btnTelemetrics(){
-      this.$router.push({name:"telemetrics"})
-    },
-    btnServices(){
-      this.$router.push({name:"services"})
-    }
   }
 };
 </script>

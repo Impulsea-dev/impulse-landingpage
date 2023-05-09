@@ -13,6 +13,15 @@ export default defineConfig({
     }),
     viteCompression(),
   ],
+  server: {
+    proxy: {
+      "/api": {
+      target: "https://api.geoiplookup.net", 
+      changeOrigin: true,
+      secure: false,
+      ws: true,  
+      }
+    }},
   resolve: {
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".vue", ".css"],
     alias: {

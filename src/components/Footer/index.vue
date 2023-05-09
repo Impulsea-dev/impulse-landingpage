@@ -8,6 +8,7 @@
           <div class="flex-col ">
             <img
       src="@/assets/images/logo/impulse.svg"
+      alt="logo"
     />
            
           </div>
@@ -21,14 +22,16 @@
         
          <div class="flex flex-col space-y-6">
              <a
-             @click="moveLink('aboutus')"
+             href="/aboutus"
+             target="_blank"
             
              class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer"
            >
              About us
            </a>
            <a
-             @click="moveLink('services')"
+           href="/services"
+             target="_blank"
               
              class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer"
            >
@@ -62,10 +65,6 @@
 <script>
 export default {
   methods: {
-    moveLink(link){
-      this.$router.push({name:link})
-      
-    },
     footerClass() {
       switch (this.$store.themeSettingsStore.footerType) {
         case "sticky":

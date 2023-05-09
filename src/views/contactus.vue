@@ -534,12 +534,14 @@ import axios from "axios"
     const countryList=ref([])
 
     const bringCurrent=async ()=>{
-      var options = {method: 'GET', url: 'http://ip-api.com/json/'};
+      var options = {method: 'GET', url: 'https://ipapi.co/json/'};
   
 
       const d=(await axios.request(options)).data
+     
   
-      countryList.value.push(d["countryCode"])
+      countryList.value.push(d["country_code"])
+     
       
     }
 
