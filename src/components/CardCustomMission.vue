@@ -18,7 +18,7 @@
       >
     </p>
     <p class="flex-grow-0 flex-shrink-0 flex-wrap text-base font-medium text-left text-white/70">
-      Our aim is to assist companies in increasing their profitability through our solutions and services. We are dedicated to creating top-notch solutions for the industry and achieving this by attentively listening to our customers and being their most reliable partners.
+      Our aim is to assist companies in increasing their profitability through our solutions and services. We are dedicated to creating most innovative solutions for the industry and achieving this by attentively listening to our customers and being their most reliable partners.
     </p>
   </div>
   <!-- <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-4">

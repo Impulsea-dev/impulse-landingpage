@@ -18,7 +18,7 @@
         promptly follow up with you.
        </h6>
    
-       <form class="space-y-6" @submit.prevent="onSubmit" ref="form"> 
+       <form class="space-y-8 mt-10" @submit.prevent="onSubmit" ref="form"> 
    <Textinput
      label="Your Name"
      name="from_name"
@@ -35,14 +35,36 @@
      v-model="email"
       :error="emailError"
    />
-   <Textinput
+   <!-- <Textinput
      label="Your Phone Number"
      name="from_phone"
      type="text"
      placeholder="Your Phone Number"
      v-model="phone"
       :error="phoneError"
-   />
+   /> -->
+   <div class="flex-row space-y-2">
+   <label
+      
+      class="input-label"
+    >
+      Phone Number</label
+    >
+    <div class="flex-row items-stretch inputGroup">
+   <MazPhoneNumberInput
+    v-model="phone"
+    name="from_phone"
+    show-code-on-list
+    color="info"
+    :preferred-countries="countryList"
+    :default-country-code="countryList[0]"
+    :ignored-countries="['AC']"
+    @update="results = $event"
+    :success="results?.isValid"
+    :error="phoneError"
+  />
+</div>
+</div>
    <Textarea label="Message" name="message" placeholder="Your message" 
    v-model="text"
       :error="textError"
@@ -247,8 +269,8 @@
        </p>
      </div>
    </div>
-   <div class="w-[720px] h-[480px]">
-    <img class="w-[720px] h-[480px] rounded-2xl object-fill" :src="contact" />
+   <div class="">
+    <img class="aspect-video rounded-2xl object-contain" :src="contact" />
             
           </div>
          </div>
@@ -463,10 +485,12 @@
   import { useField, useForm } from "vee-validate";
   import emailjs from '@emailjs/browser';
 import * as yup from "yup";
-import { ref ,inject} from 'vue';
+import { ref ,inject, onMounted} from 'vue';
+import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
+import axios from "axios"
 
   export default {
-    components:{Card, Textinput,
+    components:{Card, Textinput,MazPhoneNumberInput,
     Button,Textarea},
     data(){
       return {contact}
@@ -506,9 +530,28 @@ import { ref ,inject} from 'vue';
     const { value: text, errorMessage: textError } =useField("text");
     const { value: name, errorMessage: nameError } =useField("name");
     const { value: phone, errorMessage: phoneError } =useField("phone");
+    const results = ref()
+    const countryList=ref([])
+
+    const bringCurrent=async ()=>{
+      var options = {method: 'GET', url: 'http://ip-api.com/json/'};
+  
+
+      const d=(await axios.request(options)).data
+  
+      countryList.value.push(d["countryCode"])
+      
+    }
+
+    onMounted(async ()=>{
+       await bringCurrent()
+    })
+
+ 
 
 
     const onSubmit=handleSubmit(()=>{
+      
       
         emailjs.sendForm('service_x8zg0jn', 'template_egrdfgl',form.value, '37pInE6bRBPRhMI6-')
       .then((response) => {
@@ -534,12 +577,13 @@ import { ref ,inject} from 'vue';
 
     return {
       form,
-      
+      results,
       email,
       onSubmit,
       phone,
       phoneError,
-      
+    
+      countryList,
 
       emailError,
       text,

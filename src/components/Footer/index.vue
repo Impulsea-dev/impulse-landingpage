@@ -21,16 +21,16 @@
         
          <div class="flex flex-col space-y-6">
              <a
-             href="/aboutus"
-             target="_blank"
-             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
+             @click="moveLink('aboutus')"
+            
+             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer"
            >
              About us
            </a>
            <a
-             href="/services"
-             target="_blank"
-             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white"
+             @click="moveLink('services')"
+              
+             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer"
            >
              Services
            </a>
@@ -62,6 +62,10 @@
 <script>
 export default {
   methods: {
+    moveLink(link){
+      this.$router.push({name:link})
+      
+    },
     footerClass() {
       switch (this.$store.themeSettingsStore.footerType) {
         case "sticky":

@@ -18,7 +18,7 @@
       >
     </p>
     <p class="flex-grow-0 flex-shrink-0 flex-wrap text-base font-medium text-left text-white/70">
-      We are committed to developing top-notch technology, tools, and services for our partners, and are dedicated to making this vision a reality. We are constantly seeking out new talent and innovative technologies to help us achieve our goal, and our partners will benefit from our relentless pursuit of excellence.
+      We are committed to developing most innovative technology, tools, and services for our partners, and are dedicated to making this vision a reality. We are constantly seeking out new talent and innovative technologies to help us achieve our goal, and our partners will benefit from our relentless pursuit of excellence.
     </p>
   </div>  
 </div>

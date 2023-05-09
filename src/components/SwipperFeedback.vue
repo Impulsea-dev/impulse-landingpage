@@ -16,7 +16,7 @@
             </div>
         <div class=" text-white pt-14 md:pt-20 text-xs md:text-base ml-12 md:ml-24 mr-12 md:mr-24">
                     Our aim is to assist companies in increasing their profitability through our solutions and services.
-                     We are dedicated to creating top-notch solutions for the industry and achieving this by attentively
+                     We are dedicated to creating most innovative solutions for the industry and achieving this by attentively
                       listening to our customers and being their most reliable partners.
                 </div>
                 <div class="text-xs md:text-sm ml-12 md:ml-24 mt-6 text-[#ffffffb3]">

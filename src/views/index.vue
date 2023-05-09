@@ -12,7 +12,7 @@
       class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]"
     >
       <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs  font-medium text-center text-white">
-        Telecom Expertise meets Saas innovation.
+        Telecom Expertise meets SaaS innovation.
       </p>
     </div>
     <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
@@ -25,7 +25,7 @@
         </span
         ><br /><span
           class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s"
-          >Telecom Analytics </span
+          >Telecom </span
         ><span
           class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3"
         >
@@ -38,7 +38,7 @@
         </span
         ><span
           class="flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:mb-3"
-          >Sales</span
+          >Sales Analytics</span
         >
       </p>
       <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">

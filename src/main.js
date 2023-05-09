@@ -1,4 +1,5 @@
 import "animate.css";
+import 'maz-ui/css/main.css'
 import "simplebar/dist/simplebar.min.css";
 import "sweetalert2/dist/sweetalert2.min.css";
 import {createApp} from "vue";
@@ -10,6 +11,7 @@ import VueClickAway from "vue3-click-away";
 import App from "./App.vue";
 import "./assets/scss/auth.scss";
 import "./assets/scss/tailwind.scss";
+import "./assets/scss/maz.scss";
 import router from "./router";
 import {createPinia} from 'pinia'
 
