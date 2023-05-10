@@ -5,8 +5,7 @@ const allowCookies = ref();
 
 export default function useCookies(gtag) {
   const cookie = useCookie();
-
-  if (cookie.isCookieAvailable('cookies_consent')) {
+  if (cookie.isCookieAvailable('cookies_consent')) { 
     allowCookies.value = cookie.getCookie('cookies_consent') === 'true';
     gtag.optIn();
   } else {
@@ -16,8 +15,9 @@ export default function useCookies(gtag) {
   watch(allowCookies, () => {
     if (allowCookies.value != undefined) {
       cookie.setCookie('cookies_consent', allowCookies.value.toString(), {
-        expire: new Date(2022, 1, 1),
+        expire: new Date(new Date().getFullYear(), 12, 31),
       });
+     
       if (allowCookies.value) {
         gtag.optIn();
       } else {

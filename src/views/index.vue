@@ -52,15 +52,7 @@
     </section>
      
 
-    <!-- <div class="grid grid-cols-1 md:gap-6   mb-6 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
-      <CardCustomWhoAre 
-  title="Business Inteligence and Analytics"
-   paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-   :img="img1"
-   
-   classBackground="cardDisplay"
-   /> 
-    </div> -->
+ 
     <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6 lg:flex md:hidden hidden">
   <div
     class="w-[100vw] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"

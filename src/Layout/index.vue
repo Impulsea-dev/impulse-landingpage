@@ -55,16 +55,15 @@
   
     </div>
     <!-- end page content --> 
-    <transition  >
-      <div class="banner space-y-3"  v-if="allowCookie===undefined">
+    
+      <div class="banner space-y-3" v-if="showBanner"  >
         <p class="flex-col"> By clicking “Accept All”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
         </p>
         <div class="flex-col space-x-4 items-center">
           <button @click="okBannerClicked" class="btn-success p-2">ACCEPT ALL</button>
         <button @click="cancelBannerClicked" class="btn-warning p-2">REJECT ALL</button>
         </div>
-      </div>
-    </transition>
+      </div> 
     <Footer 
     />
   </main>
@@ -77,7 +76,7 @@ import Sidebar from "../components/Sidebar/";
 import window from "@/mixins/window";
 import MobileSidebar from "@/components/Sidebar/MobileSidebar.vue"; 
 import useCookies from '@/composables/useCookies'
-import { reactive } from "vue";
+import { inject } from "vue";
 export default {
   mixins: [window],
   components: {
@@ -100,13 +99,15 @@ export default {
         return "ltr:ml-[248px] rtl:mr-[248px]";
       }
     },
-    setup() {
+  
+  },
+  setup() {
     const gtag = inject('gtag');
     const { showBanner, okClicked,cancelClicked } = useCookies(gtag);
     const okBannerClicked = () => okClicked();
     const cancelBannerClicked = () => cancelClicked();
-     
-    
+  
+   
 
     return {
       showBanner,
@@ -114,7 +115,6 @@ export default {
       cancelBannerClicked
     };
   }
-  },
 };
 </script>
 <style lang="scss">
