@@ -21,7 +21,7 @@
     </p>
     <p class="flex-grow-0 flex-shrink-0 flex-wrap text-base font-medium text-left text-white/70">
       We aim to assist our partners in increasing their revenue, minimizing expenses, and optimizing
-      their processes through our solutions via automaton and analytics. Our priority is to build
+      their processes through our solutions via automation and analytics. Our priority is to build
       relationships with clients for mutual success, through open communication, teamwork, and a
       positive work environment that meets their objectives.
     </p>

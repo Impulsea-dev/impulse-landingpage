@@ -68,7 +68,7 @@
           </div>
           <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
             We aim to assist our partners in increasing their revenue, minimizing expenses, 
-            and optimizing their processes through our solutions via automaton and analytics. 
+            and optimizing their processes through our solutions via automation and analytics. 
           </div>
         </div>
             <div :class="window.width<640?'bgLogosPhone':'bgLogos' ">        

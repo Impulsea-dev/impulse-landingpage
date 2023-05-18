@@ -79,7 +79,7 @@
       </p>
       <p class="flex-grow-0 flex-shrink-0 w-[606px] text-base font-medium text-left text-white/70">
         We aim to assist our partners in increasing their revenue, minimizing expenses, and
-        optimizing their processes through our solutions via automaton and analytics. Our priority
+        optimizing their processes through our solutions via automation and analytics. Our priority
         is to build relationships with clients for mutual success, through open communication,
         teamwork, and a positive work environment that meets their objectives.
       </p>
@@ -105,7 +105,8 @@
       
     </div>
   </div>
-  <img class="w-[512px] h-[552px] absolute  xl:right-16 top-[79px] rounded-2xl" :src="whoarewe" />
+  <img class="w-[512px] h-[552px] absolute  xl:right-16 top-[79px] rounded-2xl" :src="whoarewe" 
+  alt="telco women"/>
 </div>
 </div>
 <!-- mobile -->
@@ -125,7 +126,7 @@
     </p>
     <p class="flex-grow-0 flex-shrink-0 w-[85vw] text-base font-medium text-left text-white/70 ">
       We aim to assist our partners in increasing their revenue, minimizing expenses, and optimizing
-      their processes through our solutions via automaton and analytics. Our priority is to build
+      their processes through our solutions via automation and analytics. Our priority is to build
       relationships with clients for mutual success, through open communication, teamwork, and a
       positive work environment that meets their objectives.
     </p>
@@ -235,7 +236,7 @@
           </div>
           <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
             We aim to assist our partners in increasing their revenue, minimizing expenses, 
-            and optimizing their processes through our solutions via automaton and analytics. 
+            and optimizing their processes through our solutions via automation and analytics. 
           </div>
         </div>
             <div :class="window.width<640?'bgLogosPhone':'bgLogos' ">        
