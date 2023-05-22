@@ -162,7 +162,7 @@
     <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6 lg:pr-11 lg:pl-11">
       
   <CardCustom 
-  title="Business Inteligence and Analytics"
+  title="Business Intelligence and Analytics"
    paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
    :img="bi"
    classBackground="cardDisplay"
