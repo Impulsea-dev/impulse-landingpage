@@ -37,6 +37,14 @@
            >
              Services
            </a>
+           <a
+           href="https://www.youtube.com/@Impulseky/featured"
+             target="_blank"
+              
+             class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer"
+           >
+             Youtube
+           </a>
          </div> 
          <div class="flex flex-col space-y-6">
            <a

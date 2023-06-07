@@ -79,7 +79,7 @@ const items = ref([
     subtitleblog: 'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist.',
     titleBtn: 'Open Blog Post',
     img: img1,
-    url:null
+    url:'https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86'
   }]);
 const logo = ref(img)
 
@@ -96,9 +96,7 @@ export default {
   data: { items, logo, Autoplay, Pagination },
   methods: {
     btnRedirect: function (url) {
-      if (url) {
-        console.log(url); 
-      }
+
       // window.open("https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86",'_blank');
     }
   }
