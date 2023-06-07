@@ -25,7 +25,7 @@
             </div>
             <div class="transform md:scale-75 lg:scale-100 mt-4 text-start ml-10">
               <a type="button" class="bgbutton1"
-                href="https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86"
+                :href="item.url"
                 target="_blank">{{ titleBtn }}</a>
             </div>
           </div>
@@ -41,7 +41,7 @@
 
             <div class="mt-4 text-start ml-5 text-xs mb-4">
               <a type="button" class="bgbutton1"
-                href="https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86"
+              :href="item.url"
                 target="_blank">{{ item.titleBtn }}</a>
             </div>
           </div>
@@ -71,13 +71,15 @@ const items = ref([
     title: 'Your Ultimate Billing Portal!',
     subtitleblog: 'A pre-built customer billing portal designed exclusively for Telecommunication Companies. </br></br>Automation at its best. Say hello to efficiency and accuracy. Impulse Pays fully automated solution simplifies billing processes, saving time and resources for your Telecommunication Company. </br></br>Join the digital revolution. Empower your customers with Impulse Pay - the ultimate billing portal for Telcos.',
     titleBtn: 'Open Blog Post',
-    img: img2
+    img: img2,
+    url:'https://medium.com/@impulseky/empowering-telecom-companies-introducing-impulse-pays-game-changing-billing-portal-6e7504b650fa'
   },
   {
     title: 'Telco Innovation',
     subtitleblog: 'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist.',
     titleBtn: 'Open Blog Post',
-    img: img1
+    img: img1,
+    url:null
   }]);
 const logo = ref(img)
 
@@ -93,8 +95,10 @@ export default {
   ],
   data: { items, logo, Autoplay, Pagination },
   methods: {
-    btnRedirect: function () {
-      console.log("BTn Entry")
+    btnRedirect: function (url) {
+      if (url) {
+        console.log(url); 
+      }
       // window.open("https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86",'_blank');
     }
   }
