@@ -196,7 +196,7 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="lg:w-[84vw] w-[92vw] max-h-auto -left-4 pl-2 mt-20 grid   grid-cols-1  gap-6 lg:pr-20 lg:pl-40 pr-2">
+    <div class="mt-20 grid grid-cols-1 pl-10 pr-10">
       <SwipperCardHome  :title="'Blog Posts'" :titleblog="'Telco Innovation'"
  :subtitleblog="'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist. '"
  :titleBtn="'Open Blog Post'"/>
@@ -206,7 +206,7 @@
       <div class="h-20"></div>
 <div class="lg:pr-11 lg:pl-11">
   <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
-        <Button @click="btnLink('telemetrics')" :className="'absolute -top-5  	  justify-center  left-0 right-0 mr-auto ml-auto md:w-[19%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
+        <Button @click="btnLink('telemetrics')" :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto md:w-[19%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
   <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">
     TELECOM SOLUTIONS
   </p>
