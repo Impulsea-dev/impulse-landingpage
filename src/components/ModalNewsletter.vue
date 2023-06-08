@@ -53,7 +53,8 @@ export default {
         const sendEmail = () => {
             loading.value=true
             axios.post('https://api.brevo.com/v3/contacts', {
-                email: email.value
+                email: email.value,
+                listIds:[2]
             }, {
                 headers: {
                     'Content-Type': 'application/json',

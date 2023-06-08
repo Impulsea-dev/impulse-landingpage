@@ -186,7 +186,7 @@
          <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
-        Nuevos Horizontes Business Center, San Pedro Sula, Honduras 13001
+        1150 Nw 72nd Ave Tower | Miami, Florida 33126
        </p>
      </div>
       
