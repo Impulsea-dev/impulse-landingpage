@@ -17,7 +17,8 @@
                     <Textinput label="" type="email" placeholder="Type your Email" name="emil" v-model="email"
                         classInput="h-[52px]" />
                 </div>
-                <Button type="submit" :isDisabled="!email" btnClass="btn-primary block-btn mt-4">
+                <Button type="submit" :isDisabled="!email" btnClass="btn-primary block-btn mt-4"
+                style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)">
                     <div class="flex justify-center">
                         <span v-if="loading" class="loading-spinner"></span>
                         <div class="ml-2 text-base"> Submit</div>
@@ -25,7 +26,7 @@
                     </Button>
             </form>
 
-            <div class="text-center text-slate-400 italic text-sm mt-6">
+            <div class="text-center text-slate-400 italic text-sm mt-6 hover:cursor-pointer" @click="$refs.modal1.closeModal()">
                 I don’t want the most recent Telco Information
             </div>
         </Modal>
