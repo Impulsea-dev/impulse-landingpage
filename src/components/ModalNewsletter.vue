@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Modal title="Impulse Newsletters" label="" labelClass="" ref="modal1" :activeModal="true" centered
+        <Modal title="Impulse Newsletters" label="" labelClass="" ref="modal1" :activeModal="displayModal" centered
             sizeClass="max-w-2xl">
             <div class="text-center flex justify-center mb-4">
                 <img src="@/assets/images/logo/impulse.svg" alt="">
@@ -26,7 +26,7 @@
                     </Button>
             </form>
 
-            <div class="text-center text-slate-400 italic text-sm mt-6 hover:cursor-pointer" @click="$refs.modal1.closeModal()">
+            <div class="text-center text-slate-400 italic text-sm mt-6 hover:cursor-pointer" @click="dontWantInfo">
                 I don’t want the most recent Telco Information
             </div>
         </Modal>
@@ -37,7 +37,7 @@ import Button from "@/components/Button";
 import Modal from "@/components/Modal/Modal";
 import Textinput from "@/components/Textinput";
 import img from "@/assets/images/logo/impulse.svg"
-import { ref } from "vue";
+import { ref,onMounted } from "vue";
 import axios from "axios";
 import { useToast } from "vue-toastification";
 export default {
@@ -46,11 +46,34 @@ export default {
         Button,
         Textinput,
     },
+    watch:{
+        displayModal:function(newval){
+            if(newval){
+                this.$refs.modal1.openModal()
+
+            }
+        }
+    },
+    methods:{
+        dontWantInfo:function(){
+            sessionStorage.setItem('opened',true);
+            this.$refs.modal1.closeModal();
+        }
+    },
     setup() {
         const email = ref(null)
         const modal1 = ref(null);
         const loading=ref(false)
         const toast = useToast();
+        const displayModal=ref(false);
+        onMounted(() => {
+            setTimeout(() => { 
+                if(!sessionStorage.getItem("opened")){
+
+                    displayModal.value=true;
+                }
+        }, 1000*10)
+        });
         const sendEmail = () => {
             loading.value=true
             axios.post('https://api.brevo.com/v3/contacts', {
@@ -65,6 +88,7 @@ export default {
                 .then(function (response) {
                     loading.value=false
                     modal1.value.closeModal();
+                    sessionStorage.setItem('opened',true);
                     toast.success('Thank you for subscribing to Impulse Newsletters!', {
                         position: "top-right",
                         timeout: 4000,
@@ -104,7 +128,7 @@ export default {
             email,
             loading,
             modal1,
-            sendEmail
+            sendEmail,displayModal
         }
 
 
