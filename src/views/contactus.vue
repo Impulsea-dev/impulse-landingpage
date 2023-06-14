@@ -76,7 +76,7 @@
    
          </div>
          <div class="hidden flex-col lg:flex lg:ml-10 lg:mr-10  mt-10 col-span-2 ">
-          <div class=" grid grid-cols-2 mb-3 gap-4 space-x-4">
+          <div class=" grid grid-cols-3 mb-3 gap-4 space-x-4">
      <div class="flex-col    gap-4 relative">
        <div class="flex justify-start items-center flex-grow-0 flex-shrink-0  gap-2">
          <svg
@@ -188,6 +188,59 @@
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         1150 Nw 72nd Ave Tower | Miami, Florida 33126
        </p>
+     </div>
+     <div class="flex-col    gap-4 relative">
+       <div class="flex justify-start items-center flex-grow-0 flex-shrink-0  gap-2">
+         <svg
+           width="16"
+           height="16"
+           viewBox="0 0 16 16"
+           fill="none"
+           xmlns="http://www.w3.org/2000/svg"
+           class="flex-grow-0 flex-shrink-0 w-4 h-4"
+           preserveAspectRatio="xMidYMid meet"
+         >
+           <path d="M0 0H16V16H0V0Z" fill="white" fill-opacity="0.01"></path>
+           <path
+             d="M2.66699 11.9999V14.6666H13.3337V1.33325H2.66699V3.99992"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M2 9.99994H3.33333"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M2 7.99994H3.33333"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M2 5.99994H3.33333"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M8.00033 6.99992C8.73671 6.99992 9.33366 6.40296 9.33366 5.66659C9.33366 4.93021 8.73671 4.33325 8.00033 4.33325C7.26395 4.33325 6.66699 4.93021 6.66699 5.66659C6.66699 6.40296 7.26395 6.99992 8.00033 6.99992Z"
+             fill="#2F88FF"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M10.6663 11.6666C10.6663 10.1938 9.47244 8.99994 7.99967 8.99994C6.52691 8.99994 5.33301 10.1938 5.33301 11.6666"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+         </svg>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
+       </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70 mt-1">
         Nuevos Horizontes Business Center, San Pedro Sula, Honduras 13001
        </p>
@@ -195,7 +248,7 @@
       
    </div>
          
-   <div class=" grid grid-cols-2 mb-3 gap-4 space-x-4">
+   <div class=" grid grid-cols-3 mb-3 gap-4 space-x-4">
      <div class="flex-col  w-44   gap-1 relative">
        <div class="flex justify-start items-center flex-grow-0 flex-shrink-0  gap-2">
          <svg
@@ -270,7 +323,7 @@
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         sales@impulse.ky
        </p>
-     </div>
+     </div> 
    </div>
    <div class="">
     <img class="aspect-video rounded-2xl object-contain" :src="contact" />
@@ -342,6 +395,62 @@
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         38 Caterpillar Lane, Grand Cayman, Cayman Islands KY1-1104
+       </p>
+     </div>
+     <div class="flex-col    gap-4 relative">
+       <div class="flex justify-start items-center flex-grow-0 flex-shrink-0  gap-2">
+         <svg
+           width="16"
+           height="16"
+           viewBox="0 0 16 16"
+           fill="none"
+           xmlns="http://www.w3.org/2000/svg"
+           class="flex-grow-0 flex-shrink-0 w-4 h-4"
+           preserveAspectRatio="xMidYMid meet"
+         >
+           <path d="M0 0H16V16H0V0Z" fill="white" fill-opacity="0.01"></path>
+           <path
+             d="M2.66699 11.9999V14.6666H13.3337V1.33325H2.66699V3.99992"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M2 9.99994H3.33333"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M2 7.99994H3.33333"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M2 5.99994H3.33333"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M8.00033 6.99992C8.73671 6.99992 9.33366 6.40296 9.33366 5.66659C9.33366 4.93021 8.73671 4.33325 8.00033 4.33325C7.26395 4.33325 6.66699 4.93021 6.66699 5.66659C6.66699 6.40296 7.26395 6.99992 8.00033 6.99992Z"
+             fill="#2F88FF"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+           <path
+             d="M10.6663 11.6666C10.6663 10.1938 9.47244 8.99994 7.99967 8.99994C6.52691 8.99994 5.33301 10.1938 5.33301 11.6666"
+             stroke="white"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+           ></path>
+         </svg>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
+       </div>
+       <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
+        1150 Nw 72nd Ave Tower | Miami, Florida 33126
        </p>
      </div>
      <div class="flex-col    gap-4 relative">
