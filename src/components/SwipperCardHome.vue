@@ -23,7 +23,7 @@
               v-html="item.subtitleblog">
 
             </div>
-            <div class="transform md:scale-75 lg:scale-100 mt-4 text-start ml-10">
+            <div class="transform md:scale-75 lg:scale-100 mt-10 text-start ml-10">
               <a type="button" class="bgbutton1"
                 :href="item.url"
                 target="_blank">{{ titleBtn }}</a>
@@ -62,11 +62,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import img1 from "@/assets/images/bgcode.webp";
 import img2 from "@/assets/images/billingportal.jpeg";
+import img3 from "@/assets/images/linkedin.png";
 // import img2 from "@/assets/images/all-img/image-2.webp";
 // import img3 from "@/assets/images/all-img/image-3.webp";
 import img from "@/assets/images/logo/impulse.svg"
 import window from "@/mixins/window"
 const items = ref([
+{
+    title: 'LinkedIn for CSPs: The Ultimate Lead Generation Guide for the Industry!',
+    subtitleblog: 'Discover effective strategies and valuable tips to optimize your LinkedIn presence, connect with your target audience, and drive meaningful engagement. . </br></br>Learn how to leverage LinkedIns unique features and resources to establish your brand as an industry expert, network with key influencers, and distribute compelling content. ',
+    titleBtn: 'Open Blog Post',
+    img: img3,
+    url:'https://medium.com/@impulseky/linkedin-for-csps-the-ultimate-lead-generation-guide-for-the-industry-7c5bd411af25'
+  },
   {
     title: 'Your Ultimate Billing Portal!',
     subtitleblog: 'A pre-built customer billing portal designed exclusively for Telecommunication Companies. </br></br>Automation at its best. Say hello to efficiency and accuracy. Impulse Pays fully automated solution simplifies billing processes, saving time and resources for your Telecommunication Company. </br></br>Join the digital revolution. Empower your customers with Impulse Pay - the ultimate billing portal for Telcos.',
