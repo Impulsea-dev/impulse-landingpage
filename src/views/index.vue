@@ -22,13 +22,13 @@
               <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">Leading the way
                 in</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
               </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">Telecom
+                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">Analytics
               </span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
               </span><span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">and </span><span
                 class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
               </span><span
                 class="flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:mb-3">Sales
-                Analytics</span>
+                Enablement Solutions</span>
             </p>
             <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
               Maximize revenue, optimize processes, and reduce cost with our solutions
