@@ -39,11 +39,7 @@
           </div>
         </div>
       </div>
-
     </section>
-
-
-
     <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6 lg:flex md:hidden hidden">
       <div class="w-[100vw] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"
         style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"></div>
@@ -126,17 +122,13 @@
         :src="whoarewe" alt="tech women networking" />
     </div>
     <div class="h-20"></div>
-
-
-
     <Button @click="btnLink('services')"
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
       <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">Our Services</p>
     </Button>
 
     <!-- Grid Cards Start-->
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-6 lg:pr-11 lg:pl-11">
-
+    <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-4 md:space-y-0 space-y-4 mb-6 lg:pr-11 lg:pl-11">
       <CardCustom title="Business Intelligence and Analytics"
         paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
         :img="bi" classBackground="cardDisplay" />
@@ -168,20 +160,20 @@
     <div class="lg:pr-11 lg:pl-11">
       <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
         <Button @click="btnLink('telemetrics')"
-          :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto md:w-[19%] w-[70%] text-center m-auto  gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
-          <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">
-            TELECOM SOLUTIONS
+          :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
+          <p class="text-base font-bold text-center text-[#141414]">
+            OUR SOLUTIONS
           </p>
         </Button>
 
         <div class="space-y-4 mt-4 ">
-          <div class="grid   grid-cols-1 lg:grid-cols-2  gap-6  ">
-            <CardCustomTelemetric></CardCustomTelemetric>
-            <card-custom-boost></card-custom-boost>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <CardCustomLeads/>
+            <CardCustomTelemetric/>
           </div>
-          <div class="grid   grid-cols-1 lg:grid-cols-1  gap-6  ">
-
-            <card-custom-product-dev></card-custom-product-dev>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
+            <card-custom-boost/>
+            <card-custom-product-dev />
           </div>
         </div>
 
@@ -213,7 +205,7 @@
       <Button text="Contact Us" btnClass="btn-primary "
         style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
     </div>
-    <ModalNewsletter/>
+    <ModalNewsletter />
   </div>
 </template>
 <script>
@@ -227,6 +219,7 @@ import Button from "@/components/Button";
 import Card from "@/components/Card"
 import CardCustom from "@/components/CardCustom.vue"
 import CardCustomWhoAre from "@/components/CardCustomWhoAre.vue"
+import CardCustomLeads from "@/components/CardCustomLeads.vue"
 import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
 import CardCustomBoost from "@/components/CardCustomBoost.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
@@ -237,11 +230,13 @@ import ModalNewsletter from "@/components/ModalNewsletter.vue"
 
 export default {
   mixins: [window],
-  components: { SwipperCardHome, Card, CardCustom, SwipperCard, Button, CardCustomWhoAre, CardCustomTelemetric,
-     CardCustomBoost, CardCustomProductDev, ModalNewsletter },
+  components: {
+    SwipperCardHome, Card, CardCustom, SwipperCard, Button, CardCustomWhoAre, CardCustomTelemetric,
+    CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter
+  },
   data() {
-    return { 
-      img, bi, dev, bpo, consult, whoarewe 
+    return {
+      img, bi, dev, bpo, consult, whoarewe
     }
   },
   methods: {

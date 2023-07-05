@@ -51,7 +51,7 @@
                 >
                   {{ title }}
                 </h2>
-                <button @click="closeModal" class="text-[22px]">
+                <button @click="closeModal" class="text-[22px] focus-visible:outline-none">
                   <Icon icon="heroicons-outline:x" />
                 </button>
               </div>

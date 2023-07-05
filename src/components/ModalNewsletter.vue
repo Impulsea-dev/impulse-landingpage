@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Modal title="Impulse Newsletters" label="" labelClass="" ref="modal1" :activeModal="displayModal" centered
+        <Modal title="Impulse Newsletters" label="" labelClass="" ref="modal1" centered
             sizeClass="max-w-2xl">
             <div class="text-center flex justify-center mb-4">
                 <img src="@/assets/images/logo/impulse.svg" alt="">
@@ -46,14 +46,6 @@ export default {
         Button,
         Textinput,
     },
-    watch:{
-        displayModal:function(newval){
-            if(newval){
-                this.$refs.modal1.openModal()
-
-            }
-        }
-    },
     methods:{
         dontWantInfo:function(){
             sessionStorage.setItem('opened',true);
@@ -65,12 +57,11 @@ export default {
         const modal1 = ref(null);
         const loading=ref(false)
         const toast = useToast();
-        const displayModal=ref(false);
         onMounted(() => {
             setTimeout(() => { 
                 if(!sessionStorage.getItem("opened")){
 
-                    displayModal.value=true;
+                    modal1.value.openModal();
                 }
         }, 1000*10)
         });
@@ -128,7 +119,7 @@ export default {
             email,
             loading,
             modal1,
-            sendEmail,displayModal
+            sendEmail
         }
 
 
