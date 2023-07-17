@@ -13,7 +13,7 @@
     "@headlessui/vue": "^1.6.4",
     "@videojs-player/vue": "^1.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vueup/vue-quill": "^1.0.0",
+    "@vueup/vue-quill": "^1.2.0",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10",
     "axios": "^1.2.2",

@@ -16,11 +16,13 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-      target: "https://api.geoiplookup.net", 
+        target: "http://192.168.0.105:3006/", 
+      // target: "https://api.geoiplookup.net", 
       changeOrigin: true,
       secure: false,
       ws: true,  
-      }
+      },
+ 
     }},
   resolve: {
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".vue", ".css"],

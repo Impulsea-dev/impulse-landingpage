@@ -81,6 +81,11 @@ const routes = [
         name: "boost",
         component: () => import("@/views/ImpulseBoost.vue"),
       },
+      {
+        path: "/saveblog",
+        name: "saveblog",
+        component: () => import("@/views/SaveBlog.vue"),
+      },
     ],
   },
 ];
