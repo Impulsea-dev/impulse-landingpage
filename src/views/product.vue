@@ -32,6 +32,12 @@
          /> 
       </div>
     <!-- Grid Value End -->
+    <div class="flex justify-center gap-4   mb-16"> 
+
+<card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
+    <ContactForm :refer="'Product & Development'" />
+    </card>
+</div>
   </div>
 </template>
   <script>  
@@ -42,10 +48,14 @@
   import success from "@/assets/images/svgs/success.svg"
   import clock from "@/assets/images/svgs/clock.svg"
   import data from "@/assets/images/svgs/data.svg"
+  import Card from "@/components/Card/index.vue"  
+import ContactForm from "@/components/ContactForm.vue" 
   export default {
     components:{
       CardCustomProduct,
       CardCustomDev,
+      Card,
+      ContactForm
       
     },
     data(){

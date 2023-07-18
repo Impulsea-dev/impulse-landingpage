@@ -71,10 +71,27 @@
             <div class="timesaving"></div>
         </div>
     </div>
+    <div class="flex justify-center gap-4   mb-16"> 
+
+    <card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
+        <ContactForm :refer="'telemetrics'" />
+        </card>
+    </div>
+   
 </div>
  
 </template>
 <script>
+ import ContactForm from "@/components/ContactForm.vue" 
+ import Card from "@/components/Card/index.vue" 
+ export default {
+    components:{Card, ContactForm},
+   
+    methods:{
+     
+    },
+    
+  };
 </script>
 <style>
  .bgtm{

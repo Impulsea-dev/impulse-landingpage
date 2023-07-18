@@ -90,19 +90,27 @@
 
     </div>
 </div>
+<div class="flex justify-center gap-4   mb-16"> 
+
+<card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
+    <ContactForm :refer="'Impulse Boost'" />
+    </card>
+</div>
 </div>
 
     
 </template>
 <script>
+import Card from "@/components/Card/index.vue"  
+import ContactForm from "@/components/ContactForm.vue" 
 import img from "@/assets/images/Satisfaction.svg"
 export default {
-    
+  components:{Card, ContactForm},
     data(){
       return {img}
     }
   };
-</script>
+</script> 
 <style>
 .bgBoost{
      background: url(@/assets/images/boost.svg) no-repeat;
