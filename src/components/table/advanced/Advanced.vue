@@ -64,6 +64,8 @@ import { MenuItem } from "@headlessui/vue";
 import Button from "@/components/Button";
 import { inject } from "vue";
 import BlogServices from "@/services/Blog"
+import { routeLocationKey } from "vue-router";
+import router from "@/router";
 
 export default {
   components: {
@@ -132,11 +134,11 @@ export default {
   },
   methods: {
     getRowClicked: function (row) {
-      console.log(row);
        this.swal({
         title: "Warning",
         text: "Are you sure you want to delete this blog?",
-        icon:'info',
+        icon:'question',
+        background:'#000',
         showCancelButton: true,
         confirmButtonColor: "#5cb85c",
         confirmButtonText: 'Sure'
@@ -145,12 +147,23 @@ export default {
           const info={ 
             title:row,
             authorization:{authorization:'v2.local.X5rGP7kOkuwrEQdipZyf7BeZFcj4j3jkrEHkFu2ijGDvZyArm7ltgtF4liEIfZjoLaORKz9dkdPAO8ZbVKFu49fWPb2CXU-aNTd8O8g_cA4Rnya1w77-Sys1tgowiax5zTRj4u30e5-QQq-wbnsLzCz59N4T1D2oNdO5S2m79hdbulD8TjnOGMbUjxYnFFH2b9TqgX1PzZ9FTIP6CyOFQcx-GhxQmMvezaXsuCGI7D9nkWDZI_naweeJs7pjQ3lTuMnye8L4tbpFQK_HD8UxMg-jRgM2MR4FenctG082iBpYcjdJuSX-9Iz4bYpZp-yLZZzWdRBo1Ty_A8nKshC5njKIuBjIWRn3tcPz5Rfakx0abw-cY_QKezDLuXj7w3Iph-UKOKaK6Sr1xkkf.bnVsbA'}
-          
           }
-          console.log(info)
-          ;
+          
           const delblog= await BlogServices.deleteBlog(info)
-          alert("Eliminado")
+          this.swal({
+        title: "Great",
+        text: "The blog has been successfully removed",
+        icon:'success',
+        background:'#000',
+        allowOutsideClick:false,
+        showCancelButton: false,
+        confirmButtonColor: "#5cb85c",
+        confirmButtonText: 'OK'
+      }).then((result)=>{
+        if (result.value) {
+          this.$router.go(0)
+        }
+      })
         }
       })
     },
