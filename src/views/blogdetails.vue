@@ -7,7 +7,7 @@
         <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
           <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white">Posted on {{
             blogcontent.timeAgo }} . </span><span
-            class="flex-grow-0 md:text-base text-sm font-semibold text-left text-white/50">Posted by: {{
+            class="flex-grow-0 md:text-base text-sm font-semibold text-left text-white/50">Posted by {{
               blogcontent.author }}</span>
         </p>
         <p class="flex-grow-0  md:text-[64px] text-xl md:text-3xl font-semibold text-center text-white">

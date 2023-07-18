@@ -7,13 +7,13 @@
       </div>
 
       <div class="-mx-6">
-        <vue-good-table :columns="columns" 
-          styleClass=" vgt-table striped centered lesspadding2 table-head" :rows="tableInfo" :pagination-options="{
+        <vue-good-table :columns="columns" styleClass=" vgt-table striped centered lesspadding2 table-head"
+          :rows="tableInfo" :pagination-options="{
             enabled: true,
             perPage: perpage,
           }" :search-options="{
   enabled: true,
-  externalQuery: searchTerm,
+  externalQuery: searchTerm
 }">
 
           <template v-slot:table-row="props">
@@ -23,7 +23,7 @@
                 btnClass="font-normal hover:none p-0" arrow />
             </span>
             <span v-if="props.column.field == 'action'">
-              <div class="flex justify-center items-center"  @click="getRowClicked(props.row.title)">
+              <div class="flex justify-center items-center" @click="getRowClicked(props.row.title)">
                 <Tooltip placement="top" arrow theme="dark">
                   <template #button>
                     <div class="action-btn">
@@ -64,8 +64,6 @@ import { MenuItem } from "@headlessui/vue";
 import Button from "@/components/Button";
 import { inject } from "vue";
 import BlogServices from "@/services/Blog"
-import { routeLocationKey } from "vue-router";
-import router from "@/router";
 
 export default {
   components: {
@@ -134,36 +132,36 @@ export default {
   },
   methods: {
     getRowClicked: function (row) {
-       this.swal({
+      this.swal({
         title: "Warning",
         text: "Are you sure you want to delete this blog?",
-        icon:'question',
-        background:'#000',
+        icon: 'question',
+        background: '#000',
         showCancelButton: true,
         confirmButtonColor: "#5cb85c",
         confirmButtonText: 'Sure'
-      }).then(async(result)=>{
+      }).then(async (result) => {
         if (result.value) {
-          const info={ 
-            title:row,
-            authorization:{authorization:'v2.local.X5rGP7kOkuwrEQdipZyf7BeZFcj4j3jkrEHkFu2ijGDvZyArm7ltgtF4liEIfZjoLaORKz9dkdPAO8ZbVKFu49fWPb2CXU-aNTd8O8g_cA4Rnya1w77-Sys1tgowiax5zTRj4u30e5-QQq-wbnsLzCz59N4T1D2oNdO5S2m79hdbulD8TjnOGMbUjxYnFFH2b9TqgX1PzZ9FTIP6CyOFQcx-GhxQmMvezaXsuCGI7D9nkWDZI_naweeJs7pjQ3lTuMnye8L4tbpFQK_HD8UxMg-jRgM2MR4FenctG082iBpYcjdJuSX-9Iz4bYpZp-yLZZzWdRBo1Ty_A8nKshC5njKIuBjIWRn3tcPz5Rfakx0abw-cY_QKezDLuXj7w3Iph-UKOKaK6Sr1xkkf.bnVsbA'}
+          const info = {
+            title: row,
+            authorization: { authorization: 'v2.local.X5rGP7kOkuwrEQdipZyf7BeZFcj4j3jkrEHkFu2ijGDvZyArm7ltgtF4liEIfZjoLaORKz9dkdPAO8ZbVKFu49fWPb2CXU-aNTd8O8g_cA4Rnya1w77-Sys1tgowiax5zTRj4u30e5-QQq-wbnsLzCz59N4T1D2oNdO5S2m79hdbulD8TjnOGMbUjxYnFFH2b9TqgX1PzZ9FTIP6CyOFQcx-GhxQmMvezaXsuCGI7D9nkWDZI_naweeJs7pjQ3lTuMnye8L4tbpFQK_HD8UxMg-jRgM2MR4FenctG082iBpYcjdJuSX-9Iz4bYpZp-yLZZzWdRBo1Ty_A8nKshC5njKIuBjIWRn3tcPz5Rfakx0abw-cY_QKezDLuXj7w3Iph-UKOKaK6Sr1xkkf.bnVsbA' }
           }
-          
-          const delblog= await BlogServices.deleteBlog(info)
+
+          const delblog = await BlogServices.deleteBlog(info)
           this.swal({
-        title: "Great",
-        text: "The blog has been successfully removed",
-        icon:'success',
-        background:'#000',
-        allowOutsideClick:false,
-        showCancelButton: false,
-        confirmButtonColor: "#5cb85c",
-        confirmButtonText: 'OK'
-      }).then((result)=>{
-        if (result.value) {
-          this.$router.go(0)
-        }
-      })
+            title: "Great",
+            text: "The blog has been successfully removed",
+            icon: 'success',
+            background: '#000',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            confirmButtonColor: "#5cb85c",
+            confirmButtonText: 'OK'
+          }).then((result) => {
+            if (result.value) {
+              this.$router.go(0)
+            }
+          })
         }
       })
     },
