@@ -1,9 +1,8 @@
 <template>
   <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]">
-
     <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative "
       :src="blogcontent.header" />
-    <div class="flex flex-col justify-start items-start absolute top-72  gap-4">
+    <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
       <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
         <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
           <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white">Posted on {{
@@ -11,10 +10,10 @@
             class="flex-grow-0 md:text-base text-sm font-semibold text-left text-white/50">Posted by: {{
               blogcontent.author }}</span>
         </p>
-        <p class="flex-grow-0  md:text-[64px] text-3xl font-semibold text-center text-white">
+        <p class="flex-grow-0  md:text-[64px] text-xl md:text-3xl font-semibold text-center text-white">
           {{ blogcontent.title }}
         </p>
-        <p class="flex-grow-0 w-3/4  text-base text-left text-white">
+        <p class="flex-grow-0 w-3/4  text-sm md:text-base text-left text-white">
           {{ blogcontent.description }}
         </p>
       </div>
