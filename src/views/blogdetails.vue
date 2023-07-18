@@ -41,8 +41,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4">
       <div></div>
-      <div class="col-span-1 md:col-span-2 lg:col-span-4 p-6 md:p-0" v-html="blogcontent.content" />
-    
+      <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
     </div>
 
 
