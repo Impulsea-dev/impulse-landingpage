@@ -1,6 +1,6 @@
 <template>
     <div class="p-0 lg:p-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16 lg:mt-28">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 lg:mt-18">
             <div class="flex flex-col">
                 <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">News and Blog</div>
                 <div class="text-sm lg:text-base text-white font-medium mt-8">
@@ -75,17 +75,13 @@ export default defineComponent({
         const blogs = ref([])
 
         onMounted(async () => {
-           const auth = "v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA"
-            const bl = await BlogServices.getBlogs(auth)
-            console.log(bl);
+             const bl = await BlogServices.getBlogs()
             blogs.value = bl 
 
         })
         const openBlog = (blog) => {
-            console.log(blog);
             sessionStorage.setItem('blogcontent', JSON.stringify(blog));
             router.push('/blogdetails')
-
         }
         return {
             selectedType,

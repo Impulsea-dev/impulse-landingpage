@@ -2,7 +2,8 @@
 <template>
   <div class="flex flex-wrap w-full justify-center relative">
     <div
-      class="absolute -top-5 z-20 justify-start 2xl:left-[0%]  xl:left-[5%] xl:w-[25%] md:left-0 left-0 2xl:w-[18%] md:w-[23%] w-[80%] text-center m-auto  gap-2 px-8  py-1 rounded-[32px] bg-[#e2e8ea]">
+      class="absolute -top-5 z-20 justify-start left-0 md:left-0 
+      md:w-[23%] xl:w-[25%] 2xl:w-[18%] w-[80%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] bg-[#e2e8ea]">
       <p class="text-base font-bold text-center text-[#141414] ">
         {{ title }}
       </p>
@@ -13,12 +14,12 @@
     }" :autoplay="{ delay: 2000 }" class="max-w-max mx-auto mb-5 rounded-md main-caro" id="slider2">
       <template v-for="(item, i) in items" :key="i">
         <swiper-slide class="hidden md:flex">
-          <img :src="item.img" class="w-full h-[450px] object-cover" alt="" />
+          <img :src="item.img" class="w-full h-[480px] object-cover" alt="" />
           <div class="absolute text-white top-0 bottom-0 right-1/2 bg-[#141414f2]">
-            <div class="md:mt-5 lg:mt-16 ml-10">
+            <div class="md:mt-5 lg:mt-12 ml-10">
               <img :src="logo" alt="">
             </div>
-            <div class="mt-2 lg:mt-5 text-xl lg:text-3xl font-bold ml-10">{{ item.title }}</div>
+            <div class="mt-2 lg:mt-5 text-xl lg:text-3xl font-bold ml-10 pr-1">{{ item.title }}</div>
             <div class="mt-2 lg:mt-5 text-xs lg:text-sm leading-6 text-[#ffffffb3] ml-10 mr-10"
               v-html="item.subtitleblog">
 
@@ -32,7 +33,7 @@
         </swiper-slide>
 
         <swiper-slide class="flex md:hidden">
-          <img :src="item.img" class="w-full h-[550px] object-cover" alt="" />
+          <img :src="item.img" class="w-full h-[570px] object-cover" alt="" />
           <div class="absolute text-white top-48 bottom-0 w-full bg-[#141414f2]">
             <div class="mt-5 font-bold ml-5">{{ item.titleblog }}</div>
             <div class="mt-2  text-xs leading-6 text-[#ffffffb3] ml-5 mr-5" v-html="item.subtitleblog">
