@@ -17,7 +17,6 @@
         <p class="flex-grow-0 w-3/4  text-base text-left text-white">
           {{ blogcontent.description }}
         </p>
-
       </div>
     </div>
 
