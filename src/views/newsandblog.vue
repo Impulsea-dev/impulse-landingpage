@@ -31,19 +31,18 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mt-10">
                 <div class="w-full h-full bg-black-500 rounded-lg cursor-pointer hover:duration-700 hover:scale-95 
                 hover:border-2" v-for="(blog, i) in blogs" :key="i" @click="openBlog(blog)">
-                    <img class="w-full h-60" src="@/assets/images/bgcode.webp" />
+                    <img class="w-full h-60" :src="blog.header" />
                     <div class="flex flex-col justify-center items-start gap-1 mt-4 ml-4 mb-10 mr-4">
                         <div class="flex flex-row gap-2 text-xs font-semibold text-left">
-                            <span class="text-xs font-semibold text-left text-white/70">Posted on {{ blog.posted }}
+                            <span class="text-xs font-semibold text-left text-white/70">Posted on {{ blog.timeAgo }}
                             </span>
-                            <span class="text-xs font-semibold text-left text-white/40">Read Time: {{ blog.readTime
-                            }}</span>
+                            <span class="text-xs font-semibold text-left text-white/40">Read Time: 2min</span>
                         </div>
                         <p class="text-base font-bold text-center text-white">
                             {{ blog.title }}
                         </p>
                         <p class="text-sm md:text-base text-left text-white/70">
-                            {{ blog.subtitle }}
+                            {{ blog.description }}
                         </p>
                     </div>
                 </div>
@@ -61,9 +60,10 @@
     </div>
 </template>
 <script>
-import { defineComponent, ref } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import SwipperCard2 from "@/components/SwipperCard2.vue"
 import { useRouter } from 'vue-router';
+import BlogServices from "@/services/Blog"
 
 export default defineComponent({
     components: { SwipperCard2 },
@@ -71,61 +71,34 @@ export default defineComponent({
     setup() {
         const selectedType = ref('All');
         const router = useRouter()
+        const blogs = ref([])
 
+        onMounted(async()=>{
+            const auth="v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA"
+            const bl= await BlogServices.getBlogs(auth)
+            console.log(bl);
+            blogs.value=bl
+            
+        })
         const openBlog = (blog) => {
-            //console.log(blog);
+            console.log(blog);
+            sessionStorage.setItem('blogcontent', JSON.stringify(blog));
             router.push('/blogdetails')
 
         }
         return {
             selectedType,
+            blogs,
             router,
             openBlog
         }
     },
     data() {
         return {
-
             blogsType: [
                 'All', 'Blog Type 1', 'Blog Type 2', 'Blog Type 3',
                 'Blog Type 4'
             ],
-            blogs: [{
-                title: '2023 Product News',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur  Tristique odio velit tristique lectus tempus eleifend blandit.',
-                posted: 'January 20, 2023',
-                readTime: '2min'
-            },
-            {
-                title: '2023 Product News',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus eleifend blandit.',
-                posted: 'January 20, 2023',
-                readTime: '2min'
-            },
-            {
-                title: '2023 Product News',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus eleifend blandit.',
-                posted: 'January 20, 2023',
-                readTime: '2min'
-            },
-            {
-                title: '2023 Product News',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus eleifend blandit.',
-                posted: 'January 20, 2023',
-                readTime: '2min'
-            },
-            {
-                title: '2023 Product News',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus eleifend blandit.',
-                posted: 'January 20, 2023',
-                readTime: '2min'
-            },
-            {
-                title: '2023 Product News',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus eleifend blandit.',
-                posted: 'January 20, 2023',
-                readTime: '2min'
-            }]
         }
     }
 })

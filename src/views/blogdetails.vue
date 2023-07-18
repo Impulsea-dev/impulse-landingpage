@@ -1,28 +1,29 @@
 <template>
  <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]">
   
-  <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative " :src="headingImg" />
+  <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative " :src="blogcontent.header" />
   <div class="flex flex-col justify-start items-start absolute top-72  gap-4">
     <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
       <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
-        <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white/70 "
-          >Posted on January 20, 2023 . </span
-        ><span class="flex-grow-0 md:text-base text-sm font-semibold text-left text-white/40"
+        <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white"
+          >Posted on {{ blogcontent.timeAgo }} . </span
+        ><span class="flex-grow-0 md:text-base text-sm font-semibold text-left text-white/50"
           >Read Time: 2min</span
         >
       </p>
       <p class="flex-grow-0  md:text-[64px] text-3xl font-semibold text-center text-white">
-        2023 Product News
+        {{ blogcontent.title }}
       </p>
-      <p class="flex-grow-0 w-3/4  text-base text-left text-white/70">
-        Lorem ipsum dolor sit amet consectetur. Tristique odio velit tristique lectus tempus
-        eleifend blandit.
+      <p class="flex-grow-0 w-3/4  text-base text-left text-white">
+        {{ blogcontent.description }}
       </p>
+  
     </div>
   </div>
 
   <div
-    class="flex justify-center items-center relative lg:left-[120px] mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
+    class="flex justify-center items-center cursor-pointer mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
+    @click="()=>{router.go(-1)}"
   >
     <svg
       width="16"
@@ -45,9 +46,13 @@
         </clipPath>
       </defs>
     </svg>
-    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-[#141414]">Back</p>
+    <p class="text-base font-bold text-center text-[#141414]">Back</p>
   </div>
-  <div class="flex flex-col relative">
+
+    <div v-html="blogcontent.content"/>
+
+  
+  <!-- <div class="flex flex-col relative">
     <div class="flex flex-wrap flex-col justify-start items-start md:pl-32 md:pr-32 gap-8">
       <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0  gap-4">
         <p class="flex-grow-0 flex-shrink-0   md:text-[32px] text-3xl font-bold text-left text-white">
@@ -75,16 +80,23 @@
       </div> 
       <img class="w-[1272px] h-[568px] rounded-2xl" :src="headingImg" />
     </div>
-   </div>
+   </div> -->
    
 </div> 
 </template>
 <script>
- 
-  
 import headingImg from "@/assets/images/bgs/bg.webp";
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 export default {
-  
+    setup(){
+      const blogcontent = ref(JSON.parse(sessionStorage.getItem('blogcontent')));
+      const router = useRouter()
+      return{
+        blogcontent,
+        router
+      }
+    },
   data() {
     return {
       headingImg
