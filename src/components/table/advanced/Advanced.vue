@@ -142,11 +142,10 @@ export default {
         confirmButtonText: 'Sure'
       }).then(async(result)=>{
         if (result.value) {
-          const info={
-            data:{
+          const info={ 
             title:row,
             authorization:{authorization:'v2.local.X5rGP7kOkuwrEQdipZyf7BeZFcj4j3jkrEHkFu2ijGDvZyArm7ltgtF4liEIfZjoLaORKz9dkdPAO8ZbVKFu49fWPb2CXU-aNTd8O8g_cA4Rnya1w77-Sys1tgowiax5zTRj4u30e5-QQq-wbnsLzCz59N4T1D2oNdO5S2m79hdbulD8TjnOGMbUjxYnFFH2b9TqgX1PzZ9FTIP6CyOFQcx-GhxQmMvezaXsuCGI7D9nkWDZI_naweeJs7pjQ3lTuMnye8L4tbpFQK_HD8UxMg-jRgM2MR4FenctG082iBpYcjdJuSX-9Iz4bYpZp-yLZZzWdRBo1Ty_A8nKshC5njKIuBjIWRn3tcPz5Rfakx0abw-cY_QKezDLuXj7w3Iph-UKOKaK6Sr1xkkf.bnVsbA'}
-          }
+          
           }
           console.log(info)
           ;

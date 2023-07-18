@@ -28,10 +28,19 @@ class Blog{
       }
 
       static deleteBlog(blog){
+   
         return new Promise(async (resolve, reject) => {
             try {
-              const res = await axios.delete('/dapi/v1/blog',blog,
-              { headers: { "Content-Type": "application/json","Authorization":blog.data.authorization.authorization}});
+              const res = await axios.delete('/dapi/v1/blog',
+              {
+                 headers: {
+                   "Content-Type": "application/json",
+                   "Authorization":blog.authorization.authorization
+                  },
+                  data: blog
+                  
+              },
+              );
               const data = res.data;
               resolve(data);
             } catch (e) {
