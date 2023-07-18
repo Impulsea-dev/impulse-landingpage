@@ -134,7 +134,9 @@ module.exports = {
         // gray3: "#FAFBFF",
         // "dark-light": "#CBD5E1",
       },
-
+      backgroundImage: {
+        'bg-btnp': 'linear-gradient(224.95deg, #a446f4 0%, #4138f3 100%)',
+        },
       fontFamily: {
         Manrope: ["Manrope", "sans-serif"],
       },
