@@ -36,7 +36,7 @@
                         <div class="flex flex-row gap-2 text-xs font-semibold text-left">
                             <span class="text-xs font-semibold text-left text-white/70">Posted on {{ blog.timeAgo }}
                             </span>
-                            <span class="text-xs font-semibold text-left text-white/40">Read Time: 2min</span>
+                            <span class="text-xs font-semibold text-left text-white/40">Posted by: {{ blog.author }}</span>
                         </div>
                         <p class="text-base font-bold text-center text-white">
                             {{ blog.title }}
