@@ -9,6 +9,8 @@ import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css"; 
 import VueClickAway from "vue3-click-away";
 import App from "./App.vue";
+import VueGoodTablePlugin from "vue-good-table-next";
+import "vue-good-table-next/dist/vue-good-table-next.css";
 import "./assets/scss/auth.scss";
 import "./assets/scss/tailwind.scss";
 import "./assets/scss/maz.scss";
@@ -34,6 +36,7 @@ const app = createApp(App)
     .use(VueClickAway)
     .use(VueTippy)
     .use(VueCookieNext)
+    .use(VueGoodTablePlugin)
     .use(VueGtag, {
         config: { id: 'G-SM9S0WPTRE' },
         router,

@@ -18,7 +18,20 @@ class Blog{
         return new Promise(async (resolve, reject) => {
             try {
               const res = await axios.get('/dapi/v1/blog',
-              { headers: { "Content-Type": "application/json","Authorization":auth}});
+              { headers: { "Content-Type": "application/json"}});
+              const data = res.data;
+              resolve(data);
+            } catch (e) {
+              reject(e);
+            }
+          });
+      }
+
+      static deleteBlog(blog){
+        return new Promise(async (resolve, reject) => {
+            try {
+              const res = await axios.delete('/dapi/v1/blog',blog,
+              { headers: { "Content-Type": "application/json","Authorization":blog.data.authorization.authorization}});
               const data = res.data;
               resolve(data);
             } catch (e) {

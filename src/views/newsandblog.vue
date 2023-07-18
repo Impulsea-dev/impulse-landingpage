@@ -18,15 +18,16 @@
                 :title-btn="'Open Blog'" />
         </div>
 
-        <div class="mt-16 md:mt-28">
-            <div class="text-sm font-bold text-center">
+        <div class="mt-4 md:mt-16">
+            <div class="text-xl lg:text-[32px] xl:text-[38px] text-white font-semibold">Blog List</div>
+            <!-- <div class="text-sm font-bold text-center">
                 <div class="block md:flex md:flex-row justify-center gap-2 items-center space-y-2 md:space-y-0">
                     <div class="cursor-pointer"
                         :class="{ 'bgTab text-black-500': selectedType === blogtype, 'bgtabdark': selectedType !== blogtype }"
                         @click="selectedType = blogtype" v-for="(blogtype, i) in blogsType" :key="i">{{ blogtype }}
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mt-10">
                 <div class="w-full h-full bg-black-500 rounded-lg cursor-pointer hover:duration-700 hover:scale-95 
@@ -36,7 +37,7 @@
                         <div class="flex flex-row gap-2 text-xs font-semibold text-left">
                             <span class="text-xs font-semibold text-left text-white/70">Posted on {{ blog.timeAgo }}
                             </span>
-                            <span class="text-xs font-semibold text-left text-white/40">Posted by: {{ blog.author }}</span>
+                            <span class="text-xs font-semibold text-left text-white/40">Posted by {{ blog.author }}</span>
                         </div>
                         <p class="text-base font-bold text-center text-white">
                             {{ blog.title }}
@@ -51,7 +52,7 @@
             <div class="mt-20">
                 <div class="text-3xl text-white font-Manrope text-center">Let’s Work Together </div>
                 <div class="mt-5 text-center">
-                    <button class="bgbutton text-white" @click="()=>{router.push('/contactus')}">
+                    <button class="bgbutton text-white" @click="() => { router.push('/contactus') }">
                         Get in touch
                     </button>
                 </div>
@@ -73,12 +74,12 @@ export default defineComponent({
         const router = useRouter()
         const blogs = ref([])
 
-        onMounted(async()=>{
-            const auth="v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA"
-            const bl= await BlogServices.getBlogs(auth)
+        onMounted(async () => {
+           const auth = "v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA"
+            const bl = await BlogServices.getBlogs(auth)
             console.log(bl);
-            blogs.value=bl
-            
+            blogs.value = bl 
+
         })
         const openBlog = (blog) => {
             console.log(blog);

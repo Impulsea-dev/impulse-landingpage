@@ -31,10 +31,14 @@
                 </div>
             </form>
         </Card>
+        
+        <div class="mt-10 mb-10">
+            <Table :info="blogs" :key="blogs"/>
+        </div>
     </div>
 </template>
 <script>
-import { defineComponent, inject, ref } from 'vue';
+import { defineComponent, inject, onMounted, ref } from 'vue';
 import TextInput from "@/components/Textinput/index.vue"
 import Card from "@/components/Card/index.vue"
 import FileInput from "@/components/Fileinput/index.vue"
@@ -44,13 +48,24 @@ import { useField, useForm } from 'vee-validate';
 import { Icon } from '@iconify/vue';
 import * as yup from "yup";
 import BlogServices from "@/services/Blog"
+import { useRouter } from 'vue-router';
+import Table from "@/components/table/advanced/Advanced.vue"
 export default defineComponent({
-    components: { Card, TextInput, FileInput, TextArea, Button, Icon },
+    components: { Card, TextInput, FileInput, TextArea, Button, Icon, Table },
     setup() {
         const image = ref(null)
         const editor = ref('editor')
         const swal = inject('$swal')
         const loading = ref(false)
+        const router = useRouter()
+        const blogs = ref([])
+
+        onMounted(async()=>{
+            const auth = "v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA"
+            const bl = await BlogServices.getBlogs(auth)
+            console.log(bl);
+            blogs.value = bl
+        })
 
         let blogSchema = yup.object().shape({
             title: yup.string().required(' Title is required'),
@@ -69,7 +84,7 @@ export default defineComponent({
             reader.readAsDataURL(img);
             reader.onload = () => { image.value = reader.result; console.log(image.value) };
         }
-        
+
         const saveBlog = handleSubmit(async () => {
             loading.value = true
             if (editor.value.getText().trim() == '' || !image.value) {
@@ -81,7 +96,6 @@ export default defineComponent({
                     confirmButtonColor: "#5cb85c",
                     confirmButtonText: "OK"
                 })
-
                 loading.value = false
             }
             else {
@@ -93,8 +107,9 @@ export default defineComponent({
                     authorization: { "authorization": "v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA" }
                 }
 
+                loading.value = false
+
                 const saveb = await BlogServices.saveBlog(info)
-                console.log(info);
                 swal({
                     title: 'Great!',
                     text: 'Create Successfully',
@@ -103,8 +118,11 @@ export default defineComponent({
                     showCancelButton: false,
                     confirmButtonColor: "#5cb85c",
                     confirmButtonText: "OK"
+                }).then((result) => {
+                    if (result.value) {
+                        router.go(0)
+                    }
                 })
-                loading.value = false
             }
 
 
@@ -118,6 +136,7 @@ export default defineComponent({
             image,
             editor,
             loading,
+            blogs,
             getImage,
             saveBlog
         }
