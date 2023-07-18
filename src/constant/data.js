@@ -24,13 +24,13 @@ export const menuItems = [
     icon: "icons8:idea",
     link: "#", 
     child: [
+      // {
+      //   childtitle: "Services",
+      //   childlink: "/services",
+      //   childicon: "ri:customer-service-fill",
+      // },
       {
-        childtitle: "Services",
-        childlink: "/services",
-        childicon: "ri:customer-service-fill",
-      },
-      {
-        childtitle: "Telecom Solutions",
+        childtitle: "Solutions",
         childlink: "/whatwedotelco",
         childicon: "ic:baseline-network-ping",
       },
@@ -81,13 +81,13 @@ export const topMenu = [
     icon: "icons8:idea",
     link: "#", 
     child: [
+      // {
+      //   childtitle: "Services",
+      //   childlink: "/services",
+      //   childicon: "ri:customer-service-fill",
+      // },
       {
-        childtitle: "Services",
-        childlink: "/services",
-        childicon: "ri:customer-service-fill",
-      },
-      {
-        childtitle: "Telecom Solutions",
+        childtitle: "Solutions",
         childlink: "/whatwedotelco",
         childicon: "ic:baseline-network-ping",
       },
