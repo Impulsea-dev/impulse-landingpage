@@ -42,6 +42,7 @@
   import { useToast } from "vue-toastification";
   import { useRouter } from "vue-router";
   import { useField, useForm } from "vee-validate";
+  import registerServices from "@/services/Register"
   import { ref } from 'vue';
   const toast = useToast()
   export default {
@@ -76,12 +77,18 @@
           }
           console.log(info);
           try {
-          toast.success("Welcome",2000);
-            router.push("/dashboard")
+                   const l=await registerServices.Login(info)
+          sessionStorage.setItem("auth",JSON.stringify(l))
+          toast.success("Welcome",{
+            timeout: 2000,
+          })
+            router.push("/saveblog")
   
           } catch (error) {
             console.log(error);
-            toast.error("Error",2000)
+            toast.error("Wrong Credentials",{
+            timeout: 2000,
+          })
           }
           })
         return {

@@ -1,5 +1,5 @@
 import axios from "axios";
-const url="/api/v1/auth";
+const url="/dapi/v1/auth";
 
 class Register{
      static createUser(datos){
@@ -53,6 +53,32 @@ class Register{
             }
           });
     }
+
+    static sendEmailbyResetPW(email){
+      return new Promise(async (resolve, reject) => {
+          try {
+            const res = await axios.post(url+'/rpwd',email,
+            { headers: { "Content-Type": "application/json"}});
+            const data = res.data;
+            resolve(data);
+          } catch (e) {
+            reject(e);
+          }
+        });   
+  }
+  
+  static resetPassword(datos){
+    return new Promise(async (resolve, reject) => {
+        try {
+          const res = await axios.post(url+'/rupwd',datos,
+          { headers: { "Content-Type": "application/json"}});
+          const data = res.data;
+          resolve(data);
+        } catch (e) {
+          reject(e);
+        }
+      });   
+  }
 
     
 }
