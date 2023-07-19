@@ -79,6 +79,21 @@ const routes = [
         component: () => import("@/views/Services.vue"),
       },
       {
+        path: "/bpo",
+        name: "bpo",
+        component: () => import("@/views/ImpulseBPO.vue"),
+      },
+      {
+        path: "/impulse-pay",
+        name: "impulse-pay",
+        component: () => import("@/views/ImpulsePay.vue"),
+      },
+      {
+        path: "/impulse-lead",
+        name: "impulse-lead",
+        component: () => import("@/views/ImpulseLead.vue"),
+      },
+      {
         path: "/telemetrics",
         name: "telemetrics",
         component: () => import("@/views/Telemetrics.vue"),
