@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "cmd": "NODE_OPTIONS=--openssl-legacy-provider  npm run dev",
     "dev": "vite --host",
     "build": "NODE_ENV=production vite build",
     "preview": "vite preview",

@@ -15,12 +15,12 @@ export default defineConfig({
   ],
   server: {
     proxy: {
-      "/api":{
-         target: "https://api.geoiplookup.net", 
-        changeOrigin: true,
-        secure: false,
-        ws: true,
-      },
+      // "/api":{
+      //    target: "https://api.geoiplookup.net", 
+      //   changeOrigin: true,
+      //   secure: false,
+      //   ws: true,
+      // },
       "/dapi": {
         // target: "http://192.168.0.105:3006/", 
         target: "https://leads.impulse.ky/",

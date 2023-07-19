@@ -22,19 +22,19 @@ export const menuItems = [
   {
     title: "What we do",
     icon: "icons8:idea",
-    link: "#", 
-    child: [
+    link: "/whatwedotelco", 
+    // child: [
       // {
       //   childtitle: "Services",
       //   childlink: "/services",
       //   childicon: "ri:customer-service-fill",
       // },
-      {
-        childtitle: "Solutions",
-        childlink: "/whatwedotelco",
-        childicon: "ic:baseline-network-ping",
-      },
-    ],
+      // {
+      //   childtitle: "Solutions",
+      //   childlink: "/whatwedotelco",
+      //   childicon: "ic:baseline-network-ping",
+      // },
+    // ],
   },
  
   // {
@@ -43,13 +43,13 @@ export const menuItems = [
   //   link: "/casestudies",
   // },
 
-  // {
-  //   title: "Blog",
-  //   icon: "fluent-mdl2:blog",
-  //   link: "/blog",
+  {
+    title: "Blog",
+    icon: "fluent-mdl2:blog",
+    link: "/blog",
 
     
-  // },
+  },
 ]
 // menuseetins
 
@@ -79,19 +79,19 @@ export const topMenu = [
   {
     title: "What we do",
     icon: "icons8:idea",
-    link: "#", 
-    child: [
+    link: "/whatwedotelco", 
+    // child: [
       // {
       //   childtitle: "Services",
       //   childlink: "/services",
       //   childicon: "ri:customer-service-fill",
       // },
-      {
-        childtitle: "Solutions",
-        childlink: "/whatwedotelco",
-        childicon: "ic:baseline-network-ping",
-      },
-    ],
+      // {
+      //   childtitle: "Solutions",
+      //   childlink: "/whatwedotelco",
+      //   childicon: "ic:baseline-network-ping",
+      // },
+    // ],
   },
  
   // {
@@ -100,13 +100,13 @@ export const topMenu = [
   //   link: "/casestudies",
   // },
 
-  // {
-  //   title: "Blog",
-  //   icon: "fluent-mdl2:blog",
-  //   link: "/blog",
+  {
+    title: "Blog",
+    icon: "fluent-mdl2:blog",
+    link: "/blog",
 
     
-  // },
+  },
 ];
 
  
