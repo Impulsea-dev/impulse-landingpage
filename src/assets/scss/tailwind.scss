@@ -64,7 +64,10 @@
       }
     }
   }
-
+  .remove-padding{
+    @apply md:mr-[-1.5rem] md:ml-[-1.5rem] ml-[-15px] mr-[-15px];
+   
+  } 
   .nav-tools {
     > span {
       @apply flex;
