@@ -64,7 +64,12 @@
       }
     }
   }
-  .remove-padding{
+  .remove-padding-all{
+    @apply md:mr-[-1.5rem] md:ml-[-1.5rem] ml-[-15px] mr-[-15px] mt-[-15px] md:mt-[-1.5rem];
+   
+  } 
+
+  .remove-padding-sides{
     @apply md:mr-[-1.5rem] md:ml-[-1.5rem] ml-[-15px] mr-[-15px];
    
   } 
