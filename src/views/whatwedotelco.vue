@@ -79,7 +79,7 @@ export default {
           description:'Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction.',
           img:'../assets/images/bpo.png',
           background:'bg-bpo',
-          url:'/product'
+          url:'/bpo'
         },
         {
           title:'Product Design and Development',

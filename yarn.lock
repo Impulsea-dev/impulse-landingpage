@@ -166,21 +166,12 @@
   "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.18.5.tgz"
   "version" "7.18.5"
 
-<<<<<<< HEAD
 "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.21.0", "@babel/runtime@^7.5.5":
-  version "7.22.6"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.6.tgz"
-  integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
+  "integrity" "sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ=="
+  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.6.tgz"
+  "version" "7.22.6"
   dependencies:
-    regenerator-runtime "^0.13.11"
-=======
-"@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.5.5":
-  "integrity" "sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg=="
-  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.20.1.tgz"
-  "version" "7.20.1"
-  dependencies:
-    "regenerator-runtime" "^0.13.10"
->>>>>>> 37eaa44a8dfcf2fe68bdf6def5150169400570fb
+    "regenerator-runtime" "^0.13.11"
 
 "@babel/template@^7.16.7":
   "integrity" "sha512-I8j/x8kHUrbYRTUxXrrMbfCa7jxkE7tZre39x3kjr9hvI82cK1FfqLygotcWN5kdPGWcLdWMHpSBavse5tWw3w=="
@@ -849,24 +840,17 @@
   "resolved" "https://registry.npmjs.org/csstype/-/csstype-2.6.21.tgz"
   "version" "2.6.21"
 
-<<<<<<< HEAD
-date-fns@^2.25.0:
-  version "2.30.0"
-  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz"
-  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+"date-fns@^2.25.0":
+  "integrity" "sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw=="
+  "resolved" "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz"
+  "version" "2.30.0"
   dependencies:
     "@babel/runtime" "^7.21.0"
 
-dayjs@^1.1.0, dayjs@^1.11.5, dayjs@^1.11.6:
-  version "1.11.6"
-  resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.11.6.tgz"
-  integrity sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==
-=======
 "dayjs@^1.1.0", "dayjs@^1.11.5", "dayjs@^1.11.6":
   "integrity" "sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ=="
   "resolved" "https://registry.npmjs.org/dayjs/-/dayjs-1.11.6.tgz"
   "version" "1.11.6"
->>>>>>> 37eaa44a8dfcf2fe68bdf6def5150169400570fb
 
 "debug@^4.0.1", "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@^4.3.3":
   "integrity" "sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ=="
@@ -2050,17 +2034,10 @@ dayjs@^1.1.0, dayjs@^1.11.5, dayjs@^1.11.6:
   dependencies:
     "picomatch" "^2.2.1"
 
-<<<<<<< HEAD
-regenerator-runtime@^0.13.11:
-  version "0.13.11"
-  resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz"
-  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
-=======
-"regenerator-runtime@^0.13.10":
-  "integrity" "sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw=="
-  "resolved" "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz"
-  "version" "0.13.10"
->>>>>>> 37eaa44a8dfcf2fe68bdf6def5150169400570fb
+"regenerator-runtime@^0.13.11":
+  "integrity" "sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg=="
+  "resolved" "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz"
+  "version" "0.13.11"
 
 "regexp.prototype.flags@^1.2.0":
   "integrity" "sha512-fjggEOO3slI6Wvgjwflkc4NFRCTZAu5CnNfBd5qOMYhWdn67nJBBu34/TkD++eeFmd8C9r9jfXJ27+nSiRkSUA=="
@@ -2547,25 +2524,18 @@ regenerator-runtime@^0.13.11:
     "lodash" "^4.17.21"
     "semver" "^7.3.5"
 
-<<<<<<< HEAD
-vue-good-table-next@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/vue-good-table-next/-/vue-good-table-next-0.2.1.tgz"
-  integrity sha512-Zri8pQtUdb698FA+KSSOW4rxLthuJw8QUdWDdmArUPyxjVFH0wpXbK32r9RgPkHFMMPVUSsqchCqE2wE1tI0qg==
+"vue-good-table-next@^0.2.1":
+  "integrity" "sha512-Zri8pQtUdb698FA+KSSOW4rxLthuJw8QUdWDdmArUPyxjVFH0wpXbK32r9RgPkHFMMPVUSsqchCqE2wE1tI0qg=="
+  "resolved" "https://registry.npmjs.org/vue-good-table-next/-/vue-good-table-next-0.2.1.tgz"
+  "version" "0.2.1"
   dependencies:
-    date-fns "^2.25.0"
-    lodash.isequal "^4.5.0"
+    "date-fns" "^2.25.0"
+    "lodash.isequal" "^4.5.0"
 
-vue-gtag@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/vue-gtag/-/vue-gtag-2.0.1.tgz"
-  integrity sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==
-=======
 "vue-gtag@^2.0.1":
   "integrity" "sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A=="
   "resolved" "https://registry.npmjs.org/vue-gtag/-/vue-gtag-2.0.1.tgz"
   "version" "2.0.1"
->>>>>>> 37eaa44a8dfcf2fe68bdf6def5150169400570fb
 
 "vue-router@^4.0.0", "vue-router@^4.0.3":
   "integrity" "sha512-JcO7cb8QJLBWE+DfxGUL3xUDOae/8nhM1KVdnudadTAORbuxIC/xAydC5Zr/VLHUDQi1ppuTF5/rjBGzgzrJNA=="
