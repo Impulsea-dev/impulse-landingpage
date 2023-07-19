@@ -20,7 +20,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
         <div class="flex-1 flex min-h-full flex-col items-start justify-center w-full  mb-5 ">
           <ul class="space-y-4">
-            <li v-for="(item, i) in salesTeamsExp" :key="i">
+            <li v-for="(item, i) in salesTeamsExp" :key="i" class="hover:scale-105">
 
               <h3 class="text-xl font-semibold mb-2">
                 {{ item.title }}
@@ -35,7 +35,7 @@
 
         <div class="flex-0  flex min-h-full flex-col items-center justify-center  w-full">
           <img src="@/assets/images/svgs/illustration.svg" alt="Illustration"
-            class="object-cover w-full h-full justify-center" layout="fill" />
+            class="object-cover w-full h-full justify-center hover:scale-105" layout="fill" />
         </div>
       </div>
 
@@ -48,11 +48,11 @@
 
         <div class="flex-0  flex min-h-full flex-col items-center justify-center  w-full p-8">
           <img src="@/assets/images/pngwing 4.png" alt="Illustration"
-            class="object-cover w-full h-full justify-center p-8" layout="fill" />
+            class="object-cover w-full h-full justify-center p-8 hover:scale-105" layout="fill" />
         </div>
         <div class="flex-1 flex min-h-full flex-col items-start justify-center w-full  mb-5 ">
           <ul class="space-y-4">
-            <li v-for="(item, i) in salesLeadsExp" :key="i">
+            <li v-for="(item, i) in salesLeadsExp" :key="i" class="hover:scale-105">
 
               <h3 class="text-xl font-semibold mb-2">
                 {{ item.title }}
@@ -83,7 +83,7 @@
         </div>
         <div class="flex-1 flex min-h-full flex-col items-start justify-center w-full  mb-5 ">
           <ul class="space-y-4">
-            <li v-for="(item, i) in salesActionsExp" :key="i">
+            <li v-for="(item, i) in salesActionsExp" :key="i" class="hover:scale-105">
 
               <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
                 <span><img :src="getImage(item.img)" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
@@ -107,11 +107,11 @@
       <div class="flex flex-col lg:m-16 space-y-6">
         <div class="flex-1  flex min-h-full flex-col items-center justify-center  w-full p-4 ">
 
-          <h3>We offer additional features that make us the ultimate BPO service provider</h3>
+          <h3 class="hover:scale-105">We offer additional features that make us the ultimate BPO service provider</h3>
 
         </div>
         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <li v-for="(item, i) in bpoService" :key="i">
+        <li v-for="(item, i) in bpoService" :key="i" class="hover:scale-105">
 
           <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
             <span><img :src="getImage(item.img)" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
