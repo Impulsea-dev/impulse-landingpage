@@ -1,80 +1,131 @@
 <template>
-    <div>
-      <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12">
-        <div class="text-lg md:text-2xl lg:text-6xl lg:w-[875px] text-white mb-4 ml-4">
-          Specialised telecom software delivered with deep industry experience
-        </div>    
+  <div>
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12">
+      <div class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-white mb-4 ml-4 font- animate-pulse">
+        Specialised telecom software delivered with deep industry experience
       </div>
-      <div  class="relative dark:bg-[#000000]  mt-2">   
-        <div class="space-y-4 mt-4">
-          <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6">
- <CardCustomTelemetric></CardCustomTelemetric>
- <card-custom-boost></card-custom-boost>
-      </div>
-      <div class="grid   grid-cols-1 lg:grid-cols-1  gap-6">
-
- <card-custom-product-dev></card-custom-product-dev>
-      </div>
-        </div>
- 
-        
-      </div>
-      <div class="grid   grid-cols-1 lg:grid-cols-3  gap-6 mt-6">
-  <FlipCard  :bgc="'bg-bg-btnp'" :img="getImage('../assets/images/test1.png')" title="Telemetrics" url="/telemetrics" description="
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vitae, reiciendis voluptatibus laboriosam quos atque sapiente corrupti laudantium quibusdam quo repellendus nemo cumque consequatur, sunt fuga eum aliquam quae dignissimos."
-
-/>
-      </div>
-      <div class="text-white text-center text-3xl mb-3 mt-4">
-        <span>Let’s Work Together </span>
-      </div>
-      <div class="flex justify-center items-center gap-6 mb-6">
-  <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
-</div>
     </div>
-  </template>
-  <script>
-  import img from "@/assets/images/logo/logo-white.svg"
-  import Card from "@/components/Card"
-  import CardCustom from "@/components/CardCustom.vue"
-  import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
-  import CardCustomBoost from "@/components/CardCustomBoost.vue"
-  import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
-  import SwipperCard from "@/components/SwipperCard.vue"
-  import FlipCard from "@/components/FlipCard.vue"
-  import Button from "@/components/Button"
-  export default {
-    components:{
-      CardCustom,
-      FlipCard,
-      Button,
-      Card,
-      CardCustomTelemetric,
-      CardCustomBoost,
-      CardCustomProductDev,
-      SwipperCard},
-    data(){
-      return {img}
+    <!-- <div class="relative dark:bg-[#000000]  mt-2">
+      <div class="space-y-4 mt-4">
+        <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6">
+          <CardCustomTelemetric></CardCustomTelemetric>
+          <card-custom-boost></card-custom-boost>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-1 gap-6">
+
+          <card-custom-product-dev></card-custom-product-dev>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
+        <FlipCard :bgc="flipcard.background" :img="getImage(flipcard.img)" :title="flipcard.title" 
+        :url="flipcard.url" :description="flipcard.description" v-for="(flipcard,i) in flipcards" :key="i"   /> 
+    </div>
+
+    <div class="text-white text-center text-3xl mb-3 mt-40">
+      <span>Let’s Work Together </span>
+    </div>
+    <div class="flex justify-center items-center gap-6 mb-6">
+      <Button text="Contact Us" btnClass="btn-primary "
+        style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
+    </div>
+  </div>
+</template>
+<script>
+import img from "@/assets/images/logo/logo-white.svg"
+import Card from "@/components/Card"
+import CardCustom from "@/components/CardCustom.vue"
+import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
+import CardCustomBoost from "@/components/CardCustomBoost.vue"
+import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
+import SwipperCard from "@/components/SwipperCard.vue"
+import FlipCard from "@/components/FlipCard.vue"
+import Button from "@/components/Button"
+import { ref } from "vue"
+export default {
+  components: {
+    CardCustom,
+    FlipCard,
+    Button,
+    Card,
+    CardCustomTelemetric,
+    CardCustomBoost,
+    CardCustomProductDev,
+    SwipperCard
+  },
+  data() {
+    return { img }
+  },
+
+  setup(){
+      const flipcards = ref([
+        {
+          title:'Telemetrics',
+          description:'Advanced analytics for telecoms. Enhance visibility, simplify management, and optimize operations with our intelligent solution.',
+          img:'../assets/images/test1.png',
+          background:'bg-bg-btnp',
+          url:'/telemetrics'
+        },
+        {
+          title:'Impulse Boost',
+          description:'Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively',
+          img:'../assets/images/boostimg.png',
+          background:'bg-boost',
+          url:'/boost'
+        },
+        {
+          title:'BPO Services',
+          description:'Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction.',
+          img:'../assets/images/bpo.png',
+          background:'bg-bpo',
+          url:'/product'
+        },
+        {
+          title:'Product Design and Development',
+          description:'Custom web solutions, billing systems, API development, and CRM integrations for telecommunications. Tailored to your unique needs, scalable solutions that drive growth and enhance customer satisfaction',
+          img:'../assets/images/desinganddev.png',
+          background:'bg-desingdev',
+          url:'/product'
+        },
+        {
+          title:'Impulse Leads',
+          description:'Empower your B2B endeavors with the crucial data and software to effortlessly connect and seal deals with your most valuable buyers, all conveniently integrated in one piace.',
+          img:'../assets/images/impulseleads.png',
+          background:'bg-imleads',
+          url:'/impulse-lead'
+        },
+        {
+          title:'Impulse Pay',
+          description:'Streamline your billing processes, enhance customer satisfaction, and simplify payments with Impulse Pays user-friendly portal. Say goodbye to long queues and complex procedures. Upgrade your telecom services effortlessly and experience the power of automation.',
+          img:'../assets/images/impulsepay.png',
+          background:'bg-impay',
+          url:'/impulse-pay'
+        }
+      ])
+
+      return{
+        flipcards
+      }
+  },
+  methods: {
+    btnContackUs() {
+      this.$router.push({ name: "contactus" })
     },
-    methods:{
-    btnContackUs(){
-      this.$router.push({name:"contactus"})
-    },
-    getImage(img){
+    getImage(img) {
       return new URL(img, import.meta.url).href
     }
   }
-  };
-  </script>
-  <style>
-  .cardDisplay{
-     
-     background: linear-gradient(-37.79deg, #000 -1.06%, #111315 100.71%);
-     background-color: #111315;
-     transition: all 400ms ease-in;
-   }
-   .cardDisplay:hover{
-     background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%); 
-   }
-  </style>
+};
+</script>
+<style>
+.cardDisplay {
+  background: linear-gradient(-37.79deg, #000 -1.06%, #111315 100.71%);
+  background-color: #111315;
+  transition: all 400ms ease-in;
+}
+.cardDisplay:hover {
+  background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);
+}
+</style>
   
