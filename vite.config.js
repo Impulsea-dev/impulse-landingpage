@@ -23,7 +23,7 @@ export default defineConfig({
       },
       "/dapi": {
         // target: "http://192.168.0.105:3006/", 
-        target: "http://localhost:3006/",
+        target: "https://leads.impulse.ky/",
         // target: "https://api.geoiplookup.net", 
         changeOrigin: true,
         secure: false,
