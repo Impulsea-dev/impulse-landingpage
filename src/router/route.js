@@ -1,3 +1,4 @@
+import auth from "@/middleware/auth";
 const routes = [
   {
     path: "/login",
@@ -95,6 +96,7 @@ const routes = [
       {
         path: "/saveblog",
         name: "saveblog",
+        meta: { middleware: [auth] },
         component: () => import("@/views/SaveBlog.vue"),
       },
     ],

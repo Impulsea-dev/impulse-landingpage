@@ -1,6 +1,5 @@
 <template>
-  <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]">
-   <div v-if="blogcontent"> 
+  <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]" v-if="blogcontent">
     <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative "
       :src="blogcontent.header" />
     <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
@@ -21,7 +20,7 @@
     </div>
 
     <div class="flex justify-center items-center cursor-pointer mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
-      @click="() => { router.go(-1) }">
+      @click="() => { router.push('/blog') }">
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="flex-grow-0 flex-shrink-0 w-2.5 h-4 relative" preserveAspectRatio="xMidYMid meet">
         <g clip-path="url(#clip0_115_3527)">
@@ -42,7 +41,7 @@
       <div></div>
       <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
     </div>
-   </div>
+
 
 
   </div>

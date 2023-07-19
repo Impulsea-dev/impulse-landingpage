@@ -13,9 +13,7 @@
         </div>
 
         <div class="mt-28">
-            <SwipperCard2 :title="'Top Picks'" :titleblog="'2023 Product News'"
-                :subtitleblog="'Lorem ipsum dolor sit amet consectetur. loerd sdle dl re se Tristique odio velit tristique lectus tempus eleifend blandit.'"
-                :title-btn="'Open Blog'" />
+            <SwipperCard2 :title="'Top Picks'"/>
         </div>
 
         <div class="mt-4 md:mt-16">
@@ -80,7 +78,6 @@ export default defineComponent({
 
         })
         const openBlog = (blog) => {
-            // sessionStorage.setItem('blogcontent', JSON.stringify(blog));
             router.push('/blog/'+blog.titleurl)
         }
         return {

@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import middlewarePipeline from "@/middleware/middlewarePipeline";
 
 import routes from "./route";
 
@@ -15,16 +16,18 @@ const router = createRouter({
   },
 });
 router.beforeEach((to, from, next) => {
-  const titleText = to.name;
-  const words = titleText.split(" ");
-  const wordslength = words.length;
-  for (let i = 0; i < wordslength; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+ 
+
+  if (!to.meta.middleware) {
+    return next()
   }
 
-  document.title = "Impulse  - " + words;
-
-  next();
+  const middleware = to.meta.middleware;
+  const context = { to, from, next }
+  return middleware[0]({
+    ...context,
+    next: middlewarePipeline(context, middleware, 1)
+  })
 });
 
 router.afterEach(() => {

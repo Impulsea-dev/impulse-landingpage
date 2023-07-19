@@ -59,6 +59,7 @@ export default defineComponent({
         const loading = ref(false)
         const router = useRouter()
         const blogs = ref([])
+        const token = ref(JSON.parse(sessionStorage.getItem('auth')).token)
 
         onMounted(async()=>{
             const bl = await BlogServices.getBlogs()
@@ -102,7 +103,7 @@ export default defineComponent({
                     description: description.value,
                     content: editor.value.getHTML(),
                     header: image.value,
-                    authorization: { "authorization": "v2.local.GVeOrs018trhRPqNO22QvpFcDM7WnG9nkuhWa8JeFowL5zCwffe61jg7zBvyyz9DEJ5F07ecNd7qrKMLY0YML1NdBqmu5TIw2nOIQM5BVymewVsNErPVNSoA_TOIA2ORc95Qp0RXU6fBuQ-OtBdQkZ7cI9In15UsD2IEj6x1QBUkT1Sd9bP0hETc1ZGsgCrfhrXKarAv-FgOiVv4pgVZVklS2F89M7iB4NpW9jE4kKru4zDveui7GSPX75vgwihiHldtM2neafLIBYRYTgnKim9GtZg0dMWGA4w4C4jpau_jil2jKNv8nUT15KM1eOgDrvSS6m8bjbH9c4LidtT1tSWwiF3JiPtxk5-QaKUrQb1nB5mZKd_jhoBkshMbRGFqesmoNAeixeosjIiG.bnVsbA" }
+                    authorization: { "authorization": token.value }
                 }
 
                 loading.value = false
@@ -135,6 +136,7 @@ export default defineComponent({
             editor,
             loading,
             blogs,
+            token,
             getImage,
             saveBlog
         }

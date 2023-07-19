@@ -62,7 +62,7 @@ import InputGroup from "@/components/InputGroup";
 import Pagination from "@/components/Pagination";
 import { MenuItem } from "@headlessui/vue";
 import Button from "@/components/Button";
-import { inject } from "vue";
+import { inject, ref } from "vue";
 import BlogServices from "@/services/Blog"
 
 export default {
@@ -81,7 +81,7 @@ export default {
     return {
       swal: inject('$swal'),
       tableInfo: this.info,
-      // token: JSON.parse(sessionStorage.getItem('auth')).token,
+      token: JSON.parse(sessionStorage.getItem('auth')).token,
       current: 1,
       perpage: 10,
       pageRange: 5,
@@ -144,7 +144,7 @@ export default {
         if (result.value) {
           const info = {
             title: row,
-            authorization: { authorization: 'v2.local.X5rGP7kOkuwrEQdipZyf7BeZFcj4j3jkrEHkFu2ijGDvZyArm7ltgtF4liEIfZjoLaORKz9dkdPAO8ZbVKFu49fWPb2CXU-aNTd8O8g_cA4Rnya1w77-Sys1tgowiax5zTRj4u30e5-QQq-wbnsLzCz59N4T1D2oNdO5S2m79hdbulD8TjnOGMbUjxYnFFH2b9TqgX1PzZ9FTIP6CyOFQcx-GhxQmMvezaXsuCGI7D9nkWDZI_naweeJs7pjQ3lTuMnye8L4tbpFQK_HD8UxMg-jRgM2MR4FenctG082iBpYcjdJuSX-9Iz4bYpZp-yLZZzWdRBo1Ty_A8nKshC5njKIuBjIWRn3tcPz5Rfakx0abw-cY_QKezDLuXj7w3Iph-UKOKaK6Sr1xkkf.bnVsbA' }
+            authorization: { authorization: this.token }
           }
 
           const delblog = await BlogServices.deleteBlog(info)

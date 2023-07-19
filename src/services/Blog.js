@@ -14,7 +14,7 @@ class Blog{
           });
       }
 
-      static getBlogs(auth){
+      static getBlogs(){
         return new Promise(async (resolve, reject) => {
             try {
               const res = await axios.get('/dapi/v1/blog',
