@@ -27,6 +27,19 @@ class Blog{
           });
       }
 
+      static getBlog(auth){
+        return new Promise(async (resolve, reject) => {
+            try {
+              const res = await axios.get('/dapi/v1/blog/'+auth,
+              { headers: { "Content-Type": "application/json"}});
+              const data = res.data;
+              resolve(data);
+            } catch (e) {
+              reject(e);
+            }
+          });
+      }
+
       static deleteBlog(blog){
    
         return new Promise(async (resolve, reject) => {

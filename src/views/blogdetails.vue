@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]">
+   <div v-if="blogcontent"> 
     <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative "
       :src="blogcontent.header" />
     <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
@@ -41,21 +42,32 @@
       <div></div>
       <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
     </div>
+   </div>
 
 
   </div>
 </template>
 <script>
-import { ref } from "vue";
+import { ref,onMounted, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
+import BlogServices from "@/services/Blog"
 export default {
-  setup() {
-    const blogcontent = ref(JSON.parse(sessionStorage.getItem('blogcontent')));
+  props: ["name"],
+  
+  setup(props) {
+    const blogcontent = ref();
     const router = useRouter()
+
+     onBeforeMount(async ()=>{
+  const getrev= await BlogServices.getBlog(props.name)
+      console.log(getrev)
+      blogcontent.value=getrev
+     })
+  
     return {
       blogcontent,
       router
     }
-  },
+  }, 
 };
 </script>

@@ -52,8 +52,9 @@ const routes = [
         component: () => import("@/views/newsandblog.vue"),
       },
       {
-        path: "/blogdetails",
+        path: "/blog/:name",
         name: "blogdetails",
+        props: true,
         component: () => import("@/views/blogdetails.vue"),
       },
       {

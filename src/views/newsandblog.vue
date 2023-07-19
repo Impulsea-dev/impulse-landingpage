@@ -80,8 +80,8 @@ export default defineComponent({
 
         })
         const openBlog = (blog) => {
-            sessionStorage.setItem('blogcontent', JSON.stringify(blog));
-            router.push('/blogdetails')
+            // sessionStorage.setItem('blogcontent', JSON.stringify(blog));
+            router.push('/blog/'+blog.titleurl)
         }
         return {
             selectedType,
