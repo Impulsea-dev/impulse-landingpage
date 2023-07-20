@@ -47,7 +47,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
 
         <div class="flex-0  flex min-h-full flex-col items-center justify-center  w-full p-8">
-          <img src="@/assets/images/pngwing 4.png" alt="Illustration"
+          <img src="@/assets/images/pngwing4.png" alt="Illustration"
             class="object-cover w-full h-full justify-center p-8 hover:scale-105" layout="fill" />
         </div>
         <div class="flex-1 flex min-h-full flex-col items-start justify-center w-full  mb-5 ">
