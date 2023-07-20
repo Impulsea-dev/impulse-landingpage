@@ -86,7 +86,7 @@
             <li v-for="(item, i) in salesActionsExp" :key="i" class="hover:scale-105">
 
               <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
-                <span><img :src="getImage(item.img)" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
+                <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
               </h3>
               <p class="text-lg">{{ item.description }}</p>
 
@@ -114,7 +114,7 @@
         <li v-for="(item, i) in bpoService" :key="i" class="hover:scale-105">
 
           <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
-            <span><img :src="getImage(item.img)" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
+            <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
           </h3>
           <p class="text-lg">{{ item.description }}</p>
 
@@ -138,6 +138,14 @@
 <script>
 import Card from "@/components/Card/index.vue"  
 import ContactForm from "@/components/ContactForm.vue"  
+import op1 from "@/assets/images/1op.png"
+import op2 from "@/assets/images/2op.png"
+import op3 from "@/assets/images/3op.png"
+import qo1 from "@/assets/images/q01.png"
+import qo2 from "@/assets/images/q02.png"
+import qo3 from "@/assets/images/q03.png"
+import qo4 from "@/assets/images/q04.png"
+import qo5 from "@/assets/images/q05.png"
 export default {
   components:{Card, ContactForm},
   data: function () {
@@ -173,19 +181,19 @@ export default {
       salesActionsExp: [
         {
 
-          img: '../assets/images/1op.png',
+          img: op1,
           title: "Cost Efficiency",
           description: "Save on overhead costs with our cost-effective BPO Services, accessing specialized expertise and focusing on core business functions."
         },
         {
 
-          img: '../assets/images/2op.png',
+          img: op2,
           title: "Proven Track Record",
           description: "We have achieved notable success stories, making a positive impact on previous clients businesses."
         },
         {
 
-          img: '../assets/images/3op.png',
+          img: op3,
           title: "Industry Knowledge",
           description: "Count on our expertise to provide valuable insights and strategic support specific to your industry or niche."
         }
@@ -193,42 +201,37 @@ export default {
       bpoService: [
         {
 
-          img: '../assets/images/q01.png',
+          img: qo1,
           title: "Dedicated Account Managers",
           description: "Your dedicated account manager ensures personalized  attention, smooth communication, and addresses concerns  throughout our partnership."
         },
         {
 
-          img: '../assets/images/q02.png',
+          img: qo2,
           title: "Customized Solutions",
           description: "We tailor our services to meet  your unique needs and goals, ensuring a perfect fit for your business."
         },
         {
 
-          img: '../assets/images/q03.png',
+          img: qo3,
           title: "Scalability",
           description: " We handle fluctuating workloads and accommodate your growth, providing the scalability your business requires."
         },
         {
 
-          img: '../assets/images/q04.png',
+          img: qo4,
           title: "Data Security",
           description: "We prioritize data security and confidentiality, adhering to the highest standards and implementing  robust measures  to protect your information."
         },
         {
 
-          img: '../assets/images/q05.png',
+          img: qo5,
           title: "Quality Assurance",
           description: "Our rigorous quality control processes  and ongoing training programs guarantee high-quality results and continuous improvement."
         }
 
       ]
     }
-  },
-  methods: {
-    getImage(img) {
-      return new URL(img, import.meta.url).href
-    }
-  }
+  }, 
 }
 </script>

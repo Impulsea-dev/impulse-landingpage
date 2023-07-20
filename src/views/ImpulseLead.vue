@@ -64,7 +64,7 @@
     <p class="text-lg text-black-500 mb-4">{{ item.description }}</p>
 
    <div class="flex flex-col items-center justify-center">
-    <img :src="getImage(item.img)" class="w-auto h-auto object-cover mr-2" alt="">
+    <img :src="item.img" class="w-auto h-auto object-cover mr-2" alt="">
    </div>
 
     </div>
@@ -113,6 +113,8 @@
 <script>
 import Card from "@/components/Card/index.vue"  
 import ContactForm from "@/components/ContactForm.vue"  
+import mac from "@/assets/images/MacbookPro.png"
+import board from "@/assets/images/BoardsNotifications.png"
 export default {
   components:{Card, ContactForm},
     data:function(){
@@ -121,22 +123,18 @@ export default {
                 {
                     title:"Ideal leads at your fingertips",
                     description:"Find and target your ideal buyers with the world's largest, most accurate B2B database.",
-                    img: '../assets/images/MacbookPro.png',
+                    img:mac ,
                 },
                 {
                     title:"Find the right leads for you",
                     description:"Use +50 search filters to uncover contacts and companies that match your buyer profile.",
-                    img: '../assets/images/BoardsNotifications.png',
+                    img: board,
                 }
 
             ]
         }
     },
-    methods: {
-    getImage(img) {
-      return new URL(img, import.meta.url).href
-    }
-  }
+
     
 }
 </script>
