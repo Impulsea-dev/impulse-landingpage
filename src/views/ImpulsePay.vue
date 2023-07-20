@@ -78,7 +78,7 @@
              <div class="hidden md:flex">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex min-h-full flex-col pl-32 items-start justify-center w-full gap-4">
-                        <div class="text-3xl text-white font-bold font-Monda capitalize">easy ,fast & one click payment</div>
+                        <div class="text-3xl text-white font-bold font-Monda capitalize">easy, fast & one click payment</div>
                         <p class="text-base text-white font-Monda">Our automated system allows customers to set up auto pay.
                         </p>
                         <p class="text-base text-white font-Monda">Impulse Pay's automated system makes it easy for your
