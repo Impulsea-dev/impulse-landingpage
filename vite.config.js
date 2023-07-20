@@ -3,6 +3,8 @@ import path from "path";
 import Vue from "@vitejs/plugin-vue";
 import ViteImages from "vite-plugin-vue-images";
 import viteCompression from 'vite-plugin-compression';
+import basicSsl from '@vitejs/plugin-basic-ssl'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,8 +14,10 @@ export default defineConfig({
       dirs: ["src/assets/images"],
     }),
     viteCompression(),
+    basicSsl()
   ],
   server: {
+    https: true,
     proxy: {
       // "/api":{
       //    target: "https://api.geoiplookup.net", 
