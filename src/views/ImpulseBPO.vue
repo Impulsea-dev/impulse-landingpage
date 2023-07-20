@@ -72,11 +72,11 @@
 
     <!-- Section Four Start -->
     <div class="bg-[#111315] w-full min-h-screen p-5">
-      <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 md:m-5 space-y-4 space-x-4 lg:m-16">
 
         <div class="flex-0  flex min-h-full flex-col items-center justify-center  w-full p-8 space-y-5">
 
-          <h1>So, why wait?</h1>
+          <h1 class="text-2xl">So, why wait?</h1>
           <p>Choose our IMPULSE BPO Services and unlock the full potential of your business. We're excited to embark on
             this journey with you and take your success to extraordinary heights!</p>
 
@@ -107,7 +107,7 @@
       <div class="flex flex-col lg:m-16 space-y-6">
         <div class="flex-1  flex min-h-full flex-col items-center justify-center  w-full p-4 ">
 
-          <h3 class="hover:scale-105">We offer additional features that make us the ultimate BPO service provider</h3>
+          <h3 class="text-2xl hover:scale-105">We offer additional features that make us the ultimate BPO service provider</h3>
 
         </div>
         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">

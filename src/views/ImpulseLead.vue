@@ -37,7 +37,7 @@
             </p>
         </div>
         <div class="flex-1 flex min-h-full flex-col items-center justify-center w-full  mb-5">
-            <h1 class="!text-white">Reasons you should focus on lead generation</h1>
+            <h1 class="!text-white text-2xl md:text-5xl" >Reasons you should focus on lead generation</h1>
         </div>
       </div>
 
