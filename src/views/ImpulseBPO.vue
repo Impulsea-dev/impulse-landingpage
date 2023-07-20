@@ -4,7 +4,7 @@
     <div class="relative w-full min-h-screen">
       <div class="absolute inset-0">
         <div class="flex min-h-full flex-col pl-8 items-start justify-center absolute w-full space-y-5 ">
-          <h1 class="md:text-6xl text-3xl font-bold dark:!text-white text-white">Impulse BPO Services</h1>
+          <h1 class="md:text-6xl text-3xl font-bold dark:!text-white text-white animate-pulse">Impulse BPO Services</h1>
           <p class="text-base dark:!text-white text-white">Get ready to discover why our IMPULSE BPO services are the
             perfect choice for your business.</p>
         </div>

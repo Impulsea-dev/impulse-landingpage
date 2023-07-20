@@ -19,7 +19,7 @@
     </div> -->
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-        <FlipCard :bgc="flipcard.background" :img="getImage(flipcard.img)" :title="flipcard.title" 
+        <FlipCard :bgc="flipcard.background" :img="flipcard.img" :title="flipcard.title" 
         :url="flipcard.url" :description="flipcard.description" v-for="(flipcard,i) in flipcards" :key="i"   /> 
     </div>
 
@@ -43,6 +43,12 @@ import SwipperCard from "@/components/SwipperCard.vue"
 import FlipCard from "@/components/FlipCard.vue"
 import Button from "@/components/Button"
 import { ref } from "vue"
+import telemetrics from "@/assets/images/test1.png"
+import boost from "@/assets/images/boostimg.png"
+import bposerv from "@/assets/images/bpo.png"
+import productdev from "@/assets/images/desinganddev.png"
+import leads from "@/assets/images/impulseleads.png"
+import pay from "@/assets/images/impulsepay.png"
 export default {
   components: {
     CardCustom,
@@ -63,42 +69,42 @@ export default {
         {
           title:'Telemetrics',
           description:'Advanced analytics for telecoms. Enhance visibility, simplify management, and optimize operations with our intelligent solution.',
-          img:'../assets/images/test1.png',
+          img:telemetrics,
           background:'bg-bg-btnp',
           url:'/telemetrics'
         },
         {
           title:'Impulse Boost',
           description:'Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively',
-          img:'../assets/images/boostimg.png',
+          img:boost,
           background:'bg-boost',
           url:'/boost'
         },
         {
           title:'BPO Services',
           description:'Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction.',
-          img:'../assets/images/bpo.png',
+          img:bposerv,
           background:'bg-bpo',
           url:'/bpo'
         },
         {
           title:'Product Design and Development',
           description:'Custom web solutions, billing systems, API development, and CRM integrations for telecommunications. Tailored to your unique needs, scalable solutions that drive growth and enhance customer satisfaction',
-          img:'../assets/images/desinganddev.png',
+          img:productdev,
           background:'bg-desingdev',
           url:'/product'
         },
         {
           title:'Impulse Leads',
           description:'Empower your B2B endeavors with the crucial data and software to effortlessly connect and seal deals with your most valuable buyers, all conveniently integrated in one piace.',
-          img:'../assets/images/impulseleads.png',
+          img:leads,
           background:'bg-imleads',
           url:'/impulse-lead'
         },
         {
           title:'Impulse Pay',
           description:'Streamline your billing processes, enhance customer satisfaction, and simplify payments with Impulse Pays user-friendly portal. Say goodbye to long queues and complex procedures. Upgrade your telecom services effortlessly and experience the power of automation.',
-          img:'../assets/images/impulsepay.png',
+          img:pay,
           background:'bg-impay',
           url:'/impulse-pay'
         }
@@ -111,9 +117,6 @@ export default {
   methods: {
     btnContackUs() {
       this.$router.push({ name: "contactus" })
-    },
-    getImage(img) {
-      return new URL(img, import.meta.url).href
     }
   }
 };
