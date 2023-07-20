@@ -386,11 +386,6 @@
     global "~4.4.0"
     is-function "^1.0.1"
 
-"@vitejs/plugin-basic-ssl@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@vitejs/plugin-basic-ssl/-/plugin-basic-ssl-1.0.1.tgz"
-  integrity sha512-pcub+YbFtFhaGRTo1832FQHQSHvMrlb43974e2eS8EKleR3p1cDdkJFPci1UhwkEf1J9Bz+wKBSzqpKp7nNj2A==
-
 "@vitejs/plugin-vue@^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-4.0.0.tgz"
@@ -2482,7 +2477,7 @@ vite-plugin-vue-images@^0.6.1:
     debug "^4.3.2"
     fast-glob "3.2.5"
 
-"vite@^3.0.0 || ^4.0.0", vite@^4.0.0, vite@^4.0.4, vite@>=2.0.0, vite@>2.0.0-0:
+vite@^4.0.0, vite@^4.0.4, vite@>=2.0.0, vite@>2.0.0-0:
   version "4.0.4"
   resolved "https://registry.npmjs.org/vite/-/vite-4.0.4.tgz"
   integrity sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==
