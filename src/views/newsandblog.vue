@@ -73,8 +73,13 @@ export default defineComponent({
         const blogs = ref([])
 
         onMounted(async () => {
-             const bl = await BlogServices.getBlogs()
-            blogs.value = bl 
+             try {
+                const bl = await BlogServices.getBlogs();
+                blogs.value = bl; 
+             } catch (error) {
+                console.log(error)
+                
+             }
 
         })
         const openBlog = (blog) => {
