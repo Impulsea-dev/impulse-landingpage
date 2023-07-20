@@ -5,8 +5,8 @@
                 <div class="hidden md:flex">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex min-h-full flex-col pl-32 items-start justify-center w-full gap-4">
-                        <div class="text-3xl md:text-6xl font-bold text-white font-Monda">Impulse Pay</div>
-                        <div class="text-2xl md:text-3xl text-white font-bold font-Monda">The Future of Payments</div>
+                        <h3 class="text-3xl md:text-6xl font-bold text-white font-Monda">Impulse Pay</h3>
+                        <h4 class="text-2xl md:text-3xl text-white font-bold font-Monda">The Future of Payments</h4>
                         <p class="text-base text-white font-Monda">In a world where seamless transactions and customer
                             satisfaction reign supreme,
                             Impulse Pay is the perfect solution for telecommunication companies. </p>
@@ -21,9 +21,9 @@
 
                 <div class="flex md:hidden">
                     <div class="flex flex-col text-center gap-2 mt-10">
-                        <div class="text-2xl font-bold text-white font-Monda">Impulse Pay</div>
-                        <div class="text-xl text-white font-bold font-Monda">The Future of Payments</div>
-                        <p class="text-sm text-white font-Monda">In a world where seamless transactions and customer
+                        <h3 class="text-2xl font-bold !text-white font-Monda">Impulse Pay</h3>
+                        <h4 class="text-xl !text-white font-bold font-Monda">The Future of Payments</h4>
+                        <p class="text-sm text-white font-Monda p-4">In a world where seamless transactions and customer
                             satisfaction reign supreme,
                             Impulse Pay is the perfect solution for telecommunication companies. </p>
                     </div>
@@ -33,7 +33,7 @@
 
         <div class="mt-20 mb-20">
             <div class="flex flex-col items-center gap-2">
-                <div class="text-xl text-white font-bold font-Monda">Some of the best features</div>
+                <h4 class="text-xl !text-white font-bold font-Monda">Some of the best features</h4>
                 <div class="text-base text-white font-Monda w-60 md:w-[550px]">Impulse Pay is a pre-built customer billing portal
                     that makes it easy for your
                     customers to settle their bills online any time, anywhere.</div>
@@ -78,7 +78,7 @@
              <div class="hidden md:flex">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex min-h-full flex-col pl-32 items-start justify-center w-full gap-4">
-                        <div class="text-3xl text-white font-bold font-Monda capitalize">easy, fast & one click payment</div>
+                        <h3 class="text-3xl !text-white font-bold capitalize">Easy, Fast & One Click Payment</h3>
                         <p class="text-base text-white font-Monda">Our automated system allows customers to set up auto pay.
                         </p>
                         <p class="text-base text-white font-Monda">Impulse Pay's automated system makes it easy for your
@@ -96,9 +96,9 @@
                     </div>
                 </div>
              </div>
-             <div class="flex md:hidden">
-                <div class="flex flex-col text-center gap-2 mt-20">
-                    <div class="text-xl text-white font-bold font-Monda">easy ,fast & one click payment</div>
+             <div class="flex md:hidden p-4">
+                <div class="flex flex-col text-center gap-4 mt-20">
+                    <h3 class="text-xl !text-white font-bold font-Monda capitalize">easy ,fast & one click payment</h3>
                         <p class="text-sm text-white font-Monda">Our automated system allows customers to set up auto pay.
                         </p>
                         <p class="text-sm text-white font-Monda">Impulse Pay's automated system makes it easy for your
@@ -113,10 +113,10 @@
         </div>
 
         <div class="mt-20">
-            <div class="flex flex-col items-center text-center gap-2">
-                <div class="text-lg md:text-2xl text-white font-bold font-Monda">Goodbye to long queues and cumbersome processes</div>
-                <div class="text-sm text-white font-Monda">With Impulse Pay, your customers can say goodbye
-                    to long queues and cumbersome processes.</div>
+            <div class="flex flex-col items-center text-center gap-2 p-4">
+                <h3 class="text-lg md:text-2xl !text-white font-bold font-Monda">Goodbye to long queues and cumbersome processes</h3>
+                <h3 class="text-sm !text-white font-Monda">With Impulse Pay, your customers can say goodbye
+                    to long queues and cumbersome processes.</h3>
             </div>
 
             <div class="relative w-full min-h-[300px] md:min-h-[450px] 2xl:min-h-[500px] bg-[#9898D1] mt-20">
@@ -127,29 +127,29 @@
                             <img src="@/assets/images/bro.png" alt="Avatar" class="object-contain" />
                         </div>
                         <div class="md:col-span-2 flex flex-col pl-32 gap-4 justify-center pr-4">
-                            <div class="text-3xl text-white font-bold font-Monda">Your money is 100% safe with us </div>
+                            <h3 class="text-3xl !text-white font-bold font-Monda">Your money is 100% safe with us </h3>
                             <p class="text-base text-white font-Monda">Sometimes you don’t know who you can and cannot
                                 trust. I still learn that over and over again</p>
                         </div>
                     </div>
                    </div>
-                   <div class="flex md:hidden mt-20">
-                    <div class="text-center">
-                        <div class="text-xl text-white font-bold font-Monda">Your money is 100% safe with us </div>
+                   <div class="flex md:hidden mt-20 p-5">
+                    <div class="text-center space-y-4">
+                        <h3 class="text-xl !text-white font-bold font-Monda">Your money is 100% safe with us </h3>
                             <p class="text-sm text-white font-Monda">Sometimes you don’t know who you can and cannot
-                                trust. I still learn that over and over again</p>
+                                trust. I still learn that over and over again.</p>
                     </div>
                    </div>
                 </div>
             </div>
 
             <div class="mt-20 mb-20">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="flex justify-center items-center text-xl text-white font-Monda pl-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 p-4">
+                    <p class="flex justify-center items-center text-xl text-white font-Monda md:pl-20 p-6">
                         This ensures that their bills are paid on time every time, 
                         so they never have to worry about missing a payment or incurring late fees.
 
-                    </div>
+                    </p>
                     <div class="flex justify-center items-center">
                         <img src="@/assets/images/handpay.png"/>
                     </div>

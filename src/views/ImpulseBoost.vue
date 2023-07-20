@@ -90,7 +90,7 @@
 
     </div>
 </div>
-<div class="bg-[#181818] flex justify-center gap-4 md:p-8   "> 
+<div class="md:bg-[#181818] flex justify-center md:gap-4 md:p-8   "> 
 
 <card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
     <ContactForm :refer="'Impulse Boost'" />
