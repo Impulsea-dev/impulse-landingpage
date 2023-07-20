@@ -32,10 +32,10 @@
          /> 
       </div>
     <!-- Grid Value End -->
-    <div class="flex justify-center gap-4   mb-16"> 
+    <div class="bg-[#181818] flex justify-center gap-4 p-8   "> 
 
 <card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
-    <ContactForm :refer="'Product & Development'" />
+    <ContactForm :refer="'Impulse Boost'" />
     </card>
 </div>
   </div>
