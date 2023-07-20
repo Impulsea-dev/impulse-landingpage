@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/dapi/:match*",
+            "destination": "https://leads.impulse.ky/dapi/:match*"
+        }
+    ]
+}
