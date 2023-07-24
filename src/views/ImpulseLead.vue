@@ -19,7 +19,7 @@
                 <div class="flex md:hidden">
                     <div class="flex flex-col text-center gap-2 mt-10">
                         <div class="text-2xl font-bold text-white font-Monda">Impulse Leads</div>
-                        <p class="text-sm text-white font-Monda">Are you struggling to find and close leads? Our platform can help! With over 265M contacts, you will be able to reach your target audience and help you grow your business.</p>
+                        <p class="text-sm text-white font-Monda p-4">Are you struggling to find and close leads? Our platform can help! With over 265M contacts, you will be able to reach your target audience and help you grow your business.</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
         </div>
         <div class="flex-1 flex min-h-full flex-col items-start justify-center w-full  mb-5  space-y-4">
          
-            <h2 class="!text-white">Find net new leads and enrich existing contacts</h2>
+            <h2 class="!text-white md:text-5xl text-2xl">Find net new leads and enrich existing contacts</h2>
           <p>Enrich and update your database with fresh, accurate and compliant people and account intelligence.</p>
 
         </div>
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Section Four End -->
-    <div class="bg-[#181818] flex justify-center gap-4 p-8   "> 
+    <div class="bg-[#181818] flex justify-center gap-4 md:p-8   "> 
 
 <card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
     <ContactForm :refer="'Impulse Leads'" />

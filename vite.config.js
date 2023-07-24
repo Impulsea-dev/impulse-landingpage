@@ -17,6 +17,7 @@ export default defineConfig({
     basicSsl()
   ],
   server: {
+    host:true,
     https: true,
     proxy: {
       // "/api":{
