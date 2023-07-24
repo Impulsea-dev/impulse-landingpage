@@ -19,7 +19,7 @@
       </div>
     </div> -->
 
-   <div class="!mr-10">
+   <div class=" !mr-5 md:!mr-10">
     <div class="flex justify-center items-center cursor-pointer mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
       @click="() => { router.push('/blog') }">
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
       <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
     </div>
 
-    <div class="flex justify-end mr-20 mb-10">
+    <div class="flex justify-end mr-10 md:mr-20 mb-0 md:mb-10">
       <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white">Posted by {{
               blogcontent.author }}</span>
     </div>
