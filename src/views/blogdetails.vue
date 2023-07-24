@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-wrap flex-col justify-start items-start w-[100vw]" v-if="blogcontent">
+  <div class="flex flex-wrap flex-col justify-center items-end w-[100vw]" v-if="blogcontent">
     <img class="w-[100vw] h-[486px] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative "
       :src="blogcontent.header" />
-    <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
+    <!-- <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
       <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
         <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
           <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white">Posted on {{
@@ -17,8 +17,9 @@
           {{ blogcontent.description }}
         </p>
       </div>
-    </div>
+    </div> -->
 
+   <div class="mr-10">
     <div class="flex justify-center items-center cursor-pointer mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
       @click="() => { router.push('/blog') }">
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +37,17 @@
       </svg>
       <p class="text-base font-bold text-center text-[#141414]">Back</p>
     </div>
+   </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-10">
       <div></div>
       <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
     </div>
 
+    <div class="flex justify-end mr-20 mb-10">
+      <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white">Posted by {{
+              blogcontent.author }}</span>
+    </div>
 
 
   </div>
