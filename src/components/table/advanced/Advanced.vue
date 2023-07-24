@@ -23,7 +23,7 @@
                 btnClass="font-normal hover:none p-0" arrow />
             </span>
             <span v-if="props.column.field == 'action'">
-              <div class="flex justify-center items-center" @click="getRowClicked(props.row.title)">
+              <div class="flex justify-center items-center" @click="getRowClicked(props.row.id)">
                 <Tooltip placement="top" arrow theme="dark">
                   <template #button>
                     <div class="action-btn">
@@ -132,6 +132,7 @@ export default {
   },
   methods: {
     getRowClicked: function (row) {
+      console.log(row);
       this.swal({
         title: "Warning",
         text: "Are you sure you want to delete this blog?",

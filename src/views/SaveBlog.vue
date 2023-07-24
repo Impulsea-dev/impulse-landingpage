@@ -63,6 +63,7 @@ export default defineComponent({
 
         onMounted(async()=>{
             const bl = await BlogServices.getBlogs()
+            console.log(bl);
             blogs.value = bl
         })
 

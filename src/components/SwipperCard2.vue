@@ -66,25 +66,25 @@ import img3 from "@/assets/images/linkedin.png";
 import img from "@/assets/images/logo/impulse.svg"
 import window from "@/mixins/window"
 import BlogServices from "@/services/Blog"
-const items = ref([
-{
-    title: 'LinkedIn for CSPs: The Ultimate Lead Generation Guide for the Industry!',
-    description: 'Discover effective strategies and valuable tips to optimize your LinkedIn presence, connect with your target audience, and drive meaningful engagement. . </br></br>Learn how to leverage LinkedIns unique features and resources to establish your brand as an industry expert, network with key influencers, and distribute compelling content. ',
-    header: img3,
-    titleurl:'https://medium.com/@impulseky/linkedin-for-csps-the-ultimate-lead-generation-guide-for-the-industry-7c5bd411af25'
-  },
-  {
-    title: 'Your Ultimate Billing Portal!',
-    description: 'A pre-built customer billing portal designed exclusively for Telecommunication Companies. </br></br>Automation at its best. Say hello to efficiency and accuracy. Impulse Pays fully automated solution simplifies billing processes, saving time and resources for your Telecommunication Company. </br></br>Join the digital revolution. Empower your customers with Impulse Pay - the ultimate billing portal for Telcos.',
-    header: img2,
-    titleurl:'https://medium.com/@impulseky/empowering-telecom-companies-introducing-impulse-pays-game-changing-billing-portal-6e7504b650fa'
-  },
-  {
-    title: 'Telco Innovation',
-    description: 'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist.',
-    header: img1,
-    titleurl:'https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86'
-  }]);
+// const items = ref([
+// {
+//     title: 'LinkedIn for CSPs: The Ultimate Lead Generation Guide for the Industry!',
+//     description: 'Discover effective strategies and valuable tips to optimize your LinkedIn presence, connect with your target audience, and drive meaningful engagement. . </br></br>Learn how to leverage LinkedIns unique features and resources to establish your brand as an industry expert, network with key influencers, and distribute compelling content. ',
+//     header: img3,
+//     titleurl:'https://medium.com/@impulseky/linkedin-for-csps-the-ultimate-lead-generation-guide-for-the-industry-7c5bd411af25'
+//   },
+//   {
+//     title: 'Your Ultimate Billing Portal!',
+//     description: 'A pre-built customer billing portal designed exclusively for Telecommunication Companies. </br></br>Automation at its best. Say hello to efficiency and accuracy. Impulse Pays fully automated solution simplifies billing processes, saving time and resources for your Telecommunication Company. </br></br>Join the digital revolution. Empower your customers with Impulse Pay - the ultimate billing portal for Telcos.',
+//     header: img2,
+//     titleurl:'https://medium.com/@impulseky/empowering-telecom-companies-introducing-impulse-pays-game-changing-billing-portal-6e7504b650fa'
+//   },
+//   {
+//     title: 'Telco Innovation',
+//     description: 'Are you struggling with the complexities of Telco Data? Is your day-to-day matching information from different systems to try and analyze it? Do you feel you can do more to grow your business? <br/> <br/>At Impulse, we know exactly what that feels like as we are industry veterans who have decided to help with some of the major issues we know exist.',
+//     header: img1,
+//     titleurl:'https://medium.com/@impulseky/impulse-the-ultimate-telco-solution-provider-f9dc5697aa86'
+//   }]);
 const logo = ref(img)
 export default {
   mixins: [window],
@@ -93,17 +93,17 @@ export default {
   data: {  logo, Autoplay, Pagination },
 
   setup(){
-  //  const items = ref([])
-  //   onMounted(async()=>{
-  //       const bl = await BlogServices.getBlogs()
-  //       for (let i = 0; i < bl.length; i++) {
-  //           if (bl[i].titleurl) {
-  //             bl[i].titleurl='blog/'+bl[i].titleurl
-  //           }
-  //       }
-  //       items.value=bl
+   const items = ref([])
+    onMounted(async()=>{
+        const bl = await BlogServices.getBlogs()
+        for (let i = 0; i < bl.length; i++) {
+            if (bl[i].titleurl) {
+              bl[i].titleurl='blog/'+bl[i].titleurl
+            }
+        }
+        items.value=bl
        
-  //   })
+    })
    return{
     items
    }
