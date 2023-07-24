@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Card className="bg-black-900">
+    <Card className="!bg-black-900">
       <div class="md:flex justify-between pb-6 md:space-y-0 space-y-3 items-center">
         <h5>Blogs List</h5>
         <InputGroup v-model="searchTerm" placeholder="Search" type="text" prependIcon="heroicons-outline:search" merged />
