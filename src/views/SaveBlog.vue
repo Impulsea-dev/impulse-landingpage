@@ -1,6 +1,6 @@
 <template >
     <div>
-        <Card className="bg-black-900">
+        <Card className="!bg-black-900">
             <div class="text-xl font-bold text-white ">Create a Blog</div>
             <form @submit.prevent="saveBlog">
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-10">
