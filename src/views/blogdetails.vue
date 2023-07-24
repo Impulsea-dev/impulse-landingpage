@@ -19,7 +19,7 @@
       </div>
     </div> -->
 
-   <div class="mr-10">
+   <div class="!mr-10">
     <div class="flex justify-center items-center cursor-pointer mb-4 gap-2 px-8 py-3 rounded-[32px] bg-[#e2e8ea]"
       @click="() => { router.push('/blog') }">
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"
