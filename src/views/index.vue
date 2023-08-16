@@ -59,7 +59,7 @@
               </span>
             </p>
             <p class="flex-grow-0 flex-shrink-0 w-[606px] text-base font-medium text-left text-white/70">
-              We aim to assist our partners in increasing their revenue, minimizing expenses, and
+              We aim to assist our clients in increasing their revenue, minimizing expenses, and
               optimizing their processes through our solutions via automation and analytics. Our priority
               is to build relationships with clients for mutual success, through open communication,
               teamwork, and a positive work environment that meets their objectives.
@@ -187,7 +187,7 @@
           Our Integration partners
         </div>
         <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
-          We aim to assist our partners in increasing their revenue, minimizing expenses,
+          We aim to assist our clients in increasing their revenue, minimizing expenses,
           and optimizing their processes through our solutions via automation and analytics.
         </div>
       </div>
