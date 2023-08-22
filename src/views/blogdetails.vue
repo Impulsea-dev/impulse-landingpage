@@ -44,10 +44,7 @@
       <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
     </div>
 
-    <div class="flex justify-end mr-10 md:mr-20 mb-0 md:mb-10">
-      <span class="flex-grow-0  md:text-base text-sm font-semibold text-left text-white">Posted by {{
-              blogcontent.author }}</span>
-    </div>
+   
 
 
   </div>
