@@ -4,7 +4,7 @@ class Blog{
     static saveBlog(blog){
         return new Promise(async (resolve, reject) => {
             try {
-              const res = await axios.post('/dapi/v1/blog',blog,
+              const res = await axios.post('https://leads.impulse.ky/dapi/v1/blog',blog,
               { headers: { "Content-Type": "application/json","Authorization":blog.authorization.authorization}});
               const data = res.data;
               resolve(data);
@@ -17,7 +17,7 @@ class Blog{
       static getBlogs(){
         return new Promise(async (resolve, reject) => {
             try {
-              const res = await axios.get('/dapi/v1/blog',
+              const res = await axios.get('https://leads.impulse.ky/dapi/v1/blog',
               { headers: { "Content-Type": "application/json"}});
               const data = res.data;
               resolve(data);
@@ -30,7 +30,7 @@ class Blog{
       static getBlog(auth){
         return new Promise(async (resolve, reject) => {
             try {
-              const res = await axios.get('/dapi/v1/blog/'+auth,
+              const res = await axios.get('https://leads.impulse.ky/dapi/v1/blog/'+auth,
               { headers: { "Content-Type": "application/json"}});
               const data = res.data;
               resolve(data);
@@ -44,7 +44,7 @@ class Blog{
    
         return new Promise(async (resolve, reject) => {
             try {
-              const res = await axios.delete('/dapi/v1/blog',
+              const res = await axios.delete('https://leads.impulse.ky/dapi/v1/blog',
               {
                  headers: {
                    "Content-Type": "application/json",

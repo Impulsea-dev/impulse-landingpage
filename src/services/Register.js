@@ -1,5 +1,5 @@
 import axios from "axios";
-const url="/dapi/v1/auth";
+const url="https://leads.impulse.ky/dapi/v1/auth";
 
 class Register{
      static createUser(datos){
