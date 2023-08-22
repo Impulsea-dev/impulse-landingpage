@@ -43,13 +43,13 @@ export const menuItems = [
   //   link: "/casestudies",
   // },
 
-  // {
-  //   title: "Blog",
-  //   icon: "fluent-mdl2:blog",
-  //   link: "/blog",
+  {
+    title: "Blog",
+    icon: "fluent-mdl2:blog",
+    link: "/blog",
 
     
-  // },
+  },
 ]
 // menuseetins
 
@@ -100,13 +100,13 @@ export const topMenu = [
   //   link: "/casestudies",
   // },
 
-  // {
-  //   title: "Blog",
-  //   icon: "fluent-mdl2:blog",
-  //   link: "/blog",
+  {
+    title: "Blog",
+    icon: "fluent-mdl2:blog",
+    link: "/blog",
 
     
-  // },
+  },
 ];
 
  
