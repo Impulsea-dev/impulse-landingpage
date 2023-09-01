@@ -203,7 +203,7 @@
       <Button text="Contact Us" btnClass="btn-primary "
         style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
     </div>
-    <ModalNewsletter/>
+      <ModalNewsletter/>    
   </div>
 </template>
 <script>

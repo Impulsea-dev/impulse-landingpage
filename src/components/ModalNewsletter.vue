@@ -40,7 +40,9 @@ import img from "@/assets/images/logo/impulse.svg"
 import { ref,onMounted } from "vue";
 import axios from "axios";
 import { useToast } from "vue-toastification";
+import window from "@/mixins/window";
 export default {
+    mixins: [window],
     components: {
         Modal,
         Button,
@@ -50,25 +52,11 @@ export default {
         dontWantInfo:function(){
             sessionStorage.setItem('opened',true);
             this.$refs.modal1.closeModal();
-        }
-    },
-    setup() {
-        const email = ref(null)
-        const modal1 = ref(null);
-        const loading=ref(false)
-        const toast = useToast();
-        onMounted(() => {
-            setTimeout(() => { 
-                if(!sessionStorage.getItem("opened")){
-
-                    modal1.value.openModal();
-                }
-        }, 1000*10)
-        });
-        const sendEmail = () => {
-            loading.value=true
+        },
+        sendEmail:function(){
+            this.loading=true
             axios.post('https://api.brevo.com/v3/contacts', {
-                email: email.value,
+                email: this.email,
                 listIds:[2]
             }, {
                 headers: {
@@ -77,10 +65,10 @@ export default {
                 }
             })
                 .then(function (response) {
-                    loading.value=false
-                    modal1.value.closeModal();
+                    this.loading=false
+                    this.$refs.modal1.closeModal();
                     sessionStorage.setItem('opened',true);
-                    toast.success('Thank you for subscribing to Impulse Newsletters!', {
+                    this.toast.success('Thank you for subscribing to Impulse Newsletters!', {
                         position: "top-right",
                         timeout: 4000,
                         closeOnClick: true,
@@ -96,9 +84,9 @@ export default {
                     });
                 })
                 .catch(function (error) {
-                    loading.value=false
-                    modal1.value.closeModal();
-                    toast.error('Wrong Email Address or Already Registered!', {
+                    this.loading=false
+                    this.$refs.modal1.closeModal();
+                    this.toast.error('Wrong Email Address or Already Registered!', {
                         position: "top-right",
                         timeout: 4000,
                         closeOnClick: true,
@@ -113,13 +101,24 @@ export default {
                         rtl: false
                     });
                 });
-        }
-
+        },
+    },
+    mounted(){
+        setTimeout(() => { 
+                if(!sessionStorage.getItem("opened") && this.window.width>654){
+                    this.$refs.modal1.openModal();
+                }
+        }, 1000*10)
+    },
+    setup() {
+        const email = ref(null)
+        const loading=ref(false)
+        const toast = useToast();        
+        
         return {
             email,
             loading,
-            modal1,
-            sendEmail
+            toast
         }
 
 
