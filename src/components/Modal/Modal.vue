@@ -7,7 +7,7 @@
     <Dialog
       as="div"
       @close="closeModal"
-      class="relative z-[99999]"
+      class="relative z-[99999] hidden md:block "
       v-if="disableBackdrop === false"
     >
       <TransitionChild
@@ -19,7 +19,7 @@
         :leave-to="noFade ? '' : 'opacity-0'"
       >
         <div
-          class="fixed inset-0 bg-slate-900/50 backdrop-filter backdrop-blur-sm"
+          class="hidden md:block fixed inset-0 bg-slate-900/50 backdrop-filter backdrop-blur-sm"
         />
       </TransitionChild>
 

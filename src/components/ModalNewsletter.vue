@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="">
         <Modal title="Impulse Newsletters" label="" labelClass="" ref="modal1" centered
             sizeClass="max-w-2xl">
             <div class="text-center flex justify-center mb-4">
