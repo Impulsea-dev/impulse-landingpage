@@ -173,6 +173,10 @@
             <card-custom-boost/>
             <card-custom-product-dev />
           </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
+            <CardCustomPay/>
+            <CardCustomBPO/>
+          </div>
         </div>
 
       </Card>
@@ -220,6 +224,8 @@ import CardCustomWhoAre from "@/components/CardCustomWhoAre.vue"
 import CardCustomLeads from "@/components/CardCustomLeads.vue"
 import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
 import CardCustomBoost from "@/components/CardCustomBoost.vue"
+import CardCustomPay from "@/components/CardCustomPay.vue"
+import CardCustomBPO from "@/components/CardCustomBPO.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCardHome from "@/components/SwipperCardHome.vue"
@@ -230,8 +236,8 @@ export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, SwipperCard, Button, CardCustomWhoAre, CardCustomTelemetric,
-    CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter
-  },
+    CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter, CardCustomPay, CardCustomBPO
+    },
   data() {
     return {
       img, bi, dev, bpo, consult, whoarewe
