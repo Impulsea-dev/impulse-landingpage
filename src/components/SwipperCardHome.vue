@@ -25,7 +25,7 @@
             </div>
             <div class="transform md:scale-75 lg:scale-100 mt-10 text-start ml-10">
               <a type="button" class="bgbutton1 hover:opacity-80"
-                :href="item.titleurl"
+              @click="btnLink('blog')"
                 target="_blank">Open Blog Post</a>
             </div>
           </div>
@@ -40,7 +40,7 @@
 
             <div class="mt-4 text-start ml-5 text-xs mb-4">
               <a type="button" class="bgbutton1"
-              :href="item.titleurl"
+              @click="btnLink('blog')"
                 target="_blank">Open Blog Post</a>
             </div>
           </div>
@@ -89,7 +89,11 @@ export default {
   components: { Swiper, SwiperSlide },
   props: ["title"],
   data: {  logo, Autoplay, Pagination },
-
+  methods: {
+    btnLink(link) {
+      this.$router.push({ name: link })
+    },
+  },
   setup(){
   //  const items = ref([])
   //   onMounted(async()=>{
