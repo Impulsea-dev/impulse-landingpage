@@ -149,7 +149,7 @@
     <div class="h-20"></div>
 
     <div class="mt-20 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCardHome :title="'Blog Posts'"/>
+      <SwipperCard2 :title="'Blog Posts'"/>
     </div>
 
 
@@ -227,6 +227,7 @@ import CardCustomPay from "@/components/CardCustomPay.vue"
 import CardCustomBPO from "@/components/CardCustomBPO.vue"
 import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
+import SwipperCard2 from "@/components/SwipperCard2.vue"
 import SwipperCardHome from "@/components/SwipperCardHome.vue"
 import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
@@ -235,7 +236,8 @@ export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, SwipperCard, Button, CardCustomWhoAre, CardCustomTelemetric,
-    CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter, CardCustomPay, CardCustomBPO
+    CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter, CardCustomPay, CardCustomBPO,
+    SwipperCard2
     },
   data() {
     return {
