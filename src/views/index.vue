@@ -19,16 +19,15 @@
           </div>
           <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
             <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">Leading the way
-                in</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
+              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">Increase Your Telecom</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
               </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">Analytics
-              </span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
-              </span><span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">and </span><span
+                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">Revenue
+              </span>
+              <br />
+              <span
                 class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
-              </span><span
-                class="flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:mb-3">Sales
-                Enablement Solutions</span>
+                By 2-3x
+              </span>              
             </p>
             <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
               Maximize revenue, optimize processes, and reduce cost with our solutions
