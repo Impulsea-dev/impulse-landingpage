@@ -26,7 +26,7 @@
               <br />
               <span
                 class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
-                By 2-3x
+                by 2-3x
               </span>              
             </p>
             <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
