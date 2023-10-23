@@ -127,23 +127,19 @@
     </Button>
 
     <!-- Grid Cards Start-->
-    <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-4 md:space-y-0 space-y-4 mb-6 lg:pr-11 lg:pl-11">
-      <CardCustom title="Business Intelligence and Analytics"
-        paragraph="Cutting-edge business intelligence software, tailor-made for the telecommunication industry, with a user-friendly interface that makes data analysis a breeze"
-        :img="bi" classBackground="cardDisplay" />
-
-      <CardCustom title="Product Design and Development"
-        paragraph="Our comprehensive software development services cover everything from identifying problems, researching and designing solutions, to building and supporting user-friendly, adaptable, and easily expandable applications."
+    <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
+      <CardCustom title="BPO Services"
+        paragraph="Our BPO Services include Layer 1 & 2 support, sales (outbound & inbound) and collections. Streamline your business operations and enhance customer satisfaction."
         :img="dev" classBackground="cardDisplay" />
 
-      <CardCustom title="BPO Services"
-        paragraph="Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction."
+      <CardCustom title="Managed Ads"
+        paragraph="With years of experience we have learned which ads yield positive results and which ones do not. We deliver the highest ROAS for your ad campaigns."
         :img="bpo" classBackground="cardDisplay" />
 
-      <CardCustom title="Consulting"
-        paragraph="Our data consultinng services for the telecommunications industry offer tailored solutions for analyzing complex data, optimizing operations, and driving growth. Gain valuable insights and stay ahead of the competition."
-        :img="consult" classBackground="cardDisplay" />
-
+      <CardCustom title="Sales Enablement Solutions"
+        paragraph="From Impulse leads an innovative lead generation platform for CSPs to Telemetrics a ground breaking solution to uncover upsell and cross-sale opportunities. We are obsessed with making you more profitable."
+        :img="bi" classBackground="cardDisplay" />
+      
     </div>
     <!-- Grid Cards End -->
     <div class="h-20"></div>
@@ -211,9 +207,9 @@
 </template>
 <script>
 import img from "@/assets/images/logo/logo-white.svg"
-import bi from "@/assets/images/svgs/bi.svg"
-import dev from "@/assets/images/svgs/dev.svg"
-import bpo from "@/assets/images/svgs/bpo.svg"
+import bi from "@/assets/images/sales.png"
+import dev from "@/assets/images/outs.png"
+import bpo from "@/assets/images/ads.png"
 import whoarewe from "@/assets/images/whoarewe.webp"
 import consult from "@/assets/images/svgs/consult.svg"
 import Button from "@/components/Button";
