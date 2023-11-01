@@ -5,15 +5,12 @@
             <div>
                 <div class="text-4xl lg:text-[64px] leading-[72px] font-Manrope text-white  mt-4 md:mt-14">Telemetrics</div>
                 <div class="text-[#ffffffb3] text-xs lg:text-base">
-                    Telemetrics empowers you to make informed decisions, track progress, optimize performance, and achieve
-                    business growth.
+                    Telemetrics is a revolutionary SaaS solution to increase upsell and cross sell opportunities by up to 200%
                 </div>
 
                 <div class="rounded-2xl bg-[#5f29ad] mt-5 p-10">
                     <p class="text-xs lg:text-base font-medium  text-white">
-                        Say goodbye to costly solution providers charging hundreds of thousands of dollars for
-                        integrating your complex billing system and CRM. Telemetrics was designed for CEOs and managers
-                        seeking to unlock the best business opportunities from their data without breaking the bank.
+                        Telemetrics analysis bandwidth trends and behaviours from your residential and corporate customers and proactively sends emails and sms at the perfect time for them to upgrade increasing revenue immediately!
                     </p>
                 </div>
             </div>
@@ -23,26 +20,11 @@
     <div class="bg-[#511e98]  !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
 
         <div class="text-center text-lg md:text-3xl text-white">
-            Real-time Sales Performance Tracking
+            When was the last time you told your customers they needed an upgrade?
         </div>
         <div class="text-xs md:text-base text-[#ffffffb3] pl-10 md:pl-32  pr-10 md:pr-32 mt-2">
-            With Telemetrics, CEOs and managers can easily monitor and track their company's sales goals in real
-            time,
-            from annual revenue targets to the progress of individual sales team members.
-            No more spreadsheets or manual tracking - everything is in one place.
-        </div>
-        <div class="flex justify-center">
-            <div class="progress md:mt-10 transform scale-100 mb-[-80px] md:mb-0"> </div>
-        </div>
-        <div class="flex justify-center">
-            <div class="barchart md:mt-10 transform scale-100 mb-[-80px] md:mb-0"></div>
-        </div>
-    </div>
-
-    <div class="!p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw] bg-[#5F29AD]">
-        <div class="flex justify-center">
-            <div class="degree mb-[-80px] mt-[-150px] md:mt-0"></div>
-        </div>
+            Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!
+        </div>        
     </div>
     
     <div class="!p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw] bg-[#5F29AD]">
@@ -52,23 +34,12 @@
                     Discover New Revenue Opportunities
                 </div>
                 <div class="text-[#ffffffb3] text-xs lg:text-base mt-4">
-                    Telemetrics uncovers valuable business opportunities by providing insights into your telecom company's
-                    data.
-                    With our intelligent analytics solution, you'll have a comprehensive view of your company's performance,
-                    customer behavior, and market trends. This data-driven approach empowers CEOs and managers to identify
-                    potential revenue streams, optimize operations, and make informed business decisions. With Telemetrics,
-                    you can unlock the full poten9al of your telecom company and achieve sustained growth.
+                    Significant revenue potential is going untapped. Impulse not only identifies these opportunities but also actively contributes to realizing this revenue by handling trend analysis and the execution of sales campaigns. We provide recommendations for email and SMS copy and facilitate their distribution. Our objective is to deliver the outcomes to your doorstep
                 </div>
             </div>
             <div class="flex justify-center mb-[-180px] md:mb-0 mt-[-80px]">
                 <div class="pieChart transform scale-75 lg:scale-100"></div>
             </div>
-        </div>
-    </div>
-
-    <div class="p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative 2xl:h-[55vh] xl:h-[80vh] lg:h-[50vh] md:h-[50vh] h-[30vh] w-[100vw] bg-[#5F29AD]">
-        <div class="flex justify-center mt-[-300px] md:mt-[-150px] mb-8">
-            <div class="timesaving"></div>
         </div>
     </div>
     <div class="md:bg-[#181818] flex justify-center gap-4 md:p-8  "> 
