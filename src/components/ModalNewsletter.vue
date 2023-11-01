@@ -48,7 +48,20 @@ export default {
         Button,
         Textinput,
     },
+    data:function(){
+        return {
+            visitCount:0,
+            maxVisit:0,
+        }
+    },
     methods:{
+        getVisitCount() {
+      const count = localStorage.getItem('visitCount');
+      return count ? parseInt(count) : 0;
+    },
+    saveVisitCount(count) {
+      localStorage.setItem('visitCount', count);
+    },
         dontWantInfo:function(){
             sessionStorage.setItem('opened',true);
             this.$refs.modal1.closeModal();
@@ -105,8 +118,11 @@ export default {
     },
     mounted(){
         setTimeout(() => { 
-                if(!sessionStorage.getItem("opened") && this.window.width>654){
-                    this.$refs.modal1.openModal();
+            this.visitCount = this.getVisitCount();
+            if(!sessionStorage.getItem("opened") && this.window.width>654 && this.visitCount<this.maxVisit){
+                  this.visitCount++;  
+                  this.saveVisitCount(this.visitCount);
+                  this.$refs.modal1.openModal();
                 }
         }, 1000*10)
     },
