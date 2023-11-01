@@ -17,14 +17,22 @@
             <div class="bgtm hidden md:flex"></div>
         </div>
     </div>
-    <div class="bg-[#511e98]  !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
 
-        <div class="text-center text-lg md:text-3xl text-white">
-            When was the last time you told your customers they needed an upgrade?
-        </div>
-        <div class="text-xs md:text-base text-[#ffffffb3] pl-10 md:pl-32  pr-10 md:pr-32 mt-2">
-            Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!
-        </div>        
+    <div class="bg-[#511e98]  grid grid-cols-1 lg:grid-cols-2 !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
+      <div class="w-full min-h-screen p-5 flex  items-center justify-center" ref="target">
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/NW-EZm_6JCk?si=Y_0JD3iQQkVcwUbo&autoplay=1&controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+     </div>
+     <div class="w-full min-h-screen p-5 flex  items-center justify-center">      
+      <ul class="space-y-4">
+        <h1 class="text-2xl">When was the last time you told your customers they needed an upgrade?</h1>
+            <li class="hover:scale-105">
+              <p class="text-lg"> Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!
+      </p>
+            </li>
+          </ul>
+     </div>
     </div>
     
     <div class="!p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw] bg-[#5F29AD]">
@@ -42,6 +50,7 @@
             </div>
         </div>
     </div>
+
     <div class="md:bg-[#181818] flex justify-center gap-4 md:p-8  "> 
 
 <card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
@@ -54,12 +63,35 @@
 <script>
  import ContactForm from "@/components/ContactForm.vue" 
  import Card from "@/components/Card/index.vue" 
+ import { ref } from "vue"
+ import { useMotion } from "@vueuse/motion"
  export default {
     components:{Card, ContactForm},
    
     methods:{
      
     },
+    setup(){ 
+        const initialAnimation = {
+            opacity: 0,
+            transform: 'translateY(100px)',
+            scale: 0.5,
+            };
+
+            const visibleAnimation = {
+            opacity: 1,
+            transform: 'translateY(0)',
+            scale: 1,
+            };
+        const target=ref()
+        useMotion(target, {
+        initial: initialAnimation,
+        visible: visibleAnimation,
+        duration: 500,
+        timing: 'ease-in-out',
+        });
+        return {target}
+    }
     
   };
 </script>
