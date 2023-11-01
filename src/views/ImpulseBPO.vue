@@ -14,7 +14,8 @@
       </div>
     </div>
     <!-- End Start -->
-    <div class="w-full min-h-screen p-5 flex  items-center justify-center" 
+    <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
+      <div class="w-full min-h-screen p-5 flex  items-center justify-center" 
     ref="target"
     >
     <!-- <div class="w-full min-h-screen p-5 flex  items-center justify-center"    v-motion-slide-visible-top> -->
@@ -22,6 +23,22 @@
        <iframe width="560" height="315" src="https://www.youtube.com/embed/_vhQHjz8YVA?si=D5N1EJbkCoRfvulr&autoplay=1&controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
      </div>
+     <div class="w-full min-h-screen p-5 flex  items-center justify-center">      
+      <ul class="space-y-4">
+        <h1 class="text-2xl">Impulse BPO Services</h1>
+            <li v-for="(item, i) in bpoActionsExp" :key="i" class="hover:scale-105">
+
+              <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
+                <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
+              </h3>
+              <p class="text-lg">{{ item.description }}</p>
+
+
+            </li>
+          </ul>
+     </div>
+    </div>
+    
 
 
     <!-- Section Two Start -->
@@ -150,6 +167,10 @@ import ContactForm from "@/components/ContactForm.vue"
 import op1 from "@/assets/images/1op.png"
 import op2 from "@/assets/images/2op.png"
 import op3 from "@/assets/images/3op.png"
+import bpo1 from "@/assets/images/bpo1.png"
+import bpo2 from "@/assets/images/bpo2.png"
+import bpo3 from "@/assets/images/bpo3.png"
+import bpo4 from "@/assets/images/bpo4.png"
 import qo1 from "@/assets/images/q01.png"
 import qo2 from "@/assets/images/q02.png"
 import qo3 from "@/assets/images/q03.png"
@@ -211,6 +232,26 @@ export default {
           title: "Industry Knowledge",
           description: "Count on our expertise to provide valuable insights and strategic support specific to your industry or niche."
         }
+      ],
+      bpoActionsExp: [
+        {
+
+          img: bpo1,
+          title: "Layer 1 Support",
+        },
+        {
+
+          img: bpo2,
+          title: "Layer 2 Support",
+        },
+        {
+          img: bpo3,
+          title: "Sales (Outbound & Inbound)",
+        },
+        {
+        img: bpo4,
+        title: "Collections",
+        } 
       ],
       bpoService: [
         {
