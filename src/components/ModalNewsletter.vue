@@ -51,14 +51,32 @@ export default {
     data:function(){
         return {
             visitCount:0,
-            maxVisit:0,
+            maxVisit:3,
         }
     },
     methods:{
         getVisitCount() {
       const count = localStorage.getItem('visitCount');
-      return count ? parseInt(count) : 0;
+      return count ?!this.isLastDateGreater(this.getLastDate())? parseInt(count):0 : 0;
     },
+    getLastDate(){
+        const lastDate = localStorage.getItem('lastDate');
+      return lastDate ? new Date(lastDate) : new Date();
+    },
+
+    saveLastDate(lastDate) {
+      localStorage.setItem('lastDate', lastDate);
+    },
+     isLastDateGreater(lastDate) {
+  const currentDate = Date.now();
+  const differenceInMilliseconds = currentDate - lastDate;
+  const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24); 
+  if(differenceInDays>1 || !localStorage.getItem("lastDate")){
+    this.saveLastDate(lastDate.toISOString())
+  }
+
+  return differenceInDays > 1;
+},
     saveVisitCount(count) {
       localStorage.setItem('visitCount', count);
     },
