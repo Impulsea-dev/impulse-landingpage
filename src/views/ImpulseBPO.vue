@@ -42,7 +42,7 @@
 
 
     <!-- Section Two Start -->
-    <div class="bg-[#111315] w-full min-h-screen p-5">
+    <!-- <div class="bg-[#111315] w-full min-h-screen p-5">
       <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
         <div class="flex-1 flex min-h-full flex-col items-start justify-center w-full  mb-5 ">
           <ul class="space-y-4">
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
     <!-- Section Two End  -->
 
     <!-- Section Three Start -->
@@ -97,7 +97,7 @@
     <!-- Section Three End  -->
 
     <!-- Section Four Start -->
-    <div class="bg-[#111315] w-full min-h-screen p-5">
+    <!-- <div class="bg-[#111315] w-full min-h-screen p-5">
       <div class="grid grid-cols-1 lg:grid-cols-2 md:m-5 space-y-4 space-x-4 lg:m-16">
 
         <div class="flex-0  flex min-h-full flex-col items-center justify-center  w-full p-8 space-y-5">
@@ -124,7 +124,7 @@
 
       </div>
 
-    </div>
+    </div> -->
     <!-- Section Four End  -->
 
     <!-- Section Five Start -->
