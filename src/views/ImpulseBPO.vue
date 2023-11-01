@@ -14,6 +14,12 @@
       </div>
     </div>
     <!-- End Start -->
+    <div class="w-full min-h-screen p-5 flex  items-center justify-center"  v-motion-pop-visible>
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/_vhQHjz8YVA?si=D5N1EJbkCoRfvulr&autoplay=1&controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+     </div>
+
 
     <!-- Section Two Start -->
     <div class="bg-[#111315] w-full min-h-screen p-5">
@@ -43,7 +49,7 @@
     <!-- Section Two End  -->
 
     <!-- Section Three Start -->
-    <div class="w-full min-h-screen p-5">
+    <!-- <div class="w-full min-h-screen p-5">
       <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
 
         <div class="flex-0  flex min-h-full flex-col items-center justify-center  w-full p-8">
@@ -67,7 +73,7 @@
 
       </div>
 
-    </div>
+    </div> -->
     <!-- Section Three End  -->
 
     <!-- Section Four Start -->
@@ -148,6 +154,7 @@ import qo4 from "@/assets/images/q04.png"
 import qo5 from "@/assets/images/q05.png"
 export default {
   components:{Card, ContactForm},
+   
   data: function () {
     return {
       salesTeamsExp: [
@@ -158,25 +165,26 @@ export default {
         {
           title: "Effective Communication",
           description: "With near-native or native English skills, we ensure seamless and efficient communication  with your clients."
-        },
-        {
-          title: "Quality Over Quantity",
-          description: "We prioritize delivering outstanding work that exceeds expectations."
         }
+        // ,
+        // {
+        //   title: "Quality Over Quantity",
+        //   description: "We prioritize delivering outstanding work that exceeds expectations."
+        // }
       ],
       salesLeadsExp: [
-        {
-          title: "Pushing Lead Generation",
-          description: "We excel at pushing lead generation departments to new heights."
-        },
-        {
-          title: "Multiple Internet Connections",
-          description: "We provide redundancy and stable internet connectivity, avoiding  interruptions to our services."
-        },
-        {
-          title: "State-of-the-Art Location",
-          description: "Our San Pedro, HN facility boasts cutting-edge technology, ensuring uninterrupted connectivity and efficient operations."
-        }
+        // {
+        //   title: "Pushing Lead Generation",
+        //   description: "We excel at pushing lead generation departments to new heights."
+        // },
+        // {
+        //   title: "Multiple Internet Connections",
+        //   description: "We provide redundancy and stable internet connectivity, avoiding  interruptions to our services."
+        // },
+        // {
+        //   title: "State-of-the-Art Location",
+        //   description: "Our San Pedro, HN facility boasts cutting-edge technology, ensuring uninterrupted connectivity and efficient operations."
+        // }
       ],
       salesActionsExp: [
         {
@@ -234,4 +242,11 @@ export default {
     }
   }, 
 }
-</script>
+</script> 
+<style>
+iframe {
+   width: 80vw;
+  height: 80vh;
+   
+}
+</style>

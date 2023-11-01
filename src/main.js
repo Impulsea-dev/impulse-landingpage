@@ -20,7 +20,7 @@ import VueGtag from 'vue-gtag';
 import { VueCookieNext } from 'vue-cookie-next';
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
-
+import { MotionPlugin } from "@vueuse/motion";
 const pinia = createPinia()
 
 // vue use
@@ -37,6 +37,7 @@ const app = createApp(App)
     .use(VueTippy)
     .use(VueCookieNext)
     .use(VueGoodTablePlugin)
+    .use(MotionPlugin)
     .use(VueGtag, {
         config: { id: 'G-SM9S0WPTRE' },
         router,
