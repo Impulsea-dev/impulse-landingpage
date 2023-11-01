@@ -14,7 +14,10 @@
       </div>
     </div>
     <!-- End Start -->
-    <div class="w-full min-h-screen p-5 flex  items-center justify-center"  v-motion-pop-visible>
+    <div class="w-full min-h-screen p-5 flex  items-center justify-center" 
+    ref="target"
+    >
+    <!-- <div class="w-full min-h-screen p-5 flex  items-center justify-center"    v-motion-slide-visible-top> -->
       
        <iframe width="560" height="315" src="https://www.youtube.com/embed/_vhQHjz8YVA?si=D5N1EJbkCoRfvulr&autoplay=1&controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
@@ -151,7 +154,10 @@ import qo1 from "@/assets/images/q01.png"
 import qo2 from "@/assets/images/q02.png"
 import qo3 from "@/assets/images/q03.png"
 import qo4 from "@/assets/images/q04.png"
-import qo5 from "@/assets/images/q05.png"
+import qo5 from "@/assets/images/q05.png" 
+import { ref } from "vue"
+import { useMotion } from "@vueuse/motion"
+
 export default {
   components:{Card, ContactForm},
    
@@ -240,7 +246,30 @@ export default {
 
       ]
     }
-  }, 
+  },  
+  setup(){ 
+
+const initialAnimation = {
+  opacity: 0,
+  transform: 'translateY(100px)',
+  scale: 0.5,
+};
+
+const visibleAnimation = {
+  opacity: 1,
+  transform: 'translateY(0)',
+  scale: 1,
+};
+const target=ref()
+
+useMotion(target, {
+  initial: initialAnimation,
+  visible: visibleAnimation,
+  duration: 500,
+  timing: 'ease-in-out',
+});
+    return {target}
+  }
 }
 </script> 
 <style>
