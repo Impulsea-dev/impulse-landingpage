@@ -56,8 +56,8 @@ export default {
 </script>
 <style >
 .bgSMS {
-    width: 20vw;
-    height: 20vw;
+    width: 300px;
+    height: 300px; 
     background: url(@/assets/images/smsi.webp) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -67,8 +67,8 @@ export default {
 
 
 .bgads {
-    width: 20vw;
-    height: 20vw;
+    width: 300px;
+    height: 300px;
     background: url(@/assets/images/adsi.webp) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -77,8 +77,8 @@ export default {
 
 
 .bgbpo {
-    width: 20vw;
-    height: 20vw;
+    width: 300px;
+    height: 300px;
     background: url(@/assets/images/bpoi.webp) no-repeat;
     background-size: cover;
     background-position: center center;
