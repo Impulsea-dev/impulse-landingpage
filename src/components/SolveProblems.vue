@@ -8,7 +8,7 @@
             'bgbpo': hover == 2
         }"></div>
         <div>
-            <div class="flex flex-row gap-4 mb-10 transition-colors duration-300 cursor-pointer"
+            <div class="flex flex-row gap-4 mb-6 transition-colors duration-300 cursor-pointer"
                 v-for="(inf, index) in info" :key="index" @mouseenter="hover = index"
                 :class="{ 'text-white/50': hover != index }">
                 <div class="w-14 h-14 border-2 flex items-center justify-center text-2xl rounded-lg text-white transition-colors duration-500"
