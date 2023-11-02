@@ -19,15 +19,15 @@
           </div>
           <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
             <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">Increase Your Telecom</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
+              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">Increase Your
+                Telecom</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
               </span><br /><span
                 class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">Revenue
               </span>
               <br />
-              <span
-                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
+              <span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
                 by 2-3x
-              </span>              
+              </span>
             </p>
             <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
               Maximize revenue, optimize processes, and reduce cost with our solutions
@@ -39,7 +39,8 @@
         </div>
       </div>
     </section>
-    <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6 lg:flex md:hidden hidden">
+    <SolveProblems/>
+    <!-- <div class="w-[100vw] h-[712px] relative ml-auto mr-auto -left-6 lg:flex md:hidden hidden">
       <div class="w-[100vw] h-[712px] absolute left-[-1px] top-[-1px] rounded-lg"
         style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);"></div>
       <div class="flex flex-row w-[100vw] h-[712px justify-center items-center ml-auto mr-auto ">
@@ -82,9 +83,9 @@
         </div>
         <img class="w-[512px] h-[552px] absolute  xl:right-16 top-[79px] rounded-2xl" :src="whoarewe" alt="telco women" />
       </div>
-    </div>
+    </div> -->
     <!-- mobile -->
-    <div class="w-[100vw] relative lg:hidden md:grid md:grid-cols-1 grid grid-cols-1 -left-[16.86px] right-[16.86px] pl-5"
+    <!-- <div class="w-[100vw] relative lg:hidden md:grid md:grid-cols-1 grid grid-cols-1 -left-[16.86px] right-[16.86px] pl-5"
       style="background: linear-gradient(-37.79deg, #000 -1.06%, #303030 100.71%);">
 
       <div class="flex mt-20 mb-10">
@@ -119,7 +120,7 @@
       </div>
       <img class="w-[382px] h-[368px]   rounded-lg mb-4 flex ml-auto mr-auto left-0 pr-[16px] justify-center"
         :src="whoarewe" alt="tech women networking" />
-    </div>
+    </div> -->
     <div class="h-20"></div>
     <Button @click="btnLink('services')"
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
@@ -127,7 +128,8 @@
     </Button>
 
     <!-- Grid Cards Start-->
-    <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
+    <div
+      class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
       <CardCustom title="BPO Services"
         paragraph="Our BPO Services include Layer 1 & 2 support, sales (outbound & inbound) and collections. Streamline your business operations and enhance customer satisfaction."
         :img="dev" classBackground="cardDisplay" />
@@ -139,13 +141,13 @@
       <CardCustom title="Sales Enablement Solutions"
         paragraph="From Impulse leads an innovative lead generation platform for CSPs to Telemetrics a ground breaking solution to uncover upsell and cross-sale opportunities. We are obsessed with making you more profitable."
         :img="bi" classBackground="cardDisplay" />
-      
+
     </div>
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
     <div class="mt-20 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCard2 :title="'Blog Posts'"/>
+      <SwipperCard2 :title="'Blog Posts'" />
     </div>
 
 
@@ -161,16 +163,16 @@
 
         <div class="space-y-4 mt-4 ">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <CardCustomLeads/>
-            <CardCustomTelemetric/>
+            <CardCustomLeads />
+            <CardCustomTelemetric />
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
-            <card-custom-boost/>
+            <card-custom-boost />
             <card-custom-product-dev />
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
-            <CardCustomPay/>
-            <CardCustomBPO/>
+            <CardCustomPay />
+            <CardCustomBPO />
           </div>
         </div>
 
@@ -202,7 +204,7 @@
       <Button text="Contact Us" btnClass="btn-primary "
         style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
     </div>
-      <ModalNewsletter/>    
+    <ModalNewsletter />
   </div>
 </template>
 <script>
@@ -227,14 +229,15 @@ import SwipperCard2 from "@/components/SwipperCard2.vue"
 import SwipperCardHome from "@/components/SwipperCardHome.vue"
 import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
+import SolveProblems from "@/components/SolveProblems.vue"
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, SwipperCard, Button, CardCustomWhoAre, CardCustomTelemetric,
     CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter, CardCustomPay, CardCustomBPO,
-    SwipperCard2
-    },
+    SwipperCard2,SolveProblems
+  },
   data() {
     return {
       img, bi, dev, bpo, consult, whoarewe
