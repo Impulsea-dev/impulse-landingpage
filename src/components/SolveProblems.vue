@@ -2,11 +2,13 @@
     <div class="px-6 lg:px-20 xl:px-36">
         <div class="text-center text-2xl md:text-4xl text-white font-bold pb-24">We solve your three biggest problems</div>
         <div class="grid md:grid-cols-2 gap-20">
-            <div class="rounded-xl transition-opacity duration-1000"  :class="{
-                'bgSMS': hover == 0,
-                'bgads': hover == 1,
-                'bgbpo': hover == 2
-            }"></div>
+            <div class="flex justify-center items-center">
+                <div class="rounded-xl transition-opacity duration-1000" :class="{
+                    'bgSMS': hover == 0,
+                    'bgads': hover == 1,
+                    'bgbpo': hover == 2
+                }"></div>
+            </div>
             <div>
                 <div class="flex flex-row gap-4 mb-6 transition-colors duration-300 cursor-pointer"
                     v-for="(inf, index) in info" :key="index" @mouseenter="hover = index"
@@ -54,32 +56,32 @@ export default {
 </script>
 <style >
 .bgSMS {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 20vw;
+    height: 20vw;
     background: url(@/assets/images/smsi.webp) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
     background-color: transparent !important;
 }
+
+
 
 .bgads {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 20vw;
+    height: 20vw;
     background: url(@/assets/images/adsi.webp) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
     background-color: transparent !important;
 }
 
+
 .bgbpo {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 20vw;
+    height: 20vw;
     background: url(@/assets/images/bpoi.webp) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
     background-color: transparent !important;
 }
 </style>
