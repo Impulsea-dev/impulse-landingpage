@@ -1,28 +1,28 @@
 <template>
-   <div class="px-6 lg:px-36">
-    <div class="text-center text-3xl md:text-6xl text-white font-bold pb-36">We solve your three biggest problems</div>
-    <div class="grid md:grid-cols-2 gap-20">
-        <div class="rounded-xl transition-opacity duration-1000" :class="{
-            'bgSMS': hover == 0,
-            'bgads': hover == 1,
-            'bgbpo': hover == 2
-        }"></div>
-        <div>
-            <div class="flex flex-row gap-4 mb-6 transition-colors duration-300 cursor-pointer"
-                v-for="(inf, index) in info" :key="index" @mouseenter="hover = index"
-                :class="{ 'text-white/50': hover != index }">
-                <div class="w-14 h-14 border-2 flex items-center justify-center text-2xl rounded-lg text-white transition-colors duration-500"
-                    :class="{ 'bg-red-500 border-none': hover == index }">
-                    {{ inf.id }}
-                </div>
-                <div class="flex flex-col gap-1 w-full">
-                    <div class="text-lg md:text-xl font-bold">{{ inf.title }}</div>
-                    <div class="text-base">{{ inf.text }}</div>
+    <div class="px-6 lg:px-36">
+        <div class="text-center text-2xl md:text-4xl text-white font-bold pb-24">We solve your three biggest problems</div>
+        <div class="grid md:grid-cols-2 gap-20">
+            <div class="rounded-xl transition-opacity duration-1000" :class="{
+                'bgSMS': hover == 0,
+                'bgads': hover == 1,
+                'bgbpo': hover == 2
+            }"></div>
+            <div>
+                <div class="flex flex-row gap-4 mb-6 transition-colors duration-300 cursor-pointer"
+                    v-for="(inf, index) in info" :key="index" @mouseenter="hover = index"
+                    :class="{ 'text-white/50': hover != index }">
+                    <div class="w-14 h-14 border-2 flex items-center justify-center text-2xl rounded-lg text-white transition-colors duration-500"
+                        :class="{ 'bg-red-500 border-none': hover == index }">
+                        {{ inf.id }}
+                    </div>
+                    <div class="flex flex-col gap-1 w-full">
+                        <div class="text-lg md:text-xl font-bold">{{ inf.title }}</div>
+                        <div class="text-base">{{ inf.text }}</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-   </div>
 </template>
   
 <script>
@@ -54,24 +54,21 @@ export default {
 </script>
 <style >
 .bgSMS {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin: 70px;
     background: url(@/assets/images/smsi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
 
 .bgads {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin: 70px;
     background: url(@/assets/images/adsi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
 
 .bgbpo {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin: 70px;
     background: url(@/assets/images/bpoi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
