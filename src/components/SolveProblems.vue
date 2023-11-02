@@ -15,7 +15,7 @@
                     :class="{ 'bg-red-500 border-none': hover == index }">
                     {{ inf.id }}
                 </div>
-                <div class="flex flex-col gap-4 w-full">
+                <div class="flex flex-col gap-1 w-full">
                     <div class="text-lg md:text-xl font-bold">{{ inf.title }}</div>
                     <div class="text-base">{{ inf.text }}</div>
                 </div>
