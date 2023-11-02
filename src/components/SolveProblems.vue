@@ -7,10 +7,9 @@
             'bgbpo': hover==2
         }"></div>
         <div>
-            <div class="flex flex-row gap-4 mb-10 transition-colors duration-300" v-for="(inf, index) in info" :key="index"
+            <div class="flex flex-row gap-4 mb-10 transition-colors duration-300 cursor-pointer" v-for="(inf, index) in info" :key="index"
                 @mouseenter="hover = index" :class="{ 'text-white/50': hover != index }">
-                <div class="w-16 h-16 border-2 flex items-center justify-center text-2xl rounded-lg cursor-pointer
-                text-white transition-colors duration-500" :class="{ 'bg-red-500 border-none': hover == index }">
+                <div class="w-16 h-16 border-2 flex items-center justify-center text-2xl rounded-lg text-white transition-colors duration-500" :class="{ 'bg-red-500 border-none': hover == index }">
                     {{ inf.id }}
                 </div>
                 <div class="flex flex-col gap-4 w-full">
@@ -51,19 +50,19 @@ export default {
 </script>
 <style >
 .bgSMS {
-    background: url(@/assets/images/smsi.png) no-repeat;
+    background: url(@/assets/images/smsi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
 
 .bgads {
-    background: url(@/assets/images/adsi.png) no-repeat;
+    background: url(@/assets/images/adsi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
 
 .bgbpo {
-    background: url(@/assets/images/bpoi.png) no-repeat;
+    background: url(@/assets/images/bpoi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
