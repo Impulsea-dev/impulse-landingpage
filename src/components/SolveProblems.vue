@@ -1,8 +1,10 @@
 <template>
-    <div class="text-center text-3xl md:text-6xl text-white font-bold pb-28">We solve your three biggest problems</div>
-    <div class="grid md:grid-cols-2 gap-4 ">
-        <div :class="{
-            'bgLogos': hover == 0
+    <div class="text-center text-3xl md:text-6xl text-white font-bold pb-36">We solve your three biggest problems</div>
+    <div class="grid md:grid-cols-2 gap-20">
+        <div class="rounded-xl transition-opacity duration-1000" :class="{
+            'bgSMS': hover == 0,
+            'bgads':hover==1,
+            'bgbpo': hover==2
         }"></div>
         <div>
             <div class="flex flex-row gap-4 mb-10 transition-colors duration-300" v-for="(inf, index) in info" :key="index"
@@ -11,7 +13,7 @@
                 text-white transition-colors duration-500" :class="{ 'bg-red-500 border-none': hover == index }">
                     {{ inf.id }}
                 </div>
-                <div class="flex flex-col gap-1 w-full">
+                <div class="flex flex-col gap-4 w-full">
                     <div class="text-xl md:text-[28px] font-bold">{{ inf.title }}</div>
                     <div class="text-base">{{ inf.text }}</div>
                 </div>
@@ -48,19 +50,21 @@ export default {
 }
 </script>
 <style >
-.bgLogos {
-    background: url(@/assets/images/logos.webp) no-repeat;
+.bgSMS {
+    background: url(@/assets/images/smsi.png) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
-    height: 224px;
-
 }
 
-.bgLogosPhone {
-    margin-top: 10px;
-    background: url(@/assets/images/logosPhone.webp) no-repeat;
+.bgads {
+    background: url(@/assets/images/adsi.png) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
-    height: 384px;
+}
+
+.bgbpo {
+    background: url(@/assets/images/bpoi.png) no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent !important;
 }
 </style>
