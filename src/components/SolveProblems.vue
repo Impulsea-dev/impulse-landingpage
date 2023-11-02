@@ -16,7 +16,7 @@
                     {{ inf.id }}
                 </div>
                 <div class="flex flex-col gap-4 w-full">
-                    <div class="text-xl md:text-2xl font-bold">{{ inf.title }}</div>
+                    <div class="text-lg md:text-xl font-bold">{{ inf.title }}</div>
                     <div class="text-base">{{ inf.text }}</div>
                 </div>
             </div>
@@ -54,18 +54,24 @@ export default {
 </script>
 <style >
 .bgSMS {
+    margin-top: 40px;
+    margin-bottom: 100px;
     background: url(@/assets/images/smsi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
 
 .bgads {
+    margin-top: 40px;
+    margin-bottom: 100px;
     background: url(@/assets/images/adsi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
 }
 
 .bgbpo {
+    margin-top: 40px;
+    margin-bottom: 100px;
     background: url(@/assets/images/bpoi.webp) no-repeat;
     background-size: 100% 100%;
     background-color: transparent !important;
