@@ -146,11 +146,6 @@
     <!-- Grid Cards End -->
     <div class="h-20"></div>
 
-    <div class="mt-20 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCard2 :title="'Blog Posts'" />
-    </div>
-
-
     <div class="h-20"></div>
     <div class="lg:pr-11 lg:pl-11">
       <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
@@ -180,9 +175,12 @@
 
     </div>
 
-    <div class="h-20"></div>
+    <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
+      <SwipperCard2 :title="'Blog Posts'" />
+    </div>
 
-    <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
+
+    <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
       <div class="mt-10">
         <div class="text-white text-[40px] leading-10">
           Our Integration partners
