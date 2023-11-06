@@ -1,6 +1,6 @@
 <template>
 <div  >
-  <Card :className="'dark:!bg-[#282832] overflow-hidden relative'">
+  <Card :className="'dark:!bg-[#282832] overflow-hidden relative z-10'">
    <div class="flex-row absolute">
     <div class="flex flex-col justify-start items-start relative gap-4">
   <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">Impulse Boost</p>
@@ -19,7 +19,7 @@
   </Button>
 </div>
    </div>
-   <svg width="164" height="114" viewBox="0 0 164 114" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-80 h-56 ml-auto relative -right-12 place-self-en -bottom-20">
+   <svg width="164" height="114" viewBox="0 0 164 114" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-80 h-56 ml-auto relative -right-12 place-self-end -bottom-20 -z-10">
     <rect x="0.433013" y="0.25" width="16.4139" height="16.4139" transform="matrix(0.866025 -0.5 2.20305e-08 1 29.6068 42.906)" stroke="white" stroke-opacity="0.2"/>
     <rect x="0.433013" y="0.75" width="16.4139" height="16.4139" transform="matrix(0.866025 0.5 -2.20305e-08 1 14.7328 33.6419)" stroke="white" stroke-opacity="0.2"/>
     <rect x="-2.98023e-08" y="0.5" width="16.4139" height="16.4139" transform="matrix(0.866025 0.5 -0.866025 0.5 30.0668 25.6455)" stroke="white" stroke-opacity="0.2"/>
