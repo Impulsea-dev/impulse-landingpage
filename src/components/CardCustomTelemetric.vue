@@ -1,6 +1,6 @@
 <template>
 <div  >
-  <Card :className="'dark:!bg-[#3C007C] overflow-hidden relative'">
+  <Card :className="'dark:!bg-[#3C007C] overflow-hidden relative z-10'">
    <div class="flex-row absolute ">
     <div class="flex flex-col justify-start items-start relative gap-4">
   <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">Telemetrics</p>
@@ -26,7 +26,7 @@
   viewBox="0 0 80 197"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  class="w-80 h-56 ml-auto relative -right-12 place-self-en -bottom-20"
+  class="w-80 h-56 ml-auto relative -right-12 place-self-end -bottom-20 -z-10"
   preserveAspectRatio="xMidYMid meet"
 >
   <path
