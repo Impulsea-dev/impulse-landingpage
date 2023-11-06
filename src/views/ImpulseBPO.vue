@@ -15,7 +15,7 @@
     </div>
     <!-- End Start -->
     <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
-      <div class="w-full min-h-screen p-5 flex  items-center justify-center" 
+      <div class="w-full  p-5 flex  items-center justify-center" 
     ref="target"
     >
     <!-- <div class="w-full min-h-screen p-5 flex  items-center justify-center"    v-motion-slide-visible-top> -->
@@ -23,7 +23,7 @@
        <iframe width="560" height="315" src="https://www.youtube.com/embed/_vhQHjz8YVA?si=D5N1EJbkCoRfvulr&autoplay=1&controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
      </div>
-     <div class="w-full min-h-screen p-5 flex  items-center justify-center">      
+     <div class="w-full p-5 flex  items-center justify-center">      
       <ul class="space-y-4">
         <h1 class="text-2xl">Impulse BPO Services</h1>
             <li v-for="(item, i) in bpoActionsExp" :key="i" class="hover:scale-105">
@@ -128,7 +128,7 @@
     <!-- Section Four End  -->
 
     <!-- Section Five Start -->
-    <div class="w-full min-h-screen p-5">
+    <div class="w-full p-5">
 
       <div class="flex flex-col lg:m-16 space-y-6">
         <div class="flex-1  flex min-h-full flex-col items-center justify-center  w-full p-4 ">

@@ -1,12 +1,13 @@
 <template>
-  <div class="bg-[#103045] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
+  <div class="bg-[#103045] !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 relative h-[60vh]
+  md:h-[80vh] w-[100vw]">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 mt-1">
         <div class="flex flex-col justify-center">
            <div class="flex-grow-0 flex-shrink-0 text-lg lg:text-3xl md:text-3xl font-bold text-left text-white">Product Design and Development</div> 
            <div class="text-[#ffffffb3] text-sm lg:text-base lg:mt-8">
             We specialize in creating custom web applications that include websites, billing portals, CRM integrations, billing system integrations, and automation. Our team of experts understands the industry-specific needs of our clients and delivers solutions that are tailored to their unique requirements. 
            </div>
-           <div class="text-[#ffffffb3] text-sm lg:text-base lg:mt-10 md:mt-10 mt-3">
+           <div class="text-[#ffffffb3] text-sm lg:text-base lg:mt-10 md:mt-10">
             Here are 5 reasons why our customers should choose our Product Design and Development services
            </div>
         </div> 

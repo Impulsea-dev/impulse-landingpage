@@ -18,17 +18,18 @@
         </div>
     </div>
 
-    <div class="bg-[#511e98]  grid grid-cols-1 lg:grid-cols-2 !p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw]">
-      <div class="w-full min-h-screen p-5 flex  items-center justify-center" ref="target">
+    <div class="bg-[#511e98]  grid grid-cols-1 lg:grid-cols-2 !p-10 !m-0 md:!-top-6 md:-left-6 
+    !-top-3 -left-4 relative w-[100vw]">
+      <div class="w-full p-5 flex  items-center justify-center" ref="target">
       
        <iframe width="560" height="315" src="https://www.youtube.com/embed/NW-EZm_6JCk?si=Y_0JD3iQQkVcwUbo&autoplay=1&controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
      </div>
-     <div class="w-full min-h-screen p-5 flex  items-center justify-center">      
+     <div class="w-full p-5 flex  items-center justify-center">      
       <ul class="space-y-4">
-        <h1 class="text-2xl">When was the last time you told your customers they needed an upgrade?</h1>
+        <h1 class="text-xl">When was the last time you told your customers they needed an upgrade?</h1>
             <li class="hover:scale-105">
-              <p class="text-lg"> Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!
+              <p class="text-xs lg:text-base"> Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!
       </p>
             </li>
           </ul>
@@ -36,7 +37,7 @@
     </div>
     
     <div class="!p-10 !m-0 md:!-top-6 md:-left-6 !-top-3 -left-4 relative w-[100vw] bg-[#5F29AD]">
-    <div class="grid grid-cols-1 md:grid-cols-2 mt-[-80px] md:mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-[-20px] md:mt-10">
             <div class="flex flex-col justify-center mb-[-80px] md:mb-0">
                 <div class="text-white text-xl lg:text-3xl font-Manrope lg:mt-10">
                     Discover New Revenue Opportunities
