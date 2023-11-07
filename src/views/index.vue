@@ -156,20 +156,8 @@
           </p>
         </Button>
 
-        <div class="space-y-4 mt-4 ">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <CardCustomLeads />
-            <CardCustomTelemetric />
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
-            <card-custom-boost />
-            <card-custom-product-dev />
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
-            <CardCustomPay />
-            <CardCustomBPO />
-          </div>
-        </div>
+        <CardCustomAll />
+           
 
       </Card>
 
@@ -214,14 +202,9 @@ import whoarewe from "@/assets/images/whoarewe.webp"
 import consult from "@/assets/images/svgs/consult.svg"
 import Button from "@/components/Button";
 import Card from "@/components/Card"
+import CardCustomAll from "@/components/CardCustomAll.vue"
 import CardCustom from "@/components/CardCustom.vue"
 import CardCustomWhoAre from "@/components/CardCustomWhoAre.vue"
-import CardCustomLeads from "@/components/CardCustomLeads.vue"
-import CardCustomTelemetric from "@/components/CardCustomTelemetric.vue"
-import CardCustomBoost from "@/components/CardCustomBoost.vue"
-import CardCustomPay from "@/components/CardCustomPay.vue"
-import CardCustomBPO from "@/components/CardCustomBPO.vue"
-import CardCustomProductDev from "@/components/CardCustomProductDev.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
 import SwipperCardHome from "@/components/SwipperCardHome.vue"
@@ -232,8 +215,7 @@ import SolveProblems from "@/components/SolveProblems.vue"
 export default {
   mixins: [window],
   components: {
-    SwipperCardHome, Card, CardCustom, SwipperCard, Button, CardCustomWhoAre, CardCustomTelemetric,
-    CardCustomLeads, CardCustomBoost, CardCustomProductDev, ModalNewsletter, CardCustomPay, CardCustomBPO,
+    SwipperCardHome, Card, CardCustom,CardCustomAll, SwipperCard, Button, CardCustomWhoAre,ModalNewsletter,
     SwipperCard2,SolveProblems
   },
   data() {
