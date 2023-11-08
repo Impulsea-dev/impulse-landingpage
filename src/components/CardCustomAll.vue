@@ -1,7 +1,7 @@
 <template>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6"  >
   <div v-for="(item, i) in bpoService" :key="i">
-    <Card :className="`dark:!bg-[${item.color}] overflow-hidden relative z-10`">
+    <Card :className="`bg-[${item.color}] overflow-hidden relative z-10`">
       <div class="flex flex-col justify-start items-start relative gap-4">
   <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">{{ item.title }}</p>
   <p class="flex-grow-0 flex-shrink-0 md:text-base text-sm font-medium text-left text-white/70">
@@ -55,7 +55,7 @@ export default {
         {
 
           img: qo1,
-          color:"#282832",
+          color:"#103045",
           title: "Telemetrics",
           url:'/telemetrics',
           description: "Boost residential and corporate upsell and cross-sale opportunities by up to 200% with the help of AI and ML."
@@ -86,7 +86,7 @@ export default {
         },
         {
           img: qo1,
-          color:"#282832",
+          color:"#103045",
           title: "BPO Services",
           url:'/bpo',
           description: "Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction."

@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`card rounded-md bg-white lg:h-full  ${
+    :class="`card rounded-md  lg:h-full  ${
       this.$store.themeSettingsStore.skin === 'bordered'
         ? ' border border-gray-5002 dark:border-slate-700'
         : 'shadow-base'

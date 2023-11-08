@@ -26,7 +26,7 @@
         </div>
   
     <!-- Section Two Start -->
-    <div class="bg-[#000000] w-full min-h-screen p-5">
+    <div class="bg-[#000000] w-full  p-5">
       <div class="grid grid-cols-1 lg:grid-cols-2 m-5 space-y-4 space-x-4 lg:m-16">
         <div class="flex-0  flex min-h-full flex-col items-start justify-start  w-full p-8 space-y-5">
             <div class="text-3xl text-white font-bold font-Monda">Expand Your Market</div>
@@ -56,7 +56,7 @@
   </div>
   <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
   <li v-for="(item, i) in contentsCard" :key="i" class="hover:scale-105">
-<Card   >
+<Card :className="'bg-[#FFF] '"  >
     <div class="flex flex-col justify-center items-center">
         <h3 class="text-xl font-semibold mb-2 !text-black-600 text-center">
       {{ item.title }}
