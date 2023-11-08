@@ -79,14 +79,14 @@ export default {
         {
 
           img: qo1,
-          color:"#3C007C",
+          color:"#103045",
           title: "Impulse Pay",
           url:'/impulse-pay',
           description: "Streamline your billing processes, enhance customer satisfaction, and simplify payments with Impulse Pays user-friendly portal."
         },
         {
           img: qo1,
-          color:"#103045",
+          color:"#282832",
           title: "BPO Services",
           url:'/bpo',
           description: "Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction."
