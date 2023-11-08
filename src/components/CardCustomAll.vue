@@ -36,25 +36,6 @@ import qo3 from "@/assets/images/boost.png"
 export default {
   name: 'CardCustomBPO',
   components:{Card,Button},
-  props: { 
-    title: {
-      type: String,
-      default: '',
-    },
-    
-    paragraph: {
-      type: String,
-      default: '',
-    }, 
-    img: {
-      type: String,
-      default: '',
-    },
-    classBackground: {
-      type: String,
-      default: '',
-    },
-  },
   methods:{
     sendTo(link) {
             window.open(link, '_blank', 'noreferrer');
@@ -66,7 +47,7 @@ export default {
         {
 
           img: qo1,
-          color:"#32cd32",
+          color:"#3C007C",
           title: "Impulse Leads",
           url:'http://198.199.89.79:83/',
           description: "Empower your B2B endeavors with the crucial data and software to effortlessly connect and seal deals with your most valuable buyers, all conveniently integrated in one piace."
@@ -74,7 +55,7 @@ export default {
         {
 
           img: qo1,
-          color:"#3C007C",
+          color:"#282832",
           title: "Telemetrics",
           url:'/telemetrics',
           description: "Boost residential and corporate upsell and cross-sale opportunities by up to 200% with the help of AI and ML."
@@ -90,7 +71,7 @@ export default {
         {
 
           img: qo2,
-          color:"#103045",
+          color:"#3C007C",
           title: "Product Design and Development",
           url:'/product',
           description: "Custom web solutions, billing systems, API development, and CRM integrations for telecommunications. Tailored to your unique needs, scalable solutions that drive growth and enhance customer satisfaction."
@@ -105,12 +86,11 @@ export default {
         },
         {
           img: qo1,
-          color:"#32cd32",
+          color:"#282832",
           title: "BPO Services",
           url:'/bpo',
           description: "Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction."
         }
-
       ]
     }
   },  
