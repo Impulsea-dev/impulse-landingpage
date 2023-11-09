@@ -37,6 +37,11 @@ const routes = [
         component: () => import("@/views/whatwedotelco.vue"),
       },
       {
+        path: "/impulsebot",
+        name: "impulsebot",
+        component: () => import("@/views/impulsebot.vue"),
+      },
+      {
         path: "/casestudies",
         name: "casestudies",
         component: () => import("@/views/casestudies.vue"),

@@ -60,12 +60,19 @@ export default {
           url:'/telemetrics',
           description: "Boost residential and corporate upsell and cross-sale opportunities by up to 200% with the help of AI and ML."
         },
-        {
+        // {
 
+        //   img: qo3,
+        //   color:"#282832",
+        //   title: "Impulse Boost",
+        //   url:'/boost',
+        //   description: "Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively."
+        // },
+        {
           img: qo3,
           color:"#282832",
-          title: "Impulse Boost",
-          url:'/boost',
+          title: "ImpulseBot",
+          url:'/impulsebot',
           description: "Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively."
         },
         {
