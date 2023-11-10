@@ -32,7 +32,7 @@ import Card from "@/components/Card"
 import Button from "@/components/Button"
 import qo1 from "@/assets/images/leads.png"
 import qo2 from "@/assets/images/product.png"
-import qo3 from "@/assets/images/boost.png"
+import qo3 from "@/assets/images/bot.png"
 export default {
   name: 'CardCustomBPO',
   components:{Card,Button},
@@ -73,7 +73,7 @@ export default {
           color:"#282832",
           title: "ImpulseBot",
           url:'/impulsebot',
-          description: "Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively."
+          description: "ImpulseBot."
         },
         {
 
