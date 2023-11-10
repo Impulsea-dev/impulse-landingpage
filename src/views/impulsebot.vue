@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-center gap-2 mt-10">
+        <div class="flex flex-col md:flex-row justify-center gap-2 mt-10 px-5">
             <a class="text-center px-10 py-2 border rounded-full font-bold hover:text-black-900 hover:bg-white duration-300"
                 :href="social.url" target="_blank" v-for="social in socials">{{ social.title }}</a>
         </div>
