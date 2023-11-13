@@ -46,14 +46,14 @@
                 </div>
             </div>
 
-            <!-- <div class="flex justify-center border rounded-2xl shadow-[0_0_4px_4px] shadow-white/50 p-10 my-10 
+            <div class="flex justify-center border rounded-2xl shadow-[0_0_4px_4px] shadow-white/50 p-10 my-10 
                     mx-20 overflow-hidden cursor-pointer">
                 <iframe class="w-full md:h-96"
                     src="https://www.youtube.com/embed/NW-EZm_6JCk?si=Y_0JD3iQQkVcwUbo&autoplay=1&controls=0" title=""
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-            </div> -->
+            </div>
 
 
             <div class="flex justify-center mt-10">
@@ -73,9 +73,9 @@
                     class="text-center px-6 py-2 border rounded-full duration-300" v-for="(social, index) in socials"
                     :key="index" @click="() => { btnselected = index }">{{ social.title }}</button>
             </div>
-
+            
             <div class="flex flex-col md:flex-row justify-center items-center py-10 gap-8">
-                <img :src="socials[btnselected].img" class="max-w-xs md:max-w-lg h-full flex-shrink-0" alt="">
+                <img :src="socials[btnselected].img" class="max-w-xs md:max-w-lg xl:max-w-3xl flex-shrink-0" alt="">
                 <div class="flex flex-col text-white px-5">
                     <h5 class="text-xl md:text-4xl mb-2">{{ socials[btnselected].title }}</h5>
                     <p class="text-sm md:text-base max-w-sm mb-4">{{ socials[btnselected].subtitle }}</p>
@@ -113,15 +113,30 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 font-Manrope">
                     <div class="flex flex-col p-6 text-center rounded-lg border shadow-[0_0_4px_4px] shadow-white/50
                      hover:scale-95 duration-300" v-for="(plan, index) in plans">
-                        <h3 class="mb-4 text-xl font-semibold">{{ plan.title }}</h3>
-                        <p class="font-light text-red-500 sm:text-lg" v-if="index != 2">{{ plan.subtitle }}</p>
-                        <div class="flex justify-center items-baseline my-8">
+                     <div class="flex justify-between">
+                        <img :src="plan.img" class="h-24 w-24" alt="">
+                        <img :src="popular" class="h-24 w-24" alt="" v-if="index == 0"> 
+                     </div>
+                     <div class="flex justify-start">
+                        <h3 class="text-xl font-semibold">{{ plan.title }}</h3>                     
+                     </div> 
+                     <div class="flex justify-start items-baseline my-5">
                             <span class="mr-2 text-4xl font-extrabold" v-if="plan.price">{{ plan.price }}</span>
                             <span class="text-gray-500 dark:text-gray-400" v-if="plan.price">/month</span>
                         </div>
-                        <ul role="list" class="mb-8 space-y-4 text-left">
+                        <p class="font-light text-white sm:text-lg px-4 mb-4" v-if="index == 2">{{ plan.subtitle }}</p>
+
+                        <a href="#"
+                                class=" w-full text-white bg-gradient-to-r from-[#B936F5] to-[#F1005B] font-medium rounded-lg text-base px-6 py-3 text-center">
+                                {{ plan.titlebutton }}
+                        </a>
+                        <div class="flex flex-row gap-1 justify-center items-center mt-2">
+                            <p class="font-light text-red-500 sm:text-lg" v-if="index != 2">{{ plan.subtitle }}</p>
+                            <img :src="redclock" class="h-6 w-6" alt="" v-if="index != 2">   
+                        </div>
+                        <ul role="list" class="mt-6 mb-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3" v-for="benefit in plan.benefit">
-                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                <svg class="flex-shrink-0 w-9 h-5 text-green-500 dark:text-green-400" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -131,14 +146,13 @@
                             </li>
                         </ul>
 
-                        <p class="font-light text-white sm:text-lg mb-4" v-if="index == 2">{{ plan.subtitle }}</p>
-
-                        <div class="flex flex-grow items-end justify-center">
+                       
+                        <!-- <div class="flex flex-grow items-end justify-center">
                             <a href="#"
                                 class=" w-full text-white bg-gradient-to-r from-[#B936F5] to-[#F1005B] font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                                 {{ plan.titlebutton }}
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -154,8 +168,8 @@ import botrevenue from '../assets/images/botrevenue.svg'
 import botpowerup from '../assets/images/botpowerup.svg'
 import botworkfoce from '../assets/images/botworkforce.svg'
 import botjourney from '../assets/images/botjourney.svg'
-import planpopular from '../assets/images/planpopular.svg'
-import planbot from '../assets/images/planbot.svg'
+import planpopular from '../assets/images/planpopular.png'
+import planbot from '../assets/images/planbot.png'
 import planmeeting from '../assets/images/planmeeting.svg'
 import botweb from "../assets/images/imgs/impulseweb.png"
 import botwatsp from "../assets/images/imgs/impulsewhatsapp.png"
@@ -163,7 +177,8 @@ import botmessenger from "../assets/images/imgs/impulsemessenger.png"
 import botinstagram from "../assets/images/imgs/impulseinstagram.png"
 import bottelegram from "../assets/images/imgs/impulsetelegram.png"
 import botapi from "../assets/images/imgs/impulseapi.png"
-
+import redclock from "../assets/images/redclock.png"
+import popular from "../assets/images/popular.png"
 
 const benefits = ref([
     {
@@ -255,7 +270,6 @@ const plans = ref([
         img: planpopular,
         to: 'https://google.com',
         price: '$2,499',
-        isessentital: true,
         benefit: ['Live Agent (8 Hour Shift)', 'L1 Support Resolution', 'Impulse Bot via Website', 'Meeting Scheduler', 'Daily Reports', 'Analytics']
     },
     {
@@ -265,7 +279,6 @@ const plans = ref([
         img: planbot,
         to: 'https://google.com',
         price: '$499',
-        isessentital: false,
         benefit: ['Impulse Bot via Website', 'Automated Sign Up forms', 'Pre-Configured Support Flows', 'Meeting Scheduler', '24/7 Support', 'Daily Reports']
     },
     {
@@ -273,8 +286,7 @@ const plans = ref([
         titlebutton: 'Book a Call',
         subtitle: `Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works.`,
         img: planmeeting,
-        to: 'https://google.com',
-        isessentital: false
+        to: 'https://google.com'
 
     }
 ])
@@ -286,5 +298,18 @@ const plans = ref([
     background-size: contain;
     background-position: center top;
     min-height: 100vh;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>
