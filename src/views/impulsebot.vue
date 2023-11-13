@@ -75,7 +75,7 @@
                     :key="index" @click="() => { btnselected = index }">{{ social.title }}</button>
             </div>
 
-            <div class="flex justify-center items-center py-8 gap-8">
+            <div class="flex flex-col md:flex-row justify-center items-center py-10 gap-8">
                 <img :src="socials[btnselected].img" class="max-w-lg h-full flex-shrink-0" alt="">
                 <div class="flex flex-col text-white">
                     <h5 class="mb-2">{{ socials[btnselected].title }}</h5>
@@ -83,7 +83,7 @@
                     <div class="flex flex-col" v-for="benefit in socials[btnselected].benefits">
                         <div class="flex flex-row items-center gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
+                                stroke="currentColor" class="w-6 h-6 text-green-500">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -92,23 +92,9 @@
                     </div>
                 </div>
             </div>
+            
 
-
-
-            <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-10">
-                <img src="../assets/images/whatsappauto.svg" alt=""
-                    class="w-full md:w-1/2 h-auto md:flex-shrink-0 scale-75">
-                <div class="flex flex-col items-center md:items-start gap-2 pl-6">
-                    <div class="text-xl md:text-4xl text-white font-bold font-Manrope">WhatsApp Automation</div>
-                    <div class="text-base md:text-lg text-white/80 font-Manrope">
-                        Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, and
-                        give
-                        outstanding customer care.
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-center items-center gap-2 mt-10 md:mt-0 md:gap-10">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2 mt-10 md:gap-10">
                 <div class="flex flex-col w-full items-center md:items-start gap-2 pl-6">
                     <div class="text-xl md:text-4xl text-white font-bold font-Manrope">LiveChat with Agent Fallback</div>
                     <div class="text-base md:text-lg text-white/80 font-Manrope">
@@ -121,23 +107,39 @@
                 <img src="../assets/images/botlivechat.svg" alt="" class="w-full md:w-1/2 h-auto md:flex-shrink-0 scale-75">
             </div>
 
-            <div class="mt-20 px-20">
+
+            <div class="mt-20 px-20 pb-20">
                 <div class="text-center text-2xl font-bold text-white mb-10">Pick the Perfect Plan</div>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 font-Manrope">
-                    <div class="flex flex-col justify-center items-center rounded-2xl border shadow-[0_0_4px_4px]
-                 shadow-white/50 p-2 relative text-white hover:scale-105 duration-300" v-for="plan in plans">
-                        <img :src="plan.img" alt="" class="w-16 mt-4">
-                        <div class="flex flex-col mb-4">
-                            <div class="text-xs" v-if="plan.isessentital">Essential</div>
-                            <div class="text-xl font-bold">{{ plan.title }}</div>
+                    <div class="flex flex-col p-6 text-center rounded-lg border shadow-[0_0_4px_4px] shadow-white/50
+                     hover:scale-95 duration-300" v-for="(plan, index) in plans">
+                        <h3 class="mb-4 text-xl font-semibold">{{ plan.title }}</h3>
+                        <p class="font-light text-red-500 sm:text-lg" v-if="index != 2">{{ plan.subtitle }}</p>
+                        <div class="flex justify-center items-baseline my-8">
+                            <span class="mr-2 text-4xl font-extrabold" v-if="plan.price">{{ plan.price }}</span>
+                            <span class="text-gray-500 dark:text-gray-400" v-if="plan.price">/month</span>
                         </div>
-                        <a class="py-2 px-6 rounded bg-gradient-to-r from-[#B936F5] to-[#F1005B]" :href="plan.to"
-                            target="_blank">
-                            {{ plan.titlebutton }}
-                        </a>
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3" v-for="benefit in plan.benefit">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>{{ benefit }}</span>
+                            </li>
+                        </ul>
 
-                        <div class="mt-4 mb-4 text-xs text-center px-4">{{ plan.subtitle }}</div>
+                        <p class="font-light text-white sm:text-lg mb-4" v-if="index == 2">{{ plan.subtitle }}</p>
 
+                        <div class="flex flex-grow items-end justify-center">
+                            <a href="#"
+                                class=" w-full text-white bg-gradient-to-r from-[#B936F5] to-[#F1005B] font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                {{ plan.titlebutton }}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,7 +155,6 @@ import botrevenue from '../assets/images/botrevenue.svg'
 import botpowerup from '../assets/images/botpowerup.svg'
 import botworkfoce from '../assets/images/botworkforce.svg'
 import botjourney from '../assets/images/botjourney.svg'
-import ContactForm from "@/components/ContactForm.vue"
 import planpopular from '../assets/images/planpopular.svg'
 import planbot from '../assets/images/planbot.svg'
 import planmeeting from '../assets/images/planmeeting.svg'
@@ -212,19 +213,19 @@ const socials = ref([
         title: 'WhatsApp',
         subtitle: `Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, 
         and give outstanding customer care. `,
-        img:botwatsp,
+        img: botwatsp,
         benefits: ['Engage your customers instantly', 'Create conversational marketing campaigns', 'Provide excellent customer service'],
     },
     {
         title: 'Facebook Messenger',
         subtitle: ` Automate customer support and sales from meta pahe, messenger, comments and even ads. `,
-        img:botmessenger,
+        img: botmessenger,
         benefits: ['Turn queries into purchases', 'Create effective communication', 'Reduce response wait time to 0 seconds']
     },
     {
         title: 'Instagram',
         subtitle: ` Reply anywhere automatically, DMs, Comments, Ads, stories and mentions `,
-        img:botinstagram,
+        img: botinstagram,
         benefits: ['Handle more conversations with powerful bot', 'Speed up customer resolutions',
             'Make it easier for followers and potential customers to reach you']
     }
@@ -236,18 +237,22 @@ const plans = ref([
     {
         title: 'CHATBOT + LIVE AGENT',
         titlebutton: 'Lets Chat',
-        subtitle: '1 Spot Left',
+        subtitle: '1 Spots Left',
         img: planpopular,
         to: 'https://google.com',
-        isessentital: true
+        price: '$2,499',
+        isessentital: true,
+        benefit: ['Live Agent (8 Hour Shift)', 'L1 Support Resolution', 'Impulse Bot via Website', 'Meeting Scheduler', 'Daily Reports', 'Analytics']
     },
     {
         title: 'CHATBOT',
         titlebutton: 'Lets Chat',
-        subtitle: '1 Spot Left',
+        subtitle: '1 Spots Left',
         img: planbot,
         to: 'https://google.com',
-        isessentital: false
+        price: '$499',
+        isessentital: false,
+        benefit: ['Impulse Bot via Website', 'Automated Sign Up forms', 'Pre-Configured Support Flows', 'Meeting Scheduler', '24/7 Support', 'Daily Reports']
     },
     {
         title: 'Quick Meeting',
