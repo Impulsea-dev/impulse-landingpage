@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <div class="flex flex-col md:flex-row justify-center items-center gap-2 mt-10 md:gap-10">
                 <div class="flex flex-col w-full items-center md:items-start gap-2 pl-6">
@@ -108,7 +108,7 @@
             </div>
 
 
-            <div class="mt-20 px-20 pb-20">
+            <div class="mt-20 px-8 md:px-20 md:pb-20">
                 <div class="text-center text-2xl font-bold text-white mb-10">Pick the Perfect Plan</div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 font-Manrope">
