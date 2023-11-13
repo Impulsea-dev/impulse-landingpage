@@ -57,13 +57,12 @@
 
 
             <div class="flex justify-center mt-10">
-                <div class="text-center font-Manrope text-xl md:text-5xl mt-10 font-bold text-white 
-                                    mb-4 w-[749px]">
+                <div class="text-center font-Manrope text-xl md:text-5xl mt-10 font-bold text-white mb-4 max-w-3xl">
                     It’s your secret weapon to win untapped opportunities
                 </div>
             </div>
-            <div class="flex justify-center my-6">
-                <div class="text-center font-Manrope text-sm md:text-lg  text-white/80 w-[600px]">
+            <div class="flex justify-center my-6 mx-4">
+                <div class="text-center font-Manrope text-sm md:text-lg text-white/80 max-w-2xl">
                     ImpulseBot is a fun, easy-to-use platform that allowsyou to design and deploy any chatbot you can think
                     of.
                 </div>
@@ -71,15 +70,15 @@
 
             <div class="flex flex-col md:flex-row justify-center gap-2 mt-10 px-5">
                 <button :class="{ 'bg-white text-black-900': btnselected == index }"
-                    class="text-center px-8 py-2 border rounded-full duration-300" v-for="(social, index) in socials"
+                    class="text-center px-6 py-2 border rounded-full duration-300" v-for="(social, index) in socials"
                     :key="index" @click="() => { btnselected = index }">{{ social.title }}</button>
             </div>
 
             <div class="flex flex-col md:flex-row justify-center items-center py-10 gap-8">
                 <img :src="socials[btnselected].img" class="max-w-xs md:max-w-lg h-full flex-shrink-0" alt="">
                 <div class="flex flex-col text-white px-5">
-                    <h5 class="mb-2">{{ socials[btnselected].title }}</h5>
-                    <p class="text-sm max-w-sm mb-4">{{ socials[btnselected].subtitle }}</p>
+                    <h5 class="text-xl md:text-4xl mb-2">{{ socials[btnselected].title }}</h5>
+                    <p class="text-sm md:text-base max-w-sm mb-4">{{ socials[btnselected].subtitle }}</p>
                     <div v-for="benefit in socials[btnselected].benefits">
                         <div class="flex flex-row items-start gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -87,7 +86,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <p class=" text-sm">{{ benefit }}</p>
+                            <p class=" text-sm md:text-base">{{ benefit }}</p>
                         </div>
                     </div>
                 </div>
@@ -95,14 +94,14 @@
 
 
             <div class="flex flex-col md:flex-row justify-center items-center gap-2 mt-10 md:gap-10">
-                <div class="flex flex-col w-full items-center md:items-start gap-2 pl-6">
+                <div class="flex flex-col w-full items-start gap-2 px-6">
                     <div class="text-xl md:text-4xl text-white font-bold font-Manrope">LiveChat with Agent Fallback</div>
-                    <div class="text-base md:text-lg text-white/80 font-Manrope">
+                    <p class="text-sm md:text-lg text-white font-Manrope">
                         Speed up your customer service and positively impact your sales with live chat. Let a human agent
                         take
                         over and resolve queries personally within minutes!
                         Get Started For Free
-                    </div>
+                    </p>
                 </div>
                 <img src="../assets/images/botlivechat.svg" alt="" class="w-full md:w-1/2 h-auto md:flex-shrink-0 scale-75">
             </div>
@@ -162,7 +161,9 @@ import botweb from "../assets/images/imgs/impulseweb.png"
 import botwatsp from "../assets/images/imgs/impulsewhatsapp.png"
 import botmessenger from "../assets/images/imgs/impulsemessenger.png"
 import botinstagram from "../assets/images/imgs/impulseinstagram.png"
-import Card from "@/components/Card/index.vue"
+import bottelegram from "../assets/images/imgs/impulsetelegram.png"
+import botapi from "../assets/images/imgs/impulseapi.png"
+
 
 const benefits = ref([
     {
@@ -210,6 +211,13 @@ const socials = ref([
         benefits: ['Turn you visitors into paying customers', 'Collect information', 'Provide great service in real-time'],
     },
     {
+        title: 'Telegram Chatbot',
+        subtitle: ` Build your community on telegram & engage with them using Botsify Chatbot. 
+        Chatbot for telegram can help you achieve more sales & improved conversion rates. `,
+        img: bottelegram,
+        benefits: ['Engage with your customers ', ' Collect lead information ', 'Automatic responses using AI Chatbot '],
+    },
+    {
         title: 'WhatsApp',
         subtitle: `Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, 
         and give outstanding customer care. `,
@@ -228,6 +236,12 @@ const socials = ref([
         img: botinstagram,
         benefits: ['Handle more conversations with powerful bot', 'Speed up customer resolutions',
             'Make it easier for followers and potential customers to reach you']
+    },
+    {
+        title: 'API & SDK',
+        subtitle: `With our comprehensive API and SDK, you can use Botsify to deploy chatbots in your own apps and channels.  `,
+        img: botapi,
+        benefits: ['Reduce customer service costs','Monitor consumer data to gain Insights', 'Make customer journey smoother ']
     }
 ])
 
