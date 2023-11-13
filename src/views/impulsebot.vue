@@ -80,10 +80,10 @@
                 <div class="flex flex-col text-white px-5">
                     <h5 class="mb-2">{{ socials[btnselected].title }}</h5>
                     <p class="text-sm max-w-sm mb-4">{{ socials[btnselected].subtitle }}</p>
-                    <div class="flex flex-col" v-for="benefit in socials[btnselected].benefits">
-                        <div class="flex flex-row items-center gap-1">
+                    <div v-for="benefit in socials[btnselected].benefits">
+                        <div class="flex flex-row items-start gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6 text-green-400">
+                                stroke="currentColor" class="w-5 h-5 text-green-400">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
