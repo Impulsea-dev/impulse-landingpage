@@ -126,7 +126,7 @@
                         </div>
                         <p class="font-light text-white sm:text-lg px-4 mb-4" v-if="index == 2">{{ plan.subtitle }}</p>
 
-                        <a href="#"
+                        <a :href="plan.to" target="_blank"
                                 class=" w-full text-white bg-gradient-to-r from-[#B936F5] to-[#F1005B] font-medium rounded-lg text-base px-6 py-3 text-center">
                                 {{ plan.titlebutton }}
                         </a>
@@ -268,7 +268,7 @@ const plans = ref([
         titlebutton: 'Lets Chat',
         subtitle: '1 Spots Left',
         img: planpopular,
-        to: 'https://google.com',
+        to: 'https://impulse.na.chilipiper.com/book/me/brian-molina',
         price: '$2,499',
         benefit: ['Live Agent (8 Hour Shift)', 'L1 Support Resolution', 'Impulse Bot via Website', 'Meeting Scheduler', 'Daily Reports', 'Analytics']
     },
@@ -277,7 +277,7 @@ const plans = ref([
         titlebutton: 'Lets Chat',
         subtitle: '1 Spots Left',
         img: planbot,
-        to: 'https://google.com',
+        to: 'https://impulse.na.chilipiper.com/book/me/brian-molina',
         price: '$499',
         benefit: ['Impulse Bot via Website', 'Automated Sign Up forms', 'Pre-Configured Support Flows', 'Meeting Scheduler', '24/7 Support', 'Daily Reports']
     },
@@ -286,7 +286,7 @@ const plans = ref([
         titlebutton: 'Book a Call',
         subtitle: `Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works.`,
         img: planmeeting,
-        to: 'https://google.com'
+        to: 'https://impulse.na.chilipiper.com/book/me/brian-molina'
 
     }
 ])
