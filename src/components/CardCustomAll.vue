@@ -71,7 +71,7 @@ export default {
         {
           img: qo3,
           color:"#282832",
-          title: "ImpulseBot",
+          title: "Impulse Bot",
           url:'/impulsebot',
           description: "Improve Customer Satisfaction, Boost Sales, and Minimize Churn with Impulse Bot—an innovative AI and ML-powered chatbot designed to assist your customers round the clock."
         },
