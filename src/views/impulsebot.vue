@@ -9,11 +9,11 @@
             </div>
 
             <div class="text-center font-Manrope text-3xl md:text-6xl mt-6 font-bold text-white">
-                ImpulseBot
+                Impulse Bot
             </div>
             <div class="flex justify-center mt-6">
                 <div class="text-center font-Manrope text-xs md:text-lg  text-white/80 w-[600px]">
-                    Empowering Businesses to Treat TheirCustomers like a VIP
+                    Empowering ISPs to Treat Their Customers like VIPs
                 </div>
             </div>
 
@@ -24,12 +24,12 @@
             <div class="flex justify-center mt-10">
                 <div
                     class="text-center font-Manrope text-xl md:text-5xl mt-10 font-bold text-white w-[749px] md:leading-[4rem]">
-                    Here's Why ImpulseBot it’s Right For You.
+                    Here's Why Impulse Bot is Right For You.
                 </div>
             </div>
 
             <div class="text-center font-Manrope text-sm md:text-lg text-white/80 mt-6">
-                Don't waste your time anymore
+                Customers come first, always! Let's treat them right!
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-10 md:my-20 px-10 md:px-20">
