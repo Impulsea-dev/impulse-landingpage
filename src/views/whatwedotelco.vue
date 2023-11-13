@@ -74,11 +74,11 @@ export default {
           url:'/telemetrics'
         },
         {
-          title:'Impulse Boost',
-          description:'Boost sales and customer retention with our SaaS solution. Upsell, cross-sell, sales opportunities, AI alerts, and real-time insights empower sales agents to close deals faster and more effectively',
+          title:'Impulse Bot',
+          description:'Improve Customer Satisfaction, Boost Sales, and Minimize Churn with Impulse Bot—an innovative AI and ML-powered chatbot designed to assist your customers round the clock.',
           img:boost,
           background:'bg-boost',
-          url:'/boost'
+          url:'/impulsebot'
         },
         {
           title:'BPO Services',
