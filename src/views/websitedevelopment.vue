@@ -14,7 +14,7 @@
                 apps, and manage marketing to help telecoms & communication service providers achieve growth.
             </p>
         </div>
-        <swiper  :style="{
+        <swiper :style="{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
         }" :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper my-20" :autoplay="{
@@ -23,20 +23,22 @@
 }">
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design1.webp" class="w-9/12 rounded-xl" alt="">
+                    <img src="../assets/images/design1.webp" class="w-9/12 max-h-[80vh] rounded-xl" alt="">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design2.webp" class="w-9/12 rounded-xl" alt="">
+                    <img src="../assets/images/design2.webp" class="w-9/12 max-h-[80vh] rounded-xl" alt="">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design3.webp" class="w-9/12  rounded-xl" alt="">
+                    <img src="../assets/images/design3.webp" class="w-9/12 max-h-[80vh] rounded-xl" alt="">
                 </div>
             </swiper-slide>
         </swiper>
+
+
     </div>
     <div class="flex flex-col md:flex-row justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
         <div class="flex flex-col md:w-[700px]  animated-container opacity-0 font-Monda">
@@ -174,8 +176,6 @@ function handleIntersection(entries, observer) {
 }
 </script>
 <style lang="scss">
-
-
 .scale-up-bottom {
     animation: scale-up-bottom 1s;
 }
