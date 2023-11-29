@@ -35,7 +35,7 @@ export default {
                 {
                     id: 1,
                     title: 'You are not upselling or cross selling to your existing user base',
-                    text: 'You are not sending emails or SMS messages to encourage customers to upgrade their packages when their circuit usage surges, and you are also not to analysing customer behaviour.'
+                    text: 'You are not sending emails or SMS messages to encourage customers to upgrade their packages when their circuit usage surges, and you are also not analyzing customer behavior.'
 
                 },
                 {

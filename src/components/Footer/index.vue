@@ -15,7 +15,15 @@
           <div class="flex-col text-start  text-base">
             Copyright © 2023 Impulse. All rights reserved.
 
-</div>
+          </div>
+          <a
+             href="/impulse-privacy"
+             target="_blank"
+            
+             class=" flex-grow-0 underline flex-shrink-0 text-sm text-left text-white hover:cursor-pointer"
+           >
+             Privacy Policy
+           </a>
         </div>
         <div class="grid grid-cols-2 gap-5 space-x-4 md:w-52 md:ml-auto">
          

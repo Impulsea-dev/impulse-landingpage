@@ -49,7 +49,7 @@
             <div class="flex justify-center border rounded-2xl shadow-[0_0_4px_4px] shadow-white/50 p-10 my-10 
                     mx-20 overflow-hidden cursor-pointer">
                 <iframe class="w-full md:h-96"
-                    src="https://www.youtube.com/embed/NW-EZm_6JCk?si=Y_0JD3iQQkVcwUbo&autoplay=1&controls=0" title=""
+                    src="https://www.youtube.com/embed/ffA7SXO0ugU?si=DQ4zMVGlFLbY7oPq&autoplay=1&controls=0" title=""
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>

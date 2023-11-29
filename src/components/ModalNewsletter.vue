@@ -52,6 +52,7 @@ export default {
         return {
             visitCount:0,
             maxVisit:3,
+            loading:false
         }
     },
     methods:{
@@ -86,6 +87,7 @@ export default {
         },
         sendEmail:function(){
             this.loading=true
+            const vm=this;
             axios.post('https://api.brevo.com/v3/contacts', {
                 email: this.email,
                 listIds:[2]
@@ -96,10 +98,10 @@ export default {
                 }
             })
                 .then(function (response) {
-                    this.loading=false
-                    this.$refs.modal1.closeModal();
+                    vm.loading=false
+                    vm.$refs.modal1.closeModal();
                     sessionStorage.setItem('opened',true);
-                    this.toast.success('Thank you for subscribing to Impulse Newsletters!', {
+                    vm.toast.success('Thank you for subscribing to Impulse Newsletters!', {
                         position: "top-right",
                         timeout: 4000,
                         closeOnClick: true,
@@ -115,9 +117,9 @@ export default {
                     });
                 })
                 .catch(function (error) {
-                    this.loading=false
-                    this.$refs.modal1.closeModal();
-                    this.toast.error('Wrong Email Address or Already Registered!', {
+                    vm.loading=false
+                    vm.$refs.modal1.closeModal();
+                    vm.toast.error('Wrong Email Address or Already Registered!', {
                         position: "top-right",
                         timeout: 4000,
                         closeOnClick: true,
