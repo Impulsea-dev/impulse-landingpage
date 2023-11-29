@@ -23,17 +23,17 @@
 }">
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design1.webp" class="w-9/12 max-h-[80vh] rounded-xl" alt="">
+                    <img src="../assets/images/design1.webp" class="w-full md:w-2/3  md:max-h-[80vh] rounded-xl" alt="">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design2.webp" class="w-9/12 max-h-[80vh] rounded-xl" alt="">
+                    <img src="../assets/images/design2.webp" class="w-full md:w-2/3 md:max-h-[80vh] rounded-xl" alt="">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design3.webp" class="w-9/12 max-h-[80vh] rounded-xl" alt="">
+                    <img src="../assets/images/design3.webp" class="w-full md:w-2/3 md:max-h-[80vh] rounded-xl" alt="">
                 </div>
             </swiper-slide>
         </swiper>
