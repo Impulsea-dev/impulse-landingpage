@@ -10,30 +10,30 @@
     <div class="p-20 bg-slate-900 !-mx-6 !my-6">
         <div class="flex flex-col justify-center items-center gap-4 xl:mx-96 font-Monda animated-container opacity-0">
             <h2 class="!text-white font-bold text-2xl md:text-4xl">Impulse Website Design</h2>
-            <p class="!text-white">Ironpaper focuses on digital marketing for telecom companies. We build websites, mobile
+            <p class="!text-white">Impulse focuses on digital marketing for telecom companies. We build websites, mobile
                 apps, and manage marketing to help telecoms & communication service providers achieve growth.
             </p>
         </div>
-        <swiper :style="{
+        <swiper  :style="{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
-        }" :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper" :autoplay="{
+        }" :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper my-20" :autoplay="{
     delay: 3000,
     disableOnInteraction: false,
 }">
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design1.png" class="md:w-2/3 h-full rounded-xl" alt="">
+                    <img src="../assets/images/design1.webp" class="w-9/12 rounded-xl" alt="">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design2.png" class="md:w-2/3 h-full rounded-xl" alt="">
+                    <img src="../assets/images/design2.webp" class="w-9/12 rounded-xl" alt="">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="flex justify-center">
-                    <img src="../assets/images/design3.png" class="md:w-2/3 h-full rounded-xl" alt="">
+                    <img src="../assets/images/design3.webp" class="w-9/12  rounded-xl" alt="">
                 </div>
             </swiper-slide>
         </swiper>
@@ -85,7 +85,7 @@
     </div>
 
     <div class=" flex justify-center md:p-8  !-mx-6 ">
-        <Card :className="'dark:!bg-gray-900 mt-6 md:col-span-6 col-span-1 animated-container opacity-0 '">
+        <Card :className="'dark:!bg-gray-900 mt-6 md:col-span-6 col-span-1'">
             <ContactForm :refer="'Impulse Pay'" />
         </Card>
     </div>
@@ -174,21 +174,7 @@ function handleIntersection(entries, observer) {
 }
 </script>
 <style lang="scss">
-@media screen and (max-width: 2500px) {
-    .swiper {
-        width: 60%;
-        padding-top: 100px;
-        padding-bottom: 40px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .swiper {
-        width: 100%;
-        padding-top: 100px;
-        padding-bottom: 40px;
-    }
-}
 
 .scale-up-bottom {
     animation: scale-up-bottom 1s;
@@ -207,7 +193,7 @@ function handleIntersection(entries, observer) {
 }
 
 .bgwd {
-    background: url(@/assets/images/bgs/wd.png) no-repeat;
+    background: url(@/assets/images/bgs/wd.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
