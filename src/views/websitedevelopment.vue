@@ -1,19 +1,31 @@
 <template>
     <div class="flex h-96 w-screen !-m-6 bgwd relative">
-        <div
-            class="absolute bottom-40 left-10 font-bold font-Monda flex flex-col sm:flex-row gap-1 animated-container opacity-0">
-            <h1 class="!text-white text-3xl md:text-5xl">Impulse </h1>
-            <h1 class="!text-[#04c5fe] text-3xl md:text-5xl">Website Design</h1>
+        <div class="absolute top-[20%] xl:top-[40%]">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-between px-8 md:px-10 xl:px-20 gap-4">
+                <div class="font-bold font-Monda flex flex-row gap-1 animated-container opacity-0">
+                    <h1 class="!text-white text-2xl md:text-5xl">Impulse </h1>
+                    <h1 class="!text-[#04c5fe] text-2xl md:text-5xl">Website Design</h1>
+                </div>
+                <div class="font-Monda animated-container opacity-0">
+                    <p class="!text-white">Impulse focuses on digital marketing for telecom companies. We build websites,
+                        mobile
+                        apps, and manage marketing to help telecoms & communication service providers achieve growth.
+                    </p>
+                </div>
+            </div>
+
+
         </div>
+
     </div>
 
     <div class="p-20 bg-slate-900 !-mx-6 !my-6">
-        <div class="flex flex-col justify-center items-center gap-4 xl:mx-96 font-Monda animated-container opacity-0">
+        <!-- <div class="flex flex-col justify-center items-center gap-4 xl:mx-96 font-Monda animated-container opacity-0">
             <h2 class="!text-white font-bold text-2xl md:text-4xl">Impulse Website Design</h2>
             <p class="!text-white">Impulse focuses on digital marketing for telecom companies. We build websites, mobile
                 apps, and manage marketing to help telecoms & communication service providers achieve growth.
             </p>
-        </div>
+        </div> -->
         <swiper :style="{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
