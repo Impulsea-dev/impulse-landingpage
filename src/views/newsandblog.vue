@@ -1,6 +1,6 @@
 <template>
     <div class="p-0 lg:p-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 lg:mt-18">
+        <div class="grid grid-cols-1 md:grid-cols-2  gap-4 mt-12 lg:mt-18">
             <div class="flex flex-col">
                 <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">News and Blog</div>
                 <div class="text-sm lg:text-base text-white font-medium mt-8">
@@ -9,25 +9,15 @@
                     Vitae in non ultricies nisl tortor proin integer diam. Ut ante.
                 </div>
             </div>
-            <div class="hidden md:block"></div>
         </div>
 
         <div class="mt-28">
-            <SwipperCard2 :title="'Top Picks'"/>
+            <SwipperCard2 :title="'Top Picks'" />
         </div>
 
         <div class="mt-4 md:mt-16">
-            <div class="text-xl lg:text-[32px] xl:text-[38px] text-white font-semibold">Blog List</div>
-            <!-- <div class="text-sm font-bold text-center">
-                <div class="block md:flex md:flex-row justify-center gap-2 items-center space-y-2 md:space-y-0">
-                    <div class="cursor-pointer"
-                        :class="{ 'bgTab text-black-500': selectedType === blogtype, 'bgtabdark': selectedType !== blogtype }"
-                        @click="selectedType = blogtype" v-for="(blogtype, i) in blogsType" :key="i">{{ blogtype }}
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mt-10">
+            <div class="text-xl lg:text-[32px] xl:text-[38px] text-white font-semibold mb-10">Blog List</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4" v-if="blogs.length > 0">
                 <div class="w-full h-full bg-black-500 rounded-lg cursor-pointer hover:duration-700 hover:scale-95 
                 hover:border-2" v-for="(blog, i) in blogs" :key="i" @click="openBlog(blog)">
                     <img class="w-full h-60" :src="blog.header" />
@@ -46,6 +36,7 @@
                     </div>
                 </div>
             </div>
+            <SkeletonCard v-else />
 
             <div class="mt-20">
                 <div class="text-3xl text-white font-Manrope text-center">Let’s Work Together </div>
@@ -63,9 +54,10 @@ import { defineComponent, onMounted, ref } from 'vue';
 import SwipperCard2 from "@/components/SwipperCard2.vue"
 import { useRouter } from 'vue-router';
 import BlogServices from "@/services/Blog"
+import SkeletonCard from '@/components/Skeleton/SkeletonCard.vue';
 
 export default defineComponent({
-    components: { SwipperCard2 },
+    components: { SwipperCard2, SkeletonCard },
 
     setup() {
         const selectedType = ref('All');
@@ -73,17 +65,17 @@ export default defineComponent({
         const blogs = ref([])
 
         onMounted(async () => {
-             try {
+            try {
                 const bl = await BlogServices.getBlogs();
-                blogs.value = bl; 
-             } catch (error) {
+                blogs.value = bl;
+            } catch (error) {
                 console.log(error)
-                
-             }
+
+            }
 
         })
         const openBlog = (blog) => {
-            router.push('/blog/'+blog.titleurl)
+            router.push('/blog/' + blog.titleurl)
         }
         return {
             selectedType,
