@@ -145,14 +145,6 @@
                                 <span>{{ benefit }}</span>
                             </li>
                         </ul>
-
-                       
-                        <!-- <div class="flex flex-grow items-end justify-center">
-                            <a href="#"
-                                class=" w-full text-white bg-gradient-to-r from-[#B936F5] to-[#F1005B] font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                {{ plan.titlebutton }}
-                            </a>
-                        </div> -->
                     </div>
                 </div>
             </div>

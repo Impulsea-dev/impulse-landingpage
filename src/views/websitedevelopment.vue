@@ -1,107 +1,89 @@
 <template>
-    <div class="flex h-96 w-screen !-m-6 bgwd relative">
-        <div class="absolute top-[20%] xl:top-[40%]">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between px-8 md:px-10 xl:px-20 gap-4">
-                <div class="font-bold font-Monda flex flex-row gap-1 animated-container opacity-0">
-                    <h1 class="!text-white text-2xl md:text-5xl">Impulse </h1>
-                    <h1 class="!text-[#04c5fe] text-2xl md:text-5xl">Website Design</h1>
+    <div>
+        <div class="flex h-96 w-screen !-m-6 bgwd relative">
+            <div class="absolute top-[30%] lg:top-[40%] animated-container opacity-0">
+                <div class="grid grid-cols-1 xl:grid-cols-2 justify-between px-8 md:px-10 gap-4">
+                    <div class="font-bold font-Monda flex flex-row gap-1">
+                        <h1 class="!text-white text-2xl md:text-5xl">Impulse </h1>
+                        <h1 class="!text-[#04c5fe] text-2xl md:text-5xl">Website Design</h1>
+                    </div>
+                    <div class="font-Monda">
+                        <p class="!text-white">Impulse focuses on digital marketing for telecom companies. We build
+                            websites,
+                            mobile
+                            apps, and manage marketing to help telecoms & communication service providers achieve growth.
+                        </p>
+                    </div>
                 </div>
-                <div class="font-Monda animated-container opacity-0">
-                    <p class="!text-white">Impulse focuses on digital marketing for telecom companies. We build websites,
-                        mobile
-                        apps, and manage marketing to help telecoms & communication service providers achieve growth.
-                    </p>
-                </div>
+
+
             </div>
 
-
         </div>
 
-    </div>
-
-    <div class="p-20 bg-slate-900 !-mx-6 !my-6">
-        <!-- <div class="flex flex-col justify-center items-center gap-4 xl:mx-96 font-Monda animated-container opacity-0">
-            <h2 class="!text-white font-bold text-2xl md:text-4xl">Impulse Website Design</h2>
-            <p class="!text-white">Impulse focuses on digital marketing for telecom companies. We build websites, mobile
-                apps, and manage marketing to help telecoms & communication service providers achieve growth.
-            </p>
-        </div> -->
-        <swiper :style="{
-            '--swiper-navigation-color': '#fff',
-            '--swiper-pagination-color': '#fff',
-        }" :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper my-20" :autoplay="{
-    delay: 3000,
-    disableOnInteraction: false,
-}">
-            <swiper-slide>
-                <div class="flex justify-center">
-                    <img src="../assets/images/design1.webp" class="w-full md:w-2/3  md:max-h-[80vh] rounded-xl" alt="">
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex justify-center">
-                    <img src="../assets/images/design2.webp" class="w-full md:w-2/3 md:max-h-[80vh] rounded-xl" alt="">
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex justify-center">
-                    <img src="../assets/images/design3.webp" class="w-full md:w-2/3 md:max-h-[80vh] rounded-xl" alt="">
-                </div>
-            </swiper-slide>
-        </swiper>
-
-
-    </div>
-    <div class="flex flex-col md:flex-row justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
-        <div class="flex flex-col md:w-[700px]  animated-container opacity-0 font-Monda">
-            <h1 class="text-2xl md:text-4xl font-bold mb-4">Websites for Lead Generation</h1>
-            <p>
-                Telecom companies need websites that attract leads, customers, partners and advocates.
-                We build websites that make publishing easy, are highly responsive, dynamic and optimized to convert.
-            </p>
+        <div class="p-20 bg-slate-900 !-mx-6 !my-6">
+            <swiper :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper my-20" :autoplay="{
+                delay: 3000,
+                disableOnInteraction: false,
+            }">
+                <swiper-slide v-for="carousel in carousels">
+                    <img :src="carousel.img" class="rounded-xl md:h-screen w-screen" alt="">
+                </swiper-slide>
+            </swiper>
         </div>
-        <div>
-            <img src="https://www.ironpaper.com/hs-fs/hubfs/website-development.png?width=537&name=website-development.png"
-                alt="" class="animated-container opacity-0">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
+            <div class="flex flex-col md:w-[700px] animated-container opacity-0 font-Monda">
+                <h1 class="text-2xl md:text-4xl font-bold mb-4">Websites for Lead Generation</h1>
+                <p>
+                    Telecom companies need websites that attract leads, customers, partners and advocates.
+                    We build websites that make publishing easy, are highly responsive, dynamic and optimized to convert.
+                </p>
+            </div>
+            <div>
+                <img src="https://www.ironpaper.com/hs-fs/hubfs/website-development.png?width=537&name=website-development.png"
+                    alt="" class="animated-container opacity-0">
+            </div>
         </div>
-    </div>
 
-    <div class="flex flex-col md:flex-row-reverse justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
-        <div class="flex flex-col md:w-[700px] animated-container opacity-0 font-Monda">
-            <h1 class="text-2xl md:text-4xl font-bold mb-4">Responsive, Integrated, Optimized</h1>
-            <p class="md:text-left md:w-full">
-                Websites are the center piece for Inbound marketing. Websites must be built with careful consideration of
-                SEO, social sharing, content strategy, marketing automation, dynamic personalization, lead scoring, and
-                progessive profiling.
-            </p>
+        <div class="flex flex-col md:flex-row-reverse justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
+            <div class="flex flex-col md:w-[700px] animated-container opacity-0 font-Monda">
+                <h1 class="text-2xl md:text-4xl font-bold mb-4">Responsive, Integrated, Optimized</h1>
+                <p class="md:text-left md:w-full">
+                    Websites are the center piece for Inbound marketing. Websites must be built with careful consideration
+                    of
+                    SEO, social sharing, content strategy, marketing automation, dynamic personalization, lead scoring, and
+                    progessive profiling.
+                </p>
+            </div>
+            <div>
+                <img src="https://www.ironpaper.com/hs-fs/hubfs/icon-inbound-marketing.gif?width=537&name=icon-inbound-marketing.gif"
+                    alt="" class="rounded-full animated-container opacity-0">
+            </div>
         </div>
-        <div>
-            <img src="https://www.ironpaper.com/hs-fs/hubfs/icon-inbound-marketing.gif?width=537&name=icon-inbound-marketing.gif"
-                alt="" class="rounded-full animated-container opacity-0">
-        </div>
-    </div>
 
-    <div class="mt-20 pb-20 !-mx-6 p-20 bg-slate-900">
-        <div class="flex justify-center">
-            <h1 class="text-2xl md:text-5xl !text-white font-Monda animated-container opacity-0">Why Every Business Needs A
-                Website</h1>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:px-20 mt-20">
-            <div class="flex flex-row items-start gap-4 mb-10 animated-container opacity-0" v-for="reason in reasons">
-                <img :src="reason.img" alt="">
-                <div class="flex flex-col gap-1 font-Monda">
-                    <h4 class="text-base md:text-xl !text-white font-bold">{{ reason.title }}</h4>
-                    <p class="text-xs md:text-sm">{{ reason.text }}
-                    </p>
+        <div class="mt-20 pb-20 !-mx-6 p-20 bg-slate-900">
+            <div class="flex justify-center">
+                <h1 class="text-2xl md:text-3xl xl:text-5xl !text-white font-Monda ">Why Every Business
+                    Needs A
+                    Website</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:px-20 mt-20">
+                <div class="flex flex-row items-start gap-4 mb-10 animated-container opacity-0" v-for="reason in reasons">
+                    <img :src="reason.img" alt="">
+                    <div class="flex flex-col gap-1 font-Monda">
+                        <h4 class="text-base md:text-xl !text-white font-bold">{{ reason.title }}</h4>
+                        <p class="text-xs md:text-sm">{{ reason.text }}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class=" flex justify-center md:p-8  !-mx-6 ">
-        <Card :className="'dark:!bg-gray-900 mt-6 md:col-span-6 col-span-1'">
-            <ContactForm :refer="'Impulse Pay'" />
-        </Card>
+        <div class=" flex justify-center md:p-8  !-mx-6 ">
+            <Card :className="'dark:!bg-gray-900 mt-6 md:col-span-6 col-span-1'">
+                <ContactForm :refer="'Impulse Pay'" />
+            </Card>
+        </div>
     </div>
 </template>
 <script>
@@ -112,15 +94,31 @@ import { Navigation, Autoplay } from 'swiper';
 import { onMounted, ref } from 'vue';
 import Card from "@/components/Card/index.vue"
 import ContactForm from "@/components/ContactForm.vue"
+import Carousel from "@/components/Carousel/index.vue";
+import carousel1Img from "../assets/images/design1.webp";
+import carousel2Img from "../assets/images/design2.webp";
+import carousel3Img from "../assets/images/design3.webp";
+import  useIntersectionObserver  from '@/composables/useIntersectionObserver';
+
 export default {
     components: {
         Swiper,
         SwiperSlide,
         Card,
-        ContactForm
+        ContactForm,
+        Carousel
     },
     setup() {
-        const observer = ref(null);
+        const carousels = ref([{
+            img: carousel1Img
+        },
+        {
+            img: carousel2Img
+        },
+        {
+            img: carousel3Img
+        }
+        ])
         const reasons = ref([
             {
                 title: 'CREDIBILITY',
@@ -151,59 +149,26 @@ export default {
                 img: `https://thriveagency.com/files/web-design-optimize-new.svg`
             }
         ])
+        const { observe } = useIntersectionObserver('scale-up-bottom');
+
         onMounted(() => {
-            const options = {
-                root: null,
-                rootMargin: '20px',
-                threshold: 1.0,
-            };
-
-
-            observer.value = new IntersectionObserver(handleIntersection, options);
-
             const elementsToAnimate = document.querySelectorAll('.animated-container');
-
             elementsToAnimate.forEach((element) => {
-                observer.value.observe(element);
+                observe(element);
             });
         });
 
         return {
+            carousels,
             reasons,
-            observer,
-
             modules: [Navigation, Autoplay]
         };
     },
 };
 
-function handleIntersection(entries, observer) {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 1.0) {
-            entry.target.style.opacity = '1';
-            entry.target.classList.add("scale-up-bottom");
-            observer.unobserve(entry.target);
-        }
-    });
-}
+
 </script>
 <style lang="scss">
-.scale-up-bottom {
-    animation: scale-up-bottom 1s;
-}
-
-@keyframes scale-up-bottom {
-    0% {
-        transform: scale(.5);
-        transform-origin: center bottom
-    }
-
-    100% {
-        transform: scale(1);
-        transform-origin: center bottom
-    }
-}
-
 .bgwd {
     background: url(@/assets/images/bgs/wd.webp) no-repeat;
     background-size: cover;
