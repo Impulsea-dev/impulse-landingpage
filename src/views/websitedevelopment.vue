@@ -22,14 +22,33 @@
         </div>
 
         <div class="p-20 bg-slate-900 !-mx-6 !my-6">
-            <swiper :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper my-20" :autoplay="{
-                delay: 3000,
-                disableOnInteraction: false,
-            }">
+            <swiper :style="{
+                '--swiper-navigation-color': '#fff',
+                '--swiper-pagination-color': '#fff',
+            }" :navigation="true" :effect="'flip'" :modules="modules" class="mySwiper md:my-20" :autoplay="{
+    delay: 3000, disableOnInteraction: false,
+}">
                 <swiper-slide v-for="carousel in carousels">
-                    <img :src="carousel.img" class="rounded-xl md:h-screen w-screen" alt="">
+                    <div class="relative" @mouseover="showOverlay = true" @mouseleave="showOverlay = false">
+                        <img :src="carousel.img" class="rounded-xl md:h-screen  w-screen cursor-pointer" alt="">
+                        <transition name="fade">
+                            <div v-if="showOverlay"
+                                class="absolute inset-0 flex items-center justify-center bg-[#007aff] bg-opacity-80">
+                                <a :href="carousel.imgfull" target="_blank"
+                                    class="px-8 py-4 bg-white text-[#007aff] rounded-md">
+                                    See full template
+                                </a>
+                            </div>
+                        </transition>
+                    </div>
                 </swiper-slide>
+
+
             </swiper>
+            <!-- <div class="flex flex-row gap-2">
+                <img :src="carousel.img" class="hover:border rounded-md p-1 w-[150px] cursor-pointer"
+                    v-for="carousel in carousels" style="width:150px">
+            </div> -->
         </div>
         <div class="flex flex-col md:flex-row justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
             <div class="flex flex-col md:w-[700px] animated-container opacity-0 font-Monda">
@@ -98,7 +117,10 @@ import Carousel from "@/components/Carousel/index.vue";
 import carousel1Img from "../assets/images/design1.webp";
 import carousel2Img from "../assets/images/design2.webp";
 import carousel3Img from "../assets/images/design3.webp";
-import  useIntersectionObserver  from '@/composables/useIntersectionObserver';
+import carousel1Imgfull from "../assets/images/design1full.png";
+import carousel2Imgfull from "../assets/images/design2full.png";
+import carousel3Imgfull from "../assets/images/design3full.png";
+import useIntersectionObserver from '@/composables/useIntersectionObserver';
 
 export default {
     components: {
@@ -110,15 +132,19 @@ export default {
     },
     setup() {
         const carousels = ref([{
-            img: carousel1Img
+            img: carousel1Img,
+            imgfull: carousel1Imgfull
         },
         {
-            img: carousel2Img
+            img: carousel2Img,
+            imgfull: carousel2Imgfull
         },
         {
-            img: carousel3Img
+            img: carousel3Img,
+            imgfull: carousel3Imgfull
         }
         ])
+
         const reasons = ref([
             {
                 title: 'CREDIBILITY',
@@ -149,6 +175,9 @@ export default {
                 img: `https://thriveagency.com/files/web-design-optimize-new.svg`
             }
         ])
+
+        const showOverlay = ref(false)
+
         const { observe } = useIntersectionObserver('scale-up-bottom');
 
         onMounted(() => {
@@ -161,6 +190,7 @@ export default {
         return {
             carousels,
             reasons,
+            showOverlay,
             modules: [Navigation, Autoplay]
         };
     },
@@ -168,7 +198,17 @@ export default {
 
 
 </script>
-<style lang="scss">
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
 .bgwd {
     background: url(@/assets/images/bgs/wd.webp) no-repeat;
     background-size: cover;
