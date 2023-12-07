@@ -117,9 +117,11 @@ import Carousel from "@/components/Carousel/index.vue";
 import carousel1Img from "../assets/images/design1.webp";
 import carousel2Img from "../assets/images/design2.webp";
 import carousel3Img from "../assets/images/design3.webp";
+import carousel4Img from "../assets/images/design4.webp";
 import carousel1Imgfull from "../assets/images/design1full.png";
 import carousel2Imgfull from "../assets/images/design2full.png";
 import carousel3Imgfull from "../assets/images/design3full.png";
+import carousel4Imgfull from "../assets/images/design4full.jpg";
 import useIntersectionObserver from '@/composables/useIntersectionObserver';
 
 export default {
@@ -142,6 +144,10 @@ export default {
         {
             img: carousel3Img,
             imgfull: carousel3Imgfull
+        },
+        {
+            img: carousel4Img,
+            imgfull: carousel4Imgfull
         }
         ])
 
