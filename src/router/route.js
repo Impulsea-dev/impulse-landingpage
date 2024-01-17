@@ -57,6 +57,11 @@ const routes = [
         component: () => import("@/views/privacy.vue"),
       },
       {
+        path: "/impulse-terms",
+        name: "impulseterms",
+        component: () => import("@/views/terms.vue"),
+      },
+      {
         path: "/viewcases",
         name: "viewcases",
         component: () => import("@/views/viewcases.vue"),
