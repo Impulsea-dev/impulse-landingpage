@@ -50,7 +50,7 @@
             material breach of this Contract, or direction from a lawful authority.</p>
         </div>
       </section>
-      <hr>
+
       <section class="mb-4">
         <h2 class="text-2xl font-semibold mt-4 mb-2">FEES, PAYMENTS, &amp; PENALTIES</h2>
         <hr class="mb-2">
