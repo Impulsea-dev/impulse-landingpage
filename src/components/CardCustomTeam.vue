@@ -1,15 +1,16 @@
 <template>
-<div class="flex flex-wrap w-full justify-center ">
-  <div class="bg-dark p-10 text-center" 
-  :class="classBackground">
-    <div class="text-white w-80 h-96 rounded-full flex items-center justify-center mb-16 mx-auto">
+<div class="flex flex-wrap w-auto justify-center  ">
+  <div class="md:p-10 text-center " :class="classBackground"
+  >
+    <div class="text-white w-80 h-auto rounded-full flex items-center justify-center mb-6 mx-auto" >
         <img
       :src="img"
       alt=""
+      class="rounded-md"
     />
     </div>
-    <p class="text-white text-base mb-3.5 flex items-start justify-start">{{ paragraph }}</p>
-    <h1 class="text-2xl	 font-semibold mb-3.5 text-white flex items-start justify-start">{{ title }}</h1>   
+    <p class="text-white text-base mb-3.5 flex items-center justify-center">{{ paragraph }}</p>
+    <h1 class="text-2xl	 font-semibold mb-3.5 text-white flex items-center justify-center">{{ title }}</h1>   
   </div>
 </div>
 </template>

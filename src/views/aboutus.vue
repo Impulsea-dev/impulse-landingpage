@@ -1,5 +1,42 @@
 <template>
     <div>
+      
+<!-- <div class="flex justify-center  flex-col">
+  <div class="text-white text-center text-3xl mb-3">
+          <span>Our Executive Team</span>
+       </div> 
+<div class="flex justify-center p-4 mt-5">
+  <div class="md:flex lg:grid-cols-6 md:grid-cols-1 gap-2 md:space-y-0  mt-9">        
+         
+         <CardCustomTeam
+         paragraph="Brian Molina"
+         title="Impulse Founder and CEO"        
+         :img="chan1"
+         classBackground="bg-[#111315]"
+         />
+         <CardCustomTeam
+         paragraph="Rob McNabb"
+         title="Co-founder and NED"        
+         :img="chan2"
+         classBackground="bg-[#111315]"
+         />
+       </div>
+</div>
+</div> -->
+      <!--<SwipperCardTeam class="md:hidden flex"/> -->
+      <div class="flex justify-center md:items-center flex-col">
+        <div class="text-white text-center text-3xl mb-3">
+          <span>Our Executive Team</span>
+       </div> 
+        <div class="flex justify-center flex-col">
+          <div class="sm:flex grid-cols-1 md:grid-cols-3 gap-6 p-4"  >
+          <Flipcard2 :bgc="Flipcard2.background" :img="Flipcard2.img" :title="Flipcard2.title" :subtitle="Flipcard2.subtitle" 
+          :url="Flipcard2.url" :description="Flipcard2.description" v-for="(Flipcard2,i) in Flipcard2s" :key="i"  /> 
+        </div>
+        </div>       
+      </div>
+    
+      
       <Button text="About Us" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
         <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
@@ -87,34 +124,7 @@
       <!-- Grid Value End -->
       <div class="grid grid-cols-1 md:gap-6   mb-10 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
         <CardCustomVision/>
-       </div>
-       <!-- <div class="text-white text-center text-3xl mb-3">
-          <span>Our Team of Experts</span>
-       </div> -->
-      <!-- <div class="md:grid lg:grid-cols-4 md:grid-cols-1 hidden md:gap-4 md:space-y-0  mt-9">
-        
-        <CardCustomTeam 
-        paragraph="Chan Adrews"
-        title="Founder/CEO"        
-        :img="chan"
-        />  
-        <CardCustomTeam
-        paragraph="Chan Adrews"
-        title="Founder/CEO"        
-        :img="chan1"
-        />
-        <CardCustomTeam
-        paragraph="Chan Adrews"
-        title="Founder/CEO"        
-        :img="chan2"
-        />
-        <CardCustomTeam
-        paragraph="Chan Adrews"
-        title="Founder/CEO"        
-        :img="chan3"
-        />
-      </div>
-      <SwipperCardTeam class="md:hidden flex"/> -->
+       </div>      
       <div class="mb-20">
       <div class="text-white text-center text-3xl mb-5">
         <span>Let’s Work Together </span>
@@ -134,8 +144,8 @@
   import projects from "@/assets/images/svgs/projects.svg"
   import experience from "@/assets/images/svgs/experience.svg"
   import chan from "@/assets/images/svgs/chan.svg"
-  import chan1 from "@/assets/images/svgs/chan1.svg"
-  import chan2 from "@/assets/images/svgs/chan2.svg"
+  import chan1 from "@/assets/images/svgs/brian.png"
+  import chan2 from "@/assets/images/svgs/rob.png"
   import chan3 from "@/assets/images/svgs/chan3.svg"
   import team from "@/assets/images/svgs/team.svg"
   import innovation from "@/assets/images/svgs/innovation.svg"
@@ -150,6 +160,8 @@
   import CardCustomVision from "@/components/CardCustomVision.vue"
   import CardCustomTeam from "@/components/CardCustomTeam.vue"
   import CardCustomValue from "@/components/CardCustomValue.vue"
+  import Flipcard2 from "@/components/Flipcard2.vue"
+  import { ref } from "vue"
   export default {
     components:{
       CardCustom,
@@ -157,12 +169,35 @@
       CardCustomMission,
       CardCustomVision,
       CardCustomTeam,
+      Flipcard2,
       CardCustomValue,
       SwipperCardTeam
     },
     data(){
       return {client,projects,team,experience,img,chan,chan1,chan2,chan3,innovation,phone,trend,people,drone}      
     },
+    setup(){
+      const Flipcard2s = ref([
+        {
+          title:'Brian Molina',
+          subtitle:'Impulse Founder and CEO',
+          description:'Software Engineer and Technologist with 15 years of telecom and technology experience.  Developed apps with millions of downloads, successfully exited two companies.  Top sales executive at multiple CSP’s.',
+          img:chan1,
+          background:'none'
+        },
+        {
+          title:'Rob McNabb',
+          subtitle:'Co-founder and NED',
+          description:'Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to  $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed',
+          img:chan2,
+          background:'none'
+        },
+      ])
+
+      return{
+        Flipcard2s
+      }
+  },
     methods:{
     btnContackUs(){
       this.$router.push({name:"contactus"})
