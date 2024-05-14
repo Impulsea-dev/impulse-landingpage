@@ -160,7 +160,7 @@
   import CardCustomVision from "@/components/CardCustomVision.vue"
   import CardCustomTeam from "@/components/CardCustomTeam.vue"
   import CardCustomValue from "@/components/CardCustomValue.vue"
-  import Flipcard2 from "@/components/Flipcard2.vue"
+  import Flipcard2 from "@/components/FlipCard2.vue"
   import { ref } from "vue"
   export default {
     components:{
