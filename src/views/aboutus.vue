@@ -24,7 +24,7 @@
 </div>
 </div> -->
       <!--<SwipperCardTeam class="md:hidden flex"/> -->
-      <div class="flex justify-center md:items-center flex-col">
+      <!-- <div class="flex justify-center md:items-center flex-col">
         <div class="text-white text-center text-3xl mb-3">
           <span>Our Executive Team</span>
        </div> 
@@ -34,9 +34,43 @@
           :url="Flipcard2.url" :description="Flipcard2.description" v-for="(Flipcard2,i) in Flipcard2s" :key="i"  /> 
         </div>
         </div>       
-      </div>
-    
+      </div> -->
+      <div class="flex justify-center md:items-center flex-col">
+        <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
+          Our Executive Team
+        </div> 
+      <div class="md:flex grid-cols-1  md:grid-cols-3 md:gap-6 md:space-y-0 md:space-x-14 mb-12 mt-5 items-center">
       
+        <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
+              <a href="#">
+                  <img class="sm:w-50 sm:h-auto rounded-lg" :src="chan1">
+              </a>
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight text-white">
+                      <a href="#">Brian Molina</a>
+                  </h3>
+                  <span class="text-gray-500 dark:text-gray-400">Impulse Founder and CEO</span>
+                  <p class="mt-3 font-light text-white">Software Engineer and Technologist with 15 years of telecom and technology experience.  
+                    Developed apps with millions of downloads, successfully exited two companies.  Top sales executive at multiple CSP’s.</p>
+                </div>  
+        </div>
+        <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
+              <a href="#">
+                  <img class="sm:w-50 sm:h-auto rounded-lg" :src="chan2">
+              </a>
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight text-white">
+                      <a href="#">Rob McNabb</a>
+                  </h3>
+                  <span class="text-gray-500 dark:text-gray-400">Co-founder and NED</span>
+                  <p class="mt-3 font-light text-white">Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to  $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed</p>
+                </div>  
+        </div>
+
+      </div>
+      </div>
+     
+
       <Button text="About Us" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
         <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
@@ -45,46 +79,9 @@
         <div class="text-base text-[#ffffffb3]">
           Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals
           With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.
-</div>     
+        </div>     
       </div>
-      
-      <!-- Grid Cards Start-->
-      <!-- <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4 mb-10">
-        
-        <CardCustom 
-        title="60+ Client"
-        paragraph="Cutting-edge business intelligence software, tailor-made for over 60 clients globally."
-        :img="client"
-        classBackground="cardDisplay"
-        /> 
-        
-        <CardCustom 
-        title="300+ Projects"
-        paragraph="Cutting-edge business intelligence software, tailor-made for over 120 clients globally."
-        :img="projects"
-        
-        classBackground="cardDisplay"
-        /> 
-        
-        <CardCustom 
-        title="30+ Team"
-        paragraph="Cutting-edge business intelligence software, tailor-made for over 120 clients globally."
-        :img="team"
-        
-        classBackground="cardDisplay"
-        /> 
-        
-        <CardCustom 
-        title="30+ Experience"
-        paragraph="Cutting-edge business intelligence software, tailor-made for over 120 clients globally."
-        :img="experience"
-        
-        classBackground="cardDisplay"
-        /> 
-  
-      </div> -->
-      <!-- Grid Cards End -->
-      
+            
       <div class="grid grid-cols-1 md:gap-6   mb-10 md:w-[99vw] w-[100vw] md:-left-[1.7rem] -left-[1.1rem] relative ">
        <CardCustomMission/>
       </div>
@@ -144,8 +141,8 @@
   import projects from "@/assets/images/svgs/projects.svg"
   import experience from "@/assets/images/svgs/experience.svg"
   import chan from "@/assets/images/svgs/chan.svg"
-  import chan1 from "@/assets/images/svgs/brian.png"
-  import chan2 from "@/assets/images/svgs/rob.png"
+  import chan1 from "@/assets/images/svgs/brian.jpg"
+  import chan2 from "@/assets/images/svgs/rob.jpg"
   import chan3 from "@/assets/images/svgs/chan3.svg"
   import team from "@/assets/images/svgs/team.svg"
   import innovation from "@/assets/images/svgs/innovation.svg"

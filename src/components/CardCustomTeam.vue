@@ -2,7 +2,7 @@
 <div class="flex flex-wrap w-auto justify-center  ">
   <div class="md:p-10 text-center " :class="classBackground"
   >
-    <div class="text-white w-80 h-auto rounded-full flex items-center justify-center mb-6 mx-auto" >
+    <div class="text-white w-24 h-auto rounded-full flex items-center justify-center mb-6 mx-auto" >
         <img
       :src="img"
       alt=""
@@ -11,6 +11,7 @@
     </div>
     <p class="text-white text-base mb-3.5 flex items-center justify-center">{{ paragraph }}</p>
     <h1 class="text-2xl	 font-semibold mb-3.5 text-white flex items-center justify-center">{{ title }}</h1>   
+    <h3 class="text-white text-base mb-3.5 flex items-center justify-center">{{ title2 }}</h3>  
   </div>
 </div>
 </template>
@@ -19,6 +20,10 @@ export default {
   name: 'Card',
   props: { 
     title: {
+      type: String,
+      default: '',
+    },
+    title2: {
       type: String,
       default: '',
     },
