@@ -36,9 +36,10 @@
         </div>       
       </div> -->
       <div class="flex justify-center md:items-center flex-col">
-        <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
+        <Button text="Our Executive Team" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
+        <!-- <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
           Our Executive Team
-        </div> 
+        </div>  -->
       <div class="md:flex grid-cols-1  md:grid-cols-3 md:gap-6 md:space-y-0 md:space-x-14 mb-12 mt-5 items-center">
       
         <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
