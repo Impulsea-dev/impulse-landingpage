@@ -2,7 +2,7 @@
   <div>
     <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12">
       <div class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-white mb-4 ml-4 font- animate-pulse">
-        Specialised telecom software delivered with deep industry experience
+        Specialized telecom software delivered with deep industry experience
       </div>
     </div>
     <!-- <div class="relative dark:bg-[#000000]  mt-2">
