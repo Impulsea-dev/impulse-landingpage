@@ -86,8 +86,7 @@
           {{ $t('indexOurIntegrationPartnersTitle') }}
         </div>
         <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
-          We aim to assist our clients in increasing their revenue, minimizing expenses,
-          and optimizing their processes through our solutions via automation and analytics.
+          {{ $t('indexOurIntegrationPartnersDescription') }}
         </div>
       </div>
       <div :class="window.width < 640 ? 'bgLogosPhone' : 'bgLogos'">
@@ -99,7 +98,7 @@
     </div>
 
     <div class="flex justify-center items-center gap-6 mb-6">
-      <Button text="Contact Us" btnClass="btn-primary "
+      <Button :text="$t('indexContactUs')" btnClass="btn-primary "
         style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
     </div>
     <ModalNewsletter />
