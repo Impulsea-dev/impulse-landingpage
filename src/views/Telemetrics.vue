@@ -5,14 +5,11 @@
                 class="absolute top-[10%] 2xl:[top-20%] px-10 max-w-2xl lg:max-w-4xl 2xl:max-w-7xl animated-container opacity-0">
                 <div class="text-4xl lg:text-[64px] leading-[72px] font-Monda text-white  mt-4 md:mt-14">Telemetrics</div>
                 <div class="text-[#ffffffb3] text-xs lg:text-base font-Monda">
-                    Telemetrics is a revolutionary SaaS solution to increase upsell and cross sell opportunities by up
-                    to 200%
+                    {{ $t('telemetricsSubtitle-1') }}
                 </div>
                 <div class="rounded-2xl bg-[#5f29ad] mt-5 p-10">
                     <p class="text-xs lg:text-base font-medium  text-white font-Monda">
-                        Telemetrics analysis bandwidth trends and behaviours from your residential and corporate
-                        customers and proactively sends emails and sms at the perfect time for them to upgrade
-                        increasing revenue immediately!
+                        {{ $t('telemetricsSubtitle-2') }}
                     </p>
                 </div>
             </div>
@@ -34,13 +31,10 @@
             </div>
             <div class="w-full p-5 flex items-center justify-center animated-container opacity-0">
                 <ul class="space-y-4 font-Monda">
-                    <h1 class="text-xl !text-white">When was the last time you told your customers they needed an upgrade?
+                    <h1 class="text-xl !text-white">{{ $t('telemetricsSubtitle-3') }}
                     </h1>
                     <li>
-                        <p class="text-xs lg:text-base"> Don't be discouraged; you're in the same boat as 95% of ISPs. The
-                            process of achieving these integrations is challenging and expensive. The major ISPs have
-                            already poured millions into developing this technology. Impulse is leveling the playing field
-                            for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!
+                        <p class="text-xs lg:text-base"> {{ $t('telemetricsSubtitle-4') }}
                         </p>
                     </li>
                 </ul>
@@ -51,13 +45,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 mt-[-20px] md:mt-10 animated-container opacity-0">
                 <div class="flex flex-col justify-center mb-[-80px] md:mb-0">
                     <div class="text-white text-xl lg:text-3xl font-Monda lg:mt-10">
-                        Discover New Revenue Opportunities
+                        {{ $t('telemetricsSubtitle-5') }}
                     </div>
                     <div class="text-[#ffffffb3] text-xs lg:text-base mt-4 font-Monda">
-                        Significant revenue potential is going untapped. Impulse not only identifies these opportunities but
-                        also actively contributes to realizing this revenue by handling trend analysis and the execution of
-                        sales campaigns. We provide recommendations for email and SMS copy and facilitate their
-                        distribution. Our objective is to deliver the outcomes to your doorstep
+                        {{ $t('telemetricsSubtitle-6') }}
                     </div>
                 </div>
                 <div class="flex justify-center mb-[-180px] md:mb-0 mt-[-80px]">
@@ -78,6 +69,7 @@ import ContactForm from "@/components/ContactForm.vue"
 import Card from "@/components/Card/index.vue"
 import { onMounted, ref } from "vue"
 import { useMotion } from "@vueuse/motion"
+import { useI18n } from 'vue-i18n'
 import useIntersectionObserver from '@/composables/useIntersectionObserver';
 export default {
     components: { Card, ContactForm },
@@ -86,6 +78,7 @@ export default {
 
     },
     setup() {
+        const { t } = useI18n()
         const initialAnimation = {
             opacity: 0,
             transform: 'translateY(100px)',
@@ -112,7 +105,7 @@ export default {
                 observe(element);
             });
         });
-        return { target }
+        return { target,t }
     }
 
 };
