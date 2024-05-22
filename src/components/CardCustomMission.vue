@@ -8,17 +8,17 @@
   <div
     class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-3 rounded-[32px] bg-[#086C88] border-white"
   >
-    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Our Mission</p>
+    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">{{ $t("aboutUsMission-1") }}</p>
   </div>
   <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
     <p class="flex-grow-0 flex-shrink-0  font-semibold text-left text-white">
       <span
         class="flex-grow-0 flex-shrink-0  flex-wrap text-3xl font-semibold text-left text-white"
-        >The telecommunications industry holds vast untapped potential.</span
+        >{{ $t('aboutUsMissionDescription-1') }}</span
       >
     </p>
     <p class="flex-grow-0 flex-shrink-0 flex-wrap text-base font-medium text-left text-white/70">
-      Our aim is to assist companies in increasing their profitability through our solutions and services. We are dedicated to creating most innovative solutions for the industry and achieving this by attentively listening to our customers and being their most reliable partners.
+     {{ $t("aboutUsMissionSubDescription-1") }}
     </p>
   </div>
   <!-- <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-4">
@@ -75,6 +75,7 @@
 </template>
 <script>
 import img from "@/assets/images/svgs/mission.svg"
+import { useI18n } from 'vue-i18n'
 export default {
   name: 'Card',
   props: { 
@@ -94,6 +95,10 @@ export default {
   },
   data(){
       return {img}      
-    }
+    },
+    setup() {
+    const { t } = useI18n()
+    return { t }
+  }
 };
 </script>

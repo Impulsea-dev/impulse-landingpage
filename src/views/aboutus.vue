@@ -51,9 +51,8 @@
                   <h3 class="text-xl font-bold tracking-tight text-white">
                       <a href="#">Brian Molina</a>
                   </h3>
-                  <span class="text-gray-500 dark:text-gray-400">Impulse Founder and CEO</span>
-                  <p class="mt-3 font-light text-white">Software Engineer and Technologist with 15 years of telecom and technology experience.  
-                    Developed apps with millions of downloads, successfully exited two companies.  Top sales executive at multiple CSP’s.</p>
+                  <span class="text-gray-500 dark:text-gray-400">{{$t('aboutUsExecutiveTeamFounderCEOTitle')  }}</span>
+                  <p class="mt-3 font-light text-white">{{ $t('aboutUsExecutiveTeamFounderCEODescription') }}</p>
                 </div>  
         </div>
         <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
@@ -64,8 +63,8 @@
                   <h3 class="text-xl font-bold tracking-tight text-white">
                       <a href="#">Rob McNabb</a>
                   </h3>
-                  <span class="text-gray-500 dark:text-gray-400">Co-founder and NED</span>
-                  <p class="mt-3 font-light text-white">Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to  $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed</p>
+                  <span class="text-gray-500 dark:text-gray-400">{{$t('aboutUsExecutiveTeamCOFounderTitle')  }}</span>
+                  <p class="mt-3 font-light text-white">{{$t('aboutUsExecutiveTeamCOFounderDescription')  }}</p>
                 </div>  
         </div>
 
@@ -73,14 +72,14 @@
       </div>
      </div>
 
-      <Button text="About Us" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
+      <Button :text="$t('aboutUs')" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
         <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
-          Leading the Industry with unmatched expertise and innovation
+         {{ t('aboutUsLeadingIndustryTitle') }}
         </div>    
         <div class="text-base text-[#ffffffb3]">
-          Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals
-          With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.
+          {{ t('aboutUsLeadingIndustryDescription') }}
+       
         </div>     
       </div>
             
@@ -92,30 +91,30 @@
       <div class="bg-[#111315] w-full h-auto items-center justify-center mt-4 mb-10">
         <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 md:space-y-0 space-y-4">
           <CardCustomValue
-            title="Innovation"
-            paragraph="We encourage creative thinking, experimenting, and willingness to take a risk to bring new ideas to life"
+            :title="$t('aboutUsClientValues-1')"
+            :paragraph="$t('aboutUsClientValuesDescription-1')"
             :img="innovation"
            /> 
            <CardCustomValue
-            title="Customer Obsession"
-            paragraph="We strive to create exceptional experiences for our customers. We listen to their feedback and use it continuously to improve our products and services"
+           :title="$t('aboutUsClientValues-2')"
+            :paragraph="$t('aboutUsClientValuesDescription-2')"
             :img="phone"
            /> 
            <CardCustomValue
-            title="Long-Term Thinking"
-            paragraph="We value long-term thinking over short-term gains. We prioritize sustainability and growth, even if it means sacrificing immediate profits in order to build a strong lasting company."
+           :title="$t('aboutUsClientValues-3')"
+            :paragraph="$t('aboutUsClientValuesDescription-3')"
             :img="trend"
            /> 
         </div>
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-y-4">
           <CardCustomValue
-            title="Ownership"
-            paragraph="We encourage our team to take ownership of their work and decisions. Take the initiative and make decisions that will benefit the company but also take responsibility of the outcomes and learn from your mistakes."
+          :title="$t('aboutUsClientValues-4')"
+            :paragraph="$t('aboutUsClientValuesDescription-4')"
             :img="people"
            /> 
            <CardCustomValue
-            title="Operational Excellence"
-            paragraph="We strive for excellence in all areas of operations, aiming for efficiency, productivity and quality. We set a high standard of performance and continuously measure and improve processes to achieve optimal results"
+           :title="$t('aboutUsClientValues-5')"
+            :paragraph="$t('aboutUsClientValuesDescription-5')"
             :img="drone"
            /> 
         </div>
@@ -126,10 +125,10 @@
        </div>      
       <div class="mb-20">
       <div class="text-white text-center text-3xl mb-5">
-        <span>Let’s Work Together </span>
+        <span>{{ $t('indexLetsWorkTogether') }}</span>
       </div>
       <div class="text-white text-center text-3xl">
-        <Button text="Contact Us" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
+        <Button :text="$t('indexContactUs')" btnClass="btn-primary "  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
       </div>
     </div>
   
@@ -161,6 +160,7 @@
   import CardCustomValue from "@/components/CardCustomValue.vue"
   import Flipcard2 from "@/components/FlipCard2.vue"
   import { ref } from "vue"
+  import { useI18n } from 'vue-i18n'
   export default {
     components:{
       CardCustom,
@@ -176,6 +176,7 @@
       return {client,projects,team,experience,img,chan,chan1,chan2,chan3,innovation,phone,trend,people,drone}      
     },
     setup(){
+      const { t } = useI18n()
       const Flipcard2s = ref([
         {
           title:'Brian Molina',
@@ -194,7 +195,7 @@
       ])
 
       return{
-        Flipcard2s
+        Flipcard2s,t
       }
   },
     methods:{
