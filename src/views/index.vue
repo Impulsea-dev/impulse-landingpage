@@ -95,7 +95,7 @@
     </div>
     <div class="h-20"></div>
     <div class="flex justify-center items-center gap-6 mb-2">
-      <p class=" w-[327px] text-[32px] font-bold text-center text-white">{{ $('indexLetsWorkTogether') }}</p>
+      <p class=" w-[327px] text-[32px] font-bold text-center text-white">{{ $t('indexLetsWorkTogether') }}</p>
     </div>
 
     <div class="flex justify-center items-center gap-6 mb-6">
