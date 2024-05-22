@@ -17,7 +17,7 @@
           <div class="flex min-h-full flex-col items-center justify-center">
             <h1 class="text-3xl font-extrabold text-white font-Monda">{{ title }}</h1>
             <p class="text-sm md:text-base mt-4 font-Monda">{{ description }}</p>
-            <button class="mt-10 rounded-xl gb-btn font-Monda hover:opacity-80" @click="sendTo(url)">Learn More</button>
+            <button class="mt-10 rounded-xl gb-btn font-Monda hover:opacity-80" @click="sendTo(url)">{{$t('indexOurSolutionsButton')}}</button>
           </div>
         </div>
       </div>
