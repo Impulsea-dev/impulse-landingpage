@@ -37,7 +37,7 @@
       </div> -->
       <div class="bg-[#111315] w-full h-auto items-center justify-center mt-4 mb-10 rounded-lg p-2">
       <div class="flex justify-start md:items-start flex-col" >
-        <Button text="Our Executive Team" btnClass="btn-primary mt-2"  style="background:#086C88;border-radius: 32px;"  />
+        <Button :text="$t('aboutUsExecutiveTeamTitle')"  btnClass="btn-primary mt-2"  style="background:#086C88;border-radius: 32px;"  />
         <!-- <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
           Our Executive Team
         </div>  -->
