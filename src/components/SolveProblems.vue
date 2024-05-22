@@ -1,6 +1,7 @@
 <template>
     <div class="px-6 lg:px-20 xl:px-36">
-        <div class="text-center text-2xl md:text-4xl text-white font-bold pb-24">We solve your three biggest problems</div>
+        <div class="text-center text-2xl md:text-4xl text-white font-bold pb-24">   {{ $t('indexSolve') }}
+        </div>
         <div class="grid md:grid-cols-2 gap-20">
             <div class="flex justify-center items-center">
                 <div class="rounded-xl transition-opacity duration-1000" :class="{
@@ -18,50 +19,60 @@
                         {{ inf.id }}
                     </div>
                     <div class="flex flex-col gap-1 w-full">
-                        <div class="text-lg md:text-xl font-bold">{{ inf.title }}</div>
-                        <div class="text-base">{{ inf.text }}</div>
+                        <div class="text-lg md:text-xl font-bold">{{ $t(inf.title) }}</div>
+                        <div class="text-base">{{ $t(inf.text) }}</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
-  
+
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
     data() {
         return {
-            info: [
+            
+            hover: 0
+        }
+    },
+    setup() {
+        const { t } = useI18n()
+        const info= [
                 {
                     id: 1,
-                    title: 'You are not upselling or cross selling to your existing user base',
-                    text: 'You are not sending emails or SMS messages to encourage customers to upgrade their packages when their circuit usage surges, and you are also not analyzing customer behavior.'
+                    title:'indexSolveProblemsTitle-1',
+                    text: 'indexSolveProblemsText-1'
 
                 },
                 {
                     id: 2,
-                    title: 'Your Ads are not converting as they used to',
-                    text: `Because all ISPs are putting more ad dollars into the mix, it's become a tougher playing field, and your ads aren't converting as they used to. We craft ads to differentiate you from your competition and implement killer ad strategies.`
+                    title: 'indexSolveProblemsTitle-2',
+                    text: 'indexSolveProblemsText-2'
+
                 },
                 {
                     id: 3,
-                    title: 'Considering outsourcing but have not pulled the trigger',
-                    text: `The big players? They've been into outsourcing for over a decade, and they keep on growing. With our BPO solutions, we can step up your operational game and slash costs by more than 40%`
+                    title: 'indexSolveProblemsTitle-3',
+                    text: 'indexSolveProblemsText-3'
+
                 }
-            ],
-            hover: 0
-        }
+            ];
+        return { t,info }
     }
 }
 </script>
-<style >
+<style>
 .bgSMS {
     width: 300px;
-    height: 300px; 
+    height: 300px;
     background: url(@/assets/images/smsi.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .bgads {
     width: 300px;
     height: 300px;
@@ -69,6 +80,7 @@ export default {
     background-size: cover;
     background-position: center;
 }
+
 .bgbpo {
     width: 300px;
     height: 300px;

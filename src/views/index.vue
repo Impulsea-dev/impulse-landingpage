@@ -12,22 +12,24 @@
           <div
             class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]">
             <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs  font-medium text-center text-white">
-             {{$t('telcoslog')}}
+              {{ $t('telcoslog') }}
             </p>
           </div>
           <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
             <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">{{$t('indexIncrease1')}}</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
+              <span
+                class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">{{ $t('indexIncrease1') }}</span><span
+                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
               </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">{{$t('indexIncrease2')}}
+                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">{{ $t('indexIncrease2') }}
               </span>
               <br />
               <span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
-                {{$t('indexIncrease3')}}
+                {{ $t('indexIncrease3') }}
               </span>
             </p>
             <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
-              {{$t('indexMax')}}
+              {{ $t('indexMax') }}
             </p>
             <div class="flex-grow-0 flex-shrink-0"> <Button :text="$t('indexContactUs')" btnClass="btn-primary "
                 style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
@@ -40,23 +42,21 @@
     <div class="h-20"></div>
     <Button @click="btnLink('services')"
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{$t('indexOurServices')}}</p>
+      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
+      </p>
     </Button>
 
     <!-- Grid Cards Start-->
     <div
       class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
-      <CardCustom :title="$t('indexBPOServices')"
-        :paragraph="$t('indexBPOText')"
-        :img="dev" classBackground="cardDisplay" />
+      <CardCustom :title="$t('indexBPOServices')" :paragraph="$t('indexBPOText')" :img="dev"
+        classBackground="cardDisplay" />
 
-      <CardCustom :title="$t('indexManagedServices')"
-        :paragraph="$t('indexManagedText')"
-        :img="bpo" classBackground="cardDisplay" />
+      <CardCustom :title="$t('indexManagedServices')" :paragraph="$t('indexManagedText')" :img="bpo"
+        classBackground="cardDisplay" />
 
-      <CardCustom :title="$t('indexSalesServices')"
-        :paragraph="$t('indexSalesText')"
-        :img="bi" classBackground="cardDisplay" />
+      <CardCustom :title="$t('indexSalesServices')" :paragraph="$t('indexSalesText')" :img="bi"
+        classBackground="cardDisplay" />
 
     </div>
     <!-- Grid Cards End -->
@@ -68,7 +68,7 @@
         <Button @click="btnLink('telemetrics')"
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
           <p class="text-base font-bold text-center text-[#141414]">
-            {{$t('indexOurSolutions')}}
+            {{ $t('indexOurSolutions') }}
           </p>
         </Button>
         <CardCustomAll />
@@ -83,7 +83,7 @@
     <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
       <div class="mt-10">
         <div class="text-white text-[40px] leading-10">
-          Our Integration partners
+          {{ $t('indexOurIntegrationPartnersTitle') }}
         </div>
         <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
           We aim to assist our clients in increasing their revenue, minimizing expenses,
@@ -95,7 +95,7 @@
     </div>
     <div class="h-20"></div>
     <div class="flex justify-center items-center gap-6 mb-2">
-      <p class=" w-[327px] text-[32px] font-bold text-center text-white">Let’s Work Together</p>
+      <p class=" w-[327px] text-[32px] font-bold text-center text-white">{{ $('indexLetsWorkTogether') }}</p>
     </div>
 
     <div class="flex justify-center items-center gap-6 mb-6">
@@ -124,6 +124,7 @@ import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
 import { useI18n } from 'vue-i18n'
+
 export default {
   mixins: [window],
   components: {
@@ -140,9 +141,9 @@ export default {
       this.$router.push({ name: link })
     },
   },
-  setup(){
+  setup() {
     const { t } = useI18n()
-    return {t}
+    return { t }
   }
 };
 </script>
