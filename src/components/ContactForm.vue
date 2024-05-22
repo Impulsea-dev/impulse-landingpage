@@ -1,30 +1,30 @@
 <template>
     <div class=""> 
       <h5 class="mb-9">
-            We're eager to hear about your project
+        {{ $t('telemetricsForm-1') }}
    
        </h5>
        <h6 class="mb-2 leading-5">
-        Please provide the details and we'll  
+        {{ $t('telemetricsForm-2') }}
        </h6>
 
        <h6 class="mb-9 leading-5"> 
-        promptly follow up with you.
+        {{ $t('telemetricsForm-3') }}
        </h6>
         <form class="space-y-8 mt-10" @submit.prevent="onSubmit" ref="form"> 
    <Textinput
-     label="Your Name"
+     :label="$t('telemetricsForm-4')"
      name="from_name"
      type="text"
-     placeholder="Your Name"
+     :placeholder="$t('telemetricsForm-4')"
      v-model="name"
       :error="nameError"
    />
    <Textinput
-     label="Email"
+     :label="$t('telemetricsForm-5')"
      name="reply_to"
      type="email"
-     placeholder="Type your email"
+     :placeholder="$t('telemetricsForm-5')"
      v-model="email"
       :error="emailError"
    />
@@ -34,7 +34,7 @@
       
       class="input-label"
     >
-      Phone Number</label
+      {{$t('telemetricsForm-6')}}</label
     >
     <div class="flex-row items-stretch inputGroup">
    <MazPhoneNumberInput
@@ -51,7 +51,7 @@
   />
 </div>
 </div>
-   <Textarea label="Message" name="message" placeholder="Your message" 
+   <Textarea :label="$t('telemetricsForm-7')" name="message" :placeholder="$t('telemetricsForm-7')" 
    v-model="text"
       :error="textError"
    />
@@ -63,7 +63,7 @@
      v-model="reffered"
      isReadonly
    />
-   <Button text="Sent" btnClass="btn-primary block-btn"  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
+   <Button :text="$t('telemetricsForm-8')" btnClass="btn-primary block-btn"  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
    
    </form>
     </div>
