@@ -21,12 +21,14 @@ import { VueCookieNext } from 'vue-cookie-next';
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
 import { MotionPlugin } from "@vueuse/motion";
+import i18n from "./i18n"
 const pinia = createPinia()
 
 // vue use
 const app = createApp(App)
     .component('QuillEditor', QuillEditor)
     .use(pinia)
+    .use(i18n)
     .use(VueSweetalert2)
     .use(Toast, {
         toastClassName: "impulse-toast",

@@ -12,25 +12,24 @@
           <div
             class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]">
             <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs  font-medium text-center text-white">
-              Telecom Expertise meets SaaS innovation.
+             {{$t('telcoslog')}}
             </p>
           </div>
           <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
             <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">Increase Your
-                Telecom</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
+              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">{{$t('indexIncrease1')}}</span><span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
               </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">Revenue
+                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">{{$t('indexIncrease2')}}
               </span>
               <br />
               <span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
-                by 2-3x
+                {{$t('indexIncrease3')}}
               </span>
             </p>
             <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
-              Maximize revenue, optimize processes, and reduce cost with our solutions
+              {{$t('indexMax')}}
             </p>
-            <div class="flex-grow-0 flex-shrink-0"> <Button text="Contact Us" btnClass="btn-primary "
+            <div class="flex-grow-0 flex-shrink-0"> <Button :text="$t('indexContactUs')" btnClass="btn-primary "
                 style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
                 @click="btnLink('contactus')" /> </div>
           </div>
@@ -41,22 +40,22 @@
     <div class="h-20"></div>
     <Button @click="btnLink('services')"
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">Our Services</p>
+      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{$t('indexOurServices')}}</p>
     </Button>
 
     <!-- Grid Cards Start-->
     <div
       class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
-      <CardCustom title="BPO Services"
-        paragraph="Our BPO Services include Layer 1 & 2 support, sales (outbound & inbound) and collections. Streamline your business operations and enhance customer satisfaction."
+      <CardCustom :title="$t('indexBPOServices')"
+        :paragraph="$t('indexBPOText')"
         :img="dev" classBackground="cardDisplay" />
 
-      <CardCustom title="Managed Ads"
-        paragraph="With years of experience we have learned which ads yield positive results and which ones do not. We deliver the highest ROAS for your ad campaigns."
+      <CardCustom :title="$t('indexManagedServices')"
+        :paragraph="$t('indexManagedText')"
         :img="bpo" classBackground="cardDisplay" />
 
-      <CardCustom title="Sales Enablement Solutions"
-        paragraph="From Impulse leads an innovative lead generation platform for CSPs to Telemetrics a ground breaking solution to uncover upsell and cross-sale opportunities. We are obsessed with making you more profitable."
+      <CardCustom :title="$t('indexSalesServices')"
+        :paragraph="$t('indexSalesText')"
         :img="bi" classBackground="cardDisplay" />
 
     </div>
@@ -69,7 +68,7 @@
         <Button @click="btnLink('telemetrics')"
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
           <p class="text-base font-bold text-center text-[#141414]">
-            OUR SOLUTIONS
+            {{$t('indexOurSolutions')}}
           </p>
         </Button>
         <CardCustomAll />
@@ -124,7 +123,7 @@ import SwipperCardHome from "@/components/SwipperCardHome.vue"
 import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
-
+import { useI18n } from 'vue-i18n'
 export default {
   mixins: [window],
   components: {
@@ -140,6 +139,10 @@ export default {
     btnLink(link) {
       this.$router.push({ name: link })
     },
+  },
+  setup(){
+    const { t } = useI18n()
+    return {t}
   }
 };
 </script>
