@@ -39,6 +39,7 @@
                     : 'text-slate-600 dark:text-slate-300',
                   'w-full border-b border-b-gray-500 border-opacity-10 px-2 py-2 last:border-none last:mb-0 cursor-pointer first:rounded-t last:rounded-b',
                 ]"
+                @click="selectLang(item.name)"
               >
                 <div class="flex items-center space-x-2 rtl:space-x-reverse">
                   <span class="flex-none">
@@ -66,19 +67,48 @@
 </template>
 
 <script setup>
-// import langImg1 from "@/assets/images/flags/usa.webp"
-// import langImg2 from "@/assets/images/flags/gn.webp"
-import { ref } from "vue";
+import langImg1 from "@/assets/images/flags/En.png"
+import langImg2 from "@/assets/images/flags/Es.png"
+import { ref,onMounted } from "vue";
 import {
   Listbox,
   ListboxButton,
   ListboxOptions,
   ListboxOption,
 } from "@headlessui/vue";
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
 
 const months = [
-  // { name: "En", image: langImg1 },
-  // { name: "Gn", image: langImg2 },
+  { name: "En", image: langImg1 },
+  { name: "Es", image: langImg2 },
 ];
 const selectLanguage = ref(months[0]);
+onMounted(() => {
+  if (sessionStorage.getItem("enLang")){
+
+    selectLang(sessionStorage.getItem('enLang'))
+  }else{
+    selectLang("En")
+  }
+})
+
+const selectLang=(lang)=>{
+ switch (lang){
+  case 'En':
+    locale.value="en"
+    selectLanguage.value=months[0]
+    sessionStorage.setItem("enLang","En")
+    break;
+    case 'Es':
+    selectLanguage.value=months[1]
+    locale.value="es"
+    sessionStorage.setItem("enLang","Es")
+      break;
+ }
+ 
+
+ }
+
 </script>
