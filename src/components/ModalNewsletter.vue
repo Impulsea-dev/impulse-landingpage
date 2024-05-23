@@ -1,33 +1,33 @@
 <template>
     <div class="">
-        <Modal title="Impulse Newsletters" label="" labelClass="" ref="modal1" centered
+        <Modal :title="$t('newsletters-1')" label="" labelClass="" ref="modal1" centered
             sizeClass="max-w-2xl">
             <div class="text-center flex justify-center mb-4">
                 <img src="@/assets/images/logo/impulse.svg" alt="">
             </div>
             <div class="text-center text-xl text-white font-semibold mb-4">
-                Sign-Up for Impulse Newsletters
+                {{ $t('newsletters-2') }}
             </div>
 
             <div class="text-center text-base mb-6">
-                News, trends, and latest information about the Telecommunication Industry
+                {{ $t('newsletters-3') }}
             </div>
             <form @submit.prevent="sendEmail">
                 <div class="text-base text-slate-300">
-                    <Textinput label="" type="email" placeholder="Type your Email" name="emil" v-model="email"
+                    <Textinput label="" type="email" :placeholder="$t('newsletters-4')" name="emil" v-model="email"
                         classInput="h-[52px]" />
                 </div>
                 <Button type="submit" :isDisabled="!email" btnClass="btn-primary block-btn mt-4"
                 style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)">
                     <div class="flex justify-center">
                         <span v-if="loading" class="loading-spinner"></span>
-                        <div class="ml-2 text-base"> Submit</div>
+                        <div class="ml-2 text-base">{{$t('newsletters-5') }}</div>
                     </div>
                     </Button>
             </form>
 
             <div class="text-center text-slate-400 italic text-sm mt-6 hover:cursor-pointer" @click="dontWantInfo">
-                I don’t want the most recent Telco Information
+                {{ $t('newsletters-6') }}
             </div>
         </Modal>
     </div>

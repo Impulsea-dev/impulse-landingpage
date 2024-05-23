@@ -344,8 +344,12 @@
             "contactUs-1":{
                 "hqAddress":"HQ Address",
                 "officeAddress":"Office Address"
-                
-
-            }
+            },
+            "newsletters-1":"Impulse Newsletters",
+            "newsletters-2":"Sign-Up for Impulse Newsletters",
+            "newsletters-3":"News, trends, and latest information about the Telecommunication Industry",
+            "newsletters-4":"Type your Email",
+            "newsletters-5":"Submit",
+            "newsletters-6":"I don’t want the most recent Telco Information"
       
 }

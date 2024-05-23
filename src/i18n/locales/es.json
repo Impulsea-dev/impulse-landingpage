@@ -343,7 +343,11 @@
         "contactUs-1":{
             "hqAddress":"Dirección de la sede principal",
             "officeAddress":"Dirección de la oficina"
-            
-
-        }
+        },
+            "newsletters-1":"Boletines de Impulse",
+            "newsletters-2":"Regístrate para recibir los boletines de Impulse.",
+            "newsletters-3":"Noticias, tendencias y la información más reciente sobre la industria de las telecomunicaciones.",
+            "newsletters-4":"Escribe tu correo electrónico.",
+            "newsletters-5":"Enviar",
+            "newsletters-6":"No quiero la información más reciente sobre telecomunicaciones."
 }
