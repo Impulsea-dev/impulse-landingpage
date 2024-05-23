@@ -340,6 +340,12 @@
                 "title": "Goodbye to long queues and cumbersome processes",
                 "paragraph": "With Impulse Pay, your customers can say goodbye to long queues and cumbersome processes."
             },
-            "payInfo-6":"This ensures that their bills are paid on time every time, so they never have to worry about missing a payment or incurring late fees."
+            "payInfo-6":"This ensures that their bills are paid on time every time, so they never have to worry about missing a payment or incurring late fees.",
+            "contactUs-1":{
+                "hqAddress":"HQ Address",
+                "officeAddress":"Office Address"
+                
+
+            }
       
 }

@@ -7,31 +7,31 @@
      <div class="grid grid-cols-1 lg:grid-cols-3 mt-3 ">
          <div class="flex flex-col col-span-1">
            <h5 class="mb-9">
-            We're eager to hear about your project
+            {{ $t('telemetricsForm-1') }}
    
        </h5>
        <h6 class="mb-2 leading-5">
-        Please provide the details and we'll  
+        {{ $t('telemetricsForm-2') }} 
        </h6>
 
        <h6 class="mb-9 leading-5"> 
-        promptly follow up with you.
+        {{ $t('telemetricsForm-3') }}
        </h6>
    
        <form class="space-y-8 mt-10" @submit.prevent="onSubmit" ref="form"> 
    <Textinput
-     label="Your Name"
+   :label="$t('telemetricsForm-4')"
      name="from_name"
      type="text"
-     placeholder="Your Name"
+     :placeholder="$t('telemetricsForm-4')"
      v-model="name"
       :error="nameError"
    />
    <Textinput
-     label="Email"
+   :label="$t('telemetricsForm-5')"
      name="reply_to"
      type="email"
-     placeholder="Type your email"
+     :placeholder="$t('telemetricsForm-5')"
      v-model="email"
       :error="emailError"
    />
@@ -48,7 +48,7 @@
       
       class="input-label"
     >
-      Phone Number</label
+    {{$t('telemetricsForm-6')}}</label
     >
     <div class="flex-row items-stretch inputGroup">
    <MazPhoneNumberInput
@@ -65,11 +65,11 @@
   />
 </div>
 </div>
-   <Textarea label="Message" name="message" placeholder="Your message" 
+   <Textarea :label="$t('telemetricsForm-7')" name="message" :placeholder="$t('telemetricsForm-7')" 
    v-model="text"
       :error="textError"
    />
-   <Button text="Sent" btnClass="btn-primary block-btn"  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
+   <Button :text="$t('telemetricsForm-8')" btnClass="btn-primary block-btn"  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"  />
    
    </form>
    
@@ -127,7 +127,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">HQ Address</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('contactUs-1.hqAddress')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         38 Caterpillar Lane, Grand Cayman, Cayman Islands KY1-1104
@@ -183,7 +183,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('contactUs-1.officeAddress')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         1150 Nw 72nd Ave Tower | Miami, Florida 33126
@@ -239,7 +239,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('contactUs-1.officeAddress')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70 mt-1">
         Nuevos Horizontes Business Center, San Pedro Sula, Honduras 13001
@@ -274,7 +274,7 @@
            ></path>
            <path d="M7.33301 12.3333H8.66634" stroke="white" stroke-linecap="round"></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Phone number</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('telemetricsForm-6')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         +1 (345) 746-4505
@@ -318,7 +318,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Email</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('telemetricsForm-5')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         sales@impulse.ky
@@ -391,7 +391,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">HQ Address</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('contactUs-1.hqAddress')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         38 Caterpillar Lane, Grand Cayman, Cayman Islands KY1-1104
@@ -447,7 +447,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('contactUs-1.officeAddress')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         1150 Nw 72nd Ave Tower | Miami, Florida 33126
@@ -503,7 +503,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Office Address</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('contactUs-1.officeAddress')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         Nuevos Horizontes Business Center, San Pedro Sula, Honduras 13001
@@ -534,7 +534,7 @@
            ></path>
            <path d="M7.33301 12.3333H8.66634" stroke="white" stroke-linecap="round"></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Phone number</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('telemetricsForm-6')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         +1 (345) 746-4505
@@ -578,7 +578,7 @@
              stroke-linejoin="round"
            ></path>
          </svg>
-         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">Email</p>
+         <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">{{$t('telemetricsForm-5')}}</p>
        </div>
        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70">
         sales@impulse.ky
