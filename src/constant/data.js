@@ -2,25 +2,32 @@
 // import user2Img from "@/assets/images/all-img/user2.png";
 // import user3Img from "@/assets/images/all-img/user3.png";
 // import user4Img from "@/assets/images/all-img/user4.png";
-
+import { useI18n } from 'vue-i18n'
+export default {
+  mixins: [window],
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  }
+};
 export const menuItems = [
   {
     isHeadr: true,
     title: "menu",
   },
   {
-    title: "home",
+    title: "menu-1",
     icon: "heroicons-outline:home",
     link: "/",
     
   },
   {
-    title: "About us",
+    title: "menu-2",
     icon: "fluent:people-20-regular",
     link: "/aboutus",
   },
   {
-    title: "What we do",
+    title: "menu-3",
     icon: "icons8:idea",
     link: "/whatwedotelco", 
     // child: [
@@ -44,7 +51,7 @@ export const menuItems = [
   // },
 
   {
-    title: "Blog",
+    title: "menu-4",
     icon: "fluent-mdl2:blog",
     link: "/blog",
 
@@ -66,18 +73,18 @@ export const topMenu = [
     title: "menu",
   },
   {
-    title: "home",
+    title: "menu-1",
     icon: "heroicons-outline:home",
     link: "/",
     
   },
   {
-    title: "About us",
+    title: "menu-2",
     icon: "fluent:people-20-regular",
     link: "/aboutus",
   },
   {
-    title: "What we do",
+    title: "menu-3",
     icon: "icons8:idea",
     link: "/whatwedotelco", 
     // child: [
@@ -101,7 +108,7 @@ export const topMenu = [
   // },
 
   {
-    title: "Blog",
+    title: "menu-4",
     icon: "fluent-mdl2:blog",
     link: "/blog",
 

@@ -16,7 +16,7 @@
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon" />
           </span>
-          <div class="text-box" v-if="item.title">{{ item.title }}</div>
+          <div class="text-box" v-if="item.title">{{ $t(item.title) }}</div>
         </div>
       </router-link>
       <a href="javascript: void(0);" v-if="item.child || item.megamenu">
@@ -24,7 +24,7 @@
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon"
           /></span>
-          <div class="text-box" v-if="item.title">{{ item.title }}</div>
+          <div class="text-box" v-if="item.title">{{ $t(item.title) }}</div>
         </div>
         <div
           class="flex-none text-sm ltr:ml-3 rtl:mr-3 leading-[1] relative top-1"
@@ -102,7 +102,8 @@
 </template>
 <script>
 import { topMenu } from "../../../constant/data.js";
-import Icon from "../../Icon";
+import Icon from "../../Icon"; 
+
 export default {
   components: {
     Icon,
@@ -119,7 +120,7 @@ export default {
         return Boolean(!item.isHeadr);
       });
     },
-  },
+  }, 
 };
 </script>
 <style lang="scss">
