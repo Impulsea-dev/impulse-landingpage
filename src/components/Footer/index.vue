@@ -8,17 +8,17 @@
 
           </div>
           <div class="flex-col text-start  text-base">
-            Copyright © 2023 Impulse. All rights reserved.
+            {{ $t('footer-1') }}
 
           </div>
           <div class="flex flex-col space-y-1">
             <a href="/impulse-privacy" target="_blank"
               class=" flex-grow-0 underline flex-shrink-0 text-sm text-left text-white hover:cursor-pointer">
-              Privacy Policy
+              {{ $t('footer-2') }}
             </a>
             <a href="/impulse-terms" target="_blank"
               class=" flex-grow-0 underline flex-shrink-0 text-sm text-left text-white hover:cursor-pointer">
-              Terms
+              {{ $t('footer-3') }}
             </a>
           </div>
         </div>
@@ -28,11 +28,11 @@
           <div class="flex flex-col space-y-6">
             <a href="/aboutus" target="_blank"
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
-              About us
+              {{ $t('footer-4') }}
             </a>
             <a href="/whatwedotelco" target="_blank"
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
-              Services
+              {{ $t('footer-5') }}
             </a>
             <a href="https://www.youtube.com/@Impulseky/featured" target="_blank"
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
