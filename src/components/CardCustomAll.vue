@@ -49,7 +49,7 @@ export default {
           img: qo1,
           color: "#3C007C",
           title: "indexOurSolutionsTitle-1",
-          url: 'http://198.199.89.79:83/',
+          url: '/impulse-lead',
           description: "indexOurSolutionsDescription-1"
         },
         {

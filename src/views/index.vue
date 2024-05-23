@@ -40,7 +40,7 @@
     </section>
     <SolveProblems />
     <div class="h-20"></div>
-    <Button @click="btnLink('services')"
+    <Button 
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
       <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
       </p>
@@ -65,7 +65,7 @@
     <div class="h-20"></div>
     <div class="lg:pr-11 lg:pl-11">
       <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
-        <Button @click="btnLink('telemetrics')"
+        <Button 
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
           <p class="text-base font-bold text-center text-[#141414]">
             {{ $t('indexOurSolutions') }}
