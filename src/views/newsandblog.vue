@@ -3,11 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2  gap-4 mt-12 lg:mt-18">
             <div class="flex flex-col">
                 <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">News and Blog</div>
-                <div class="text-sm lg:text-base text-white font-medium mt-8">
-                    Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer.
-                    Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur.
-                    Vitae in non ultricies nisl tortor proin integer diam. Ut ante.
-                </div>
+                
             </div>
         </div>
 

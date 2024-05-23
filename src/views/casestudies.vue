@@ -6,10 +6,7 @@
           Case Studies
         </p>
         <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white/70 w-7/12">
-          <span
-            class="flex-grow-0 flex-shrink-0  text-base font-medium text-left text-white/70"
-            >Lorem ipsum dolor sit amet consectetur. Odio posuere mattis nisl enim elit integer. Fermentum feugiat scelerisque arcu et purus enim vulputate consectetur. Vitae in non ultricies nisl tortor proin integer diam. Ut ante.
-          </span>
+          
         </p>
         </div>
 
