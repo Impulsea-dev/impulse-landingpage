@@ -33,7 +33,7 @@
                                 class="absolute inset-0 flex items-center justify-center bg-[#007aff] bg-opacity-80">
                                 <a :href="carousel.imgfull" target="_blank"
                                     class="px-8 py-4 bg-white text-[#007aff] rounded-md">
-                                    See full template
+                                    {{ $t('webDevelopmentInfo.template') }}
                                 </a>
                             </div>
                         </transition>
@@ -49,9 +49,9 @@
         </div>
         <div class="flex flex-col md:flex-row justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
             <div class="flex flex-col md:w-[700px] animated-container opacity-0 font-Monda">
-                <h1 class="text-2xl md:text-4xl font-bold mb-4">{{ $t('webDevelopmentInfo.websiteForLeadGeneration.title') }}</h1>
+                <h1 class="text-2xl md:text-4xl font-bold mb-4">{{ $t('webDevelopmentInfo.websitesForLeadGeneration.title') }}</h1>
                 <p>
-                    {{ $t('webDevelopmentInfo.websiteForLeadGeneration.description') }}
+                    {{ $t('webDevelopmentInfo.websitesForLeadGeneration.description') }}
                 </p>
             </div>
             <div>
@@ -62,7 +62,7 @@
 
         <div class="flex flex-col md:flex-row-reverse justify-between items-center gap-10 lg:mx-40 xl:mx-60 mt-32">
             <div class="flex flex-col md:w-[700px] animated-container opacity-0 font-Monda">
-                <h1 class="text-2xl md:text-4xl font-bold mb-4">{{ $t('webDevelopmentInfo.responsiveIntegratedOptimized.description') }}</h1>
+                <h1 class="text-2xl md:text-4xl font-bold mb-4">{{ $t('webDevelopmentInfo.responsiveIntegratedOptimized.title') }}</h1>
                 <p class="md:text-left md:w-full">
                     {{ $t('webDevelopmentInfo.responsiveIntegratedOptimized.description') }}
                 </p>
@@ -75,7 +75,7 @@
 
         <div class="mt-20 pb-20 !-mx-6 p-20 bg-slate-900">
             <div class="flex justify-center">
-                <h1 class="text-2xl md:text-3xl xl:text-5xl !text-white font-Monda ">{{ $t('webDevelopmentInfo.whyEveyBusinessNeedsAWebsite.title') }}</h1>
+                <h1 class="text-2xl md:text-3xl xl:text-5xl !text-white font-Monda ">{{ $t('webDevelopmentInfo.whyEveryBusinessNeedsAWebsite.title') }}</h1>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:px-20 mt-20">
                 <div class="flex flex-row items-start gap-4 mb-10 animated-container opacity-0" v-for="reason in reasons">

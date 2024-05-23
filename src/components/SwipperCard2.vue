@@ -27,7 +27,7 @@
             <div class="transform md:scale-75 lg:scale-100 mt-10 text-start ml-10">
               <a type="button" class="bgbutton1 hover:opacity-80"
                 :href="item.titleurl"
-                target="_blank">Open Blog Post</a>
+                target="_blank">{{ $t('blog-4') }}</a>
             </div>
           </div>
         </swiper-slide>
@@ -43,7 +43,7 @@
             <div class="mt-4 text-start ml-5 text-xs mb-4">
               <a type="button" class="bgbutton1"
               :href="item.titleurl"
-                target="_blank">Open Blog Post</a>
+                target="_blank">{{ $t('blog-4') }}</a>
             </div>
           </div>
         </swiper-slide>
@@ -63,7 +63,7 @@ import 'swiper/css/pagination';
 import img from "@/assets/images/logo/impulse.svg"
 import window from "@/mixins/window"
 import BlogServices from "@/services/Blog"
-
+import { useI18n } from 'vue-i18n'
 const logo = ref(img)
 export default {
   mixins: [window],
@@ -72,8 +72,10 @@ export default {
   data: {  logo, Autoplay, Pagination },
 
   setup(){
+    const { t } = useI18n()
    const items = ref([])
     onMounted(async()=>{
+      
         const bl = await BlogServices.getBlogs()
         for (let i = 0; i < bl.length; i++) {
             if (bl[i].titleurl) {
@@ -86,7 +88,7 @@ export default {
    return{
     items
    }
-
+return {t}
   },
 
 }

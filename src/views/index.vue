@@ -76,7 +76,7 @@
     </div>
 
     <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCard2 :title="'Blog Posts'" />
+      <SwipperCard2 :title="$t('blog-2')"  />
     </div>
 
 

@@ -362,6 +362,45 @@
             "menu-1":"Inicio",
             "menu-2":"Conócenos",
             "menu-3":"Servicios",
-            "menu-4":"Blog"
+            "menu-4":"Blog",
+            "webDevelopmentInfo": {
+                "impulseWebsiteDesign": {
+                  "title1": "Impulse",
+                  "title2": "Diseño de sitios web",
+                  "description": "Impulse se enfoca en el marketing digital para empresas de telecomunicaciones. Construimos sitios web, aplicaciones móviles y gestionamos el marketing para ayudar a los proveedores de servicios de telecomunicaciones y comunicación a lograr un crecimiento."
+                },
+                "websitesForLeadGeneration": {
+                  "title": "Sitios web para generación de prospectos",
+                  "description": "Las empresas de telecomunicaciones necesitan sitios web que atraigan prospectos, clientes, socios y defensores. Construimos sitios web que facilitan la publicación, son altamente responsivos, dinámicos y optimizados para convertir."
+                },
+                "responsiveIntegratedOptimized": {
+                  "title": "Responsivo, Integrado, Optimizado",
+                  "description": "Los sitios web son la pieza central del marketing de atracción. Los sitios web deben construirse con un cuidado especial en SEO, el intercambio social, la estrategia de contenido, la automatización del marketing, la personalización dinámica, la puntuación de prospectos y el perfilado progresivo."
+                },
+                "whyEveryBusinessNeedsAWebsite": {
+                  "title": "¿Por qué cada negocio necesita un sitio web?"
+                },
+                "CREDIBILITY": {
+                    "title": "CREDIBILIDAD",
+                    "text": "Una de las principales razones por las que deberías tener un sitio web para tu negocio es aumentar la credibilidad de tu organización. Es probable que haya varios proveedores que ofrezcan un servicio similar al tuyo. Una forma de destacar es teniendo un sitio web que luzca bien y comunique claramente información de calidad a tus consumidores. Sin un sitio web, las personas pueden cuestionar la legitimidad de tu negocio. Tener un sitio web es una oportunidad para causar una excelente primera impresión y darles a las personas la seguridad de que tu empresa es real. "
+                  },
+                  "BRAND": {
+                    "title": "MARCA",
+                    "text": "Mostrar tu marca a tus clientes potenciales es una de las cosas más importantes que puedes hacer. Al establecer claramente quién eres, qué representas y en qué crees, aumentas las posibilidades de que tus clientes compren de ti. Esto también es algo que puede diferenciarte de tus competidores. Sin un sitio web, puede ser increíblemente difícil hacer esto porque las personas no pueden encontrar fácilmente información de calidad y confiable sobre tu negocio."
+                  },
+                  "LEADS": {
+                    "title": "PROSPECTOS",
+                    "text": "Quizás una de las razones más intrigantes para tener un sitio web para tu negocio es porque puede aumentar tus posibilidades de obtener prospectos. Una vez que las personas te encuentran en línea, se interesan en tu producto o servicio y quieren saber más, sabrán cómo contactarte gracias a la información en tu sitio web, lo que te brinda la oportunidad de aumentar tus ventas. Aunque los sitios web tienen un costo, cuando se usan correctamente, tienen un ROI positivo."
+                  },
+                  "ORGANIC_TRAFFIC": {
+                    "title": "TRÁFICO ORGÁNICO",
+                    "text": "Una vez que estás en línea y tienes un sitio web optimizado para SEO, tienes la posibilidad de aparecer en los resultados de búsqueda de Google. Esto significa que cuando las personas están buscando un producto o servicio, existe la posibilidad de que tu sitio web aparezca en los resultados. Esto te brinda la oportunidad de aumentar drásticamente tu base de clientes. "
+                  },
+                  "template": "Ver plantilla completa"
+              },
+              "blog-1":"Noticias y Blog",
+              "blog-2":"Selecciones principales",
+              "blog-3":"Lista de blogs",
+              "blog-4":"Abrir entrada de blog"
       
 }

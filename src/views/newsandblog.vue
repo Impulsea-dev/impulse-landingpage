@@ -2,17 +2,17 @@
     <div class="p-0 lg:p-10">
         <div class="grid grid-cols-1 md:grid-cols-2  gap-4 mt-12 lg:mt-18">
             <div class="flex flex-col">
-                <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">News and Blog</div>
+                <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">{{ $t('blog-1') }}</div>
                 
             </div>
         </div>
 
         <div class="mt-28">
-            <SwipperCard2 :title="'Top Picks'" />
+            <SwipperCard2 :title="$t('blog-2')" />
         </div>
 
         <div class="mt-4 md:mt-16">
-            <div class="text-xl lg:text-[32px] xl:text-[38px] text-white font-semibold mb-10">Blog List</div>
+            <div class="text-xl lg:text-[32px] xl:text-[38px] text-white font-semibold mb-10">{{ $t('blog-3') }}</div>
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4" v-if="blogs.length > 0">
                 <div class="w-full h-full bg-black-500 rounded-lg cursor-pointer hover:duration-700 hover:scale-95 
                 hover:border-2" v-for="(blog, i) in blogs" :key="i" @click="openBlog(blog)">
@@ -35,10 +35,10 @@
             <SkeletonCard v-else />
 
             <div class="mt-20">
-                <div class="text-3xl text-white font-Manrope text-center">Let’s Work Together </div>
+                <div class="text-3xl text-white font-Manrope text-center">{{ $t('indexLetsWorkTogether') }} </div>
                 <div class="mt-5 text-center">
                     <button class="bgbutton text-white" @click="() => { router.push('/contactus') }">
-                        Get in touch
+                        {{ $t('indexContactUs') }} 
                     </button>
                 </div>
             </div>
@@ -51,7 +51,7 @@ import SwipperCard2 from "@/components/SwipperCard2.vue"
 import { useRouter } from 'vue-router';
 import BlogServices from "@/services/Blog"
 import SkeletonCard from '@/components/Skeleton/SkeletonCard.vue';
-
+import { useI18n } from 'vue-i18n'
 export default defineComponent({
     components: { SwipperCard2, SkeletonCard },
 
@@ -59,7 +59,7 @@ export default defineComponent({
         const selectedType = ref('All');
         const router = useRouter()
         const blogs = ref([])
-
+        const { t } = useI18n()
         onMounted(async () => {
             try {
                 const bl = await BlogServices.getBlogs();
@@ -77,7 +77,8 @@ export default defineComponent({
             selectedType,
             blogs,
             router,
-            openBlog
+            openBlog,
+            t
         }
     },
     data() {

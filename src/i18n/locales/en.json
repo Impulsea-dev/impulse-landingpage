@@ -379,7 +379,7 @@
                   "description": "Websites are the center piece for Inbound marketing. Websites must be built with careful consideration of SEO, social sharing, content strategy, marketing automation, dynamic personalization, lead scoring, and progessive profiling."
                 },
                 "whyEveryBusinessNeedsAWebsite": {
-                  "title": "Why Every Business Needs A Website"
+                  "title": "Why Every Business Needs A Website?"
                 },
                 "CREDIBILITY": {
                     "title": "CREDIBILITY",
@@ -396,7 +396,11 @@
                   "ORGANIC_TRAFFIC": {
                     "title": "ORGANIC TRAFFIC",
                     "text": "Once you're online and have an SEO-optimized website, you have a chance of showing up in Google search results. This means that when people are searching for a product or service, there is a chance your website will show up in the results. This gives you the opportunity to drastically increase your customer base. "
-                  }
-              }
-      
+                  },
+                  "template": "See full template"
+              },
+              "blog-1":"News and Blog",
+              "blog-2":"Top Picks",
+              "blog-3":"Blog List",
+              "blog-4":"Open Blog Post"
 }
