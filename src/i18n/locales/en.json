@@ -310,5 +310,36 @@
         "leadsInfo-3": {
             "title": "Find net new leads and enrich existing contacts",
             "paragraph": "Enrich and update your database with fresh, accurate and compliant people and account intelligence."
-        }
+        },
+         
+            "payInfo-1": {
+                "title": "Impulse Pay",
+                "subtitle": "The Future of Payments",
+                "paragraph": "In a world where seamless transactions and customer satisfaction reign supreme, Impulse Pay is the perfect solution for telecommunication companies."
+            },
+            "payInfo-2": {
+                "title": "Some of the best features",
+                "paragraph": "Impulse Pay is a pre-built customer billing portal that makes it easy for your customers to settle their bills online any time, anywhere.",
+                "options":{
+                    "1": "Card",
+                    "2": "Phone Number",
+                    "3": "Quick Pay"
+                }
+            },"payInfo-3": {
+                "title": "Easy, Fast & One Click Payment",
+                "paragraph-1": "Our automated system allows customers to set up auto pay. Impulse Pay's automated system makes it easy for your customers to set up auto pay. They can simply log in to their account and pay their bill with a few clicks of a button.",
+                "paragraph-2": "Impulse Pay's automated system makes it easy for your customers to set up auto pay.",
+                "paragraph-3": "They can simply log in to their account and pay their bill with a few clicks of a button.",
+                "paragraph-4": "With Impulse Pay, your customers can seamlessly upgrade their packages, explore new offers, and take advantage of exciting promotions."
+            },
+            "payInfo-4": {
+                "title": "Your money is 100% safe with us",
+                "paragraph": "Sometimes you don’t know who you can and cannot trust. I still learn that over and over again."
+            },
+            "payInfo-5": {
+                "title": "Goodbye to long queues and cumbersome processes",
+                "paragraph": "With Impulse Pay, your customers can say goodbye to long queues and cumbersome processes."
+            },
+            "payInfo-6":"This ensures that their bills are paid on time every time, so they never have to worry about missing a payment or incurring late fees."
+      
 }

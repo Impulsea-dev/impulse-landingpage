@@ -6,10 +6,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex min-h-full flex-col pl-32 items-start justify-center w-full gap-4">
                         <h3 class="text-3xl md:text-6xl font-bold text-white font-Monda">Impulse Pay</h3>
-                        <h4 class="text-2xl md:text-3xl text-white font-bold font-Monda">The Future of Payments</h4>
-                        <p class="text-base text-white font-Monda">In a world where seamless transactions and customer
-                            satisfaction reign supreme,
-                            Impulse Pay is the perfect solution for telecommunication companies. </p>
+                        <h4 class="text-2xl md:text-3xl text-white font-bold font-Monda">{{$t('payInfo-1.subtitle')}}</h4>
+                        <p class="text-base text-white font-Monda">{{$t('payInfo-1.paragraph')}} </p>
                     </div>
 
                     <div class="hidden md:flex justify-center items-center mt-16">
@@ -22,10 +20,8 @@
                 <div class="flex md:hidden">
                     <div class="flex flex-col text-center gap-2 mt-10">
                         <h3 class="text-2xl font-bold !text-white font-Monda">Impulse Pay</h3>
-                        <h4 class="text-xl !text-white font-bold font-Monda">The Future of Payments</h4>
-                        <p class="text-sm text-white font-Monda p-4">In a world where seamless transactions and customer
-                            satisfaction reign supreme,
-                            Impulse Pay is the perfect solution for telecommunication companies. </p>
+                        <h4 class="text-xl !text-white font-bold font-Monda">{{$t('payInfo-1.subtitle')}}</h4>
+                        <p class="text-sm text-white font-Monda p-4">{{$t('payInfo-1.paragraph')}} </p>
                     </div>
                 </div>
             </div>
@@ -33,10 +29,8 @@
 
         <div class="mt-20 mb-20">
             <div class="flex flex-col items-center gap-2">
-                <h4 class="text-xl !text-white font-bold font-Monda">Some of the best features</h4>
-                <div class="text-base text-white font-Monda w-60 md:w-[550px]">Impulse Pay is a pre-built customer billing portal
-                    that makes it easy for your
-                    customers to settle their bills online any time, anywhere.</div>
+                <h4 class="text-xl !text-white font-bold font-Monda">{{ $t('payInfo-2.title') }}</h4>
+                <div class="text-base text-white font-Monda w-60 md:w-[550px]">{{ $t('payInfo-2.paragraph') }}</div>
             </div>
 
             <div class="flex flex-col md:flex-row gap-10 md:gap-32 justify-center mt-20">
@@ -46,7 +40,7 @@
                         <img src="@/assets/images/bank.png" />
                     </div>
                     <div class="text-center text-white font-bold font-Monda">
-                        Card
+                        {{ $t('payInfo-2.options.1') }}
                     </div>
                 </div>
 
@@ -56,7 +50,7 @@
                         <img src="@/assets/images/phone.png" />
                     </div>
                     <div class="text-center text-white font-bold font-Monda">
-                        Phone number
+                        {{ $t('payInfo-2.options.2') }}
                     </div>
                 </div>
 
@@ -66,7 +60,7 @@
                         <img src="@/assets/images/clock.png" />
                     </div>
                     <div class="text-center text-white font-bold font-Monda">
-                        Quick pay
+                        {{ $t('payInfo-2.options.3') }}
                     </div>
 
                 </div>
@@ -78,15 +72,12 @@
              <div class="hidden md:flex">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex min-h-full flex-col pl-32 items-start justify-center w-full gap-4">
-                        <h3 class="text-3xl !text-white font-bold capitalize">Easy, Fast & One Click Payment</h3>
-                        <p class="text-base text-white font-Monda">Our automated system allows customers to set up auto pay.
+                        <h3 class="text-3xl !text-white font-bold capitalize">{{ $t('payInfo-3.title') }}</h3>
+                        <p class="text-base text-white font-Monda">{{ $t('payInfo-3.paragraph-1') }}
                         </p>
-                        <p class="text-base text-white font-Monda">Impulse Pay's automated system makes it easy for your
-                            customers to set up auto pay.</p>
-                        <p class="text-base text-white font-Monda">They can simply log in to their account and pay their
-                            bill with a few clicks of a button.</p>
-                        <p class="text-base text-white font-Monda">With Impulse Pay, your customers can seamlessly upgrade
-                            their packages, explore new offers, and take advantage of exciting promotions. </p>
+                        <p class="text-base text-white font-Monda">{{ $t('payInfo-3.paragraph-2') }}</p>
+                        <p class="text-base text-white font-Monda">{{ $t('payInfo-3.paragraph-3') }}</p>
+                        <p class="text-base text-white font-Monda"> {{ $t('payInfo-3.paragraph-4') }}</p>
 
                     </div>
 
@@ -98,15 +89,12 @@
              </div>
              <div class="flex md:hidden p-4">
                 <div class="flex flex-col text-center gap-4 mt-20">
-                    <h3 class="text-xl !text-white font-bold font-Monda capitalize">easy ,fast & one click payment</h3>
-                        <p class="text-sm text-white font-Monda">Our automated system allows customers to set up auto pay.
+                    <h3 class="text-xl !text-white font-bold font-Monda capitalize">{{ $t('payInfo-3.title') }}</h3>
+                        <p class="text-sm text-white font-Monda">{{ $t('payInfo-3.paragraph-1') }}
                         </p>
-                        <p class="text-sm text-white font-Monda">Impulse Pay's automated system makes it easy for your
-                            customers to set up auto pay.</p>
-                        <p class="text-sm text-white font-Monda">They can simply log in to their account and pay their
-                            bill with a few clicks of a button.</p>
-                        <p class="text-sm text-white font-Monda">With Impulse Pay, your customers can seamlessly upgrade
-                            their packages, explore new offers, and take advantage of exciting promotions. </p>
+                        <p class="text-sm text-white font-Monda">{{ $t('payInfo-3.paragraph-2') }}</p>
+                        <p class="text-sm text-white font-Monda">{{ $t('payInfo-3.paragraph-3') }}</p>
+                        <p class="text-sm text-white font-Monda">{{ $t('payInfo-3.paragraph-4') }}</p>
                     </div>
              </div>
             </div>
@@ -114,9 +102,8 @@
 
         <div class="mt-20">
             <div class="flex flex-col items-center text-center gap-2 p-4">
-                <h3 class="text-lg md:text-2xl !text-white font-bold font-Monda">Goodbye to long queues and cumbersome processes</h3>
-                <h3 class="text-sm !text-white font-Monda">With Impulse Pay, your customers can say goodbye
-                    to long queues and cumbersome processes.</h3>
+                <h3 class="text-lg md:text-2xl !text-white font-bold font-Monda">{{ $t('payInfo-5.title') }}</h3>
+                <h3 class="text-sm !text-white font-Monda">{{ $t('payInfo-5.paragraph') }}</h3>
             </div>
 
             <div class="relative w-full min-h-[300px] md:min-h-[450px] 2xl:min-h-[500px] bg-[#9898D1] mt-20">
@@ -127,17 +114,15 @@
                             <img src="@/assets/images/bro.png" alt="Avatar" class="object-contain" />
                         </div>
                         <div class="md:col-span-2 flex flex-col pl-32 gap-4 justify-center pr-4">
-                            <h3 class="text-3xl !text-white font-bold font-Monda">Your money is 100% safe with us </h3>
-                            <p class="text-base text-white font-Monda">Sometimes you don’t know who you can and cannot
-                                trust. I still learn that over and over again</p>
+                            <h3 class="text-3xl !text-white font-bold font-Monda">{{ $t('payInfo-4.title') }} </h3>
+                            <p class="text-base text-white font-Monda">{{ $t('payInfo-4.paragraph') }}</p>
                         </div>
                     </div>
                    </div>
                    <div class="flex md:hidden mt-20 p-5">
                     <div class="text-center space-y-4">
-                        <h3 class="text-xl !text-white font-bold font-Monda">Your money is 100% safe with us </h3>
-                            <p class="text-sm text-white font-Monda">Sometimes you don’t know who you can and cannot
-                                trust. I still learn that over and over again.</p>
+                        <h3 class="text-xl !text-white font-bold font-Monda">{{ $t('payInfo-4.title') }}</h3>
+                            <p class="text-sm text-white font-Monda">{{ $t('payInfo-4.paragraph') }}</p>
                     </div>
                    </div>
                 </div>
@@ -146,8 +131,7 @@
             <div class="mt-20 mb-20">
                 <div class="grid grid-cols-1 md:grid-cols-2 p-4">
                     <p class="flex justify-center items-center text-xl text-white font-Monda md:pl-20 p-6">
-                        This ensures that their bills are paid on time every time, 
-                        so they never have to worry about missing a payment or incurring late fees.
+                       {{ $t('payInfo-6')}}
 
                     </p>
                     <div class="flex justify-center items-center">
