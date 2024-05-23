@@ -30,7 +30,7 @@
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
               About us
             </a>
-            <a href="/services" target="_blank"
+            <a href="/whatwedotelco" target="_blank"
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
               Services
             </a>
