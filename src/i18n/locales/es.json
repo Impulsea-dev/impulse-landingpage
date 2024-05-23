@@ -82,155 +82,155 @@
     "telemetricsForm-6":"Número de teléfono",
     "telemetricsForm-7":"Mensaje",
     "telemetricsForm-8":"Enviar",
-    "botInfoTitle-1": "So your millionth customer feels like your first",
-    "botInfoDescription-2": "Empowering ISPs to Treat Their Customers like VIPs",
+    "botInfoTitle-1": "Para que tu cliente número un millón se sienta como el primero.",
+    "botInfoDescription-2": "Empoderar a los ISP (Proveedores de Servicios de Internet) para que traten a sus clientes como VIP.",
     "botInfo-3": {
-        "title": "Here's Why Impulse Bot is Right For You.",
-        "description": "Customers come first, always! Let's treat them right!"
+        "title": "Aquí tienes por qué Impulse Bot es ideal para ti.",
+        "description": "¡Los clientes son lo primero, siempre! ¡Vamos a tratarlos bien!"
     },
     "botInfo-4": {
-        "title": "It’s your secret weapon to win untapped opportunities",
-        "description": "ImpulseBot is a fun, easy-to-use platform that allows you to design and deploy any chatbot you can think of."
+        "title": "Es tu arma secreta para ganar oportunidades inexploradas.",
+        "description": "ImpulseBot es una plataforma divertida y fácil de usar que te permite diseñar y desplegar cualquier chatbot que puedas imaginar."
     },
     "botInfo-5": {
-        "title": "LiveChat with Agent Fallback",
-        "description": "Speed up your customer service and positively impact your sales with live chat. Let a human agent take over and resolve queries personally within minutes!"
+        "title": "Chat en vivo con respaldo de agente.",
+        "description": "Acelera tu servicio al cliente e impacta positivamente tus ventas con el chat en vivo. ¡Permite que un agente humano se haga cargo y resuelva consultas personalmente en cuestión de minutos!"
     },
     "botInfo-6": {
-        "title": "Pick the Perfect Plan",
-        "description": "Choose the plan that fits your needs and start treating your customers like VIPs today."
+        "title": "Elige el plan perfecto.",
+        "description": "Elige el plan que se adapte a tus necesidades y comienza a tratar a tus clientes como VIPs hoy mismo."
     },
     "botInfo-7": {
-        "title": "LiveChat with Agent Fallback",
-        "description": "Speed up your customer service and positively impact your sales with live chat. Let a human agent take over and resolve queries personally within minutes! Get Started For Free"
+        "title": "Chat en vivo con respaldo de agente.",
+        "description": "Acelera tu servicio al cliente e impacta positivamente en tus ventas con el chat en vivo. ¡Permite que un agente humano se haga cargo y resuelva consultas personalmente en cuestión de minutos! Comienza gratis."
     },
     "botInfoBenefits-1": {
-        "title": "Automate your sales processes",
+        "title": "Automatiza tus procesos de venta.",
         "anws": {
-            "1": "Turn boring web forms into friendly conversations",
-            "2": "Get your meetings and sales calls scheduled"
+            "1": "Transforma los aburridos formularios web en conversaciones amigables.",
+            "2": "Programa tus reuniones y llamadas de ventas."
         }
     },
     "botInfoBenefits-2": {
-        "title": "Perfect your customer support",
+        "title": "Perfecciona tu atención al cliente.",
         "anws": {
-            "1": "Consistent 24/7 support across channels",
-            "2": "Solve Their problems faster",
-            "3": "Consistent 24/7 support across channels"
+            "1": "Soporte constante las 24 horas del día, los 7 días de la semana, en todos los canales.",
+            "2": "Resuelve sus problemas más rápido.",
+            "3": "Soporte constante las 24 horas del día, los 7 días de la semana, en todos los canales."
         }
     },
     "botInfoBenefits-3": {
-        "title": "Boost Your Revenue And Conversations",
+        "title": "Aumenta tus ingresos y conversaciones.",
         "anws": {
-            "1": "If you're still operating in the traditional manner, it can take time to convert, keep, and increase your consumer base. To grow your pipeline and convert customers like never before, you need an automated chatbot powered by AI."
+            "1": "Si todavía estás operando de manera tradicional, puede llevar tiempo convertir, retener y aumentar tu base de consumidores. Para hacer crecer tu cartera y convertir clientes como nunca antes, necesitas un chatbot automatizado impulsado por inteligencia artificial."
         }
     },
     "botInfoBenefits-4": {
-        "title": "Power up your marketing",
+        "title": "Potencia tu marketing.",
         "anws": {
-            "1": "Generate more qualified leads on autopilot",
-            "2": "Make proactive contact with visitors.",
-            "3": "Boost your conversions"
+            "1": "Genera más prospectos calificados automáticamente.",
+            "2": "Inicia contacto proactivo con los visitantes.",
+            "3": "Aumenta tus conversiones."
         }
     },
     "botInfoBenefits-5": {
-        "title": "Meet the Growth Workforce of the Future",
+        "title": "Conoce la fuerza laboral de crecimiento del futuro.",
         "anws": {
-            "1": "Supercharge your workforce with customer service ai bots that work alongside your team as trusted digital team members, not just a tool — a fully automated system which helps you respond intelligently faster."
+            "1": "Potencia tu fuerza laboral con bots de inteligencia artificial para servicio al cliente que trabajan junto a tu equipo como miembros digitales de confianza, no solo como una herramienta; un sistema completamente automatizado que te ayuda a responder de manera inteligente y más rápida."
         }
     },
     "botInfoBenefits-6": {
-        "title": "Smoothen your customer journey",
+        "title": "Suaviza el recorrido del cliente.",
         "anws": {
-            "1": "Make proactive contact with visitors",
-            "2": "Turn visitors into paying customers",
-            "3": "Qualify prospects automatically"
+            "1": "Inicia el contacto proactivo con los visitantes.",
+            "2": "Convierte a los visitantes en clientes que pagan.",
+            "3": "Califica prospectos automáticamente."
         }
     },
     "botInfoSocials-1": {
-        "title": "Website Chatbot",
-        "subtitle": "Conversations are a natural way to engage your website visitors.Capture attention in real time, build stronger relationships and increase conversion rates. ",
+        "title": "Chatbot de sitio web",
+        "subtitle": "Las conversaciones son una forma natural de interactuar con los visitantes de tu sitio web. Captura la atención en tiempo real, construye relaciones más sólidas y aumenta las tasas de conversión.",
         "benefits": {
-            "1": "Turn you visitors into paying customers",
-            "2": "Collect information",
-            "3": "Provide great service in real-time"
+            "1": "Convierte a tus visitantes en clientes que pagan.",
+            "2": "Recopila información.",
+            "3": "Proporciona un excelente servicio en tiempo real."
         }
     },
     "botInfoSocials-2": {
-        "title": "Telegram Chatbot",
-        "subtitle": "Build your community on telegram & engage with them using Botsify Chatbot. Chatbot for telegram can help you achieve more sales & improved conversion rates. ",
+        "title": "Chatbot de Telegram",
+        "subtitle": "Construye tu comunidad en Telegram y conecta con ellos utilizando el chatbot de Botsify. Los chatbots para Telegram pueden ayudarte a lograr más ventas y tasas de conversión mejoradas.",
         "benefits": {
-            "1": "Engage with your customers",
-            "2": "Collect lead information",
-            "3": "Automatic responses using AI Chatbot"
+            "1": "Interactúa con tus clientes.",
+            "2": "Recopila información de clientes potenciales.",
+            "3": "Respuestas automáticas utilizando un chatbot de IA."
         }
     },
     "botInfoSocials-3": {
         "title": "WhatsApp",
-        "subtitle": "Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, and give outstanding customer care.",
+        "subtitle": "Dentro de WhatsApp, puedes crear campañas de marketing conversacional, interactuar con los consumidores existentes y brindar un servicio al cliente excepcional.",
         "benefits": {
-            "1": "Engage your customers instantly",
-            "2": "Create conversational marketing campaigns",
-            "3": "Provide excellent customer service"
+            "1": "Involucra a tus clientes al instante.",
+            "2": "Crea campañas de marketing conversacional.",
+            "3": "Proporciona un excelente servicio al cliente."
         }
     },
     "botInfoSocials-4": {
         "title": "Facebook Messenger",
-        "subtitle": "Automate customer support and sales from meta pahe, messenger, comments and even ads.",
+        "subtitle": "Automatiza el soporte al cliente y las ventas desde la página principal, Messenger, comentarios e incluso anuncios.",
         "benefits": {
-            "1": "Turn queries into purchases",
-            "2": "Create effective communication",
-            "3": "Reduce response wait time to 0 seconds"
+            "1": "Convierte consultas en compras.",
+            "2": "Crea comunicación efectiva.",
+            "3": "Reduce el tiempo de espera de respuesta a 0 segundos."
         }
     },
     "botInfoSocials-5": {
         "title": "Instagram",
-        "subtitle": "Reply anywhere automatically, DMs, Comments, Ads, stories and mentions ",
+        "subtitle": "Responder automáticamente en cualquier lugar, DMs, comentarios, anuncios, historias y menciones.",
         "benefits": {
-            "1": "Handle more conversations with powerful bot",
-            "2": "Speed up customer resolutions",
-            "3": "Make it easier for followers and potential customers to reach you"
+            "1": "Maneja más conversaciones con un bot poderoso.",
+            "2": "Acelera las resoluciones de los clientes.",
+            "3": "Facilita que los seguidores y clientes potenciales te contacten."
         }
     },
     "botInfoSocials-6": {
         "title": "API & SDK",
-        "subtitle": "With our comprehensive API and SDK, you can use Botsify to deploy chatbots in your own apps and channels. ",
+        "subtitle": "Con nuestra API y SDK completos, puedes usar Botsify para implementar chatbots en tus propias aplicaciones y canales.",
         "benefits": {
-            "1": "Reduce customer service costs",
-            "2": "Monitor consumer data to gain Insights",
-            "3": "Make customer journey smoother"
+            "1": "Reduce los costos de servicio al cliente.",
+            "2": "Monitorear datos de consumidores para obtener conocimientos.",
+            "3": "Haz que el recorrido del cliente sea más fluido."
         }
     },
     "botInfoPlans-1": {
-        "title": "CHATBOT + LIVE AGENT",
-        "titlebutton": "Lets Chat",
-        "subtitle": "1 Spots Left",
+        "title": "CHATBOT + AGENTE EN VIVO",
+        "titlebutton": "Conversemos.",
+        "subtitle": "Queda 1 cupo.",
         "benefit": {
-            "1": "Live Agent (8 Hour Shift)",
-            "2": "L1 Support Resolution",
-            "3": "Impulse Bot via Website",
-            "4": "Meeting Scheduler",
-            "5": "Daily Reports",
-            "6": "Analytics"
+            "1": "Agente en vivo (turno de 8 horas)",
+            "2": "Resolución de soporte L1",
+            "3": "Impulse Bot a través del sitio web",
+            "4": "Programador de reuniones",
+            "5": "Informes diarios",
+            "6": "Analíticas"
         }
     },
     "botInfoPlans-2": {
         "title": "CHATBOT",
-        "titlebutton": "Lets Chat",
-        "subtitle": "1 Spots Left",
+        "titlebutton": "Conversemos.",
+        "subtitle": "Queda 1 cupo.",
         "benefit": {
-            "1": "Impulse Bot via Website",
-            "2": "Automated Sign Up forms",
-            "3": "Pre-Configured Support Flows",
-            "4": "Meeting Scheduler",
-            "5": "24/7 Support",
-            "6": "Daily Reports"
+            "1": "Impulse Bot a través del sitio web",
+            "2": "Formularios de registro automatizados",
+            "3": "Flujos de soporte preconfigurados",
+            "4": "Programador de reuniones",
+            "5": "Soporte 24/7",
+            "6": "Informes diarios"
         }
     },
     "botInfoPlans-3": {
-        "title": "Quick Meeting",
-        "titlebutton": "Book a Call",
-        "subtitle": "Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works."
+        "title": "Reunión rápida",
+        "titlebutton": "Agendar una llamada",
+        "subtitle": "¿Alguna pregunta? Saltemos a una llamada rápida para aprender más sobre cómo funciona ImpulseBot."
     },
     "botInfoMonth": "month"
 }

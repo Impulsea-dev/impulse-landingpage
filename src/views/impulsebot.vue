@@ -58,13 +58,12 @@
 
             <div class="flex justify-center mt-10">
                 <div class="text-center font-Manrope text-xl md:text-5xl mt-10 font-bold text-white mb-4 max-w-3xl">
-                    It’s your secret weapon to win untapped opportunities
+                    {{ $t('botInfo-4.title')  }}
                 </div>
             </div>
             <div class="flex justify-center my-6 mx-4">
                 <div class="text-center font-Manrope text-sm md:text-lg text-white/80 max-w-2xl">
-                    ImpulseBot is a fun, easy-to-use platform that allowsyou to design and deploy any chatbot you can think
-                    of.
+                    {{ $t('botInfo-4.description')  }}
                 </div>
             </div>
 
@@ -105,7 +104,7 @@
 
 
             <div class="mt-20 px-8 md:px-20 md:pb-20">
-                <div class="text-center text-2xl font-bold text-white mb-10">Pick the Perfect Plan</div>
+                <div class="text-center text-2xl font-bold text-white mb-10">{{ $t('botInfo-6.title')  }}</div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 font-Manrope">
                     <div class="flex flex-col p-6 text-center rounded-lg border shadow-[0_0_4px_4px] shadow-white/50
