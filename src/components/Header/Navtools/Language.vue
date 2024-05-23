@@ -86,9 +86,9 @@ const months = [
 ];
 const selectLanguage = ref(months[0]);
 onMounted(() => {
-  if (sessionStorage.getItem("enLang")){
+  if (localStorage.getItem("enLang")){
 
-    selectLang(sessionStorage.getItem('enLang'))
+    selectLang(localStorage.getItem('enLang'))
   }else{
     selectLang("En")
   }
@@ -99,12 +99,12 @@ const selectLang=(lang)=>{
   case 'En':
     locale.value="en"
     selectLanguage.value=months[0]
-    sessionStorage.setItem("enLang","En")
+    localStorage.setItem("enLang","En")
     break;
     case 'Es':
     selectLanguage.value=months[1]
     locale.value="es"
-    sessionStorage.setItem("enLang","Es")
+    localStorage.setItem("enLang","Es")
       break;
  }
  
