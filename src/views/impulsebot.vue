@@ -4,7 +4,7 @@
             <div class="flex justify-center items-center pt-20 lg:pt-40">
                 <div
                     class="border rounded-full px-8 py-2 text-xs md:text-lg font-Manrope text-white/80 hover:text-white cursor-pointer">
-                    So your millionth customer feels like your first
+                    {{$t('botInfoTitle-1')}}
                 </div>
             </div>
 
@@ -13,7 +13,7 @@
             </div>
             <div class="flex justify-center mt-6">
                 <div class="text-center font-Manrope text-xs md:text-lg  text-white/80 w-[600px]">
-                    Empowering ISPs to Treat Their Customers like VIPs
+                    {{ $t('botInfoDescription-2') }}
                 </div>
             </div>
 
@@ -24,24 +24,24 @@
             <div class="flex justify-center mt-10">
                 <div
                     class="text-center font-Manrope text-xl md:text-5xl mt-10 font-bold text-white w-[749px] md:leading-[4rem]">
-                    Here's Why Impulse Bot is Right For You.
+                    {{ $t('botInfo-3.title') }}
                 </div>
             </div>
 
             <div class="text-center font-Manrope text-sm md:text-lg text-white/80 mt-6">
-                Customers come first, always! Let's treat them right!
+                {{ $t('botInfo-3.description')  }}
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-10 md:my-20 px-10 md:px-20">
                 <div class="border rounded-2xl shadow-[0_0_4px_4px] md:mb-4 shadow-white/50 cursor-pointer p-4 hover:scale-95 duration-500"
-                    v-for="benefit in benefits">
+                    v-for="(benefit,i) in benefits" :key="i">
                     <div class="flex flex-row pl-10 items-center gap-2 mt-2">
                         <img :src="benefit.img" class="h-10 w-10" alt="">
-                        <div class="text-white font-bold font-Manrope text-sm md:text-base lg:text-xl"> {{ benefit.title }}
+                        <div class="text-white font-bold font-Manrope text-sm md:text-base lg:text-xl"> {{ $t(benefit.title) }}
                         </div>
                     </div>
                     <div class="pl-10 pr-2 mt-4 text-xs md:text-sm">
-                        <div class="mb-1" v-for="anw in benefit.anws">{{ anw }}</div>
+                        <div class="mb-1" v-for="(anw,x) in benefit.anws" :key="x">{{ $t(anw) }}</div>
                     </div>
                 </div>
             </div>
@@ -71,22 +71,22 @@
             <div class="flex flex-col md:flex-row justify-center gap-2 mt-10 px-5">
                 <button :class="{ 'bg-white text-black-900': btnselected == index }"
                     class="text-center px-6 py-2 border rounded-full duration-300" v-for="(social, index) in socials"
-                    :key="index" @click="() => { btnselected = index }">{{ social.title }}</button>
+                    :key="index" @click="() => { btnselected = index }">{{ $t(social.title) }}</button>
             </div>
             
             <div class="flex flex-col md:flex-row justify-center items-center py-10 gap-8">
                 <img :src="socials[btnselected].img" class="max-w-xs md:max-w-lg xl:max-w-3xl flex-shrink-0" alt="">
                 <div class="flex flex-col text-white px-5">
-                    <h5 class="text-xl md:text-4xl mb-2">{{ socials[btnselected].title }}</h5>
-                    <p class="text-sm md:text-base max-w-sm mb-4">{{ socials[btnselected].subtitle }}</p>
-                    <div v-for="benefit in socials[btnselected].benefits">
+                    <h5 class="text-xl md:text-4xl mb-2">{{ $t(socials[btnselected].title) }}</h5>
+                    <p class="text-sm md:text-base max-w-sm mb-4">{{ $t(socials[btnselected].subtitle) }}</p>
+                    <div v-for="(benefit,x) in socials[btnselected].benefits" :key="x">
                         <div class="flex flex-row items-start gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5 text-green-400">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <p class=" text-sm md:text-base">{{ benefit }}</p>
+                            <p class=" text-sm md:text-base">{{ $t(benefit) }}</p>
                         </div>
                     </div>
                 </div>
@@ -95,12 +95,9 @@
 
             <div class="flex flex-col md:flex-row justify-center items-center gap-2 mt-10 md:gap-10">
                 <div class="flex flex-col w-full items-start gap-2 px-6">
-                    <div class="text-xl md:text-4xl text-white font-bold font-Manrope">LiveChat with Agent Fallback</div>
+                    <div class="text-xl md:text-4xl text-white font-bold font-Manrope"> {{ $t('botInfo-7.title') }}</div>
                     <p class="text-sm md:text-lg text-white font-Manrope">
-                        Speed up your customer service and positively impact your sales with live chat. Let a human agent
-                        take
-                        over and resolve queries personally within minutes!
-                        Get Started For Free
+                        {{ $t('botInfo-7.description') }}
                     </p>
                 </div>
                 <img src="../assets/images/botlivechat.svg" alt="" class="w-full md:w-1/2 h-auto md:flex-shrink-0 scale-75">
@@ -118,20 +115,20 @@
                         <img :src="popular" class="h-24 w-24" alt="" v-if="index == 0"> 
                      </div>
                      <div class="flex justify-start">
-                        <h3 class="text-xl font-semibold">{{ plan.title }}</h3>                     
+                        <h3 class="text-xl font-semibold">{{ $t(plan.title) }}</h3>                     
                      </div> 
                      <div class="flex justify-start items-baseline my-5">
                             <span class="mr-2 text-4xl font-extrabold" v-if="plan.price">{{ plan.price }}</span>
-                            <span class="text-gray-500 dark:text-gray-400" v-if="plan.price">/month</span>
+                            <span class="text-gray-500 dark:text-gray-400" v-if="plan.price">/{{ $t('botInfoMonth') }}</span>
                         </div>
-                        <p class="font-light text-white sm:text-lg px-4 mb-4" v-if="index == 2">{{ plan.subtitle }}</p>
+                        <p class="font-light text-white sm:text-lg px-4 mb-4" v-if="index == 2">{{ $t(plan.subtitle) }}</p>
 
                         <a :href="plan.to" target="_blank"
                                 class=" w-full text-white bg-gradient-to-r from-[#B936F5] to-[#F1005B] font-medium rounded-lg text-base px-6 py-3 text-center">
-                                {{ plan.titlebutton }}
+                                {{ $t(plan.titlebutton) }}
                         </a>
                         <div class="flex flex-row gap-1 justify-center items-center mt-2">
-                            <p class="font-light text-red-500 sm:text-lg" v-if="index != 2">{{ plan.subtitle }}</p>
+                            <p class="font-light text-red-500 sm:text-lg" v-if="index != 2">{{ $t(plan.subtitle) }}</p>
                             <img :src="redclock" class="h-6 w-6" alt="" v-if="index != 2">   
                         </div>
                         <ul role="list" class="mt-6 mb-8 space-y-4 text-left">
@@ -142,7 +139,7 @@
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                                <span>{{ benefit }}</span>
+                                <span>{{ $t(benefit) }}</span>
                             </li>
                         </ul>
                     </div>
@@ -174,81 +171,79 @@ import popular from "../assets/images/popular.png"
 
 const benefits = ref([
     {
-        title: 'Automate your sales processes',
+        title: 'botInfoBenefits-1.title',
         img: botquestion,
-        anws: ['Turn boring web forms into friendly conversations',
-            'Get your meetings and sales calls scheduled']
+        anws: ['botInfoBenefits-1.anws.1',
+            'botInfoBenefits-1.anws.2']
 
     },
     {
-        title: 'Perfect your customer support',
+        title: 'botInfoBenefits-2.title',
         img: botsupport,
-        anws: ['Consistent 24/7 support across channels',
-            'Solve Their problems faster', 'Consistent 24/7 support across channels']
+        anws: ['botInfoBenefits-2.anws.1',
+            'botInfoBenefits-2.anws.2','botInfoBenefits-2.anws.3']
     },
     {
-        title: 'Boost Your Revenue And Conversations',
+        title: 'botInfoBenefits-3.title',
         img: botrevenue,
-        anws: [`If you're still operating in the traditional manner, it can take time to convert, keep, and increase your consumer base. To grow your pipeline and convert customers like never before, you need an automated chatbot powered by AI.`]
+        anws: ['botInfoBenefits-3.anws.1']
     },
     {
-        title: 'Power up your marketing',
+        title: 'botInfoBenefits-4.title',
         img: botpowerup,
-        anws: ['Generate more qualified leads on autopilot', 'Make proactive contact with visitors.', 'Boost your conversions']
+        anws: ['botInfoBenefits-4.anws.1',
+            'botInfoBenefits-4.anws.2','botInfoBenefits-4.anws.3']
     },
     {
-        title: 'Meet the Growth Workforce of the Future',
+        title: 'botInfoBenefits-5.title',
         img: botworkfoce,
-        anws: ['Supercharge your workforce with customer service ai bots that work alongside your team as trusted digital team members, not just a tool — a fully automated system which helps you respond intelligently faster.']
+        anws: ['botInfoBenefits-5.anws.1']
     },
     {
-        title: 'Smoothen your customer journey',
+        title: 'botInfoBenefits-6.title',
         img: botjourney,
-        anws: ['Make proactive contact with visitors', 'Turn visitors into paying customers', 'Qualify prospects automatically']
+        anws: ['botInfoBenefits-6.anws.1',
+            'botInfoBenefits-6.anws.2','botInfoBenefits-6.anws.3']
     },
 
 ])
 
 const socials = ref([
     {
-        title: 'Website Chatbot',
-        subtitle: `Conversations are a natural way to engage your website visitors.
-         Capture attention in real time, build stronger relationships and increase conversion rates. `,
+        title: 'botInfoSocials-1.title',
+        subtitle: 'botInfoSocials-1.subtitle',
         img: botweb,
-        benefits: ['Turn you visitors into paying customers', 'Collect information', 'Provide great service in real-time'],
+        benefits: ['botInfoSocials-1.benefits.1', 'botInfoSocials-1.benefits.2', 'botInfoSocials-1.benefits.3'],
     },
     {
-        title: 'Telegram Chatbot',
-        subtitle: ` Build your community on telegram & engage with them using Botsify Chatbot. 
-        Chatbot for telegram can help you achieve more sales & improved conversion rates. `,
+        title: 'botInfoSocials-2.title',
+        subtitle: 'botInfoSocials-2.subtitle',
         img: bottelegram,
-        benefits: ['Engage with your customers ', ' Collect lead information ', 'Automatic responses using AI Chatbot '],
+        benefits: ['botInfoSocials-2.benefits.1', 'botInfoSocials-2.benefits.2', 'botInfoSocials-2.benefits.3'],
     },
     {
-        title: 'WhatsApp',
-        subtitle: `Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, 
-        and give outstanding customer care. `,
+        title: 'botInfoSocials-3.title',
+        subtitle: 'botInfoSocials-3.subtitle',
         img: botwatsp,
-        benefits: ['Engage your customers instantly', 'Create conversational marketing campaigns', 'Provide excellent customer service'],
+        benefits: ['botInfoSocials-3.benefits.1', 'botInfoSocials-3.benefits.2', 'botInfoSocials-3.benefits.3'],
     },
     {
-        title: 'Facebook Messenger',
-        subtitle: ` Automate customer support and sales from meta pahe, messenger, comments and even ads. `,
-        img: botmessenger,
-        benefits: ['Turn queries into purchases', 'Create effective communication', 'Reduce response wait time to 0 seconds']
+        title: 'botInfoSocials-4.title',
+        subtitle: 'botInfoSocials-4.subtitle',
+          img: botmessenger,
+        benefits: ['botInfoSocials-4.benefits.1', 'botInfoSocials-4.benefits.2', 'botInfoSocials-4.benefits.3']
     },
     {
-        title: 'Instagram',
-        subtitle: ` Reply anywhere automatically, DMs, Comments, Ads, stories and mentions `,
+        title: 'botInfoSocials-5.title',
+        subtitle: 'botInfoSocials-5.subtitle',
         img: botinstagram,
-        benefits: ['Handle more conversations with powerful bot', 'Speed up customer resolutions',
-            'Make it easier for followers and potential customers to reach you']
+        benefits: ['botInfoSocials-5.benefits.1', 'botInfoSocials-5.benefits.2', 'botInfoSocials-5.benefits.3']
     },
     {
-        title: 'API & SDK',
-        subtitle: `With our comprehensive API and SDK, you can use Botsify to deploy chatbots in your own apps and channels.  `,
-        img: botapi,
-        benefits: ['Reduce customer service costs','Monitor consumer data to gain Insights', 'Make customer journey smoother ']
+        title: 'botInfoSocials-6.title',
+        subtitle: 'botInfoSocials-6.subtitle',
+          img: botapi,
+        benefits: ['botInfoSocials-6.benefits.1', 'botInfoSocials-6.benefits.2', 'botInfoSocials-6.benefits.3']
     }
 ])
 
@@ -256,27 +251,27 @@ const btnselected = ref(0)
 
 const plans = ref([
     {
-        title: 'CHATBOT + LIVE AGENT',
-        titlebutton: 'Lets Chat',
-        subtitle: '1 Spots Left',
+        title: 'botInfoPlans-1.title',
+        titlebutton: 'botInfoPlans-1.titlebutton',
+        subtitle: 'botInfoPlans-1.subtitle',
         img: planpopular,
         to: 'https://impulse.na.chilipiper.com/book/me/brian-molina',
         price: '$2,499',
-        benefit: ['Live Agent (8 Hour Shift)', 'L1 Support Resolution', 'Impulse Bot via Website', 'Meeting Scheduler', 'Daily Reports', 'Analytics']
+        benefit: ['botInfoPlans-1.benefit.1', 'botInfoPlans-1.benefit.2', 'botInfoPlans-1.benefit.3','botInfoPlans-1.benefit.4', 'botInfoPlans-1.benefit.5', 'botInfoPlans-1.benefit.6']
     },
     {
-        title: 'CHATBOT',
-        titlebutton: 'Lets Chat',
-        subtitle: '1 Spots Left',
+        title: 'botInfoPlans-2.title',
+        titlebutton: 'botInfoPlans-2.titlebutton',
+        subtitle: 'botInfoPlans-2.subtitle',
         img: planbot,
         to: 'https://impulse.na.chilipiper.com/book/me/brian-molina',
         price: '$499',
-        benefit: ['Impulse Bot via Website', 'Automated Sign Up forms', 'Pre-Configured Support Flows', 'Meeting Scheduler', '24/7 Support', 'Daily Reports']
+        benefit: ['botInfoPlans-2.benefit.1', 'botInfoPlans-2.benefit.2', 'botInfoPlans-2.benefit.3','botInfoPlans-2.benefit.4', 'botInfoPlans-2.benefit.5', 'botInfoPlans-2.benefit.6']
     },
     {
-        title: 'Quick Meeting',
-        titlebutton: 'Book a Call',
-        subtitle: `Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works.`,
+        title: 'botInfoPlans-3.title',
+        titlebutton: 'botInfoPlans-3.titlebutton',
+        subtitle: 'botInfoPlans-3.subtitle',
         img: planmeeting,
         to: 'https://impulse.na.chilipiper.com/book/me/brian-molina'
 

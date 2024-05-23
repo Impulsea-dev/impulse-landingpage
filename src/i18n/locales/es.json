@@ -81,5 +81,156 @@
     "telemetricsForm-5":"Correo",
     "telemetricsForm-6":"Número de teléfono",
     "telemetricsForm-7":"Mensaje",
-    "telemetricsForm-8":"Enviar"
+    "telemetricsForm-8":"Enviar",
+    "botInfoTitle-1": "So your millionth customer feels like your first",
+    "botInfoDescription-2": "Empowering ISPs to Treat Their Customers like VIPs",
+    "botInfo-3": {
+        "title": "Here's Why Impulse Bot is Right For You.",
+        "description": "Customers come first, always! Let's treat them right!"
+    },
+    "botInfo-4": {
+        "title": "It’s your secret weapon to win untapped opportunities",
+        "description": "ImpulseBot is a fun, easy-to-use platform that allows you to design and deploy any chatbot you can think of."
+    },
+    "botInfo-5": {
+        "title": "LiveChat with Agent Fallback",
+        "description": "Speed up your customer service and positively impact your sales with live chat. Let a human agent take over and resolve queries personally within minutes!"
+    },
+    "botInfo-6": {
+        "title": "Pick the Perfect Plan",
+        "description": "Choose the plan that fits your needs and start treating your customers like VIPs today."
+    },
+    "botInfo-7": {
+        "title": "LiveChat with Agent Fallback",
+        "description": "Speed up your customer service and positively impact your sales with live chat. Let a human agent take over and resolve queries personally within minutes! Get Started For Free"
+    },
+    "botInfoBenefits-1": {
+        "title": "Automate your sales processes",
+        "anws": {
+            "1": "Turn boring web forms into friendly conversations",
+            "2": "Get your meetings and sales calls scheduled"
+        }
+    },
+    "botInfoBenefits-2": {
+        "title": "Perfect your customer support",
+        "anws": {
+            "1": "Consistent 24/7 support across channels",
+            "2": "Solve Their problems faster",
+            "3": "Consistent 24/7 support across channels"
+        }
+    },
+    "botInfoBenefits-3": {
+        "title": "Boost Your Revenue And Conversations",
+        "anws": {
+            "1": "If you're still operating in the traditional manner, it can take time to convert, keep, and increase your consumer base. To grow your pipeline and convert customers like never before, you need an automated chatbot powered by AI."
+        }
+    },
+    "botInfoBenefits-4": {
+        "title": "Power up your marketing",
+        "anws": {
+            "1": "Generate more qualified leads on autopilot",
+            "2": "Make proactive contact with visitors.",
+            "3": "Boost your conversions"
+        }
+    },
+    "botInfoBenefits-5": {
+        "title": "Meet the Growth Workforce of the Future",
+        "anws": {
+            "1": "Supercharge your workforce with customer service ai bots that work alongside your team as trusted digital team members, not just a tool — a fully automated system which helps you respond intelligently faster."
+        }
+    },
+    "botInfoBenefits-6": {
+        "title": "Smoothen your customer journey",
+        "anws": {
+            "1": "Make proactive contact with visitors",
+            "2": "Turn visitors into paying customers",
+            "3": "Qualify prospects automatically"
+        }
+    },
+    "botInfoSocials-1": {
+        "title": "Website Chatbot",
+        "subtitle": "Conversations are a natural way to engage your website visitors.Capture attention in real time, build stronger relationships and increase conversion rates. ",
+        "benefits": {
+            "1": "Turn you visitors into paying customers",
+            "2": "Collect information",
+            "3": "Provide great service in real-time"
+        }
+    },
+    "botInfoSocials-2": {
+        "title": "Telegram Chatbot",
+        "subtitle": "Build your community on telegram & engage with them using Botsify Chatbot. Chatbot for telegram can help you achieve more sales & improved conversion rates. ",
+        "benefits": {
+            "1": "Engage with your customers",
+            "2": "Collect lead information",
+            "3": "Automatic responses using AI Chatbot"
+        }
+    },
+    "botInfoSocials-3": {
+        "title": "WhatsApp",
+        "subtitle": "Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, and give outstanding customer care.",
+        "benefits": {
+            "1": "Engage your customers instantly",
+            "2": "Create conversational marketing campaigns",
+            "3": "Provide excellent customer service"
+        }
+    },
+    "botInfoSocials-4": {
+        "title": "Facebook Messenger",
+        "subtitle": "Automate customer support and sales from meta pahe, messenger, comments and even ads.",
+        "benefits": {
+            "1": "Turn queries into purchases",
+            "2": "Create effective communication",
+            "3": "Reduce response wait time to 0 seconds"
+        }
+    },
+    "botInfoSocials-5": {
+        "title": "Instagram",
+        "subtitle": "Reply anywhere automatically, DMs, Comments, Ads, stories and mentions ",
+        "benefits": {
+            "1": "Handle more conversations with powerful bot",
+            "2": "Speed up customer resolutions",
+            "3": "Make it easier for followers and potential customers to reach you"
+        }
+    },
+    "botInfoSocials-6": {
+        "title": "API & SDK",
+        "subtitle": "With our comprehensive API and SDK, you can use Botsify to deploy chatbots in your own apps and channels. ",
+        "benefits": {
+            "1": "Reduce customer service costs",
+            "2": "Monitor consumer data to gain Insights",
+            "3": "Make customer journey smoother"
+        }
+    },
+    "botInfoPlans-1": {
+        "title": "CHATBOT + LIVE AGENT",
+        "titlebutton": "Lets Chat",
+        "subtitle": "1 Spots Left",
+        "benefit": {
+            "1": "Live Agent (8 Hour Shift)",
+            "2": "L1 Support Resolution",
+            "3": "Impulse Bot via Website",
+            "4": "Meeting Scheduler",
+            "5": "Daily Reports",
+            "6": "Analytics"
+        }
+    },
+    "botInfoPlans-2": {
+        "title": "CHATBOT",
+        "titlebutton": "Lets Chat",
+        "subtitle": "1 Spots Left",
+        "benefit": {
+            "1": "Impulse Bot via Website",
+            "2": "Automated Sign Up forms",
+            "3": "Pre-Configured Support Flows",
+            "4": "Meeting Scheduler",
+            "5": "24/7 Support",
+            "6": "Daily Reports"
+        }
+    },
+    "botInfoPlans-3": {
+        "title": "Quick Meeting",
+        "titlebutton": "Book a Call",
+        "subtitle": "Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works."
+    },
+    "botInfoMonth": "month"
 }

@@ -5,13 +5,13 @@
     "indexIncrease3": "by 2-3x",
     "indexMax": "Maximize revenue, optimize processes, and reduce cost with our solutions",
     "indexContactUs": "Contact Us",
-    "indexSolve": "We solve your three biggest problems",    
+    "indexSolve": "We solve your three biggest problems",
     "indexSolveProblemsTitle-1": "You are not upselling or cross selling to your existing user base",
     "indexSolveProblemsText-1": "You are not sending emails or SMS messages to encourage customers to upgrade their packages when their circuit usage surges, and you are also not analyzing customer behavior.",
     "indexSolveProblemsTitle-2": "Your Ads are not converting as they used to",
     "indexSolveProblemsText-2": "Because all ISPs are putting more ad dollars into the mix, it's become a tougher playing field, and your ads aren't converting as they used to. We craft ads to differentiate you from your competition and implement killer ad strategies.",
     "indexSolveProblemsTitle-3": "Considering outsourcing but have not pulled the trigger",
-    "indexSolveProblemsText-3": "The big players? They've been into outsourcing for over a decade, and they keep on growing. With our BPO solutions, we can step up your operational game and slash costs by more than 40%", 
+    "indexSolveProblemsText-3": "The big players? They've been into outsourcing for over a decade, and they keep on growing. With our BPO solutions, we can step up your operational game and slash costs by more than 40%",
     "indexOurServices": "Our Services",
     "indexBPOServices": "BPO Services",
     "indexBPOText": "Our BPO Services include Layer 1 & 2 support, sales (outbound & inbound) and collections. Streamline your business operations and enhance customer satisfaction.",
@@ -35,15 +35,15 @@
     "indexOurSolutionsDescription-6": "Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction.",
     "indexOurIntegrationPartnersTitle": "Our Integration partners",
     "indexOurIntegrationPartnersDescription": "We aim to assist our clients in increasing their revenue, minimizing expenses,and optimizing their processes through our solutions via automation and analytics.",
-    "indexLetsWorkTogether": "Let’s Work Together", 
-    "aboutUs":"About Us",
-    "aboutUsExecutiveTeamTitle":"Our Executive Team",
-    "aboutUsExecutiveTeamFounderCEOTitle":"Impulse Founder and CEO",
-    "aboutUsExecutiveTeamFounderCEODescription":"Software Engineer and Technologist with 15 years of telecom and technology experience. Developed apps with millions of downloads, successfully exited two companies.  Top sales executive at multiple CSP’s.",
-    "aboutUsExecutiveTeamCOFounderTitle":"Co-founder and NED",
-    "aboutUsExecutiveTeamCOFounderDescription":"Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to  $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed",
-    "aboutUsLeadingIndustryTitle":"Leading the Industry with unmatched expertise and innovation",
-    "aboutUsLeadingIndustryDescription":" Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.",
+    "indexLetsWorkTogether": "Let’s Work Together",
+    "aboutUs": "About Us",
+    "aboutUsExecutiveTeamTitle": "Our Executive Team",
+    "aboutUsExecutiveTeamFounderCEOTitle": "Impulse Founder and CEO",
+    "aboutUsExecutiveTeamFounderCEODescription": "Software Engineer and Technologist with 15 years of telecom and technology experience. Developed apps with millions of downloads, successfully exited two companies.  Top sales executive at multiple CSP’s.",
+    "aboutUsExecutiveTeamCOFounderTitle": "Co-founder and NED",
+    "aboutUsExecutiveTeamCOFounderDescription": "Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to  $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed",
+    "aboutUsLeadingIndustryTitle": "Leading the Industry with unmatched expertise and innovation",
+    "aboutUsLeadingIndustryDescription": " Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.",
     "aboutUsMission-1": "Our Mission",
     "aboutUsMissionDescription-1": "The telecommunications industry holds vast untapped potential.",
     "aboutUsMissionSubDescription-1": "Our aim is to assist companies in increasing their profitability through our solutions and services. We are dedicated to creating most innovative solutions for the industry and achieving this by attentively listening to our customers and being their most reliable partners.",
@@ -54,32 +54,183 @@
     "aboutUsClientValuesDescription-1": "We encourage creative thinking, experimenting, and willingness to take a risk to bring new ideas to life",
     "aboutUsClientValues-2": "Customer Obsession",
     "aboutUsClientValuesDescription-2": "We strive to create exceptional experiences for our customers. We listen to their feedback and use it continuously to improve our products and services",
-     "aboutUsClientValues-3": "Long-Term Thinking",
+    "aboutUsClientValues-3": "Long-Term Thinking",
     "aboutUsClientValuesDescription-3": "We value long-term thinking over short-term gains. We prioritize sustainability and growth, even if it means sacrificing immediate profits in order to build a strong lasting company.",
-     "aboutUsClientValues-4": "Ownership",
+    "aboutUsClientValues-4": "Ownership",
     "aboutUsClientValuesDescription-4": "We encourage our team to take ownership of their work and decisions. Take the initiative and make decisions that will benefit the company but also take responsibility of the outcomes and learn from your mistakes.",
-     "aboutUsClientValues-5": "Operational Excellence",
+    "aboutUsClientValues-5": "Operational Excellence",
     "aboutUsClientValuesDescription-5": "We strive for excellence in all areas of operations, aiming for efficiency, productivity and quality. We set a high standard of performance and continuously measure and improve processes to achieve optimal results",
-    "whatWeDoTitle":"Specialized telecom software delivered with deep industry experience",
-    "whatWeDoProductDesignTitle":"Product Design and Development",
-    "whatWeDoDescription-1":"Advanced analytics for telecoms. Enhance visibility, simplify management, and optimize operations with our intelligent solution.",
-    "whatWeDoDescription-2":"Improve Customer Satisfaction, Boost Sales, and Minimize Churn with Impulse Bot—an innovative AI and ML-powered chatbot designed to assist your customers round the clock.",
-    "whatWeDoDescription-3":"Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction.",
-    "whatWeDoDescription-4":"Custom web solutions, billing systems, API development, and CRM integrations for telecommunications. Tailored to your unique needs, scalable solutions that drive growth and enhance customer satisfaction",
-    "whatWeDoDescription-5":"Empower your B2B endeavors with the crucial data and software to effortlessly connect and seal deals with your most valuable buyers, all conveniently integrated in one piace.",
-    "whatWeDoDescription-6":"Streamline your billing processes, enhance customer satisfaction, and simplify payments with Impulse Pays user-friendly portal. Say goodbye to long queues and complex procedures. Upgrade your telecom services effortlessly and experience the power of automation.",
-    "telemetricsSubtitle-1":"Telemetrics is a revolutionary SaaS solution to increase upsell and cross sell opportunities by up to 200%",
-    "telemetricsSubtitle-2":"Telemetrics analysis bandwidth trends and behaviours from your residential and corporate customers and proactively sends emails and sms at the perfect time for them to upgrade increasing revenue immediately!",
-    "telemetricsSubtitle-3":"When was the last time you told your customers they needed an upgrade?",
-    "telemetricsSubtitle-4":"Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!",
-    "telemetricsSubtitle-5":"Discover New Revenue Opportunities",
-    "telemetricsSubtitle-6":"Significant revenue potential is going untapped. Impulse not only identifies these opportunities but also actively contributes to realizing this revenue by handling trend analysis and the execution of sales campaigns. We provide recommendations for email and SMS copy and facilitate their distribution. Our objective is to deliver the outcomes to your doorstep",
-    "telemetricsForm-1":"We're eager to hear about your project",
-    "telemetricsForm-2":"Please provide the details and we'll",
-    "telemetricsForm-3":"promptly follow up with you.",
-    "telemetricsForm-4":"Your Name",
-    "telemetricsForm-5":"Email",
-    "telemetricsForm-6":"Phone Number",
-    "telemetricsForm-7":"Message",
-    "telemetricsForm-8":"Send"
+    "whatWeDoTitle": "Specialized telecom software delivered with deep industry experience",
+    "whatWeDoProductDesignTitle": "Product Design and Development",
+    "whatWeDoDescription-1": "Advanced analytics for telecoms. Enhance visibility, simplify management, and optimize operations with our intelligent solution.",
+    "whatWeDoDescription-2": "Improve Customer Satisfaction, Boost Sales, and Minimize Churn with Impulse Bot—an innovative AI and ML-powered chatbot designed to assist your customers round the clock.",
+    "whatWeDoDescription-3": "Our BPO services include sales, support, and outbound services to streamline your business operations and enhance customer satisfaction.",
+    "whatWeDoDescription-4": "Custom web solutions, billing systems, API development, and CRM integrations for telecommunications. Tailored to your unique needs, scalable solutions that drive growth and enhance customer satisfaction",
+    "whatWeDoDescription-5": "Empower your B2B endeavors with the crucial data and software to effortlessly connect and seal deals with your most valuable buyers, all conveniently integrated in one piace.",
+    "whatWeDoDescription-6": "Streamline your billing processes, enhance customer satisfaction, and simplify payments with Impulse Pays user-friendly portal. Say goodbye to long queues and complex procedures. Upgrade your telecom services effortlessly and experience the power of automation.",
+    "telemetricsSubtitle-1": "Telemetrics is a revolutionary SaaS solution to increase upsell and cross sell opportunities by up to 200%",
+    "telemetricsSubtitle-2": "Telemetrics analysis bandwidth trends and behaviours from your residential and corporate customers and proactively sends emails and sms at the perfect time for them to upgrade increasing revenue immediately!",
+    "telemetricsSubtitle-3": "When was the last time you told your customers they needed an upgrade?",
+    "telemetricsSubtitle-4": "Don't be discouraged; you're in the same boat as 95% of ISPs. The process of achieving these integrations is challenging and expensive. The major ISPs have already poured millions into developing this technology. Impulse is leveling the playing field for small and medium-sized ISPs, and Telemetrics is a revolutionary advancement!",
+    "telemetricsSubtitle-5": "Discover New Revenue Opportunities",
+    "telemetricsSubtitle-6": "Significant revenue potential is going untapped. Impulse not only identifies these opportunities but also actively contributes to realizing this revenue by handling trend analysis and the execution of sales campaigns. We provide recommendations for email and SMS copy and facilitate their distribution. Our objective is to deliver the outcomes to your doorstep",
+    "telemetricsForm-1": "We're eager to hear about your project",
+    "telemetricsForm-2": "Please provide the details and we'll",
+    "telemetricsForm-3": "promptly follow up with you.",
+    "telemetricsForm-4": "Your Name",
+    "telemetricsForm-5": "Email",
+    "telemetricsForm-6": "Phone Number",
+    "telemetricsForm-7": "Message",
+    "telemetricsForm-8": "Send",
+    "botInfoTitle-1": "So your millionth customer feels like your first",
+    "botInfoDescription-2": "Empowering ISPs to Treat Their Customers like VIPs",
+    "botInfo-3": {
+        "title": "Here's Why Impulse Bot is Right For You.",
+        "description": "Customers come first, always! Let's treat them right!"
+    },
+    "botInfo-4": {
+        "title": "It’s your secret weapon to win untapped opportunities",
+        "description": "ImpulseBot is a fun, easy-to-use platform that allows you to design and deploy any chatbot you can think of."
+    },
+    "botInfo-5": {
+        "title": "LiveChat with Agent Fallback",
+        "description": "Speed up your customer service and positively impact your sales with live chat. Let a human agent take over and resolve queries personally within minutes!"
+    },
+    "botInfo-6": {
+        "title": "Pick the Perfect Plan",
+        "description": "Choose the plan that fits your needs and start treating your customers like VIPs today."
+    },
+    "botInfo-7": {
+        "title": "LiveChat with Agent Fallback",
+        "description": "Speed up your customer service and positively impact your sales with live chat. Let a human agent take over and resolve queries personally within minutes! Get Started For Free"
+    },
+    "botInfoBenefits-1": {
+        "title": "Automate your sales processes",
+        "anws": {
+            "1": "Turn boring web forms into friendly conversations",
+            "2": "Get your meetings and sales calls scheduled"
+        }
+    },
+    "botInfoBenefits-2": {
+        "title": "Perfect your customer support",
+        "anws": {
+            "1": "Consistent 24/7 support across channels",
+            "2": "Solve Their problems faster",
+            "3": "Consistent 24/7 support across channels"
+        }
+    },
+    "botInfoBenefits-3": {
+        "title": "Boost Your Revenue And Conversations",
+        "anws": {
+            "1": "If you're still operating in the traditional manner, it can take time to convert, keep, and increase your consumer base. To grow your pipeline and convert customers like never before, you need an automated chatbot powered by AI."
+        }
+    },
+    "botInfoBenefits-4": {
+        "title": "Power up your marketing",
+        "anws": {
+            "1": "Generate more qualified leads on autopilot",
+            "2": "Make proactive contact with visitors.",
+            "3": "Boost your conversions"
+        }
+    },
+    "botInfoBenefits-5": {
+        "title": "Meet the Growth Workforce of the Future",
+        "anws": {
+            "1": "Supercharge your workforce with customer service ai bots that work alongside your team as trusted digital team members, not just a tool — a fully automated system which helps you respond intelligently faster."
+        }
+    },
+    "botInfoBenefits-6": {
+        "title": "Smoothen your customer journey",
+        "anws": {
+            "1": "Make proactive contact with visitors",
+            "2": "Turn visitors into paying customers",
+            "3": "Qualify prospects automatically"
+        }
+    },
+    "botInfoSocials-1": {
+        "title": "Website Chatbot",
+        "subtitle": "Conversations are a natural way to engage your website visitors.Capture attention in real time, build stronger relationships and increase conversion rates. ",
+        "benefits": {
+            "1": "Turn you visitors into paying customers",
+            "2": "Collect information",
+            "3": "Provide great service in real-time"
+        }
+    },
+    "botInfoSocials-2": {
+        "title": "Telegram Chatbot",
+        "subtitle": "Build your community on telegram & engage with them using Botsify Chatbot. Chatbot for telegram can help you achieve more sales & improved conversion rates. ",
+        "benefits": {
+            "1": "Engage with your customers",
+            "2": "Collect lead information",
+            "3": "Automatic responses using AI Chatbot"
+        }
+    },
+    "botInfoSocials-3": {
+        "title": "WhatsApp",
+        "subtitle": "Within WhatsApp, you can create conversational marketing campaigns, engage existing consumers, and give outstanding customer care.",
+        "benefits": {
+            "1": "Engage your customers instantly",
+            "2": "Create conversational marketing campaigns",
+            "3": "Provide excellent customer service"
+        }
+    },
+    "botInfoSocials-4": {
+        "title": "Facebook Messenger",
+        "subtitle": "Automate customer support and sales from meta pahe, messenger, comments and even ads.",
+        "benefits": {
+            "1": "Turn queries into purchases",
+            "2": "Create effective communication",
+            "3": "Reduce response wait time to 0 seconds"
+        }
+    },
+    "botInfoSocials-5": {
+        "title": "Instagram",
+        "subtitle": "Reply anywhere automatically, DMs, Comments, Ads, stories and mentions ",
+        "benefits": {
+            "1": "Handle more conversations with powerful bot",
+            "2": "Speed up customer resolutions",
+            "3": "Make it easier for followers and potential customers to reach you"
+        }
+    },
+    "botInfoSocials-6": {
+        "title": "API & SDK",
+        "subtitle": "With our comprehensive API and SDK, you can use Botsify to deploy chatbots in your own apps and channels. ",
+        "benefits": {
+            "1": "Reduce customer service costs",
+            "2": "Monitor consumer data to gain Insights",
+            "3": "Make customer journey smoother"
+        }
+    },
+    "botInfoPlans-1": {
+        "title": "CHATBOT + LIVE AGENT",
+        "titlebutton": "Lets Chat",
+        "subtitle": "1 Spots Left",
+        "benefit": {
+            "1": "Live Agent (8 Hour Shift)",
+            "2": "L1 Support Resolution",
+            "3": "Impulse Bot via Website",
+            "4": "Meeting Scheduler",
+            "5": "Daily Reports",
+            "6": "Analytics"
+        }
+    },
+    "botInfoPlans-2": {
+        "title": "CHATBOT",
+        "titlebutton": "Lets Chat",
+        "subtitle": "1 Spots Left",
+        "benefit": {
+            "1": "Impulse Bot via Website",
+            "2": "Automated Sign Up forms",
+            "3": "Pre-Configured Support Flows",
+            "4": "Meeting Scheduler",
+            "5": "24/7 Support",
+            "6": "Daily Reports"
+        }
+    },
+    "botInfoPlans-3": {
+        "title": "Quick Meeting",
+        "titlebutton": "Book a Call",
+        "subtitle": "Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works."
+    },
+    "botInfoMonth": "month"
 }
