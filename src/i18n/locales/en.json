@@ -232,5 +232,83 @@
         "titlebutton": "Book a Call",
         "subtitle": "Any questions? Let’s hop on a quick call to learn more about how ImpulseBot works."
     },
-    "botInfoMonth": "month"
+    "botInfoMonth": "month",
+    "bpoInfoMainTitle": "Impulse BPO Services",
+    "bpoInfoMainSubtitle": "Get ready to discover why our IMPULSE BPO services are the perfect choice for your business.",
+    "bpoInfoActionsTitle": "Impulse BPO Services",
+    "bpoInfoActionsTitle1": "Layer 1 Support",
+    "bpoInfoActionsTitle2": "Layer 2 Support",
+    "bpoInfoActionsTitle3": "Sales (Outbound & Inbound)",
+    "bpoInfoActionsTitle4": "Collections",
+    "bpoInfoServiceTitle":"We offer additional features that make us the ultimate BPO service provider",
+    
+        "bpoInfoService-1": {
+            "title": "Dedicated Account Managers",
+            "description": "Your dedicated account manager ensures personalized attention, smooth communication, and addresses concerns throughout our partnership."
+        },
+        "bpoInfoService-2": {
+            "title": "Customized Solutions",
+            "description": "We tailor our services to meet your unique needs and goals, ensuring a perfect fit for your business."
+        },
+        "bpoInfoService-3": {
+            "title": "Scalability",
+            "description": "We handle fluctuating workloads and accommodate your growth, providing the scalability your business requires."
+        },
+        "bpoInfoService-4": {
+            "title": "Data Security",
+            "description": "We prioritize data security and confidentiality, adhering to the highest standards and implementing robust measures to protect your information."
+        },
+        "bpoInfoService-5": {
+            "title": "Quality Assurance",
+            "description": "Our rigorous quality control processes and ongoing training programs guarantee high-quality results and continuous improvement."
+        },
+        "productInfo-1": {
+            "title": "Product Design and Development",
+            "description": "We specialize in creating custom web applications that include websites, billing portals, CRM integrations, billing system integrations, and automation. Our team of experts understands the industry-specific needs of our clients and delivers solutions that are tailored to their unique requirements.",
+            "subtitle":"Here are 5 reasons why our customers should choose our Product Design and Development services"
+        },
+        "productInfo-2": {
+            "title": "Customized Solutions",
+            "paragraph": "Our team works closely with each client to understand their unique needs and business objectives. We then develop customized solutions that are tailored to their specific requirements."
+        },
+        "productInfo-3": {
+            "title": "Expertise",
+            "paragraph": "Our team consists of experienced professionals who have a deep understanding of the telecommunication industry. They are equipped with the knowledge and skills to deliver cuttingedge solutions that meet our clients' business needs"
+        },
+        "productInfo-4": {
+            "title": "Quality Assurance",
+            "paragraph": "We follow a rigorous quality assurance process to ensure that our solutions are of the highest quality. Our team conducts thorough testing and quality checks to ensure that our clients receive solutions that are reliable, secure, and user-friendly."
+        },
+        "productInfo-5": {
+            "title": "Timely Delivery",
+            "paragraph": "We understand the importance of meeting deadlines and delivering solutions on time. Our team works diligently to ensure that our solutions are delivered within a agreed-upon timeframe."
+        },
+        "productInfo-6": {
+            "title": "Continuous Support",
+            "paragraph": "Our commitment to our clients does not end with the delivery of our solutions. We offer continuous support and maintenance services to ensure that our clients' applications are running smoothly and efficiently."
+        },
+        "leadsInfoMainSubtitle":"Are you struggling to find and close leads? Our platform can help! With over 265M contacts, you will be able to reach your target audience and help you grow your business.",
+        "leadsInfo-1": {
+            "mainTitle":"Reasons you should focus on lead generation",
+            "title-1": "Expand Your Market",
+            "paragraph-1": "Content creation and communication are a big part of lead generation efforts.",
+            "title-2": "Boost Your Revenue",
+            "paragraph-2": "When done correctly, lead generation can maximize your brand’s ability for reaching target prospects."
+        },
+        "leadsInfo-2": {
+            "title": "Contents",
+            "paragraph": "The only sales platform with everything you need to find, email, call and close your ideal customers, all in one place."
+        },
+        "leadsInfoContent-1": {
+            "title": "Ideal leads at your fingertips",
+            "description": "Find and target your ideal buyers with the world's largest, most accurate B2B database."
+        },
+        "leadsInfoContent-2": {
+            "title": "Find the right leads for you",
+            "description": "Use +50 search filters to uncover contacts and companies that match your buyer profile."
+        },
+        "leadsInfo-3": {
+            "title": "Find net new leads and enrich existing contacts",
+            "paragraph": "Enrich and update your database with fresh, accurate and compliant people and account intelligence."
+        }
 }

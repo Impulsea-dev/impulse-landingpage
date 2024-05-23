@@ -4,9 +4,8 @@
     <div class="relative w-full min-h-screen">
       <div class="absolute inset-0">
         <div class="flex min-h-full flex-col pl-8 items-start justify-center absolute w-full space-y-5 ">
-          <h1 class="md:text-6xl text-3xl font-bold dark:!text-white text-white animate-pulse">Impulse BPO Services</h1>
-          <p class="text-base dark:!text-white text-white">Get ready to discover why our IMPULSE BPO services are the
-            perfect choice for your business.</p>
+          <h1 class="md:text-6xl text-3xl font-bold dark:!text-white text-white animate-pulse">{{ $t('bpoInfoMainTitle') }}</h1>
+          <p class="text-base dark:!text-white text-white">{{ $t('bpoInfoMainSubtitle') }}</p>
         </div>
 
         <img src="@/assets/images/bpostart.webp" alt="Avatar" class="object-cover w-full h-full opacity-30" />
@@ -25,13 +24,13 @@
      </div>
      <div class="w-full p-5 flex  items-center justify-center">      
       <ul class="space-y-4">
-        <h1 class="text-2xl">Impulse BPO Services</h1>
+        <h1 class="text-2xl">{{ $t('bpoInfoActionsTitle') }}</h1>
             <li v-for="(item, i) in bpoActionsExp" :key="i" class="hover:scale-105">
 
               <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
-                <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
+                <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ $t(item.title) }}
               </h3>
-              <p class="text-lg">{{ item.description }}</p>
+              <!-- <p class="text-lg">{{ $t(item.description) }}</p> -->
 
 
             </li>
@@ -44,16 +43,16 @@
       <div class="flex flex-col lg:m-16 space-y-6">
         <div class="flex-1  flex min-h-full flex-col items-center justify-center  w-full p-4 ">
 
-          <h3 class="text-2xl hover:scale-105">We offer additional features that make us the ultimate BPO service provider</h3>
+          <h3 class="text-2xl hover:scale-105">{{ $t('bpoInfoServiceTitle') }}</h3>
 
         </div>
         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <li v-for="(item, i) in bpoService" :key="i" class="hover:scale-105">
 
           <h3 class="text-xl font-semibold mb-2 flex flex-row items-center">
-            <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ item.title }}
+            <span><img :src="item.img" class="w-11 h-11 object-cover mr-2" alt=""></span> {{ $t(item.title) }}
           </h3>
-          <p class="text-lg">{{ item.description }}</p>
+          <p class="text-lg">{{ $t(item.description) }}</p>
 
 
         </li>
@@ -148,52 +147,56 @@ export default {
         {
 
           img: bpo1,
-          title: "Layer 1 Support",
+          title: "bpoInfoActionsTitle1",
         },
         {
 
           img: bpo2,
-          title: "Layer 2 Support",
+          title: "bpoInfoActionsTitle2",
         },
         {
           img: bpo3,
-          title: "Sales (Outbound & Inbound)",
+          title: "bpoInfoActionsTitle3",
         },
         {
         img: bpo4,
-        title: "Collections",
+        title: "bpoInfoActionsTitle4",
         } 
       ],
       bpoService: [
         {
 
           img: qo1,
-          title: "Dedicated Account Managers",
-          description: "Your dedicated account manager ensures personalized  attention, smooth communication, and addresses concerns  throughout our partnership."
+          title: "bpoInfoService-1.title",
+          description: "bpoInfoService-1.description"
         },
         {
 
           img: qo2,
-          title: "Customized Solutions",
-          description: "We tailor our services to meet  your unique needs and goals, ensuring a perfect fit for your business."
+          
+          title: "bpoInfoService-2.title",
+          description: "bpoInfoService-2.description"
         },
         {
 
           img: qo3,
-          title: "Scalability",
-          description: " We handle fluctuating workloads and accommodate your growth, providing the scalability your business requires."
+       
+          title: "bpoInfoService-3.title",
+          description: "bpoInfoService-3.description"
         },
         {
 
           img: qo4,
-          title: "Data Security",
-          description: "We prioritize data security and confidentiality, adhering to the highest standards and implementing  robust measures  to protect your information."
+          
+          title: "bpoInfoService-4.title",
+          description: "bpoInfoService-4.description"
         },
         {
 
           img: qo5,
-          title: "Quality Assurance",
-          description: "Our rigorous quality control processes  and ongoing training programs guarantee high-quality results and continuous improvement."
+          
+          title: "bpoInfoService-5.title",
+          description: "bpoInfoService-5.description"
         }
 
       ]
