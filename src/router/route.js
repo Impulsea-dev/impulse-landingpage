@@ -32,7 +32,7 @@ const routes = [
         component: () => import("@/views/whatwedoserv.vue"),
       },
       {
-        path: "/whatwedotelco",
+        path: "/services",
         name: "whatwedotelco",
         component: () => import("@/views/whatwedotelco.vue"),
       },
@@ -93,11 +93,11 @@ const routes = [
         name: "contactus",
         component: () => import("@/views/contactus.vue"),
       },
-      {
-        path: "/services",
-        name: "services",
-        component: () => import("@/views/Services.vue"),
-      },
+      // {
+      //   path: "/services",
+      //   name: "services",
+      //   component: () => import("@/views/Services.vue"),
+      // },
       {
         path: "/bpo",
         name: "bpo",

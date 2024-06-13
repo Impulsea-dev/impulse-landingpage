@@ -30,7 +30,7 @@
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
               {{ $t('footer-4') }}
             </a>
-            <a href="/whatwedotelco" target="_blank"
+            <a href="/services" target="_blank"
               class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
               {{ $t('footer-5') }}
             </a>

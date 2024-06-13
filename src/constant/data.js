@@ -29,7 +29,7 @@ export const menuItems = [
   {
     title: "menu-3",
     icon: "icons8:idea",
-    link: "/whatwedotelco", 
+    link: "/services", 
     // child: [
       // {
       //   childtitle: "Services",
@@ -38,7 +38,7 @@ export const menuItems = [
       // },
       // {
       //   childtitle: "Solutions",
-      //   childlink: "/whatwedotelco",
+      //   childlink: "/services",
       //   childicon: "ic:baseline-network-ping",
       // },
     // ],
@@ -86,7 +86,7 @@ export const topMenu = [
   {
     title: "menu-3",
     icon: "icons8:idea",
-    link: "/whatwedotelco", 
+    link: "/services", 
     // child: [
       // {
       //   childtitle: "Services",
@@ -95,7 +95,7 @@ export const topMenu = [
       // },
       // {
       //   childtitle: "Solutions",
-      //   childlink: "/whatwedotelco",
+      //   childlink: "/services",
       //   childicon: "ic:baseline-network-ping",
       // },
     // ],
