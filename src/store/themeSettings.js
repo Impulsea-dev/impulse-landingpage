@@ -37,6 +37,16 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
             document.documentElement.setAttribute("menu-layout",  this.menuLayout );
             localStorage.setItem("menuLayout", this.menuLayout);
         },
+        toogleLight() {
+            this.isDark = false;
+            document.body.classList.remove(this.theme);
+            this.theme ="light" ;
+            document.body.classList.add(this.theme);
+            localStorage.setItem("theme", this.theme);
+             
+            document.documentElement.setAttribute("menu-layout",  this.menuLayout );
+            localStorage.setItem("menuLayout", this.menuLayout);
+        },
 
         toggleMonochrome() {
             const isMonochrome = (localStorage.getItem('monochrome') !== null);
