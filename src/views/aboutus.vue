@@ -35,7 +35,7 @@
         </div>
         </div>       
       </div> -->
-      <div class="bg-[#111315] w-full h-auto items-center justify-center mt-4 mb-10 rounded-lg p-2">
+      <div class="bg-white dark:bg-[#111315] w-full h-auto items-center justify-center mt-4 mb-10 rounded-lg p-2">
       <div class="flex justify-start md:items-start flex-col" >
         <Button :text="$t('aboutUsExecutiveTeamTitle')"  btnClass="btn-primary mt-2"  style="background:#086C88;border-radius: 32px;"  />
         <!-- <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
@@ -48,11 +48,11 @@
                   <img class="sm:w-50 sm:h-auto rounded-lg" :src="chan1">
               </a>
               <div class="p-5">
-                  <h3 class="text-xl font-bold tracking-tight text-white">
+                  <h3 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
                       <a href="#">Brian Molina</a>
                   </h3>
                   <span class="text-gray-500 dark:text-gray-400">{{$t('aboutUsExecutiveTeamFounderCEOTitle')  }}</span>
-                  <p class="mt-3 font-light text-white">{{ $t('aboutUsExecutiveTeamFounderCEODescription') }}</p>
+                  <p class="mt-3 font-light text-slate-900 dark:text-white">{{ $t('aboutUsExecutiveTeamFounderCEODescription') }}</p>
                 </div>  
         </div>
         <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
@@ -60,11 +60,11 @@
                   <img class="sm:w-50 sm:h-auto rounded-lg" :src="chan2">
               </a>
               <div class="p-5">
-                  <h3 class="text-xl font-bold tracking-tight text-white">
+                  <h3 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
                       <a href="#">Rob McNabb</a>
                   </h3>
                   <span class="text-gray-500 dark:text-gray-400">{{$t('aboutUsExecutiveTeamCOFounderTitle')  }}</span>
-                  <p class="mt-3 font-light text-white">{{$t('aboutUsExecutiveTeamCOFounderDescription')  }}</p>
+                  <p class="mt-3 font-light text-slate-900 dark:text-white">{{$t('aboutUsExecutiveTeamCOFounderDescription')  }}</p>
                 </div>  
         </div>
 
@@ -74,10 +74,10 @@
 
       <Button :text="$t('aboutUs')" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
-        <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
+        <div class="text-lg md:text-5xl lg:text-5xl text-slate-900 dark:text-white mb-4">
          {{ t('aboutUsLeadingIndustryTitle') }}
         </div>    
-        <div class="text-base text-[#ffffffb3]">
+        <div class="text-base text-slate-900 dark:text-[#ffffffb3]">
           {{ t('aboutUsLeadingIndustryDescription') }}
        
         </div>     
@@ -124,7 +124,7 @@
         <CardCustomVision/>
        </div>      
       <div class="mb-20">
-      <div class="text-white text-center text-3xl mb-5">
+      <div class="text-slate-900 dark:text-white text-center text-3xl mb-5">
         <span>{{ $t('indexLetsWorkTogether') }}</span>
       </div>
       <div class="text-white text-center text-3xl">

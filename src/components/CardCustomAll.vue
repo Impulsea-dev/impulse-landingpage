@@ -12,7 +12,7 @@
           <Button
             :className="'flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 px-8 py-2 rounded-lg dark:bg-white border dark:border-white'"
             @click="sendTo(`${item.url}`)">
-            <p class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#141414]">
+            <p class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-white">
               {{ $t('indexOurSolutionsButton') }}
             </p>
           </Button>

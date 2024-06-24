@@ -3,7 +3,7 @@
         <div class="bg-[#3C007C] h-[80vh] 2xl:h-[60vh] w-screen !m-0 md:!-top-6 md:-left-6 -left-4 relative">
             <div
                 class="absolute top-[10%] 2xl:[top-20%] px-10 max-w-2xl lg:max-w-4xl 2xl:max-w-7xl animated-container opacity-0">
-                <div class="text-4xl lg:text-[64px] leading-[72px] font-Monda text-white  mt-4 md:mt-14">Telemetrics</div>
+                <div class="text-4xl lg:text-[64px] leading-[72px] font-Monda text-white mt-4 md:mt-14">Telemetrics</div>
                 <div class="text-[#ffffffb3] text-xs lg:text-base font-Monda">
                     {{ $t('telemetricsSubtitle-1') }}
                 </div>
@@ -34,7 +34,7 @@
                     <h1 class="text-xl !text-white">{{ $t('telemetricsSubtitle-3') }}
                     </h1>
                     <li>
-                        <p class="text-xs lg:text-base"> {{ $t('telemetricsSubtitle-4') }}
+                        <p class="text-xs lg:text-base text-white/70"> {{ $t('telemetricsSubtitle-4') }}
                         </p>
                     </li>
                 </ul>
@@ -57,8 +57,8 @@
             </div>
         </div>
 
-        <div class="md:bg-[#181818] flex justify-center gap-4 md:p-8  ">
-            <card :className="'dark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
+        <div class="bg-transparent flex justify-center gap-4 md:p-8  ">
+            <card :className="'bg-white bdark:!bg-[#000000] mt-6 md:col-span-6 col-span-1 '">
                 <ContactForm :refer="'Impulse Telemetrics'" />
             </card>
         </div>

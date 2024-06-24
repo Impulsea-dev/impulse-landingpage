@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`mobile-sidebar bg-black-800  ${
+    :class="`mobile-sidebar bg-white dark:bg-black-800  ${
       this.$store.themeSettingsStore.theme === 'bordered'
         ? 'border border-black-5002'
         : 'shadow-base'

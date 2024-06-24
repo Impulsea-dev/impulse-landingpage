@@ -3,7 +3,7 @@
   <div class="flex flex-wrap w-full justify-center relative">
     <div
       class="absolute -top-5 z-20 justify-start left-0 md:left-0 
-      md:w-[23%] xl:w-[25%] 2xl:w-[18%] w-[80%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] bg-[#e2e8ea]">
+      md:w-[23%] xl:w-[25%] 2xl:w-[18%] w-[80%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] bg-white">
       <p class="text-base font-bold text-center text-[#141414] ">
         {{ title }}
       </p>

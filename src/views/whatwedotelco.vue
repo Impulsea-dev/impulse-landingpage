@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12">
-      <div class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-white mb-4 ml-4 font- animate-pulse">
+      <div
+        class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-slate-900 dark:text-white mb-4 ml-4 font- animate-pulse">
         {{ $t('whatWeDoTitle') }}
       </div>
     </div>
@@ -19,11 +20,11 @@
     </div> -->
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-        <FlipCard :bgc="flipcard.background" :img="flipcard.img" :title=$t(flipcard.title)
-        :url="flipcard.url" :description=$t(flipcard.description) v-for="(flipcard,i) in flipcards" :key="i"   /> 
+      <FlipCard :bgc="flipcard.background" :img="flipcard.img" :title=$t(flipcard.title) :url="flipcard.url"
+        :description=$t(flipcard.description) v-for="(flipcard, i) in flipcards" :key="i" />
     </div>
 
-    <div class="text-white text-center text-3xl mb-3 mt-40">
+    <div class="text-slate-900 dark:text-white text-center text-3xl mb-3 mt-40">
       <span>{{ $t('indexLetsWorkTogether') }}</span>
     </div>
     <div class="flex justify-center items-center gap-6 mb-6">
@@ -65,56 +66,56 @@ export default {
     return { img }
   },
 
-  setup(){
+  setup() {
     const { t } = useI18n()
-      const flipcards = ref([
-        {
-          title:'Telemetrics',
-          description:"whatWeDoDescription-1",
-          img:telemetrics,
-          background:'bg-bg-btnp',
-          url:'/telemetrics'
-        },
-        {
-          title:'Impulse Bot',
-          description:"whatWeDoDescription-2",
-          img:boost,
-          background:'bg-boost',
-          url:'/impulsebot'
-        },
-        {
-          title:"indexOurSolutionsTitle-6",
-          description:"whatWeDoDescription-3",
-          img:bposerv,
-          background:'bg-bpo',
-          url:'/bpo'
-        },
-        {
-          title:"whatWeDoProductDesignTitle",
-          description:"whatWeDoDescription-4",
-          img:productdev,
-          background:'bg-desingdev',
-          url:'/product'
-        },
-        {
-          title:'Impulse Leads',
-          description:"whatWeDoDescription-5",
-          img:leads,
-          background:'bg-imleads',
-          url:'/impulse-lead'
-        },
-        {
-          title:'Impulse Pay',
-          description:"whatWeDoDescription-6",
-          img:pay,
-          background:'bg-impay',
-          url:'/impulse-pay'
-        }
-      ])
-
-      return{
-        flipcards,t
+    const flipcards = ref([
+      {
+        title: 'Telemetrics',
+        description: "whatWeDoDescription-1",
+        img: telemetrics,
+        background: 'bg-bg-btnp',
+        url: '/telemetrics'
+      },
+      {
+        title: 'Impulse Bot',
+        description: "whatWeDoDescription-2",
+        img: boost,
+        background: 'bg-boost',
+        url: '/impulsebot'
+      },
+      {
+        title: "indexOurSolutionsTitle-6",
+        description: "whatWeDoDescription-3",
+        img: bposerv,
+        background: 'bg-bpo',
+        url: '/bpo'
+      },
+      {
+        title: "whatWeDoProductDesignTitle",
+        description: "whatWeDoDescription-4",
+        img: productdev,
+        background: 'bg-desingdev',
+        url: '/product'
+      },
+      {
+        title: 'Impulse Leads',
+        description: "whatWeDoDescription-5",
+        img: leads,
+        background: 'bg-imleads',
+        url: '/impulse-lead'
+      },
+      {
+        title: 'Impulse Pay',
+        description: "whatWeDoDescription-6",
+        img: pay,
+        background: 'bg-impay',
+        url: '/impulse-pay'
       }
+    ])
+
+    return {
+      flipcards, t
+    }
   },
   methods: {
     btnContackUs() {
@@ -129,8 +130,8 @@ export default {
   background-color: #111315;
   transition: all 400ms ease-in;
 }
+
 .cardDisplay:hover {
   background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);
 }
 </style>
-  

@@ -16,19 +16,21 @@
             </p>
           </div>
           <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
-            <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
-              <span
-                class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">{{ $t('indexIncrease1') }}</span><span
-                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
+            <p class="flex-shrink-0  text-6xl text-center lg:leading-[5rem]">
+              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-slate-900 dark:text-white lg:mb-3">{{
+                $t('indexIncrease1') }}</span><span
+                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center">
               </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">{{ $t('indexIncrease2') }}
+                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-slate-900 dark:text-white lg:text-s">{{
+                $t('indexIncrease2') }}
               </span>
               <br />
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
+              <span
+                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-slate-900 dark:text-white lg:mb-3">
                 {{ $t('indexIncrease3') }}
               </span>
             </p>
-            <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
+            <p class="flex-shrink-0 p-4 text-lg text-center text-slate-900 dark:text-white/70">
               {{ $t('indexMax') }}
             </p>
             <div class="flex-grow-0 flex-shrink-0"> <Button :text="$t('indexContactUs')" btnClass="btn-primary "
@@ -40,9 +42,9 @@
     </section>
     <SolveProblems />
     <div class="h-20"></div>
-    <Button 
-      :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
+    <Button
+      :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] bg-slate-900'">
+      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-white">{{ $t('indexOurServices') }}
       </p>
     </Button>
 
@@ -64,10 +66,10 @@
 
     <div class="h-20"></div>
     <div class="lg:pr-11 lg:pl-11">
-      <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
-        <Button 
-          :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
-          <p class="text-base font-bold text-center text-[#141414]">
+      <Card :className="'relative bg-white dark:!bg-[#141414] mt-4'">
+        <Button
+          :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] bg-slate-900 dark:bg-[#e2e8ea]'">
+          <p class="text-base font-bold text-center text-white dark:text-[#141414]">
             {{ $t('indexOurSolutions') }}
           </p>
         </Button>
@@ -76,16 +78,16 @@
     </div>
 
     <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCard2 :title="$t('blog-2')"  />
+      <SwipperCard2 :title="$t('blog-2')" />
     </div>
 
 
     <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
       <div class="mt-10">
-        <div class="text-white text-[40px] leading-10">
+        <div class="text-slate-900 dark:text-white text-[40px] leading-10">
           {{ $t('indexOurIntegrationPartnersTitle') }}
         </div>
-        <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
+        <div class="mt-4 text-slate-900 dark:text-[#ffffffb3] text-[16px] leading-6 font-medium">
           {{ $t('indexOurIntegrationPartnersDescription') }}
         </div>
       </div>
@@ -94,7 +96,7 @@
     </div>
     <div class="h-20"></div>
     <div class="flex justify-center items-center gap-6 mb-2">
-      <p class=" w-[327px] text-[32px] font-bold text-center text-white">{{ $t('indexLetsWorkTogether') }}</p>
+      <p class=" w-[327px] text-[32px] font-bold text-center text-slate-900 dark:text-white">{{ $t('indexLetsWorkTogether') }}</p>
     </div>
 
     <div class="flex justify-center items-center gap-6 mb-6">
@@ -147,7 +149,7 @@ export default {
 };
 </script>
 <style>
-.cardDisplay {
+/* .cardDisplay {
   background: linear-gradient(-37.79deg, #000 -1.06%, #111315 100.71%);
   background-color: #111315;
   transition: all 400ms ease-in;
@@ -155,7 +157,7 @@ export default {
 
 .cardDisplay:hover {
   background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);
-}
+} */
 
 .bgLogos {
   background: url(@/assets/images/logos.webp) no-repeat;

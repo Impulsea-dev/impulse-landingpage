@@ -1,7 +1,7 @@
 <template>
   <router-link :to="{ name: 'home' }">
     <img
-      src="@/assets/images/logo/impulse.svg"
+      src="@/assets/images/logo/logo.svg"
       alt="impulse logo"
       v-if="!this.$store.themeSettingsStore.isDark"
     />

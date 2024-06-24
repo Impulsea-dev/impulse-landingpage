@@ -2,7 +2,7 @@
     <div class="p-0 lg:p-10">
         <div class="grid grid-cols-1 md:grid-cols-2  gap-4 mt-12 lg:mt-18">
             <div class="flex flex-col">
-                <div class="text-3xl lg:text-[56px] xl:text-[64px] text-white font-semibold">{{ $t('blog-1') }}</div>
+                <div class="text-3xl lg:text-[56px] xl:text-[64px] text-slate-900 dark:text-white font-semibold">{{ $t('blog-1') }}</div>
                 
             </div>
         </div>
@@ -12,21 +12,21 @@
         </div>
 
         <div class="mt-4 md:mt-16">
-            <div class="text-xl lg:text-[32px] xl:text-[38px] text-white font-semibold mb-10">{{ $t('blog-3') }}</div>
+            <div class="text-xl lg:text-[32px] xl:text-[38px] text-slate-900 dark:text-white font-semibold mb-10">{{ $t('blog-3') }}</div>
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4" v-if="blogs.length > 0">
-                <div class="w-full h-full bg-black-500 rounded-lg cursor-pointer hover:duration-700 hover:scale-95 
+                <div class="w-full h-full bg-white dark:bg-black-500 rounded-lg cursor-pointer hover:duration-700 hover:scale-95 
                 hover:border-2" v-for="(blog, i) in blogs" :key="i" @click="openBlog(blog)">
                     <img class="w-full h-60" :src="blog.header" />
                     <div class="flex flex-col justify-center items-start gap-1 mt-4 ml-4 mb-10 mr-4">
                         <div class="flex flex-row gap-2 text-xs font-semibold text-left">
-                            <span class="text-xs font-semibold text-left text-white/70">Posted on {{ blog.timeAgo }}
+                            <span class="text-xs font-semibold text-left text-slate-900/70 dark:text-white/70">Posted on {{ blog.timeAgo }}
                             </span>
-                            <span class="text-xs font-semibold text-left text-white/40">Posted by {{ blog.author }}</span>
+                            <span class="text-xs font-semibold text-left text-slate-900/40 dark:text-white/40">Posted by {{ blog.author }}</span>
                         </div>
-                        <p class="text-base font-bold text-center text-white">
+                        <p class="text-base font-bold text-center text-slate-900 dark:text-white">
                             {{ blog.title }}
                         </p>
-                        <p class="text-sm md:text-base text-left text-white/70">
+                        <p class="text-sm md:text-base text-left text-slate-900/70 dark:text-white/70">
                             {{ blog.description }}
                         </p>
                     </div>
@@ -35,7 +35,7 @@
             <SkeletonCard v-else />
 
             <div class="mt-20">
-                <div class="text-3xl text-white font-Manrope text-center">{{ $t('indexLetsWorkTogether') }} </div>
+                <div class="text-3xl text-slate-900 dark: font-Manrope text-center">{{ $t('indexLetsWorkTogether') }} </div>
                 <div class="mt-5 text-center">
                     <button class="bgbutton text-white" @click="() => { router.push('/contactus') }">
                         {{ $t('indexContactUs') }} 
