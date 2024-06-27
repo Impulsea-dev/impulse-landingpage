@@ -1,6 +1,17 @@
 <template>
   <div>
-    <section class="w-[100vw] h-[47rem] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 -left-4 relative">
+    <Homepage>
+      <template v-slot:videol>
+        <div class="absolute top-0 bottom-0 h-full w-full">
+          <video class="object-center object-cover h-full w-full" src="../assets/images/video.mov" autoplay muted
+            loop
+            style="clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0);"></video>
+        </div>
+      </template>
+    </Homepage>
+    <section
+      class="l-section w-[100vw] h-[47rem] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 -left-4 relative"
+      data-header-color="black">
       <img src="@/assets/images/svgs/entrance.svg"
         class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
       <img src="@/assets/images/svgs/entrace1.svg"
@@ -96,7 +107,9 @@
     </div>
     <div class="h-20"></div>
     <div class="flex justify-center items-center gap-6 mb-2">
-      <p class=" w-[327px] text-[32px] font-bold text-center text-slate-900 dark:text-white">{{ $t('indexLetsWorkTogether') }}</p>
+      <p class=" w-[327px] text-[32px] font-bold text-center text-slate-900 dark:text-white">{{
+                $t('indexLetsWorkTogether')
+              }}</p>
     </div>
 
     <div class="flex justify-center items-center gap-6 mb-6">
@@ -124,13 +137,14 @@ import SwipperCardHome from "@/components/SwipperCardHome.vue"
 import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
+import Homepage from "@/components/HomePage.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems
+    SwipperCard2, SolveProblems, Homepage
   },
   data() {
     return {

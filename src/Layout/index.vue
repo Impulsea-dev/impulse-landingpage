@@ -165,7 +165,7 @@ export default {
 }
 
 .page-content {
-  @apply md:pt-6 md:pb-1 md:px-6 pt-[15px] px-[15px] pb-24;
+ /* @apply md:pt-6 md:pb-1 md:px-6 pt-[15px] px-[15px] pb-24;*/
 }
 .page-min-height {
   min-height: calc(var(--vh, 1vh) * 100 - 132px);

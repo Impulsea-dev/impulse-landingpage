@@ -16,7 +16,7 @@
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon" />
           </span>
-          <div class="text-box" v-if="item.title">{{ $t(item.title) }}</div>
+          <div class="text-box text-current" v-if="item.title">{{ $t(item.title) }}</div>
         </div>
       </router-link>
       <a href="javascript: void(0);" v-if="item.child || item.megamenu">
