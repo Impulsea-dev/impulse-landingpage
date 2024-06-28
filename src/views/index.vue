@@ -10,8 +10,8 @@
       </template>
     </Homepage>
     <section
-      class="l-section w-[100vw] h-[47rem] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 -left-4 relative"
-      data-header-color="black">
+      class="l-section w-[100vw] h-[47rem] overflow-hidden relative"
+      data-header-color="black" data-header-bg="white">
       <img src="@/assets/images/svgs/entrance.svg"
         class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
       <img src="@/assets/images/svgs/entrace1.svg"

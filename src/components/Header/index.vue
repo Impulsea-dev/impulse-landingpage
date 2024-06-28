@@ -1,5 +1,34 @@
 <template>
-  <header :class="navbarTypeClass()" id="l-header">
+  <header id="l-header" class="flex justify-between items-center fixed top-0 w-full py-6 px-5 md:px-10 z-40 shadow-base
+  transition-colors duration-500">
+    <div class="flex flex-grow basis-0">
+      <Logo :logoC="logoColor" v-if="logoColor" />
+    </div>
+    <nav class="hidden md:flex">
+      <ul class="flex text-base font-bold [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current
+                [&>li]:transition-colors [&>li]:duration-500">
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/aboutus">About Us</router-link></li>
+        <li> <router-link to="/services">What We Do</router-link></li>
+        <li><router-link to="/blog">Blog</router-link></li>
+      </ul>
+    </nav>
+    <nav class="hidden md:flex flex-grow justify-end basis-0">
+      <ul class="flex text-sm [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current
+                [&>li]:transition-colors [&>li]:duration-500">
+        <!-- <li>
+          <LanguageVue />
+        </li> -->
+        <li>
+          <router-link class="px-4 py-2 rounded-full text-white bg-[#7F39E9] text-base hover:bg-[#662ebb]
+                        transition-colors duration-300" to="">CONTACT US</router-link>
+        </li>
+      </ul>
+    </nav>
+    <handle-mobile-menu class="flex md:hidden" />
+
+  </header>
+  <!-- <header :class="navbarTypeClass()" id="l-header">
     <div :class="`app-header md:px-6 px-[15px]  shadow-base fixed top-0 z-40 w-full ${borderSwicthClass()} ${this.$store.themeSettingsStore.navbarColor
     }
       ${this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1023
@@ -26,7 +55,7 @@
         </div>
         <Mainnav class="xl:ml-auto lg:ml-0 lg:flex md:hidden hidden" v-if="this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1024
     " />
-        <!-- <LanguageVue class="pr-3 pl-2" /> -->
+        <LanguageVue class="pr-3 pl-2" />
         <div v-if="window.width > 1024">
           <Button :text="$t('indexContactUs')" btnClass="btn-primary "
             style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
@@ -37,7 +66,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
 </template>
 <script>
 import Mainnav from "./horizental-nav.vue";
@@ -60,6 +89,11 @@ export default {
     HandleMobileMenu,
     Button
   },
+  data() {
+    return {
+      logoColor: null
+    }
+  },
   mounted() {
     const $header = document.querySelector('#l-header');
     const observerOptions = {
@@ -73,7 +107,11 @@ export default {
         const { isIntersecting } = entry
         if (isIntersecting) {
           const color = entry.target.getAttribute('data-header-color')
+          const bg = entry.target.getAttribute('data-header-bg')
           $header.style.color = color
+          $header.style.backgroundColor = bg
+          this.logoColor = color
+          console.log(this.logoColor);
         }
       })
     }, observerOptions);

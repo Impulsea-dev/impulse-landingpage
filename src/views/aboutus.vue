@@ -35,7 +35,8 @@
         </div>
         </div>       
       </div> -->
-      <div class="bg-white dark:bg-[#111315] w-full h-auto items-center justify-center mt-4 mb-10 rounded-lg p-2">
+      <section data-header-color="black" data-header-bg="white" class="l-section bg-white dark:bg-[#111315] 
+      w-full h-auto items-center justify-center mt-32 mb-10 rounded-lg p-2">
       <div class="flex justify-start md:items-start flex-col" >
         <Button :text="$t('aboutUsExecutiveTeamTitle')"  btnClass="btn-primary mt-2"  style="background:#086C88;border-radius: 32px;"  />
         <!-- <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
@@ -70,7 +71,7 @@
 
       </div>
       </div>
-     </div>
+      </section>
 
       <Button :text="$t('aboutUs')" btnClass="btn-primary mb-6"  style="background:#086C88;border-radius: 32px;"  />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">

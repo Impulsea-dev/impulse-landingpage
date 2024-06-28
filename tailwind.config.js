@@ -136,15 +136,15 @@ module.exports = {
       },
       backgroundImage: {
         'bg-btnp': 'linear-gradient(224.95deg, #a446f4 0%, #4138f3 100%)',
-        'imleads':'linear-gradient(137deg, #34E05A 1.17%, rgba(35, 189, 161, 0.45) 100%)',
-        'boost':'linear-gradient(137deg, #34ADE0 1.17%, rgba(11, 211, 175, 0.45) 100%)',
-        'desingdev':'linear-gradient(137deg, #4384E5 6.72%, rgba(114, 16, 239, 0.45) 100%)',
-        'impay':'linear-gradient(137deg, #3B4AD6 6.72%, rgba(205, 68, 208, 0.45) 100%)',
-        'bpo':'linear-gradient(137deg, #34E05A 1.17%, rgba(35, 189, 161, 0.45) 100%)'
-        },
+        'imleads': 'linear-gradient(137deg, #34E05A 1.17%, rgba(35, 189, 161, 0.45) 100%)',
+        'boost': 'linear-gradient(137deg, #34ADE0 1.17%, rgba(11, 211, 175, 0.45) 100%)',
+        'desingdev': 'linear-gradient(137deg, #4384E5 6.72%, rgba(114, 16, 239, 0.45) 100%)',
+        'impay': 'linear-gradient(137deg, #3B4AD6 6.72%, rgba(205, 68, 208, 0.45) 100%)',
+        'bpo': 'linear-gradient(137deg, #34E05A 1.17%, rgba(35, 189, 161, 0.45) 100%)'
+      },
       fontFamily: {
         Manrope: ["Manrope", "sans-serif"],
-        Monda: ["Monda","sans-serif"]
+        Monda: ["Monda", "sans-serif"]
       },
       boxShadow: {
         base: "0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16)",
@@ -180,7 +180,19 @@ module.exports = {
         "spin-slow": "spin 3s linear infinite",
         zoom: "zoom 1s ease-in-out infinite",
         tada: "tada 1.5s ease-in-out infinite",
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      }
     },
   },
   plugins: [],
