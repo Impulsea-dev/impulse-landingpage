@@ -10,7 +10,9 @@
     </Homepage>
     <LeadingGlobal />
     <CSPs />
-    <section class="l-section w-[100vw] h-[47rem] overflow-hidden relative" data-header-color="black"
+    <RevenuePotencial />
+    <ImpulseAction />
+    <!-- <section class="l-section w-[100vw] h-[47rem] overflow-hidden relative" data-header-color="black"
       data-header-bg="white">
       <img src="@/assets/images/svgs/entrance.svg"
         class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
@@ -50,17 +52,17 @@
           </div>
         </div>
       </div>
-    </section>
-    <SolveProblems />
-    <div class="h-20"></div>
+    </section> -->
+    <!-- <SolveProblems /> -->
+    <!-- <div class="h-20"></div>
     <Button
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] bg-slate-900'">
       <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-white">{{ $t('indexOurServices') }}
       </p>
-    </Button>
+    </Button> -->
 
     <!-- Grid Cards Start-->
-    <div
+    <!-- <div
       class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
       <CardCustom :title="$t('indexBPOServices')" :paragraph="$t('indexBPOText')" :img="dev"
         classBackground="cardDisplay" />
@@ -71,11 +73,11 @@
       <CardCustom :title="$t('indexSalesServices')" :paragraph="$t('indexSalesText')" :img="bi"
         classBackground="cardDisplay" />
 
-    </div>
+    </div> -->
     <!-- Grid Cards End -->
-    <div class="h-20"></div>
+    <!-- <div class="h-20"></div> -->
 
-    <div class="h-20"></div>
+    <!-- <div class="h-20"></div>
     <div class="lg:pr-11 lg:pl-11">
       <Card :className="'relative bg-white dark:!bg-[#141414] mt-4'">
         <Button
@@ -86,14 +88,14 @@
         </Button>
         <CardCustomAll />
       </Card>
-    </div>
+    </div> -->
 
-    <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
+    <!-- <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
       <SwipperCard2 :title="$t('blog-2')" />
-    </div>
+    </div> -->
 
 
-    <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
+    <!-- <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
       <div class="mt-10">
         <div class="text-slate-900 dark:text-white text-[40px] leading-10">
           {{ $t('indexOurIntegrationPartnersTitle') }}
@@ -110,12 +112,12 @@
       <p class=" w-[327px] text-[32px] font-bold text-center text-slate-900 dark:text-white">{{
                 $t('indexLetsWorkTogether')
               }}</p>
-    </div>
+    </div> -->
 
-    <div class="flex justify-center items-center gap-6 mb-6">
+    <!-- <div class="flex justify-center items-center gap-6 mb-6">
       <Button :text="$t('indexContactUs')" btnClass="btn-primary "
         style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
-    </div>
+    </div> -->
     <!-- <ModalNewsletter /> -->
   </div>
 </template>
@@ -140,13 +142,15 @@ import SolveProblems from "@/components/SolveProblems.vue"
 import Homepage from "@/components/HomePage.vue"
 import LeadingGlobal from "@/components/LeadingGlobal.vue"
 import CSPs from "@/components/CSPS.vue"
+import RevenuePotencial from "@/components/RevenuePotencial.vue"
+import ImpulseAction from "@/components/ImpulseAction.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems, Homepage, LeadingGlobal, CSPs
+    SwipperCard2, SolveProblems, Homepage, LeadingGlobal, CSPs, RevenuePotencial, ImpulseAction
   },
   data() {
     return {

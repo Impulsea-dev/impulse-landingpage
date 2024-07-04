@@ -15,7 +15,7 @@
         </div>
 
         <div class="flex justify-center py-40">
-            <router-link to="" class="text-white hover:text-white/80 font-bold text-xl cursor-pointer">Learn more about Impulse Services</router-link>
+            <router-link to="" class="text-white hover:text-white/80 font-bold text-xl cursor-pointer">Learn more about Impulse Services ></router-link>
         </div>
     </section>
 </template>
