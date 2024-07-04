@@ -3,15 +3,15 @@
     <Homepage>
       <template v-slot:videol>
         <div class="absolute top-0 bottom-0 h-full w-full">
-          <video class="object-center object-cover h-full w-full" src="../assets/images/video.mov" autoplay muted
-            loop
+          <video class="object-center object-cover h-full w-full" src="../assets/images/video.mov" autoplay muted loop
             style="clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0);"></video>
         </div>
       </template>
     </Homepage>
-    <section
-      class="l-section w-[100vw] h-[47rem] overflow-hidden relative"
-      data-header-color="black" data-header-bg="white">
+    <LeadingGlobal />
+    <CSPs />
+    <section class="l-section w-[100vw] h-[47rem] overflow-hidden relative" data-header-color="black"
+      data-header-bg="white">
       <img src="@/assets/images/svgs/entrance.svg"
         class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
       <img src="@/assets/images/svgs/entrace1.svg"
@@ -116,7 +116,7 @@
       <Button :text="$t('indexContactUs')" btnClass="btn-primary "
         style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
     </div>
-    <ModalNewsletter />
+    <!-- <ModalNewsletter /> -->
   </div>
 </template>
 <script>
@@ -138,13 +138,15 @@ import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
 import Homepage from "@/components/HomePage.vue"
+import LeadingGlobal from "@/components/LeadingGlobal.vue"
+import CSPs from "@/components/CSPS.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems, Homepage
+    SwipperCard2, SolveProblems, Homepage, LeadingGlobal, CSPs
   },
   data() {
     return {

@@ -1,0 +1,98 @@
+<template>
+    <section class="l-section bg-gradient-to-r from-[#7F39E9] to-[#472083]" data-header-color="black"
+        data-header-bg="white">
+        <div class="flex justify-center text-white font-bold text-5xl py-32 w-1/2 mx-auto text-center">
+            The world’s only revenue-focused operational system for CSPs
+        </div>
+        <div class="flex justify-center py-10 gap-40">
+            <div class="flex flex-col gap-y-10 text-white/70 details-container ml-40">
+                <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
+                    <summary class="text-3xl font-bold">{{ re.title }}</summary>
+                    <p>{{ re.details }}</p>
+                </details>
+            </div>
+            <Blocks :active-block="active" :key="active" />
+        </div>
+
+        <div class="flex justify-center py-40">
+            <router-link to="" class="text-white hover:text-white/80 font-bold text-xl cursor-pointer">Learn more about Impulse Services</router-link>
+        </div>
+    </section>
+</template>
+
+<script setup>
+import { ref } from "vue"
+import Blocks from "./Blocks.vue"
+const reqs = [
+    {
+        title: "Simplify operations and increase revenue",
+        details: "Impulse Pay makes running your business a breeze. We handle everything from onboarding and coordinating installs to complex billing. Boost your efficiency, improve your NPS, and speed up your GTM with our all-in-one solution."
+    },
+    {
+        title: "Transform into a revenue driven organization",
+        details: "Impulse CRM gathers data from all your customer interactions—calls, SMS, emails, in-person meetings, and more—giving you a complete picture of their needs. Empower your sales team to sell more effectively."
+    },
+    {
+        title: "Revenue-focused insights",
+        details: "Easily identify revenue opportunities, bandwidth needs, circuit upgrades, top-selling packages, and untapped potential with our proprietary Sales AI."
+    },
+    {
+        title: "Plug and play network integrations",
+        details: "We integrate seamlessly with your preferred GPON, Wireless, and COAX solutions using our plug-and-play technology. Our system also supports the latest IoT devices and smart home technologies, ensuring a comprehensive and hassle-free setup."
+    },
+    {
+        title: "Streamline your processes",
+        details: "We've dedicated thousands of hours to refining every process in your organization, crafting our software stack with the best practices for your business, enabling you to improve your NPS score and boost revenue."
+    }
+];
+
+const active = ref(-1)
+
+</script>
+
+<style scoped>
+.details-container>details {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem 0;
+}
+
+.details-container>details:hover {
+    color: white;
+    transition: all 0.5s;
+}
+
+details>summary {
+    list-style-image: url('../assets/images/right.svg');
+    cursor: pointer;
+}
+
+details[open]>summary {
+    margin-top: 10px;
+    list-style-image: url('../assets/images/down.svg');
+}
+
+details[open]>summary~* {
+    animation: sweep 0.5s ease-in-out;
+}
+
+details[open] {
+    color: white;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+details>p {
+    padding-top: 1.25rem;
+    max-width: 40rem;
+}
+</style>
