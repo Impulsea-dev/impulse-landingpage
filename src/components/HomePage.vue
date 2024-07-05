@@ -3,16 +3,17 @@
         <section class="l-section h-screen w-screen text-center relative overflow-hidden" data-header-color="white"
             data-header-bg="transparent">
             <div class="flex flex-col h-full relative z-30">
-                <div class="pt-40 pl-10 w-[700px]">
-                    <h2 class="text-white text-6xl font-bold pb-4 text-start">THE REVENUE DRIVEN AI CLOUD FOR
+                <div class="pt-60 md:pt-40 px-10 md:w-[700px] text-center md:text-start">
+                    <h2 class="text-black-900 md:text-white text-2xl md:text-6xl font-bold pb-4">THE REVENUE
+                        DRIVEN AI CLOUD FOR
                         THE
                         TELECOMMUNICATION INDUSTRY</h2>
-                    <p class="text-white text-2xl text-start pb-4">
+                    <p class="text-black-900 md:text-white text-lg md:text-2xl pb-4">
                         Drive revenue growth, Improve team productivity and decision making with our next generation
                         solutions.
                     </p>
-                    <div class="flex">
-                        <router-link class="px-6 py-3 text-xl font-bold inline-block skew-x-0 text-center 
+                    <div class="flex justify-center md:justify-start">
+                        <router-link class="px-4 md:px-6 py-2 md:py-3 text-base md:text-xl font-bold inline-block skew-x-0 text-center 
                         cursor-pointer rounded-full hover:before:rounded-full before:absolute before:-inset-0.5 before:origin-right bg-[#7F39E9]
         before:scale-x-0 before:bg-[#662ebb] text-white hover:before:origin-left hover:before:scale-x-100
         ease-in motion-safe:transition-[color,transform] motion-safe:before:transition-transform motion-safe:before:duration-300 

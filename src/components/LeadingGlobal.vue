@@ -1,13 +1,13 @@
 <template>
     <section class="l-section" data-header-color="black" data-header-bg="white">
-        <div class="flex justify-center text-[#3D0075] font-bold text-5xl py-4 w-2/3 mx-auto text-center mt-32">
+        <div class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-5xl py-4 w-2/3 mx-auto text-center mt-0 md:mt-32">
             Leading Global CSPS’s Rely on ImpulseOS for streamlined revenue workloads
         </div>
         <div class="relative">
-            <article class="bg-[#F6F6F6] border shadow-2xl mx-20 my-52 overflow-hidden">
-                <div class="flex flex-row justify-between items-center px-16 py-20">
+            <article class="bg-[#F6F6F6] border shadow-2xl mx-5 md:mx-20 my-10 md:my-52 overflow-hidden">
+                <div class="flex flex-col md:flex-row justify-between items-center px-5 md:px-16 py-10 md:py-20">
                     <div class="flex flex-col px-5">
-                        <span class="relative text-center px-6 py-3 cursor-pointer border text-2xl font-bold" :class="{
+                        <span class="relative text-center px-6 py-3 cursor-pointer border text-base md:text-2xl font-bold" :class="{
                                 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white scale-x-110': currentBeni == i,
                                 'bg-[#F2EDED] text-gray-400': currentBeni != i,
 
@@ -16,14 +16,14 @@
                             <!-- <img src="../assets/images/buttonballs.png" class="absolute top-0 right-0 -z-10" alt=""> -->
                         </span>
                     </div>
-                    <img src="../assets/images/arrows.svg" class="animate-pulse h-40" alt="">
-                    <p class="text-xl text-[#263238] font-bold w-[377px]">
+                    <img src="../assets/images/arrows.svg" class="animate-pulse h-20 md:h-40" alt="">
+                    <p class="text-base md:text-xl text-[#263238] font-bold md:w-[377px] text-center md:text-start">
                         {{ benifits[currentBeni].subtitle }}
                     </p>
-                    <img :src="benifits[currentBeni].img" class="h-80 hover:scale-95 transition-transform duration-300" alt="">
+                    <img :src="benifits[currentBeni].img" class="h-60 md:h-80 hover:scale-95 transition-transform duration-300" alt="">
                 </div>
             </article>
-            <img src="../assets/images/rectangle.svg" class="absolute -top-44 left-0 -z-10" alt="">
+            <img src="../assets/images/rectangle.svg" class="hidden md:block absolute -top-44 left-0 -z-10" alt="">
         </div>
     </section>
 </template>

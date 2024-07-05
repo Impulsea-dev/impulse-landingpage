@@ -3,8 +3,8 @@
     <Homepage>
       <template v-slot:videol>
         <div class="absolute top-0 bottom-0 h-full w-full">
-          <video class="object-center object-cover h-full w-full" src="../assets/images/video.mov" autoplay muted loop
-            style="clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0);"></video>
+          <video class="object-center object-cover h-1/4 md:h-full w-full clip-path rounded-b-md" src="../assets/images/video.mov" autoplay muted loop
+           ></video>
         </div>
       </template>
     </Homepage>
@@ -199,5 +199,21 @@ export default {
   background: linear-gradient(262.8deg, #A446F4 -1.48%, #4138F3 103.76%);
   padding: 11px 32px;
   border-radius: 8px;
+}
+
+/* @media (max-width: 768px) {
+  .half-screen-mobile {
+    height: 50vh;
+  }
+
+  .no-clip-path {
+    clip-path: none;
+  }
+} */
+
+@media (min-width: 769px) {
+  .clip-path {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0);
+  }
 }
 </style>
