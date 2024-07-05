@@ -176,6 +176,16 @@
     data(){
       return {client,projects,team,experience,img,chan,chan1,chan2,chan3,innovation,phone,trend,people,drone}      
     },
+
+  mounted() {
+    
+    this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
+     
+     
+
+  
+  
+ },
     setup(){
       const { t } = useI18n()
       const Flipcard2s = ref([

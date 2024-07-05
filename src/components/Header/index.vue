@@ -2,7 +2,7 @@
   <header id="l-header" class="flex justify-between items-center fixed top-0 w-full py-6 px-5 md:px-10 z-40 shadow-base
   transition-colors duration-500">
     <div class="flex flex-grow basis-0">
-      <Logo :logoC="logoColor" v-if="logoColor" />
+      <Logo :logoC="this.$store.themeSettingsStore.logoColor" v-if="this.$store.themeSettingsStore.logoColor" />
     </div>
     <nav class="hidden md:flex">
       <ul class="flex text-base font-bold [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current
@@ -77,6 +77,9 @@ import MobileLogo from "./Navtools/MobileLogo.vue";
 import window from "@/mixins/window";
 import HandleMobileMenu from "./Navtools/HandleMobileMenu.vue";
 import Button from "@/components/Button";
+import { useThemeSettingsStore } from "@/store/themeSettings";
+import { useRoute } from "vue-router";
+import { nextTick, watch } from "vue"; 
 export default {
   mixins: [window],
   components: {
@@ -91,36 +94,45 @@ export default {
   },
   data() {
     return {
-      logoColor: null
+      
+     
     }
   },
+  
+
   mounted() {
-    const $header = document.querySelector('#l-header');
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.90
-    }
+    
+     this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
+      
+      
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const { isIntersecting } = entry
-        if (isIntersecting) {
-          const color = entry.target.getAttribute('data-header-color')
-          const bg = entry.target.getAttribute('data-header-bg')
-          $header.style.color = color
-          $header.style.backgroundColor = bg
-          this.logoColor = color
-          console.log(this.logoColor);
-        }
-      })
-    }, observerOptions);
-
-    const $sections = document.querySelectorAll('.l-section');
-    $sections.forEach((section) => observer.observe(section));
+   
+   
   },
+  setup() {
+  const route = useRoute();
+  const themeSettingsStore = useThemeSettingsStore()
+
+  const getElements = () => {
+    const elements = document.querySelectorAll('.l-section');
+    console.log(elements);
+    themeSettingsStore.bringAllSections(elements);
+     
+  }
+    
+ 
+
+    watch(() => route.path, () => {
+      nextTick(async () => {
+       await getElements(); 
+      });
+    });
+   
+  }, 
+   
 
   methods: {
+  
     btnContackUs() {
       this.$router.push({ name: "contactus" })
     },

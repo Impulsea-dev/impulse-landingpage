@@ -162,6 +162,16 @@ export default {
       this.$router.push({ name: link })
     },
   },
+
+  mounted() {
+    
+    this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
+     
+     
+
+  
+  
+ },
   setup() {
     const { t } = useI18n()
     return { t }

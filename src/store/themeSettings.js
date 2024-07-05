@@ -1,3 +1,4 @@
+import { all } from 'axios';
 import { defineStore } from 'pinia';
 
 export const useThemeSettingsStore = defineStore('themeSettings',{
@@ -21,8 +22,52 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
         chartColors: {
             title: "red",
         },
+        allSections:[],
+        observer:null,
+        observerOptions:{
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.90
+      },
+      logoColor: null,
     }),
     actions: {
+        bringAllSections(sections){
+            const $sections = sections;
+           this.allSections = $sections
+           this.prepareObservers();
+          },
+          prepareObservers(){
+           
+            if(this.observer){
+                this.logoColor = null
+              this.observer.disconnect()
+            }
+       
+            const $header = document.querySelector('#l-header');
+            if($header){ 
+                $header.style.color =''
+                $header.style.backgroundColor =''
+                this.observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                  const { isIntersecting, intersectionRatio } = entry
+                  if (isIntersecting || intersectionRatio > .9) {
+                    const color = entry.target.getAttribute('data-header-color')
+                    const bg = entry.target.getAttribute('data-header-bg')
+                    $header.style.color = color
+                    $header.style.backgroundColor = bg
+                    this.logoColor = color
+                    console.log(this.logoColor);
+                  }
+                })
+              }, this.observerOptions);
+            //   console.log(this.allSections);
+                this.allSections.forEach((section) => this.observer.observe(section));
+            }
+            
+      
+          },
+
         setSidebarCollasp() {
             this.sidebarCollasp = !this.sidebarCollasp;
         },
@@ -46,6 +91,7 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
              
             document.documentElement.setAttribute("menu-layout",  this.menuLayout );
             localStorage.setItem("menuLayout", this.menuLayout);
+           
         },
 
         toggleMonochrome() {
