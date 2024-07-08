@@ -3,7 +3,7 @@
     <Homepage>
       <template v-slot:videol>
         <div class="absolute top-0 bottom-0 h-full w-full">
-          <video class="object-center object-cover h-1/4 md:h-full w-full clip-path rounded-b-md" src="../assets/images/video.mov" autoplay muted loop
+          <video class="object-center object-cover h-1/4 md:h-full w-full clip-path rounded-b-md" src="../assets/images/Video.mp4" autoplay muted loop
            ></video>
         </div>
       </template>
