@@ -7,7 +7,7 @@
                     <h2 class="text-black-900 md:text-white text-2xl md:text-4xl xl:text-6xl font-bold pb-6">THE REVENUE
                         DRIVEN AI CLOUD FOR
                         THE
-                        TELECOMMUNICATION INDUSTRY</h2>
+                        TELECOMMUNICATIONS INDUSTRY</h2>
                     <p class="text-black-900 md:text-white text-lg md:text-xl pb-6">
                         Drive revenue growth, Improve team productivity and decision making with our next generation
                         solutions.

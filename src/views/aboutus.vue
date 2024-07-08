@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:gap-6 mb-10  relative ">
+      <div class="grid grid-cols-1 md:gap-6 mb-10 relative ">
         <CardCustomMission />
       </div>
 
