@@ -14,12 +14,7 @@
         <span class="text-sm text-white">{{ $t('footer-1') }}</span>
       </div>
     </div>
-    <div class="flex items-center flex-wrap gap-x-10 md:gap-x-20 px-5">
-      <div class="flex flex-col gap-y-1">
-        <span class="text-white font-bold text-sm md:text-base">Services</span>
-        <router-link class="text-gray-300 text-xs md:text-sm" to="">Lorem Ipsum</router-link>
-        <router-link class="text-gray-300 text-xs md:text-sm" to="">Lorem Ipsum</router-link>
-      </div>
+    <div class="flex items-center flex-wrap gap-10 md:gap-x-40 px-5">
       <div class="flex flex-col gap-y-1">
         <span class="text-white font-bold text-sm md:text-base">Legal</span>
         <router-link class="text-gray-300 text-xs md:text-sm" to="/impulse-privacy">Privacy Policy</router-link>
@@ -36,14 +31,15 @@
         <router-link class="text-gray-300 text-xs md:text-sm" to="/contactus">Contact Us</router-link>
       </div>
       <div class="flex gap-x-2">
-        <a class="bg-[#00BCD4] rounded-full p-2 flex" href="https://www.linkedin.com/company/impulseltd/"
-          target="_blank">
+        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+          href="https://www.linkedin.com/company/impulseltd/" target="_blank">
           <img src="../../assets/images/social-linkedin.svg" class="h-5 w-5" alt="Linkedin" />
         </a>
-        <a href="" class="bg-[#00BCD4] rounded-full p-2 flex">
+        <a href="" class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300">
           <img src="../../assets/images/social-twitter.svg" class="h-5 w-5" alt="Twitter" />
         </a>
-        <a class="bg-[#00BCD4] rounded-full p-2 flex" href="https://www.instagram.com/impulseky/" target="_blank">
+        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+          href="https://www.instagram.com/impulseky/" target="_blank">
           <img src="../../assets/images/social-instagram.svg" class="h-5 w-5" alt="Instagram" />
         </a>
       </div>

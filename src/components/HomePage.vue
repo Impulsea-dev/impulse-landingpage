@@ -14,7 +14,9 @@
                     </p>
                     <div class="flex justify-center md:justify-start">
 
-                        <ButtonProgress :to="''"
+                        <ButtonProgress :isAnchor="true"
+                            :href="`https://impulse.na.chilipiper.com/book/me/brian-molina?type=impulse-introduction`"
+                            :target="'_blank'"
                             :class="'px-4 md:px-6 py-2 md:py-3 text-sm md:text-base xl:text-xl bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none font-bold'">
                             BOOK A DEMO
                         </ButtonProgress>
