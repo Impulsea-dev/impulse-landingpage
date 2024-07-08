@@ -1,5 +1,6 @@
 <template>
     <div>
+    <section class="l-section text-black-900" data-header-color="black" data-header-bg="white"></section>
       
 <!-- <div class="flex justify-center  flex-col">
   <div class="text-white text-center text-3xl mb-3">
@@ -35,7 +36,7 @@
         </div>
         </div>       
       </div> -->
-      <section data-header-color="black" data-header-bg="white" class="l-section bg-white dark:bg-[#111315] 
+      <section class="bg-white dark:bg-[#111315] 
       w-full h-auto items-center justify-center mt-32 mb-10 rounded-lg p-2">
       <div class="flex justify-start md:items-start flex-col" >
         <Button :text="$t('aboutUsExecutiveTeamTitle')"  btnClass="btn-primary mt-2"  style="background:#086C88;border-radius: 32px;"  />

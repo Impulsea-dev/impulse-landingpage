@@ -1,21 +1,24 @@
 <template>
     <section class="l-section bg-gradient-to-r from-[#7F39E9] to-[#472083]" data-header-color="black"
         data-header-bg="white">
-        <div class="flex justify-center text-white font-bold text-2xl md:text-5xl py-16 md:py-32 w-1/2 mx-auto text-center">
+        <div
+            class="flex justify-center text-white font-bold text-2xl md:text-3xl xl:text-5xl py-16 md:py-20 xl:py-32 w-1/2 mx-auto text-center">
             The world’s only revenue-focused operational system for CSPs
         </div>
-        <div class="flex flex-col md:flex-row justify-center py-2 gap-x-40">
-            <div class="flex flex-col gap-y-2 md:gap-y-10 text-white details-container mx-10 md:ml-40">
+        <div class="flex flex-col xl:flex-row justify-center py-2 gap-x-32 2xl:gap-x-40">
+            <div class="flex flex-col gap-y-2 md:gap-y-10 text-white details-container mx-10 xl:ml-40">
                 <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
-                    <summary class="text-base md:text-3xl font-bold">{{ re.title }}</summary>
-                    <p class="pt-4 max-w-2xl">{{ re.details }}</p>
+                    <summary class="text-base md:text-lg xl:text-xl 2xl:text-3xl font-bold">{{ re.title }}</summary>
+                    <p class="pt-4 max-w-md 2xl:max-w-2xl">{{ re.details }}</p>
                 </details>
             </div>
-            <Blocks :active-block="active" :key="active" class="hidden md:block" />
+            <Blocks :active-block="active" :key="active" class="hidden xl:block"/>
         </div>
 
         <div class="flex justify-center py-40">
-            <router-link to="" class="text-white hover:text-white/80 font-bold text-xl cursor-pointer">Learn more about Impulse Services ></router-link>
+            <router-link to=""
+                class="text-white hover:text-white/80 font-bold text-base xl:text-xl cursor-pointer mt-20">Learn more about
+                Impulse Services ></router-link>
         </div>
     </section>
 </template>
@@ -61,22 +64,30 @@ const active = ref(-1)
     transition: all 0.5s;
 }
 
+@media (min-width: 1280px) {
+    details>summary {
+        list-style-image: url('../assets/images/right.svg');
+    }
+}
+
 details>summary {
-    list-style-image: url('../assets/images/right.svg');
     cursor: pointer;
-    display: flex;
-  align-items: center;
+}
+
+@media (min-width: 1280px) {
+    details[open]>summary {
+        list-style-image: url('../assets/images/down.svg');
+    }
 }
 
 details[open]>summary {
     margin-top: 10px;
-    list-style-image: url('../assets/images/down.svg');
 }
 
 details>summary svg {
     width: 2px;
     height: 2px;
-  }
+}
 
 details[open]>summary~* {
     animation: sweep 0.5s ease-in-out;
@@ -97,5 +108,4 @@ details[open] {
         transform: translateX(0);
     }
 }
-
 </style>

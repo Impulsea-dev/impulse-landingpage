@@ -1,5 +1,5 @@
 <template>
-  <header id="l-header" class="flex justify-between items-center fixed top-0 w-full py-6 px-5 md:px-10 z-40 shadow-base
+  <header id="l-header" class="flex justify-between items-center fixed top-0 w-full py-4 px-5 md:px-10 z-40 md:shadow-base
   transition-colors duration-500">
     <div class="flex flex-grow basis-0">
       <Logo :logoC="this.$store.themeSettingsStore.logoColor" v-if="this.$store.themeSettingsStore.logoColor" />
@@ -20,8 +20,10 @@
           <LanguageVue />
         </li> -->
         <li>
-          <router-link class="px-4 py-2 rounded-full text-white bg-[#7F39E9] text-base hover:bg-[#662ebb]
-                        transition-colors duration-300" to="">CONTACT US</router-link>
+          <ButtonProgress :to="'/contactus'"
+            :class="'px-4 py-2 text-sm md:text-base bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none'">
+            CONTACT US
+          </ButtonProgress>
         </li>
       </ul>
     </nav>
@@ -77,9 +79,10 @@ import MobileLogo from "./Navtools/MobileLogo.vue";
 import window from "@/mixins/window";
 import HandleMobileMenu from "./Navtools/HandleMobileMenu.vue";
 import Button from "@/components/Button";
+import ButtonProgress from "@/components/ButtonProgress.vue"
 import { useThemeSettingsStore } from "@/store/themeSettings";
 import { useRoute } from "vue-router";
-import { nextTick, watch } from "vue"; 
+import { nextTick, watch } from "vue";
 export default {
   mixins: [window],
   components: {
@@ -90,49 +93,42 @@ export default {
     Logo,
     MobileLogo,
     HandleMobileMenu,
-    Button
+    Button,
+    ButtonProgress
   },
   data() {
     return {
-      
-     
+
+
     }
   },
-  
-
   mounted() {
-    
-     this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
-      
-      
-
-   
-   
+    this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
   },
   setup() {
-  const route = useRoute();
-  const themeSettingsStore = useThemeSettingsStore()
+    const route = useRoute();
+    const themeSettingsStore = useThemeSettingsStore()
 
-  const getElements = () => {
-    const elements = document.querySelectorAll('.l-section');
-    console.log(elements);
-    themeSettingsStore.bringAllSections(elements);
-     
-  }
-    
- 
+    const getElements = () => {
+      const elements = document.querySelectorAll('.l-section');
+      console.log(elements);
+      themeSettingsStore.bringAllSections(elements);
+
+    }
+
+
 
     watch(() => route.path, () => {
       nextTick(async () => {
-       await getElements(); 
+        await getElements();
       });
     });
-   
-  }, 
-   
+
+  },
+
 
   methods: {
-  
+
     btnContackUs() {
       this.$router.push({ name: "contactus" })
     },

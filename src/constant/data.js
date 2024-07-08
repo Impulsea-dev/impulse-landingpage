@@ -57,6 +57,13 @@ export const menuItems = [
 
     
   },
+  {
+    title: "menu-5",
+    icon: "fluent-mdl2:contact",
+    link: "/contactus",
+
+    
+  },
 ]
 // menuseetins
 

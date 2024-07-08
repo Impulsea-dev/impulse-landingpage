@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-grow mt-52 scale-50 md:scale-100">
+    <div class="flex flex-grow mt-52 scale-50 xl:scale-100">
         <div class="stack">
             <div v-for="block in blocks" :key="block.name" class="block" :class="block.name" :style="{
                 backgroundImage: `url(${getBlockImage(block.index)})`,

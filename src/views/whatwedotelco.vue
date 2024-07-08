@@ -1,23 +1,12 @@
 <template>
-  <div>
-    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12">
+  <div class="mt-32">
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12 l-section"
+      data-header-color="black" data-header-bg="white">
       <div
         class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-slate-900 dark:text-white mb-4 ml-4 font- animate-pulse">
         {{ $t('whatWeDoTitle') }}
       </div>
     </div>
-    <!-- <div class="relative dark:bg-[#000000]  mt-2">
-      <div class="space-y-4 mt-4">
-        <div class="grid   grid-rows-1 lg:grid-rows-2  gap-6">
-          <CardCustomTelemetric></CardCustomTelemetric>
-          <card-custom-boost></card-custom-boost>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-1 gap-6">
-
-          <card-custom-product-dev></card-custom-product-dev>
-        </div>
-      </div>
-    </div> -->
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
       <FlipCard :bgc="flipcard.background" :img="flipcard.img" :title=$t(flipcard.title) :url="flipcard.url"
@@ -64,6 +53,9 @@ export default {
   },
   data() {
     return { img }
+  },
+  mounted() {
+    this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
   },
 
   setup() {
