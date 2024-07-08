@@ -1,14 +1,14 @@
 <template>
   <div class="mt-32">
-    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12 l-section"
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-28 mb-12 l-section mx-10"
       data-header-color="black" data-header-bg="white">
       <div
-        class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-slate-900 dark:text-white mb-4 ml-4 font- animate-pulse">
+        class="text-xl md:text-2xl lg:text-6xl lg:w-[875px] text-slate-900 dark:text-white mb-4 animate-pulse">
         {{ $t('whatWeDoTitle') }}
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 mx-10">
       <FlipCard :bgc="flipcard.background" :img="flipcard.img" :title=$t(flipcard.title) :url="flipcard.url"
         :description=$t(flipcard.description) v-for="(flipcard, i) in flipcards" :key="i" />
     </div>
