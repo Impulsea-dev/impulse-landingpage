@@ -12,13 +12,14 @@
                     <p class="pt-4 max-w-md 2xl:max-w-2xl">{{ re.details }}</p>
                 </details>
             </div>
-            <Blocks :active-block="active" :key="active" class="hidden xl:block"/>
+            <Blocks :active-block="active" :key="active" class="hidden xl:block" />
         </div>
 
-        <div class="flex justify-center py-40">
-            <router-link to=""
-                class="text-white hover:text-white/80 font-bold text-base xl:text-xl cursor-pointer mt-20">Learn more about
-                Impulse Services ></router-link>
+        <div class="flex justify-center py-10 md:py-20">
+            <a href="https://impulse.na.chilipiper.com/book/me/brian-molina?type=impulse-introduction" target="_blank"
+                class="text-white hover:text-white/80 font-bold text-base xl:text-xl cursor-pointer mt-20">Learn more
+                about
+                Impulse Services ></a>
         </div>
     </section>
 </template>

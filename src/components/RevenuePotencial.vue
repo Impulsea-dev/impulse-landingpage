@@ -13,7 +13,8 @@
                 </div>
             </div>
             <div class="flex gap-2 mb-20 xl:mb-60 mt-4">
-                <a class="bg-black-500 px-2 py-2 rounded w-full md:w-52" href="">
+                <a class="bg-black-500 px-2 py-2 rounded w-full md:w-52 transition-shadow hover:shadow-2xl duration-300"
+                    href="https://open.spotify.com/show/2xsbT6w1MOuEe2DSyV1Mnx" target="_blank">
                     <div class="flex flex-row items-center gap-x-2">
                         <img src="../assets/images/podcast.svg" class="w-8 md:w-10" alt="">
                         <div class="flex flex-col">
@@ -22,8 +23,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="bg-black-500 px-2 py-2 rounded w-full md:w-52" href="https://www.youtube.com/@Impulseky"
-                    target="_blank">
+                <a class="bg-black-500 px-2 py-2 rounded w-full md:w-52 transition-shadow hover:shadow-2xl duration-300"
+                    href="https://www.youtube.com/@Impulseky" target="_blank">
                     <div class="flex flex-row items-center gap-x-2">
                         <img src="../assets/images/youtube.svg" class="w-8 md:w-10" alt="">
                         <div class="flex flex-col">

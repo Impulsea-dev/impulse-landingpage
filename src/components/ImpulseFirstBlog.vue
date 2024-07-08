@@ -1,6 +1,8 @@
 <template>
     <div>
-        <article class="rounded-xl h-48 xl:h-60 w-full md:w-80 xl:w-96 relative" v-if="firstBlog">
+        <article
+            class="rounded-xl h-48 xl:h-60 w-full md:w-80 xl:w-96 relative transition-shadow hover:shadow-2xl duration-300"
+            v-if="firstBlog">
             <a :href="firstBlog.titleurl" target="_blank">
                 <img :src="firstBlog.header" class="w-full h-full rounded-xl" alt="">
                 <div class="absolute inset-0 bg-gradient-to-r from-[#2B8CFF]/80 to-[#EB10EF]/80 rounded-xl"></div>
@@ -21,7 +23,7 @@ const firstBlog = ref(null)
 onMounted(async () => {
     const bl = await BlogServices.getBlogs()
     for (let i = 0; i < bl.length; i++) {
-        bl[i].title = bl[i].title.slice(0,17)
+        bl[i].title = bl[i].title.slice(0, 17)
         if (bl[i].titleurl) {
             bl[i].titleurl = 'blog/' + bl[i].titleurl
         }

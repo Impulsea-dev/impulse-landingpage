@@ -1,6 +1,6 @@
 <template>
     <section class="l-section" data-header-color="black" data-header-bg="white">
-        <div class="flex justify-center px-5 xl:px-40 py-10 md:py-60">
+        <div class="flex justify-center px-5 xl:px-40 py-10 md:py-40">
             <article class="bg-[#F6F6F6] flex flex-col md:flex-row rounded-xl shadow-2xl">
                 <img src="../assets/images/action.svg" class="hidden md:block w-full md:w-1/2 object-cover"
                     alt="Action Image">

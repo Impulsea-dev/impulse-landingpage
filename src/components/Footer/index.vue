@@ -14,7 +14,7 @@
         <span class="text-sm text-white">{{ $t('footer-1') }}</span>
       </div>
     </div>
-    <div class="flex items-center flex-wrap gap-10 md:gap-x-40 px-5">
+    <div class="flex items-center flex-wrap gap-10 md:gap-x-40 px-5 xl:px-40">
       <div class="flex flex-col gap-y-1">
         <span class="text-white font-bold text-sm md:text-base">Legal</span>
         <router-link class="text-gray-300 text-xs md:text-sm" to="/impulse-privacy">Privacy Policy</router-link>
@@ -23,7 +23,8 @@
       <div class="flex flex-col gap-y-1">
         <span class="text-white font-bold text-sm md:text-base">Resources</span>
         <router-link class="text-gray-300 text-xs md:text-sm" to="/blog">Blog</router-link>
-        <router-link class="text-gray-300 text-xs md:text-sm" to="">Podcast</router-link>
+        <a class="text-gray-300 text-xs md:text-sm"
+          href="https://open.spotify.com/show/2xsbT6w1MOuEe2DSyV1Mnx" target="_blank">Podcast</a>
       </div>
       <div class="flex flex-col gap-y-1">
         <span class="text-white font-bold text-sm md:text-base">About Company</span>
@@ -35,8 +36,9 @@
           href="https://www.linkedin.com/company/impulseltd/" target="_blank">
           <img src="../../assets/images/social-linkedin.svg" class="h-5 w-5" alt="Linkedin" />
         </a>
-        <a href="" class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300">
-          <img src="../../assets/images/social-twitter.svg" class="h-5 w-5" alt="Twitter" />
+        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+          href="https://www.youtube.com/@Impulseky" target="_blank">
+          <img src="../../assets/images/social-youtube.svg" class="h-5 w-5" alt="Youtube" />
         </a>
         <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
           href="https://www.instagram.com/impulseky/" target="_blank">

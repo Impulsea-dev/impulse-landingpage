@@ -54,7 +54,7 @@
               </div>
             </div>
             <iframe class="w-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.0264787885058!2d-88.04377708862656!3d15.536711185005956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f665b1d41ab02df%3A0xe5d3fb2c00438995!2sNuevos%20Horizontes%20Business%20Center!5e0!3m2!1ses!2shn!4v1720296072976!5m2!1ses!2shn"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.661216594637!2d-80.31563478839387!3d25.78175137724465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9a4624d7415%3A0x2b97adf5452981a2!2s1150%20NW%2072nd%20Ave%2C%20Miami%2C%20FL%2033126%2C%20EE.%20UU.!5e0!3m2!1ses!2shn!4v1720445516886!5m2!1ses!2shn"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>

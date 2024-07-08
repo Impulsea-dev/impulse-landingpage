@@ -1,10 +1,11 @@
 <template>
     <section class="l-section" data-header-color="black" data-header-bg="white">
-        <div class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-4 w-2/3 mx-auto text-center mt-0 md:mt-32">
+        <div class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-4 w-2/3 mx-auto 
+        text-center mt-0 md:mt-24 animate-fade-up animate-delay-500">
             Leading Global CSPS’s Rely on ImpulseOS for streamlined revenue workloads
         </div>
         <div class="relative">
-            <article class="bg-[#F6F6F6] border shadow-2xl mx-5 md:mx-10 xl:mx-20 my-10 md:my-52 overflow-hidden">
+            <article class="bg-[#F6F6F6] border shadow-2xl mx-5 md:mx-10 xl:mx-20 my-10 md:my-40 overflow-hidden">
                 <div class="flex flex-col md:flex-row justify-between items-center px-5 md:px-16 py-10 md:py-20">
                     <div class="flex flex-col px-5">
                         <span class="relative text-center px-6 py-3 cursor-pointer border text-base md:text-lg xl:text-2xl font-bold" :class="{
@@ -13,7 +14,6 @@
 
                             }" v-for="(beni, i) in benifits" :key="i" @click="currentBeni = i">
                             {{ beni.title }}
-                            <!-- <img src="../assets/images/buttonballs.png" class="absolute top-0 right-0 -z-10" alt=""> -->
                         </span>
                     </div>
                     <img src="../assets/images/arrows.svg" class="animate-pulse h-20 xl:h-40" alt="">
