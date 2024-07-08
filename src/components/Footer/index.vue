@@ -14,7 +14,7 @@
         <span class="text-sm text-white">{{ $t('footer-1') }}</span>
       </div>
     </div>
-    <div class="flex items-center flex-wrap gap-10 px-5">
+    <div class="flex items-center flex-wrap gap-10 md:gap-x-40 px-5">
       <div class="flex flex-col gap-y-1">
         <span class="text-white font-bold text-sm md:text-base">Legal</span>
         <router-link class="text-gray-300 text-xs md:text-sm" to="/impulse-privacy">Privacy Policy</router-link>
