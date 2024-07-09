@@ -1,11 +1,11 @@
 <template>
     <div>
-        <section class="relative mt-24 md:mt-32">
-            <div class="mx-5 md:mx-10 xl:mx-20 animate-fade-up animate-delay-500">
+        <section class="relative mt-24 md:mt-32 md:mb-32">
+            <div class="mx-5 md:mx-10 xl:mx-20 animate-fade-up animate-delay-300">
                 <span class="text-[#3D0075] text-2xl md:text-4xl font-bold flex justify-center">{{
                     $t('aboutUsExecutiveTeamTitle')
                 }}</span>
-                <div class="flex flex-row justify-center flex-wrap xl:flex-nowrap mt-10 mb-40 gap-5">
+                <div class="flex flex-row justify-center flex-wrap xl:flex-nowrap mt-10 pb-20 md-pb-0 md:mt-20 gap-5">
                     <article
                         class="bg-[#F6F6F6] shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl px-6 py-4 flex justify-center items-center"
                         v-for="(team, i) in teams" :key="i">
@@ -14,7 +14,7 @@
                             <div class="flex flex-col justify-center gap-2 items-center md:items-start">
                                 <span class="text-lg md:text-xl font-bold text-black-500">{{ team.name }}</span>
                                 <span class="text-sm md:text-base text-[#0079D8] font-bold">{{ team.position }}</span>
-                                <p class="text-sm md:text-base">{{ team.description }}</p>
+                                <p class="text-sm md:text-base max-w-3xl">{{ team.description }}</p>
                             </div>
                         </div>
                     </article>

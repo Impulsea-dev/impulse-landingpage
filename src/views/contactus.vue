@@ -1,7 +1,8 @@
 <template>
   <div>
     <section class="mt-32">
-      <div class="my-10 bg-[#F6F6F6] px-5 md:px-10 xl:px-20 py-10 shadow-2xl mx-2 xl:mx-10 rounded-md">
+      <div
+        class="my-10 bg-[#F6F6F6] px-5 md:px-10 xl:px-20 py-10 shadow-2xl mx-2 xl:mx-10 rounded-md animate-fade-up animate-delay-300">
         <span class="flex text-[#3D0075] font-bold text-xl md:text-2xl xl:text-3xl gap-x-1">Get in <span
             class="text-[#0079D8]">Touch</span></span>
 

@@ -223,7 +223,9 @@ export default {
 
 @media (min-width: 769px) {
   .clip-path {
-    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0);
+    clip-path: ellipse(75% 60% at 50% 45%);
+    -webkit-clip-path: ellipse(85% 60% at 50% 40%);
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0); */
     /* clip-path: ellipse(65% 64% at 49% 30%); */
 
   }

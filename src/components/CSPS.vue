@@ -10,6 +10,7 @@
                 <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
                     <summary class="text-base md:text-lg xl:text-xl 2xl:text-3xl font-bold">{{ re.title }}</summary>
                     <p class="pt-4 max-w-md 2xl:max-w-2xl">{{ re.details }}</p>
+                    <!-- <ModalInAction /> -->
                 </details>
             </div>
             <Blocks :active-block="active" :key="active" class="hidden xl:block" />
@@ -25,6 +26,7 @@
 </template>
 
 <script setup>
+import ModalInAction from "@/components/ModalInAction.vue"
 import { ref } from "vue"
 import Blocks from "./Blocks.vue"
 const reqs = [
