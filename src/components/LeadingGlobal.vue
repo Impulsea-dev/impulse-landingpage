@@ -2,7 +2,7 @@
     <section class="l-section" data-header-color="black" data-header-bg="white">
         <div
             class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
-            Leading Global CSP’s Rely on ImpulseOS for streamlined revenue workloads
+            Leading Global CSPs Rely on ImpulseOS for streamlined revenue workloads
         </div>
         <div class="relative pb-20">
             <article class="bg-[#F6F6F6] border shadow-2xl mx-5 md:mx-10 xl:mx-20 overflow-hidden">

@@ -5,7 +5,7 @@
                 <span class="text-[#3D0075] text-2xl md:text-4xl font-bold flex justify-center">{{
                     $t('aboutUsExecutiveTeamTitle')
                 }}</span>
-                <div class="flex flex-row justify-center flex-wrap xl:flex-nowrap mt-10 mb-10 gap-5">
+                <div class="flex flex-row justify-center flex-wrap xl:flex-nowrap mt-10 mb-40 gap-5">
                     <article
                         class="bg-[#F6F6F6] shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl px-6 py-4 flex justify-center items-center"
                         v-for="(team, i) in teams" :key="i">
