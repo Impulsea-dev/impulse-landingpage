@@ -1,80 +1,10 @@
 <template>
   <div>
     <section class="l-section text-black-900" data-header-color="black" data-header-bg="white"></section>
+    <OurExecutiveTeam />
+    <!-- <ImpulseSolution /> -->
 
-    <!-- <div class="flex justify-center  flex-col">
-  <div class="text-white text-center text-3xl mb-3">
-          <span>Our Executive Team</span>
-       </div> 
-<div class="flex justify-center p-4 mt-5">
-  <div class="md:flex lg:grid-cols-6 md:grid-cols-1 gap-2 md:space-y-0  mt-9">        
-         
-         <CardCustomTeam
-         paragraph="Brian Molina"
-         title="Impulse Founder and CEO"        
-         :img="chan1"
-         classBackground="bg-[#111315]"
-         />
-         <CardCustomTeam
-         paragraph="Rob McNabb"
-         title="Co-founder and NED"        
-         :img="chan2"
-         classBackground="bg-[#111315]"
-         />
-       </div>
-</div>
-</div> -->
-    <!--<SwipperCardTeam class="md:hidden flex"/> -->
-    <!-- <div class="flex justify-center md:items-center flex-col">
-        <div class="text-white text-center text-3xl mb-3">
-          <span>Our Executive Team</span>
-       </div> 
-        <div class="flex justify-center flex-col">
-          <div class="sm:flex grid-cols-1 md:grid-cols-3 gap-6 p-4"  >
-          <Flipcard2 :bgc="Flipcard2.background" :img="Flipcard2.img" :title="Flipcard2.title" :subtitle="Flipcard2.subtitle" 
-          :url="Flipcard2.url" :description="Flipcard2.description" v-for="(Flipcard2,i) in Flipcard2s" :key="i"  /> 
-        </div>
-        </div>       
-      </div> -->
     <section class="bg-white dark:bg-[#111315] items-center justify-center mt-32 mb-10 rounded-lg p-2 mx-5">
-      <div class="flex justify-start md:items-start flex-col">
-        <Button :text="$t('aboutUsExecutiveTeamTitle')" btnClass="btn-primary mt-2"
-          style="background:#086C88;border-radius: 32px;" />
-        <!-- <div class="text-lg md:text-5xl lg:text-5xl text-white mb-4">
-          Our Executive Team
-        </div>  -->
-        <div class="md:flex grid-cols-1 md:grid-cols-3 md:gap-6 md:space-y-0 md:space-x-14 mb-12 mt-5 items-center">
-
-          <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
-            <a href="#">
-              <img class="sm:w-50 sm:h-auto rounded-lg" :src="chan1">
-            </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-                <a href="#">Brian Molina</a>
-              </h3>
-              <span class="text-gray-500 dark:text-gray-400">{{ $t('aboutUsExecutiveTeamFounderCEOTitle') }}</span>
-              <p class="mt-3 font-light text-slate-900 dark:text-white">{{
-          $t('aboutUsExecutiveTeamFounderCEODescription') }}</p>
-            </div>
-          </div>
-          <div class="flex items-center rounded-lg shadow sm:flex p-5 lg:flex-row flex-col">
-            <a href="#">
-              <img class="sm:w-50 sm:h-auto rounded-lg" :src="chan2">
-            </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-                <a href="#">Rob McNabb</a>
-              </h3>
-              <span class="text-gray-500 dark:text-gray-400">{{ $t('aboutUsExecutiveTeamCOFounderTitle') }}</span>
-              <p class="mt-3 font-light text-slate-900 dark:text-white">{{
-          $t('aboutUsExecutiveTeamCOFounderDescription')
-        }}</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
       <Button :text="$t('aboutUs')" btnClass="btn-primary mb-6" style="background:#086C88;border-radius: 32px;" />
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-0 space-x-14 mb-12">
         <div class="text-lg md:text-5xl lg:text-5xl text-slate-900 dark:text-white mb-4">
@@ -146,6 +76,8 @@ import CardCustomVision from "@/components/CardCustomVision.vue"
 import CardCustomTeam from "@/components/CardCustomTeam.vue"
 import CardCustomValue from "@/components/CardCustomValue.vue"
 import Flipcard2 from "@/components/FlipCard2.vue"
+import OurExecutiveTeam from "@/components/aboutus/OurExecutiveTeam.vue"
+import ImpulseSolution from "@/components/aboutus/ImpulseSolution.vue"
 import { ref } from "vue"
 import { useI18n } from 'vue-i18n'
 export default {
@@ -157,7 +89,9 @@ export default {
     CardCustomTeam,
     Flipcard2,
     CardCustomValue,
-    SwipperCardTeam
+    SwipperCardTeam,
+    OurExecutiveTeam,
+    ImpulseSolution
   },
   data() {
     return { client, projects, team, experience, img, chan, chan1, chan2, chan3, innovation, phone, trend, people, drone }

@@ -26,23 +26,23 @@ export const menuItems = [
     icon: "fluent:people-20-regular",
     link: "/aboutus",
   },
-  {
-    title: "menu-3",
-    icon: "icons8:idea",
-    link: "/services", 
-    // child: [
-      // {
-      //   childtitle: "Services",
-      //   childlink: "/services",
-      //   childicon: "ri:customer-service-fill",
-      // },
-      // {
-      //   childtitle: "Solutions",
-      //   childlink: "/services",
-      //   childicon: "ic:baseline-network-ping",
-      // },
-    // ],
-  },
+  // {
+  //   title: "menu-3",
+  //   icon: "icons8:idea",
+  //   link: "/services", 
+  //   child: [
+  //     {
+  //       childtitle: "Services",
+  //       childlink: "/services",
+  //       childicon: "ri:customer-service-fill",
+  //     },
+  //     {
+  //       childtitle: "Solutions",
+  //       childlink: "/services",
+  //       childicon: "ic:baseline-network-ping",
+  //     },
+  //   ],
+  // },
  
   // {
   //   title: "Case Studies",

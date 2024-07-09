@@ -3,69 +3,52 @@
     <Header :class="window.width > 1024 ? switchHeaderClass() : ''" />
     <!-- end header -->
 
-    <Sidebar
-      v-if="
-        this.$store.themeSettingsStore.menuLayout === 'vertical' &&
-        this.$store.themeSettingsStore.sidebarHidden === false &&
-        window.width > 1024
-      "
-    />
+    <Sidebar v-if="this.$store.themeSettingsStore.menuLayout === 'vertical' &&
+      this.$store.themeSettingsStore.sidebarHidden === false &&
+      window.width > 1024
+      " />
     <!-- main sidebar end -->
     <Transition name="mobilemenu">
-      <mobile-sidebar
-        v-if="window.width <= 1024 && this.$store.themeSettingsStore.mobielSidebar"
-      />
+      <mobile-sidebar v-if="window.width <= 1024 && this.$store.themeSettingsStore.mobielSidebar" />
     </Transition>
     <Transition name="overlay-fade">
-      <div
-        v-if="window.width <= 1023 && this.$store.themeSettingsStore.mobielSidebar"
+      <div v-if="window.width <= 1023 && this.$store.themeSettingsStore.mobielSidebar"
         class="overlay bg-slate-900 bg-opacity-70 backdrop-filter backdrop-blur-[3px] backdrop-brightness-10 fixed inset-0 z-[999]"
-        @click="this.$store.themeSettingsStore.mobielSidebar = false"
-      ></div>
+        @click="this.$store.themeSettingsStore.mobielSidebar = false"></div>
     </Transition>
- 
-    <div
-      class="content-wrapper transition-all duration-150"
-      :class="window.width > 1023 ? switchHeaderClass() : ''"
-    >
-      <div
-        class="page-content"
-        :class="this.$route.meta.appheight ? 'h-full' : 'page-min-height'"
-      >
-        <div
-          :class="` transition-all duration-150 ${
-            this.$store.themeSettingsStore.cWidth === 'boxed'
-              ? 'container mx-auto'
-              : 'container-fluid'
-          }`"
-        >
+
+    <div class="content-wrapper transition-all duration-150" :class="window.width > 1023 ? switchHeaderClass() : ''">
+      <div class="page-content" :class="this.$route.meta.appheight ? 'h-full' : 'page-min-height'">
+        <div :class="` transition-all duration-150 ${this.$store.themeSettingsStore.cWidth === 'boxed'
+      ? 'container mx-auto'
+      : 'container-fluid'
+      }`">
 
 
-       
+
           <router-view v-slot="{ Component }">
             <transition name="router-animation" mode="out-in" appear>
               <component :is="Component"></component>
             </transition>
           </router-view>
-          
+
         </div>
 
 
       </div>
-  
+
     </div>
-    <!-- end page content --> 
-    
-      <div class="banner space-y-3" v-if="showBanner"  >
-        <p class="flex-col">{{ $t('banner-1') }}
-        </p>
-        <div class="flex-col space-x-4 items-center">
-          <button @click="okBannerClicked" class="btn-success p-2">{{ $t('banner-2') }}</button>
-        <button @click="cancelBannerClicked" class="btn-warning p-2">{{ $t('banner-3') }}</button>
-        </div>
-      </div> 
-    <Footer 
-    />
+    <!-- end page content -->
+
+    <div class="banner space-y-3 bg-white" v-if="showBanner">
+      <p class="flex-col text-slate-900">{{ $t('banner-1') }}
+      </p>
+      <div class="flex-col space-x-4 items-center">
+        <button @click="okBannerClicked" class="btn-success px-6 py-3 rounded-full">{{ $t('banner-2') }}</button>
+        <button @click="cancelBannerClicked" class="btn-warning px-6 py-3 rounded-full">{{ $t('banner-3') }}</button>
+      </div>
+    </div>
+    <Footer />
   </main>
 </template>
 <script>
@@ -74,7 +57,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar/";
 import window from "@/mixins/window";
-import MobileSidebar from "@/components/Sidebar/MobileSidebar.vue"; 
+import MobileSidebar from "@/components/Sidebar/MobileSidebar.vue";
 import useCookies from '@/composables/useCookies'
 import { inject } from "vue";
 export default {
@@ -83,7 +66,7 @@ export default {
     Header,
     Footer,
     Sidebar,
-    Breadcrumbs, 
+    Breadcrumbs,
     MobileSidebar,
   },
   methods: {
@@ -99,15 +82,15 @@ export default {
         return "ltr:ml-[248px] rtl:mr-[248px]";
       }
     },
-  
+
   },
   setup() {
     const gtag = inject('gtag');
-    const { showBanner, okClicked,cancelClicked } = useCookies(gtag);
+    const { showBanner, okClicked, cancelClicked } = useCookies(gtag);
     const okBannerClicked = () => okClicked();
     const cancelBannerClicked = () => cancelClicked();
-  
-   
+
+
 
     return {
       showBanner,
@@ -123,6 +106,7 @@ export default {
   animation-delay: 0.1s;
   opacity: 0;
 }
+
 .router-animation-leave-active {
   animation: going 0.2s;
 }
@@ -131,31 +115,37 @@ export default {
   from {
     transform: translate3d(0, 0, 0) scale(1);
   }
+
   to {
     transform: translate3d(0, 4%, 0) scale(0.93);
     opacity: 0;
   }
 }
+
 @keyframes coming {
   from {
     transform: translate3d(0, 4%, 0) scale(0.93);
     opacity: 0;
   }
+
   to {
     transform: translate3d(0, 0, 0) scale(1);
     opacity: 1;
   }
 }
+
 @keyframes slideLeftTransition {
   0% {
     opacity: 0;
     transform: translateX(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0px);
   }
 }
+
 .mobilemenu-enter-active {
   animation: slideLeftTransition 0.24s;
 }
@@ -165,13 +155,15 @@ export default {
 }
 
 .page-content {
- /* @apply md:pt-6 md:pb-1 md:px-6 pt-[15px] px-[15px] pb-24;*/
+  /* @apply md:pt-6 md:pb-1 md:px-6 pt-[15px] px-[15px] pb-24;*/
 }
+
 .page-min-height {
   min-height: calc(var(--vh, 1vh) * 100 - 132px);
 }
+
 .banner {
-  background-color: #1e2227;
+  background-color: white;
   padding: 20px;
   text-align: center;
 }
