@@ -16,7 +16,7 @@
                             :src="blog.header" alt="Blog Img">
                         <div class="flex flex-col justify-center gap-4 py-4 w-full md:w-3/4 px-2 md:px-10">
                             <span class="text-xl font-bold text-black-500">{{ blog.title }}</span>
-                            <p class="text-sm md:text-base text-left text-slate-900/7">
+                            <p class="text-sm md:text-base text-left text-slate-900/70">
                                 {{ blog.description }}
                             </p>
                         </div>
@@ -78,24 +78,3 @@ export default defineComponent({
     }
 })
 </script>
-<style>
-.bgTab {
-    padding: 12px 32px;
-    gap: 8px;
-    background: #E2E8EA;
-    border-radius: 32px;
-}
-
-.bgtabdark {
-    padding: 12px 32px;
-    gap: 8px;
-    background: #111315;
-    border-radius: 32px;
-}
-
-.bgbutton {
-    background: linear-gradient(262.8deg, #A446F4 -1.48%, #4138F3 103.76%);
-    padding: 11px 32px;
-    border-radius: 8px;
-}
-</style>
