@@ -1,12 +1,22 @@
 <template>
-    <section class="l-section md:-translate-y-32 md:bg-white md:rounded-t-[8rem]" data-header-color="black"
-        data-header-bg="white">
+    <section class="relative l-section lg:bg-white" data-header-color="black" data-header-bg="white">
         <div
-            class="animate-pulse flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
-            Leading Global CSPs Rely on ImpulseOS for streamlined revenue workloads
+            class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
+            <span class="animate-pulse block lg:hidden">
+                Leading Global CSPs Rely on ImpulseOS for streamlined revenue workloads
+            </span>
         </div>
         <CardSelectedItem :items="benifits" class="pb-20" />
+        <div class="absolute inset-x-0 top-0 md:-translate-y-32 bg-white h-32 lg:block hidden md:rounded-t-[8rem]">
+            <div
+                class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
+                <span class="animate-pulse">
+                    Leading Global CSPs Rely on ImpulseOS for streamlined revenue workloads
+                </span>
+            </div>
+        </div>
     </section>
+
 </template>
 <script setup>
 import { ref } from 'vue'
@@ -27,6 +37,4 @@ const benifits = ref([{
     subtitle: 'Accelerate your growth with AI-powered insights, advanced reporting, and sales enablement tools designed exclusively for CSPs',
     img: benifit3
 }])
-
-const currentBeni = ref(0)
 </script>
