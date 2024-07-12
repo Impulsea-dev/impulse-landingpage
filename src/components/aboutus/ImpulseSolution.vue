@@ -6,10 +6,10 @@
                     t('aboutUsLeadingIndustryTitle') }}</span>
 
             <div
-                class="flex flex-row flex-wrap xl:flex-nowrap items-center justify-center mx-5 md:mx-20 pt-10 md:pt-20 pb-16 md:pb-32 gap-4">
+                class="flex flex-row flex-wrap xl:flex-nowrap items-center justify-center mx-5 xl:mx-20 pt-10 md:pt-20 pb-16 md:pb-32 gap-4">
                 <span class="text-white text-base md:text-lg md:max-w-xl"> {{ t('aboutUsLeadingIndustryDescription')
                     }}</span>
-                <img src="@/assets/images/isimg.svg" class="w-[920px] h-[260px] md:h-[560px] rounded-lg" alt="">
+                <img src="@/assets/images/isimg.svg" class=" h-[260px] md:h-[200px] lg:h-[260px] xl:h-[460px] rounded-lg" alt="">
             </div>
         </section>
     </div>
