@@ -1,10 +1,10 @@
 <template>
-    <section class="l-section" data-header-color="black" data-header-bg="white">
+    <section class="l-section md:-translate-y-32 md:bg-white md:rounded-t-[8rem]" data-header-color="black"
+        data-header-bg="white">
         <div
-            class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
+            class="animate-pulse flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
             Leading Global CSPs Rely on ImpulseOS for streamlined revenue workloads
         </div>
-
         <CardSelectedItem :items="benifits" class="pb-20" />
     </section>
 </template>
