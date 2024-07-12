@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="hidden md:block">
-      <img src="../../assets/images/bgfooter.svg" class="hidden md:block h-full" alt="" />
+      <img src="../../assets/images/bgfooter.svg" class="hidden md:block h-full object-cover" alt="" />
       <div class="absolute top-1/2 left-4">
         <img src="@/assets/images/logo/impulse.svg" alt="logo" />
         <span class="text-sm text-white">{{ $t('footer-1') }}</span>
