@@ -4,7 +4,7 @@
             <div class="flex flex-col lg:flex-row justify-between mt-20 md:mt-40 gap-4 relative">
                 <div class="flex flex-col gap-y-2">
                     <span class="text-[#7F39E9] text-xl">Resources</span>
-                    <span class="text-2xl md:text-3xl xl:text-6xl xl:w-2/3 text-[#3D0075] font-bold">Unlock your team’s
+                    <span class="text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl xl:w-2/3 text-[#3D0075] font-bold">Unlock your team’s
                         revenue potential</span>
                 </div>
                 <div class="flex flex-col md:flex-row flex-grow gap-4">

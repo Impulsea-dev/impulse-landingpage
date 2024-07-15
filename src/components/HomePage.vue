@@ -1,10 +1,10 @@
 <template>
     <div>
-        <section class="l-section h-screen w-screen text-center relative overflow-hidden" data-header-color="white"
+        <section class="l-section min-h-screen w-screen text-center relative overflow-hidden" data-header-color="white"
             data-header-bg="transparent">
             <div class="flex flex-col h-full relative z-30 animate-fade-up animate-delay-300">
-                <div class="pt-60 md:pt-40 px-10 md:pl-40 md:w-[500px] xl:w-[850px] text-center md:text-start">
-                    <h2 class="text-black-900 md:text-white text-2xl md:text-4xl xl:text-6xl font-bold pb-6">THE REVENUE
+                <div class="pt-60 md:pt-28 lg:pt-32 2xl:pt-40 px-10 md:pl-40 md:w-[500px] xl:w-[850px] text-center md:text-start">
+                    <h2 class="text-black-900 md:text-white text-2xl md:text-4x xl:text-5xl 2xl:text-6xl font-bold pb-6">THE REVENUE
                         DRIVEN AI CLOUD FOR
                         THE
                         TELECOMMUNICATIONS INDUSTRY</h2>

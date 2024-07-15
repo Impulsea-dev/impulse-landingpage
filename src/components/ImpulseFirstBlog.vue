@@ -1,7 +1,7 @@
 <template>
     <div>
         <article
-            class="rounded-xl h-48 xl:h-60 w-full md:w-80 xl:w-96 relative transition-shadow hover:shadow-2xl duration-300"
+            class="rounded-xl h-48 xl:h-60 w-full md:w-80 2xl:w-96 relative transition-shadow hover:shadow-2xl duration-300"
             v-if="firstBlog">
             <a :href="firstBlog.titleurl" target="_blank">
                 <img :src="firstBlog.header" class="w-full h-full rounded-xl" alt="">
