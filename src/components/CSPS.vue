@@ -1,24 +1,27 @@
 <template>
     <section class="l-section bg-gradient-to-r from-[#7F39E9] to-[#472083]" data-header-color="black"
         data-header-bg="white">
-        <div
-            class="flex justify-center text-white font-bold text-2xl md:text-3xl xl:text-5xl py-16 md:py-20 xl:py-32 w-1/2 mx-auto text-center">
-            The world’s only revenue-focused operational system for CSPs
-        </div>
-        <div class="flex flex-col xl:flex-row justify-center py-2 gap-x-32 2xl:gap-x-40">
-            <div class="flex flex-col gap-y-2 md:gap-y-10 text-white details-container mx-10 xl:ml-40">
-                <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
-                    <summary class="text-base md:text-lg xl:text-xl 2xl:text-3xl font-bold">{{ re.title }}</summary>
-                    <p class="pt-4 max-w-md 2xl:max-w-2xl">{{ re.details }}</p>
-                    <!-- <ModalInAction /> -->
-                </details>
+        <div class="animated-container opacity-0">
+            <div
+                class="flex justify-center text-white font-bold text-2xl md:text-3xl xl:text-5xl py-16 xl:py-32 w-1/2 mx-auto text-center">
+                The world’s only revenue-focused operational system for CSPs
             </div>
-            <Blocks :active-block="active" :key="active" class="hidden xl:block" />
+            <div class="flex flex-col items-center">
+                <div class="flex flex-col gap-y-2 md:gap-y-5 xl:gap-y-10 text-white details-container mx-10 xl:ml-40">
+                    <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
+                        <summary class="text-lg sm:text-xl xl:text-3xl font-bold">{{ re.title }}</summary>
+                        <p class="pt-4 max-w-md 2xl:max-w-2xl">{{ re.details }}</p>
+                        <!-- <ModalInAction /> -->
+                    </details>
+                </div>
+                <!-- <Blocks :active-block="active" :key="active" class="hidden xl:block" /> -->
+            </div>
         </div>
+
 
         <div class="flex justify-center py-10 md:py-20">
             <a href="https://impulse.na.chilipiper.com/book/me/brian-molina?type=impulse-introduction" target="_blank"
-                class="text-white hover:text-white/80 font-bold text-base xl:text-xl cursor-pointer mt-20">Learn more
+                class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer mt-20">Learn more
                 about
                 Impulse Services ></a>
         </div>
@@ -27,7 +30,9 @@
 
 <script setup>
 import ModalInAction from "@/components/ModalInAction.vue"
-import { ref } from "vue"
+import useIntersectionObserver from '@/composables/useIntersectionObserver';
+
+import { onMounted, ref } from "vue"
 import Blocks from "./Blocks.vue"
 const reqs = [
     {
@@ -51,6 +56,14 @@ const reqs = [
         details: "We've dedicated thousands of hours to refining every process in your organization, crafting our software stack with the best practices for your business, enabling you to improve your NPS score and boost revenue."
     }
 ];
+
+const { observe } = useIntersectionObserver('animate-fade-up');
+onMounted(() => {
+    const elementsToAnimate = document.querySelectorAll('.animated-container');
+    elementsToAnimate.forEach((element) => {
+        observe(element);
+    });
+})
 
 const active = ref(-1)
 
