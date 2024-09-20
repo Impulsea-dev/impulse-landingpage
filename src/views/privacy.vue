@@ -3,7 +3,7 @@
     <section class="l-section" data-header-color="black" data-header-bg="white"></section>
     <div class="px-10 py-16 max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto bg-white mt-32 mb-16 shadow-xl"
       v-if="$t('en') == 'en'">
-      <h1 class="text-3xl font-semibold mb-4 text-center">Privacy Policy</h1>
+      <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Privacy Policy</h1>
       <p class="text-base text-center">**Privacy Policy**
 
         Impulse Tech Enterprises Inc (“Impulse”) is a U.S.-based company headquartered in the United States. We develop,
