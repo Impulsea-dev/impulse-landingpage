@@ -1,13 +1,13 @@
 <template>
     <div>
-        <h2 class="text-2xl text-black-500 md:text-white mt-10 md:mt-0">Our Integration Partners</h2>
-        <div class="hidden md:flex justify-center">
-            <img src="../assets/images/partners/NOKIA.svg" class="h-32 w-32 inline mx-4" alt="NOKIA">
-            <img src="../assets/images/partners/VMWARE.svg" class="h-32 w-32 inline mx-4" alt="VMWARE">
-            <img src="../assets/images/partners/Adtran.svg" class="h-32 w-32 inline mx-4" alt="Adtran">
-            <img src="../assets/images/partners/AlliedTelesis.svg" class="h-32 w-32 inline mx-4" alt="Allied Telesis">
-            <img src="../assets/images/partners/cisco.svg" class="h-32 w-32 inline mx-4" alt="Cisco">
-            <img src="../assets/images/partners/DZS.svg" class="h-32 w-32 inline mx-4" alt="DZS">
+        <h2 class="text-lg text-black-500 md:text-white font-bold mb-6 tracking-wider">Our Integration Partners</h2>
+        <div class="hidden md:flex justify-center items-center md:gap-10 lg:gap-20 xl:gap-32 2xl:gap-40">
+            <img src="../assets/images/partners/NOKIA.svg" class="w-24" alt="NOKIA">
+            <img src="../assets/images/partners/VMWARE.svg" class="w-24" alt="VMWARE">
+            <img src="../assets/images/partners/Adtran.svg" class="w-24" alt="Adtran">
+            <img src="../assets/images/partners/AlliedTelesis.svg" class="w-24" alt="Allied Telesis">
+            <img src="../assets/images/partners/cisco.svg" class="w-24" alt="Cisco">
+            <img src="../assets/images/partners/DZS.svg" class="w-24" alt="DZS">
         </div>
         <div class="md:hidden">
             <div class="flex justify-center gap-10 sm:gap-16">

@@ -1,16 +1,16 @@
 <template>
-    <section class="l-section bg-gradient-to-r from-[#7F39E9] to-[#472083]" data-header-color="black"
-        data-header-bg="white">
+    <section class="l-section bg-[linear-gradient(180deg,#0575E6_0%,#02298A_84.79%,#021B79_100%)]"
+        data-header-color="black" data-header-bg="white">
         <div class="animated-container opacity-0">
             <div
-                class="flex justify-center text-white font-bold text-2xl md:text-3xl xl:text-5xl py-16 xl:py-32 w-1/2 mx-auto text-center">
+                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-5xl py-16 xl:py-32 w-1/2 mx-auto text-center">
                 The world’s only revenue-focused operational system for CSPs
             </div>
             <div class="flex flex-col items-center">
                 <div class="flex flex-col gap-y-2 md:gap-y-5 xl:gap-y-10 text-white details-container mx-10 xl:ml-40">
                     <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
-                        <summary class="text-lg sm:text-xl xl:text-3xl font-bold">{{ re.title }}</summary>
-                        <p class="pt-4 max-w-md 2xl:max-w-2xl">{{ re.details }}</p>
+                        <summary class="text-lg sm:text-xl xl:text-3xl font-bold font-Monda">{{ re.title }}</summary>
+                        <p class="pt-4 max-w-md 2xl:max-w-2xl font-Monda">{{ re.details }}</p>
                         <!-- <ModalInAction /> -->
                     </details>
                 </div>
@@ -21,7 +21,9 @@
 
         <div class="flex justify-center py-10 md:py-20">
             <a href="https://impulse.na.chilipiper.com/book/me/brian-molina?type=impulse-introduction" target="_blank"
-                class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer mt-20">Learn more
+                class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer mt-20
+                font-Monda">Learn
+                more
                 about
                 Impulse Services ></a>
         </div>

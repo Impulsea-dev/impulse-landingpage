@@ -1,5 +1,5 @@
 <template>
-    <section class="relative l-section lg:bg-white" data-header-color="black" data-header-bg="white">
+    <section class="relative l-section lg:bg-white z-10" data-header-color="black" data-header-bg="white">
         <div
             class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-5xl py-14 w-2/3 mx-auto text-center">
             <span class="animate-pulse block xl:hidden">

@@ -5,7 +5,7 @@
       <Logo :logoC="this.$store.themeSettingsStore.logoColor" v-if="this.$store.themeSettingsStore.logoColor" />
     </div>
     <nav class="hidden md:flex">
-      <ul class="flex text-base font-bold [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current
+      <ul class="flex text-base [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current font-medium
                 [&>li]:transition-colors [&>li]:duration-500">
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/aboutus">About Us</router-link></li>
@@ -21,8 +21,8 @@
         </li> -->
         <li>
           <ButtonProgress :to="'/contactus'"
-            :class="'px-4 py-2 text-sm md:text-base bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none'">
-            CONTACT US
+            :class="'normal-case px-4 py-2 text-sm md:text-base bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none'">
+            Contact Us
           </ButtonProgress>
         </li>
       </ul>

@@ -2,9 +2,10 @@
   <div>
     <Homepage>
       <template v-slot:videol>
-        <div class="absolute top-0 bottom-0 h-full w-full">
-          <video class="object-center object-cover h-1/4 md:h-full w-full clip-path rounded-b-md md:rounded-b-none"
-            src="../assets/images/Video.mp4" autoplay muted loop></video>
+        <div class="absolute top-0 bottom-0 w-full">
+          <div class="video-container">
+            <video ref="videoRef" class="videoStyle" src="../assets/images/Video.mp4" autoplay muted loop></video>
+          </div>
         </div>
       </template>
     </Homepage>
@@ -12,113 +13,6 @@
     <CSPs />
     <RevenuePotencial />
     <ImpulseAction />
-    <!-- <section class="l-section w-[100vw] h-[47rem] overflow-hidden relative" data-header-color="black"
-      data-header-bg="white">
-      <img src="@/assets/images/svgs/entrance.svg"
-        class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
-      <img src="@/assets/images/svgs/entrace1.svg"
-        class="animate-pulse md:block md:h-[650px] w-[100vw] -mt-3 p-0  -left-10 hidden" alt="">
-
-      <div>
-        <div
-          class="flex flex-col justify-center items-center absolute  left-0 right-0 mr-auto ml-auto md:w-[50%] w-[70%] text-center m-auto md:ml-auto top-32 ">
-          <div
-            class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]">
-            <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs  font-medium text-center text-white">
-              {{ $t('telcoslog') }}
-            </p>
-          </div>
-          <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
-            <p class="flex-shrink-0  text-6xl text-center lg:leading-[5rem]">
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-slate-900 dark:text-white lg:mb-3">{{
-                $t('indexIncrease1') }}</span><span
-                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center">
-              </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-slate-900 dark:text-white lg:text-s">{{
-                $t('indexIncrease2') }}
-              </span>
-              <br />
-              <span
-                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-slate-900 dark:text-white lg:mb-3">
-                {{ $t('indexIncrease3') }}
-              </span>
-            </p>
-            <p class="flex-shrink-0 p-4 text-lg text-center text-slate-900 dark:text-white/70">
-              {{ $t('indexMax') }}
-            </p>
-            <div class="flex-grow-0 flex-shrink-0"> <Button :text="$t('indexContactUs')" btnClass="btn-primary "
-                style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
-                @click="btnLink('contactus')" /> </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <SolveProblems /> -->
-    <!-- <div class="h-20"></div>
-    <Button
-      :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] bg-slate-900'">
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-white">{{ $t('indexOurServices') }}
-      </p>
-    </Button> -->
-
-    <!-- Grid Cards Start-->
-    <!-- <div
-      class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
-      <CardCustom :title="$t('indexBPOServices')" :paragraph="$t('indexBPOText')" :img="dev"
-        classBackground="cardDisplay" />
-
-      <CardCustom :title="$t('indexManagedServices')" :paragraph="$t('indexManagedText')" :img="bpo"
-        classBackground="cardDisplay" />
-
-      <CardCustom :title="$t('indexSalesServices')" :paragraph="$t('indexSalesText')" :img="bi"
-        classBackground="cardDisplay" />
-
-    </div> -->
-    <!-- Grid Cards End -->
-    <!-- <div class="h-20"></div> -->
-
-    <!-- <div class="h-20"></div>
-    <div class="lg:pr-11 lg:pl-11">
-      <Card :className="'relative bg-white dark:!bg-[#141414] mt-4'">
-        <Button
-          :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] bg-slate-900 dark:bg-[#e2e8ea]'">
-          <p class="text-base font-bold text-center text-white dark:text-[#141414]">
-            {{ $t('indexOurSolutions') }}
-          </p>
-        </Button>
-        <CardCustomAll />
-      </Card>
-    </div> -->
-
-    <!-- <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCard2 :title="$t('blog-2')" />
-    </div> -->
-
-
-    <!-- <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
-      <div class="mt-10">
-        <div class="text-slate-900 dark:text-white text-[40px] leading-10">
-          {{ $t('indexOurIntegrationPartnersTitle') }}
-        </div>
-        <div class="mt-4 text-slate-900 dark:text-[#ffffffb3] text-[16px] leading-6 font-medium">
-          {{ $t('indexOurIntegrationPartnersDescription') }}
-        </div>
-      </div>
-      <div :class="window.width < 640 ? 'bgLogosPhone' : 'bgLogos'">
-      </div>
-    </div>
-    <div class="h-20"></div>
-    <div class="flex justify-center items-center gap-6 mb-2">
-      <p class=" w-[327px] text-[32px] font-bold text-center text-slate-900 dark:text-white">{{
-                $t('indexLetsWorkTogether')
-              }}</p>
-    </div> -->
-
-    <!-- <div class="flex justify-center items-center gap-6 mb-6">
-      <Button :text="$t('indexContactUs')" btnClass="btn-primary "
-        style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
-    </div> -->
-    <!-- <ModalNewsletter /> -->
   </div>
 </template>
 <script>
@@ -145,6 +39,7 @@ import CSPs from "@/components/CSPS.vue"
 import RevenuePotencial from "@/components/RevenuePotencial.vue"
 import ImpulseAction from "@/components/ImpulseAction.vue"
 import { useI18n } from 'vue-i18n'
+import { onMounted, ref } from "vue"
 
 export default {
   mixins: [window],
@@ -164,70 +59,58 @@ export default {
   },
 
   mounted() {
-
     this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
-
-
-
-
-
   },
   setup() {
     const { t } = useI18n()
-    return { t }
+    const videoRef = ref(null);
+    onMounted(() => {
+      if (videoRef.value) {
+        videoRef.value.playbackRate = 0.8;
+      }
+    });
+    return { t, videoRef }
   }
 };
 </script>
-<style>
-/* .cardDisplay {
-  background: linear-gradient(-37.79deg, #000 -1.06%, #111315 100.71%);
-  background-color: #111315;
-  transition: all 400ms ease-in;
+<style scoped>
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 
-.cardDisplay:hover {
-  background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);
-} */
-
-.bgLogos {
-  background: url(@/assets/images/logos.webp) no-repeat;
-  background-size: 100% 100%;
-  background-color: transparent !important;
-  height: 224px;
-
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 0;
 }
 
-.bgLogosPhone {
-  margin-top: 10px;
-  background: url(@/assets/images/logosPhone.webp) no-repeat;
-  background-size: 100% 100%;
-  background-color: transparent !important;
-  height: 384px;
+.videoStyle {
+  object-fit: cover;
+  height: 25%;
+  /* h-1/4 */
+  width: 100%;
+  clip-path: inherit;
+  border-radius: inherit;
+  position: relative;
+  z-index: 0;
 }
 
-.bgbutton {
-  background: linear-gradient(262.8deg, #A446F4 -1.48%, #4138F3 103.76%);
-  padding: 11px 32px;
-  border-radius: 8px;
-}
-
-/* @media (max-width: 768px) {
-  .half-screen-mobile {
-    height: 50vh;
+@media (min-width: 768px) {
+  .videoStyle {
+    height: 100%;
+    border-radius: none;
   }
 
-  .no-clip-path {
-    clip-path: none;
-  }
-} */
-
-@media (min-width: 769px) {
-  .clip-path {
-    /* clip-path: ellipse(75% 60% at 50% 45%);
-    -webkit-clip-path: ellipse(85% 60% at 50% 40%); */
-    /* clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 98%, 19% 98%, 0% 80%, 0 0); */
-    /* clip-path: ellipse(65% 64% at 49% 30%); */
-
+  .video-container::before {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
   }
 }
 </style>
