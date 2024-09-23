@@ -44,7 +44,7 @@
                   <img src="../assets/images/email-icon.svg" class="h-4 xl:h-6" alt="">
                   <span class="text-[#3D0075] font-bold text-base xl:text-lg">Email</span>
                 </div>
-                <span class="text-[#3D0075] text-base xl:text-lg">sales@impulse.ky</span>
+                <span class="text-[#3D0075] text-base xl:text-lg">sales@impulsecloud.io</span>
               </div>
               <div class="flex flex-col">
                 <div class="flex items-center gap-x-1">
@@ -65,29 +65,22 @@
 
     <div
       class="bg-[#F6F6F6] shadow-2xl flex justify-between flex-wrap gap-4 items-center mx-2 xl:mx-10 my-10 px-10 xl:px-20 py-10">
-      <div class="flex flex-col xl:w-1/4">
-        <div class="flex items-center gap-x-1">
-          <img src="../assets/images/hq-icon.svg" class="h-4 xl:h-6" alt="">
-          <span class="text-[#3D0075] font-bold text-base xl:text-lg">HQ Address</span>
-        </div>
-        <span class="text-[#3D0075] text-base xl:text-lg">38 Caterpillar Lane, Grand Cayman, Cayman Islands
-          KY1-1104</span>
-      </div>
-      <div class="flex flex-col xl:w-1/4">
+     
+      <div class="flex flex-col">
         <div class="flex items-center gap-x-1">
           <img src="../assets/images/office1-icon.svg" class="h-4 xl:h-6" alt="">
-          <span class="text-[#3D0075] font-bold text-base xl:text-lg">Office Address</span>
+          <span class="text-[#3D0075] font-bold text-base xl:text-lg">HQ Address</span>
         </div>
         <span class="text-[#3D0075] text-base xl:text-lg">1150 Nw 72nd Ave Tower | Miami, Florida 33126</span>
       </div>
-      <div class="flex flex-col xl:w-1/4">
+      <!-- <div class="flex flex-col xl:w-1/3">
         <div class="flex items-center gap-x-1">
           <img src="../assets/images/office2-icon.svg" class="h-4 xl:h-6" alt="">
           <span class="text-[#3D0075] font-bold text-base xl:text-lg">Office Address</span>
         </div>
         <span class="text-[#3D0075] text-base xl:text-lg">Nuevos Horizontes Business Center, San Pedro Sula, Honduras
           13001</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
