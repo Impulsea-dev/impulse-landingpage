@@ -6,7 +6,7 @@
                 <div
                     class="pt-60 md:pt-32 2xl:pt-40 px-10 md:pl-40 md:w-[600px] lg:w-[650px] xl:w-[850px] text-center md:text-start">
                     <h1
-                        class="text-black-900 md:text-white text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold pb-6 font-Monda">
+                        class="text-black-900 md:text-white text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extrabold pb-6 font-Monda">
                         THE
                         REVENUE
                         DRIVEN AI CLOUD FOR

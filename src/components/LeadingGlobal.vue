@@ -7,7 +7,8 @@
             </span>
         </div>
         <CardSelectedItem :items="benifits" class="pb-20" />
-        <div class="absolute inset-x-0 top-0 md:-translate-y-20 -2xl:translate-y-32 bg-white h-32 xl:block hidden md:rounded-t-[8rem]">
+        <div
+            class="absolute inset-x-0 top-0 xl:-translate-y-6 2xl:-translate-y-20 bg-white xl:block hidden md:rounded-t-[8rem]">
             <div
                 class="flex justify-center text-[#3D0075] font-bold text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl py-14 w-2/3 mx-auto text-center">
                 <span class="animate-pulse">
