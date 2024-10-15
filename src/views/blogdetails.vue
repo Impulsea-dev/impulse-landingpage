@@ -2,7 +2,7 @@
   <div>
     <section class="l-section text-black-900" data-header-color="black" data-header-bg="white"></section>
     <div class="flex flex-wrap flex-col justify-center items-end w-[100vw] mt-32" v-if="blogcontent">
-      <img class="w-full h-[486px] object-cover overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 relative"
+      <img class="w-full h-[486px] object-fill !p-0 !m-0 md:!-top-10 !-top-32 relative"
         :src="blogcontent.header" />
       <!-- <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
       <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
