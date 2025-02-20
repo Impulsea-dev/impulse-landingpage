@@ -44,7 +44,7 @@
                   <img src="../assets/images/email-icon.svg" class="h-4 xl:h-6" alt="">
                   <span class="text-[#3D0075] font-bold text-base xl:text-lg">Email</span>
                 </div>
-                <span class="text-[#3D0075] text-base xl:text-lg">sales@impulsecloud.io</span>
+                <span class="text-[#3D0075] text-base xl:text-lg">bmolina@impulse.ky</span>
               </div>
               <div class="flex flex-col">
                 <div class="flex items-center gap-x-1">
@@ -65,7 +65,7 @@
 
     <div
       class="bg-[#F6F6F6] shadow-2xl flex justify-between flex-wrap gap-4 items-center mx-2 xl:mx-10 my-10 px-10 xl:px-20 py-10">
-     
+
       <div class="flex flex-col">
         <div class="flex items-center gap-x-1">
           <img src="../assets/images/office1-icon.svg" class="h-4 xl:h-6" alt="">
