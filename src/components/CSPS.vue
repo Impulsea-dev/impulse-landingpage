@@ -3,11 +3,11 @@
         data-header-color="black" data-header-bg="white">
         <div class="animated-container opacity-0">
             <div
-                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-5xl py-16 xl:py-32 w-1/2 mx-auto text-center">
-                The world’s only revenue-focused operational system for CSPs
+                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-5xl pt-16 pb-10 w-1/2 mx-auto text-center">
+                What Makes Us Different 
             </div>
             <div class="flex flex-col items-center">
-                <div class="flex flex-col gap-y-2 md:gap-y-5 xl:gap-y-10 text-white details-container mx-10 xl:ml-40">
+                <div class="flex flex-col gap-y-2 md:gap-y-5 xl:gap-y-6 text-white details-container">
                     <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
                         <summary class="text-lg sm:text-xl xl:text-3xl font-bold font-Monda">{{ re.title }}</summary>
                         <p class="pt-4 max-w-md 2xl:max-w-2xl font-Monda">{{ re.details }}</p>
@@ -19,10 +19,10 @@
         </div>
 
 
-        <div class="flex justify-center py-10 md:py-20">
-            <a href="https://impulse.na.chilipiper.com/book/me/brian-molina?type=impulse-introduction" target="_blank"
-                class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer mt-20
-                font-Monda">Learn
+        <div class="flex justify-center py-10">
+            <a href="https://meetings.hubspot.com/brian-molina/impulse-introduction" target="_blank"
+                class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer
+                font-Monda mt-5">Learn
                 more
                 about
                 Impulse Services ></a>
@@ -38,20 +38,20 @@ import { onMounted, ref } from "vue"
 import Blocks from "./Blocks.vue"
 const reqs = [
     {
-        title: "Simplify operations and increase revenue",
-        details: "Impulse Pay makes running your business a breeze. We handle everything from onboarding and coordinating installs to complex billing. Boost your efficiency, improve your NPS, and speed up your GTM with our all-in-one solution."
+        title: "Built for CSPs",
+        details: "Not another general CRM. We speak SNMP, bandwidth, IPs, ARPU, and NPS."
     },
     {
-        title: "Transform into a revenue driven organization",
-        details: "Impulse CRM gathers data from all your customer interactions—calls, SMS, emails, in-person meetings, and more—giving you a complete picture of their needs. Empower your sales team to sell more effectively."
+        title: "Sales Acceleration",
+        details: "Spot customer needs before they call. Trigger offers before they churn"
     },
     {
-        title: "Revenue-focused insights",
-        details: "Easily identify revenue opportunities, bandwidth needs, circuit upgrades, top-selling packages, and untapped potential with our proprietary Sales AI."
+        title: "Live Network Intelligence",
+        details: "Real-time dashboards across performance, uptime, and consumption."
     },
     {
-        title: "Plug and play network integrations",
-        details: "We integrate seamlessly with your preferred GPON, Wireless, and COAX solutions using our plug-and-play technology. Our system also supports the latest IoT devices and smart home technologies, ensuring a comprehensive and hassle-free setup."
+        title: "Retention & Monetization ",
+        details: "Smart alerts when customers exceed usage, go offline, or signal risk."
     },
     {
         title: "Streamline your processes",
