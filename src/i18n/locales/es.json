@@ -1,5 +1,64 @@
 {
     "en":"es",
+    "titleLanding":"LA PLATAFORMA DE INTELIGENCIA DE INGRESOS AI PARA TELECOMUNICACIONES",
+    "subtitleLanding":"Aumente las ventas, reduzca la pérdida de clientes y consiga un crecimiento más inteligente con Impulse, la única plataforma nativa de telecomunicaciones diseñada para impulsar los resultados de ingresos.",
+    "integrationsLansing":"Nuestros socios integradores",
+    "bookDemo":"Reservar una demostración",
+    "homeModule":"Inicio",
+    "aboutModule":"Sobre nosotros",
+    "blogModule":"Blog",
+    "contactUsModule":"Contactanos",
+    "leadingGlobalTitle":"Confiables por parte de líderes globales de telecomunicaciones para transformar las operaciones de ingresos",
+    "leadingGlobalBenefits":{
+        "option1":{
+            "title":"Crecimiento de ingresos, no solo informes",    
+            "subtitle":"Identifique oportunidades de venta adicionales y aumente el ARPU con inteligencia artificial basada en datos, análisis de comportamiento de banda y herramientas de retención proactiva."
+        },
+        "option2":{
+            "title":"AI para equipos de soporte y ventas",
+            "subtitle":"Equipa tus equipos de línea de respaldo con alertas en tiempo real, recomendaciones inteligentes y automatizaciones preconstruidas que impulsan acción, no solo datos."
+        },
+        "option3":{
+            "title":"Integraciones de alta velocidad",
+            "subtitle":"Conecte a tus routers GPON, SNMP, plataformas de facturación, CRM y herramientas de soporte con facilidad. No es necesario reemplazar nada."
+        }
+    },
+    "cspsTitle":"Lo que hace que nos diferenciamos",
+    "cspsDetails":"Aprende más sobre los servicios de Impulse",
+    "cspsOptions":{
+        "option1":{
+            "title":"Construido para CSPs",
+            "details":"No es otro CRM general. Hablamos SNMP, ancho de banda, IPs, ARPU y NPS."
+        },
+        "option2":{
+            "title":"Aceleración de ventas",
+            "details":"Identifique las necesidades de los clientes antes de que llamen. Activa ofertas antes de que se churnen."
+        },
+        "option3":{
+            "title":"Inteligencia en la red en vivo",
+            "details":"Paneles de control en tiempo real en todo el rendimiento, disponibilidad y consumo."
+        },
+        "option4":{
+            "title":"Retención y monetización",
+            "details":"Alertas inteligentes cuando los clientes superen el uso, se desconectan o señalen de riesgo."
+        },
+        "option5":{
+            "title":"Streamline your processes",
+            "details":"Hemos dedicado miles de horas a refinar cada proceso en su organización, creando nuestro software con las mejores prácticas para su negocio, lo que le permite mejorar su puntuación de NPS y aumentar los ingresos."
+        }        
+    }, 
+    "revenueResources":"Recursos",
+    "revenuePotencialTitle":"Desbloquee la potencial de ingresos de su equipo",
+    "revenueListen":"Escuchar en",
+    "impulseActionTitle":"Listo para ver Impulse en acción?",
+    "mission":"Nuestra misión",
+    "missionTitle":"La industria de las telecomunicaciones tiene un vasto potencial sin explotar.", 
+    "missionDescription":"En Impulse, nuestra misión es impulsar a los proveedores de servicios de Internet pequeños y medianos con la tecnología de las últimas generaciones que necesitan para sobrevivir. Mejorando su eficiencia operativa y su rentabilidad, nos ayuda a estos proveedores a conectar más personas, sostener sus negocios y contribuir a una internet descentralizada que beneficie a todos",
+    "vision":"Nuestra visión",
+    "visionTitle":"Nuestra visión es ser el principal proveedor de soluciones de telecomunicaciones a nivel mundial.",
+    "visionDescription":"Estamos comprometidos en desarrollar la tecnología, herramientas y servicios más innovadores para nuestros socios, y nos dedicamos a hacer realidad esta visión. Constantemente buscamos nuevo talento y tecnologías innovadoras para ayudarnos a alcanzar nuestra meta, y nuestros socios se beneficiarán de nuestra búsqueda constante de la excelencia.",
+    "contactTouch":"Contáctanos",
+    "contactTitle":"Facilítenos sus datos y nos pondremos en contacto con usted lo antes posible.",
     "telcoslog":"La especialización en telecomunicaciones se integra con la innovación SaaS.",
     "indexIncrease1":"Aumente sus",
     "indexIncrease2":"Ingresos en Telecom",

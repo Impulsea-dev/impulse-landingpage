@@ -4,7 +4,7 @@
         <div class="animated-container opacity-0">
             <div
                 class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-5xl pt-16 pb-10 w-1/2 mx-auto text-center">
-                What Makes Us Different 
+                {{ $t('cspsTitle') }}
             </div>
             <div class="flex flex-col items-center">
                 <div class="flex flex-col gap-y-2 md:gap-y-5 xl:gap-y-6 text-white details-container">
@@ -22,42 +22,41 @@
         <div class="flex justify-center py-10">
             <a href="https://meetings.hubspot.com/brian-molina/impulse-introduction" target="_blank"
                 class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer
-                font-Monda mt-5">Learn
-                more
-                about
-                Impulse Services ></a>
+                font-Monda mt-5">{{ $t('cspsDetails') }} ></a>
         </div>
     </section>
 </template>
 
 <script setup>
+import { onMounted, ref } from "vue"
 import ModalInAction from "@/components/ModalInAction.vue"
 import useIntersectionObserver from '@/composables/useIntersectionObserver';
-
-import { onMounted, ref } from "vue"
+import { useI18n } from 'vue-i18n' 
+const { t } = useI18n()
 import Blocks from "./Blocks.vue"
-const reqs = [
+import { computed } from "vue";
+const reqs = computed(() => [
     {
-        title: "Built for CSPs",
-        details: "Not another general CRM. We speak SNMP, bandwidth, IPs, ARPU, and NPS."
+        title: t('cspsOptions.option1.title'),
+        details: t('cspsOptions.option1.details')           
     },
     {
-        title: "Sales Acceleration",
-        details: "Spot customer needs before they call. Trigger offers before they churn"
+        title: t('cspsOptions.option2.title'),
+        details: t('cspsOptions.option2.details')
     },
     {
-        title: "Live Network Intelligence",
-        details: "Real-time dashboards across performance, uptime, and consumption."
+        title: t('cspsOptions.option3.title'),
+        details: t('cspsOptions.option3.details')
     },
     {
-        title: "Retention & Monetization ",
-        details: "Smart alerts when customers exceed usage, go offline, or signal risk."
+        title: t('cspsOptions.option4.title'),
+        details: t('cspsOptions.option4.details')
     },
     {
-        title: "Streamline your processes",
-        details: "We've dedicated thousands of hours to refining every process in your organization, crafting our software stack with the best practices for your business, enabling you to improve your NPS score and boost revenue."
+        title: t('cspsOptions.option5.title'),
+        details: t('cspsOptions.option5.details')
     }
-];
+]);
 
 const { observe } = useIntersectionObserver('animate-fade-up');
 onMounted(() => {

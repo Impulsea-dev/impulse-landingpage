@@ -4,26 +4,24 @@
     </div>
 </template>
 <script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 import CardSelectedItem from "@/components/CardSelectedItem.vue"
 import mission from "@/assets/images/mission.svg"
 import vision from "@/assets/images/vision.svg"
-const items = [
+import { computed } from 'vue'
+const items = computed(() => [
     {
-        title: 'Our Mission',
-        subtitle: 'The telecommunications industry holds vast untapped potential.',
-        subtitledes: `At Impulse, our mission is to empower small and medium Internet Service Providers (ISPs) with the 
-        cutting-edge technology they need to thrive. By enhancing their operational efficiency and profitability, 
-        we help these ISPs connect more people, sustain their businesses, and contribute to a decentralized internet 
-        that benefits all`,
+        title:t('mission'),
+        subtitle: t('missionTitle'),
+        subtitledes: t('missionDescription'),
         img: mission
-
     },
     {
-        title: 'Our Vision',
-        subtitle: 'Our vision is to be the leading provider of telecom solutions worldwide.',
-        subtitledes: `To create a future where the internet remains a decentralized space, empowering communities, 
-        fostering innovation, and ensuring equal access to opportunities for everyone, 
-        regardless of their location or circumstances.`,
+        title: t('vision'),
+        subtitle: t('visionTitle'),
+        subtitledes: t('visionDescription'),
         img: vision
-    }]
+    },
+])
 </script>

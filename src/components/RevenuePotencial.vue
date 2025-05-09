@@ -3,9 +3,8 @@
         <div class="mx-5 md:mx-20">
             <div class="flex flex-col lg:flex-row justify-between mt-20 md:mt-40 gap-4 relative">
                 <div class="flex flex-col gap-y-2">
-                    <span class="text-[#7F39E9] text-xl">Resources</span>
-                    <span class="text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl xl:w-2/3 text-[#3D0075] font-bold">Unlock your team’s
-                        revenue potential</span>
+                    <span class="text-[#7F39E9] text-xl">{{ $t('revenueResources') }}</span>
+                    <span class="text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl xl:w-2/3 text-[#3D0075] font-bold">{{ $t('revenuePotencialTitle') }}</span>
                 </div>
                 <div class="flex flex-col md:flex-row flex-grow gap-4">
                     <ImpulseFirstNew />
@@ -18,7 +17,7 @@
                     <div class="flex flex-row items-center gap-x-2">
                         <img src="../assets/images/podcast.svg" class="w-8 md:w-10" alt="">
                         <div class="flex flex-col">
-                            <span class="text-white/80 text-xs md:text-base">Listen on</span>
+                            <span class="text-white/80 text-xs md:text-base">{{ $t('revenueListen') }}</span>
                             <span class="text-white font-bold text-xs md:text-base">Impulse Podcast</span>
                         </div>
                     </div>
@@ -28,7 +27,7 @@
                     <div class="flex flex-row items-center gap-x-2">
                         <img src="../assets/images/youtube.svg" class="w-8 md:w-10" alt="">
                         <div class="flex flex-col">
-                            <span class="text-white/80 text-xs md:text-base">Listen on</span>
+                            <span class="text-white/80 text-xs md:text-base">{{ $t('revenueListen') }}</span>
                             <span class="text-white font-bold text-xs md:text-base">Youtube</span>
                         </div>
                     </div>
@@ -42,4 +41,6 @@
 <script setup>
 import ImpulseFirstBlog from "@/components/ImpulseFirstBlog.vue"
 import ImpulseFirstNew from "@/components/ImpulseFirstNew.vue"
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>

@@ -9,10 +9,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-6">
           <form class="l-section space-y-4" @submit.prevent="onSubmit" ref="form" data-header-color="black"
             data-header-bg="white">
-            <span class="text-[#3D0075] text-base md:text-lg xl:text-xl font-medium">Please provide the details and
-              we'll
-              promptly follow up with
-              you.</span>
+            <span class="text-[#3D0075] text-base md:text-lg xl:text-xl font-medium">{{ $t('contactTitle') }}</span>
             <Textinput :label="$t('telemetricsForm-4')" name="from_name" type="text"
               :classLabel="'text-[#3D0075] font-bold text-base xl:text-lg'"
               :classInput="'border-[#8791A1] rounded-md placeholder:text-lg'" :placeholder="$t('telemetricsForm-4')"
@@ -96,6 +93,7 @@ import * as yup from "yup";
 import { ref, inject, onMounted } from 'vue';
 import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
 import axios from "axios"
+import { useI18n } from 'vue-i18n'
 
 export default {
   components: {
@@ -125,6 +123,7 @@ export default {
   setup() {
     const swal = inject('$swal')
     const form = ref(null);
+    const { t } = useI18n()
 
 
     const schema = yup.object({

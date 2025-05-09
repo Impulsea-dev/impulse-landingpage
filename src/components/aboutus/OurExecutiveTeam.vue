@@ -37,18 +37,19 @@ import Rob from "@/assets/images/svgs/rob.jpg"
 import { useI18n } from 'vue-i18n'
 import Icon from "@/components/Icon"
 import { ref } from "vue"
+import { computed } from "vue"
 const { t } = useI18n()
 
-const teams = ref([{
+const teams = computed(() => [{
     name: 'Brian Molina',
-    position: 'Impulse Founder and CEO',
-    description: `Software Engineer and Technologist with 15 years of telecom and technology experience. Developed apps with millions of downloads, successfully exited two companies. Top sales executive at multiple CSP’s.`,
+    position: t('aboutUsExecutiveTeamFounderCEOTitle'),
+    description:t('aboutUsExecutiveTeamFounderCEODescription'),
     img: Brian,
     linkedin: `https://www.linkedin.com/in/brian-molina-b91a46152/`
 }, {
     name: 'Rob McNabb',
-    position: 'Co-Founder and NED',
-    description: `Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed`,
+    position: t('aboutUsExecutiveTeamCOFounderTitle'),
+    description:t('aboutUsExecutiveTeamCOFounderDescription'),
     img: Rob,
     linkedin: `https://www.linkedin.com/in/robmcnabb/`
 }])

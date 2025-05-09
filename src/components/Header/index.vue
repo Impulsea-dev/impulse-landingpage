@@ -7,22 +7,22 @@
     <nav class="hidden md:flex">
       <ul class="flex text-base [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current font-medium
                 [&>li]:transition-colors [&>li]:duration-500">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/aboutus">About Us</router-link></li>
+        <li><router-link to="/">{{ $t('homeModule') }}</router-link></li>
+        <li><router-link to="/aboutus">{{ $t('aboutModule') }}</router-link></li>
         <!-- <li> <router-link to="/services">What We Do</router-link></li> -->
-        <li><router-link to="/blog">Blog</router-link></li>
+        <li><router-link to="/blog">{{ $t('blogModule') }}</router-link></li>
       </ul>
     </nav>
     <nav class="hidden md:flex flex-grow justify-end basis-0">
-      <ul class="flex text-sm [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current
+      <ul class="flex text-sm justify-center items-center [&>li]:inline-block [&>li]:px-2 [&>li]:py-2 [&>li]:text-current
                 [&>li]:transition-colors [&>li]:duration-500">
-        <!-- <li>
+        <li>
           <LanguageVue />
-        </li> -->
+        </li>
         <li>
           <ButtonProgress :to="'/contactus'"
             :class="'normal-case px-4 py-2 text-sm md:text-base bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none'">
-            Contact Us
+            {{ $t('contactUsModule') }}
           </ButtonProgress>
         </li>
       </ul>
@@ -83,6 +83,7 @@ import ButtonProgress from "@/components/ButtonProgress.vue"
 import { useThemeSettingsStore } from "@/store/themeSettings";
 import { useRoute } from "vue-router";
 import { nextTick, watch } from "vue";
+import { useI18n } from 'vue-i18n'
 export default {
   mixins: [window],
   components: {
@@ -106,6 +107,7 @@ export default {
     this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
   },
   setup() {
+    const { t } = useI18n()
     const route = useRoute();
     const themeSettingsStore = useThemeSettingsStore()
 

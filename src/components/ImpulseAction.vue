@@ -6,7 +6,7 @@
                     alt="Action Image">
                 <div class="flex flex-col py-4 px-10">
                     <span class="text-2xl md:text-3xl xl:text-5xl font-bold text-[#000] mt-10 md:mt-20 xl:w-2/3">
-                        Ready to see Impulse in Action?
+                       {{ $t('impulseActionTitle') }}
                     </span>
                     <form @submit.prevent="sendEmail" class="mt-4 md:mt-10">
                         <input v-model="email" type="email" id="scales" name="scales" placeholder="Your Email"
@@ -32,7 +32,7 @@
                                 <span class="inline-block skew-x-0">
                                     <div class="flex flex-row items-center gap-x-1">
                                         <Icon icon="line-md:loading-twotone-loop" width="25" v-if="loading" />
-                                        REQUEST A DEMO
+                                        {{ $t('bookDemo') }}
                                     </div>
                                 </span>
                             </button>
@@ -48,12 +48,14 @@ import { Icon } from '@iconify/vue';
 import axios from "axios";
 import { useToast } from "vue-toastification";
 import { ref, onMounted } from "vue";
+import { useI18n } from 'vue-i18n'
 export default {
     components: { Icon },
     setup() {
         const email = ref(null)
         const loading = ref(false)
         const toast = useToast();
+        const { t } = useI18n()
         return {
             email,
             loading,

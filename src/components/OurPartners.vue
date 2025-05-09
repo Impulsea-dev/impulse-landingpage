@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="text-lg text-black-500 md:text-white font-bold mb-2 2xl:mb-4 tracking-wider">Our Integration Partners</h2>
+        <h2 class="text-lg text-black-500 md:text-white font-bold mb-2 2xl:mb-4 tracking-wider">{{ $t('integrationsLansing') }}</h2>
         <div class="hidden md:flex justify-center items-center md:gap-10 lg:gap-20 xl:gap-28 2xl:gap-40">
             <img src="../assets/images/partners/NOKIA.svg" class="w-16 2xl:w-24" alt="NOKIA">
             <img src="../assets/images/partners/VMWARE.svg" class="w-16 2xl:w-24" alt="VMWARE">
@@ -27,3 +27,8 @@
         </div>
     </div>
 </template>
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
+</script>
