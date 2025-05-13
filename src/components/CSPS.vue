@@ -1,27 +1,34 @@
 <template>
-    <section class="l-section bg-[linear-gradient(180deg,#0575E6_0%,#02298A_84.79%,#021B79_100%)]"
+    <section class="l-section bg-[linear-gradient(180deg,#6B46C1_0%,#805AD5_84.79%,#9F7AEA_100%)]"
         data-header-color="black" data-header-bg="white">
         <div class="animated-container opacity-0">
             <div
-                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-5xl pt-16 pb-10 w-1/2 mx-auto text-center">
+                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-4xl pt-16 pb-10 w-1/2 mx-auto text-center">
                 {{ $t('cspsTitle') }}
             </div>
-            <div class="flex flex-col items-center">
-                <div class="flex flex-col gap-y-2 md:gap-y-5 xl:gap-y-6 text-white details-container">
-                    <details v-for="(re, index) in reqs" :key="index" name="req" @click="active = index">
-                        <summary class="text-lg sm:text-xl xl:text-3xl font-bold font-Monda">{{ re.title }}</summary>
-                        <p class="pt-4 max-w-md 2xl:max-w-2xl font-Monda">{{ re.details }}</p>
-                        <!-- <ModalInAction /> -->
-                    </details>
+            <div class="px-4 py-12">
+                <div class="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    <div v-for="(item, idx) in reqs" :key="idx" class="group relative flex flex-col gap-4 cursor-pointer
+               bg-white rounded-2xl p-6 shadow-md transition-colors duration-300
+         hover:bg-gradient-to-br hover:from-[#4299E1] hover:to-[#2B6CB0] hover:text-white">
+                        <div class="flex justify-center items-center">
+                           <Icon :icon="item.icon" class="text-5xl"/>
+                        </div>
+                        <!-- Título -->
+                        <h3 class="text-lg font-bold font-Monda group-hover:text-white transition-colors duration-300">
+                            {{ item.title }}
+                        </h3>
+
+                        <!-- Descripción -->
+                        <p class="text-sm leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
+                            {{ item.details }}
+                        </p>
+                    </div>
                 </div>
-                <!-- <Blocks :active-block="active" :key="active" class="hidden xl:block" /> -->
             </div>
         </div>
-
-
         <div class="flex justify-center py-10">
-            <a href="https://meetings.hubspot.com/brian-molina/impulse-introduction" target="_blank"
-                class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer
+            <a href="https://meetings.hubspot.com/brian-molina/impulse-introduction" target="_blank" class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer
                 font-Monda mt-5">{{ $t('cspsDetails') }} ></a>
         </div>
     </section>
@@ -31,31 +38,36 @@
 import { onMounted, ref } from "vue"
 import ModalInAction from "@/components/ModalInAction.vue"
 import useIntersectionObserver from '@/composables/useIntersectionObserver';
-import { useI18n } from 'vue-i18n' 
+import Icon from '@/components/Icon'
+import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 import Blocks from "./Blocks.vue"
 import { computed } from "vue";
 const reqs = computed(() => [
     {
         title: t('cspsOptions.option1.title'),
-        details: t('cspsOptions.option1.details')           
+        details: t('cspsOptions.option1.details'),
+        icon:'ion:server-outline'
     },
     {
         title: t('cspsOptions.option2.title'),
-        details: t('cspsOptions.option2.details')
+        details: t('cspsOptions.option2.details'),
+        icon: 'basil:lightning-outline'
     },
     {
         title: t('cspsOptions.option3.title'),
-        details: t('cspsOptions.option3.details')
+        details: t('cspsOptions.option3.details'),
+        icon:'prime:chart-bar'
     },
     {
         title: t('cspsOptions.option4.title'),
-        details: t('cspsOptions.option4.details')
+        details: t('cspsOptions.option4.details'),
+        icon: 'ri:currency-line'
     },
-    {
-        title: t('cspsOptions.option5.title'),
-        details: t('cspsOptions.option5.details')
-    }
+    // {
+    //     title: t('cspsOptions.option5.title'),
+    //     details: t('cspsOptions.option5.details')
+    // }
 ]);
 
 const { observe } = useIntersectionObserver('animate-fade-up');
@@ -112,17 +124,5 @@ details[open]>summary~* {
 
 details[open] {
     color: #ffffffb3;
-}
-
-@keyframes sweep {
-    0% {
-        opacity: 0;
-        transform: translateX(-10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 </style>

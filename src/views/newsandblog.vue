@@ -1,7 +1,6 @@
 <template>
     <div>
-        <section class="l-section text-black-900" data-header-color="black" data-header-bg="white"></section>
-        <div class="p-0 lg:p-10 mt-32 mx-5 animate-fade-up animate-delay-300">
+        <div class="p-0 lg:p-10 mt-20 mx-5 animate-fade-up animate-delay-300">
             <div>
                 <SwipperCardFinal :title="$t('blog-2')" />
             </div>
@@ -23,7 +22,6 @@
                     </article>
                 </div>
                 <SkeletonCard v-else />
-
             </div>
         </div>
     </div>

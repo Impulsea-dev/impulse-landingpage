@@ -1,14 +1,13 @@
 <template>
   <div>
-    <section class="mt-32">
+    <section class="pt-20">
       <div
-        class="my-10 bg-[#F6F6F6] px-5 md:px-10 xl:px-20 py-10 shadow-2xl mx-2 xl:mx-10 rounded-md animate-fade-up animate-delay-300">
+        class="my-10 bg-[#F6F6F6] px-5 md:px-10 xl:px-20 py-10 mx-2 xl:mx-10 rounded-md animate-fade-up animate-delay-300 border shadow">
         <span class="flex text-[#3D0075] font-bold text-xl md:text-2xl xl:text-3xl gap-x-1">Get in <span
             class="text-[#0079D8]">Touch</span></span>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-6">
-          <form class="l-section space-y-4" @submit.prevent="onSubmit" ref="form" data-header-color="black"
-            data-header-bg="white">
+          <form class="l-section space-y-4" @submit.prevent="onSubmit" ref="form">
             <span class="text-[#3D0075] text-base md:text-lg xl:text-xl font-medium">{{ $t('contactTitle') }}</span>
             <Textinput :label="$t('telemetricsForm-4')" name="from_name" type="text"
               :classLabel="'text-[#3D0075] font-bold text-base xl:text-lg'"
@@ -61,7 +60,7 @@
     </section>
 
     <div
-      class="bg-[#F6F6F6] shadow-2xl flex justify-between flex-wrap gap-4 items-center mx-2 xl:mx-10 my-10 px-10 xl:px-20 py-10">
+      class="bg-[#F6F6F6] shadow-md border flex justify-between flex-wrap gap-4 items-center mx-2 xl:mx-10 my-10 px-10 xl:px-20 py-10">
 
       <div class="flex flex-col">
         <div class="flex items-center gap-x-1">

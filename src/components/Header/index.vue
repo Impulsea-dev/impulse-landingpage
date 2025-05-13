@@ -1,8 +1,14 @@
 <template>
-  <header id="l-header" class="flex justify-between items-center fixed top-0 w-full py-4 px-5 md:px-10 z-40 md:shadow-base
-  transition-colors duration-500">
+  <header :class="[
+    'flex justify-between items-center fixed top-0 w-full py-4 px-5 md:px-10 z-40 md:shadow-base transition-colors duration-500',
+    route.path === '/' && isScrolled
+      ? 'bg-white text-black-500'
+      : route.path === '/'
+        ? 'bg-transparent text-white'
+        : 'bg-white text-black-500'
+  ]">
     <div class="flex flex-grow basis-0">
-      <Logo :logoC="this.$store.themeSettingsStore.logoColor" v-if="this.$store.themeSettingsStore.logoColor" />
+      <Logo :logo="isScrolled || route.path !== '/'" />
     </div>
     <nav class="hidden md:flex">
       <ul class="flex text-base [&>li]:inline-block [&>li]:px-4 [&>li]:py-2 [&>li]:text-current font-medium
@@ -30,141 +36,37 @@
     <handle-mobile-menu class="flex md:hidden" />
 
   </header>
-  <!-- <header :class="navbarTypeClass()" id="l-header">
-    <div :class="`app-header md:px-6 px-[15px]  shadow-base fixed top-0 z-40 w-full ${borderSwicthClass()} ${this.$store.themeSettingsStore.navbarColor
-    }
-      ${this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1023
-      ? 'h-20'
-      : 'md:py-2 h-14 '
-    }
-      `">
-      <div class="flex justify-between items-center h-full">
-        <div v-if="this.$store.themeSettingsStore.menuLayout === 'vertical'"
-          class="flex items-center md:space-x-4 space-x-2 rtl:space-x-reverse">
-          <button class="ltr:mr-5 rtl:ml-5 text-xl text-slate-900 dark:text-white"
-            v-if="this.$store.themeSettingsStore.sidebarCollasp && window.width > 1023"
-            @click="this.$store.themeSettingsStore.sidebarCollasp = false">
-            <Icon icon="akar-icons:arrow-right" v-if="!this.$store.themeSettingsStore.direction" />
-            <Icon icon="akar-icons:arrow-left" v-if="this.$store.themeSettingsStore.direction" />
-          </button>
-          <MobileLogo v-if="window.width < 1024" />
-
-        </div>
-        <div v-if="this.$store.themeSettingsStore.menuLayout === 'horizontal'"
-          class="flex items-center space-x-4 rtl:space-x-reverse">
-          <Logo v-if="window.width > 1023" />
-          <MobileLogo v-else />
-        </div>
-        <Mainnav class="xl:ml-auto lg:ml-0 lg:flex md:hidden hidden" v-if="this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1024
-    " />
-        <LanguageVue class="pr-3 pl-2" />
-        <div v-if="window.width > 1024">
-          <Button :text="$t('indexContactUs')" btnClass="btn-primary "
-            style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnContackUs" />
-        </div>
-        <div class="nav-tools flex items-center lg:space-x-6 space-x-3 rtl:space-x-reverse">
-
-          <handle-mobile-menu v-if="window.width <= 1024" />
-        </div>
-      </div>
-    </div>
-  </header> -->
 </template>
-<script>
-import Mainnav from "./horizental-nav.vue";
-import Icon from "../Icon";
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import LanguageVue from "./Navtools/Language.vue";
-import Logo from "./Navtools/Logo.vue";
-import MobileLogo from "./Navtools/MobileLogo.vue";
-import window from "@/mixins/window";
-import HandleMobileMenu from "./Navtools/HandleMobileMenu.vue";
-import Button from "@/components/Button";
 import ButtonProgress from "@/components/ButtonProgress.vue"
-import { useThemeSettingsStore } from "@/store/themeSettings";
-import { useRoute } from "vue-router";
-import { nextTick, watch } from "vue";
+import Logo from "./Navtools/Logo.vue";
 import { useI18n } from 'vue-i18n'
-export default {
-  mixins: [window],
-  components: {
+import { useRoute } from 'vue-router'
+import { computed } from 'vue';
+import HandleMobileMenu from "./Navtools/HandleMobileMenu.vue";
 
-    Mainnav,
-    Icon,
-    LanguageVue,
-    Logo,
-    MobileLogo,
-    HandleMobileMenu,
-    Button,
-    ButtonProgress
-  },
-  data() {
-    return {
+const route = useRoute()
+const { t } = useI18n()
 
+const isScrolled = ref(false);
 
-    }
-  },
-  mounted() {
-    this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
-  },
-  setup() {
-    const { t } = useI18n()
-    const route = useRoute();
-    const themeSettingsStore = useThemeSettingsStore()
-
-    const getElements = () => {
-      const elements = document.querySelectorAll('.l-section');
-      console.log(elements);
-      themeSettingsStore.bringAllSections(elements);
-
-    }
-
-
-
-    watch(() => route.path, () => {
-      nextTick(async () => {
-        await getElements();
-      });
-    });
-
-  },
-
-
-  methods: {
-
-    btnContackUs() {
-      this.$router.push({ name: "contactus" })
-    },
-    navbarTypeClass() {
-      switch (this.$store.themeSettingsStore.navbarType) {
-        case "floating":
-          return "floating";
-        case "sticky":
-          return "sticky top-0 z-[999]";
-        case "static":
-          return "static top-0 z-[999]";
-        case "hidden":
-          return "hidden";
-        default:
-          return "sticky top-0";
-      }
-    },
-    borderSwicthClass() {
-      if (
-        this.$store.themeSettingsStore.skin === "bordered" &&
-        this.$store.themeSettingsStore.navbarType !== "floating"
-      ) {
-        return "border-b border-gray-5002 dark:border-slate-700";
-      } else if (
-        this.$store.themeSettingsStore.skin === "bordered" &&
-        this.$store.themeSettingsStore.navbarType === "floating"
-      ) {
-        return "border border-gray-5002 dark:border-slate-700";
-      } else {
-        return "dark:border-b dark:border-slate-700 dark:border-opacity-60";
-      }
-    },
-  },
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 0;
 };
+
+const isScrolledOnHome = computed(() => {
+  return route.path === '/' && isScrolled.value
+})
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+})
 </script>
 <style lang="scss" scoped>
 .floating .app-header {

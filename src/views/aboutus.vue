@@ -1,6 +1,5 @@
 <template>
   <div>
-    <section class="l-section text-black-900" data-header-color="black" data-header-bg="white"></section>
     <OurExecutiveTeam />
     <ImpulseSolution />
     <MissionVision />
@@ -19,7 +18,7 @@ export default {
     MissionVision
   },
   mounted() {
-    this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
+    // this.$store.themeSettingsStore.bringAllSections(document.querySelectorAll('.l-section'))
   },
   setup() {
     const { t } = useI18n()
