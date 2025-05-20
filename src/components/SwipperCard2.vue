@@ -51,7 +51,7 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import img from "@/assets/images/logo/impulse.svg"
+import img from "@/assets/images/logo/impulse.webp"
 import window from "@/mixins/window"
 import BlogServices from "@/services/Blog"
 import { useI18n } from 'vue-i18n'

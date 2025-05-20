@@ -3,7 +3,7 @@
         <Modal :title="$t('newsletters-1')" label="" labelClass="" ref="modal1" centered
             sizeClass="max-w-2xl">
             <div class="text-center flex justify-center mb-4">
-                <img src="@/assets/images/logo/impulse.svg" alt="">
+                <img src="@/assets/images/logo/impulse.webp" alt="">
             </div>
             <div class="text-center text-xl text-white font-semibold mb-4">
                 {{ $t('newsletters-2') }}
@@ -36,7 +36,7 @@
 import Button from "@/components/Button";
 import Modal from "@/components/Modal/Modal";
 import Textinput from "@/components/Textinput";
-import img from "@/assets/images/logo/impulse.svg"
+import img from "@/assets/images/logo/impulse.webp"
 import { ref,onMounted } from "vue";
 import axios from "axios";
 import { useToast } from "vue-toastification";

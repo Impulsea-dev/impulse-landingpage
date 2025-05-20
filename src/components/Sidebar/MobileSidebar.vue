@@ -15,7 +15,7 @@
         />
 
         <img
-          src="@/assets/images/logo/impulse.svg"
+          src="@/assets/images/logo/impulse.webp"
           alt=""
           v-if="this.$store.themeSettingsStore.isDark"
         />

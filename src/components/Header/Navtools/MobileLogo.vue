@@ -1,13 +1,13 @@
 <template>
   <router-link :to="{ name: 'home' }">
     <img
-      src="@/assets/images/logo/impulse.svg"
+      src="@/assets/images/logo/impulse.webp"
       alt="impulse logo"
       v-if="!this.$store.themeSettingsStore.isDark"
     />
 
     <img
-      src="@/assets/images/logo/impulse.svg"
+      src="@/assets/images/logo/impulse.webp"
       alt="impulse logo"
       v-if="this.$store.themeSettingsStore.isDark"
       class="w-auto h-auto" 

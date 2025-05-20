@@ -61,7 +61,7 @@ import 'swiper/css/pagination';
 import img1 from "@/assets/images/bgcode.webp";
 import img2 from "@/assets/images/billingportal.jpeg";
 import img3 from "@/assets/images/linkedin.png";
-import img from "@/assets/images/logo/impulse.svg"
+import img from "@/assets/images/logo/impulse.webp"
 import window from "@/mixins/window"
 import BlogServices from "@/services/Blog"
 const items = ref([

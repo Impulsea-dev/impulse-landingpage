@@ -50,7 +50,7 @@
   import "swiper/css/pagination";
   import "swiper/css/scrollbar";
   import "swiper/css/effect-fade";
-  import img from "@/assets/images/logo/impulse.svg"
+  import img from "@/assets/images/logo/impulse.webp"
 import { ref } from "vue";
   
   // Import Swiper styles

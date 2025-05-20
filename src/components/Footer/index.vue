@@ -3,14 +3,14 @@
     class="flex flex-col md:flex-row justify-center md:justify-between w-full h-60 bg-[#7F39E9] relative overflow-hidden">
     <div class="flex md:hidden px-5 py-5">
       <div>
-        <img src="@/assets/images/logo/impulse.svg" alt="logo" />
+        <img src="@/assets/images/logo/impulse.webp" alt="logo" />
         <span class="text-sm text-white">{{ $t('footer-1') }}</span>
       </div>
     </div>
     <div class="hidden md:block">
       <img src="../../assets/images/bgfooter.svg" class="hidden md:block h-full object-cover" alt="" />
       <div class="absolute top-1/2 left-4">
-        <img src="@/assets/images/logo/impulse.svg" alt="logo" />
+        <img src="@/assets/images/logo/impulse.webp" alt="logo" />
         <span class="text-sm text-white">{{ $t('footer-1') }}</span>
       </div>
     </div>
@@ -58,7 +58,7 @@
       <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-1 space-y-8 md:col-end-6 md:col-span-3">
         <div class="flex-col space-y-4">
           <div class="flex-col ">
-            <img src="@/assets/images/logo/impulse.svg" alt="logo" />
+            <img src="@/assets/images/logo/impulse.webp" alt="logo" />
 
           </div>
           <div class="flex-col text-start  text-base">
