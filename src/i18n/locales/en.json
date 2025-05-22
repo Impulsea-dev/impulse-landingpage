@@ -425,6 +425,8 @@
             "menu-3":"What We Do",
             "menu-4":"Blog",
             "menu-5":"Contact Us",
+            "action1":"I agree to the",
+            "action2":"including to Impulse using my contact details to contact me for marketing purposes.",
             "webDevelopmentInfo": {
                 "impulseWebsiteDesign": {
                   "title1": "Impulse",

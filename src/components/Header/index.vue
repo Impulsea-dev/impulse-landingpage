@@ -23,7 +23,7 @@
       <ul class="flex text-sm justify-center items-center [&>li]:inline-block [&>li]:px-2 [&>li]:py-2 [&>li]:text-current
                 [&>li]:transition-colors [&>li]:duration-500">
         <li>
-          <!-- <LanguageVue /> -->
+          <LanguageVue />
         </li>
         <li>
           <ButtonProgress :to="'/contactus'"

@@ -1,46 +1,46 @@
 {
     "en":"es",
-    "titleLanding":"LA PLATAFORMA DE INTELIGENCIA DE INGRESOS AI PARA TELECOMUNICACIONES",
-    "subtitleLanding":"Aumente las ventas, reduzca la pérdida de clientes y consiga un crecimiento más inteligente con Impulse, la única plataforma nativa de telecomunicaciones diseñada para impulsar los resultados de ingresos.",
-    "integrationsLansing":"Nuestros socios integradores",
-    "bookDemo":"Reservar una demostración",
+    "titleLanding":"MÁS VENTAS. MENOS CANCELACIONES. TODO CON IA.",
+    "subtitleLanding":"Cierra más negocios, reduce cancelaciones y acelera el crecimiento con Impulse — la única plataforma creada exclusivamente para empresas de telecomunicaciones.",
+    "integrationsLansing":"Nuestros socios de integración",
+    "bookDemo":"Conoce la plataforma",
     "homeModule":"Inicio",
     "aboutModule":"Sobre nosotros",
     "blogModule":"Blog",
     "contactUsModule":"Contactanos",
-    "leadingGlobalTitle":"Confiables por parte de líderes globales de telecomunicaciones para transformar las operaciones de ingresos",
+    "leadingGlobalTitle":"La Plataforma que las Telecoms Globales Confían Para Crecer",
     "leadingGlobalBenefits":{
         "option1":{
-            "title":"Crecimiento de ingresos, no solo informes",    
-            "subtitle":"Identifique oportunidades de venta adicionales y aumente el ARPU con inteligencia artificial basada en datos, análisis de comportamiento de banda y herramientas de retención proactiva."
+            "title":"Más ingresos, menos papeleo.",    
+            "subtitle":"Detecta oportunidades de venta adicional y aumenta tu ARPU con inteligencia artificial, análisis de comportamiento de red y herramientas proactivas de retención."
         },
         "option2":{
-            "title":"AI para equipos de soporte y ventas",
-            "subtitle":"Equipa tus equipos de línea de respaldo con alertas en tiempo real, recomendaciones inteligentes y automatizaciones preconstruidas que impulsan acción, no solo datos."
+            "title":"IA para ventas y soporte",
+            "subtitle":"Impulsa a tu equipo con IA: alertas, recomendaciones y llamadas hechas por agentes inteligentes que generan acción, no solo datos."
         },
         "option3":{
-            "title":"Integraciones de alta velocidad",
-            "subtitle":"Conecte a tus routers GPON, SNMP, plataformas de facturación, CRM y herramientas de soporte con facilidad. No es necesario reemplazar nada."
+            "title":"Integraciones Plug & Play",
+            "subtitle":"Conéctate fácilmente a tu infraestructura existente: GPON, routers con SNMP, plataformas de facturación, CRMs y herramientas de soporte. Sin necesidad de reemplazar nada."
         }
     },
     "cspsTitle":"Lo que hace que nos diferenciamos",
-    "cspsDetails":"Aprende más sobre los servicios de Impulse",
+    "cspsDetails":"Aprende más sobre los Servicios de Impulse",
     "cspsOptions":{
         "option1":{
             "title":"Construido para CSPs",
             "details":"No es otro CRM general. Hablamos SNMP, ancho de banda, IPs, ARPU y NPS."
         },
         "option2":{
-            "title":"Aceleración de ventas",
-            "details":"Identifique las necesidades de los clientes antes de que llamen. Activa ofertas antes de que se churnen."
+            "title":"Aceleración de Ventas",
+            "details":"Anticípate a las necesidades del cliente antes de que llamen. Activa ofertas de retención antes de que cancelen."
         },
         "option3":{
-            "title":"Inteligencia en la red en vivo",
-            "details":"Paneles de control en tiempo real en todo el rendimiento, disponibilidad y consumo."
+            "title":"Inteligencia de Red en Tiempo Real",
+            "details":"Dashboards en tiempo real de desempeño, uptime y uso de recursos."
         },
         "option4":{
-            "title":"Retención y monetización",
-            "details":"Alertas inteligentes cuando los clientes superen el uso, se desconectan o señalen de riesgo."
+            "title":"Retención y Monetización",
+            "details":"Alertas inteligentes cuando un cliente excede su plan, pierde conexión o muestra comportamiento de riesgo."
         },
         "option5":{
             "title":"Streamline your processes",
@@ -48,9 +48,9 @@
         }        
     }, 
     "revenueResources":"Recursos",
-    "revenuePotencialTitle":"Desbloquee la potencial de ingresos de su equipo",
+    "revenuePotencialTitle":"El potencial de tu equipo, desbloqueado",
     "revenueListen":"Escuchar en",
-    "impulseActionTitle":"Listo para ver Impulse en acción?",
+    "impulseActionTitle":"¿Quieres ver cómo funciona Impulse?",
     "mission":"Nuestra misión",
     "missionTitle":"La industria de las telecomunicaciones tiene un vasto potencial sin explotar.", 
     "missionDescription":"En Impulse, nuestra misión es impulsar a los proveedores de servicios de Internet pequeños y medianos con la tecnología de las últimas generaciones que necesitan para sobrevivir. Mejorando su eficiencia operativa y su rentabilidad, nos ayuda a estos proveedores a conectar más personas, sostener sus negocios y contribuir a una internet descentralizada que beneficie a todos",
@@ -422,6 +422,8 @@
             "menu-2":"Conócenos",
             "menu-3":"Servicios",
             "menu-4":"Blog",
+             "action1":"Declaro que acepto la",
+            "action2":"y autorizo a Impulse a utilizar mis datos de contacto para comunicarse conmigo con fines comerciales.",
             "webDevelopmentInfo": {
                 "impulseWebsiteDesign": {
                   "title1": "Impulse",

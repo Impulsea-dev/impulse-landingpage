@@ -15,11 +15,11 @@
                         <div class="flex gap-x-1 mt-6">
                             <input type="checkbox" id="privacy" required>
                             <label for="privacy" class="md:w-2/3 text-[#000000]">
-                                I agree to the
+                                {{ $t('action1') }}
                                 <router-link to="/impulse-privacy" class="text-[#0079D8] hover:underline">
-                                    privacy policy
+                                    {{ $t('footer-2') }}
                                 </router-link>
-                                including to Impulse using my contact details to contact me for marketing purposes.
+                               {{ $t('action2') }}
                             </label>
                         </div>
                         <div class="my-10">
