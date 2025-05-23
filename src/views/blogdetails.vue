@@ -2,8 +2,8 @@
   <div>
     <section class="l-section text-black-900" data-header-color="black" data-header-bg="white"></section>
     <div class="flex flex-wrap flex-col justify-center items-end w-[100vw] mt-32" v-if="blogcontent">
-      <img class="w-full h-[486px] object-fill !p-0 !m-0 md:!-top-10 !-top-32 relative"
-        :src="blogcontent.header" />
+      <!-- <img class="w-full h-[486px] object-fill !p-0 !m-0 md:!-top-10 !-top-32 relative"
+        :src="blogcontent.header" /> -->
       <!-- <div class="flex flex-col justify-start items-start absolute top-72 gap-4">
       <div class="flex flex-col justify-center items-start bottom-0 left-0 flex-grow-0 relative gap-1 space-y-4">
         <p class="flex-grow-0  md:text-base text-sm font-semibold text-left">
@@ -41,9 +41,14 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-10">
+      <!-- <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-10">
         <div></div>
         <div class="col-span-1 md:col-span-2 lg:col-span-4 pl-2 pr-8 md:p-0" v-html="blogcontent.content" />
+      </div> -->
+      <div class="flex flex-col space-y-10 mx-auto max-w-6xl">
+        <img class="w-full h-80 object-contain aspect-square rounded-sm"
+        :src="blogcontent.header" />
+        <div v-html="blogcontent.content"></div>
       </div>
     </div>
   </div>

@@ -13,10 +13,11 @@
 
             <div class="flex flex-col basis-1/4 gap-4">
                 <p v-html="firstItem.description" class="text-base xl:text-xl grow text-black-500"></p>
-                <ButtonProgress :to="firstItem.titleurl" :target="'_blank'"
-                    :class="'px-4 md:px-6 py-2 md:py-3 text-sm md:text-base xl:text-xl bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none font-bold'">
+                <router-link :to="firstItem.titleurl"
+                    class="px-4 md:px-6 py-2 md:py-3 text-sm md:text-base xl:text-xl bg-[#7F39E9]  text-white !border-none font-bold rounded-full flex justify-center items-center
+                    hover:opacity-80 transition-all duration-300">
                     OPEN BLOG POST
-                </ButtonProgress>
+                </router-link>
             </div>
 
         </div>
