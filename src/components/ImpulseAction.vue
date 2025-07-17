@@ -6,29 +6,29 @@
                     alt="Action Image">
                 <div class="flex flex-col py-4 px-10">
                     <span class="text-2xl md:text-3xl xl:text-5xl font-bold text-[#000] mt-10 md:mt-20 xl:w-2/3">
-                       {{ $t('impulseActionTitle') }}
+                        {{ $t('impulseActionTitle') }}
                     </span>
                     <form @submit.prevent="sendEmail" class="mt-4 md:mt-10">
                         <input v-model="email" type="email" id="scales" name="scales" placeholder="Your Email"
                             class="rounded-xl p-2 text-lg border text-[#858C94] border-[#8791A1] w-full xl:w-[420px]"
                             required />
                         <div class="flex gap-x-1 mt-6">
-                            <input type="checkbox" id="privacy" required>
+                            <input v-model="checkbox" type="checkbox" id="privacy" required>
                             <label for="privacy" class="md:w-2/3 text-[#000000]">
                                 {{ $t('action1') }}
                                 <router-link to="/impulse-privacy" class="text-[#0079D8] hover:underline">
                                     {{ $t('footer-2') }}
                                 </router-link>
-                               {{ $t('action2') }}
+                                {{ $t('action2') }}
                             </label>
                         </div>
                         <div class="my-10">
-                            <button type="submit"
-                                class="inline-block skew-x-0 text-center cursor-pointer rounded-full hover:before:rounded-full border-[1.5px] border-black before:absolute before:-inset-0.5 before:origin-right 
-        before:scale-x-0 hover:text-white hover:before:origin-left hover:before:scale-x-100 
-        ease-in motion-safe:transition-[color,transform] motion-safe:before:transition-transform motion-safe:before:duration-300 
-        motion-safe:before:ease-in motion-safe:hover:delay-100 motion-safe:hover:ease-out motion-safe:hover:before:delay-100 
-        motion-safe:hover:before:ease-out motion-safe:before:rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base xl:text-xl bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none font-bold">
+                            <button type="submit" :disabled="!email || !checkbox" class="inline-block skew-x-0 text-center cursor-pointer rounded-full hover:before:rounded-full border-[1.5px] border-black before:absolute before:-inset-0.5 before:origin-right 
+    before:scale-x-0 hover:text-white hover:before:origin-left hover:before:scale-x-100 
+    ease-in motion-safe:transition-[color,transform] motion-safe:before:transition-transform motion-safe:before:duration-300 
+    motion-safe:before:ease-in motion-safe:hover:delay-100 motion-safe:hover:ease-out motion-safe:hover:before:delay-100 
+    motion-safe:hover:before:ease-out motion-safe:before:rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base xl:text-xl bg-[#7F39E9] before:bg-[#662ebb] text-white !border-none font-bold
+    disabled:opacity-60 disabled:cursor-not-allowed">
                                 <span class="inline-block skew-x-0">
                                     <div class="flex flex-row items-center gap-x-1">
                                         <Icon icon="line-md:loading-twotone-loop" width="25" v-if="loading" />
@@ -53,12 +53,14 @@ export default {
     components: { Icon },
     setup() {
         const email = ref(null)
+        const checkbox = ref(false)
         const loading = ref(false)
         const toast = useToast();
         const { t } = useI18n()
         return {
             email,
             loading,
+            checkbox,
             toast
         }
     },
@@ -69,7 +71,7 @@ export default {
             axios.post('https://api.brevo.com/v3/contacts', {
                 email: this.email,
                 listIds: [2],
-                updateEnabled: true, 
+                updateEnabled: true,
             }, {
                 headers: {
                     'Content-Type': 'application/json',
