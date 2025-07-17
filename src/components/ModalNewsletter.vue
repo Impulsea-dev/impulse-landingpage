@@ -90,7 +90,8 @@ export default {
             const vm=this;
             axios.post('https://api.brevo.com/v3/contacts', {
                 email: this.email,
-                listIds:[2]
+                listIds:[2],
+                  updateEnabled: true, 
             }, {
                 headers: {
                     'Content-Type': 'application/json',
@@ -119,7 +120,7 @@ export default {
                 .catch(function (error) {
                     vm.loading=false
                     vm.$refs.modal1.closeModal();
-                    vm.toast.error('Wrong Email Address or Already Registered!', {
+                    vm.toast.error('There was a problem subscribing. Please try again.', {
                         position: "top-right",
                         timeout: 4000,
                         closeOnClick: true,
