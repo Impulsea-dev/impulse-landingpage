@@ -4,13 +4,13 @@
             <div class="mx-5 md:mx-10 xl:mx-20 animate-fade-up animate-delay-300">
                 <span class="text-[#3D0075] text-2xl md:text-4xl font-bold flex justify-center">{{
                     $t('aboutUsExecutiveTeamTitle')
-                    }}</span>
-                <div class="flex flex-row justify-center flex-wrap xl:flex-nowrap mt-10 pb-20 md-pb-0 md:mt-20 gap-5">
+                }}</span>
+                <div class="grid xl:grid-cols-2 mt-10 pb-20 md-pb-0 md:mt-20 gap-5">
                     <article
                         class="bg-[#F6F6F6] shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl px-6 py-4 flex justify-center items-center"
                         v-for="(team, i) in teams" :key="i">
                         <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                            <img :src="team.img" alt="" class="w-60 h-60 rounded" />
+                            <img :src="team.img" alt="" class="w-96 h-60 rounded object-cover" />
                             <div class="flex flex-col justify-center gap-2 items-center md:items-start">
                                 <div class="flex items-center gap-1">
                                     <span class="text-lg md:text-xl font-bold text-black-500">{{ team.name }}</span>
@@ -34,6 +34,7 @@
 <script setup>
 import Brian from "@/assets/images/svgs/brian.jpg"
 import Rob from "@/assets/images/svgs/rob.jpg"
+import Tim from "@/assets/images/svgs/Tim.jpg"
 import { useI18n } from 'vue-i18n'
 import Icon from "@/components/Icon"
 import { ref } from "vue"
@@ -43,15 +44,22 @@ const { t } = useI18n()
 const teams = computed(() => [{
     name: 'Brian Molina',
     position: t('aboutUsExecutiveTeamFounderCEOTitle'),
-    description:t('aboutUsExecutiveTeamFounderCEODescription'),
+    description: t('aboutUsExecutiveTeamFounderCEODescription'),
     img: Brian,
     linkedin: `https://www.linkedin.com/in/brian-molina-b91a46152/`
 }, {
     name: 'Rob McNabb',
     position: t('aboutUsExecutiveTeamCOFounderTitle'),
-    description:t('aboutUsExecutiveTeamCOFounderDescription'),
+    description: t('aboutUsExecutiveTeamCOFounderDescription'),
     img: Rob,
     linkedin: `https://www.linkedin.com/in/robmcnabb/`
+}, {
+    name: ' Tim Bergmann',
+    position: 'Co-Founder',
+    description: t('aboutUsExecutiveTeamTimDescription'),
+    img: Tim,
+    linkedin: `https://www.linkedin.com/in/tim-bergmann-9a528b12b/`
+
 }])
 
 </script>

@@ -1,86 +1,86 @@
 {
-    "en":"es",
-    "titleLanding":"MÁS VENTAS. MENOS CANCELACIONES. TODO CON IA.",
-    "subtitleLanding":"Cierra más negocios, reduce cancelaciones y acelera el crecimiento con Impulse — la única plataforma creada exclusivamente para empresas de telecomunicaciones.",
-    "integrationsLansing":"Nuestros socios de integración",
-    "bookDemo":"Conoce la plataforma",
-    "homeModule":"Inicio",
-    "aboutModule":"Sobre nosotros",
-    "blogModule":"Blog",
-    "contactUsModule":"Contactanos",
-    "leadingGlobalTitle":"La Plataforma que las Telecoms Globales Confían Para Crecer",
-    "leadingGlobalBenefits":{
-        "option1":{
-            "title":"Más ingresos, menos papeleo.",    
-            "subtitle":"Detecta oportunidades de venta adicional y aumenta tu ARPU con inteligencia artificial, análisis de comportamiento de red y herramientas proactivas de retención."
+    "en": "es",
+    "titleLanding": "MÁS VENTAS. MENOS CANCELACIONES. TODO CON IA.",
+    "subtitleLanding": "Cierra más negocios, reduce cancelaciones y acelera el crecimiento con Impulse — la única plataforma creada exclusivamente para empresas de telecomunicaciones.",
+    "integrationsLansing": "Nuestros socios de integración",
+    "bookDemo": "Conoce la plataforma",
+    "homeModule": "Inicio",
+    "aboutModule": "Sobre nosotros",
+    "blogModule": "Blog",
+    "contactUsModule": "Contactanos",
+    "leadingGlobalTitle": "La Plataforma que las Telecoms Globales Confían Para Crecer",
+    "leadingGlobalBenefits": {
+        "option1": {
+            "title": "Más ingresos, menos papeleo.",
+            "subtitle": "Detecta oportunidades de venta adicional y aumenta tu ARPU con inteligencia artificial, análisis de comportamiento de red y herramientas proactivas de retención."
         },
-        "option2":{
-            "title":"IA para ventas y soporte",
-            "subtitle":"Impulsa a tu equipo con IA: alertas, recomendaciones y llamadas hechas por agentes inteligentes que generan acción, no solo datos."
+        "option2": {
+            "title": "IA para ventas y soporte",
+            "subtitle": "Impulsa a tu equipo con IA: alertas, recomendaciones y llamadas hechas por agentes inteligentes que generan acción, no solo datos."
         },
-        "option3":{
-            "title":"Integraciones Plug & Play",
-            "subtitle":"Conéctate fácilmente a tu infraestructura existente: GPON, routers con SNMP, plataformas de facturación, CRMs y herramientas de soporte. Sin necesidad de reemplazar nada."
+        "option3": {
+            "title": "Integraciones Plug & Play",
+            "subtitle": "Conéctate fácilmente a tu infraestructura existente: GPON, routers con SNMP, plataformas de facturación, CRMs y herramientas de soporte. Sin necesidad de reemplazar nada."
         }
     },
-    "cspsTitle":"Lo que hace que nos diferenciamos",
-    "cspsDetails":"Aprende más sobre los Servicios de Impulse",
-    "cspsOptions":{
-        "option1":{
-            "title":"Construido para CSPs",
-            "details":"No es otro CRM general. Hablamos SNMP, ancho de banda, IPs, ARPU y NPS."
+    "cspsTitle": "Lo que hace que nos diferenciamos",
+    "cspsDetails": "Aprende más sobre los Servicios de Impulse",
+    "cspsOptions": {
+        "option1": {
+            "title": "Construido para CSPs",
+            "details": "No es otro CRM general. Hablamos SNMP, ancho de banda, IPs, ARPU y NPS."
         },
-        "option2":{
-            "title":"Aceleración de Ventas",
-            "details":"Anticípate a las necesidades del cliente antes de que llamen. Activa ofertas de retención antes de que cancelen."
+        "option2": {
+            "title": "Aceleración de Ventas",
+            "details": "Anticípate a las necesidades del cliente antes de que llamen. Activa ofertas de retención antes de que cancelen."
         },
-        "option3":{
-            "title":"Inteligencia de Red en Tiempo Real",
-            "details":"Dashboards en tiempo real de desempeño, uptime y uso de recursos."
+        "option3": {
+            "title": "Inteligencia de Red en Tiempo Real",
+            "details": "Dashboards en tiempo real de desempeño, uptime y uso de recursos."
         },
-        "option4":{
-            "title":"Retención y Monetización",
-            "details":"Alertas inteligentes cuando un cliente excede su plan, pierde conexión o muestra comportamiento de riesgo."
+        "option4": {
+            "title": "Retención y Monetización",
+            "details": "Alertas inteligentes cuando un cliente excede su plan, pierde conexión o muestra comportamiento de riesgo."
         },
-        "option5":{
-            "title":"Streamline your processes",
-            "details":"Hemos dedicado miles de horas a refinar cada proceso en su organización, creando nuestro software con las mejores prácticas para su negocio, lo que le permite mejorar su puntuación de NPS y aumentar los ingresos."
-        }        
-    }, 
-    "revenueResources":"Recursos",
-    "revenuePotencialTitle":"El potencial de tu equipo, desbloqueado",
-    "revenueListen":"Escuchar en",
-    "impulseActionTitle":"¿Quieres ver cómo funciona Impulse?",
-    "mission":"Nuestra misión",
-    "missionTitle":"La industria de las telecomunicaciones tiene un vasto potencial sin explotar.", 
-    "missionDescription":"En Impulse, nuestra misión es impulsar a los proveedores de servicios de Internet pequeños y medianos con la tecnología de las últimas generaciones que necesitan para sobrevivir. Mejorando su eficiencia operativa y su rentabilidad, nos ayuda a estos proveedores a conectar más personas, sostener sus negocios y contribuir a una internet descentralizada que beneficie a todos",
-    "vision":"Nuestra visión",
-    "visionTitle":"Nuestra visión es ser el principal proveedor de soluciones de telecomunicaciones a nivel mundial.",
-    "visionDescription":"Estamos comprometidos en desarrollar la tecnología, herramientas y servicios más innovadores para nuestros socios, y nos dedicamos a hacer realidad esta visión. Constantemente buscamos nuevo talento y tecnologías innovadoras para ayudarnos a alcanzar nuestra meta, y nuestros socios se beneficiarán de nuestra búsqueda constante de la excelencia.",
-    "contactTouch":"Contáctanos",
-    "contactTitle":"Facilítenos sus datos y nos pondremos en contacto con usted lo antes posible.",
-    "telcoslog":"La especialización en telecomunicaciones se integra con la innovación SaaS.",
-    "indexIncrease1":"Aumente sus",
-    "indexIncrease2":"Ingresos en Telecom",
-    "indexIncrease3":"de 2-3 veces",
-    "indexMax":"Maximice los ingresos, optimice los procesos y reduzca los costes con nuestras soluciones",
-    "indexContactUs":"Contactanos",
-    "indexSolve":"Resolvemos sus tres mayores problemas",
-    "indexOurServices":"Nuestros Servicios",
-    "indexBPOServices":"Servicios BPO",
-    "indexBPOText":"Nuestros servicios BPO incluyen asistencia de nivel 1 y 2, ventas (salientes y entrantes) y cobros. Agilice sus operaciones comerciales y mejore la satisfacción del cliente.",
-    "indexManagedServices":"Anuncios gestionados",
-    "indexManagedText":"Con años de experiencia hemos aprendido qué anuncios dan resultados positivos y cuáles no. Proporcionamos el ROAS más alto para sus campañas publicitarias.",
-    "indexSalesServices":"Soluciones de capacitación en ventas",
-    "indexSalesText":"Desde Impulse leads, una innovadora plataforma de generación de leads para CSP, hasta Telemetrics, una solución innovadora para descubrir oportunidades de venta cruzada y de upselling. Estamos obsesionados con que usted sea más rentable.",
-    "indexOurSolutions":"Nuestras Soluciones",
+        "option5": {
+            "title": "Streamline your processes",
+            "details": "Hemos dedicado miles de horas a refinar cada proceso en su organización, creando nuestro software con las mejores prácticas para su negocio, lo que le permite mejorar su puntuación de NPS y aumentar los ingresos."
+        }
+    },
+    "revenueResources": "Recursos",
+    "revenuePotencialTitle": "El potencial de tu equipo, desbloqueado",
+    "revenueListen": "Escuchar en",
+    "impulseActionTitle": "¿Quieres ver cómo funciona Impulse?",
+    "mission": "Nuestra misión",
+    "missionTitle": "La industria de las telecomunicaciones tiene un vasto potencial sin explotar.",
+    "missionDescription": "En Impulse, nuestra misión es impulsar a los proveedores de servicios de Internet pequeños y medianos con la tecnología de las últimas generaciones que necesitan para sobrevivir. Mejorando su eficiencia operativa y su rentabilidad, nos ayuda a estos proveedores a conectar más personas, sostener sus negocios y contribuir a una internet descentralizada que beneficie a todos",
+    "vision": "Nuestra visión",
+    "visionTitle": "Nuestra visión es ser el principal proveedor de soluciones de telecomunicaciones a nivel mundial.",
+    "visionDescription": "Estamos comprometidos en desarrollar la tecnología, herramientas y servicios más innovadores para nuestros socios, y nos dedicamos a hacer realidad esta visión. Constantemente buscamos nuevo talento y tecnologías innovadoras para ayudarnos a alcanzar nuestra meta, y nuestros socios se beneficiarán de nuestra búsqueda constante de la excelencia.",
+    "contactTouch": "Contáctanos",
+    "contactTitle": "Facilítenos sus datos y nos pondremos en contacto con usted lo antes posible.",
+    "telcoslog": "La especialización en telecomunicaciones se integra con la innovación SaaS.",
+    "indexIncrease1": "Aumente sus",
+    "indexIncrease2": "Ingresos en Telecom",
+    "indexIncrease3": "de 2-3 veces",
+    "indexMax": "Maximice los ingresos, optimice los procesos y reduzca los costes con nuestras soluciones",
+    "indexContactUs": "Contactanos",
+    "indexSolve": "Resolvemos sus tres mayores problemas",
+    "indexOurServices": "Nuestros Servicios",
+    "indexBPOServices": "Servicios BPO",
+    "indexBPOText": "Nuestros servicios BPO incluyen asistencia de nivel 1 y 2, ventas (salientes y entrantes) y cobros. Agilice sus operaciones comerciales y mejore la satisfacción del cliente.",
+    "indexManagedServices": "Anuncios gestionados",
+    "indexManagedText": "Con años de experiencia hemos aprendido qué anuncios dan resultados positivos y cuáles no. Proporcionamos el ROAS más alto para sus campañas publicitarias.",
+    "indexSalesServices": "Soluciones de capacitación en ventas",
+    "indexSalesText": "Desde Impulse leads, una innovadora plataforma de generación de leads para CSP, hasta Telemetrics, una solución innovadora para descubrir oportunidades de venta cruzada y de upselling. Estamos obsesionados con que usted sea más rentable.",
+    "indexOurSolutions": "Nuestras Soluciones",
     "indexOurSolutionsButton": "Más información",
     "indexSolveProblemsTitle-1": "No está ofreciendo ventas adicionales o ventas cruzadas a sus clientes actuales.",
     "indexSolveProblemsText-1": "No estás enviando correos electrónicos ni mensajes de SMS para animar a los clientes a actualizar sus paquetes cuando el uso de su circuito aumenta, y tampoco estás analizando el comportamiento de los clientes.",
     "indexSolveProblemsTitle-2": "Tus anuncios no están convirtiendo como solían hacerlo.",
     "indexSolveProblemsText-2": "Como todos los proveedores de internet (ISP) están invirtiendo más en publicidad, el panorama se ha vuelto más competitivo y sus anuncios ya no son tan efectivos como antes.Nosotros creamos anuncios que lo diferencien de su competencia e implementamos estrategias publicitarias impactantes.",
     "indexSolveProblemsTitle-3": "Está considerando la subcontratación pero aún no ha tomado la decisión.",
-    "indexSolveProblemsText-3": "Los líderes del mercado llevan más de una década subcontratando y su crecimiento no se detiene. Con nuestras soluciones de BPO, usted también puede impulsar su operación y reducir costos en más de un 40%.", 
+    "indexSolveProblemsText-3": "Los líderes del mercado llevan más de una década subcontratando y su crecimiento no se detiene. Con nuestras soluciones de BPO, usted también puede impulsar su operación y reducir costos en más de un 40%.",
     "indexOurSolutionsTitle-1": "Impulse Leads",
     "indexOurSolutionsDescription-1": "Potencia tus esfuerzos B2B con datos y software esenciales para conectar y cerrar acuerdos con tus compradores más valiosos, todo integrado convenientemente en un solo lugar.",
     "indexOurSolutionsTitle-2": "Telemetrics",
@@ -96,14 +96,14 @@
     "indexOurIntegrationPartnersTitle": "Nuestros socios de integración",
     "indexOurIntegrationPartnersDescription": "Nuestro objetivo es ayudar a nuestros clientes a aumentar sus ingresos, minimizar gastos y optimizar sus procesos a través de nuestras soluciones mediante la automatización y el análisis.",
     "indexLetsWorkTogether": "Trabajemos juntos",
-    "aboutUs":"Sobre nosotros",
-    "aboutUsExecutiveTeamTitle":"Nuestro equipo ejecutivo",
-    "aboutUsExecutiveTeamFounderCEOTitle":"Fundador y CEO de Impulse",
-    "aboutUsExecutiveTeamFounderCEODescription":"Ingeniero de software y tecnólogo con 15 años de experiencia en telecomunicaciones y tecnología. Desarrolló aplicaciones con millones de descargas, y ha vendido exitosamente dos empresas. Ejecutivo de ventas destacado en múltiples CSP.",
-    "aboutUsExecutiveTeamCOFounderTitle":"Co-fundador y NED",
-    "aboutUsExecutiveTeamCOFounderDescription":"Actualmente, Principal de Negocios de la Industria de Telecomunicaciones de Google, trabajando con empresas de telecomunicaciones en transformación de IA y Cloud. Anteriormente CEO de una startup hasta $50 millones de ingresos anuales recurrentes (ARR), McNabb aporta una gran experiencia sabiendo exactamente lo que nuestro mercado objetivo necesita para tener éxito.",
-    "aboutUsLeadingIndustryTitle":"Liderando la industria con una experiencia e innovación incomparables.",
-    "aboutUsLeadingIndustryDescription":"Impulse es un proveedor de soluciones de telecomunicaciones establecido y gestionado por destacados profesionales de la industria y la tecnología. Con más de 100 años de experiencia combinada, nuestros expertos en telecomunicaciones comprenden los desafíos que enfrentan los clientes con datos, sistemas heredados e información del cliente. Simplificamos estas complejidades y hacemos que los datos sean fáciles de entender, capacitando a los clientes para tomar decisiones informadas y gestionar sus negocios con confianza. Confíe en nosotros para navegar por las complejidades de la industria de las telecomunicaciones.",
+    "aboutUs": "Sobre nosotros",
+    "aboutUsExecutiveTeamTitle": "Nuestro equipo ejecutivo",
+    "aboutUsExecutiveTeamFounderCEOTitle": "Fundador y CEO de Impulse",
+    "aboutUsExecutiveTeamFounderCEODescription": "Ingeniero de software y tecnólogo con 15 años de experiencia en telecomunicaciones y tecnología. Desarrolló aplicaciones con millones de descargas, y ha vendido exitosamente dos empresas. Ejecutivo de ventas destacado en múltiples CSP.",
+    "aboutUsExecutiveTeamCOFounderTitle": "Co-fundador y NED",
+    "aboutUsExecutiveTeamCOFounderDescription": "Actualmente, Principal de Negocios de la Industria de Telecomunicaciones de Google, trabajando con empresas de telecomunicaciones en transformación de IA y Cloud. Anteriormente CEO de una startup hasta $50 millones de ingresos anuales recurrentes (ARR), McNabb aporta una gran experiencia sabiendo exactamente lo que nuestro mercado objetivo necesita para tener éxito.",
+    "aboutUsLeadingIndustryTitle": "Liderando la industria con una experiencia e innovación incomparables.",
+    "aboutUsLeadingIndustryDescription": "Impulse es un proveedor de soluciones de telecomunicaciones establecido y gestionado por destacados profesionales de la industria y la tecnología. Con más de 100 años de experiencia combinada, nuestros expertos en telecomunicaciones comprenden los desafíos que enfrentan los clientes con datos, sistemas heredados e información del cliente. Simplificamos estas complejidades y hacemos que los datos sean fáciles de entender, capacitando a los clientes para tomar decisiones informadas y gestionar sus negocios con confianza. Confíe en nosotros para navegar por las complejidades de la industria de las telecomunicaciones.",
     "aboutUsMission-1": "Nuestra misión",
     "aboutUsMissionDescription-1": "La industria de las telecomunicaciones tiene un vasto potencial sin explotar.",
     "aboutUsMissionSubDescription-1": "Nuestro objetivo es ayudar a las empresas a aumentar su rentabilidad a través de nuestras soluciones y servicios. Estamos dedicados a crear las soluciones más innovadoras para la industria y lograrlo escuchando atentamente a nuestros clientes y siendo sus socios más confiables.",
@@ -114,34 +114,34 @@
     "aboutUsClientValuesDescription-1": "Alentamos el pensamiento creativo, la experimentación y la disposición a correr riesgos para dar vida a nuevas ideas.",
     "aboutUsClientValues-2": "Obsesión por el cliente",
     "aboutUsClientValuesDescription-2": "Nos esforzamos por crear experiencias excepcionales para nuestros clientes. Escuchamos sus comentarios y los utilizamos continuamente para mejorar nuestros productos y servicios.",
-     "aboutUsClientValues-3": "Pensamiento a largo plazo",
+    "aboutUsClientValues-3": "Pensamiento a largo plazo",
     "aboutUsClientValuesDescription-3": "Damos más importancia al pensamiento a largo plazo que a las ganancias a corto plazo. Priorizamos la sostenibilidad y el crecimiento, incluso si eso significa sacrificar beneficios inmediatos para construir una empresa sólida y duradera.",
-     "aboutUsClientValues-4": "Responsabilidad",
+    "aboutUsClientValues-4": "Responsabilidad",
     "aboutUsClientValuesDescription-4": "Animamos a nuestro equipo a asumir la responsabilidad de su trabajo y decisiones. Toma la iniciativa y toma decisiones que beneficien a la empresa, pero también asume la responsabilidad de los resultados y aprende de tus errores.",
-     "aboutUsClientValues-5": "Excelencia Operativa",
+    "aboutUsClientValues-5": "Excelencia Operativa",
     "aboutUsClientValuesDescription-5": "Nos esforzamos por alcanzar la excelencia en todas las áreas de operaciones, buscando eficiencia, productividad y calidad. Establecemos un alto estándar de rendimiento y medimos y mejoramos continuamente los procesos para lograr resultados óptimos.",
-    "whatWeDoTitle":"Software de telecomunicaciones especializado entregado con profunda experiencia en la industria.",
-    "whatWeDoProductDesignTitle":"Diseño y Desarrollo de Productos",
-    "whatWeDoDescription-1":"Analítica avanzada para telecomunicaciones. Mejora la visibilidad, simplifica la gestión y optimiza las operaciones con nuestra solución inteligente.",
-    "whatWeDoDescription-2":"Mejora la satisfacción del cliente, aumenta las ventas y minimiza la pérdida de clientes con Impulse Bot, un innovador chatbot impulsado por IA y ML diseñado para ayudar a tus clientes las 24 horas del día.",
-    "whatWeDoDescription-3":"Nuestros servicios de BPO incluyen ventas, soporte y servicios salientes para optimizar las operaciones de tu negocio y mejorar la satisfacción del cliente.",
-    "whatWeDoDescription-4":"Soluciones web personalizadas, sistemas de facturación, desarrollo de API e integraciones CRM para telecomunicaciones. Adaptadas a tus necesidades únicas, soluciones escalables que impulsan el crecimiento y mejoran la satisfacción del cliente.",
-    "whatWeDoDescription-5":"Potencia tus esfuerzos B2B con los datos y el software crucial para conectar y cerrar acuerdos con tus compradores más valiosos, todo convenientemente integrado en un solo lugar.",
-    "whatWeDoDescription-6":"Optimiza tus procesos de facturación, mejora la satisfacción del cliente y simplifica los pagos con el portal fácil de usar de Impulse Pays. Di adiós a las largas colas y los procedimientos complejos. Actualiza tus servicios de telecomunicaciones sin esfuerzo y experimenta el poder de la automatización.",
-    "telemetricsSubtitle-1":"Telemetrics es una solución SaaS revolucionaria para aumentar las oportunidades de venta adicional y cruzada hasta en un 200%.",
-    "telemetricsSubtitle-2":"Telemetrics analiza las tendencias y comportamientos del ancho de banda de tus clientes residenciales y corporativos, y envía de manera proactiva correos electrónicos y mensajes de texto en el momento perfecto para que actualicen, aumentando así los ingresos de inmediato.",
-    "telemetricsSubtitle-3":"¿Cuándo fue la última vez que le dijiste a tus clientes que necesitaban una actualización?",
-    "telemetricsSubtitle-4":"No te desanimes; estás en la misma situación que el 95% de los proveedores de servicios de Internet. El proceso para lograr estas integraciones es desafiante y costoso. Los principales proveedores de servicios de Internet ya han invertido millones en desarrollar esta tecnología. Impulse está nivelando el campo de juego para los proveedores de servicios de Internet pequeños y medianos, ¡y Telemetrics es un avance revolucionario!",
-    "telemetricsSubtitle-5":"Descubre nuevas oportunidades de ingresos",
-    "telemetricsSubtitle-6":"Un potencial de ingresos significativo está sin aprovecharse. Impulse no solo identifica estas oportunidades, sino que también contribuye activamente a realizar estos ingresos al manejar el análisis de tendencias y la ejecución de campañas de ventas. Proporcionamos recomendaciones para el contenido de correos electrónicos y mensajes de texto y facilitamos su distribución. Nuestro objetivo es entregar los resultados directamente a su puerta.",
-    "telemetricsForm-1":"Estamos ansiosos por conocer tu proyecto",
-    "telemetricsForm-2":"Por favor, proporcione los detalles y",
-    "telemetricsForm-3":"nos pondremos en contacto contigo lo antes posible.",
-    "telemetricsForm-4":"Tu nombre",
-    "telemetricsForm-5":"Correo",
-    "telemetricsForm-6":"Número de teléfono",
-    "telemetricsForm-7":"Mensaje",
-    "telemetricsForm-8":"Enviar",
+    "whatWeDoTitle": "Software de telecomunicaciones especializado entregado con profunda experiencia en la industria.",
+    "whatWeDoProductDesignTitle": "Diseño y Desarrollo de Productos",
+    "whatWeDoDescription-1": "Analítica avanzada para telecomunicaciones. Mejora la visibilidad, simplifica la gestión y optimiza las operaciones con nuestra solución inteligente.",
+    "whatWeDoDescription-2": "Mejora la satisfacción del cliente, aumenta las ventas y minimiza la pérdida de clientes con Impulse Bot, un innovador chatbot impulsado por IA y ML diseñado para ayudar a tus clientes las 24 horas del día.",
+    "whatWeDoDescription-3": "Nuestros servicios de BPO incluyen ventas, soporte y servicios salientes para optimizar las operaciones de tu negocio y mejorar la satisfacción del cliente.",
+    "whatWeDoDescription-4": "Soluciones web personalizadas, sistemas de facturación, desarrollo de API e integraciones CRM para telecomunicaciones. Adaptadas a tus necesidades únicas, soluciones escalables que impulsan el crecimiento y mejoran la satisfacción del cliente.",
+    "whatWeDoDescription-5": "Potencia tus esfuerzos B2B con los datos y el software crucial para conectar y cerrar acuerdos con tus compradores más valiosos, todo convenientemente integrado en un solo lugar.",
+    "whatWeDoDescription-6": "Optimiza tus procesos de facturación, mejora la satisfacción del cliente y simplifica los pagos con el portal fácil de usar de Impulse Pays. Di adiós a las largas colas y los procedimientos complejos. Actualiza tus servicios de telecomunicaciones sin esfuerzo y experimenta el poder de la automatización.",
+    "telemetricsSubtitle-1": "Telemetrics es una solución SaaS revolucionaria para aumentar las oportunidades de venta adicional y cruzada hasta en un 200%.",
+    "telemetricsSubtitle-2": "Telemetrics analiza las tendencias y comportamientos del ancho de banda de tus clientes residenciales y corporativos, y envía de manera proactiva correos electrónicos y mensajes de texto en el momento perfecto para que actualicen, aumentando así los ingresos de inmediato.",
+    "telemetricsSubtitle-3": "¿Cuándo fue la última vez que le dijiste a tus clientes que necesitaban una actualización?",
+    "telemetricsSubtitle-4": "No te desanimes; estás en la misma situación que el 95% de los proveedores de servicios de Internet. El proceso para lograr estas integraciones es desafiante y costoso. Los principales proveedores de servicios de Internet ya han invertido millones en desarrollar esta tecnología. Impulse está nivelando el campo de juego para los proveedores de servicios de Internet pequeños y medianos, ¡y Telemetrics es un avance revolucionario!",
+    "telemetricsSubtitle-5": "Descubre nuevas oportunidades de ingresos",
+    "telemetricsSubtitle-6": "Un potencial de ingresos significativo está sin aprovecharse. Impulse no solo identifica estas oportunidades, sino que también contribuye activamente a realizar estos ingresos al manejar el análisis de tendencias y la ejecución de campañas de ventas. Proporcionamos recomendaciones para el contenido de correos electrónicos y mensajes de texto y facilitamos su distribución. Nuestro objetivo es entregar los resultados directamente a su puerta.",
+    "telemetricsForm-1": "Estamos ansiosos por conocer tu proyecto",
+    "telemetricsForm-2": "Por favor, proporcione los detalles y",
+    "telemetricsForm-3": "nos pondremos en contacto contigo lo antes posible.",
+    "telemetricsForm-4": "Tu nombre",
+    "telemetricsForm-5": "Correo",
+    "telemetricsForm-6": "Número de teléfono",
+    "telemetricsForm-7": "Mensaje",
+    "telemetricsForm-8": "Enviar",
     "botInfoTitle-1": "Para que tu cliente número un millón se sienta como el primero.",
     "botInfoDescription-2": "Empoderar a los ISP (Proveedores de Servicios de Internet) para que traten a sus clientes como VIP.",
     "botInfo-3": {
@@ -292,7 +292,7 @@
         "titlebutton": "Agendar una llamada",
         "subtitle": "¿Alguna pregunta? Saltemos a una llamada rápida para aprender más sobre cómo funciona ImpulseBot."
     },
-    "botInfoMonth": "mensual", 
+    "botInfoMonth": "mensual",
     "bpoInfoMainTitle": "Servicios de BPO de Impulse",
     "bpoInfoMainSubtitle": "Prepárate para descubrir por qué nuestros servicios de BPO de IMPULSE son la elección perfecta para tu negocio.",
     "bpoInfoActionsTitle": "Servicios BPO de Impulse",
@@ -300,168 +300,168 @@
     "bpoInfoActionsTitle2": "Soporte de Nivel 2",
     "bpoInfoActionsTitle3": "Ventas (Salientes y Entrantes)",
     "bpoInfoActionsTitle4": "Recuperaciones",
-    "bpoInfoServiceTitle":"Ofrecemos características adicionales que nos convierten en el proveedor de servicios BPO definitivo.",
-    
-        "bpoInfoService-1": {
-            "title": "Gerentes de cuenta dedicados",
-            "description": "Tu gerente de cuenta dedicado garantiza atención personalizada, comunicación fluida y aborda preocupaciones a lo largo de nuestra asociación."
+    "bpoInfoServiceTitle": "Ofrecemos características adicionales que nos convierten en el proveedor de servicios BPO definitivo.",
+    "bpoInfoService-1": {
+        "title": "Gerentes de cuenta dedicados",
+        "description": "Tu gerente de cuenta dedicado garantiza atención personalizada, comunicación fluida y aborda preocupaciones a lo largo de nuestra asociación."
+    },
+    "bpoInfoService-2": {
+        "title": "Soluciones personalizadas",
+        "description": "Adaptamos nuestros servicios para satisfacer tus necesidades y objetivos únicos, asegurando un ajuste perfecto para tu negocio."
+    },
+    "bpoInfoService-3": {
+        "title": "Escalabilidad",
+        "description": "Manejamos cargas de trabajo fluctuantes y nos adaptamos a tu crecimiento, proporcionando la escalabilidad que tu negocio requiere."
+    },
+    "bpoInfoService-4": {
+        "title": "Seguridad de datos",
+        "description": "Priorizamos la seguridad y confidencialidad de los datos, adhiriéndonos a los estándares más altos e implementando medidas sólidas para proteger tu información."
+    },
+    "bpoInfoService-5": {
+        "title": "Aseguramiento de calidad",
+        "description": "Nuestros rigurosos procesos de control de calidad y programas de capacitación continua garantizan resultados de alta calidad y mejora continua."
+    },
+    "productInfo-1": {
+        "title": "Diseño y Desarrollo de Producto",
+        "description": "Nos especializamos en la creación de aplicaciones web personalizadas que incluyen sitios web, portales de facturación, integraciones de CRM, integraciones de sistemas de facturación y automatización. Nuestro equipo de expertos comprende las necesidades específicas de la industria de nuestros clientes y ofrece soluciones adaptadas a sus requisitos únicos.",
+        "subtitle": "Aquí hay 5 razones por las cuales nuestros clientes deberían elegir nuestros servicios de Diseño y Desarrollo de Producto:"
+    },
+    "productInfo-2": {
+        "title": "Soluciones personalizadas",
+        "paragraph": "Nuestro equipo trabaja en estrecha colaboración con cada cliente para comprender sus necesidades únicas y objetivos comerciales. Luego desarrollamos soluciones personalizadas que se adaptan a sus requisitos específicos."
+    },
+    "productInfo-3": {
+        "title": "Experiencia",
+        "paragraph": "Nuestro equipo está formado por profesionales experimentados que tienen un profundo entendimiento de la industria de las telecomunicaciones. Están equipados con el conocimiento y las habilidades para ofrecer soluciones de vanguardia que satisfacen las necesidades comerciales de nuestros clientes."
+    },
+    "productInfo-4": {
+        "title": "Aseguramiento de la calidad",
+        "paragraph": "Seguimos un riguroso proceso de aseguramiento de la calidad para garantizar que nuestras soluciones sean de la más alta calidad. Nuestro equipo realiza pruebas exhaustivas y controles de calidad para asegurar que nuestros clientes reciban soluciones confiables, seguras y fáciles de usar."
+    },
+    "productInfo-5": {
+        "title": "Entrega a tiempo",
+        "paragraph": "Entendemos la importancia de cumplir con los plazos y entregar soluciones a tiempo. Nuestro equipo trabaja diligentemente para garantizar que nuestras soluciones se entreguen dentro del plazo acordado."
+    },
+    "productInfo-6": {
+        "title": "Soporte continuo",
+        "paragraph": "Nuestro compromiso con nuestros clientes no termina con la entrega de nuestras soluciones. Ofrecemos servicios de soporte y mantenimiento continuos para asegurar que las aplicaciones de nuestros clientes funcionen de manera fluida y eficiente."
+    },
+    "leadsInfoMainSubtitle": "¿Estás teniendo dificultades para encontrar y cerrar clientes potenciales? ¡Nuestra plataforma puede ayudarte! Con más de 265 millones de contactos, podrás llegar a tu audiencia objetivo y ayudarte a hacer crecer tu negocio.",
+    "leadsInfo-1": {
+        "mainTitle": "Razones por las que deberías enfocarte en la generación de clientes potenciales:",
+        "title-1": "Amplía tu mercado.",
+        "paragraph-1": "La creación de contenido y la comunicación son una gran parte de los esfuerzos de generación de clientes potenciales.",
+        "title-2": "Aumenta tus ingresos.",
+        "paragraph-2": "Cuando se hace correctamente, la generación de clientes potenciales puede maximizar la capacidad de tu marca para llegar a prospectos objetivo."
+    },
+    "leadsInfo-2": {
+        "title": "Contenidos",
+        "paragraph": "La única plataforma de ventas con todo lo que necesitas para encontrar, enviar correos electrónicos, llamar y cerrar a tus clientes ideales, todo en un mismo lugar."
+    },
+    "leadsInfoContent-1": {
+        "title": "Clientes potenciales ideales al alcance de tus manos.",
+        "description": "Encuentra y dirígete a tus compradores ideales con la base de datos B2B más grande y precisa del mundo."
+    },
+    "leadsInfoContent-2": {
+        "title": "Encuentra los clientes potenciales adecuados para ti.",
+        "description": "Utiliza más de 50 filtros de búsqueda para descubrir contactos y empresas que coincidan con el perfil de tu comprador."
+    },
+    "leadsInfo-3": {
+        "title": "Encuentra clientes potenciales nuevos y enriquece los contactos existentes.",
+        "paragraph": "Enriquece y actualiza tu base de datos con información fresca, precisa y conforme a las personas y la inteligencia de cuentas."
+    },
+    "payInfo-1": {
+        "title": "Impulse Pay",
+        "subtitle": "El Futuro de los Pagos",
+        "paragraph": "En un mundo donde las transacciones sin problemas y la satisfacción del cliente reinan supremas, Impulse Pay es la solución perfecta para las compañías de telecomunicaciones."
+    },
+    "payInfo-2": {
+        "title": "Algunas de las mejores características",
+        "paragraph": "Impulse Pay es un portal de facturación preconfigurado que facilita a tus clientes liquidar sus facturas en línea en cualquier momento y lugar.",
+        "options": {
+            "1": "Tarjeta",
+            "2": "Número de teléfono",
+            "3": "Pago rápido"
+        }
+    },
+    "payInfo-3": {
+        "title": "Pago fácil, rápido y con un solo clic.",
+        "paragraph-1": "Nuestro sistema automatizado permite a los clientes configurar el pago automático. El sistema automatizado de Impulse Pay facilita a tus clientes configurar el pago automático. Simplemente pueden iniciar sesión en su cuenta y pagar su factura con unos pocos clics de un botón.",
+        "paragraph-2": "El sistema automatizado de Impulse Pay facilita a tus clientes configurar el pago automático.",
+        "paragraph-3": "Ellos simplemente pueden iniciar sesión en su cuenta y pagar su factura con unos pocos clics de un botón.",
+        "paragraph-4": "Con Impulse Pay, tus clientes pueden actualizar sus paquetes de forma sencilla, explorar nuevas ofertas y aprovechar emocionantes promociones."
+    },
+    "payInfo-4": {
+        "title": "Tu dinero está 100% seguro con nosotros.",
+        "paragraph": "A veces no sabes en quién puedes confiar y en quién no. Sigo aprendiendo eso una y otra vez."
+    },
+    "payInfo-5": {
+        "title": "Adiós a las largas filas y a los procesos engorrosos.",
+        "paragraph": "Con Impulse Pay, tus clientes pueden decir adiós a las largas filas y a los procesos engorrosos."
+    },
+    "payInfo-6": "Esto asegura que sus facturas se paguen a tiempo en todo momento, por lo que nunca tendrán que preocuparse por perder un pago o incurrir en cargos por mora.",
+    "contactUs-1": {
+        "hqAddress": "Dirección de la sede principal",
+        "officeAddress": "Dirección de la oficina"
+    },
+    "newsletters-1": "Boletines de Impulse",
+    "newsletters-2": "Regístrate para recibir los boletines de Impulse.",
+    "newsletters-3": "Noticias, tendencias y la información más reciente sobre la industria de las telecomunicaciones.",
+    "newsletters-4": "Escribe tu correo electrónico.",
+    "newsletters-5": "Enviar",
+    "newsletters-6": "No quiero la información más reciente sobre telecomunicaciones.",
+    "banner-1": "Al hacer clic en “Aceptar todo”, aceptas el almacenamiento de cookies en tu dispositivo para mejorar la navegación por el sitio, analizar el uso del sitio y ayudar en nuestros esfuerzos de marketing.",
+    "banner-2": "ACEPTAR TODO",
+    "banner-3": "RECHAZAR TODO",
+    "footer-1": "Derechos de autor © 2023 Impulse. Todos los derechos reservados.",
+    "footer-2": "Política de privacidad",
+    "footer-3": "Términos",
+    "footer-4": "Conócenos",
+    "footer-5": "Servicios",
+    "menu-1": "Inicio",
+    "menu-2": "Conócenos",
+    "menu-3": "Servicios",
+    "menu-4": "Blog",
+    "action1": "Declaro que acepto la",
+    "action2": "y autorizo a Impulse a utilizar mis datos de contacto para comunicarse conmigo con fines comerciales.",
+    "webDevelopmentInfo": {
+        "impulseWebsiteDesign": {
+            "title1": "Impulse",
+            "title2": "Diseño de sitios web",
+            "description": "Impulse se enfoca en el marketing digital para empresas de telecomunicaciones. Construimos sitios web, aplicaciones móviles y gestionamos el marketing para ayudar a los proveedores de servicios de telecomunicaciones y comunicación a lograr un crecimiento."
         },
-        "bpoInfoService-2": {
-            "title": "Soluciones personalizadas",
-            "description": "Adaptamos nuestros servicios para satisfacer tus necesidades y objetivos únicos, asegurando un ajuste perfecto para tu negocio."
+        "websitesForLeadGeneration": {
+            "title": "Sitios web para generación de prospectos",
+            "description": "Las empresas de telecomunicaciones necesitan sitios web que atraigan prospectos, clientes, socios y defensores. Construimos sitios web que facilitan la publicación, son altamente responsivos, dinámicos y optimizados para convertir."
         },
-        "bpoInfoService-3": {
-            "title": "Escalabilidad",
-            "description": "Manejamos cargas de trabajo fluctuantes y nos adaptamos a tu crecimiento, proporcionando la escalabilidad que tu negocio requiere."
+        "responsiveIntegratedOptimized": {
+            "title": "Responsivo, Integrado, Optimizado",
+            "description": "Los sitios web son la pieza central del marketing de atracción. Los sitios web deben construirse con un cuidado especial en SEO, el intercambio social, la estrategia de contenido, la automatización del marketing, la personalización dinámica, la puntuación de prospectos y el perfilado progresivo."
         },
-        "bpoInfoService-4": {
-            "title": "Seguridad de datos",
-            "description": "Priorizamos la seguridad y confidencialidad de los datos, adhiriéndonos a los estándares más altos e implementando medidas sólidas para proteger tu información."
+        "whyEveryBusinessNeedsAWebsite": {
+            "title": "¿Por qué cada negocio necesita un sitio web?"
         },
-        "bpoInfoService-5": {
-            "title": "Aseguramiento de calidad",
-            "description": "Nuestros rigurosos procesos de control de calidad y programas de capacitación continua garantizan resultados de alta calidad y mejora continua."
+        "CREDIBILITY": {
+            "title": "CREDIBILIDAD",
+            "text": "Una de las principales razones por las que deberías tener un sitio web para tu negocio es aumentar la credibilidad de tu organización. Es probable que haya varios proveedores que ofrezcan un servicio similar al tuyo. Una forma de destacar es teniendo un sitio web que luzca bien y comunique claramente información de calidad a tus consumidores. Sin un sitio web, las personas pueden cuestionar la legitimidad de tu negocio. Tener un sitio web es una oportunidad para causar una excelente primera impresión y darles a las personas la seguridad de que tu empresa es real. "
         },
-        "productInfo-1": {
-            "title": "Diseño y Desarrollo de Producto",
-            "description": "Nos especializamos en la creación de aplicaciones web personalizadas que incluyen sitios web, portales de facturación, integraciones de CRM, integraciones de sistemas de facturación y automatización. Nuestro equipo de expertos comprende las necesidades específicas de la industria de nuestros clientes y ofrece soluciones adaptadas a sus requisitos únicos.",
-            "subtitle":"Aquí hay 5 razones por las cuales nuestros clientes deberían elegir nuestros servicios de Diseño y Desarrollo de Producto:"
+        "BRAND": {
+            "title": "MARCA",
+            "text": "Mostrar tu marca a tus clientes potenciales es una de las cosas más importantes que puedes hacer. Al establecer claramente quién eres, qué representas y en qué crees, aumentas las posibilidades de que tus clientes compren de ti. Esto también es algo que puede diferenciarte de tus competidores. Sin un sitio web, puede ser increíblemente difícil hacer esto porque las personas no pueden encontrar fácilmente información de calidad y confiable sobre tu negocio."
         },
-        "productInfo-2": {
-            "title": "Soluciones personalizadas",
-            "paragraph": "Nuestro equipo trabaja en estrecha colaboración con cada cliente para comprender sus necesidades únicas y objetivos comerciales. Luego desarrollamos soluciones personalizadas que se adaptan a sus requisitos específicos."
+        "LEADS": {
+            "title": "PROSPECTOS",
+            "text": "Quizás una de las razones más intrigantes para tener un sitio web para tu negocio es porque puede aumentar tus posibilidades de obtener prospectos. Una vez que las personas te encuentran en línea, se interesan en tu producto o servicio y quieren saber más, sabrán cómo contactarte gracias a la información en tu sitio web, lo que te brinda la oportunidad de aumentar tus ventas. Aunque los sitios web tienen un costo, cuando se usan correctamente, tienen un ROI positivo."
         },
-        "productInfo-3": {
-            "title": "Experiencia",
-            "paragraph": "Nuestro equipo está formado por profesionales experimentados que tienen un profundo entendimiento de la industria de las telecomunicaciones. Están equipados con el conocimiento y las habilidades para ofrecer soluciones de vanguardia que satisfacen las necesidades comerciales de nuestros clientes."
+        "ORGANIC_TRAFFIC": {
+            "title": "TRÁFICO ORGÁNICO",
+            "text": "Una vez que estás en línea y tienes un sitio web optimizado para SEO, tienes la posibilidad de aparecer en los resultados de búsqueda de Google. Esto significa que cuando las personas están buscando un producto o servicio, existe la posibilidad de que tu sitio web aparezca en los resultados. Esto te brinda la oportunidad de aumentar drásticamente tu base de clientes. "
         },
-        "productInfo-4": {
-            "title": "Aseguramiento de la calidad",
-            "paragraph": "Seguimos un riguroso proceso de aseguramiento de la calidad para garantizar que nuestras soluciones sean de la más alta calidad. Nuestro equipo realiza pruebas exhaustivas y controles de calidad para asegurar que nuestros clientes reciban soluciones confiables, seguras y fáciles de usar."
-        },
-        "productInfo-5": {
-            "title": "Entrega a tiempo",
-            "paragraph": "Entendemos la importancia de cumplir con los plazos y entregar soluciones a tiempo. Nuestro equipo trabaja diligentemente para garantizar que nuestras soluciones se entreguen dentro del plazo acordado."
-        },
-        "productInfo-6": {
-            "title": "Soporte continuo",
-            "paragraph": "Nuestro compromiso con nuestros clientes no termina con la entrega de nuestras soluciones. Ofrecemos servicios de soporte y mantenimiento continuos para asegurar que las aplicaciones de nuestros clientes funcionen de manera fluida y eficiente."
-        },
-        "leadsInfoMainSubtitle":"¿Estás teniendo dificultades para encontrar y cerrar clientes potenciales? ¡Nuestra plataforma puede ayudarte! Con más de 265 millones de contactos, podrás llegar a tu audiencia objetivo y ayudarte a hacer crecer tu negocio.",
-        "leadsInfo-1": {
-            "mainTitle":"Razones por las que deberías enfocarte en la generación de clientes potenciales:",
-            "title-1": "Amplía tu mercado.",
-            "paragraph-1": "La creación de contenido y la comunicación son una gran parte de los esfuerzos de generación de clientes potenciales.",
-            "title-2": "Aumenta tus ingresos.",
-            "paragraph-2": "Cuando se hace correctamente, la generación de clientes potenciales puede maximizar la capacidad de tu marca para llegar a prospectos objetivo."
-        },
-        "leadsInfo-2": {
-            "title": "Contenidos",
-            "paragraph": "La única plataforma de ventas con todo lo que necesitas para encontrar, enviar correos electrónicos, llamar y cerrar a tus clientes ideales, todo en un mismo lugar."
-        },
-        "leadsInfoContent-1": {
-            "title": "Clientes potenciales ideales al alcance de tus manos.",
-            "description": "Encuentra y dirígete a tus compradores ideales con la base de datos B2B más grande y precisa del mundo."
-        },
-        "leadsInfoContent-2": {
-            "title": "Encuentra los clientes potenciales adecuados para ti.",
-            "description": "Utiliza más de 50 filtros de búsqueda para descubrir contactos y empresas que coincidan con el perfil de tu comprador."
-        },
-        "leadsInfo-3": {
-            "title": "Encuentra clientes potenciales nuevos y enriquece los contactos existentes.",
-            "paragraph": "Enriquece y actualiza tu base de datos con información fresca, precisa y conforme a las personas y la inteligencia de cuentas."
-        },
-        "payInfo-1": {
-            "title": "Impulse Pay",
-            "subtitle": "El Futuro de los Pagos",
-            "paragraph": "En un mundo donde las transacciones sin problemas y la satisfacción del cliente reinan supremas, Impulse Pay es la solución perfecta para las compañías de telecomunicaciones."
-        },
-        "payInfo-2": {
-            "title": "Algunas de las mejores características",
-            "paragraph": "Impulse Pay es un portal de facturación preconfigurado que facilita a tus clientes liquidar sus facturas en línea en cualquier momento y lugar.",
-            "options":{
-                "1": "Tarjeta",
-                "2": "Número de teléfono",
-                "3": "Pago rápido"
-            }
-        },"payInfo-3": {
-            "title": "Pago fácil, rápido y con un solo clic.",
-            "paragraph-1": "Nuestro sistema automatizado permite a los clientes configurar el pago automático. El sistema automatizado de Impulse Pay facilita a tus clientes configurar el pago automático. Simplemente pueden iniciar sesión en su cuenta y pagar su factura con unos pocos clics de un botón.",
-            "paragraph-2": "El sistema automatizado de Impulse Pay facilita a tus clientes configurar el pago automático.",
-            "paragraph-3": "Ellos simplemente pueden iniciar sesión en su cuenta y pagar su factura con unos pocos clics de un botón.",
-            "paragraph-4": "Con Impulse Pay, tus clientes pueden actualizar sus paquetes de forma sencilla, explorar nuevas ofertas y aprovechar emocionantes promociones."
-        },
-        "payInfo-4": {
-            "title": "Tu dinero está 100% seguro con nosotros.",
-            "paragraph": "A veces no sabes en quién puedes confiar y en quién no. Sigo aprendiendo eso una y otra vez."
-        },
-        "payInfo-5": {
-            "title": "Adiós a las largas filas y a los procesos engorrosos.",
-            "paragraph": "Con Impulse Pay, tus clientes pueden decir adiós a las largas filas y a los procesos engorrosos."
-        },
-        "payInfo-6":"Esto asegura que sus facturas se paguen a tiempo en todo momento, por lo que nunca tendrán que preocuparse por perder un pago o incurrir en cargos por mora.",
-        "contactUs-1":{
-            "hqAddress":"Dirección de la sede principal",
-            "officeAddress":"Dirección de la oficina"
-        },
-            "newsletters-1":"Boletines de Impulse",
-            "newsletters-2":"Regístrate para recibir los boletines de Impulse.",
-            "newsletters-3":"Noticias, tendencias y la información más reciente sobre la industria de las telecomunicaciones.",
-            "newsletters-4":"Escribe tu correo electrónico.",
-            "newsletters-5":"Enviar",
-            "newsletters-6":"No quiero la información más reciente sobre telecomunicaciones.",
-            "banner-1":"Al hacer clic en “Aceptar todo”, aceptas el almacenamiento de cookies en tu dispositivo para mejorar la navegación por el sitio, analizar el uso del sitio y ayudar en nuestros esfuerzos de marketing.",
-            "banner-2":"ACEPTAR TODO",
-            "banner-3":"RECHAZAR TODO",
-            "footer-1":"Derechos de autor © 2023 Impulse. Todos los derechos reservados.",
-            "footer-2":"Política de privacidad",
-            "footer-3":"Términos",
-            "footer-4":"Conócenos",
-            "footer-5":"Servicios",
-            "menu-1":"Inicio",
-            "menu-2":"Conócenos",
-            "menu-3":"Servicios",
-            "menu-4":"Blog",
-             "action1":"Declaro que acepto la",
-            "action2":"y autorizo a Impulse a utilizar mis datos de contacto para comunicarse conmigo con fines comerciales.",
-            "webDevelopmentInfo": {
-                "impulseWebsiteDesign": {
-                  "title1": "Impulse",
-                  "title2": "Diseño de sitios web",
-                  "description": "Impulse se enfoca en el marketing digital para empresas de telecomunicaciones. Construimos sitios web, aplicaciones móviles y gestionamos el marketing para ayudar a los proveedores de servicios de telecomunicaciones y comunicación a lograr un crecimiento."
-                },
-                "websitesForLeadGeneration": {
-                  "title": "Sitios web para generación de prospectos",
-                  "description": "Las empresas de telecomunicaciones necesitan sitios web que atraigan prospectos, clientes, socios y defensores. Construimos sitios web que facilitan la publicación, son altamente responsivos, dinámicos y optimizados para convertir."
-                },
-                "responsiveIntegratedOptimized": {
-                  "title": "Responsivo, Integrado, Optimizado",
-                  "description": "Los sitios web son la pieza central del marketing de atracción. Los sitios web deben construirse con un cuidado especial en SEO, el intercambio social, la estrategia de contenido, la automatización del marketing, la personalización dinámica, la puntuación de prospectos y el perfilado progresivo."
-                },
-                "whyEveryBusinessNeedsAWebsite": {
-                  "title": "¿Por qué cada negocio necesita un sitio web?"
-                },
-                "CREDIBILITY": {
-                    "title": "CREDIBILIDAD",
-                    "text": "Una de las principales razones por las que deberías tener un sitio web para tu negocio es aumentar la credibilidad de tu organización. Es probable que haya varios proveedores que ofrezcan un servicio similar al tuyo. Una forma de destacar es teniendo un sitio web que luzca bien y comunique claramente información de calidad a tus consumidores. Sin un sitio web, las personas pueden cuestionar la legitimidad de tu negocio. Tener un sitio web es una oportunidad para causar una excelente primera impresión y darles a las personas la seguridad de que tu empresa es real. "
-                  },
-                  "BRAND": {
-                    "title": "MARCA",
-                    "text": "Mostrar tu marca a tus clientes potenciales es una de las cosas más importantes que puedes hacer. Al establecer claramente quién eres, qué representas y en qué crees, aumentas las posibilidades de que tus clientes compren de ti. Esto también es algo que puede diferenciarte de tus competidores. Sin un sitio web, puede ser increíblemente difícil hacer esto porque las personas no pueden encontrar fácilmente información de calidad y confiable sobre tu negocio."
-                  },
-                  "LEADS": {
-                    "title": "PROSPECTOS",
-                    "text": "Quizás una de las razones más intrigantes para tener un sitio web para tu negocio es porque puede aumentar tus posibilidades de obtener prospectos. Una vez que las personas te encuentran en línea, se interesan en tu producto o servicio y quieren saber más, sabrán cómo contactarte gracias a la información en tu sitio web, lo que te brinda la oportunidad de aumentar tus ventas. Aunque los sitios web tienen un costo, cuando se usan correctamente, tienen un ROI positivo."
-                  },
-                  "ORGANIC_TRAFFIC": {
-                    "title": "TRÁFICO ORGÁNICO",
-                    "text": "Una vez que estás en línea y tienes un sitio web optimizado para SEO, tienes la posibilidad de aparecer en los resultados de búsqueda de Google. Esto significa que cuando las personas están buscando un producto o servicio, existe la posibilidad de que tu sitio web aparezca en los resultados. Esto te brinda la oportunidad de aumentar drásticamente tu base de clientes. "
-                  },
-                  "template": "Ver plantilla completa"
-              },
-              "blog-1":"Noticias y Blog",
-              "blog-2":"Selecciones principales",
-              "blog-3":"Lista de blogs",
-              "blog-4":"Abrir entrada de blog"
-      
+        "template": "Ver plantilla completa"
+    },
+    "blog-1": "Noticias y Blog",
+    "blog-2": "Selecciones principales",
+    "blog-3": "Lista de blogs",
+    "blog-4": "Abrir entrada de blog",
+    "aboutUsExecutiveTeamTimDescription": "Ex CEO en las industrias del entretenimiento y la banda ancha, reconocido por liderar innovaciones en la interacción digital. Desarrolló una plataforma CRM para organizaciones de livestreaming que mejoró la interacción con la comunidad y la retención de usuarios."
 }
