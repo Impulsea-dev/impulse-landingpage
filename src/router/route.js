@@ -67,11 +67,11 @@ const routes = [
         component: () => import("@/views/viewcases.vue"),
       },
     
-      {
-        path: "/blog",
-        name: "blog",
-        component: () => import("@/views/newsandblog.vue"),
-      },
+      // {
+      //   path: "/blog",
+      //   name: "blog",
+      //   component: () => import("@/views/newsandblog.vue"),
+      // },
       {
         path: "/blog/:name",
         name: "blogdetails",
