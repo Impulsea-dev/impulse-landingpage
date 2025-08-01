@@ -72,12 +72,12 @@ const routes = [
       //   name: "blog",
       //   component: () => import("@/views/newsandblog.vue"),
       // },
-      {
-        path: "/blog/:name",
-        name: "blogdetails",
-        props: true,
-        component: () => import("@/views/blogdetails.vue"),
-      },
+      // {
+      //   path: "/blog/:name",
+      //   name: "blogdetails",
+      //   props: true,
+      //   component: () => import("@/views/blogdetails.vue"),
+      // },
       {
         path: "/boostone",
         name: "boostone",
