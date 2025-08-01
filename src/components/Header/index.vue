@@ -17,7 +17,7 @@
         <li><router-link to="/aboutus">{{ $t('aboutModule') }}</router-link></li>
         <!-- <li> <router-link to="/services">What We Do</router-link></li> -->
         <li>
-          <a href="https://impulse.ky/blog/">{{ $t('blogModule') }}</a>
+          <!-- <a href="https://impulse.ky/blog/">{{ $t('blogModule') }}</a> -->
         </li>
       </ul>
     </nav>
