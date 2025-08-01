@@ -16,7 +16,7 @@
         <li><router-link to="/">{{ $t('homeModule') }}</router-link></li>
         <li><router-link to="/aboutus">{{ $t('aboutModule') }}</router-link></li>
         <!-- <li> <router-link to="/services">What We Do</router-link></li> -->
-        <li><router-link to="/blog">{{ $t('blogModule') }}</router-link></li>
+        <li><router-link to="/blog/">{{ $t('blogModule') }}</router-link></li>
       </ul>
     </nav>
     <nav class="hidden md:flex flex-grow justify-end basis-0">
