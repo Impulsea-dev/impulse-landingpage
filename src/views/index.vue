@@ -3,9 +3,9 @@
     <Homepage>
       <template v-slot:videol>
         <div class="absolute top-0 bottom-0 w-full">
-          <div class="video-container">
+          <!-- <div class="video-container">
             <video ref="videoRef" class="videoStyle" src="../assets/images/Video.mp4" autoplay muted loop></video>
-          </div>
+          </div> -->
         </div>
       </template>
     </Homepage>
