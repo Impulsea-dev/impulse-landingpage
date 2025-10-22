@@ -1,5 +1,5 @@
 <template>
-    <div class="px-6 md:px-12 lg:px-20 xl:px-36 py-16">
+    <div class="px-6 md:px-12 lg:px-20 xl:px-36 pt-32 pb-16">
         <div class="text-center max-w-3xl mx-auto pb-16">
             <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
                 {{ $t('indexSolveEyebrow') }}

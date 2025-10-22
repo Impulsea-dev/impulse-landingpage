@@ -1,51 +1,46 @@
 <template>
   <div>
-    <section class="w-[100vw] h-[47rem] overflow-hidden !p-0 !m-0 md:!-top-6 md:-left-6 !-top-4 -left-4 relative">
+    <section class="w-screen min-h-[55rem] md:min-h-[60rem] overflow-visible p-0 m-0 relative pb-24">
       <img src="@/assets/images/svgs/entrance.svg"
-        class="animate-pulse lg:hidden xl:hidden md:hidden w-[100vw] -mt-24 p-0  -left-10" alt="">
+        class="animate-pulse lg:hidden xl:hidden md:hidden w-screen -mt-24 p-0 -left-10" alt="">
       <img src="@/assets/images/svgs/entrace1.svg"
-        class="animate-pulse md:block md:h-[650px] w-[100vw] -mt-3 p-0  -left-10 hidden" alt="">
+        class="animate-pulse md:block md:h-[650px] w-screen -mt-3 p-0 -left-10 hidden" alt="">
 
       <div>
         <div
-          class="absolute left-0 right-0 mr-auto ml-auto top-32 flex flex-col md:flex-row justify-between items-center md:items-start gap-0 w-[90%] md:w-[100%] px-6 md:px-12">
-          <div class="flex flex-col items-center md:items-start text-center md:text-left">
-            <!-- <div
-              class="flex justify-center md:justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2 py-2 rounded-[32px] bg-[#086c88]">
-              <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs font-medium text-center md:text-left text-white">
-                {{ $t('telcoslog') }}
-              </p>
-            </div> -->
-            <div
-              class="flex flex-col justify-center items-center md:items-start flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
-              <p class="flex-shrink-0 text-6xl text-center md:text-left text-white lg:leading-[5rem]">
-                <span class="flex-shrink-0 lg:text-6xl text-[40px] text-center md:text-left text-white lg:mb-3 font-bold">AI
-                  Driven Revenue</span><span
-                  class="flex-shrink-0 lg:text-6xl text-[40px] font-bold text-center md:text-left text-white">
-                </span><br /><span
-                  class="flex-shrink-0 lg:text-6xl text-[40px] font-semibold text-center md:text-left text-white">Intelligence
-                  & Telco Automation
-                </span>
+          class="absolute left-0 right-0 mx-auto top-10 flex flex-col items-center gap-10 w-full max-w-[1100px] px-6 md:px-12">
+
+          <!-- Texto principal -->
+          <div class="flex flex-col items-center text-center gap-6">
+            <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
+              {{ $t('telcoslog') }}
+            </p>
+            <div class="flex flex-col gap-4">
+              <p class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+                AI Driven Revenue Intelligence &
                 <br />
-                <!-- <span class="flex-shrink-0 lg:text-6xl text-[40px] font-bold text-center md:text-left text-white lg:mb-3">
-                  {{ $t('indexIncrease3') }}
-                </span> -->
+                Telco Automation
               </p>
-              <p class="flex-shrink-0 text-lg text-center md:text-left text-white/90 w-5/6">
+              <p class="text-lg md:text-xl text-white/80">
                 The orchestration layer that unifies your data and enables AI and automation to optimize efficiency and
-                workflows - one brain so your network runs itself and reacts in seconds.
+                workflows — one brain so your network runs itself and reacts in seconds.
               </p>
-              <div class="flex-grow-0 flex-shrink-0">
-                <Button :text="$t('indexContactUs')" btnClass="btn-primary"
-                  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
-                  @click="btnLink('contactus')" />
-              </div>
+            </div>
+            <div>
+              <Button :text="$t('indexContactUs')" btnClass="btn-primary"
+                style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
+                @click="btnLink('contactus')" />
             </div>
           </div>
-          <StoryLaneEmbed class="w-full" />
+
+          <!-- Storylane Embed ancho -->
+          <div class="w-full max-w-[1100px] px-4">
+            <StoryLaneEmbed class="w-full" />
+          </div>
         </div>
       </div>
     </section>
+
     <SolveProblems />
     <div class="h-20"></div>
     <Button
