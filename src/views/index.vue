@@ -8,39 +8,47 @@
 
       <div>
         <div
-          class="flex flex-col justify-center items-center absolute  left-0 right-0 mr-auto ml-auto md:w-[50%] w-[70%] text-center m-auto md:ml-auto top-32 ">
-          <div
-            class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2  py-2 rounded-[32px] bg-[#086c88]">
-            <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs  font-medium text-center text-white">
-              {{ $t('telcoslog') }}
-            </p>
+          class="absolute left-0 right-0 mr-auto ml-auto top-32 flex flex-col md:flex-row justify-between items-center md:items-start gap-0 w-[90%] md:w-[100%] px-6 md:px-12">
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <!-- <div
+              class="flex justify-center md:justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2 p-2 py-2 rounded-[32px] bg-[#086c88]">
+              <p class="flex-grow-0 flex-shrink-0 lg:text-xl text-xs font-medium text-center md:text-left text-white">
+                {{ $t('telcoslog') }}
+              </p>
+            </div> -->
+            <div
+              class="flex flex-col justify-center items-center md:items-start flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
+              <p class="flex-shrink-0 text-6xl text-center md:text-left text-white lg:leading-[5rem]">
+                <span class="flex-shrink-0 lg:text-6xl text-[40px] text-center md:text-left text-white lg:mb-3 font-bold">AI
+                  Driven Revenue</span><span
+                  class="flex-shrink-0 lg:text-6xl text-[40px] font-bold text-center md:text-left text-white">
+                </span><br /><span
+                  class="flex-shrink-0 lg:text-6xl text-[40px] font-semibold text-center md:text-left text-white">Intelligence
+                  & Telco Automation
+                </span>
+                <br />
+                <!-- <span class="flex-shrink-0 lg:text-6xl text-[40px] font-bold text-center md:text-left text-white lg:mb-3">
+                  {{ $t('indexIncrease3') }}
+                </span> -->
+              </p>
+              <p class="flex-shrink-0 text-lg text-center md:text-left text-white/90 w-5/6">
+                The orchestration layer that unifies your data and enables AI and automation to optimize efficiency and
+                workflows - one brain so your network runs itself and reacts in seconds.
+              </p>
+              <div class="flex-grow-0 flex-shrink-0">
+                <Button :text="$t('indexContactUs')" btnClass="btn-primary"
+                  style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
+                  @click="btnLink('contactus')" />
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col justify-center items-center flex-shrink-0 relative gap-2 mt-3 lg:space-y-2">
-            <p class="flex-shrink-0  text-6xl text-center text-white lg:leading-[5rem]">
-              <span
-                class="flex-shrink-0  lg:text-6xl text-[40px] text-center text-white lg:mb-3">{{ $t('indexIncrease1') }}</span><span
-                class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white">
-              </span><br /><span
-                class=" flex-shrink-0  lg:text-6xl text-[40px] font-semibold text-center text-white lg:text-s">{{ $t('indexIncrease2') }}
-              </span>
-              <br />
-              <span class="flex-shrink-0  lg:text-6xl text-[40px] font-bold text-center text-white lg:mb-3">
-                {{ $t('indexIncrease3') }}
-              </span>
-            </p>
-            <p class="flex-shrink-0 p-4 text-lg text-center text-white/70">
-              {{ $t('indexMax') }}
-            </p>
-            <div class="flex-grow-0 flex-shrink-0"> <Button :text="$t('indexContactUs')" btnClass="btn-primary "
-                style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)"
-                @click="btnLink('contactus')" /> </div>
-          </div>
+          <StoryLaneEmbed class="w-full" />
         </div>
       </div>
     </section>
     <SolveProblems />
     <div class="h-20"></div>
-    <Button 
+    <Button
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
       <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
       </p>
@@ -65,7 +73,7 @@
     <div class="h-20"></div>
     <div class="lg:pr-11 lg:pl-11">
       <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
-        <Button 
+        <Button
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
           <p class="text-base font-bold text-center text-[#141414]">
             {{ $t('indexOurSolutions') }}
@@ -76,7 +84,7 @@
     </div>
 
     <div class="pt-40 grid grid-cols-1 pl-10 pr-10">
-      <SwipperCard2 :title="$t('blog-2')"  />
+      <SwipperCard2 :title="$t('blog-2')" />
     </div>
 
 
@@ -122,13 +130,14 @@ import SwipperCardHome from "@/components/SwipperCardHome.vue"
 import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
+import StoryLaneEmbed from "@/components/StoryLaneEmbed.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems
+    SwipperCard2, SolveProblems, StoryLaneEmbed
   },
   data() {
     return {

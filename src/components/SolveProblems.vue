@@ -1,26 +1,41 @@
 <template>
-    <div class="px-6 lg:px-20 xl:px-36">
-        <div class="text-center text-2xl md:text-4xl text-white font-bold pb-24">   {{ $t('indexSolve') }}
+    <div class="px-6 md:px-12 lg:px-20 xl:px-36 py-16">
+        <div class="text-center max-w-3xl mx-auto pb-16">
+            <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
+                {{ $t('indexSolveEyebrow') }}
+            </p>
+            <h2 class="mt-4 text-3xl md:text-5xl text-white font-bold">
+                {{ $t('indexSolve') }}
+            </h2>
+            <p class="mt-4 text-base md:text-lg text-white/70">
+                {{ $t('indexSolveDescription') }}
+            </p>
         </div>
-        <div class="grid md:grid-cols-2 gap-20">
-            <div class="flex justify-center items-center">
-                <div class="rounded-xl transition-opacity duration-1000" :class="{
+        <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div class="flex justify-center">
+                <div class="rounded-[2rem] transition-opacity duration-700 w-[260px] h-[260px] md:w-[320px] md:h-[320px]" :class="{
                     'bgSMS': hover == 0,
                     'bgads': hover == 1,
                     'bgbpo': hover == 2
                 }"></div>
             </div>
-            <div>
-                <div class="flex flex-row gap-4 mb-6 transition-colors duration-300 cursor-pointer"
-                    v-for="(inf, index) in info" :key="index" @mouseenter="hover = index"
-                    :class="{ 'text-white/50': hover != index }">
-                    <div class="w-14 h-14 border-2 flex items-center justify-center text-2xl rounded-lg text-white transition-colors duration-500"
-                        :class="{ 'bg-red-500 border-none': hover == index }">
-                        {{ inf.id }}
-                    </div>
-                    <div class="flex flex-col gap-1 w-full">
-                        <div class="text-lg md:text-xl font-bold">{{ $t(inf.title) }}</div>
-                        <div class="text-base">{{ $t(inf.text) }}</div>
+            <div class="w-full">
+                <div class="space-y-6">
+                    <div
+                        class="rounded-3xl border transition-all duration-300 cursor-pointer p-6 md:p-8 focus:outline-none"
+                        v-for="(inf, index) in info" :key="index" @mouseenter="hover = index" @focus="hover = index"
+                        tabindex="0"
+                        :class="hover === index ? 'bg-white shadow-xl border-transparent' : 'bg-white/[0.06] border-white/10 hover:bg-white/[0.1]'">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-xl md:text-2xl font-semibold"
+                                :class="hover === index ? 'text-[#141414]' : 'text-white'">
+                                {{ $t(inf.title) }}
+                            </h3>
+                            <p class="text-base md:text-lg leading-relaxed"
+                                :class="hover === index ? 'text-slate-600' : 'text-white/70'">
+                                {{ $t(inf.text) }}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,16 +49,15 @@ import { useI18n } from 'vue-i18n'
 export default {
     data() {
         return {
-            
             hover: 0
         }
     },
     setup() {
         const { t } = useI18n()
-        const info= [
+        const info = [
                 {
                     id: 1,
-                    title:'indexSolveProblemsTitle-1',
+                    title: 'indexSolveProblemsTitle-1',
                     text: 'indexSolveProblemsText-1'
 
                 },
@@ -66,24 +80,18 @@ export default {
 </script>
 <style>
 .bgSMS {
-    width: 300px;
-    height: 300px;
     background: url(@/assets/images/smsi.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .bgads {
-    width: 300px;
-    height: 300px;
     background: url(@/assets/images/adsi.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .bgbpo {
-    width: 300px;
-    height: 300px;
     background: url(@/assets/images/bpoi.webp) no-repeat;
     background-size: cover;
     background-position: center;
