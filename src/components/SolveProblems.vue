@@ -1,7 +1,7 @@
 <template>
     <div class="px-6 md:px-12 lg:px-20 xl:px-36 pt-32 pb-16">
         <div class="text-center max-w-3xl mx-auto pb-16">
-            <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
+            <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-white">
                 {{ $t('indexSolveEyebrow') }}
             </p>
             <h2 class="mt-4 text-3xl md:text-5xl text-white font-bold">
@@ -25,14 +25,14 @@
                         class="rounded-3xl border transition-all duration-300 cursor-pointer p-6 md:p-8 focus:outline-none"
                         v-for="(inf, index) in info" :key="index" @mouseenter="hover = index" @focus="hover = index"
                         tabindex="0"
-                        :class="hover === index ? 'bg-white shadow-xl border-transparent' : 'bg-white/[0.06] border-white/10 hover:bg-white/[0.1]'">
+                        :class="hover === index ? 'bg-[#2a155d]/90 border-[#7F39E9] shadow-2xl' : 'bg-white/[0.06] border-white/10 hover:bg-white/[0.08]'">
                         <div class="flex flex-col gap-3">
                             <h3 class="text-xl md:text-2xl font-semibold"
-                                :class="hover === index ? 'text-[#141414]' : 'text-white'">
+                                :class="hover === index ? 'text-white' : 'text-white/90'">
                                 {{ $t(inf.title) }}
                             </h3>
                             <p class="text-base md:text-lg leading-relaxed"
-                                :class="hover === index ? 'text-slate-600' : 'text-white/70'">
+                                :class="hover === index ? 'text-white/80' : 'text-white/70'">
                                 {{ $t(inf.text) }}
                             </p>
                         </div>

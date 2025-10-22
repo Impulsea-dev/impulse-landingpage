@@ -12,9 +12,9 @@
 
           <!-- Texto principal -->
           <div class="flex flex-col items-center text-center gap-6">
-            <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
+            <!-- <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
               {{ $t('telcoslog') }}
-            </p>
+            </p> -->
             <div class="flex flex-col gap-4">
               <p class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
                 AI Driven Revenue Intelligence &
