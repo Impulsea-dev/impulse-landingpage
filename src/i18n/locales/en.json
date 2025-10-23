@@ -9,6 +9,149 @@
     "indexSolveEyebrow": "THE IMPULSE PLATFORM",
     "indexSolve": "Simplify. Automate. Scale.",
     "indexSolveDescription": "Three powerful capabilities working together to transform your telecom operations into a revenue-generating engine.",
+    "capabilitiesSection": {
+        "eyebrow": "Explore the Platform",
+        "title": "Capabilities That Drive Results",
+        "description": "Dive deep into each pillar and see how Impulse transforms your operations.",
+        "placeholderAlt": "Storylane capabilities placeholder",
+        "tabs": {
+            "telecomCRM": {
+                "label": "Telecom CRM",
+                "tag": "Telecom CRM",
+                "title": "Purpose-Built CRM for Telecom Operations",
+                "description": "A modern CRM designed specifically for telecom operators. Manage subscriber relationships, track service history, and drive revenue-all in one platform. Use standalone or integrate with your existing CRM.",
+                "features": {
+                    "0": "Subscriber 360° view with network performance, billing history, service tickets, and interaction logs.",
+                    "1": "Telecom-specific workflows for installations, upgrades, service changes, and support.",
+                    "2": "Unified data platform that connects network data, billing systems, and customer interactions in real time.",
+                    "3": "Flexible deployment to run as your primary CRM or layer on top of Salesforce, HubSpot, or other platforms."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "100%",
+                        "label": "Telecom-Native"
+                    },
+                    "1": {
+                        "value": "50%",
+                        "label": "Faster Onboarding"
+                    },
+                    "2": {
+                        "value": "10+",
+                        "label": "System Integrations"
+                    }
+                },
+                "cta": "Explore CRM Features"
+            },
+            "teamAcceleration": {
+                "label": "Team Acceleration",
+                "tag": "Team Acceleration",
+                "title": "Turn Every Rep Into a Top Performer",
+                "description": "AI-powered coaching that learns from your best performers and scales excellence across your entire team. Real-time guidance during calls and personalized training based on individual performance patterns.",
+                "features": {
+                    "0": "Live call coaching with best-practice prompts delivered in the moment.",
+                    "1": "Performance analysis across transcripts and behaviors to surface improvement areas.",
+                    "2": "Personalized training paths based on each rep's strengths and gaps.",
+                    "3": "Best practice sharing that captures what top performers do and amplifies it automatically."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "45%",
+                        "label": "Faster Ramp Time"
+                    },
+                    "1": {
+                        "value": "2.3x",
+                        "label": "Win Rate Improvement"
+                    },
+                    "2": {
+                        "value": "91%",
+                        "label": "Team Consistency"
+                    }
+                },
+                "cta": "Accelerate Your Team"
+            },
+            "revenueAcceleration": {
+                "label": "Revenue Acceleration",
+                "tag": "Unified Operations",
+                "title": "One Platform, All Your Systems",
+                "description": "Break down data silos with a unified operating layer that connects network infrastructure, billing systems, CRM, and OSS/BSS. Your AI assistant understands business context across every system.",
+                "features": {
+                    "0": "Network integration via SNMP, ICMP, Netflow, and VictoriaMetrics for end-to-end visibility.",
+                    "1": "Billing and CRM sync to keep pricing, accounts, and provisioning aligned.",
+                    "2": "Real-time alerts for outages, latency, and overages with automated response workflows.",
+                    "3": "AI assistant that executes commands and automates tasks across all connected systems."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "10+",
+                        "label": "System Integrations"
+                    },
+                    "1": {
+                        "value": "<2 min",
+                        "label": "Alert Response Time"
+                    },
+                    "2": {
+                        "value": "100%",
+                        "label": "Data Sync Accuracy"
+                    }
+                },
+                "cta": "Accelerate Revenue"
+            },
+            "agenticAI": {
+                "label": "Agentic AI",
+                "tag": "Autonomous Agents",
+                "title": "AI That Acts on Your Behalf",
+                "description": "Deploy autonomous AI agents that do more than alert you-they act. Retain at-risk customers automatically, execute upsell campaigns, and deliver 24/7 support without human intervention.",
+                "features": {
+                    "0": "Retention Agent that reaches out with tailored offers before customers churn.",
+                    "1": "Upsell Agent that finds expansion opportunities and launches campaigns autonomously.",
+                    "2": "Support Agent (Inbound) that authenticates, troubleshoots, and resolves without wait times.",
+                    "3": "Support Agent (Outbound) for proactive updates, outage notifications, and feedback loops."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "68%",
+                        "label": "Retention Success Rate"
+                    },
+                    "1": {
+                        "value": "24/7",
+                        "label": "Always Available"
+                    },
+                    "2": {
+                        "value": "85%",
+                        "label": "First Contact Resolution"
+                    }
+                },
+                "cta": "Meet Your AI Workforce"
+            },
+            "revenueIntelligence": {
+                "label": "Revenue Intelligence",
+                "tag": "Revenue Intelligence",
+                "title": "Predictive Revenue Intelligence",
+                "description": "Transform every data point - network performance, customer interactions, usage patterns - into actionable revenue intelligence so you see opportunities before competitors do.",
+                "features": {
+                    "0": "AI churn prediction to pinpoint who is likely to leave and why.",
+                    "1": "Customer health scoring that blends engagement, satisfaction, and network insights.",
+                    "2": "Bandwidth intelligence that highlights usage trends and upgrade opportunities.",
+                    "3": "Sentiment analysis that listens to every conversation for emotion and intent signals."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "92%",
+                        "label": "Churn Prediction Accuracy"
+                    },
+                    "1": {
+                        "value": "3x",
+                        "label": "Faster Issue Detection"
+                    },
+                    "2": {
+                        "value": "35%",
+                        "label": "Revenue Uplift"
+                    }
+                },
+                "cta": "See Intelligence in Action"
+            }
+        }
+    },
     "indexSolveProblemsTitle-1": "Revenue Intelligence",
     "indexSolveProblemsText-1": "Predictive insights from network performance to customer sentiment. Know which customers will churn, who is ready to upgrade, and where network issues cost you money.",
     "indexSolveProblemsTitle-2": "Agentic AI",

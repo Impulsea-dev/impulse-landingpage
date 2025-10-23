@@ -4,7 +4,7 @@
             <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-white">
                 {{ $t('indexSolveEyebrow') }}
             </p>
-            <h2 class="mt-4 text-3xl md:text-5xl text-white font-bold">
+            <h2 class="mt-4 text-3xl md:text-5xl !text-white font-bold">
                 {{ $t('indexSolve') }}
             </h2>
             <p class="mt-4 text-base md:text-lg text-white/70">

@@ -9,6 +9,149 @@
     "indexSolveEyebrow": "LA PLATAFORMA IMPULSE",
     "indexSolve": "Simplificar. Automatizar. Escalar.",
     "indexSolveDescription": "Tres potentes capacidades trabajan juntas para transformar tus operaciones de telecomunicaciones en un motor generador de ingresos.",
+    "capabilitiesSection": {
+        "eyebrow": "Explora la plataforma",
+        "title": "Capacidades que impulsan resultados",
+        "description": "Sumérgete en cada pilar y descubre cómo Impulse transforma tus operaciones.",
+        "placeholderAlt": "Marcador de Storylane para capacidades",
+        "tabs": {
+            "telecomCRM": {
+                "label": "Telecom CRM",
+                "tag": "Telecom CRM",
+                "title": "CRM disenado para operaciones telecom",
+                "description": "Un CRM moderno creado especificamente para operadores de telecomunicaciones. Gestiona relaciones con suscriptores, historial de servicio y genera ingresos en una sola plataforma. Usalo de forma independiente o integrado con tu CRM actual.",
+                "features": {
+                    "0": "Vista 360 de suscriptor con rendimiento de red, historial de facturacion, tickets y registros de interaccion.",
+                    "1": "Flujos de trabajo especificos para instalaciones, upgrades, cambios de servicio y soporte.",
+                    "2": "Plataforma de datos unificada que conecta red, facturacion e interacciones con clientes en tiempo real.",
+                    "3": "Implementacion flexible como CRM principal o encima de Salesforce, HubSpot u otras plataformas."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "100%",
+                        "label": "Nativo para telecom"
+                    },
+                    "1": {
+                        "value": "50%",
+                        "label": "Onboarding mas rapido"
+                    },
+                    "2": {
+                        "value": "10+",
+                        "label": "Integraciones de sistemas"
+                    }
+                },
+                "cta": "Explorar funciones CRM"
+            },
+            "teamAcceleration": {
+                "label": "Aceleración de equipos",
+                "tag": "Aceleración de equipos",
+                "title": "Convierte a cada representante en un top performer",
+                "description": "Coaching impulsado por IA que aprende de tus mejores representantes y escala la excelencia en todo tu equipo. Guías en tiempo real durante las llamadas y planes de capacitación personalizados según el desempeño individual.",
+                "features": {
+                    "0": "Coaching en vivo con recordatorios de mejores prácticas durante las conversaciones.",
+                    "1": "Análisis de desempeño en transcripciones y comportamientos para detectar áreas de mejora.",
+                    "2": "Planes de capacitación personalizados según las fortalezas y brechas de cada representante.",
+                    "3": "Compartir mejores prácticas capturando lo que hacen los top performers y amplificándolo automáticamente."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "45%",
+                        "label": "Tiempo de ramp up más rápido"
+                    },
+                    "1": {
+                        "value": "2.3x",
+                        "label": "Mejora de win rate"
+                    },
+                    "2": {
+                        "value": "91%",
+                        "label": "Consistencia del equipo"
+                    }
+                },
+                "cta": "Acelera a tu equipo"
+            },
+            "revenueAcceleration": {
+                "label": "Aceleración de ingresos",
+                "tag": "Operaciones unificadas",
+                "title": "Una plataforma, todos tus sistemas",
+                "description": "Elimina los silos de datos con una capa operativa unificada que conecta la infraestructura de red, los sistemas de facturación, CRM y OSS/BSS. Tu asistente de IA entiende el contexto del negocio en cada sistema.",
+                "features": {
+                    "0": "Integración de red vía SNMP, ICMP, Netflow y VictoriaMetrics para visibilidad total.",
+                    "1": "Sincronización de facturación y CRM para mantener precios, cuentas y aprovisionamiento alineados.",
+                    "2": "Alertas en tiempo real de caídas, latencia y excesos con flujos automatizados de respuesta.",
+                    "3": "Asistente de IA que ejecuta comandos y automatiza tareas en todos los sistemas conectados."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "10+",
+                        "label": "Integraciones de sistemas"
+                    },
+                    "1": {
+                        "value": "<2 min",
+                        "label": "Tiempo de respuesta a alertas"
+                    },
+                    "2": {
+                        "value": "100%",
+                        "label": "Precisión en sincronización de datos"
+                    }
+                },
+                "cta": "Acelera los ingresos"
+            },
+            "agenticAI": {
+                "label": "IA agéntica",
+                "tag": "Agentes autónomos",
+                "title": "IA que actúa por ti",
+                "description": "Implementa agentes de IA autónomos que hacen más que alertarte: actúan. Retienen clientes en riesgo automáticamente, ejecutan campañas de upsell y ofrecen soporte 24/7 sin intervención humana.",
+                "features": {
+                    "0": "Agente de retención que contacta con ofertas personalizadas antes de que el cliente se dé de baja.",
+                    "1": "Agente de upsell que detecta oportunidades y lanza campañas de expansión de forma autónoma.",
+                    "2": "Agente de soporte (inbound) que autentica, resuelve y atiende sin tiempos de espera.",
+                    "3": "Agente de soporte (outbound) para actualizaciones proactivas, notificaciones y encuestas."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "68%",
+                        "label": "Tasa de retención"
+                    },
+                    "1": {
+                        "value": "24/7",
+                        "label": "Siempre disponible"
+                    },
+                    "2": {
+                        "value": "85%",
+                        "label": "Resolución en el primer contacto"
+                    }
+                },
+                "cta": "Conoce a tu fuerza laboral IA"
+            },
+            "revenueIntelligence": {
+                "label": "Inteligencia de ingresos",
+                "tag": "Inteligencia de ingresos",
+                "title": "Inteligencia de ingresos predictiva",
+                "description": "Convierte cada dato - desempeño de red, interacciones con clientes, patrones de uso - en inteligencia accionable de ingresos para ver oportunidades antes que la competencia.",
+                "features": {
+                    "0": "Predicción de churn con IA para saber quién puede irse y por qué.",
+                    "1": "Puntuación de salud del cliente que combina engagement, satisfacción e insights de red.",
+                    "2": "Inteligencia de ancho de banda que revela tendencias de uso y oportunidades de upgrade.",
+                    "3": "Análisis de sentimiento que escucha cada conversación para detectar emoción e intención."
+                },
+                "metrics": {
+                    "0": {
+                        "value": "92%",
+                        "label": "Precisión en predicción de churn"
+                    },
+                    "1": {
+                        "value": "3x",
+                        "label": "Detección más rápida de incidencias"
+                    },
+                    "2": {
+                        "value": "35%",
+                        "label": "Incremento de ingresos"
+                    }
+                },
+                "cta": "Ver inteligencia en acción"
+            }
+        }
+    },
     "indexOurServices":"Nuestros Servicios",
     "indexBPOServices":"Servicios BPO",
     "indexBPOText":"Nuestros servicios BPO incluyen asistencia de nivel 1 y 2, ventas (salientes y entrantes) y cobros. Agilice sus operaciones comerciales y mejore la satisfacción del cliente.",

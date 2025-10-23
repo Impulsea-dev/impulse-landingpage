@@ -42,7 +42,7 @@
     </section>
 
     <SolveProblems />
-    <div class="h-20"></div>
+    <CapabilitiesTabs />
     <Button
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
       <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
@@ -126,13 +126,14 @@ import window from "@/mixins/window"
 import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
 import StoryLaneEmbed from "@/components/StoryLaneEmbed.vue"
+import CapabilitiesTabs from "@/components/CapabilitiesTabs.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustom, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems, StoryLaneEmbed
+    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs
   },
   data() {
     return {
