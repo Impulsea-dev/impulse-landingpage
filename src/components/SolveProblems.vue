@@ -28,7 +28,7 @@
                         :class="hover === index ? 'bg-[#2a155d]/90 border-[#7F39E9] shadow-2xl' : 'bg-white/[0.06] border-white/10 hover:bg-white/[0.08]'">
                         <div class="flex flex-col gap-3">
                             <h3 class="text-xl md:text-2xl font-semibold"
-                                :class="hover === index ? 'text-white' : 'text-white/90'">
+                                :class="hover === index ? '!text-white' : '!text-white/90'">
                                 {{ $t(inf.title) }}
                             </h3>
                             <p class="text-base md:text-lg leading-relaxed"
