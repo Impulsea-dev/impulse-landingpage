@@ -40,9 +40,8 @@
         </div>
       </div>
     </section>
-
-    <SolveProblems />
     <CapabilitiesTabs />
+    <SolveProblems />
     <Button
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
       <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
