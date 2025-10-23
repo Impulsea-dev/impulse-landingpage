@@ -28,13 +28,17 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
         },
 
         toogleDark() {
-            this.isDark = true;
+            this.setTheme("dark");
+        },
+
+        setTheme(theme = "light") {
+            const appliedTheme = theme === "dark" ? "dark" : "light";
             document.body.classList.remove(this.theme);
-            this.theme ="dark" ;
+            this.theme = appliedTheme;
+            this.isDark = appliedTheme === "dark";
             document.body.classList.add(this.theme);
             localStorage.setItem("theme", this.theme);
-             
-            document.documentElement.setAttribute("menu-layout",  this.menuLayout );
+            document.documentElement.setAttribute("menu-layout", this.menuLayout);
             localStorage.setItem("menuLayout", this.menuLayout);
         },
 

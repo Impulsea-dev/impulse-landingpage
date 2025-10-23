@@ -56,7 +56,7 @@
     </div>
     <!-- end page content --> 
     
-      <div class="banner space-y-3" v-if="showBanner"  >
+      <div v-if="showBanner" :class="['banner','space-y-3', bannerClasses]">
         <p class="flex-col">{{ $t('banner-1') }}
         </p>
         <div class="flex-col space-x-4 items-center">
@@ -85,6 +85,20 @@ export default {
     Sidebar,
     Breadcrumbs, 
     MobileSidebar,
+  },
+  computed: {
+    isDark() {
+      const storeDark = this.$store?.themeSettingsStore?.isDark
+      if (typeof storeDark === 'boolean') {
+        return storeDark
+      }
+      return document.body.classList.contains('dark')
+    },
+    bannerClasses() {
+      return this.isDark
+        ? 'bg-[#1e2227] text-white border border-white/10'
+        : 'bg-white/95 text-slate-800 border border-slate-200 shadow-xl backdrop-blur-sm'
+    }
   },
   methods: {
     switchHeaderClass() {
@@ -171,8 +185,9 @@ export default {
   min-height: calc(var(--vh, 1vh) * 100 - 132px);
 }
 .banner {
-  background-color: #1e2227;
   padding: 20px;
   text-align: center;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 </style>

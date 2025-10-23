@@ -8,7 +8,7 @@ export default {
   mounted() {
     this.$store.themeSettingsStore = useThemeSettingsStore()
     let themeSettingsStore = useThemeSettingsStore()
-    themeSettingsStore.toogleDark()
+    themeSettingsStore.setTheme("light")
   }
 }
 </script>

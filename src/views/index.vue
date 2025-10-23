@@ -44,7 +44,7 @@
     <SolveProblems />
     <Button
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-[#141414]">{{ $t('indexOurServices') }}
+      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-white dark:text-[#141414]">{{ $t('indexOurServices') }}
       </p>
     </Button>
 
@@ -69,7 +69,7 @@
       <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
         <Button
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
-          <p class="text-base font-bold text-center text-[#141414]">
+          <p class="text-base font-bold text-center text-white dark:text-[#141414]">
             {{ $t('indexOurSolutions') }}
           </p>
         </Button>
@@ -152,13 +152,22 @@ export default {
 </script>
 <style>
 .cardDisplay {
-  background: linear-gradient(-37.79deg, #000 -1.06%, #111315 100.71%);
-  background-color: #111315;
   transition: all 400ms ease-in;
+}
+
+.light .cardDisplay {
+  background: linear-gradient(135deg, #ffffff 0%, #efe7ff 100%);
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.dark .cardDisplay {
+  background: linear-gradient(-37.79deg, #090909 -1.06%, #111315 100.71%);
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .cardDisplay:hover {
   background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);
+  border-color: transparent !important;
 }
 
 .bgLogos {

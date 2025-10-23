@@ -11,7 +11,7 @@
           : ''
       "
     >
-      <router-link :to="item.link" v-if="!item.child && !item.megamenu">
+      <router-link :to="item.link" v-if="!item.child && !item.megamenu" class="menu-link">
         <div class="flex flex-1 items-center space-x-[8px] rtl:space-x-reverse">
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon" />
@@ -19,7 +19,7 @@
           <div class="text-box" v-if="item.title">{{ $t(item.title) }}</div>
         </div>
       </router-link>
-      <a href="javascript: void(0);" v-if="item.child || item.megamenu">
+      <a href="javascript: void(0);" v-if="item.child || item.megamenu" class="menu-link">
         <div class="flex flex-1 items-center space-x-[6px] rtl:space-x-reverse">
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon"
@@ -128,14 +128,14 @@ export default {
   > ul {
     > li {
       @apply inline-block relative;
-      > a {
-        @apply relative flex capitalize items-start text-sm font-medium leading-6 text-slate-600 dark:text-slate-300 2xl:px-6 xl:px-5 py-6  transition-all duration-150;
+      > .menu-link {
+        @apply relative flex capitalize items-start text-sm font-medium leading-6 text-slate-600 dark:text-slate-300 2xl:px-6 xl:px-5 py-6 transition-all duration-150;
         .icon-box {
           @apply text-slate-500 dark:text-slate-300 transition-all duration-150 text-lg;
         }
       }
       &:hover {
-        > a {
+        > .menu-link {
           @apply text-primary-500;
           .icon-box {
             @apply text-primary-500;
@@ -147,6 +147,9 @@ export default {
       }
     }
   }
+}
+.main-menu > ul > li > .menu-link.router-link-active {
+  @apply text-primary-500;
 }
 
 .main-menu > ul > li.menu-item-has-children > ul.sub-menu,
