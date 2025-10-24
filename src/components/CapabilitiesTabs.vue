@@ -1,19 +1,19 @@
 <template>
-  <section class="relative py-24">
-    <div class="relative mx-auto max-w-6xl px-6 md:px-12">
-      <div class="text-center space-y-4">
-        <p class="text-xs uppercase tracking-[0.35em] text-white/60">
+  <section :class="sectionClasses">
+    <div :class="wrapperClasses">
+      <div class="text-center space-y-4 max-w-4xl mx-auto px-4 md:px-0">
+        <p :class="eyebrowClasses">
           {{ $t('capabilitiesSection.eyebrow') }}
         </p>
-        <h2 class="text-3xl md:text-5xl font-bold !text-white leading-tight">
+        <h2 :class="titleClasses">
           {{ $t('capabilitiesSection.title') }}
         </h2>
-        <p class="mx-auto max-w-3xl text-base md:text-lg text-white/70">
+        <p :class="descriptionClasses">
           {{ $t('capabilitiesSection.description') }}
         </p>
       </div>
 
-      <div class="mt-12 flex flex-wrap justify-center gap-3">
+      <div class="mt-12 flex flex-wrap justify-center gap-3 max-w-4xl mx-auto px-4 md:px-0">
         <button
           v-for="(tab, index) in tabs"
           :key="tab.id"
@@ -22,23 +22,23 @@
           :class="[
             'rounded-full border px-5 py-2 text-sm font-semibold transition-all duration-200',
             activeTabIndex === index
-              ? 'bg-white text-[#0b0517] border-transparent shadow-[0_0_25px_rgba(164,70,244,0.35)]'
-              : 'bg-white/5 text-white/70 border-white/10 hover:bg-white/10'
+              ? (isDark
+                  ? 'bg-white text-[#0b0517] border-transparent shadow-[0_0_25px_rgba(164,70,244,0.35)]'
+                  : 'bg-[#6E4098] text-white border-[#6E4098] shadow-[0_0_25px_rgba(164,70,244,0.25)]')
+              : (isDark
+                  ? 'bg-white/5 text-white/70 border-white/10 hover:bg-white/10'
+                  : 'bg-white text-[#0b0517] border-[#e0d7f3] hover:border-[#c8b5f0]')
           ]"
         >
           {{ $t(tab.label) }}
         </button>
       </div>
 
-      <div class="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
-        <div
-          class="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-white/[0.02] p-1"
-        >
-          <div class="absolute inset-0 bg-gradient-to-br from-[#6e3ff9]/20 via-transparent to-[#24c1ff]/20 blur-3xl opacity-80"></div>
-          <div class="relative flex items-center justify-center rounded-[2.3rem] bg-[#090513]/85 p-10 backdrop-blur-xl">
-            <div
-              class="flex h-48 w-48 items-center justify-center rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-[#6e3ff9]/25 to-[#24c1ff]/15 shadow-[0_0_45px_rgba(78,44,200,0.35)]"
-            >
+      <div class="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] max-w-6xl mx-auto px-4 sm:px-8 lg:px-0">
+        <div :class="mediaWrapperClasses">
+          <div :class="mediaGlowClasses"></div>
+          <div :class="mediaInnerClasses">
+            <div :class="mediaIconWrapperClasses">
               <img
                 :src="storylineIcon"
                 :alt="$t('capabilitiesSection.placeholderAlt')"
@@ -49,15 +49,13 @@
         </div>
 
         <div>
-          <span
-            class="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/70"
-          >
+          <span :class="tagClasses">
             {{ $t(activeTab.tag) }}
           </span>
-          <h3 class="mt-6 text-3xl md:text-4xl font-bold leading-snug !text-white">
+          <h3 :class="panelTitleClasses">
             {{ $t(activeTab.title) }}
           </h3>
-          <p class="mt-4 text-base md:text-lg leading-relaxed text-white/70">
+          <p :class="panelDescriptionClasses">
             {{ $t(activeTab.description) }}
           </p>
 
@@ -77,7 +75,7 @@
                   />
                 </svg>
               </span>
-              <span class="text-sm md:text-base leading-relaxed text-white/80">
+              <span :class="featureTextClasses">
                 {{ $t(featureKey) }}
               </span>
             </li>
@@ -87,12 +85,12 @@
             <div
               v-for="metric in activeTab.metrics"
               :key="metric.value"
-              class="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-5 text-center backdrop-blur-sm"
+              :class="metricCardClasses"
             >
-              <p class="text-2xl font-semibold text-white">
+              <p :class="metricValueClasses">
                 {{ $t(metric.value) }}
               </p>
-              <p class="mt-2 text-[11px] uppercase tracking-[0.2em] text-white/50">
+              <p :class="metricLabelClasses">
                 {{ $t(metric.label) }}
               </p>
             </div>
@@ -115,6 +113,7 @@
 import { computed, ref } from 'vue'
 import Button from '@/components/Button'
 import storylineIcon from '@/assets/images/svgs/innovation.svg'
+import { useThemeSettingsStore } from '@/store/themeSettings'
 
 const tabsData = [
   {
@@ -265,6 +264,7 @@ export default {
     Button
   },
   setup() {
+    const themeSettingsStore = useThemeSettingsStore()
     const tabs = tabsData
     const activeTabIndex = ref(0)
     const activeTab = computed(() => tabs[activeTabIndex.value])
@@ -272,12 +272,197 @@ export default {
       activeTabIndex.value = index
     }
 
+    const isDark = computed(() => {
+      if (typeof themeSettingsStore.isDark === 'boolean') {
+        return themeSettingsStore.isDark
+      }
+      return document.body.classList.contains('dark')
+    })
+
+    const sectionClasses = computed(() => [
+      'relative',
+      'py-20',
+      'transition-colors',
+      isDark.value ? '' : 'bg-white'
+    ].filter(Boolean))
+
+    const wrapperClasses = computed(() => [
+      'relative',
+      'mx-auto',
+      'w-full',
+      isDark.value ? 'max-w-6xl px-6 md:px-12' : 'px-0'
+    ])
+
+    const eyebrowClasses = computed(() => [
+      'text-xs',
+      'uppercase',
+      'tracking-[0.35em]',
+      'transition-colors',
+      isDark.value ? 'text-white/60' : 'text-[#6E4098]'
+    ])
+
+    const titleClasses = computed(() => [
+      'text-3xl',
+      'md:text-5xl',
+      'font-bold',
+      'leading-tight',
+      'transition-colors',
+      isDark.value ? 'text-white' : 'text-[#6E4098]'
+    ])
+
+    const descriptionClasses = computed(() => [
+      'mx-auto',
+      'max-w-3xl',
+      'text-base',
+      'md:text-lg',
+      'transition-colors',
+      isDark.value ? 'text-white/70' : 'text-[#6E4098]'
+    ])
+
+    const mediaWrapperClasses = computed(() => [
+      'relative',
+      'overflow-hidden',
+      'rounded-[2.5rem]',
+      'p-1',
+      'transition-colors',
+      'border',
+      isDark.value
+        ? 'border-white/10 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-white/[0.02]'
+        : 'border-[#e7dcff] bg-gradient-to-br from-[#f4eeff] via-white to-white shadow-[0_22px_45px_-30px_rgba(110,64,152,0.45)]'
+    ])
+
+    const mediaGlowClasses = computed(() => [
+      'absolute',
+      'inset-0',
+      'pointer-events-none',
+      'blur-3xl',
+      'transition-opacity',
+      isDark.value
+        ? 'bg-gradient-to-br from-[#6e3ff9]/20 via-transparent to-[#24c1ff]/20 opacity-80'
+        : 'bg-gradient-to-br from-[#6e3ff9]/15 via-transparent to-[#24c1ff]/15 opacity-70'
+    ])
+
+    const mediaInnerClasses = computed(() => [
+      'relative',
+      'flex',
+      'items-center',
+      'justify-center',
+      'rounded-[2.3rem]',
+      'p-10',
+      'backdrop-blur-xl',
+      'transition-colors',
+      isDark.value ? 'bg-[#090513]/85' : 'bg-white'
+    ])
+
+    const mediaIconWrapperClasses = computed(() => [
+      'flex',
+      'h-48',
+      'w-48',
+      'items-center',
+      'justify-center',
+      'rounded-[1.75rem]',
+      'border',
+      'shadow-[0_0_45px_rgba(78,44,200,0.35)]',
+      'transition-colors',
+      isDark.value
+        ? 'border-white/10 bg-gradient-to-br from-[#6e3ff9]/25 to-[#24c1ff]/15'
+        : 'border-[#e0d7f3] bg-gradient-to-br from-[#f5f0ff] to-white'
+    ])
+
+    const tagClasses = computed(() => [
+      'inline-flex',
+      'items-center',
+      'rounded-full',
+      'border',
+      'px-4',
+      'py-1',
+      'text-[11px]',
+      'uppercase',
+      'tracking-[0.35em]',
+      'transition-colors',
+      isDark.value
+        ? 'border-white/15 bg-white/10 text-white/70'
+        : 'border-[#e0d7f3] bg-[#f5f0ff] text-[#6E4098]'
+    ])
+
+    const panelTitleClasses = computed(() => [
+      'mt-6',
+      'text-3xl',
+      'md:text-4xl',
+      'font-bold',
+      'leading-snug',
+      'transition-colors',
+      isDark.value ? 'text-white' : 'text-[#1b1037]'
+    ])
+
+    const panelDescriptionClasses = computed(() => [
+      'mt-4',
+      'text-base',
+      'md:text-lg',
+      'leading-relaxed',
+      'transition-colors',
+      isDark.value ? 'text-white/70' : 'text-slate-600'
+    ])
+
+    const featureTextClasses = computed(() => [
+      'text-sm',
+      'md:text-base',
+      'leading-relaxed',
+      'transition-colors',
+      isDark.value ? 'text-white/80' : 'text-slate-600'
+    ])
+
+    const metricCardClasses = computed(() => [
+      'rounded-2xl',
+      'border',
+      'px-4',
+      'py-5',
+      'text-center',
+      'backdrop-blur-sm',
+      'transition-colors',
+      isDark.value
+        ? 'border-white/10 bg-white/[0.05]'
+        : 'border-[#e0d7f3] bg-white'
+    ])
+
+    const metricValueClasses = computed(() => [
+      'text-2xl',
+      'font-semibold',
+      'transition-colors',
+      isDark.value ? 'text-white' : 'text-[#6E4098]'
+    ])
+
+    const metricLabelClasses = computed(() => [
+      'mt-2',
+      'text-[11px]',
+      'uppercase',
+      'tracking-[0.2em]',
+      'transition-colors',
+      isDark.value ? 'text-white/50' : 'text-[#6E4098]/60'
+    ])
+
     return {
       tabs,
       activeTabIndex,
       activeTab,
       setActive,
-      storylineIcon
+      storylineIcon,
+      isDark,
+      sectionClasses,
+      eyebrowClasses,
+      titleClasses,
+      descriptionClasses,
+      mediaWrapperClasses,
+      mediaGlowClasses,
+      mediaInnerClasses,
+      mediaIconWrapperClasses,
+      tagClasses,
+      panelTitleClasses,
+      panelDescriptionClasses,
+      featureTextClasses,
+      metricCardClasses,
+      metricValueClasses,
+      metricLabelClasses
     }
   }
 }

@@ -34,13 +34,13 @@
           </div>
 
           <!-- Storylane Embed ancho -->
-          <div class="w-full max-w-[1100px] px-4">
+          <div class="w-full max-w-[1100px] px-4 pb-12 md:pb-16">
             <StoryLaneEmbed class="w-full" />
           </div>
         </div>
       </div>
     </section>
-    <CapabilitiesTabs />
+    <CapabilitiesTabs class="mt-12 md:mt-20" />
     <SolveProblems />
     <Button
       :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
