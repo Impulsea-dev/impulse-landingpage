@@ -42,9 +42,10 @@
     </section>
     <CapabilitiesTabs class="mt-12 md:mt-20" />
     <SolveProblems />
+    <TimelineShowcase />
     <RolesMarquee />
 
-    <div class="lg:pr-11 lg:pl-11 mt-20">
+    <div class="mt-20 lg:pr-11 lg:pl-11">
       <Card :className="'relative dark:!bg-[#141414]'">
         <Button
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
@@ -56,7 +57,7 @@
       </Card>
     </div>
 
-       <ServicesOverview
+    <ServicesOverview
       :cards="servicesCards"
       button-text-key="indexOurServices"
       @cta-click="btnLink('contactus')"
@@ -95,13 +96,14 @@ import CapabilitiesTabs from "@/components/CapabilitiesTabs.vue"
 import ServicesOverview from "@/components/ServicesOverview.vue"
 import PartnersShowcase from "@/components/PartnersShowcase.vue"
 import RolesMarquee from "@/components/RolesMarquee.vue"
+import TimelineShowcase from "@/components/TimelineShowcase.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
     SwipperCardHome, Card, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs, ServicesOverview, PartnersShowcase, RolesMarquee
+    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs, ServicesOverview, PartnersShowcase, RolesMarquee, TimelineShowcase
   },
   data() {
     return {
