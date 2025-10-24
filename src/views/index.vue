@@ -42,34 +42,18 @@
     </section>
     <CapabilitiesTabs class="mt-12 md:mt-20" />
     <SolveProblems />
-    <Button
-      :className="'flex justify-center left-0 right-0 mr-auto ml-auto md:w-[18%] w-[70%] mt-6 mb-4 items-center relative gap-2 px-8 py-2 rounded-[32px] dark:bg-[#e2e8ea]'">
-      <p class="flex-grow-0 flex-shrink-0 text-base font-bold  text-center text-white dark:text-[#141414]">{{ $t('indexOurServices') }}
-      </p>
-    </Button>
+    <ServicesOverview
+      class="mt-12"
+      :cards="servicesCards"
+      button-text-key="indexOurServices"
+      @cta-click="btnLink('contactus')"
+    />
 
-    <!-- Grid Cards Start-->
-    <div
-      class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3 md:space-y-0 space-y-3 mb-6 lg:pr-11 lg:pl-11">
-      <CardCustom :title="$t('indexBPOServices')" :paragraph="$t('indexBPOText')" :img="dev"
-        classBackground="cardDisplay" />
-
-      <CardCustom :title="$t('indexManagedServices')" :paragraph="$t('indexManagedText')" :img="bpo"
-        classBackground="cardDisplay" />
-
-      <CardCustom :title="$t('indexSalesServices')" :paragraph="$t('indexSalesText')" :img="bi"
-        classBackground="cardDisplay" />
-
-    </div>
-    <!-- Grid Cards End -->
-    <div class="h-20"></div>
-
-    <div class="h-20"></div>
-    <div class="lg:pr-11 lg:pl-11">
-      <Card :className="'relative dark:!bg-[#141414]  mt-4 '">
+    <div class="lg:pr-11 lg:pl-11 mt-20">
+      <Card :className="'relative dark:!bg-[#141414]'">
         <Button
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
-          <p class="text-base font-bold text-center text-white dark:text-[#141414]">
+          <p class="text-base font-bold text-center text-white dark:text-[#141414] mb-4">
             {{ $t('indexOurSolutions') }}
           </p>
         </Button>
@@ -82,28 +66,15 @@
     </div>
 
 
-    <div class="pt-20 grid grid-cols-1 md:grid-cols-2 pl-10 pr-10">
-      <div class="mt-10">
-        <div class="text-white text-[40px] leading-10">
-          {{ $t('indexOurIntegrationPartnersTitle') }}
-        </div>
-        <div class="mt-4 text-[#ffffffb3] text-[16px] leading-6 font-medium">
-          {{ $t('indexOurIntegrationPartnersDescription') }}
-        </div>
-      </div>
-      <div :class="window.width < 640 ? 'bgLogosPhone' : 'bgLogos'">
-      </div>
-    </div>
-    <div class="h-20"></div>
-    <div class="flex justify-center items-center gap-6 mb-2">
-      <p class=" w-[327px] text-[32px] font-bold text-center text-white">{{ $t('indexLetsWorkTogether') }}</p>
-    </div>
-
-    <div class="flex justify-center items-center gap-6 mb-6">
-      <Button :text="$t('indexContactUs')" btnClass="btn-primary "
-        style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%)" @click="btnLink('contactus')" />
-    </div>
-    <ModalNewsletter />
+    <PartnersShowcase
+      class="mt-24"
+      title-key="indexOurIntegrationPartnersTitle"
+      description-key="indexOurIntegrationPartnersDescription"
+      cta-title-key="indexLetsWorkTogether"
+      cta-button-key="indexContactUs"
+      @cta-click="btnLink('contactus')"
+    />
+    <!-- <ModalNewsletter /> -->
   </div>
 </template>
 <script>
@@ -116,7 +87,6 @@ import consult from "@/assets/images/svgs/consult.svg"
 import Button from "@/components/Button";
 import Card from "@/components/Card"
 import CardCustomAll from "@/components/CardCustomAll.vue"
-import CardCustom from "@/components/CardCustom.vue"
 import CardCustomWhoAre from "@/components/CardCustomWhoAre.vue"
 import SwipperCard from "@/components/SwipperCard.vue"
 import SwipperCard2 from "@/components/SwipperCard2.vue"
@@ -126,17 +96,43 @@ import ModalNewsletter from "@/components/ModalNewsletter.vue"
 import SolveProblems from "@/components/SolveProblems.vue"
 import StoryLaneEmbed from "@/components/StoryLaneEmbed.vue"
 import CapabilitiesTabs from "@/components/CapabilitiesTabs.vue"
+import ServicesOverview from "@/components/ServicesOverview.vue"
+import PartnersShowcase from "@/components/PartnersShowcase.vue"
 import { useI18n } from 'vue-i18n'
 
 export default {
   mixins: [window],
   components: {
-    SwipperCardHome, Card, CardCustom, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs
+    SwipperCardHome, Card, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
+    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs, ServicesOverview, PartnersShowcase
   },
   data() {
     return {
       img, bi, dev, bpo, consult, whoarewe
+    }
+  },
+  computed: {
+    servicesCards() {
+      return [
+        {
+          id: 'bpo-services',
+          titleKey: 'indexBPOServices',
+          descriptionKey: 'indexBPOText',
+          img: this.dev
+        },
+        {
+          id: 'managed-services',
+          titleKey: 'indexManagedServices',
+          descriptionKey: 'indexManagedText',
+          img: this.bpo
+        },
+        {
+          id: 'sales-services',
+          titleKey: 'indexSalesServices',
+          descriptionKey: 'indexSalesText',
+          img: this.bi
+        }
+      ]
     }
   },
   methods: {
@@ -150,45 +146,4 @@ export default {
   }
 };
 </script>
-<style>
-.cardDisplay {
-  transition: all 400ms ease-in;
-}
-
-.light .cardDisplay {
-  background: linear-gradient(135deg, #ffffff 0%, #efe7ff 100%);
-  border-color: rgba(255, 255, 255, 0.45) !important;
-}
-
-.dark .cardDisplay {
-  background: linear-gradient(-37.79deg, #090909 -1.06%, #111315 100.71%);
-  border-color: rgba(255, 255, 255, 0.05) !important;
-}
-
-.cardDisplay:hover {
-  background: linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);
-  border-color: transparent !important;
-}
-
-.bgLogos {
-  background: url(@/assets/images/logos.webp) no-repeat;
-  background-size: 100% 100%;
-  background-color: transparent !important;
-  height: 224px;
-
-}
-
-.bgLogosPhone {
-  margin-top: 10px;
-  background: url(@/assets/images/logosPhone.webp) no-repeat;
-  background-size: 100% 100%;
-  background-color: transparent !important;
-  height: 384px;
-}
-
-.bgbutton {
-  background: linear-gradient(262.8deg, #A446F4 -1.48%, #4138F3 103.76%);
-  padding: 11px 32px;
-  border-radius: 8px;
-}
-</style>
+<style></style>

@@ -53,15 +53,25 @@ app.provide('gtag', app.config.globalProperties.$gtag);
 
 import {useThemeSettingsStore} from "@/store/themeSettings";
 const themeSettingsStore = useThemeSettingsStore()
+const rootElement = document.documentElement
+
+const applyRootTheme = (theme) => {
+    const resolvedTheme = theme === "dark" ? "dark" : "light";
+    rootElement.classList.remove("light", "dark");
+    rootElement.classList.add(resolvedTheme);
+    rootElement.setAttribute("data-theme", resolvedTheme);
+    document.body.classList.remove("light", "dark");
+    document.body.classList.add(resolvedTheme);
+};
 
 
 // check localStorage theme for dark light bordered
 if (localStorage.theme === "dark") {
-    document.body.classList.add("dark");
+    applyRootTheme("dark");
     themeSettingsStore.theme = "dark";
     themeSettingsStore.isDark = true;
 } else {
-    document.body.classList.add("light");
+    applyRootTheme("light");
     themeSettingsStore.theme = "light";
     themeSettingsStore.isDark = false;
 }

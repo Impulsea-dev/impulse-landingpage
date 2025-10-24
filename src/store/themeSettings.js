@@ -33,10 +33,14 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
 
         setTheme(theme = "light") {
             const appliedTheme = theme === "dark" ? "dark" : "light";
-            document.body.classList.remove(this.theme);
+            const root = document.documentElement;
+            document.body.classList.remove("light", "dark");
+            root.classList.remove("light", "dark");
             this.theme = appliedTheme;
             this.isDark = appliedTheme === "dark";
             document.body.classList.add(this.theme);
+            root.classList.add(this.theme);
+            root.setAttribute("data-theme", this.theme);
             localStorage.setItem("theme", this.theme);
             document.documentElement.setAttribute("menu-layout", this.menuLayout);
             localStorage.setItem("menuLayout", this.menuLayout);

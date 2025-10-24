@@ -56,14 +56,14 @@
     </div>
     <!-- end page content --> 
     
-      <div v-if="showBanner" :class="['banner','space-y-3', bannerClasses]">
+      <!-- <div v-if="showBanner" :class="['banner','space-y-3', bannerClasses]">
         <p class="flex-col">{{ $t('banner-1') }}
         </p>
         <div class="flex-col space-x-4 items-center">
           <button @click="okBannerClicked" class="btn-success p-2">{{ $t('banner-2') }}</button>
         <button @click="cancelBannerClicked" class="btn-warning p-2">{{ $t('banner-3') }}</button>
         </div>
-      </div> 
+      </div>  -->
     <Footer 
     />
   </main>

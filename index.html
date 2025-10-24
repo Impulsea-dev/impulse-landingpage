@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="light" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('theme');
+          var theme = savedTheme === 'dark' ? 'dark' : 'light';
+          var root = document.documentElement;
+          root.classList.remove('light', 'dark');
+          root.classList.add(theme);
+          root.setAttribute('data-theme', theme);
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
     <link rel="icon" href="/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="/loader.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +42,8 @@
     </noscript>
     <div id="loading-bg">
       <div class="loading-logo text-center">
-        <img src="/logo.svg" alt="Logo" />
+        <img src="/src/assets/images/logo/impulse.svg" alt="Impulse logo" class="loader-logo loader-logo--dark" />
+        <img src="/src/assets/images/logo/logo.svg" alt="Impulse logo" class="loader-logo loader-logo--light " />
       </div>
       <div class="loading">
         <div class="effect-1 effects"></div>
