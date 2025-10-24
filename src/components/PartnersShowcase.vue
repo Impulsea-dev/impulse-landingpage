@@ -1,5 +1,8 @@
 <template>
   <section :class="sectionClasses">
+        <div class="pt-10 grid grid-cols-1 px-10">
+      <SwipperCard2 :title="$t('blog-2')" />
+    </div>
     <div class="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 md:px-12 lg:flex-row lg:items-center lg:justify-between">
       <div class="max-w-4xl space-y-5">
         <p :class="titleClasses">
@@ -29,6 +32,7 @@
 import { computed } from 'vue'
 import Button from '@/components/Button'
 import { useThemeSettingsStore } from '@/store/themeSettings'
+import SwipperCard2 from '@/components/SwipperCard2.vue'
 
 const props = defineProps({
   titleKey: {
@@ -59,7 +63,7 @@ const sectionClasses = computed(() =>
     'partners-showcase',
     'relative',
     'py-20',
-    isDark.value ? 'bg-[#0f1124]/95' : 'bg-white'
+    'bg-transparent'
   ].join(' ')
 )
 
@@ -68,7 +72,7 @@ const titleClasses = computed(() =>
     'text-3xl',
     'font-extrabold',
     'leading-tight',
-    isDark.value ? 'text-white' : 'text-[#402675]'
+    'text-white'
   ].join(' ')
 )
 
@@ -77,7 +81,7 @@ const descriptionClasses = computed(() =>
     'text-base',
     'leading-relaxed',
     'font-medium',
-    isDark.value ? 'text-white/70' : 'text-[#5c4b89]'
+    'text-white/70'
   ].join(' ')
 )
 
@@ -86,7 +90,7 @@ const ctaTitleClasses = computed(() =>
     'text-[28px]',
     'font-bold',
     'leading-snug',
-    isDark.value ? 'text-white' : 'text-[#402675]'
+    'text-white'
   ].join(' ')
 )
 
@@ -100,10 +104,9 @@ const buttonClasses = computed(() =>
     'py-3',
     'text-base',
     'font-semibold',
-    'shadow-[0_14px_32px_rgba(110,64,152,0.28)]',
-    isDark.value
-      ? 'bg-[#7c4ed1] text-white hover:bg-[#9061f2]'
-      : 'bg-[#6541a4] text-white hover:bg-[#7d57c1]'
+    'text-white',
+    'bg-[#7c4ed1] hover:bg-[#9061f2]',
+    'shadow-[0_14px_32px_rgba(110,64,152,0.32)]'
   ].join(' ')
 )
 
@@ -120,7 +123,7 @@ const logoContainerClasses = computed(() =>
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(45% 45% at 50% 20%, rgba(123, 78, 209, 0.18) 0%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(45% 45% at 50% 20%, rgba(123, 78, 209, 0.18) 0%, rgba(15, 17, 36, 0) 100%);
   pointer-events: none;
 }
 
