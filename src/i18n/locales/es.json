@@ -1,6 +1,9 @@
 {
     "en":"es",
     "telcoslog":"La especialización en telecomunicaciones se integra con la innovación SaaS.",
+    "titleLanding": "Inteligencia de Ingresos impulsada por IA y Automatización de Telecomunicaciones",
+    "subtitleLanding": "La capa de orquestación que unifica tus datos y habilita IA y automatización para optimizar eficiencia y flujos de trabajo — un cerebro para que tu red se gestione sola y reaccione en segundos.",
+    "bookDemo": "Reservar Demo",
     "indexIncrease1":"Aumente sus",
     "indexIncrease2":"Ingresos en Telecom",
     "indexIncrease3":"de 2-3 veces",
@@ -8,7 +11,33 @@
     "indexContactUs":"Contactanos",
     "indexSolveEyebrow": "LA PLATAFORMA IMPULSE",
     "indexSolve": "Simplificar. Automatizar. Escalar.",
+    "revenueListen": "Escuchar en",
+    "impulseActionTitle": "¿Quieres ver cómo funciona Impulse?",
     "indexSolveDescription": "Tres potentes capacidades trabajan juntas para transformar tus operaciones de telecomunicaciones en un motor generador de ingresos.",
+     "cspsTitle": "Lo que hace que nos diferenciamos",
+    "cspsDetails": "Aprende más sobre los Servicios de Impulse",
+    "cspsOptions": {
+        "option1": {
+            "title": "Construido para CSPs",
+            "details": "No es otro CRM general. Hablamos SNMP, ancho de banda, IPs, ARPU y NPS."
+        },
+        "option2": {
+            "title": "Aceleración de Ventas",
+            "details": "Anticípate a las necesidades del cliente antes de que llamen. Activa ofertas de retención antes de que cancelen."
+        },
+        "option3": {
+            "title": "Inteligencia de Red en Tiempo Real",
+            "details": "Dashboards en tiempo real de desempeño, uptime y uso de recursos."
+        },
+        "option4": {
+            "title": "Retención y Monetización",
+            "details": "Alertas inteligentes cuando un cliente excede su plan, pierde conexión o muestra comportamiento de riesgo."
+        },
+        "option5": {
+            "title": "Streamline your processes",
+            "details": "Hemos dedicado miles de horas a refinar cada proceso en su organización, creando nuestro software con las mejores prácticas para su negocio, lo que le permite mejorar su puntuación de NPS y aumentar los ingresos."
+        }
+    },
     "capabilitiesSection": {
         "eyebrow": "Explora la plataforma",
         "title": "Capacidades que impulsan resultados",

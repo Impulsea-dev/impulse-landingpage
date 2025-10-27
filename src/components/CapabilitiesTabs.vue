@@ -449,6 +449,7 @@ export default {
       storylineIcon,
       isDark,
       sectionClasses,
+      wrapperClasses,
       eyebrowClasses,
       titleClasses,
       descriptionClasses,

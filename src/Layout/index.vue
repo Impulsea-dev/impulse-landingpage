@@ -178,9 +178,9 @@ export default {
   animation: slideLeftTransition 0.24s reverse;
 }
 
-.page-content {
-  @apply md:pt-6 md:pb-1 pt-[15px] pb-24;
-}
+// .page-content {
+//   @apply md:pt-6 md:pb-1 pt-[15px] pb-24;
+// }
 .page-min-height {
   min-height: calc(var(--vh, 1vh) * 100 - 132px);
 }

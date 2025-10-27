@@ -1,27 +1,21 @@
 <template>
   <div>
-    <section class="w-screen min-h-[55rem] md:min-h-[60rem] overflow-visible p-0 m-0 relative pb-24">
+    <!-- <section class="w-screen min-h-[55rem] md:min-h-[60rem] overflow-visible p-0 m-0 relative pb-24">
       <img src="@/assets/images/svgs/entrance.svg"
         class="animate-pulse lg:hidden xl:hidden md:hidden w-screen -mt-24 p-0 -left-10" alt="">
       <img src="@/assets/images/svgs/entrace1.svg"
         class="animate-pulse md:block md:h-[650px] w-screen -mt-3 p-0 -left-10 hidden" alt="">
-
       <div>
         <div
           class="absolute left-0 right-0 mx-auto top-10 flex flex-col items-center gap-10 w-full max-w-[1100px] px-6 md:px-12">
-
-          <!-- Texto principal -->
           <div class="flex flex-col items-center text-center gap-6">
-            <!-- <p class="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[#7F39E9]">
-              {{ $t('telcoslog') }}
-            </p> -->
             <div class="flex flex-col gap-4">
-              <p class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+              <p class="text-4xl md:text-5xl font-extrabold text-[#6E4098] leading-tight pt-14">
                 AI Driven Revenue Intelligence &
                 <br />
                 Telco Automation
               </p>
-              <p class="text-lg md:text-xl text-white/80">
+              <p class="text-lg md:text-xl text-[#6E4098]">
                 The orchestration layer that unifies your data and enables AI and automation to optimize efficiency and
                 workflows — one brain so your network runs itself and reacts in seconds.
               </p>
@@ -32,20 +26,31 @@
                 @click="btnLink('contactus')" />
             </div>
           </div>
-
-          <!-- Storylane Embed ancho -->
           <div class="w-full max-w-[1100px] px-4 pb-12 md:pb-16">
             <StoryLaneEmbed class="w-full" />
           </div>
         </div>
       </div>
-    </section>
-    <CapabilitiesTabs class="mt-12 md:mt-20" />
-    <SolveProblems />
+    </section> -->
+    <HomePage>
+      <template v-slot:videol>
+        <div class="absolute top-0 bottom-0 w-full">
+          <div class="video-container">
+            <video ref="videoRef" class="videoStyle" src="../assets/images/Video.mp4" autoplay muted loop></video>
+          </div>
+        </div>
+      </template>
+    </HomePage>
+    <CapabilitiesTabs  />
+    <!-- <SolveProblems /> -->
     <TimelineShowcase />
     <RolesMarquee />
+    <CSPs />
+    <div class="bg-white">
+      <RevenuePotencial/>
+    </div>
 
-    <div class="mt-20 lg:pr-11 lg:pl-11">
+    <!-- <div class="mt-20 lg:pr-11 lg:pl-11">
       <Card :className="'relative dark:!bg-[#141414]'">
         <Button
           :className="'absolute -top-5 justify-center  left-0 right-0 mr-auto ml-auto lg:w-[22%] md:w-[30%] w-[70%] text-center m-auto gap-2 px-8 py-1 rounded-[32px] dark:bg-[#e2e8ea]'">
@@ -55,22 +60,22 @@
         </Button>
         <CardCustomAll />
       </Card>
-    </div>
+    </div> -->
 
-    <ServicesOverview
+    <!-- <ServicesOverview
       :cards="servicesCards"
       button-text-key="indexOurServices"
       @cta-click="btnLink('contactus')"
-    />
+    /> -->
 
 
-    <PartnersShowcase
+    <!-- <PartnersShowcase
       title-key="indexOurIntegrationPartnersTitle"
       description-key="indexOurIntegrationPartnersDescription"
       cta-title-key="indexLetsWorkTogether"
       cta-button-key="indexContactUs"
       @cta-click="btnLink('contactus')"
-    />
+    /> -->
     <!-- <ModalNewsletter /> -->
   </div>
 </template>
@@ -98,12 +103,15 @@ import PartnersShowcase from "@/components/PartnersShowcase.vue"
 import RolesMarquee from "@/components/RolesMarquee.vue"
 import TimelineShowcase from "@/components/TimelineShowcase.vue"
 import { useI18n } from 'vue-i18n'
+import HomePage from "@/components/HomePage.vue"
+import CSPs from "@/components/CSPS.vue"
+import RevenuePotencial from "@/components/RevenuePotencial.vue"
 
 export default {
   mixins: [window],
   components: {
-    SwipperCardHome, Card, CardCustomAll, SwipperCard, Button, CardCustomWhoAre, ModalNewsletter,
-    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs, ServicesOverview, PartnersShowcase, RolesMarquee, TimelineShowcase
+    SwipperCardHome, HomePage, CardCustomAll, SwipperCard, Card, Button, CardCustomWhoAre, ModalNewsletter,
+    SwipperCard2, SolveProblems, StoryLaneEmbed, CapabilitiesTabs, ServicesOverview, PartnersShowcase, RolesMarquee, TimelineShowcase, CSPs, RevenuePotencial
   },
   data() {
     return {
@@ -145,4 +153,44 @@ export default {
   }
 };
 </script>
-<style></style>
+<style scoped>
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 0;
+}
+
+.videoStyle {
+  object-fit: cover;
+  height: 25%;
+  /* h-1/4 */
+  width: 100%;
+  clip-path: inherit;
+  border-radius: inherit;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .videoStyle {
+    height: 100%;
+    border-radius: none;
+  }
+
+  .video-container::before {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+}
+</style>

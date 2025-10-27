@@ -1,14 +1,44 @@
 {
     "en":"en",
     "telcoslog": "Telecom Expertise meets SaaS innovation.",
+    "titleLanding": "AI Driven Revenue Intelligence & Telco Automation",
+    "subtitleLanding": "The orchestration layer that unifies your data and enables AI and automation to optimize efficiency and workflows — one brain so your network runs itself and reacts in seconds.",
+    "bookDemo": "Book a Demo",
     "indexIncrease1": "Increase Your Telecom",
     "indexIncrease2": "Revenue",
     "indexIncrease3": "by 2-3x",
     "indexMax": "Maximize revenue, optimize processes, and reduce cost with our solutions",
     "indexContactUs": "Contact Us",
     "indexSolveEyebrow": "THE IMPULSE PLATFORM",
+    "revenueResources": "Resources",
+    "revenuePotencialTitle":"Unlock your team’s revenue potential",
+    "revenueListen":"Listen on",
     "indexSolve": "Simplify. Automate. Scale.",
     "indexSolveDescription": "Three powerful capabilities working together to transform your telecom operations into a revenue-generating engine.",
+    "cspsTitle":"What Makes Us Different",
+    "cspsDetails":"Learn more about Impulse Services",
+    "cspsOptions":{
+        "option1":{
+            "title":"Built for CSPs",
+            "details":"Not another general CRM. We speak SNMP, bandwidth, IPs, ARPU, and NPS."
+        },
+        "option2":{
+            "title":"Sales Acceleration",
+            "details":"Spot customer needs before they call. Trigger offers before they churn"
+        },
+        "option3":{
+            "title":"Live Network Intelligence",
+            "details":"Real-time dashboards across performance, uptime, and consumption."
+        },
+        "option4":{
+            "title":"Retention & Monetization ",
+            "details":"Smart alerts when customers exceed usage, go offline, or signal risk."
+        },
+        "option5":{
+            "title":"Streamline your processes",
+            "details":"We've dedicated thousands of hours to refining every process in your organization, crafting our software stack with the best practices for your business, enabling you to improve your NPS score and boost revenue."
+        }        
+    },
     "capabilitiesSection": {
         "eyebrow": "Explore the Platform",
         "title": "Capabilities That Drive Results",
