@@ -577,5 +577,11 @@
               "blog-1":"News and Blog",
               "blog-2":"Top Picks",
               "blog-3":"Blog List",
-              "blog-4":"Open Blog Post"
+              "blog-4":"Open Blog Post",
+              "blogSection": {
+                "eyebrow": "BLOG",
+                "title": "The Impulse Blog",
+                "description": "AI. Telecom. Growth. Discover how data, automation, and intelligence are redefining the customer experience - only on The Impulse Blog.",
+                "viewAll": "View All Posts"
+              }
 }

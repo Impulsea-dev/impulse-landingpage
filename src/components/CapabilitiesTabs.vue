@@ -1,7 +1,7 @@
 <template>
   <section :class="sectionClasses">
     <div :class="wrapperClasses">
-      <div class="text-center space-y-4 max-w-4xl mx-auto px-4 md:px-0">
+      <div class="text-center space-y-4 max-w-4xl mx-auto px-4 md:px-0 opacity-0" ref="headerRef">
         <p :class="eyebrowClasses">
           {{ $t('capabilitiesSection.eyebrow') }}
         </p>
@@ -13,7 +13,7 @@
         </p>
       </div>
 
-      <div class="mt-12 flex flex-wrap justify-center gap-3 max-w-4xl mx-auto px-4 md:px-0">
+      <div class="mt-12 flex flex-wrap justify-center gap-3 max-w-4xl mx-auto px-4 md:px-0 opacity-0" ref="tabsRef">
         <button
           v-for="(tab, index) in tabs"
           :key="tab.id"
@@ -35,7 +35,7 @@
       </div>
 
       <div class="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] max-w-6xl mx-auto px-4 sm:px-8 lg:px-0">
-        <div :class="mediaWrapperClasses">
+        <div :class="mediaWrapperClasses" class="opacity-0" ref="mediaRef">
           <div :class="mediaGlowClasses"></div>
           <div :class="mediaInnerClasses">
             <div :class="mediaIconWrapperClasses">
@@ -48,7 +48,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="opacity-0" ref="contentRef">
           <span :class="tagClasses">
             {{ $t(activeTab.tag) }}
           </span>
@@ -81,14 +81,18 @@
             </li>
           </ul>
 
-          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="mt-10 grid gap-4 sm:grid-cols-3" ref="metricsContainerRef">
             <div
-              v-for="metric in activeTab.metrics"
+              v-for="(metric, index) in activeTab.metrics"
               :key="metric.value"
               :class="metricCardClasses"
             >
-              <p :class="metricValueClasses">
-                {{ $t(metric.value) }}
+              <p
+                :class="metricValueClasses"
+                :ref="el => { if (el) metricRefs[index] = el }"
+                :data-value="$t(metric.value)"
+              >
+                0
               </p>
               <p :class="metricLabelClasses">
                 {{ $t(metric.label) }}
@@ -110,10 +114,12 @@
 </template>
 
 <script>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, watch, nextTick } from 'vue'
 import Button from '@/components/Button'
 import storylineIcon from '@/assets/images/svgs/innovation.svg'
 import { useThemeSettingsStore } from '@/store/themeSettings'
+import useIntersectionObserver from '@/composables/useIntersectionObserver'
+import useCounterAnimation from '@/composables/useCounterAnimation'
 
 const tabsData = [
   {
@@ -271,6 +277,72 @@ export default {
     const setActive = (index) => {
       activeTabIndex.value = index
     }
+
+    // Refs para animaciones
+    const headerRef = ref(null)
+    const tabsRef = ref(null)
+    const mediaRef = ref(null)
+    const contentRef = ref(null)
+    const metricsContainerRef = ref(null)
+    const metricRefs = ref([])
+
+    // Observers para animaciones
+    const { observe: observeFadeUp } = useIntersectionObserver('animate-fade-up')
+    const { observe: observeSlideLeft } = useIntersectionObserver('animate-slide-left')
+    const { observe: observeSlideRight } = useIntersectionObserver('animate-slide-right')
+
+    // Counter animation
+    const { animateCounter, observeElement, extractNumber, extractSuffix } = useCounterAnimation()
+    const hasAnimated = ref(false)
+
+    // Función para animar las métricas
+    const animateMetrics = () => {
+      metricRefs.value.forEach((metricEl) => {
+        if (metricEl) {
+          const fullValue = metricEl.getAttribute('data-value')
+          const numericValue = extractNumber(fullValue)
+          const suffix = extractSuffix(fullValue)
+
+          animateCounter(metricEl, numericValue, 2000, suffix)
+        }
+      })
+    }
+
+    // Watch para reiniciar animación cuando cambie el tab
+    watch(activeTabIndex, () => {
+      hasAnimated.value = false
+      // Resetear valores a 0
+      nextTick(() => {
+        metricRefs.value.forEach((metricEl) => {
+          if (metricEl) {
+            metricEl.textContent = '0'
+          }
+        })
+
+        // Observar y animar cuando sea visible
+        if (metricsContainerRef.value && !hasAnimated.value) {
+          observeElement(metricsContainerRef.value, () => {
+            hasAnimated.value = true
+            animateMetrics()
+          })
+        }
+      })
+    })
+
+    onMounted(() => {
+      if (headerRef.value) observeFadeUp(headerRef.value)
+      if (tabsRef.value) observeFadeUp(tabsRef.value)
+      if (mediaRef.value) observeSlideLeft(mediaRef.value)
+      if (contentRef.value) observeSlideRight(contentRef.value)
+
+      // Observar métricas para animación de contador
+      if (metricsContainerRef.value) {
+        observeElement(metricsContainerRef.value, () => {
+          hasAnimated.value = true
+          animateMetrics()
+        })
+      }
+    })
 
     const isDark = computed(() => {
       if (typeof themeSettingsStore.isDark === 'boolean') {
@@ -463,7 +535,13 @@ export default {
       featureTextClasses,
       metricCardClasses,
       metricValueClasses,
-      metricLabelClasses
+      metricLabelClasses,
+      headerRef,
+      tabsRef,
+      mediaRef,
+      contentRef,
+      metricsContainerRef,
+      metricRefs
     }
   }
 }

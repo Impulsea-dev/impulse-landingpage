@@ -3,13 +3,13 @@
         data-header-color="black" data-header-bg="white">
         <div class="animated-container opacity-0">
             <div
-                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-4xl pt-16 pb-10 w-1/2 mx-auto text-center">
+                class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-4xl pt-16 pb-10 w-1/2 mx-auto text-center" ref="titleRef">
                 {{ $t('cspsTitle') }}
             </div>
             <div class="px-4 py-12">
                 <div class="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <div v-for="(item, idx) in reqs" :key="idx" class="group relative flex flex-col gap-4 cursor-pointer
-               bg-white rounded-2xl p-6 shadow-md transition-colors duration-300
+                    <div v-for="(item, idx) in reqs" :key="idx" :ref="el => { if (el) cardRefs[idx] = el }" class="group relative flex flex-col gap-4 cursor-pointer
+               bg-white rounded-2xl p-6 shadow-md transition-colors duration-300 opacity-0
          hover:bg-gradient-to-br hover:from-[#4299E1] hover:to-[#2B6CB0] hover:text-white">
                         <div class="flex justify-center items-center">
                            <Icon :icon="item.icon" class="text-5xl"/>
@@ -68,12 +68,28 @@ const reqs = computed(() => [
     // }
 ]);
 
-const { observe } = useIntersectionObserver('animate-fade-up');
+const titleRef = ref(null)
+const cardRefs = ref([])
+
+const { observe } = useIntersectionObserver('animate-fade-up')
+const { observe: observeSoftEntrance } = useIntersectionObserver('animate-soft-entrance')
+
 onMounted(() => {
-    const elementsToAnimate = document.querySelectorAll('.animated-container');
+    const elementsToAnimate = document.querySelectorAll('.animated-container')
     elementsToAnimate.forEach((element) => {
-        observe(element);
-    });
+        observe(element)
+    })
+
+    // Animar cada tarjeta con efecto de cascada suave
+    cardRefs.value.forEach((card, index) => {
+        if (card) {
+            // Delays más suaves y graduales: 150ms, 250ms, 350ms, 450ms
+            const delays = [400, 500, 600, 700]
+            const delayClass = `animate-delay-${delays[index] || 700}`
+            card.classList.add(delayClass)
+            observeSoftEntrance(card)
+        }
+    })
 })
 
 const active = ref(-1)

@@ -22,9 +22,9 @@
                         </ButtonProgress>
                     </div>
                 </div>
-                <div class="flex flex-col flex-grow justify-end pb-20">
+                <!-- <div class="flex flex-col flex-grow justify-end pb-20">
                     <OurPartners />
-                </div>
+                </div> -->
             </div>
             <slot name="videol"></slot>
 

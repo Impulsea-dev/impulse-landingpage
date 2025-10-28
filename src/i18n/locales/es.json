@@ -11,6 +11,7 @@
     "indexContactUs":"Contactanos",
     "indexSolveEyebrow": "LA PLATAFORMA IMPULSE",
     "indexSolve": "Simplificar. Automatizar. Escalar.",
+    "revenueResources": "Recursos",
     "revenueListen": "Escuchar en",
     "impulseActionTitle": "¿Quieres ver cómo funciona Impulse?",
     "indexSolveDescription": "Tres potentes capacidades trabajan juntas para transformar tus operaciones de telecomunicaciones en un motor generador de ingresos.",
@@ -575,6 +576,12 @@
               "blog-1":"Noticias y Blog",
               "blog-2":"Selecciones principales",
               "blog-3":"Lista de blogs",
-              "blog-4":"Abrir entrada de blog"
-      
+              "blog-4":"Abrir entrada de blog",
+              "blogSection": {
+                "eyebrow": "BLOG",
+                "title": "El Blog de Impulse",
+                "description": "IA. Telecomunicaciones. Crecimiento. Descubre cómo los datos, la automatización y la inteligencia están redefiniendo la experiencia del cliente - solo en El Blog de Impulse.",
+                "viewAll": "Ver Todas las Publicaciones"
+              }
+
 }

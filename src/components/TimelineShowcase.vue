@@ -2,7 +2,7 @@
   <section class="bg-white py-20">
     <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6">
       <!-- heading -->
-      <div>
+      <div class="opacity-0" ref="headingRef">
         <h2 class="text-3xl font-extrabold text-[#2f1a54] md:text-[44px] md:leading-tight">
           Proven results in weeks, not years
         </h2>
@@ -12,14 +12,14 @@
       </div>
 
       <!-- timeline -->
-      <!-- CAMBIO: overflow-visible para que el popover no se recorte -->
       <div class="rounded-lg overflow-visible" aria-label="Delivery timeline">
         <!-- header row -->
         <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#e7def7]">
           <div
-            v-for="item in timeline"
+            v-for="(item, index) in timeline"
             :key="item.id"
-            class="group relative isolate flex flex-col px-6 py-10 transition-colors duration-200 bg-[#5b4e76] hover:bg-[#4c4167] text-white"
+            :ref="el => { if (el) timelineItemRefs[index] = el }"
+            class="group relative isolate flex flex-col px-6 py-10 transition-colors duration-200 bg-[#5b4e76] hover:bg-[#4c4167] text-white opacity-0"
           >
             <div class="text-sm font-semibold leading-snug">
               <span>{{ item.title }}</span>
@@ -49,7 +49,7 @@
           </div>
         </div>
 
-        <!-- thin divider line like in the screenshot -->
+        <!-- thin divider line -->
         <div class="h-[1px] bg-white/30"></div>
 
         <!-- durations row -->
@@ -64,6 +64,33 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
+import useIntersectionObserver from '@/composables/useIntersectionObserver'
+
+const headingRef = ref(null)
+const timelineItemRefs = ref([])
+
+// Observers
+const { observe: observeFadeUp } = useIntersectionObserver('animate-fade-up')
+const { observe: observeGentleRise } = useIntersectionObserver('animate-gentle-rise')
+
+onMounted(() => {
+  if (headingRef.value) {
+    observeFadeUp(headingRef.value)
+  }
+
+  // Animar cada item del timeline con delay incremental suave
+  timelineItemRefs.value.forEach((item, index) => {
+    if (item) {
+      // Delays más graduales: 150ms, 250ms, 350ms, 450ms
+      const delays = [150, 250, 350, 450]
+      const delayClass = `animate-delay-${delays[index] || 500}`
+      item.classList.add(delayClass)
+      observeGentleRise(item)
+    }
+  })
+})
+
 const timeline = [
   {
     id: 'briefing',
