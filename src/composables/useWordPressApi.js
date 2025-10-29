@@ -8,8 +8,10 @@ export default function useWordPressApi() {
   const loading = ref(false)
   const error = ref(null)
 
-  // Usar proxy local para evitar problemas de CORS
-  const API_BASE_URL = '/blog/wp-json/wp/v2'
+  // En desarrollo usar proxy, en producción usar URL directa
+  const API_BASE_URL = import.meta.env.DEV
+    ? '/blog/wp-json/wp/v2'
+    : 'https://impulse.ky/blog/wp-json/wp/v2'
 
   /**
    * Obtiene las entradas del blog de WordPress
