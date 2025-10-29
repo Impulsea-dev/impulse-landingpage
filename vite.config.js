@@ -12,6 +12,8 @@ export default defineConfig({
     Vue(),
     ViteImages({
       dirs: ["src/assets/images"],
+      exclude: [], // No excluir nada explícitamente
+      caseSensitive: true, // Hacer que sea sensible a mayúsculas
     }),
     viteCompression(),
     // basicSsl()

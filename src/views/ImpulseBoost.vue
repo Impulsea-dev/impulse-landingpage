@@ -113,14 +113,14 @@ export default {
 </script> 
 <style>
 .bgBoost{
-     background: url(@/assets/images/boost.svg) no-repeat;
+     background: url(@/assets/images/boost-icon.svg) no-repeat;
      background-size: 100% 100%;
      background-color: transparent!important;
      width: 601.43px;
      height: 481.3px;
      }
      .bgsales{
-     background: url(@/assets/images/Sales.svg) no-repeat;
+     background: url(@/assets/images/sales-icon.svg) no-repeat;
      background-size: 100% 100%;
      background-color: transparent!important;
      width: 447px;
