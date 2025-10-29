@@ -8,10 +8,11 @@ export default function useWordPressApi() {
   const loading = ref(false)
   const error = ref(null)
 
-  // En desarrollo usar proxy, en producción usar URL directa
+  // En desarrollo usar proxy local de Vite
+  // En producción, usar un proxy CORS temporal hasta que se corrija el servidor
   const API_BASE_URL = import.meta.env.DEV
     ? '/blog/wp-json/wp/v2'
-    : 'https://impulse.ky/blog/wp-json/wp/v2'
+    : 'https://corsproxy.io/?https://impulse.ky/blog/wp-json/wp/v2'
 
   /**
    * Obtiene las entradas del blog de WordPress
