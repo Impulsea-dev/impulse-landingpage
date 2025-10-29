@@ -1,17 +1,29 @@
 <template>
   <router-link :to="{ name: 'home' }">
     <img
-      src="@/assets/images/logo/logo.svg"
+      :src="logoSrc"
       alt="impulse logo"
-      v-if="!this.$store.themeSettingsStore.isDark"
-    />
-
-    <img
-      src="@/assets/images/logo/logo.svg"
-      alt="impulse logo"
-      v-if="this.$store.themeSettingsStore.isDark"
-      class="w-auto h-auto" 
+      class="w-auto h-auto"
     />
   </router-link>
 </template>
-<script></script>
+<script>
+import impulseLogoWhite from '@/assets/images/logo/impulse.svg'
+import impulseLogoColor from '@/assets/images/logo/logo.svg'
+
+export default {
+  props: {
+    isTransparent: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    logoSrc() {
+      // Si el header es transparente, usar impulse.svg (blanco)
+      // Si el header es sólido, usar logo.svg (con colores)
+      return this.isTransparent ? impulseLogoWhite : impulseLogoColor;
+    }
+  }
+}
+</script>
