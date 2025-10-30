@@ -14,8 +14,6 @@
       <a
         v-if="!item.child && !item.megamenu && item.link.startsWith('http')"
         :href="item.link"
-        target="_blank"
-        rel="noopener noreferrer"
         class="menu-link"
       >
         <div class="flex flex-1 items-center space-x-[8px] rtl:space-x-reverse">

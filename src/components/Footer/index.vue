@@ -38,22 +38,6 @@
             >
               {{ $t('footer-4') }}
             </a>
-            <a
-              href="/services"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left hover:cursor-pointer transition-colors"
-              :class="primaryLinkClasses"
-            >
-              {{ $t('footer-5') }}
-            </a>
-            <a
-              href="https://www.youtube.com/@Impulseky/featured"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left hover:cursor-pointer transition-colors"
-              :class="primaryLinkClasses"
-            >
-              Youtube
-            </a>
           </div>
           <div class="flex flex-col space-y-6">
             <a
@@ -63,14 +47,6 @@
               :class="primaryLinkClasses"
             >
               Linkedin
-            </a>
-            <a
-              href="https://www.instagram.com/impulseky/"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left transition-colors"
-              :class="primaryLinkClasses"
-            >
-              Instagram
             </a>
           </div>
         </div>

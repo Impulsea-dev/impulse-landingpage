@@ -16,8 +16,6 @@
       <a
         v-if="!item.child && !item.isHeadr && item.link.startsWith('http')"
         :href="item.link"
-        target="_blank"
-        rel="noopener noreferrer"
         class="menu-link"
       >
         <span class="menu-icon" v-if="item.icon">

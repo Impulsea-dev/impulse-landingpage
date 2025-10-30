@@ -55,7 +55,7 @@ export const menuItems = [
     icon: "fluent-mdl2:blog",
     link: "https://impulse.ky/blog/",
 
-    
+
   },
 ]
 // menuseetins
@@ -112,7 +112,7 @@ export const topMenu = [
     icon: "fluent-mdl2:blog",
     link: "https://impulse.ky/blog/",
 
-    
+
   },
 ];
 
