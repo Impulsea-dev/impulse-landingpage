@@ -5,7 +5,8 @@
         <ListboxButton
           class="relative w-full flex items-center cursor-pointer space-x-[6px] rtl:space-x-reverse"
         >
-          <span class="inline-block md:h-6 md:w-6 w-4 h-4 rounded-full"
+        <Icon icon="material-symbols:language" class="text-2xl" />
+          <!-- <span class="inline-block md:h-6 md:w-6 w-4 h-4 rounded-full"
             ><img
               :src="selectLanguage.image"
               alt=""
@@ -14,7 +15,7 @@
           <span
             class="text-sm md:block hidden font-medium text-slate-600 dark:text-slate-300"
             >{{ selectLanguage.name }}</span
-          >
+          > -->
         </ListboxButton>
 
         <Transition
@@ -23,7 +24,7 @@
           leave-to-class="opacity-0"
         >
           <ListboxOptions
-            class="absolute min-w-[100px] ltr:right-0 rtl:left-0 md:top-[50px] top-[38px] w-auto max-h-60 overflow-auto border border-slate-200 dark:border-slate-700 rounded bg-white dark:bg-slate-800 mt-1"
+            class="absolute min-w-[100px] ltr:right-0 rtl:left-0 md:top-[30px] top-[20px] w-auto max-h-60 overflow-auto border border-slate-200 dark:border-slate-700 rounded bg-white dark:bg-slate-800 mt-1"
           >
             <ListboxOption
               v-slot="{ active }"
@@ -35,7 +36,7 @@
               <li
                 :class="[
                   active
-                    ? 'bg-slate-100 dark:bg-slate-700 dark:bg-opacity-70 bg-opacity-50 dark:text-white '
+                    ? 'bg-[#662ebb] dark:bg-slate-700 dark:bg-opacity-70 bg-opacity-50 dark:text-white '
                     : 'text-slate-600 dark:text-slate-300',
                   'w-full border-b border-b-gray-500 border-opacity-10 px-2 py-2 last:border-none last:mb-0 cursor-pointer first:rounded-t last:rounded-b',
                 ]"
@@ -53,8 +54,8 @@
                       />
                     </span>
                   </span>
-                  <span class="flex-1 lg:text-base text-sm capitalize">
-                    {{ item.name }}</span
+                  <span class="flex-1 lg:text-sm text-sm capitalize">
+                    {{ item.title }}</span
                   >
                 </div>
               </li>
@@ -70,6 +71,7 @@
 import langImg1 from "@/assets/images/flags/En.png"
 import langImg2 from "@/assets/images/flags/Es.png"
 import { ref,onMounted } from "vue";
+import Icon from "@/components/Icon";
 import {
   Listbox,
   ListboxButton,
@@ -81,8 +83,8 @@ import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
 const months = [
-  { name: "En", image: langImg1 },
-  { name: "Es", image: langImg2 },
+  { name: "En", title: "English", image: langImg1 },
+  { name: "Es", title: "Español", image: langImg2 },
 ];
 const selectLanguage = ref(months[0]);
 onMounted(() => {

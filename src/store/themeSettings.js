@@ -23,6 +23,8 @@ export const useThemeSettingsStore = defineStore('themeSettings',{
         },
     }),
     actions: {
+        bringAllSections(sections) {
+        },
         setSidebarCollasp() {
             this.sidebarCollasp = !this.sidebarCollasp;
         },

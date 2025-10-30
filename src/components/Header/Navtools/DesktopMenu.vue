@@ -11,7 +11,25 @@
           : ''
       "
     >
-      <router-link :to="item.link" v-if="!item.child && !item.megamenu" class="menu-link">
+      <a
+        v-if="!item.child && !item.megamenu && item.link.startsWith('http')"
+        :href="item.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="menu-link"
+      >
+        <div class="flex flex-1 items-center space-x-[8px] rtl:space-x-reverse">
+          <span class="icon-box" v-if="item.icon">
+            <Icon :icon="item.icon" />
+          </span>
+          <div class="text-box" v-if="item.title">{{ $t(item.title) }}</div>
+        </div>
+      </a>
+      <router-link
+        v-else-if="!item.child && !item.megamenu"
+        :to="item.link"
+        class="menu-link"
+      >
         <div class="flex flex-1 items-center space-x-[8px] rtl:space-x-reverse">
           <span class="icon-box" v-if="item.icon">
             <Icon :icon="item.icon" />

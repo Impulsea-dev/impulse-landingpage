@@ -26,23 +26,23 @@ export const menuItems = [
     icon: "fluent:people-20-regular",
     link: "/aboutus",
   },
-  {
-    title: "menu-3",
-    icon: "icons8:idea",
-    link: "/services", 
-    // child: [
-      // {
-      //   childtitle: "Services",
-      //   childlink: "/services",
-      //   childicon: "ri:customer-service-fill",
-      // },
-      // {
-      //   childtitle: "Solutions",
-      //   childlink: "/services",
-      //   childicon: "ic:baseline-network-ping",
-      // },
-    // ],
-  },
+  // {
+  //   title: "menu-3",
+  //   icon: "icons8:idea",
+  //   link: "/services", 
+  //   // child: [
+  //     // {
+  //     //   childtitle: "Services",
+  //     //   childlink: "/services",
+  //     //   childicon: "ri:customer-service-fill",
+  //     // },
+  //     // {
+  //     //   childtitle: "Solutions",
+  //     //   childlink: "/services",
+  //     //   childicon: "ic:baseline-network-ping",
+  //     // },
+  //   // ],
+  // },
  
   // {
   //   title: "Case Studies",
@@ -53,7 +53,7 @@ export const menuItems = [
   {
     title: "menu-4",
     icon: "fluent-mdl2:blog",
-    link: "/blog",
+    link: "https://impulse.ky/blog/",
 
     
   },
@@ -83,23 +83,23 @@ export const topMenu = [
     icon: "fluent:people-20-regular",
     link: "/aboutus",
   },
-  {
-    title: "menu-3",
-    icon: "icons8:idea",
-    link: "/services", 
-    // child: [
-      // {
-      //   childtitle: "Services",
-      //   childlink: "/services",
-      //   childicon: "ri:customer-service-fill",
-      // },
-      // {
-      //   childtitle: "Solutions",
-      //   childlink: "/services",
-      //   childicon: "ic:baseline-network-ping",
-      // },
-    // ],
-  },
+  // {
+  //   title: "menu-3",
+  //   icon: "icons8:idea",
+  //   link: "/services", 
+  //   // child: [
+  //     // {
+  //     //   childtitle: "Services",
+  //     //   childlink: "/services",
+  //     //   childicon: "ri:customer-service-fill",
+  //     // },
+  //     // {
+  //     //   childtitle: "Solutions",
+  //     //   childlink: "/services",
+  //     //   childicon: "ic:baseline-network-ping",
+  //     // },
+  //   // ],
+  // },
  
   // {
   //   title: "Case Studies",
@@ -110,7 +110,7 @@ export const topMenu = [
   {
     title: "menu-4",
     icon: "fluent-mdl2:blog",
-    link: "/blog",
+    link: "https://impulse.ky/blog/",
 
     
   },

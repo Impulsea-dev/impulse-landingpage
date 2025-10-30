@@ -13,10 +13,23 @@
     >
       <!-- ?? single menu with no childred !!  -->
 
+      <a
+        v-if="!item.child && !item.isHeadr && item.link.startsWith('http')"
+        :href="item.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="menu-link"
+      >
+        <span class="menu-icon" v-if="item.icon">
+          <Icon :icon="item.icon"
+        /></span>
+        <div class="text-box" v-if="item.title">{{ $t(item.title) }}</div>
+      </a>
+
       <router-link
+        v-else-if="!item.child && !item.isHeadr"
         :to="`${item.link}`"
         class="menu-link"
-        v-if="!item.child && !item.isHeadr"
       >
         <span class="menu-icon" v-if="item.icon">
           <Icon :icon="item.icon"

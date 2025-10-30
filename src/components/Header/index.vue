@@ -53,7 +53,7 @@
             this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1024
           "
         />
-        <!-- <LanguageVue class="pr-3 pl-2" /> -->
+        <LanguageVue class="pr-3 pl-2" />
         <div v-if="window.width > 1024">
           <Button
             :text="$t('indexContactUs')"

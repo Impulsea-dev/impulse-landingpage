@@ -10,6 +10,7 @@
     "indexMax": "Maximize revenue, optimize processes, and reduce cost with our solutions",
     "indexContactUs": "Contact Us",
     "indexSolveEyebrow": "THE IMPULSE PLATFORM",
+    "contactTitle":"Please provide the details and we'll promptly follow up with you.",
     "revenueResources": "Resources",
     "revenuePotencialTitle":"Unlock your team’s revenue potential",
     "revenueListen":"Listen on",
@@ -182,6 +183,12 @@
             }
         }
     },
+    "mission":"Our Mission",
+    "missionTitle":"The telecommunications industry holds vast untapped potential.",
+    "missionDescription":"At Impulse, our mission is to empower small and medium Internet Service Providers (ISPs) with the cutting-edge technology they need to thrive. By enhancing their operational efficiency and profitability, we help these ISPs connect more people, sustain their businesses, and contribute to a decentralized internet that benefits all",
+    "vision":"Our Vision",
+        "visionTitle":"Our Vision is to be the leading provider of telecom solutions worldwide.",
+        "visionDescription":"We are committed to developing most innovative technology, tools, and services for our partners, and are dedicated to making this vision a reality. We are constantly seeking out new talent and innovative technologies to help us achieve our goal, and our partners will benefit from our relentless pursuit of excellence.",
     "indexSolveProblemsTitle-1": "Revenue Intelligence",
     "indexSolveProblemsText-1": "Predictive insights from network performance to customer sentiment. Know which customers will churn, who is ready to upgrade, and where network issues cost you money.",
     "indexSolveProblemsTitle-2": "Agentic AI",
@@ -218,6 +225,7 @@
     "aboutUsExecutiveTeamFounderCEODescription": "Software Engineer and Technologist with 15 years of telecom and technology experience. Developed apps with millions of downloads, successfully exited two companies.  Top sales executive at multiple CSP’s.",
     "aboutUsExecutiveTeamCOFounderTitle": "Co-founder and NED",
     "aboutUsExecutiveTeamCOFounderDescription": "Currently - Google Telco Industry Business Principal working with telco’s on AI and Cloud transformation A former CEO of a startup to  $50M/ARR CSP, McNabb brings a wealth of experience knowing exactly what our target market needs to succeed",
+    "aboutUsExecutiveTeamTimDescription": "Former CEO in the entertainment and broadband industries, recognized for leading innovation in digital engagement. He developed a CRM platform for livestreaming organizations to boost community interaction and user retention.",
     "aboutUsLeadingIndustryTitle": "Leading the Industry with unmatched expertise and innovation",
     "aboutUsLeadingIndustryDescription": " Impulse is a telecommunications solution provider established and managed by leading industry and technology professionals With over 100 years of combined experience, our telco experts understand the challenges clients face with data, legacy systems, and customer information. We simplify these complexities and make data easy to understand, empowering clients to make informed decisions and manage their businesses with confidence. Trust us to navigate the complexities of the telecommunications industry.",
     "aboutUsMission-1": "Our Mission",
