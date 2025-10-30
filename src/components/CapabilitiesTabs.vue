@@ -34,21 +34,8 @@
         </button>
       </div>
 
-      <div class="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] max-w-6xl mx-auto px-4 sm:px-8 lg:px-0">
-        <div :class="mediaWrapperClasses" class="opacity-0" ref="mediaRef">
-          <div :class="mediaGlowClasses"></div>
-          <div :class="mediaInnerClasses">
-            <div :class="mediaIconWrapperClasses">
-              <img
-                :src="storylineIcon"
-                :alt="$t('capabilitiesSection.placeholderAlt')"
-                class="h-24 w-24 object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="opacity-0" ref="contentRef">
+      <div class="mt-16 flex justify-center max-w-4xl mx-auto px-4 sm:px-8 lg:px-0">
+        <div class="opacity-0 w-full" ref="contentRef">
           <span :class="tagClasses">
             {{ $t(activeTab.tag) }}
           </span>
@@ -100,13 +87,13 @@
             </div>
           </div>
 
-          <div class="mt-10">
+          <!-- <div class="mt-10">
             <Button
               :text="$t(activeTab.cta)"
               :btnClass="'px-7 py-3 rounded-full font-semibold text-sm uppercase tracking-wide text-white shadow-[0_15px_40px_rgba(65,56,243,0.35)]'"
               style="background:linear-gradient(224.95deg, #a446f4 -1.95%, #4138f3 104.5%);"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -116,7 +103,6 @@
 <script>
 import { computed, ref, onMounted, watch, nextTick } from 'vue'
 import Button from '@/components/Button'
-import storylineIcon from '@/assets/images/svgs/innovation.svg'
 import { useThemeSettingsStore } from '@/store/themeSettings'
 import useIntersectionObserver from '@/composables/useIntersectionObserver'
 import useCounterAnimation from '@/composables/useCounterAnimation'
@@ -281,15 +267,12 @@ export default {
     // Refs para animaciones
     const headerRef = ref(null)
     const tabsRef = ref(null)
-    const mediaRef = ref(null)
     const contentRef = ref(null)
     const metricsContainerRef = ref(null)
     const metricRefs = ref([])
 
     // Observers para animaciones
     const { observe: observeFadeUp } = useIntersectionObserver('animate-fade-up')
-    const { observe: observeSlideLeft } = useIntersectionObserver('animate-slide-left')
-    const { observe: observeSlideRight } = useIntersectionObserver('animate-slide-right')
 
     // Counter animation
     const { animateCounter, observeElement, extractNumber, extractSuffix } = useCounterAnimation()
@@ -332,8 +315,7 @@ export default {
     onMounted(() => {
       if (headerRef.value) observeFadeUp(headerRef.value)
       if (tabsRef.value) observeFadeUp(tabsRef.value)
-      if (mediaRef.value) observeSlideLeft(mediaRef.value)
-      if (contentRef.value) observeSlideRight(contentRef.value)
+      if (contentRef.value) observeFadeUp(contentRef.value)
 
       // Observar métricas para animación de contador
       if (metricsContainerRef.value) {
@@ -518,17 +500,12 @@ export default {
       activeTabIndex,
       activeTab,
       setActive,
-      storylineIcon,
       isDark,
       sectionClasses,
       wrapperClasses,
       eyebrowClasses,
       titleClasses,
       descriptionClasses,
-      mediaWrapperClasses,
-      mediaGlowClasses,
-      mediaInnerClasses,
-      mediaIconWrapperClasses,
       tagClasses,
       panelTitleClasses,
       panelDescriptionClasses,
@@ -538,7 +515,6 @@ export default {
       metricLabelClasses,
       headerRef,
       tabsRef,
-      mediaRef,
       contentRef,
       metricsContainerRef,
       metricRefs
