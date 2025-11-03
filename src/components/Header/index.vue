@@ -53,7 +53,10 @@
             this.$store.themeSettingsStore.menuLayout === 'horizontal' && window.width > 1024
           "
         />
-        <LanguageVue class="pr-3 pl-2" />
+        <LanguageVue
+          v-if="window.width > 1024"
+          class="pr-3 pl-2"
+        />
         <div v-if="window.width > 1024">
           <Button
             :text="$t('indexContactUs')"
@@ -63,9 +66,13 @@
           />
         </div>
         <div
-          class="nav-tools flex items-center lg:space-x-6 space-x-3 rtl:space-x-reverse"
+          class="nav-tools flex items-center lg:space-x-6 space-x-[10px] rtl:space-x-reverse"
         >
-
+          <LanguageVue
+            v-if="window.width <= 1024"
+            class="px-0"
+            :class="shouldBeTransparent ? 'text-white' : ''"
+          />
           <handle-mobile-menu
             v-if="window.width <= 1024"
             :class="shouldBeTransparent ? 'text-white' : ''"

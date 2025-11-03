@@ -79,7 +79,7 @@ export default {
       if (this.isDark) {
         base.push('bg-[#111315]', 'text-white', 'border-white/10')
       } else {
-        base.push('bg-white/95', 'backdrop-blur-sm', 'text-slate-900', 'border-slate-200/70', 'shadow-[0_-12px_40px_-32px_rgba(15,23,42,0.45)]')
+        base.push('bg-white/95', 'backdrop-blur-sm', 'text-slate-900', 'border-slate-200/70')
       }
       return base
     },

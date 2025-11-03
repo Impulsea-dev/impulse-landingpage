@@ -120,7 +120,7 @@ const timeline = [
     detail:
       'Prototype the solution with your real data, validate models alongside our experts, and define the playbook for go-live.',
     image:
-      'https://images.unsplash.com/photo-1537432376769-00aabc89af93?auto=format&fit=crop&w=800&q=80'
+      'https://plus.unsplash.com/premium_photo-1661504705278-ff7a1dfdd1d7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
   },
   {
     id: 'deployment',
