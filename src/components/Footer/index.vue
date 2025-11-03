@@ -1,102 +1,116 @@
 <template>
-  <footer :class="footerClass()">
-    <div :class="containerClasses">
+  <footer
+    class="flex flex-col md:flex-row justify-center md:justify-between w-full h-60 bg-[#7F39E9] relative overflow-hidden">
+    <div class="flex md:hidden px-5 py-5">
+      <div>
+        <img src="@/assets/images/logo/impulse.webp" class="h-auto w-36" alt="logo" />
+        <span class="text-sm text-white">{{ $t('footer-1') }}</span>
+      </div>
+    </div>
+    <div class="hidden md:block">
+      <img src="../../assets/images/bgfooter.svg" class="hidden md:block h-full object-cover" alt="" />
+      <div class="absolute top-1/2 left-4">
+        <img src="@/assets/images/logo/impulse.webp" class="h-auto w-40" alt="logo" />
+        <span class="text-sm text-white">{{ $t('footer-1') }}</span>
+      </div>
+    </div>
+    <div class="flex items-center flex-wrap gap-10 md:gap-x-40 px-5 xl:px-40">
+      <div class="flex flex-col gap-y-1">
+        <span class="text-white font-bold text-sm md:text-base">Legal</span>
+        <router-link class="text-gray-300 text-xs md:text-sm" to="/impulse-privacy">Privacy Policy</router-link>
+        <router-link class="text-gray-300 text-xs md:text-sm" to="/impulse-terms">Terms</router-link>
+      </div>
+      <div class="flex flex-col gap-y-1">
+        <span class="text-white font-bold text-sm md:text-base">Resources</span>
+        <router-link class="text-gray-300 text-xs md:text-sm" to="/blog">Blog</router-link>
+        <a class="text-gray-300 text-xs md:text-sm"
+          href="https://open.spotify.com/show/2xsbT6w1MOuEe2DSyV1Mnx" target="_blank">Podcast</a>
+      </div>
+      <div class="flex flex-col gap-y-1">
+        <span class="text-white font-bold text-sm md:text-base">About Company</span>
+        <router-link class="text-gray-300 text-xs md:text-sm" to="/aboutus">About Us</router-link>
+        <router-link class="text-gray-300 text-xs md:text-sm" to="/contactus">Contact Us</router-link>
+      </div>
+      <div class="flex gap-x-2">
+        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+          href="https://www.linkedin.com/company/impulseltd/" target="_blank">
+          <img src="../../assets/images/social-linkedin.svg" class="h-5 w-5" alt="Linkedin" />
+        </a>
+        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+          href="https://www.youtube.com/@Impulseky" target="_blank">
+          <img src="../../assets/images/social-youtube.svg" class="h-5 w-5" alt="Youtube" />
+        </a>
+        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+          href="https://www.instagram.com/impulseky/" target="_blank">
+          <img src="../../assets/images/social-instagram.svg" class="h-5 w-5" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+
+
+    <div class="hidden 2xl:flex flex-grow">
+      <img src="../../assets/images/splash.svg" class="absolute top-0 right-0 h-full" alt="">
+    </div>
+
+  </footer>
+  <!-- <footer :class="footerClass()">
+    <div class="site-footer px-6 bg-[#111315] text-white py-6 static left-0 w-full bottom-0">
       <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 md:space-y-1 space-y-8 md:col-end-6 md:col-span-3">
         <div class="flex-col space-y-4">
-          <div class="flex-col">
-            <img src="@/assets/images/logo/logo.svg" alt="logo" />
+          <div class="flex-col ">
+            <img src="@/assets/images/logo/impulse.webp" alt="logo" />
+
           </div>
-          <div class="flex-col text-start text-base transition-colors" :class="bodyTextClasses">
+          <div class="flex-col text-start  text-base">
             {{ $t('footer-1') }}
+
           </div>
           <div class="flex flex-col space-y-1">
-            <a
-              href="/impulse-privacy"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-sm text-left underline hover:cursor-pointer transition-colors"
-              :class="secondaryLinkClasses"
-            >
+            <a href="/impulse-privacy" target="_blank"
+              class=" flex-grow-0 underline flex-shrink-0 text-base text-left text-white hover:cursor-pointer">
               {{ $t('footer-2') }}
             </a>
-            <a
-              href="/impulse-terms"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-sm text-left underline hover:cursor-pointer transition-colors"
-              :class="secondaryLinkClasses"
-            >
+            <a href="/impulse-terms" target="_blank"
+              class=" flex-grow-0 underline flex-shrink-0 text-base text-left text-white hover:cursor-pointer">
               {{ $t('footer-3') }}
             </a>
           </div>
         </div>
         <div class="grid grid-cols-2 gap-5 space-x-4 md:w-52 md:ml-auto">
+
+
           <div class="flex flex-col space-y-6">
-            <a
-              href="/aboutus"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left hover:cursor-pointer transition-colors"
-              :class="primaryLinkClasses"
-            >
+            <a href="/aboutus" target="_blank"
+              class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
               {{ $t('footer-4') }}
             </a>
-          </div>
-          <div class="flex flex-col space-y-6">
-            <a
-              href="https://www.linkedin.com/company/impulseltd/"
-              target="_blank"
-              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left transition-colors"
-              :class="primaryLinkClasses"
-            >
-              Linkedin
+            <a href="/services" target="_blank"
+              class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
+              {{ $t('footer-5') }}
+            </a>
+            <a href="https://www.youtube.com/@Impulseky/featured" target="_blank"
+              class=" flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white hover:cursor-pointer">
+              Youtube
             </a>
           </div>
+          <div class="flex flex-col space-y-6">
+            <a href="https://www.linkedin.com/company/impulseltd/" target="_blank"
+              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
+              Linkedin
+            </a>
+            <a href="https://www.instagram.com/impulseky/" target="_blank"
+              class="flex-grow-0 flex-shrink-0 text-base font-semibold text-left text-white">
+              Instagram
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </template>
 <script>
 export default {
-  computed: {
-    isDark() {
-      const isStoreDark = this.$store?.themeSettingsStore?.isDark
-      if (typeof isStoreDark === 'boolean') {
-        return isStoreDark
-      }
-      return document.body.classList.contains('dark')
-    },
-    containerClasses() {
-      const base = [
-        'site-footer',
-        'px-6',
-        'py-6',
-        'static',
-        'left-0',
-        'w-full',
-        'bottom-0',
-        'transition-colors',
-        'border-t'
-      ]
-      if (this.isDark) {
-        base.push('bg-[#111315]', 'text-white', 'border-white/10')
-      } else {
-        base.push('bg-white/95', 'backdrop-blur-sm', 'text-slate-900', 'border-slate-200/70')
-      }
-      return base
-    },
-    primaryLinkClasses() {
-      return this.isDark
-        ? 'text-white hover:text-white/70'
-        : 'text-slate-900 hover:text-[#6E49C4]'
-    },
-    secondaryLinkClasses() {
-      return this.isDark
-        ? 'text-white/80 hover:text-white'
-        : 'text-slate-600 hover:text-[#6E49C4]'
-    },
-    bodyTextClasses() {
-      return this.isDark ? 'text-white/80' : 'text-slate-600'
-    }
-  },
   methods: {
     footerClass() {
       switch (this.$store.themeSettingsStore.footerType) {
