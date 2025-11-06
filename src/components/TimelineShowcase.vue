@@ -1,18 +1,18 @@
 <template>
-  <section class="bg-white py-20">
+  <section class="bg-gradient-to-br from-[#f9f4ff] via-[#f2eafd] to-[#e6d8fb] py-20">
     <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6">
       <!-- heading -->
       <div class="opacity-0" ref="headingRef">
         <h2 class="text-3xl font-extrabold text-[#2f1a54] md:text-[44px] md:leading-tight">
-          Proven results in weeks, not years
+          {{ t('timelineShowcase.title') }}
         </h2>
         <p class="mt-4 max-w-3xl text-base text-[#5b4e76] md:text-lg">
-          A clear, collaborative path that gets your teams from executive alignment to AI in production faster than ever.
+          {{ t('timelineShowcase.description') }}
         </p>
       </div>
 
       <!-- timeline -->
-      <div class="rounded-lg overflow-visible" aria-label="Delivery timeline">
+      <div class="rounded-lg overflow-visible" :aria-label="t('timelineShowcase.ariaLabel')">
         <!-- header row -->
         <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#e7def7]">
           <div
@@ -23,7 +23,7 @@
           >
             <div class="text-sm font-semibold leading-snug">
               <span>{{ item.title }}</span>
-              <span v-if="item.subtitle" class="sr-only"> — {{ item.subtitle }}</span>
+              <span v-if="item.subtitle" class="sr-only"> - {{ item.subtitle }}</span>
             </div>
 
             <!-- POPUP / TOOLTIP AL HACER HOVER -->
@@ -64,11 +64,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import useIntersectionObserver from '@/composables/useIntersectionObserver'
 
 const headingRef = ref(null)
 const timelineItemRefs = ref([])
+
+const { t } = useI18n()
 
 // Observers
 const { observe: observeFadeUp } = useIntersectionObserver('animate-fade-up')
@@ -82,7 +85,7 @@ onMounted(() => {
   // Animar cada item del timeline con delay incremental suave
   timelineItemRefs.value.forEach((item, index) => {
     if (item) {
-      // Delays más graduales: 150ms, 250ms, 350ms, 450ms
+      // Delays mas graduales: 150ms, 250ms, 350ms, 450ms
       const delays = [150, 250, 350, 450]
       const delayClass = `animate-delay-${delays[index] || 500}`
       item.classList.add(delayClass)
@@ -91,48 +94,38 @@ onMounted(() => {
   })
 })
 
-const timeline = [
+const rawTimeline = [
   {
     id: 'briefing',
-    title: 'Exec. Briefing',
-    subtitle: 'Strategic Alignment',
-    duration: '2–3 Hours',
-    detail:
-      'Meet with our executive team to align on business priorities, surface quick wins, and map the value you want to unlock with AI.',
     image:
       'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'assessment',
-    title: 'Technology Assessment',
-    subtitle: 'Capability Deep Dive',
-    duration: '2–3 Days',
-    detail:
-      'Gain a rich view into the platform stack, architecture best practices, and the highest-impact use cases tailored to your data.',
     image:
       'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'trial',
-    title: 'Production Trial',
-    subtitle: 'AI Sprint',
-    duration: '8–12 Weeks',
-    detail:
-      'Prototype the solution with your real data, validate models alongside our experts, and define the playbook for go-live.',
     image:
       'https://plus.unsplash.com/premium_photo-1661504705278-ff7a1dfdd1d7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
   },
   {
     id: 'deployment',
-    title: 'AI Application Deployment in Production',
-    subtitle: 'Deployment in Production',
-    duration: '3–6 Months',
-    detail:
-      'Scale the proven use case, operationalize monitoring and feedback loops, and optimize impact across your organization.',
     image:
       'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80'
   }
 ]
+
+const timeline = computed(() =>
+  rawTimeline.map(item => ({
+    ...item,
+    title: t(`timelineShowcase.items.${item.id}.title`),
+    subtitle: t(`timelineShowcase.items.${item.id}.subtitle`),
+    duration: t(`timelineShowcase.items.${item.id}.duration`),
+    detail: t(`timelineShowcase.items.${item.id}.detail`)
+  }))
+)
 </script>
 
 <style scoped>

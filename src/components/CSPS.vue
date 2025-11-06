@@ -6,8 +6,8 @@
                 class="flex justify-center text-white font-bold font-Monda text-2xl md:text-3xl xl:text-4xl pt-16 pb-10 w-1/2 mx-auto text-center" ref="titleRef">
                 {{ $t('cspsTitle') }}
             </div>
-            <div class="px-4 py-12">
-                <div class="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="px-4 pt-12 pb-20">
+                <div class="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     <div v-for="(item, idx) in reqs" :key="idx" :ref="el => { if (el) cardRefs[idx] = el }" class="group relative flex flex-col gap-4 cursor-pointer
                bg-white rounded-2xl p-6 shadow-md transition-colors duration-300 opacity-0
          hover:bg-gradient-to-br hover:from-[#4299E1] hover:to-[#2B6CB0] hover:text-white">
@@ -20,16 +20,10 @@
                         </h3>
 
                         <!-- Descripción -->
-                        <p class="text-sm leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
-                            {{ item.details }}
-                        </p>
+                        <p class="text-sm leading-relaxed group-hover:text-gray-100 transition-colors duration-300" v-html="item.details"></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="flex justify-center py-10">
-            <a href="https://meetings.hubspot.com/brian-molina/impulse-introduction" target="_blank" class="text-white hover:text-white/80 font-bold text-base md:text-lg xl:text-2xl cursor-pointer
-                font-Monda mt-5">{{ $t('cspsDetails') }} ></a>
         </div>
     </section>
 </template>
@@ -45,22 +39,17 @@ const reqs = computed(() => [
     {
         title: t('cspsOptions.option1.title'),
         details: t('cspsOptions.option1.details'),
-        icon:'ion:server-outline'
+        icon:'mdi:shield-lock-outline'
     },
     {
         title: t('cspsOptions.option2.title'),
         details: t('cspsOptions.option2.details'),
-        icon: 'basil:lightning-outline'
+        icon: 'mdi:cloud-outline'
     },
     {
         title: t('cspsOptions.option3.title'),
         details: t('cspsOptions.option3.details'),
-        icon:'prime:chart-bar'
-    },
-    {
-        title: t('cspsOptions.option4.title'),
-        details: t('cspsOptions.option4.details'),
-        icon: 'ri:currency-line'
+        icon:'mdi:cog-outline'
     },
     // {
     //     title: t('cspsOptions.option5.title'),

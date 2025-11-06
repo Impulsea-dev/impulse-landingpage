@@ -16,28 +16,83 @@
     "revenueListen": "Escuchar en",
     "impulseActionTitle": "¿Quieres ver cómo funciona Impulse?",
     "indexSolveDescription": "Tres potentes capacidades trabajan juntas para transformar tus operaciones de telecomunicaciones en un motor generador de ingresos.",
-     "cspsTitle": "Lo que hace que nos diferenciamos",
+     "cspsTitle": "Seguro. Flexible. Diseñado para Telecom.",
     "cspsDetails": "Aprende más sobre los Servicios de Impulse",
     "cspsOptions": {
         "option1": {
-            "title": "Construido para CSPs",
-            "details": "No es otro CRM general. Hablamos SNMP, ancho de banda, IPs, ARPU y NPS."
+            "title": "Seguridad",
+            "details": "Protege los datos de tus clientes y de tu red con <strong>cifrado multinivel</strong>, <strong>acceso basado en roles</strong> y <strong>cumplimiento de grado telecom</strong> en cada interacción. Impulse está diseñado con <strong>principios de zero trust</strong> y una <strong>arquitectura preparada para SOC 2</strong>, lo que garantiza que tus datos permanezcan privados y bajo tu control."
         },
         "option2": {
-            "title": "Aceleración de Ventas",
-            "details": "Anticípate a las necesidades del cliente antes de que llamen. Activa ofertas de retención antes de que cancelen."
+            "title": "Despliegue",
+            "details": "Ejecuta Impulse a tu manera: en una <strong>VPC dedicada</strong>, <strong>on-premises</strong> o en un <strong>esquema híbrido</strong>. Conserva toda la analítica y los modelos de IA <strong>dentro de tu propia infraestructura</strong>, incluso aislados si es necesario, para cumplir con los requisitos de seguridad más estrictos de NOC o gobierno."
         },
         "option3": {
-            "title": "Inteligencia de Red en Tiempo Real",
-            "details": "Dashboards en tiempo real de desempeño, uptime y uso de recursos."
-        },
-        "option4": {
-            "title": "Retención y Monetización",
-            "details": "Alertas inteligentes cuando un cliente excede su plan, pierde conexión o muestra comportamiento de riesgo."
-        },
-        "option5": {
-            "title": "Streamline your processes",
-            "details": "Hemos dedicado miles de horas a refinar cada proceso en su organización, creando nuestro software con las mejores prácticas para su negocio, lo que le permite mejorar su puntuación de NPS y aumentar los ingresos."
+            "title": "Personalización",
+            "details": "Integra tus <strong>datos de red, facturación y clientes</strong> en el motor de IA de Impulse para crear insights inteligentes únicos para tu telecom. Desde la predicción de churn hasta <strong>recomendaciones de upselling impulsadas por IA</strong>, adaptamos cada modelo a tu lógica de negocio, umbrales y SLAs."
+        }
+    },
+    "timelineShowcase": {
+        "title": "Resultados comprobados en semanas, no en años",
+        "description": "Un camino claro y colaborativo que lleva a tus equipos del alineamiento ejecutivo a la IA en producción más rápido que nunca.",
+        "ariaLabel": "Cronograma de entrega",
+        "items": {
+            "briefing": {
+                "title": "Sesión ejecutiva",
+                "subtitle": "Alineación estratégica",
+                "duration": "2-3 horas",
+                "detail": "Reúnete con nuestro equipo ejecutivo para alinear las prioridades del negocio, identificar victorias rápidas y definir el valor que quieres desbloquear con IA."
+            },
+            "assessment": {
+                "title": "Evaluación tecnológica",
+                "subtitle": "Profundización de capacidades",
+                "duration": "2-3 días",
+                "detail": "Obtén una visión completa del stack de la plataforma, las mejores prácticas de arquitectura y los casos de uso de mayor impacto adaptados a tus datos."
+            },
+            "trial": {
+                "title": "Prueba en producción",
+                "subtitle": "Sprint de IA",
+                "duration": "8-12 semanas",
+                "detail": "Prototipa la solución con tus datos reales, valida modelos junto a nuestros expertos y define el playbook para el go-live."
+            },
+            "deployment": {
+                "title": "Despliegue de la aplicación de IA en producción",
+                "subtitle": "Despliegue en producción",
+                "duration": "3-6 meses",
+                "detail": "Escala el caso de uso probado, operacionaliza la monitorización y los ciclos de retroalimentación, y maximiza el impacto en toda tu organización."
+            }
+        }
+    },
+    "rolesMarquee": {
+        "title": "Impulse beneficia a todos",
+        "description": "Desde los ejecutivos hasta los equipos en campo, reúne a toda tu organización para trabajar con más inteligencia, moverse más rápido y desbloquear un crecimiento sostenible.",
+        "linkLabel": "Más información ->",
+        "cards": {
+            "revenue": {
+                "badge": "RL",
+                "title": "Liderazgo de ingresos",
+                "description": "Dirige con confianza, proyecta con precisión y libera todo el potencial de tu equipo con visibilidad total del negocio."
+            },
+            "support": {
+                "badge": "CS",
+                "title": "Atención al cliente",
+                "description": "Ofrece experiencias sobresalientes, reduce la pérdida de clientes y fomenta la expansión con IA que mantiene a tus equipos sincronizados."
+            },
+            "sales": {
+                "badge": "SM",
+                "title": "Ventas y marketing",
+                "description": "Impulsa un rendimiento escalable, mejora la conversión del pipeline y lidera cambios duraderos con Impulse como tu sistema de referencia."
+            },
+            "network": {
+                "badge": "NO",
+                "title": "Operaciones de red",
+                "description": "Monitorea las redes de forma proactiva, detecta incidencias al instante y garantiza la continuidad conectando el rendimiento con los resultados del negocio."
+            },
+            "finance": {
+                "badge": "FB",
+                "title": "Finanzas y facturación",
+                "description": "Elimina fugas de ingresos, asegura la precisión de la facturación y sigue las cobranzas conectando finanzas y crecimiento automáticamente."
+            }
         }
     },
     "capabilitiesSection": {
@@ -534,11 +589,24 @@
             "banner-1":"Al hacer clic en “Aceptar todo”, aceptas el almacenamiento de cookies en tu dispositivo para mejorar la navegación por el sitio, analizar el uso del sitio y ayudar en nuestros esfuerzos de marketing.",
             "banner-2":"ACEPTAR TODO",
             "banner-3":"RECHAZAR TODO",
-            "footer-1":"Derechos de autor © 2023 Impulse. Todos los derechos reservados.",
-            "footer-2":"Política de privacidad",
-            "footer-3":"Términos",
-            "footer-4":"Conócenos",
-            "footer-5":"Servicios",
+            "footer": {
+                "tagline":"Derechos de autor © 2025 Impulse. Todos los derechos reservados.",
+                "legal": {
+                    "title": "Legal",
+                    "privacy": "Política de privacidad",
+                    "terms": "Términos"
+                },
+                "resources": {
+                    "title": "Recursos",
+                    "blog": "Blog",
+                    "podcast": "Podcast"
+                },
+                "company": {
+                    "title": "Sobre la empresa",
+                    "about": "Sobre nosotros",
+                    "contact": "Contáctanos"
+                }
+            },
             "menu-1":"Inicio",
             "menu-2":"Conócenos",
             "menu-3":"Servicios",

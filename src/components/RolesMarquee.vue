@@ -2,11 +2,10 @@
   <section class="bg-white py-20">
     <div class="mx-auto flex max-w-5xl flex-col items-center text-center px-6 opacity-0" ref="headerRef">
       <h2 class="text-3xl font-extrabold text-[#32125c] md:text-[42px] md:leading-tight">
-        Everyone wins with Impulse
+        {{ t('rolesMarquee.title') }}
       </h2>
       <p class="mt-5 max-w-2xl text-base font-medium text-[#4c4a67] md:text-lg">
-        From executives to field teams, bring your entire organization together to work smarter, move faster,
-        and unlock sustained growth.
+        {{ t('rolesMarquee.description') }}
       </p>
     </div>
 
@@ -35,7 +34,7 @@
               :href="card.link"
               :class="['mt-6 inline-flex items-center text-sm font-semibold transition-colors', card.linkColor, card.linkHoverColor]"
             >
-              Learn more →
+              {{ t('rolesMarquee.linkLabel') }}
             </a>
           </div>
 
@@ -61,22 +60,24 @@
               :href="card.link"
               :class="['mt-6 inline-flex items-center text-sm font-semibold transition-colors', card.linkColor, card.linkHoverColor]"
             >
-              Learn more →
+              {{ t('rolesMarquee.linkLabel') }}
             </a>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import useIntersectionObserver from '@/composables/useIntersectionObserver'
 
 const headerRef = ref(null)
 const marqueeRef = ref(null)
+
+const { t } = useI18n()
 
 const { observe: observeFadeUp } = useIntersectionObserver('animate-fade-up')
 const { observe: observeFadeIn } = useIntersectionObserver('animate-fade-in')
@@ -86,19 +87,15 @@ onMounted(() => {
     observeFadeUp(headerRef.value)
   }
   if (marqueeRef.value) {
-    // Añadir un pequeño delay para que aparezca después del header
+    // Add a small delay so it appears after the header
     marqueeRef.value.classList.add('animate-delay-200')
     observeFadeIn(marqueeRef.value)
   }
 })
 
-const cards = [
+const cardMeta = [
   {
     id: 'revenue',
-    badge: 'RL',
-    title: 'Revenue Leadership',
-    description:
-      "Lead with confidence, forecast with precision, and unlock your team's full potential - with complete visibility across the business.",
     link: '#',
     bgColor: 'bg-[#D4E8F5]',
     textColor: 'text-[#1E5A7D]',
@@ -109,10 +106,6 @@ const cards = [
   },
   {
     id: 'support',
-    badge: 'CS',
-    title: 'Customer Support',
-    description:
-      'Deliver standout customer experiences, reduce churn, and drive expansion with AI that keeps your teams in sync.',
     link: '#',
     bgColor: 'bg-[#FFE5E5]',
     textColor: 'text-[#8B3A3A]',
@@ -123,10 +116,6 @@ const cards = [
   },
   {
     id: 'sales',
-    badge: 'SM',
-    title: 'Sales & Marketing',
-    description:
-      'Drive scalable performance, improve pipeline conversion, and lead change that sticks with Impulse as your system of truth.',
     link: '#',
     bgColor: 'bg-[#E8E0F5]',
     textColor: 'text-[#5A3A7D]',
@@ -137,10 +126,6 @@ const cards = [
   },
   {
     id: 'network',
-    badge: 'NO',
-    title: 'Network Operations',
-    description:
-      'Proactively monitor networks, detect issues instantly, and ensure uptime - connecting performance to business outcomes.',
     link: '#',
     bgColor: 'bg-[#E5F5E8]',
     textColor: 'text-[#2D6B3A]',
@@ -151,10 +136,6 @@ const cards = [
   },
   {
     id: 'finance',
-    badge: 'FB',
-    title: 'Finance & Billing',
-    description:
-      'Eliminate revenue leakage, ensure billing accuracy, and track collections - automatically connecting finance to growth.',
     link: '#',
     bgColor: 'bg-[#FFF4E5]',
     textColor: 'text-[#8B5A00]',
@@ -164,6 +145,15 @@ const cards = [
     linkHoverColor: 'hover:text-[#E0A960]'
   }
 ]
+
+const cards = computed(() =>
+  cardMeta.map(card => ({
+    ...card,
+    badge: t(`rolesMarquee.cards.${card.id}.badge`),
+    title: t(`rolesMarquee.cards.${card.id}.title`),
+    description: t(`rolesMarquee.cards.${card.id}.description`)
+  }))
+)
 </script>
 
 <style scoped>
