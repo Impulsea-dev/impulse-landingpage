@@ -36,14 +36,14 @@
           href="https://www.linkedin.com/company/impulseltd/" target="_blank">
           <img src="../../assets/images/social-linkedin.svg" class="h-5 w-5" alt="Linkedin" />
         </a>
-        <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
+        <!-- <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
           href="https://www.youtube.com/@Impulseky" target="_blank">
           <img src="../../assets/images/social-youtube.svg" class="h-5 w-5" alt="Youtube" />
         </a>
         <a class="bg-[#00BCD4] rounded-full p-2 flex transition-all hover:scale-125 duration-300"
           href="https://www.instagram.com/impulseky/" target="_blank">
           <img src="../../assets/images/social-instagram.svg" class="h-5 w-5" alt="Instagram" />
-        </a>
+        </a> -->
       </div>
     </div>
 
